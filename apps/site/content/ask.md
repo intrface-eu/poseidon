@@ -1,6 +1,6 @@
 # What we need
 
-Poseidon Trident needs farms, scientists, engineers and money. This page lists every partner and funding type the project will need through its first three stages, what each one gets, and what we ask of them. Write to basic@intrface.eu about any line.
+Poseidon needs farms, scientists, engineers and money. This page lists every partner and funding type the project will need through its first three stages, what each one gets, and what we ask of them. Write to basic@intrface.eu about any line.
 
 ## Partners
 

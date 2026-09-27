@@ -1,6 +1,6 @@
-# Poseidon Trident passive-v3 underwater-head candidate
+# Poseidon passive-v3 underwater-head candidate
 
-Configuration `passive-v3`, revision `HW-CAND-3.0`, status `NON_ADOPTED_NOT_BUILD_AUTHORIZED`. **Intrface is the company; Poseidon Trident is the project/product.** Stable `INTRFACE_PASSIVE_V3` node names are CAD identifiers, not marketing copy. The required envelope is **30 m depth and 90 days continuous immersion**. Neither number is a verified assembly rating. There has been no purchase, fabrication, vendor contact, physical test, acoustic operation or adoption.
+Configuration `passive-v3`, revision `HW-CAND-3.0`, status `NON_ADOPTED_NOT_BUILD_AUTHORIZED`. **Intrface is the company; Poseidon is the project/product.** Stable `INTRFACE_PASSIVE_V3` node names are CAD identifiers, not marketing copy. The required envelope is **30 m depth and 90 days continuous immersion**. Neither number is a verified assembly rating. There has been no purchase, fabrication, vendor contact, physical test, acoustic operation or adoption.
 
 this is a non-adopted digital candidate with no pressure, corrosion or suitability evidence.
 

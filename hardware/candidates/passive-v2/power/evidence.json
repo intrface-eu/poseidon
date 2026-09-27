@@ -84,7 +84,7 @@
     "all_unchanged": true,
     "evidence_sha256": "dfc71d2a6bfffc8a99b12e83af9e5daf9ad33ead8da6337c50cdfb7f1b17e40f",
     "file_count": 140,
-    "manifest_sha256": "0d87fbfbabe105d20d5e0c4709c62a9b07966d6bf6f1b200fd2e88acf4c46afd"
+    "manifest_sha256": "be7e1f64877f3fa1ec0a6d9688bf58019c714ed79b2dee298961b00a05c420c4"
   },
   "baseline_only_energy_comparison": {
     "break_even_peak_sun_hours": 0.653484034,

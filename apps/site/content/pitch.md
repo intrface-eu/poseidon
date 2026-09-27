@@ -1,6 +1,6 @@
-# Poseidon Trident
+# Poseidon
 
-Poseidon Trident is an open-source listening unit for shellfish farms, now in development: it will hang beside the mussel and oyster lines, record when wild seabream come to feed, and give farmers and scientists the numbers they need before anyone tries to stop the fish.
+Poseidon is an open-source listening unit for shellfish farms, now in development: it will hang beside the mussel and oyster lines, record when wild seabream come to feed, and give farmers and scientists the numbers they need before anyone tries to stop the fish.
 
 ## The problem
 
@@ -88,13 +88,13 @@ The full list, with what each partner gets and a costed budget, is on the [What 
 
 ## Team and company
 
-Poseidon Trident is a project of INTRFACE j.d.o.o., a small engineering company in Vrsar, Istria, a few kilometres from Lim bay. The company is led by Alex Basic, director and maintainer, who designed and built the software stack and the hardware designs. The project will add scientific and engineering partners as it moves into the water.
+Poseidon is a project of INTRFACE j.d.o.o., a small engineering company in Vrsar, Istria, a few kilometres from Lim bay. The company is led by Alex Basic, director and maintainer, who designed and built the software stack and the hardware designs. The project will add scientific and engineering partners as it moves into the water.
 
 INTRFACE j.d.o.o., Dalmatinska 34, 52450 Vrsar, Croatia. OIB 34363240459. Registered with the Commercial Court in Pazin, MBS 130172611.
 
 ## Open source
 
-Everything is public at [github.com/intrface-eu/poseidon-trident](https://github.com/intrface-eu/poseidon-trident):
+Everything is public at [github.com/intrface-eu/poseidon](https://github.com/intrface-eu/poseidon):
 
 - code under the GNU Affero General Public License, version 3 or later;
 - hardware designs under the CERN Open Hardware Licence, strongly reciprocal, version 2;

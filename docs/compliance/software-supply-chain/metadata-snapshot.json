@@ -4232,9 +4232,9 @@
     },
     {
       "adjacent_lock": null,
-      "bytes": 331,
+      "bytes": 323,
       "path": "pyproject.toml",
-      "sha256": "25da27599724bab7e92ffe1f89fe2c3513e6b4c817b10c7ee94b28ec1763ee05"
+      "sha256": "f5cce35734aa4ba0f685d6aef60252f1df29c54e6e5b4829a3769d1fdf216708"
     }
   ],
   "matching_rule": "Exact ecosystem, normalized name, literal locked version; installed declaration is not license verification or proof of artifact origin."

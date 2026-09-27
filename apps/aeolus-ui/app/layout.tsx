@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "AEOLUS · Local evidence monitor",
-  description: "Local passive acoustic evidence review for Poseidon Trident.",
+  description: "Local passive acoustic evidence review for Poseidon.",
 };
 
 const DESIGN_CONTRACT = `

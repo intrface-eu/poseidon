@@ -2,7 +2,7 @@
   "reference": "HW-REF-1.1",
   "configuration": "reference-v1",
   "files": {
-    "HARDWARE.md": "d23d2dbcb5ccd1082ce771abe43fc2429a6973fba7b98a29e0ef1d608fdb67f3",
+    "HARDWARE.md": "aeeb394acd07beb34af1e8d3deeae1bf7f3ab659c13dcf1eba8ba5c15f971df4",
     "docs/hardware/cad-reference.md": "749308ab7429add990144dda8533df0b9ded55a8e3674dc8429de266b1b7b3b1",
     "docs/hardware/digital-verification.md": "292ce7a83f1124fb4f28d5dc4500d336c76a53f522feddd813443eedb08f34e2",
     "docs/hardware/electrical-reference.md": "e5c20ff9f2223392a71044b3f2e56a4f3ddf2abd9a3a3f5a45dd4c4cdb4c7e28",

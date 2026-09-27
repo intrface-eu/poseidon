@@ -53,7 +53,7 @@ export function renderPressBody(ctx: RenderContext): string {
   const f = t.facts;
   const row = (term: string, value: string) => `<div><dt>${esc(term)}</dt><dd>${value}</dd></div>`;
   const facts = [
-    row(f.project, 'Poseidon Trident'),
+    row(f.project, 'Poseidon'),
     row(f.company, `${esc(COMPANY.name)}, ${esc(t.companyType)}`),
     row(f.address, `${esc(COMPANY.street)}, ${esc(COMPANY.postcode)} ${esc(COMPANY.town)}, ${esc(COMPANY.country)}`),
     row(f.registration, `OIB ${esc(COMPANY.oib)}; MBS ${esc(COMPANY.mbs)}, ${esc(COMPANY.court)}`),
@@ -69,7 +69,7 @@ export function renderPressBody(ctx: RenderContext): string {
     ),
     row(f.repository, `<a href="${REPO_URL}" rel="noopener">${esc(REPO_URL.replace('https://', ''))}</a>`),
     row(f.website, `<a href="${SITE_URL}/">${esc(SITE_URL.replace('https://', ''))}</a>`),
-    row(f.contact, `${esc(PERSON.name)}, <a href="${mailto('Press: Poseidon Trident')}">${esc(CONTACT_EMAIL)}</a>`),
+    row(f.contact, `${esc(PERSON.name)}, <a href="${mailto('Press: Poseidon')}">${esc(CONTACT_EMAIL)}</a>`),
   ].join('');
 
   const questions = t.questions
@@ -99,7 +99,7 @@ export function renderPressBody(ctx: RenderContext): string {
   const head = pageHead(
     t.heading,
     `${esc(t.lead)}`,
-    `<p class="pagehead__action"><a class="btn btn--primary" href="${mailto('Press: Poseidon Trident')}">${icon('mail')}<span>${esc(
+    `<p class="pagehead__action"><a class="btn btn--primary" href="${mailto('Press: Poseidon')}">${icon('mail')}<span>${esc(
       CONTACT_EMAIL,
     )}</span></a></p>`,
   );

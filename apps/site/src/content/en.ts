@@ -21,37 +21,37 @@ export const en = {
   ogLocale: 'en_GB',
 
   meta: {
-    siteName: 'Poseidon Trident',
+    siteName: 'Poseidon',
     home: {
-      title: 'Poseidon Trident: an open listening unit for shellfish farms',
+      title: 'Poseidon: an open listening unit for shellfish farms',
       description:
-        'Wild seabream strip farmed mussels off their ropes. Poseidon Trident is an open-source listening unit that will record when they feed. We are looking for farms, scientists and funding.',
+        'Wild seabream strip farmed mussels off their ropes. Poseidon is an open-source listening unit that will record when they feed. We are looking for farms, scientists and funding.',
     },
     press: {
-      title: 'Press kit · Poseidon Trident',
+      title: 'Press kit · Poseidon',
       description:
-        'Boilerplate text, a fact sheet, answers to common questions, images and contact for journalists writing about Poseidon Trident.',
+        'Boilerplate text, a fact sheet, answers to common questions, images and contact for journalists writing about Poseidon.',
     },
     sources: {
-      title: 'Sources · Poseidon Trident',
-      description: 'Every external fact on the Poseidon Trident pages, with its source and the date we last opened it.',
+      title: 'Sources · Poseidon',
+      description: 'Every external fact on the Poseidon pages, with its source and the date we last opened it.',
     },
     evidence: {
-      title: 'In the repository · Poseidon Trident',
+      title: 'In the repository · Poseidon',
       description:
-        'Where each piece of Poseidon Trident software and design lives in the public repository, so you can read it and run it.',
+        'Where each piece of Poseidon software and design lives in the public repository, so you can read it and run it.',
     },
     notFound: {
-      title: 'Page not found · Poseidon Trident',
-      description: 'This address does not lead to a Poseidon Trident page. The project page, the press kit and the sources are linked from here.',
+      title: 'Page not found · Poseidon',
+      description: 'This address does not lead to a Poseidon page. The project page, the press kit and the sources are linked from here.',
     },
     ogImageAlt:
-      'Poseidon Trident: a design render of the solar surface unit on its pole at a mussel farm, above and below the waterline, with the headline about seabream.',
+      'Poseidon: a design render of the solar surface unit on its pole at a mussel farm, above and below the waterline, with the headline about seabream.',
   },
 
   nav: {
     label: 'Main',
-    home: 'Poseidon Trident home',
+    home: 'Poseidon home',
     problem: 'Problem',
     how: 'How it works',
     plan: 'Plan',
@@ -82,7 +82,7 @@ export const en = {
     /* Hero */
     'hero-headline': 'Wild seabream are stripping the Adriatic’s mussel farms.',
     'hero-lead':
-      'Poseidon Trident is an open-source listening unit for shellfish farms. It will record when the fish come to feed, so farmers and scientists have numbers before anyone tries to stop them.',
+      'Poseidon is an open-source listening unit for shellfish farms. It will record when the fish come to feed, so farmers and scientists have numbers before anyone tries to stop them.',
     'hero-want': 'We are looking for farms, scientists and funding to put the first units in the water in Lim bay, Istria.',
     'hero-caption':
       'Design model of the surface unit on its pole at a mussel longline, with the listening head below the waterline. Not yet built.',
@@ -204,7 +204,7 @@ export const en = {
 
     /* The ask */
     'ask-lead':
-      'Poseidon Trident needs farms, scientists, engineers and money. Each line below says what you get and what we ask of you.',
+      'Poseidon needs farms, scientists, engineers and money. Each line below says what you get and what we ask of you.',
     'ask-farms-get':
       'The first units on your lines at no cost to you, and a season’s record of when and where seabream feed on your stock.',
     'ask-farms-need':
@@ -240,7 +240,7 @@ export const en = {
 
     /* Team, company, open source */
     'team-company':
-      'Poseidon Trident is a project of INTRFACE j.d.o.o., a small engineering company in Vrsar, Istria, a few kilometres from Lim bay.',
+      'Poseidon is a project of INTRFACE j.d.o.o., a small engineering company in Vrsar, Istria, a few kilometres from Lim bay.',
     'team-alex':
       'Alex Bašić, founder and director, designed and built the software and the hardware designs, and maintains the project.',
     'team-grow': 'Scientific and engineering partners will join as the project moves into the water.',
@@ -255,11 +255,11 @@ export const en = {
 
     /* Press */
     'press-50':
-      'Poseidon Trident is an open-source listening unit for shellfish farms, built by INTRFACE j.d.o.o. in Vrsar, Croatia. It is designed to record when wild gilthead seabream feed on farmed mussels and oysters, starting in Lim bay, Istria. The software works on test data; the hardware is designed but not yet built.',
+      'Poseidon is an open-source listening unit for shellfish farms, built by INTRFACE j.d.o.o. in Vrsar, Croatia. It is designed to record when wild gilthead seabream feed on farmed mussels and oysters, starting in Lim bay, Istria. The software works on test data; the hardware is designed but not yet built.',
     'press-150a':
-      'Poseidon Trident is an open-source listening unit for shellfish farms, built by INTRFACE j.d.o.o., an engineering company in Vrsar, Istria. Wild gilthead seabream (orada) strip farmed mussels from their ropes; on Croatian farms, two-thirds of newly seeded ropes have been lost within a month. Nets foul and slow growth; fishing is banned in protected water such as Lim bay; underwater sound deterrents tried there worked for about two weeks.',
+      'Poseidon is an open-source listening unit for shellfish farms, built by INTRFACE j.d.o.o., an engineering company in Vrsar, Istria. Wild gilthead seabream (orada) strip farmed mussels from their ropes; on Croatian farms, two-thirds of newly seeded ropes have been lost within a month. Nets foul and slow growth; fishing is banned in protected water such as Lim bay; underwater sound deterrents tried there worked for about two weeks.',
     'press-150b':
-      'Poseidon Trident starts by measuring the problem. In the design, a solar surface unit on a pole or float carries a sealed head with a hydrophone and a camera beside the shellfish lines. It records sound and video, flags events for a person to review, and makes no sound itself. The software stack runs end to end on test data; the hardware exists as 3D designs. The next step is the first field recordings with farms and marine scientists. Code, hardware designs and documentation are open source.',
+      'Poseidon starts by measuring the problem. In the design, a solar surface unit on a pole or float carries a sealed head with a hydrophone and a camera beside the shellfish lines. It records sound and video, flags events for a person to review, and makes no sound itself. The software stack runs end to end on test data; the hardware exists as 3D designs. The next step is the first field recordings with farms and marine scientists. Code, hardware designs and documentation are open source.',
     'qa-stop':
       'No, and it is not meant to yet. It listens and records. Earlier attempts to scare seabream off with sound, including a 2019 trial in Lim bay, worked for a couple of weeks and then failed. We want to understand the problem before offering a fix.',
     'qa-nets':
@@ -362,7 +362,7 @@ export const en = {
       heading: 'Partner with us',
       getLabel: 'You get',
       needLabel: 'We need',
-      subjectPrefix: 'Poseidon Trident',
+      subjectPrefix: 'Poseidon',
       cards: [
         { id: 'farms', title: 'Shellfish farms', subject: 'Hosting a unit on our farm' },
         { id: 'biology', title: 'Marine biologists and fish-behaviour scientists', subject: 'Marine biology partner' },

@@ -1,4 +1,4 @@
-Poseidon Trident
+Poseidon
 Copyright (C) 2026 INTRFACE j.d.o.o.
 
 First-party code in apps/, libs/, contracts/, firmware/, scripts/, tests/ and ops/ is licensed under AGPL-3.0-or-later (LICENSES/AGPL-3.0-or-later.txt; also LICENSE at the repository root).
@@ -7,4 +7,4 @@ Documentation, research and datasets in docs/, research/, datasets/ and first-pa
 
 Third-party material retains its own copyright and license notices where indicated. Vendor CAD files and datasheets are not redistributed here; the hardware scripts fetch them from their respective suppliers. Access and use remain subject to those suppliers' terms.
 
-These licenses do not grant rights to the "Poseidon Trident" or "INTRFACE" trademarks.
+These licenses do not grant rights to the "Poseidon" or "INTRFACE" trademarks.

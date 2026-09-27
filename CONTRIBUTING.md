@@ -1,8 +1,8 @@
-# Contributing to Poseidon Trident
+# Contributing to Poseidon
 
 We welcome work on passive acoustic monitoring, marine biology and bioacoustics, embedded and acoustic engineering, reproducible validation, and documentation. Pilot farms, research partners and funding collaborators can find the project at https://poseidon.intrface.eu or contact basic@intrface.eu. Maintainer: Alex Basic, director of INTRFACE j.d.o.o.
 
-Open an issue at https://github.com/intrface-eu/poseidon-trident/issues before a large change, especially one involving hardware, emissions, data collection or scientific claims. Do not upload recordings, private data, credentials, or vendor CAD/datasheets to issues or pull requests. Send security reports privately as described in [SECURITY.md](SECURITY.md).
+Open an issue at https://github.com/intrface-eu/poseidon/issues before a large change, especially one involving hardware, emissions, data collection or scientific claims. Do not upload recordings, private data, credentials, or vendor CAD/datasheets to issues or pull requests. Send security reports privately as described in [SECURITY.md](SECURITY.md).
 
 ## Setup and checks
 

@@ -73,6 +73,23 @@ class InventoryTests(unittest.TestCase):
         self.assertNotIn("serialNumber", bom)
         self.assertNotIn("timestamp", bom["metadata"])
 
+    def test_root_manifest_refresh_keeps_frozen_metadata_and_rejects_other_drift(self):
+        self.write_metadata()
+        root_manifest = self.root / "pyproject.toml"
+        root_manifest.write_text('[project]\nname = "workspace"\nversion = "0.0.0"\ndescription = "before"\n')
+        self.assertEqual(self.cli("--refresh-metadata")[0], 0)
+        original = json.loads((self.out / "metadata-snapshot.json").read_text())
+        root_manifest.write_text(root_manifest.read_text().replace("before", "after"))
+        self.assertEqual(self.cli("--check")[0], 1)
+        code, _, err = self.cli("--refresh-metadata", "--only", "pyproject.toml")
+        self.assertEqual(code, 0, err)
+        refreshed = json.loads((self.out / "metadata-snapshot.json").read_text())
+        self.assertEqual({k: v for k, v in refreshed.items() if k != "manifests"},
+                         {k: v for k, v in original.items() if k != "manifests"})
+        self.assertEqual(self.cli("--check")[0], 0)
+        self.lock.write_bytes(self.lock.read_bytes() + b"\n")
+        self.assertEqual(self.cli("--refresh-metadata", "--only", "pyproject.toml")[0], 1)
+
     def test_whitespace_lock_change_fails_without_regeneration(self):
         self.assertEqual(self.cli("--refresh-metadata")[0], 0)
         self.lock.write_bytes(self.lock.read_bytes() + b"\n")

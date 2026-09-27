@@ -239,13 +239,13 @@ async function assets(): Promise<void> {
   const og = await browser.newContext({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 1 });
   const page = await og.newPage();
   const render = await Bun.file(join(RENDERS, 'og-image.png')).arrayBuffer();
-  const logo = await Bun.file(join(PUBLIC, 'press', 'poseidon-trident-logo.svg')).text();
+  const logo = await Bun.file(join(PUBLIC, 'press', 'poseidon-logo.svg')).text();
   await page.goto(`${base}/`, { waitUntil: 'load' });
   await page.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>
     @font-face { font-family: 'Google Sans Flex'; src: url('${base}/fonts/google-sans-flex-latin.woff2') format('woff2'); font-weight: 100 1000; }
     html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
     body { background: url(data:image/png;base64,${Buffer.from(render).toString('base64')}) 0 0 / 1200px 630px; font-family: 'Google Sans Flex', sans-serif; color: #0f1729; }
-    .logo { position: absolute; left: 56px; top: 44px; width: 250px; height: auto; }
+    .logo { position: absolute; left: 56px; top: 44px; width: auto; height: 47.6px; }
     h1 { position: absolute; left: 56px; top: 104px; width: 440px; margin: 0; font-size: 36px; line-height: 1.08; font-weight: 600; letter-spacing: -0.035em; font-variation-settings: 'opsz' 48; }
   </style></head><body>${logo.replace('<svg ', '<svg class="logo" ')}<h1>${en.claims['hero-headline']}</h1></body></html>`);
   await page.evaluate(() => document.fonts.ready);

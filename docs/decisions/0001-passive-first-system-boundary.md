@@ -3,7 +3,7 @@
 - Status: Accepted
 - Date: 2026-09-07
 - Decision owners: product owner and safety owner
-- Roadmap: [Poseidon Trident production roadmap](../production-roadmap.md)
+- Roadmap: [Poseidon production roadmap](../production-roadmap.md)
 
 ## Context
 

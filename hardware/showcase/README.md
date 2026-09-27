@@ -1,6 +1,6 @@
 # Showcase scenes (v4)
 
-3D scenes and press renders for the Poseidon Trident public page. They are design renders of a candidate that has not been built or tested.
+3D scenes and press renders for the Poseidon public page. They are design renders of a candidate that has not been built or tested.
 
 ## Files
 

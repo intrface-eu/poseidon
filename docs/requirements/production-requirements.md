@@ -1,4 +1,4 @@
-# Poseidon Trident production requirements and verification matrix
+# Poseidon production requirements and verification matrix
 
 Status: active baseline, 2026-09-07
 

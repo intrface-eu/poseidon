@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it using these metadata."
-title: "Poseidon Trident"
+title: "Poseidon"
 authors:
   - name: "INTRFACE j.d.o.o."
   - family-names: "Basic"
     given-names: "Alex"
 license: "AGPL-3.0-or-later"
-repository-code: "https://github.com/intrface-eu/poseidon-trident"
+repository-code: "https://github.com/intrface-eu/poseidon"

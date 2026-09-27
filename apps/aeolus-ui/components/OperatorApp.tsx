@@ -342,7 +342,7 @@ export function OperatorApp() {
           <span className="brand-mark" aria-hidden="true">A</span>
           <div>
             <strong>AEOLUS</strong>
-            <span>Poseidon Trident · local evidence monitor</span>
+            <span>Poseidon · local evidence monitor</span>
           </div>
         </div>
         <div className="mode-boundary" aria-label="Operating boundary">

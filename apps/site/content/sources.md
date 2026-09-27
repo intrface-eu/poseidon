@@ -1,6 +1,6 @@
 # Sources
 
-Every external fact on the Poseidon Trident pages, with the source it comes from and the date we last opened it. Where we read only an abstract or a third-party summary, the entry says so.
+Every external fact on the Poseidon pages, with the source it comes from and the date we last opened it. Where we read only an abstract or a third-party summary, the entry says so.
 
 ## The problem, the site and prior work
 

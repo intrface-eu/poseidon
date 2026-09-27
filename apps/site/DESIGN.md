@@ -1,5 +1,5 @@
 ---
-name: Poseidon Trident
+name: Poseidon
 description: The project site for an open listening unit for shellfish farms, read from the surface down.
 colors:
   paper: "#f5f1eb"
@@ -148,7 +148,7 @@ components:
     textColor: "{colors.on-sea-muted}"
 ---
 
-# Design System: Poseidon Trident
+# Design System: Poseidon
 
 ## Overview
 
@@ -249,7 +249,7 @@ Flat by default. Depth comes from the ground changing (paper, raised, sea, deep)
 
 Round where the hand touches, square where the eye reads. Buttons, nav links, the skip link and the stagebar track are full pills (999px). Held containers (offer cards, the limits box, boilerplate, asset thumbs) take 1rem; the 3D head stage takes 1.5rem. Small data marks (bar ends, note ID chips) round at 0.3rem, only on the free end of a bar. Sections, ledgers and figures are square and bounded only by 1px hairlines; the pull line and phase dividers use a stronger rule (2px ink, line-strong). The focus ring rounds at 4px.
 
-The mark is a trident crossing a waterline: tines and shaft in currentColor, the water stroke in teal and the shaft below it in sea (both sea-accent in the footer).
+The mark is a three-tined spear crossing a waterline: tines and shaft in currentColor, the water stroke in teal and the shaft below it in sea (both sea-accent in the footer).
 
 ## Components
 
@@ -268,7 +268,7 @@ Pills set in 600 weight at 1rem, 3rem tall, with an optional 1.125em outline ico
 - **Boilerplate:** the same shell with a copy button; a status line in teal after copying.
 
 ### Navigation
-Wordmark left (mark plus lowercase "poseidon trident", 560, -0.04em), four text links in ink-muted at 500 weight, compact primary button right. Current page is ink with an underline at 0.35em offset. Footer repeats the wordmark on sea-deep with the INTRFACE star mark inline in the byline.
+Wordmark left (mark plus lowercase "poseidon", 560, -0.04em), four text links in ink-muted at 500 weight, compact primary button right. Current page is ink with an underline at 0.35em offset. Footer repeats the wordmark on sea-deep with the INTRFACE star mark inline in the byline.
 
 ### Ledgers
 Hairline-ruled rows carry most detail: fixes (term, then claims), ticks (a 0.7rem teal dash per item), facts, Q&A, sources (ID, text and links, checked date) and evidence (claim, repository paths). A targeted source row gets a faint teal gradient; a targeted note gets a teal chip.

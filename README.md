@@ -1,6 +1,6 @@
-# Poseidon Trident
+# Poseidon
 
-Poseidon Trident investigates fish predation on shellfish farms in Limski kanal, Istria. The project starts with passive acoustic monitoring to gather evidence and assess what can be detected; whether acoustic deterrence can be safe or effective is a research question, not a product feature.
+Poseidon investigates fish predation on shellfish farms in Limski kanal, Istria. The project starts with passive acoustic monitoring to gather evidence and assess what can be detected; whether acoustic deterrence can be safe or effective is a research question, not a product feature.
 
 Software has been tested with synthetic data, and digital hardware designs exist. No physical hardware has been built or deployed. We are looking for pilot shellfish farms, marine biology and bioacoustics partners, acoustic and embedded engineers, and funding collaborators. See [the public project page](https://poseidon.intrface.eu), [contribution guide](CONTRIBUTING.md), [licenses and ownership notice](NOTICE), or email basic@intrface.eu.
 

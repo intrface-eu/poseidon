@@ -1,4 +1,4 @@
-# Poseidon Trident: current-state audit and production completion plan
+# Poseidon: current-state audit and production completion plan
 
 > Audit sections are a historical snapshot of repository evidence on 2026-09-07. The roadmap and gates remain the approved production plan; current status must be read from the repository and requirements register.
 >
@@ -38,7 +38,7 @@ Audit baseline: this repository, branch `dev`, HEAD `da5b22c`, last committed ac
 | F11 | The PRD calls LoRaWAN a mesh and does not establish radio placement. | Use an above-water LoRaWAN star-of-stars network with a real gateway; wire submerged instruments to surface equipment. Do not assume LoRa/4G works underwater. |
 | F12 | Production work was excluded from the MVP. | Add mechanical engineering, ecological assessment, conformity work, secure lifecycle support, manufacturing validation, and maintenance evidence to the release path. |
 
-Key historical repository references: PRD `:5-28` (scope), `:32-37` (pilot targets), `:173-209` (modules), `:221-242` (security/safety); `hardware-components-cost-analysis.md:10-39,86-108` (cost claims); `POSEIDON_TRIDENT_FUNDING_BRIEF.md:271-304` (permissions and unfinished budget). The unrelated demonstration tasks cited in the original audit were removed before publication.
+Key historical repository references: PRD `:5-28` (scope), `:32-37` (pilot targets), `:173-209` (modules), `:221-242` (security/safety); `hardware-components-cost-analysis.md:10-39,86-108` (cost claims); `POSEIDON_FUNDING_BRIEF.md:271-304` (permissions and unfinished budget). The unrelated demonstration tasks cited in the original audit were removed before publication.
 
 ## 2. Recommended product boundary and architecture
 
@@ -159,7 +159,7 @@ These are future outputs, not files created during this audit.
 |---|---|---|
 | A1 | `README.md`; root PRD; `.taskmaster/docs/prd.txt` | Honest status, one canonical specification, setup once runnable, approved staged scope and measurable requirements. |
 | A2 | `.taskmaster/tasks/tasks.json`; generated `task_*.txt`; `.taskmaster/state.json` | Replace invalid dependency assumptions with one validated execution DAG, preserve links to old tasks, regenerate derived files, and record evidence-based status. Address `.taskmaster/config.json` only after confirming its intended configuration. |
-| A3 | `hardware-components-cost-analysis.md`; `POSEIDON_TRIDENT_FUNDING_BRIEF.md` | Correct arithmetic and unsupported claims; mark historical estimates; replace with quoted cost/risk/schedule figures as evidence arrives. |
+| A3 | `hardware-components-cost-analysis.md`; `POSEIDON_FUNDING_BRIEF.md` | Correct arithmetic and unsupported claims; mark historical estimates; replace with quoted cost/risk/schedule figures as evidence arrives. |
 
 New output families:
 

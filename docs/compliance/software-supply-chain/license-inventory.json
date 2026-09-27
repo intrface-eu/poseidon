@@ -11643,9 +11643,9 @@
       },
       {
         "adjacent_lock": null,
-        "bytes": 331,
+        "bytes": 323,
         "path": "pyproject.toml",
-        "sha256": "25da27599724bab7e92ffe1f89fe2c3513e6b4c817b10c7ee94b28ec1763ee05"
+        "sha256": "f5cce35734aa4ba0f685d6aef60252f1df29c54e6e5b4829a3769d1fdf216708"
       }
     ],
     "software_directories": [
@@ -11801,5 +11801,5 @@
       "sha256": "0bda7b2842192079cf0cbcacee4b70cde896421df8c487f28ee8df347b8b7baa"
     }
   ],
-  "metadata_snapshot_sha256": "e164907acda4c162dace2d2b95292f7994610f5be6b08e229469b32ef9efe561"
+  "metadata_snapshot_sha256": "dc8220170e0205143ae7299529e23b1a6423ea59f8edb5531e64bf05da0db683"
 }

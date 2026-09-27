@@ -1,16 +1,16 @@
-# Poseidon–Trident: Funding & Stakeholder Brief (v0.1, historical)
+# Poseidon: Funding & Stakeholder Brief (v0.1, historical)
 
 > **Historical and superseded:** This 2025-11-07 draft does not describe current readiness and is not approved for external use. It is not evidence of implementation, efficacy, safety, permission, conformity, funding need, licensing, patent rights, or commercial authorization. Current work is governed by the [production roadmap](docs/production-roadmap.md), [requirements register](docs/requirements/production-requirements.md), and [passive-first ADR](docs/decisions/0001-passive-first-system-boundary.md).
 
 Owner: CEII (Alex) · Maintainer: Interface / Intrface Engineering  
 Date: 2025‑11‑07  
 Superseded: 2026-09-07
-Repository: poseidon‑trident
+Repository: poseidon
 
 ---
 
 ## 1) Historical Executive Summary
-Poseidon–Trident was proposed as a modular marine monitoring and acoustic-intervention platform. The physical hub, vision, projector, LoRaWAN nodes, cloud, update path, safety controls, and field deployment described here were not implemented or verified when this brief was superseded. Deterrence and sea-flora effects were hypotheses, not supported outcomes. The current first slice is offline passive replay and later permission-bound passive collection; it contains no acoustic output path.
+Poseidon was proposed as a modular marine monitoring and acoustic-intervention platform. The physical hub, vision, projector, LoRaWAN nodes, cloud, update path, safety controls, and field deployment described here were not implemented or verified when this brief was superseded. Deterrence and sea-flora effects were hypotheses, not supported outcomes. The current first slice is offline passive replay and later permission-bound passive collection; it contains no acoustic output path.
 
 Historical impact goals, all unverified:
 - Test whether measured evidence can support a non-lethal response to predation and stock loss.
@@ -89,7 +89,7 @@ The following responsibilities were proposed; they did not describe implemented 
 Monorepo Strategy and Layout:
 
 ```
-poseidon-trident/
+poseidon/
 ├─ apps/
 │  ├─ trident/      # Orchestrator (Python)
 │  ├─ nereid/       # Vision (Python; TFLite/EdgeTPU, TensorRT)
@@ -188,15 +188,15 @@ curl -fsSL https://get.docker.com | sh
 sudo usermod -aG docker $USER
 # enable camera/I2C/PWM manually or via raspi-config
 
-# Fetch compose (replace with your repo remote, e.g., poseidon-trident)
+# Fetch compose (replace with your repo remote, e.g., poseidon)
 # git clone <your-repo-url>
-# cd poseidon-trident/ops/compose
+# cd poseidon/ops/compose
 # sudo docker compose -f hub.dev.yml up -d
 ```
 
 Cloud (dev example):
 ```
-# cd poseidon-trident/ops/compose && docker compose -f cloud.dev.yml up -d
+# cd poseidon/ops/compose && docker compose -f cloud.dev.yml up -d
 ```
 
 Historical OTA options:

@@ -1,4 +1,4 @@
-# Poseidon Trident: Historical Hardware Cost Estimate
+# Poseidon: Historical Hardware Cost Estimate
 
 > **Historical and superseded:** This rough 2025 estimate is not a procurement BOM, quote, component selection, compatibility review, budget approval, or production-readiness record. It excludes major system and lifecycle costs. Do not buy from it. Current requirements and spending gates are in the [production roadmap](docs/production-roadmap.md) and [requirements register](docs/requirements/production-requirements.md).
 

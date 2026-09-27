@@ -1,6 +1,6 @@
-# Poseidon Trident passive-v3 by Intrface
+# Poseidon passive-v3 by Intrface
 
-Intrface is the company; Poseidon Trident is the project/product. Stable `INTRFACE_PASSIVE_V3` CAD IDs are identifiers, not a product-name claim.
+Intrface is the company; Poseidon is the project/product. Stable `INTRFACE_PASSIVE_V3` CAD IDs are identifiers, not a product-name claim.
 
 Supplier CAD and datasheet redistribution rights remain unverified. All exported solids are original dimension-based fit proxies, not copies of supplier BReps or manufacturing models. Vendor sources are referenced by part number, URL, retrieval date and digest; fetch them into the ignored private cache only for optional comparison.
 

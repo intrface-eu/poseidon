@@ -55,7 +55,7 @@ function jsonLd(ctx: RenderContext): string {
     parentOrganization: { '@id': org['@id'] },
     email: CONTACT_EMAIL,
     sameAs: [REPO_URL],
-    logo: `${SITE_URL}/press/poseidon-trident-logo.svg`,
+    logo: `${SITE_URL}/press/poseidon-logo.svg`,
     image: `${SITE_URL}${OG_IMAGE.path}`,
     location: { '@type': 'Place', name: 'Limski kanal, Istria, Croatia' },
   };
@@ -77,7 +77,7 @@ function header(ctx: RenderContext): string {
     `<li><a href="${href}"${page && page === current ? ' aria-current="page"' : ''}>${esc(label)}</a></li>`;
   return `<header class="site-header">
   <div class="site-header__inner">
-    <a class="wordmark" href="/" aria-label="${esc(nav.home)}">${mark('wordmark__mark')}<span class="wordmark__name" aria-hidden="true">poseidon trident</span></a>
+    <a class="wordmark" href="/" aria-label="${esc(nav.home)}">${mark('wordmark__mark')}<span class="wordmark__name" aria-hidden="true">poseidon</span></a>
     <nav class="site-nav" aria-label="${esc(nav.label)}">
       <ul>
         ${link('/#problem', nav.problem)}
@@ -97,7 +97,7 @@ function footer(ctx: RenderContext): string {
   return `<footer class="site-footer">
   <div class="shell site-footer__inner">
     <p class="site-footer__maker">
-      <a class="wordmark wordmark--footer" href="/" aria-label="${esc(ctx.copy.nav.home)}">${mark('wordmark__mark')}<span class="wordmark__name" aria-hidden="true">poseidon trident</span></a>
+      <a class="wordmark wordmark--footer" href="/" aria-label="${esc(ctx.copy.nav.home)}">${mark('wordmark__mark')}<span class="wordmark__name" aria-hidden="true">poseidon</span></a>
       <span class="site-footer__by">${esc(f.project)} <a class="intrface-link" href="${COMPANY.url}" rel="noopener">${intrfaceMark()}<span>intrface</span></a>, ${esc(COMPANY.town)}, ${esc(COMPANY.country)}</span>
     </p>
     <ul class="site-footer__links">

@@ -278,7 +278,7 @@ export function contactBlock(ctx: RenderContext, headingLevel: 'h2' | 'h3' = 'h2
     <div class="contact__main">
       <${headingLevel} class="h2" id="contact-title">${esc(t.heading)}</${headingLevel}>
       <p class="contact__lead">${esc(t.lead)}</p>
-      <p class="contact__email"><a href="${mailto('Poseidon Trident')}">${esc(CONTACT_EMAIL)}</a></p>
+      <p class="contact__email"><a href="${mailto('Poseidon')}">${esc(CONTACT_EMAIL)}</a></p>
       <p class="contact__person">${esc(PERSON.name)}, ${esc(t.role)}</p>
     </div>
     <div class="contact__side">

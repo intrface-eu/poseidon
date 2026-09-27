@@ -4,19 +4,19 @@ For interviews, images and data, write to Alex Basic at [basic@intrface.eu](mail
 
 ## Boilerplate, 50 words
 
-Poseidon Trident is an open-source listening unit for shellfish farms, built by INTRFACE j.d.o.o. in Vrsar, Croatia. It is designed to record when wild gilthead seabream feed on farmed mussels and oysters, starting in Lim bay, Istria. The software works on test data; the hardware is designed but not yet built.
+Poseidon is an open-source listening unit for shellfish farms, built by INTRFACE j.d.o.o. in Vrsar, Croatia. It is designed to record when wild gilthead seabream feed on farmed mussels and oysters, starting in Lim bay, Istria. The software works on test data; the hardware is designed but not yet built.
 
 ## Boilerplate, 150 words
 
-Poseidon Trident is an open-source listening unit for shellfish farms, built by INTRFACE j.d.o.o., an engineering company in Vrsar, Istria. Wild gilthead seabream (orada) strip farmed mussels from their ropes; on Croatian farms, two-thirds of newly seeded ropes have been lost within a month. Nets foul and slow growth; fishing is banned in protected water such as Lim bay; underwater sound deterrents tried there worked for about two weeks.
+Poseidon is an open-source listening unit for shellfish farms, built by INTRFACE j.d.o.o., an engineering company in Vrsar, Istria. Wild gilthead seabream (orada) strip farmed mussels from their ropes; on Croatian farms, two-thirds of newly seeded ropes have been lost within a month. Nets foul and slow growth; fishing is banned in protected water such as Lim bay; underwater sound deterrents tried there worked for about two weeks.
 
-Poseidon Trident starts by measuring the problem. In the design, a solar surface unit on a pole or float carries a sealed head with a hydrophone and a camera beside the shellfish lines. It records sound and video, flags events for a person to review, and makes no sound itself. The software stack runs end to end on test data; the hardware exists as 3D designs. The next step is the first field recordings with farms and marine scientists. Code, hardware designs and documentation are open source.
+Poseidon starts by measuring the problem. In the design, a solar surface unit on a pole or float carries a sealed head with a hydrophone and a camera beside the shellfish lines. It records sound and video, flags events for a person to review, and makes no sound itself. The software stack runs end to end on test data; the hardware exists as 3D designs. The next step is the first field recordings with farms and marine scientists. Code, hardware designs and documentation are open source.
 
 ## Fact sheet
 
 | | |
 |---|---|
-| Project | Poseidon Trident |
+| Project | Poseidon |
 | Company | INTRFACE j.d.o.o., simple limited liability company |
 | Address | Dalmatinska 34, 52450 Vrsar, Croatia |
 | Registration | OIB 34363240459; MBS 130172611, Commercial Court in Pazin |
@@ -28,7 +28,7 @@ Poseidon Trident starts by measuring the problem. In the design, a solar surface
 | Status | Software works end to end on computer-generated test recordings. Hardware designed in 3D, not built. No field recordings yet. No sound output. |
 | Next step | First field recordings on Lim bay farms, with a marine biology partner |
 | Licences | Code: AGPL-3.0-or-later. Hardware: CERN-OHL-S-2.0. Documentation: CC-BY-4.0 |
-| Repository | [github.com/intrface-eu/poseidon-trident](https://github.com/intrface-eu/poseidon-trident) |
+| Repository | [github.com/intrface-eu/poseidon](https://github.com/intrface-eu/poseidon) |
 | Website | [poseidon.intrface.eu](https://poseidon.intrface.eu) |
 | Contact | Alex Basic, [basic@intrface.eu](mailto:basic@intrface.eu) |
 
@@ -69,6 +69,6 @@ The kit will contain the following. Renders come first; photographs follow once 
 - Screenshot: the review app, one event with its waveform and video.
 - Map: Lim bay and Vrsar.
 - Portrait: Alex Basic.
-- Logo: Poseidon Trident and INTRFACE, light and dark.
+- Logo: Poseidon and INTRFACE, light and dark.
 
 Every render will be captioned as a design render, not a photograph. Photographs of farms and underwater scenes will be used only with the farm's and the photographer's permission.

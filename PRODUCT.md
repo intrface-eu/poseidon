@@ -18,7 +18,7 @@ The product is being built by a solo operator in stages for an EU/EEA-first mari
 
 ## Product Purpose
 
-Poseidon Trident is a staged marine monitoring platform. Its first software slice supports local, passive review of declared WAV recordings and clearly marked synthetic fixtures. It preserves provenance, exposes candidate acoustic events, and records operator observations without claiming species identification, confirmed feeding, deterrence, stock-loss prevention, calibrated underwater sound pressure, or field readiness.
+Poseidon is a staged marine monitoring platform. Its first software slice supports local, passive review of declared WAV recordings and clearly marked synthetic fixtures. It preserves provenance, exposes candidate acoustic events, and records operator observations without claiming species identification, confirmed feeding, deterrence, stock-loss prevention, calibrated underwater sound pressure, or field readiness.
 
 Success for this tranche means one operator can authenticate to a local workspace, submit valid evidence, follow processing to a terminal state, find and inspect events, view the source-derived normalized waveform, and save a revision-checked review.
 
@@ -49,7 +49,7 @@ The operator workbench keeps every event tied to its recording, source provenanc
 
 ## Brand Commitments
 
-Use the Poseidon Trident and AEOLUS names. The voice is precise, restrained, and explicit about what the evidence does and does not establish. Do not turn the marine subject into decorative ocean imagery or imply active protection capability.
+Use the Poseidon and AEOLUS names. The voice is precise, restrained, and explicit about what the evidence does and does not establish. Do not turn the marine subject into decorative ocean imagery or imply active protection capability.
 
 ## Evidence on Hand
 

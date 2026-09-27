@@ -1,7 +1,7 @@
 [project]
 name = "poseidon-trident-workspace"
 version = "0.0.0"
-description = "Source-root workspace metadata for Poseidon Trident"
+description = "Source-root workspace metadata for Poseidon"
 requires-python = ">=3.11"
 dependencies = []
 

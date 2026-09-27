@@ -8,7 +8,7 @@ export const SITE_URL = 'https://poseidon.intrface.eu';
 
 export const CONTACT_EMAIL = 'basic@intrface.eu';
 
-export const REPO_URL = 'https://github.com/intrface-eu/poseidon-trident';
+export const REPO_URL = 'https://github.com/intrface-eu/poseidon';
 
 /**
  * The branch repository links point at. The public default branch is `main`;
@@ -82,18 +82,18 @@ export interface PressAsset {
 const RENDER_DIR = 'hardware/showcase/renders-v4';
 
 export const PRESS_ASSETS: PressAsset[] = [
-  { id: 'hero', path: '/press/poseidon-trident-hero.png', preview: '/press/poseidon-trident-hero.webp', render: true, source: `${RENDER_DIR}/hero-16x9.png` },
-  { id: 'farm', path: '/press/poseidon-trident-farm.png', preview: '/press/poseidon-trident-farm.webp', render: true, source: `${RENDER_DIR}/farm-wide.png` },
-  { id: 'unit', path: '/press/poseidon-trident-unit.png', preview: '/press/poseidon-trident-unit.webp', render: true, source: `${RENDER_DIR}/unit-closeup.png` },
+  { id: 'hero', path: '/press/poseidon-hero.png', preview: '/press/poseidon-hero.webp', render: true, source: `${RENDER_DIR}/hero-16x9.png` },
+  { id: 'farm', path: '/press/poseidon-farm.png', preview: '/press/poseidon-farm.webp', render: true, source: `${RENDER_DIR}/farm-wide.png` },
+  { id: 'unit', path: '/press/poseidon-unit.png', preview: '/press/poseidon-unit.webp', render: true, source: `${RENDER_DIR}/unit-closeup.png` },
   {
     id: 'head-exploded',
-    path: '/press/poseidon-trident-head-exploded.png',
-    preview: '/press/poseidon-trident-head-exploded.webp',
+    path: '/press/poseidon-head-exploded.png',
+    preview: '/press/poseidon-head-exploded.webp',
     render: true,
     source: `${RENDER_DIR}/head-exploded.png`,
   },
-  { id: 'logo-light', path: '/press/poseidon-trident-logo.svg', source: 'apps/site/public/press/poseidon-trident-logo.svg' },
-  { id: 'logo-dark', path: '/press/poseidon-trident-logo-dark.svg', source: 'apps/site/public/press/poseidon-trident-logo-dark.svg' },
+  { id: 'logo-light', path: '/press/poseidon-logo.svg', source: 'apps/site/public/press/poseidon-logo.svg' },
+  { id: 'logo-dark', path: '/press/poseidon-logo-dark.svg', source: 'apps/site/public/press/poseidon-logo-dark.svg' },
 ];
 
 /** Licence line for the renders, in the form the credit asks for. */

@@ -342,6 +342,26 @@ def refresh_selected(root: Path, output: Path, inputs: list[dict], manifests: li
             "environments": sorted([env for env in previous["environments"] if not env["path"].startswith(prefix)] + captured["environments"], key=lambda env: env["path"]),
             "components": records}
 
+def refresh_root_manifest(output: Path, inputs: list[dict], manifests: list[dict], components: list[dict]) -> dict:
+    """Rebind only root workspace metadata; installed declarations remain frozen."""
+    previous = json.loads(read_bound(output / "metadata-snapshot.json"))
+    inventory = json.loads(read_bound(output / "license-inventory.json"))
+    if (previous.get("format") != "poseidon.license-metadata.v1"
+            or inventory.get("metadata_snapshot_sha256") != digest(encoded(previous))
+            or previous.get("lock_inputs") != inputs
+            or inventory.get("lock_inputs") != inputs
+            or {r["bom-ref"] for r in previous["components"]} != {r["bom-ref"] for r in components}
+            or {r["bom-ref"] for r in inventory["components"]} != {r["bom-ref"] for r in components}):
+        raise ValueError("existing inventory, inputs and metadata snapshot disagree")
+    old = {item["path"]: item for item in previous["manifests"]}
+    new = {item["path"]: item for item in manifests}
+    if ("pyproject.toml" not in old or "pyproject.toml" not in new
+            or old.keys() != new.keys()
+            or any(old[path] != new[path] for path in old if path != "pyproject.toml")):
+        raise ValueError("manifests outside pyproject.toml changed")
+    return {**previous, "manifests": manifests}
+
+
 
 def walk_node_metadata(env: Path):
     if not env.is_dir() or env.is_symlink():
@@ -504,14 +524,14 @@ def main(argv=None) -> int:
     mode.add_argument("--check", action="store_true", help="Offline byte check of locks, frozen metadata and outputs")
     mode.add_argument("--refresh-metadata", action="store_true", help="Replace reviewed metadata snapshot from currently installed local environments, then regenerate")
     parser.add_argument("--check-local-metadata", action="store_true", help="Also require every captured metadata file still present with the same hash")
-    parser.add_argument("--only", metavar="APP_DIR", help="With --refresh-metadata, replace only metadata under this app directory; preserve reviewed metadata elsewhere")
+    parser.add_argument("--only", metavar="APP_DIR|pyproject.toml", help="With --refresh-metadata, replace metadata under one direct apps/ directory or rebind only the root pyproject.toml manifest")
     parser.add_argument("--metadata-source", action="append", default=[], metavar="ID=PATH", help="Explicit read-only firmware Python env, or firmware-platformio core; no host discovery")
     args = parser.parse_args(argv)
     root = args.root.resolve()
     if args.only and (not args.refresh_metadata or args.check_local_metadata or args.metadata_source):
         parser.error("--only requires --refresh-metadata without --check-local-metadata or --metadata-source")
-    if args.only and (Path(args.only).is_absolute() or Path(args.only).as_posix() != args.only or not re.fullmatch(r"apps/[A-Za-z0-9_-]+", args.only)):
-        parser.error("--only must name a direct apps/ directory")
+    if args.only and args.only != "pyproject.toml" and (Path(args.only).is_absolute() or Path(args.only).as_posix() != args.only or not re.fullmatch(r"apps/[A-Za-z0-9_-]+", args.only)):
+        parser.error("--only must name a direct apps/ directory or pyproject.toml")
     output = root / OUTPUT
     try:
         external = {}
@@ -525,7 +545,9 @@ def main(argv=None) -> int:
         inputs, manifests = discover(root)
         if args.refresh_metadata:
             components = locked_components(root, inputs)
-            snapshot = refresh_selected(root, output, inputs, manifests, components, args.only) if args.only else capture_metadata(root, inputs, manifests, components, external)
+            snapshot = (refresh_root_manifest(output, inputs, manifests, components) if args.only == "pyproject.toml"
+                        else refresh_selected(root, output, inputs, manifests, components, args.only) if args.only
+                        else capture_metadata(root, inputs, manifests, components, external))
         else:
             snapshot = json.loads(read_bound(output / "metadata-snapshot.json"))
         if args.check_local_metadata:

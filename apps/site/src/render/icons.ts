@@ -22,7 +22,7 @@ export function icon(name: IconName, className = 'icon'): string {
 }
 
 /**
- * The Poseidon Trident mark: a trident crossing a waterline. The part of the
+ * The Poseidon mark: a three-tined spear crossing a waterline. The part of the
  * shaft below the line takes the sea colour (`--mark-deep`).
  */
 export const MARK_PATHS = {

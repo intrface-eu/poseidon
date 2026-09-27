@@ -6,7 +6,7 @@ Record: `TF-DESK-1`, dated **2026-09-08**. Custodian role: manufacturer/complian
 
 | Field | Actual record |
 |---|---|
-| Product/project | Poseidon Trident; passive-first marine evidence monitor, proposed later research variants |
+| Product/project | Poseidon; passive-first marine evidence monitor, proposed later research variants |
 | Accepted software evidence | Local source-bound WAV import, candidate processing, waveform/video evidence review, human observations, local authentication and restart recovery, described in [tranche 002](../validation/development-tranche-002.md), dated 2026-09-07. Its reported tests were **not rerun by this compliance work**. |
 | Physical reference | [reference-v1.json](../../hardware/interfaces/reference-v1.json), schema `poseidon.hardware.reference.v1`, configuration `reference-v1`, revision `HW-REF-1.1`, published 2026-09-08; explicitly provisional, not for fabrication/purchase/field release |
 | Named reference parts | Raspberry Pi 4 Model B 4GB; SC0194 is a hardware-lead ordering reference, not verified by the cited Pi specifications page. ESP32-DevKitC-32E; RAK3272S/RAK3172 EU868 candidate with regional ordering/antenna still open. HW-REF-1.1 names Victron BAT512050610, 12.8 V 50 Ah battery and SPM040401200, 40 W panel as reference candidates; external BMS/integrated power safety and current panel availability remain unresolved. Candidate identity is not procurement, regional conformity, compatibility or qualification evidence. |
@@ -77,7 +77,7 @@ Record `LABEL-01` is **not artwork for use on a device**. It contains no CE mark
 
 | Field | Current content / evidence required |
 |---|---|
-| Product identifier | Working name Poseidon Trident; marketed model/type/serial or batch format **TBD**. Internal `HW-REF-1.1` is not a released marketed model. |
+| Product identifier | Working name Poseidon; marketed model/type/serial or batch format **TBD**. Internal `HW-REF-1.1` is not a released marketed model. |
 | Responsible actor | Legal manufacturer name/trademark, postal contact and any other applicable electronic contact; importer/representative details if applicable **TBD**. Do not populate with a guessed company. |
 | Electrical/install rating | Exact input ratings, supported supplies/accessories, safe installation/maintenance constraints and qualified physical envelope **TBD by hardware reviewers**; no provisional CAD/bus/acoustic figure is printable as a safety rating. |
 | RF information | Each intentional-transmit frequency band and maximum RF power, antenna restrictions and country/use restrictions; derive from tested release configuration, not the `EU868` label. Include in required instructions/packaging forms after adviser review. |

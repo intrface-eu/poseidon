@@ -1,6 +1,6 @@
 # apps/site
 
-The public page for Poseidon Trident at https://poseidon.intrface.eu: one
+The public page for Poseidon at https://poseidon.intrface.eu: one
 editorial page plus `/press`, `/sources` and `/evidence`. Static HTML rendered
 at build time, one stylesheet, a small script, and three.js loaded after first
 paint for the hero and the listening-head viewer.
@@ -94,10 +94,10 @@ build, run `bun run qa:assets`, and build again so the posters match.
 | --- | --- | --- |
 | `/og-image.png` (1200x630, 256 colours, under 300 KB) | `qa:assets`: wordmark and headline set over the render | `hardware/showcase/renders-v4/og-image.png` |
 | `/posters/hero-wide.webp`, `hero-narrow.webp`, `head.webp` | `qa:assets`, from the live 3D | `public/models/` |
-| `/press/poseidon-trident-{hero,farm,unit,head-exploded}.png` | `qa:assets`: the renders with metadata stripped | `hardware/showcase/renders-v4/{hero-16x9,farm-wide,unit-closeup,head-exploded}.png` |
-| `/press/poseidon-trident-*.webp` | `qa:assets`: 800 px previews for the press page | the same renders |
-| `/press/poseidon-trident-logo.svg`, `-logo-dark.svg` | by hand | outlined from Google Sans Flex |
-| `/favicon.svg`, `/favicon-32.png`, `/apple-touch-icon.png` | `qa:assets` for the PNGs | the trident mark |
+| `/press/poseidon-{hero,farm,unit,head-exploded}.png` | `qa:assets`: the renders with metadata stripped | `hardware/showcase/renders-v4/{hero-16x9,farm-wide,unit-closeup,head-exploded}.png` |
+| `/press/poseidon-*.webp` | `qa:assets`: 800 px previews for the press page | the same renders |
+| `/press/poseidon-logo.svg`, `-logo-dark.svg` | by hand | outlined from Google Sans Flex |
+| `/favicon.svg`, `/favicon-32.png`, `/apple-touch-icon.png` | `qa:assets` for the PNGs | the three-tined mark |
 
 `qa:assets` reads the renders from `hardware/showcase/renders-v4/` (set
 `RENDERS_DIR` to use another folder) and needs ImageMagick (`magick`). The
