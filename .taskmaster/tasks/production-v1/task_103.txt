@@ -1,0 +1,24 @@
+{
+  "blockedReason": "Blocked until the responsible farm, site, and regulatory authorities grant the permissions applicable to the proposed passive activity.",
+  "deliverablePaths": [
+    "ops/permissions/",
+    "research/r1-site-survey.md"
+  ],
+  "dependencies": [
+    102
+  ],
+  "description": "Obtain the applicable written permissions before any local passive recording, installation, or retrieval activity.",
+  "details": "Record farm/site access, research, installation, and relevant authority approvals with site boundaries, dates, equipment, observer, retrieval, and stop-work limits. A document draft does not pass this gate; the responsible authority must actually grant the applicable permission.",
+  "gate": "passive-site-permission",
+  "id": 103,
+  "ownerRole": "field-operations",
+  "phase": "P1",
+  "priority": "high",
+  "researchPackages": [
+    "R1"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Verify auditable approvals cover the planned passive activity and are current. Deny field work if an activity lacks the required authorization.",
+  "title": "P1 Passive Site Access, Installation, and Research Permission Gate"
+}

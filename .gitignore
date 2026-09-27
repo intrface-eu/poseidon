@@ -1,0 +1,50 @@
+# Logs
+logs
+*.log
+# Retain source-bound qualification logs, including newly named evidence runs.
+!/docs/qualification/evidence*/**/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dev-debug.log
+
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS specific
+.DS_Store
+
+# Task files
+# tasks.json
+# tasks/
+
+# Python outputs
+__pycache__/
+*.py[cod]
+
+# Local passive replay and monitor runtime outputs
+.local/
+
+# Local monitor dependencies and UI build cache
+apps/aeolus-api/.venv/
+apps/aeolus-ui/node_modules/
+apps/aeolus-ui/.next/
+
+# Blender autosave backups
+*.blend1
+*.blend2
+
+# Private purchased-part CAD and source documents, never redistributed.
+/hardware/.vendor-cache/

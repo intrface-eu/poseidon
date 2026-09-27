@@ -1,0 +1,28 @@
+{
+  "deliverablePaths": [
+    "docs/decisions/architecture.md",
+    "configs/",
+    "docs/validation/hazard-register.md"
+  ],
+  "dependencies": [
+    101,
+    102
+  ],
+  "description": "Define the passive and conditionally active system boundary, interfaces, hazards, and fail-silent states.",
+  "details": "Specify versioned events, telemetry, commands, acknowledgements, calibration, device state, topic scope, deduplication, expiry, offline behavior, independent inhibit, and hazards. The cloud is outside the immediate safety loop.",
+  "id": 108,
+  "ownerRole": "systems",
+  "phase": "P1",
+  "priority": "high",
+  "researchPackages": [
+    "R2",
+    "R4",
+    "R5",
+    "R6",
+    "R7"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Review interface and hazard records against the baseline and confirm every active path has a bounded local state and independent inhibit requirement.",
+  "title": "P1 Architecture, Interfaces, and Hazard Requirements"
+}

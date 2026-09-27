@@ -1,0 +1,19 @@
+{
+  "schema_version": "poseidon.command.v1",
+  "command_id": "7f5aa304-8250-4216-8549-5b95fa4ec904",
+  "site_id": "synthetic-site-1",
+  "zone_id": "synthetic-zone-1",
+  "device_id": "synthetic-hub-1",
+  "principal_id": "synthetic-operator-1",
+  "key_id": "synthetic-command-key",
+  "sequence": "18446744073709551615",
+  "issued_at": "2026-09-08T12:00:00Z",
+  "expires_at": "2026-09-08T12:05:00Z",
+  "kind": "health-request",
+  "params": {},
+  "signature": {
+    "algorithm": "Ed25519",
+    "canonicalization": "poseidon-json-v1",
+    "value": "n2UY0gOH3SlcUIPxgdnCXGM6cCuI50zp+Mfe4VMoQJr+Q4YKKvpTm/VlV7uzamDLkOLgF3eYqvy5DqzthIONBA=="
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://poseidon.invalid/contracts/v1/acquisition-session.schema.json",
+  "title": "Poseidon acquisition-session v1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "poseidon.acquisition-session.v1"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+      "maxLength": 128
+    },
+    "site_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+      "maxLength": 128
+    },
+    "device_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+          "maxLength": 128
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "started_at": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "ended_at": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "clock_quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "unknown",
+            "operator_declared",
+            "synchronized",
+            "holdover"
+          ]
+        },
+        "method": {
+          "enum": [
+            "unknown",
+            "operator_offset",
+            "ntp",
+            "gnss",
+            "shared_clock",
+            "measured_reference"
+          ]
+        },
+        "uncertainty_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 604800000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "offset_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": -604800000,
+              "maximum": 604800000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reference": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "method",
+        "uncertainty_ms",
+        "offset_ms",
+        "reference"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_kind": {
+          "enum": [
+            "synthetic",
+            "bench",
+            "field"
+          ]
+        },
+        "source_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+          "maxLength": 128
+        },
+        "transport": {
+          "enum": [
+            "local",
+            "aquilon",
+            "import"
+          ]
+        }
+      },
+      "required": [
+        "source_kind",
+        "source_id",
+        "transport"
+      ]
+    },
+    "operator": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "clock_relation": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "source_domain": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+              "maxLength": 128
+            },
+            "reference_domain": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+              "maxLength": 128
+            },
+            "source_anchor_s": {
+              "type": "number"
+            },
+            "reference_anchor_s": {
+              "type": "number"
+            },
+            "drift_ppm": {
+              "type": "number",
+              "exclusiveMinimum": -1000000
+            },
+            "anchor_uncertainty_s": {
+              "type": "number",
+              "minimum": 0
+            },
+            "drift_uncertainty_ppm": {
+              "type": "number",
+              "minimum": 0
+            },
+            "method": {
+              "enum": [
+                "operator_declared",
+                "measured_reference",
+                "shared_clock"
+              ]
+            },
+            "evidence_ref": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+                  "maxLength": 128
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "source_domain",
+            "reference_domain",
+            "source_anchor_s",
+            "reference_anchor_s",
+            "drift_ppm",
+            "anchor_uncertainty_s",
+            "drift_uncertainty_ppm",
+            "method",
+            "evidence_ref"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "site_id",
+    "device_id",
+    "started_at",
+    "ended_at",
+    "clock_quality",
+    "provenance",
+    "operator",
+    "notes"
+  ]
+}

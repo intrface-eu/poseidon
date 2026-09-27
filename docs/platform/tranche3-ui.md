@@ -1,0 +1,21 @@
+# Tranche 3 local digital operations UI
+
+`Digital operations` extends the existing AEOLUS workbench. The banner, watchdogs, last ten transitions, signed state commands, alarms and receipt-health rows read the real API through the existing same-origin allowlist. Receipt health means telemetry age, not hardware connectivity. Every controller state is labeled **LOCAL DIGITAL**; emit entry and physical output remain unavailable.
+
+A local-development admin registers a synthetic hub under Devices & telemetry, enrolls an explicit immutable zone/health profile, then binds that exact hub under Digital operations. No first/default device or inferred zone is used. The admin provisions an explicit scoped operator under Identity & access. Admin is not operator; the operator must unlock with its own credential and have the bound hub site in scope.
+
+The operator creates a non-extractable Ed25519 private key in browser memory. Only the public key is enrolled. `/command-context/{device_id}` supplies the actual principal, allowed kinds and decimal-text sequence; the legacy identity DTO stays unchanged. The UI uses the shared `command-v1.ts` signing bytes and parsers. It never sends, exports, stores or displays the private key. Reloading, locking or leaving the section drops it; public-key enrollment persists until revoked. Dropping a key does not cancel an already submitted command. This is session custody, not production custody.
+
+Inhibit, resume, rearm and clear-fault require an inline confirmation and show the actual acknowledgement, including failure and rejection. Retry resends the exact signed request bytes without generating another command ID or sequence. HTTP success alone never means execution. `accepted` is a reserved nonterminal consumer acknowledgement, covered by the presentation unit test; the local synchronous API normally returns executed or failed. Sequence values never pass through JavaScript Number.
+
+Calibration rows retain the API's current, expired, not-yet-valid and superseded states, exact decimal values, predecessor IDs, signatures' key IDs and source hashes. The shared calibration parser rejects non-digital records. Every row says `DIGITAL_ONLY=true` and **Not physical calibration**. No UI record edit/delete or invented scientific validator exists. No deletion UI is added: backend retention is separately opt-in; the workbench does not touch old evidence.
+
+## Named verification gate
+
+`bun run qa:tranche3` invokes `qa/run-platform-qa.py` with the additive tranche3 mode. Set `PLATFORM_QA_API_PYTHON` to the controller's existing `.local/controller-final-digital-001/api/venv/bin/python` and `PLATFORM_QA_ARTIFACTS` to a new empty artifact directory. It requires an already built UI and the controller's exclusive frontend slot. No install or runtime fallback occurs.
+
+The runner uses the real backend-owned `tests/api/tranche3_fixture.py` app factory. A private mode-0600 control file outside its fresh temporary evidence workspace drives explicit synthetic watchdog faults. Real native-browser `/healthz` requests and the actual API event loop provide API/host liveness; only journal liveness is synthetic. There is no public fault endpoint, direct SQL mutation, capture source or hardware operation.
+
+The browser gate uses native AccessGate and browser fetch, not APIRequestContext cookies. It covers signed commands and acknowledgements, exact duplicates, uint64 text above 2^53, role/site/signature/retained/expiry refusals, eight digital watchdog injections, fault-alarm acknowledgement before signed recovery, receipt health, calibration validity/supersession, key loss on reload, desktop/mobile DOM and screenshots. Browser close runs in finally; the script has a 300-second deadline and the owned-group runner has a 330-second browser bound and 20-second TERM grace. Existing browser QA modes remain available.
+
+Run `bun test`, `bun run typecheck`, and `bun run build` in the UI app; `bun run lint` names the same strict TypeScript check. Final gate results and exact source hashes belong only in new `platform-tranche3-ui-*` reports. Earlier tranche evidence remains unchanged. These checks prove neither production key custody nor physical calibration, connectivity, safety, performance or field readiness.

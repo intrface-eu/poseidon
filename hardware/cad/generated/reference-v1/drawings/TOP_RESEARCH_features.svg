@@ -1,0 +1,300 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="6896" viewBox="0 0 1500 6896">
+<rect width="1500" height="6896" fill="white"/>
+<g font-family="monospace" fill="#172d39">
+<text x="35" y="40" font-size="25">TOP_RESEARCH / HW-REF-1.1 / FEATURE AND FASTENER SCHEDULE</text>
+<text x="35" y="72" font-size="18">PROVISIONAL / mm / NOT FOR FABRICATION / features in assembly-local coordinates unless labelled local</text>
+<text x="35" y="100" font-size="16">Source-tagged Pi features and battery/panel/converter/MPPT envelopes have vendor evidence; other details/tolerances are assumptions.</text>
+<text x="35" y="140" font-size="15" font-weight="bold">HUB__HUB-ENV-01 / BOM HUB-ENC-001</text>
+<text x="50" y="163" font-size="15" font-weight="normal">local_part_id: &quot;HUB-ENV-01&quot;</text>
+<text x="50" y="186" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="50" y="209" font-size="15" font-weight="normal">Wall thickness/cavity are conservative allocation, NOT an enclosure design. No seals, vents, latches or penetrators selected.</text>
+<text x="35" y="232" font-size="15" font-weight="bold">HUB__HUB-ENV-02 / BOM HUB-ENC-001</text>
+<text x="50" y="255" font-size="15" font-weight="normal">local_part_id: &quot;HUB-ENV-02&quot;</text>
+<text x="50" y="278" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="35" y="301" font-size="15" font-weight="bold">HUB__CAD-HUB-TRAY-01 / BOM CAD-HUB-TRAY-01</text>
+<text x="50" y="324" font-size="15" font-weight="normal">local_part_id: &quot;CAD-HUB-TRAY-01&quot;</text>
+<text x="50" y="347" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="50" y="370" font-size="15" font-weight="normal">M6 candidate tray hardware and M2.5 Pi fasteners; thread engagement, washer stack, torque and captive nut retention open.</text>
+<text x="35" y="393" font-size="15" font-weight="bold">HUB__HUB-SPACER-1 / BOM FAST-HUB-M6-SPACER</text>
+<text x="50" y="416" font-size="15" font-weight="normal">local_part_id: &quot;HUB-SPACER-1&quot;</text>
+<text x="50" y="439" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="35" y="462" font-size="15" font-weight="bold">HUB__HUB-SPACER-2 / BOM FAST-HUB-M6-SPACER</text>
+<text x="50" y="485" font-size="15" font-weight="normal">local_part_id: &quot;HUB-SPACER-2&quot;</text>
+<text x="50" y="508" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="35" y="531" font-size="15" font-weight="bold">HUB__HUB-SPACER-3 / BOM FAST-HUB-M6-SPACER</text>
+<text x="50" y="554" font-size="15" font-weight="normal">local_part_id: &quot;HUB-SPACER-3&quot;</text>
+<text x="50" y="577" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="35" y="600" font-size="15" font-weight="bold">HUB__HUB-SPACER-4 / BOM FAST-HUB-M6-SPACER</text>
+<text x="50" y="623" font-size="15" font-weight="normal">local_part_id: &quot;HUB-SPACER-4&quot;</text>
+<text x="50" y="646" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="35" y="669" font-size="15" font-weight="bold">HUB__HUB-PI-STANDOFF-1 / BOM FAST-PI-M2P5-STANDOFF</text>
+<text x="50" y="692" font-size="15" font-weight="normal">local_part_id: &quot;HUB-PI-STANDOFF-1&quot;</text>
+<text x="50" y="715" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="50" y="738" font-size="15" font-weight="normal">Not threaded geometry; PCB maximum screw/head envelope and torque review open</text>
+<text x="35" y="761" font-size="15" font-weight="bold">HUB__HUB-PI-STANDOFF-2 / BOM FAST-PI-M2P5-STANDOFF</text>
+<text x="50" y="784" font-size="15" font-weight="normal">local_part_id: &quot;HUB-PI-STANDOFF-2&quot;</text>
+<text x="50" y="807" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="50" y="830" font-size="15" font-weight="normal">Not threaded geometry; PCB maximum screw/head envelope and torque review open</text>
+<text x="35" y="853" font-size="15" font-weight="bold">HUB__HUB-PI-STANDOFF-3 / BOM FAST-PI-M2P5-STANDOFF</text>
+<text x="50" y="876" font-size="15" font-weight="normal">local_part_id: &quot;HUB-PI-STANDOFF-3&quot;</text>
+<text x="50" y="899" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="50" y="922" font-size="15" font-weight="normal">Not threaded geometry; PCB maximum screw/head envelope and torque review open</text>
+<text x="35" y="945" font-size="15" font-weight="bold">HUB__HUB-PI-STANDOFF-4 / BOM FAST-PI-M2P5-STANDOFF</text>
+<text x="50" y="968" font-size="15" font-weight="normal">local_part_id: &quot;HUB-PI-STANDOFF-4&quot;</text>
+<text x="50" y="991" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="50" y="1014" font-size="15" font-weight="normal">Not threaded geometry; PCB maximum screw/head envelope and torque review open</text>
+<text x="35" y="1037" font-size="15" font-weight="bold">HUB__HUB-CPU-01 / BOM HUB-CPU-001</text>
+<text x="50" y="1060" font-size="15" font-weight="normal">local_part_id: &quot;HUB-CPU-01&quot;</text>
+<text x="50" y="1083" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="35" y="1106" font-size="15" font-weight="bold">HUB__HUB-CPU-COMPONENT-ENV / BOM HUB-CPU-001</text>
+<text x="50" y="1129" font-size="15" font-weight="normal">local_part_id: &quot;HUB-CPU-COMPONENT-ENV&quot;</text>
+<text x="50" y="1152" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="50" y="1175" font-size="15" font-weight="normal">NOT connector geometry. Separate USB-C/cable access allocations below.</text>
+<text x="35" y="1198" font-size="15" font-weight="bold">HUB__HUB-DAQ-ENV / BOM HUB-DAQ-001</text>
+<text x="50" y="1221" font-size="15" font-weight="normal">local_part_id: &quot;HUB-DAQ-ENV&quot;</text>
+<text x="50" y="1244" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="35" y="1267" font-size="15" font-weight="bold">HUB__HUB-POWER-ENV / BOM HUB-DC5-001</text>
+<text x="50" y="1290" font-size="15" font-weight="normal">local_part_id: &quot;HUB-POWER-ENV&quot;</text>
+<text x="50" y="1313" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="35" y="1336" font-size="15" font-weight="bold">HUB__HUB-STORAGE-ENV / BOM HUB-STORE-001</text>
+<text x="50" y="1359" font-size="15" font-weight="normal">local_part_id: &quot;HUB-STORAGE-ENV&quot;</text>
+<text x="50" y="1382" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="35" y="1405" font-size="15" font-weight="bold">HUB__PRINT-HUB-GUIDE-01 / BOM PRINT-HUB-GUIDE-01</text>
+<text x="50" y="1428" font-size="15" font-weight="normal">local_part_id: &quot;PRINT-HUB-GUIDE-01&quot;</text>
+<text x="50" y="1451" font-size="15" font-weight="normal">assembly_translation_mm: [-700,0,700]</text>
+<text x="50" y="1474" font-size="15" font-weight="normal">Internal dry fit prototype only; never substitute for bolted tether strain relief</text>
+<text x="35" y="1497" font-size="15" font-weight="bold">WET__CAD-WET-BASE-01 / BOM CAD-WET-BASE-01</text>
+<text x="50" y="1520" font-size="15" font-weight="normal">local_part_id: &quot;CAD-WET-BASE-01&quot;</text>
+<text x="50" y="1543" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,-600]</text>
+<text x="50" y="1566" font-size="15" font-weight="normal">M8 candidate fasteners; farm loads, galvanic isolation and lifting proof open</text>
+<text x="35" y="1589" font-size="15" font-weight="bold">WET__WET-CAMERA-ENV / BOM WET-PRESSURE-001</text>
+<text x="50" y="1612" font-size="15" font-weight="normal">local_part_id: &quot;WET-CAMERA-ENV&quot;</text>
+<text x="50" y="1635" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,-600]</text>
+<text x="50" y="1658" font-size="15" font-weight="normal">Blue Robotics 4in watertight enclosure is a pressure-boundary CANDIDATE only, not selected exact SKU. This 110 mm cylinder is not</text>
+<text x="50" y="1681" font-size="15" font-weight="normal">vendor geometry, a tube, a seal, or a pressure design.</text>
+<text x="35" y="1704" font-size="15" font-weight="bold">WET__CAD-WET-CAMERA-COLLAR-1 / BOM CAD-WET-CAMERA-COLLAR-01</text>
+<text x="50" y="1727" font-size="15" font-weight="normal">local_part_id: &quot;CAD-WET-CAMERA-COLLAR-1&quot;</text>
+<text x="50" y="1750" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,-600]</text>
+<text x="50" y="1773" font-size="15" font-weight="normal">Retention/liner and split-clamp fasteners unresolved; clearance collar is NOT a proven restraint</text>
+<text x="35" y="1796" font-size="15" font-weight="bold">WET__CAD-WET-CAMERA-COLLAR-2 / BOM CAD-WET-CAMERA-COLLAR-01</text>
+<text x="50" y="1819" font-size="15" font-weight="normal">local_part_id: &quot;CAD-WET-CAMERA-COLLAR-2&quot;</text>
+<text x="50" y="1842" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,-600]</text>
+<text x="50" y="1865" font-size="15" font-weight="normal">Retention/liner and split-clamp fasteners unresolved; clearance collar is NOT a proven restraint</text>
+<text x="35" y="1888" font-size="15" font-weight="bold">WET__WET-HYDROPHONE-ENV / BOM WET-HYD-001</text>
+<text x="50" y="1911" font-size="15" font-weight="normal">local_part_id: &quot;WET-HYDROPHONE-ENV&quot;</text>
+<text x="50" y="1934" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,-600]</text>
+<text x="35" y="1957" font-size="15" font-weight="bold">WET__CAD-WET-HYD-COLLAR-1 / BOM CAD-WET-HYD-COLLAR-01</text>
+<text x="50" y="1980" font-size="15" font-weight="normal">local_part_id: &quot;CAD-WET-HYD-COLLAR-1&quot;</text>
+<text x="50" y="2003" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,-600]</text>
+<text x="35" y="2026" font-size="15" font-weight="bold">WET__CAD-WET-HYD-COLLAR-2 / BOM CAD-WET-HYD-COLLAR-01</text>
+<text x="50" y="2049" font-size="15" font-weight="normal">local_part_id: &quot;CAD-WET-HYD-COLLAR-2&quot;</text>
+<text x="50" y="2072" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,-600]</text>
+<text x="35" y="2095" font-size="15" font-weight="bold">ARRAY__CAD-ARRAY-X-N1 / BOM CAD-ARRAY-X-RAIL</text>
+<text x="50" y="2118" font-size="15" font-weight="normal">local_part_id: &quot;CAD-ARRAY-X-N1&quot;</text>
+<text x="50" y="2141" font-size="15" font-weight="normal">assembly_translation_mm: [0,800,-650]</text>
+<text x="35" y="2164" font-size="15" font-weight="bold">ARRAY__CAD-ARRAY-Y-N1 / BOM CAD-ARRAY-Y-RAIL</text>
+<text x="50" y="2187" font-size="15" font-weight="normal">local_part_id: &quot;CAD-ARRAY-Y-N1&quot;</text>
+<text x="50" y="2210" font-size="15" font-weight="normal">assembly_translation_mm: [0,800,-650]</text>
+<text x="35" y="2233" font-size="15" font-weight="bold">ARRAY__CAD-ARRAY-X-P1 / BOM CAD-ARRAY-X-RAIL</text>
+<text x="50" y="2256" font-size="15" font-weight="normal">local_part_id: &quot;CAD-ARRAY-X-P1&quot;</text>
+<text x="50" y="2279" font-size="15" font-weight="normal">assembly_translation_mm: [0,800,-650]</text>
+<text x="35" y="2302" font-size="15" font-weight="bold">ARRAY__CAD-ARRAY-Y-P1 / BOM CAD-ARRAY-Y-RAIL</text>
+<text x="50" y="2325" font-size="15" font-weight="normal">local_part_id: &quot;CAD-ARRAY-Y-P1&quot;</text>
+<text x="50" y="2348" font-size="15" font-weight="normal">assembly_translation_mm: [0,800,-650]</text>
+<text x="35" y="2371" font-size="15" font-weight="bold">ARRAY__CAD-ARRAY-SENSOR-COLLAR-1 / BOM CAD-ARRAY-SENSOR-COLLAR-01</text>
+<text x="50" y="2394" font-size="15" font-weight="normal">local_part_id: &quot;CAD-ARRAY-SENSOR-COLLAR-1&quot;</text>
+<text x="50" y="2417" font-size="15" font-weight="normal">assembly_translation_mm: [0,800,-650]</text>
+<text x="35" y="2440" font-size="15" font-weight="bold">ARRAY__ARRAY-HYD-1 / BOM ARRAY-DAQ-OPT-001</text>
+<text x="50" y="2463" font-size="15" font-weight="normal">local_part_id: &quot;ARRAY-HYD-1&quot;</text>
+<text x="50" y="2486" font-size="15" font-weight="normal">assembly_translation_mm: [0,800,-650]</text>
+<text x="35" y="2509" font-size="15" font-weight="bold">ARRAY__CAD-ARRAY-SENSOR-COLLAR-2 / BOM CAD-ARRAY-SENSOR-COLLAR-01</text>
+<text x="50" y="2532" font-size="15" font-weight="normal">local_part_id: &quot;CAD-ARRAY-SENSOR-COLLAR-2&quot;</text>
+<text x="50" y="2555" font-size="15" font-weight="normal">assembly_translation_mm: [0,800,-650]</text>
+<text x="35" y="2578" font-size="15" font-weight="bold">ARRAY__ARRAY-HYD-2 / BOM ARRAY-DAQ-OPT-001</text>
+<text x="50" y="2601" font-size="15" font-weight="normal">local_part_id: &quot;ARRAY-HYD-2&quot;</text>
+<text x="50" y="2624" font-size="15" font-weight="normal">assembly_translation_mm: [0,800,-650]</text>
+<text x="35" y="2647" font-size="15" font-weight="bold">ARRAY__CAD-ARRAY-SENSOR-COLLAR-3 / BOM CAD-ARRAY-SENSOR-COLLAR-01</text>
+<text x="50" y="2670" font-size="15" font-weight="normal">local_part_id: &quot;CAD-ARRAY-SENSOR-COLLAR-3&quot;</text>
+<text x="50" y="2693" font-size="15" font-weight="normal">assembly_translation_mm: [0,800,-650]</text>
+<text x="35" y="2716" font-size="15" font-weight="bold">ARRAY__ARRAY-HYD-3 / BOM ARRAY-DAQ-OPT-001</text>
+<text x="50" y="2739" font-size="15" font-weight="normal">local_part_id: &quot;ARRAY-HYD-3&quot;</text>
+<text x="50" y="2762" font-size="15" font-weight="normal">assembly_translation_mm: [0,800,-650]</text>
+<text x="35" y="2785" font-size="15" font-weight="bold">ARRAY__CAD-ARRAY-SENSOR-COLLAR-4 / BOM CAD-ARRAY-SENSOR-COLLAR-01</text>
+<text x="50" y="2808" font-size="15" font-weight="normal">local_part_id: &quot;CAD-ARRAY-SENSOR-COLLAR-4&quot;</text>
+<text x="50" y="2831" font-size="15" font-weight="normal">assembly_translation_mm: [0,800,-650]</text>
+<text x="35" y="2854" font-size="15" font-weight="bold">ARRAY__ARRAY-HYD-4 / BOM ARRAY-DAQ-OPT-001</text>
+<text x="50" y="2877" font-size="15" font-weight="normal">local_part_id: &quot;ARRAY-HYD-4&quot;</text>
+<text x="50" y="2900" font-size="15" font-weight="normal">assembly_translation_mm: [0,800,-650]</text>
+<text x="35" y="2923" font-size="15" font-weight="bold">WIPER__CAD-WIPER-GUARD-01 / BOM CAD-WIPER-GUARD-01</text>
+<text x="50" y="2946" font-size="15" font-weight="normal">local_part_id: &quot;CAD-WIPER-GUARD-01&quot;</text>
+<text x="50" y="2969" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,-600]</text>
+<text x="50" y="2992" font-size="15" font-weight="normal">Guard does not prove finger/debris safety; unpowered reference only</text>
+<text x="35" y="3015" font-size="15" font-weight="bold">WIPER__CAD-WIPER-MOTOR-BRIDGE-01 / BOM CAD-WIPER-MOTOR-BRIDGE-01</text>
+<text x="50" y="3038" font-size="15" font-weight="normal">local_part_id: &quot;CAD-WIPER-MOTOR-BRIDGE-01&quot;</text>
+<text x="50" y="3061" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,-600]</text>
+<text x="50" y="3084" font-size="15" font-weight="normal">Fastener interfaces and housing-side attachment require selected motor and support design</text>
+<text x="35" y="3107" font-size="15" font-weight="bold">WIPER__WIPER-MOTOR-ENV / BOM WIPER-DRIVE-OPT-001</text>
+<text x="50" y="3130" font-size="15" font-weight="normal">local_part_id: &quot;WIPER-MOTOR-ENV&quot;</text>
+<text x="50" y="3153" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,-600]</text>
+<text x="35" y="3176" font-size="15" font-weight="bold">WIPER__WIPER-PIVOT-ENV / BOM WIPER-DRIVE-OPT-001</text>
+<text x="50" y="3199" font-size="15" font-weight="normal">local_part_id: &quot;WIPER-PIVOT-ENV&quot;</text>
+<text x="50" y="3222" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,-600]</text>
+<text x="35" y="3245" font-size="15" font-weight="bold">WIPER__CAD-WIPER-ARM-01 / BOM CAD-WIPER-ARM-01</text>
+<text x="50" y="3268" font-size="15" font-weight="normal">local_part_id: &quot;CAD-WIPER-ARM-01&quot;</text>
+<text x="50" y="3291" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,-600]</text>
+<text x="50" y="3314" font-size="15" font-weight="normal">Unpowered pose study. Motor torque, shaft seal, hard stops, blade force, snagging and independent inhibit open</text>
+<text x="35" y="3337" font-size="15" font-weight="bold">WIPER__WIPER-BLADE-01 / BOM WIPER-DRIVE-OPT-001</text>
+<text x="50" y="3360" font-size="15" font-weight="normal">local_part_id: &quot;WIPER-BLADE-01&quot;</text>
+<text x="50" y="3383" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,-600]</text>
+<text x="35" y="3406" font-size="15" font-weight="bold">PROJECTOR__CAD-PROJECTOR-BASE-01 / BOM CAD-PROJECTOR-BASE-01</text>
+<text x="50" y="3429" font-size="15" font-weight="normal">local_part_id: &quot;CAD-PROJECTOR-BASE-01&quot;</text>
+<text x="50" y="3452" font-size="15" font-weight="normal">assembly_translation_mm: [-450,600,-650]</text>
+<text x="35" y="3475" font-size="15" font-weight="bold">PROJECTOR__PROJECTOR-ENV / BOM PROJECTOR-XDCR-OPT-001</text>
+<text x="50" y="3498" font-size="15" font-weight="normal">local_part_id: &quot;PROJECTOR-ENV&quot;</text>
+<text x="50" y="3521" font-size="15" font-weight="normal">assembly_translation_mm: [-450,600,-650]</text>
+<text x="50" y="3544" font-size="15" font-weight="normal">No frequency, power, depth, source-level or biological-safe claim. Not a historical pinger selection.</text>
+<text x="35" y="3567" font-size="15" font-weight="bold">PROJECTOR__CAD-PROJECTOR-COLLAR-1 / BOM CAD-PROJECTOR-COLLAR-01</text>
+<text x="50" y="3590" font-size="15" font-weight="normal">local_part_id: &quot;CAD-PROJECTOR-COLLAR-1&quot;</text>
+<text x="50" y="3613" font-size="15" font-weight="normal">assembly_translation_mm: [-450,600,-650]</text>
+<text x="35" y="3636" font-size="15" font-weight="bold">PROJECTOR__PROJECTOR-ISOLATOR-1 / BOM ACT-ISOLATOR-01</text>
+<text x="50" y="3659" font-size="15" font-weight="normal">local_part_id: &quot;PROJECTOR-ISOLATOR-1&quot;</text>
+<text x="50" y="3682" font-size="15" font-weight="normal">assembly_translation_mm: [-450,600,-650]</text>
+<text x="50" y="3705" font-size="15" font-weight="normal">0.8 mm inner/0.5 mm outer clearance is a geometry study, not assembled preload. Durometer, compression, restraint, creep and</text>
+<text x="50" y="3728" font-size="15" font-weight="normal">modal/transmissibility tests open.</text>
+<text x="35" y="3751" font-size="15" font-weight="bold">PROJECTOR__CAD-PROJECTOR-COLLAR-2 / BOM CAD-PROJECTOR-COLLAR-01</text>
+<text x="50" y="3774" font-size="15" font-weight="normal">local_part_id: &quot;CAD-PROJECTOR-COLLAR-2&quot;</text>
+<text x="50" y="3797" font-size="15" font-weight="normal">assembly_translation_mm: [-450,600,-650]</text>
+<text x="35" y="3820" font-size="15" font-weight="bold">PROJECTOR__PROJECTOR-ISOLATOR-2 / BOM ACT-ISOLATOR-01</text>
+<text x="50" y="3843" font-size="15" font-weight="normal">local_part_id: &quot;PROJECTOR-ISOLATOR-2&quot;</text>
+<text x="50" y="3866" font-size="15" font-weight="normal">assembly_translation_mm: [-450,600,-650]</text>
+<text x="50" y="3889" font-size="15" font-weight="normal">0.8 mm inner/0.5 mm outer clearance is a geometry study, not assembled preload. Durometer, compression, restraint, creep and</text>
+<text x="50" y="3912" font-size="15" font-weight="normal">modal/transmissibility tests open.</text>
+<text x="35" y="3935" font-size="15" font-weight="bold">REEF__CAD-REEF-POST-1 / BOM CAD-REEF-POST-01</text>
+<text x="50" y="3958" font-size="15" font-weight="normal">local_part_id: &quot;CAD-REEF-POST-1&quot;</text>
+<text x="50" y="3981" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="50" y="4004" font-size="15" font-weight="normal">Marine frame load/buckling/wind/wave/fatigue and joining design open; never print</text>
+<text x="35" y="4027" font-size="15" font-weight="bold">REEF__CAD-REEF-POST-2 / BOM CAD-REEF-POST-01</text>
+<text x="50" y="4050" font-size="15" font-weight="normal">local_part_id: &quot;CAD-REEF-POST-2&quot;</text>
+<text x="50" y="4073" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="50" y="4096" font-size="15" font-weight="normal">Marine frame load/buckling/wind/wave/fatigue and joining design open; never print</text>
+<text x="35" y="4119" font-size="15" font-weight="bold">REEF__CAD-REEF-POST-3 / BOM CAD-REEF-POST-01</text>
+<text x="50" y="4142" font-size="15" font-weight="normal">local_part_id: &quot;CAD-REEF-POST-3&quot;</text>
+<text x="50" y="4165" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="50" y="4188" font-size="15" font-weight="normal">Marine frame load/buckling/wind/wave/fatigue and joining design open; never print</text>
+<text x="35" y="4211" font-size="15" font-weight="bold">REEF__CAD-REEF-POST-4 / BOM CAD-REEF-POST-01</text>
+<text x="50" y="4234" font-size="15" font-weight="normal">local_part_id: &quot;CAD-REEF-POST-4&quot;</text>
+<text x="50" y="4257" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="50" y="4280" font-size="15" font-weight="normal">Marine frame load/buckling/wind/wave/fatigue and joining design open; never print</text>
+<text x="35" y="4303" font-size="15" font-weight="bold">REEF__CAD-REEF-BASE-RAIL-1 / BOM CAD-REEF-BASE-RAIL-01</text>
+<text x="50" y="4326" font-size="15" font-weight="normal">local_part_id: &quot;CAD-REEF-BASE-RAIL-1&quot;</text>
+<text x="50" y="4349" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="35" y="4372" font-size="15" font-weight="bold">REEF__CAD-REEF-BASE-RAIL-2 / BOM CAD-REEF-BASE-RAIL-01</text>
+<text x="50" y="4395" font-size="15" font-weight="normal">local_part_id: &quot;CAD-REEF-BASE-RAIL-2&quot;</text>
+<text x="50" y="4418" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="35" y="4441" font-size="15" font-weight="bold">REEF__CAD-REEF-SOLAR-RAIL-1 / BOM CAD-REEF-SOLAR-RAIL-01</text>
+<text x="50" y="4464" font-size="15" font-weight="normal">local_part_id: &quot;CAD-REEF-SOLAR-RAIL-1&quot;</text>
+<text x="50" y="4487" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="35" y="4510" font-size="15" font-weight="bold">REEF__CAD-REEF-SOLAR-RAIL-2 / BOM CAD-REEF-SOLAR-RAIL-01</text>
+<text x="50" y="4533" font-size="15" font-weight="normal">local_part_id: &quot;CAD-REEF-SOLAR-RAIL-2&quot;</text>
+<text x="50" y="4556" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="35" y="4579" font-size="15" font-weight="bold">REEF__CAD-REEF-BASE-TIE-1 / BOM CAD-REEF-BASE-TIE-01</text>
+<text x="50" y="4602" font-size="15" font-weight="normal">local_part_id: &quot;CAD-REEF-BASE-TIE-1&quot;</text>
+<text x="50" y="4625" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="35" y="4648" font-size="15" font-weight="bold">REEF__CAD-REEF-BASE-TIE-2 / BOM CAD-REEF-BASE-TIE-01</text>
+<text x="50" y="4671" font-size="15" font-weight="normal">local_part_id: &quot;CAD-REEF-BASE-TIE-2&quot;</text>
+<text x="50" y="4694" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="35" y="4717" font-size="15" font-weight="bold">REEF__REEF-SOLAR-ENV / BOM REEF-PV-001</text>
+<text x="50" y="4740" font-size="15" font-weight="normal">local_part_id: &quot;REEF-SOLAR-ENV&quot;</text>
+<text x="50" y="4763" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="50" y="4786" font-size="15" font-weight="normal">Primary PDF p1 verifies 425x668x25, rotated here. Historical drawing reference; current availability/obsolescence unresolved. No</text>
+<text x="50" y="4809" font-size="15" font-weight="normal">purchase approval.</text>
+<text x="50" y="4832" font-size="15" font-weight="normal">Horizontal packaging pose only, not an energy-optimal or wind-qualified installation. Clamp zones and junction box unresolved. Nominal</text>
+<text x="50" y="4855" font-size="15" font-weight="normal">support overhang 42.5 mm each Y side.</text>
+<text x="35" y="4878" font-size="15" font-weight="bold">REEF__CAD-REEF-BATTERY-SHELF-01 / BOM CAD-REEF-BATTERY-SHELF-01</text>
+<text x="50" y="4901" font-size="15" font-weight="normal">local_part_id: &quot;CAD-REEF-BATTERY-SHELF-01&quot;</text>
+<text x="50" y="4924" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="35" y="4947" font-size="15" font-weight="bold">REEF__REEF-BATTERY-ENV / BOM REEF-BAT-001</text>
+<text x="50" y="4970" font-size="15" font-weight="normal">local_part_id: &quot;REEF-BATTERY-ENV&quot;</text>
+<text x="50" y="4993" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="50" y="5016" font-size="15" font-weight="normal">Manual HxWxD199x188x147, mapped XYZ188x147x199. Drawing Rev01 and manual differ in detail; reconcile selected revision before</text>
+<text x="50" y="5039" font-size="15" font-weight="normal">fabrication.</text>
+<text x="50" y="5062" font-size="15" font-weight="normal">Upright pose. Terminal/lug positions, fuse, isolation, ventilation and rated restraint remain open. 7 kg vendor nominal mass, not</text>
+<text x="50" y="5085" font-size="15" font-weight="normal">geometry-derived.</text>
+<text x="35" y="5108" font-size="15" font-weight="bold">REEF__CAD-REEF-BATTERY-STOP-1 / BOM CAD-REEF-BATTERY-STOP-01</text>
+<text x="50" y="5131" font-size="15" font-weight="normal">local_part_id: &quot;CAD-REEF-BATTERY-STOP-1&quot;</text>
+<text x="50" y="5154" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="35" y="5177" font-size="15" font-weight="bold">REEF__CAD-REEF-BATTERY-STOP-2 / BOM CAD-REEF-BATTERY-STOP-01</text>
+<text x="50" y="5200" font-size="15" font-weight="normal">local_part_id: &quot;CAD-REEF-BATTERY-STOP-2&quot;</text>
+<text x="50" y="5223" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="35" y="5246" font-size="15" font-weight="bold">REEF__CAD-REEF-BOX-SHELF-01 / BOM CAD-REEF-BOX-SHELF-01</text>
+<text x="50" y="5269" font-size="15" font-weight="normal">local_part_id: &quot;CAD-REEF-BOX-SHELF-01&quot;</text>
+<text x="50" y="5292" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="35" y="5315" font-size="15" font-weight="bold">REEF__REEF-BOX-ENV / BOM REEF-ENC-001</text>
+<text x="50" y="5338" font-size="15" font-weight="normal">local_part_id: &quot;REEF-BOX-ENV&quot;</text>
+<text x="50" y="5361" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="50" y="5384" font-size="15" font-weight="normal">Conservative cavity proxy; no ingress protection or fabrication claim</text>
+<text x="35" y="5407" font-size="15" font-weight="bold">REEF__REEF-BOX-LID-ENV / BOM REEF-ENC-001</text>
+<text x="50" y="5430" font-size="15" font-weight="normal">local_part_id: &quot;REEF-BOX-LID-ENV&quot;</text>
+<text x="50" y="5453" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="35" y="5476" font-size="15" font-weight="bold">REEF__CAD-REEF-ELECTRONICS-TRAY-01 / BOM CAD-REEF-ELECTRONICS-TRAY-01</text>
+<text x="50" y="5499" font-size="15" font-weight="normal">local_part_id: &quot;CAD-REEF-ELECTRONICS-TRAY-01&quot;</text>
+<text x="50" y="5522" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="35" y="5545" font-size="15" font-weight="bold">REEF__REEF-MCU-ENV / BOM REEF-CPU-001</text>
+<text x="50" y="5568" font-size="15" font-weight="normal">local_part_id: &quot;REEF-MCU-ENV&quot;</text>
+<text x="50" y="5591" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="35" y="5614" font-size="15" font-weight="bold">REEF__REEF-RADIO-ENV / BOM REEF-RF-001</text>
+<text x="50" y="5637" font-size="15" font-weight="normal">local_part_id: &quot;REEF-RADIO-ENV&quot;</text>
+<text x="50" y="5660" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="50" y="5683" font-size="15" font-weight="normal">40x30x15 mm is a conservative provisional allocation. Source board/module wording and header/antenna height are unresolved; not</text>
+<text x="50" y="5706" font-size="15" font-weight="normal">detailed vendor CAD.</text>
+<text x="35" y="5729" font-size="15" font-weight="bold">REEF__REEF-CHARGE-ENV / BOM REEF-MPPT-001</text>
+<text x="50" y="5752" font-size="15" font-weight="normal">local_part_id: &quot;REEF-CHARGE-ENV&quot;</text>
+<text x="50" y="5775" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="35" y="5798" font-size="15" font-weight="bold">REEF__REEF-ANTENNA-ENV / BOM REEF-ANT-001</text>
+<text x="50" y="5821" font-size="15" font-weight="normal">local_part_id: &quot;REEF-ANTENNA-ENV&quot;</text>
+<text x="50" y="5844" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="50" y="5867" font-size="15" font-weight="normal">RF clearance only; gain, cable loss, solar shading and range unverified</text>
+<text x="35" y="5890" font-size="15" font-weight="bold">REEF__REEF-PROBE-ENV / BOM REEF-PROBE-001</text>
+<text x="50" y="5913" font-size="15" font-weight="normal">local_part_id: &quot;REEF-PROBE-ENV&quot;</text>
+<text x="50" y="5936" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="35" y="5959" font-size="15" font-weight="bold">REEF__REEF-PROBE-CABLE-ENV / BOM REEF-PROBE-001</text>
+<text x="50" y="5982" font-size="15" font-weight="normal">local_part_id: &quot;REEF-PROBE-CABLE-ENV&quot;</text>
+<text x="50" y="6005" font-size="15" font-weight="normal">assembly_translation_mm: [800,0,0]</text>
+<text x="50" y="6028" font-size="15" font-weight="normal">Not a terminated harness; add drip loop, gland, conditioning and minimum bend review after selection</text>
+<text x="35" y="6051" font-size="15" font-weight="bold">FARM__FARM-PIPE-ENV / BOM SITE-PIPE-01</text>
+<text x="50" y="6074" font-size="15" font-weight="normal">local_part_id: &quot;FARM-PIPE-ENV&quot;</text>
+<text x="50" y="6097" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,500]</text>
+<text x="35" y="6120" font-size="15" font-weight="bold">FARM__CAD-FARM-BACKPLATE-01 / BOM CAD-FARM-BACKPLATE-01</text>
+<text x="50" y="6143" font-size="15" font-weight="normal">local_part_id: &quot;CAD-FARM-BACKPLATE-01&quot;</text>
+<text x="50" y="6166" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,500]</text>
+<text x="35" y="6189" font-size="15" font-weight="bold">FARM__CAD-FARM-LOWER-SADDLE-1 / BOM CAD-FARM-LOWER-SADDLE-01</text>
+<text x="50" y="6212" font-size="15" font-weight="normal">local_part_id: &quot;CAD-FARM-LOWER-SADDLE-1&quot;</text>
+<text x="50" y="6235" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,500]</text>
+<text x="50" y="6258" font-size="15" font-weight="normal">Through-bolt ears, purchased U-bolt/strap choice and slip/crush/load calculations remain open</text>
+<text x="35" y="6281" font-size="15" font-weight="bold">FARM__CAD-FARM-UPPER-SADDLE-1 / BOM CAD-FARM-UPPER-SADDLE-01</text>
+<text x="50" y="6304" font-size="15" font-weight="normal">local_part_id: &quot;CAD-FARM-UPPER-SADDLE-1&quot;</text>
+<text x="50" y="6327" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,500]</text>
+<text x="35" y="6350" font-size="15" font-weight="bold">FARM__CAD-FARM-LOWER-SADDLE-2 / BOM CAD-FARM-LOWER-SADDLE-01</text>
+<text x="50" y="6373" font-size="15" font-weight="normal">local_part_id: &quot;CAD-FARM-LOWER-SADDLE-2&quot;</text>
+<text x="50" y="6396" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,500]</text>
+<text x="50" y="6419" font-size="15" font-weight="normal">Through-bolt ears, purchased U-bolt/strap choice and slip/crush/load calculations remain open</text>
+<text x="35" y="6442" font-size="15" font-weight="bold">FARM__CAD-FARM-UPPER-SADDLE-2 / BOM CAD-FARM-UPPER-SADDLE-01</text>
+<text x="50" y="6465" font-size="15" font-weight="normal">local_part_id: &quot;CAD-FARM-UPPER-SADDLE-2&quot;</text>
+<text x="50" y="6488" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,500]</text>
+<text x="35" y="6511" font-size="15" font-weight="bold">FARM__CAD-FARM-RETRIEVAL-LUG-01 / BOM CAD-FARM-RETRIEVAL-LUG-01</text>
+<text x="50" y="6534" font-size="15" font-weight="normal">local_part_id: &quot;CAD-FARM-RETRIEVAL-LUG-01&quot;</text>
+<text x="50" y="6557" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,500]</text>
+<text x="50" y="6580" font-size="15" font-weight="normal">No safe working load. Independent rated retrieval hardware, eye edge distance, joint and corrosion review required; never print</text>
+<text x="35" y="6603" font-size="15" font-weight="bold">FARM__FARM-TETHER-ENV / BOM WET-HARNESS-001</text>
+<text x="50" y="6626" font-size="15" font-weight="normal">local_part_id: &quot;FARM-TETHER-ENV&quot;</text>
+<text x="50" y="6649" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,500]</text>
+<text x="35" y="6672" font-size="15" font-weight="bold">FARM__CAD-FARM-STRAIN-RELIEF-1 / BOM CAD-FARM-STRAIN-RELIEF-01</text>
+<text x="50" y="6695" font-size="15" font-weight="normal">local_part_id: &quot;CAD-FARM-STRAIN-RELIEF-1&quot;</text>
+<text x="50" y="6718" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,500]</text>
+<text x="50" y="6741" font-size="15" font-weight="normal">Compression sleeve, split, bolt pattern, cable crush and pullout test open; not a qualified strain relief</text>
+<text x="35" y="6764" font-size="15" font-weight="bold">FARM__CAD-FARM-STRAIN-RELIEF-2 / BOM CAD-FARM-STRAIN-RELIEF-01</text>
+<text x="50" y="6787" font-size="15" font-weight="normal">local_part_id: &quot;CAD-FARM-STRAIN-RELIEF-2&quot;</text>
+<text x="50" y="6810" font-size="15" font-weight="normal">assembly_translation_mm: [0,0,500]</text>
+<text x="50" y="6833" font-size="15" font-weight="normal">Compression sleeve, split, bolt pattern, cable crush and pullout test open; not a qualified strain relief</text>
+</g>
+</svg>

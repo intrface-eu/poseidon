@@ -1,0 +1,182 @@
+{
+  "schema": "intrface.passive-v3.local-design-inputs.v1",
+  "id": "B1-DESIGN-2026-09-09",
+  "date": "2026-09-09",
+  "authority": "B1 digital layout allocations only; not vendor facts or manufacturing specifications",
+  "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+  "units": "mm unless the key states otherwise",
+  "coordinate_system": "CAD millimetres, +Z optical forward, +Y surface-route direction, +X hydrophone stand-off; tube aft rim Z=0",
+  "allocations": {
+    "tube_length_mm": 300,
+    "camera_board_from_front_mm": 20,
+    "camera_mount_depth_mm": 17,
+    "camera_tray_width_mm": 44,
+    "camera_tray_thickness_mm": 3,
+    "camera_tray_opening_mm": 24,
+    "camera_support_od_mm": 5,
+    "camera_support_hole_mm": 2.44,
+    "service_route_axial_mm": 100,
+    "empty_preamp_reserve_size_mm": [
+      40,
+      40,
+      40
+    ],
+    "empty_preamp_reserve_z_mm": 180,
+    "stack_clearance_mm": 10,
+    "mount_tube_radial_gap_mm": 0.6,
+    "saddle_outer_radius_mm": 62,
+    "saddle_width_mm": 10,
+    "hydrophone_center_x_mm": 95,
+    "hydrophone_front_from_tube_front_mm": 20,
+    "hydrophone_collar_from_rear_mm": 10,
+    "hydrophone_collar_radial_gap_mm": 0.5,
+    "hydrophone_collar_outer_radius_mm": 11,
+    "hydrophone_arm_width_mm": 12,
+    "hydrophone_arm_overlap_mm": 1,
+    "clamp_center_mm": [
+      -100,
+      0,
+      100
+    ],
+    "clamp_size_mm": [
+      50,
+      24,
+      40
+    ],
+    "clamp_split_gap_mm": 1,
+    "longline_hole_radius_mm": 12.5,
+    "clamp_bridge_size_mm": [
+      25,
+      18,
+      10
+    ],
+    "clamp_bridge_center_x_mm": -68,
+    "pin_centers_x_mm": [
+      -120,
+      -80
+    ],
+    "pin_radius_mm": 2.5,
+    "pin_sleeve_inner_radius_mm": 2.7,
+    "pin_sleeve_outer_radius_mm": 4,
+    "pin_length_mm": 45,
+    "pin_head_radius_mm": 5,
+    "pin_head_height_mm": 3,
+    "pin_pull_ring_major_radius_mm": 8,
+    "pin_pull_ring_minor_radius_mm": 1.5,
+    "lanyard_lug_center_mm": [
+      -132,
+      0,
+      85
+    ],
+    "lanyard_lug_outer_radius_mm": 9,
+    "lanyard_lug_inner_radius_mm": 4,
+    "lanyard_lug_thickness_mm": 6,
+    "lanyard_lug_bridge_size_mm": [
+      10,
+      12,
+      6
+    ],
+    "lanyard_lug_bridge_center_mm": [
+      -123,
+      0,
+      88
+    ],
+    "lanyard_diameter_mm": 3,
+    "lanyard_length_mm": 140,
+    "lanyard_visual_gap_mm": 1,
+    "penetrator_origin_z_mm": 5.2,
+    "penetrator_surface_gap_mm": 0.3,
+    "tether_route_start_z_mm": -40.8,
+    "tether_bend_radius_mm": 50,
+    "tether_surface_endpoint_y_mm": 300,
+    "analog_bend_start_z_mm": 80,
+    "analog_bend_radius_mm": 50,
+    "analog_surface_endpoint_y_mm": 300,
+    "strain_relief_center_mm": [
+      0,
+      120,
+      -90.8
+    ],
+    "strain_relief_size_mm": [
+      24,
+      30,
+      18
+    ],
+    "strain_relief_radial_gap_mm": 0.4,
+    "strain_relief_support_size_mm": [
+      12,
+      60,
+      10
+    ],
+    "strain_relief_support_center_mm": [
+      0,
+      81,
+      -101
+    ],
+    "strain_relief_riser_size_mm": [
+      12,
+      10,
+      116
+    ],
+    "strain_relief_riser_center_mm": [
+      0,
+      56,
+      -43
+    ],
+    "strain_relief_saddle_z_mm": 10,
+    "future_projector_envelope_size_mm": [
+      60,
+      60,
+      70
+    ],
+    "future_projector_envelope_center_mm": [
+      0,
+      -110,
+      170
+    ],
+    "camera_service_envelope_size_mm": [
+      50,
+      50,
+      100
+    ],
+    "camera_service_envelope_center_mm": [
+      0,
+      0,
+      100
+    ],
+    "dxf_curve_sample_spacing_mm": 4,
+    "dxf_view_gap_mm": 100,
+    "dxf_dimension_offset_mm": 25,
+    "dxf_text_height_mm": 3,
+    "geometry_linear_tolerance_mm": 0.0001,
+    "interference_volume_tolerance_mm3": 0.001,
+    "step_relative_volume_tolerance": 1e-06,
+    "glb_linear_deflection_mm": 0.3,
+    "glb_angular_deflection_rad": 0.35,
+    "mass_density_kg_m3": {
+      "aluminium_6061": 2700,
+      "aluminium_7075": 2810,
+      "stainless_316": 8000,
+      "peek": 1300,
+      "polycarbonate": 1200,
+      "polyurethane": 1200,
+      "lanyard_polyester": 1380,
+      "seawater": 1025,
+      "fathom_bulk_effective": 1025
+    }
+  },
+  "notes": [
+    "Densities are nominal analytical assumptions, not batch measurements or seawater-suitability claims.",
+    "Fathom effective bulk density matches assumed seawater for its vendor-described neutral buoyancy; it is not solid polyurethane density.",
+    "Mounts and bushings use PEEK as a design allocation; seawater absorption, creep, fatigue, isolation and diver release remain untested.",
+    "AS-1 plus PA4/PA6 is passive receive only. The phantom preamp and analog conditioner stay above water. Its actual dimensions remain null; the 40 mm cube is EMPTY reserve, not a populated board.",
+    "The tube is the shortest captured vendor offered length meeting camera plus mount, service route, EMPTY reserve, two flange insertions and clearance. The 200 mm source is retained for the rejected-length trace.",
+    "The 25 mm longline opening is an arbitrary farm-interface allocation. It is not a surveyed rope size or an approved clamp.",
+    "Pin shapes omit threads and detents. PEEK sleeves separate 316 pins from the PEEK clamp; no metal-to-aluminium contact is modeled. Retention and isolation details remain open.",
+    "Strain relief, lanyard and route ends are concepts with no cable-pull or termination rating. Route does not connect an invented 30 m analog/USB transport.",
+    "Penetrator installation deliberately leaves an uncompressed sealing gap; unused cap holes and missing seals/locking cord/pressure screws make this an incomplete boundary, not a watertight assembly.",
+    "Future projector geometry is an EMPTY excluded keepout. It is not a transducer, mass contribution, or active acoustic hardware.",
+    "STEP volume comparison uses max(0.001 mm3, 1 ppm of original volume). Initial 0.01 ppm rejected a 0.003473 mm3 WetLink BSpline roundtrip change and 0.041779 mm3 assembly change. BRep validity, solid counts and 0.0001 mm bbox limits remain unchanged. This is a numerical exchange tolerance, not a manufacturing tolerance.",
+    "Web tessellation uses 0.3 mm chordal and 0.35 rad angular deflection; exact STEP BReps are unchanged. GLB root scale is explicitly 0.001 after cq.Assembly.save(GLTF) because this pinned writer emits millimetre positions; actual binary world bounds test the conversion including (x,z,-y)."
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "schema": "intrface.passive-v3.sources.v1",
+  "retrieved": "2026-09-09",
+  "records": {
+    "camera-page.txt": {
+      "url": "https://bluerobotics.com/store/sensors-cameras/cameras/cam-usb-low-light-r1/",
+      "retrieved": "2026-09-09",
+      "file": "camera-page.txt",
+      "sha256": "f5adbdb932bb9d1c23fce1fbf72b96bcff90a09cf404017a4026e6ed4f4e6041",
+      "capture": "Historical hash and URL only; extracted facts live in dimension-traces.json. No supplier page text is distributed.",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "wetlink.zip": {
+      "url": "https://cad.bluerobotics.com/WLP-M10-7.5MM-R1.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "869faafc2345001c63111190b7e434f8ecf4467f2b22d253862f165b9502eddf",
+      "file": "wetlink.zip",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "dome.zip": {
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "f1c106302f1ebd92a36fa22c78b81ae8208c32ac5707a2afa1d1456c4c7ddaa4",
+      "file": "dome.zip",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "as1.txt": {
+      "url": "https://www.nauta-rcs.it/EN/Hydrophones/Aquarian_Scientific/",
+      "retrieved": "2026-09-09",
+      "file": "as1.txt",
+      "sha256": "2607d297c72951810ef5fc12bacc968836edfa6dc253adb531bc5b84073a4e74",
+      "capture": "Historical hash and URL only; extracted facts live in dimension-traces.json. No supplier page text is distributed.",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "flange.zip": {
+      "url": "https://cad.bluerobotics.com/WTE4_FLANGE_RAILS_BR-100665.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "c47b6ef430c179d312f7889231f78f0a22bbc17614a9b5edb69f3efe17611e96",
+      "file": "flange.zip",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "aft-cap.zip": {
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "633a41a2d32b6a9bfb7be10de5e48c8780cc83e6663cc711a4a63f01afc6958b",
+      "file": "aft-cap.zip",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "camera-drawing.png": {
+      "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+      "retrieved": "2026-09-09",
+      "sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+      "file": "camera-drawing.png",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "tether-page.txt": {
+      "url": "https://bluerobotics.com/store/cables-connectors/cables/fathom-rov-tether-by-the-meter/",
+      "retrieved": "2026-09-09",
+      "file": "tether-page.txt",
+      "sha256": "721aa0bbead5258fb8e7a21c7d21584a3960aea30dfd67cc1ed176bf0f59d5f8",
+      "capture": "Historical hash and URL only; extracted facts live in dimension-traces.json. No supplier page text is distributed.",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "wte-datasheet.pdf": {
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "file": "wte-datasheet.pdf",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "tube-page.txt": {
+      "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-locking-tube-r1-vp/",
+      "retrieved": "2026-09-09",
+      "file": "tube-page.txt",
+      "sha256": "747814aad3d996bcb5c3acde10c6b218104c8497776074f8c769f55a7801dc47",
+      "capture": "Historical hash and URL only; extracted facts live in dimension-traces.json. No supplier page text is distributed.",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "tube.zip": {
+      "url": "https://cad.bluerobotics.com/WTE4_ALUMINUM_TUBES_BR-106279-XXX.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "29143ec9b68feb9e4c0417d709b2fbf6f9510c857051033738cc44b69df3bb85",
+      "file": "tube.zip",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "wetlink-datasheet.pdf": {
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+      "file": "wetlink-datasheet.pdf",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "camera.zip": {
+      "url": "https://cad.bluerobotics.com/CAM-USB-WIDE-R1.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "a11427c54c9bd2353c75f94ece749bfff071ef2e21283152a6bc34b6c0f10690",
+      "file": "camera.zip",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "wetlink-page.txt": {
+      "url": "https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/",
+      "retrieved": "2026-09-09",
+      "file": "wetlink-page.txt",
+      "sha256": "29deeaa945c398e65715852a798deb9fccd513b6b531602d53671a1b39b2c669",
+      "capture": "Historical hash and URL only; extracted facts live in dimension-traces.json. No supplier page text is distributed.",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "flange-page.txt": {
+      "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-flange-vp/",
+      "retrieved": "2026-09-09",
+      "file": "flange-page.txt",
+      "sha256": "86ce9db4f3c3348f55584ceefc826d4a4e6bc29ba07be5d1fa354d0de3bc12b0",
+      "capture": "Historical hash and URL only; extracted facts live in dimension-traces.json. No supplier page text is distributed.",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "endcap-page.txt": {
+      "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+      "retrieved": "2026-09-09",
+      "file": "endcap-page.txt",
+      "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+      "capture": "Historical hash and URL only; extracted facts live in dimension-traces.json. No supplier page text is distributed.",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "cobalt-datasheet.pdf": {
+      "url": "https://www.bluetrailengineering.com/_files/ugd/e4c7c5_be15154513ab488fb0f04c2260100f55.pdf?index=true",
+      "retrieved": "2026-09-09",
+      "sha256": "ee54fa62c313f5e8149bd8ea0fa35980ff0693fefb6e8b849f56083f9626874f",
+      "file": "cobalt-datasheet.pdf",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "wte-datasheet.txt": {
+      "file": "wte-datasheet.txt",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "sha256": "3b2c1832d62de3f560f07079e6bd2615b36dd4661f3a9eac0e7987aed01357e6",
+      "derived_from": "wte-datasheet.pdf",
+      "extraction": "pdftotext -layout; source PDF is authority",
+      "capture": "Historical hash and URL only; extracted facts live in dimension-traces.json. No supplier page text is distributed.",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "wetlink-datasheet.txt": {
+      "file": "wetlink-datasheet.txt",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "sha256": "be8fbf1a2675c1f624d0c8cd5f4a97b171eb9ef9d77f4df27be8e322826501dd",
+      "derived_from": "wetlink-datasheet.pdf",
+      "extraction": "pdftotext -layout; source PDF is authority",
+      "capture": "Historical hash and URL only; extracted facts live in dimension-traces.json. No supplier page text is distributed.",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "cobalt-datasheet.txt": {
+      "file": "cobalt-datasheet.txt",
+      "url": "https://www.bluetrailengineering.com/_files/ugd/e4c7c5_be15154513ab488fb0f04c2260100f55.pdf?index=true",
+      "retrieved": "2026-09-09",
+      "sha256": "40dde5a88698a77c0eacbc4ec8314fad2eb9278a8cbb5a126d18c1429718369d",
+      "derived_from": "cobalt-datasheet.pdf",
+      "extraction": "pdftotext -layout; source PDF is authority",
+      "capture": "Historical hash and URL only; extracted facts live in dimension-traces.json. No supplier page text is distributed.",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "BR-106279-200_RevB.STEP": {
+      "file": "BR-106279-200_RevB.STEP",
+      "url": "https://cad.bluerobotics.com/WTE4_ALUMINUM_TUBES_BR-106279-XXX.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "75121dee58e4a680d1c049998e99250c7d55eba9cda535290fe5cd4fffa91241",
+      "archive": "tube.zip",
+      "archive_member": "BR-106279-200_RevB.STEP",
+      "archive_sha256": "29143ec9b68feb9e4c0417d709b2fbf6f9510c857051033738cc44b69df3bb85",
+      "capture": "Exact public vendor STEP bytes; not a render-derived drawing",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "BR-106279-300_RevB.STEP": {
+      "file": "BR-106279-300_RevB.STEP",
+      "url": "https://cad.bluerobotics.com/WTE4_ALUMINUM_TUBES_BR-106279-XXX.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "1cbd12460d7761c7d72cf30848154743961c80239b166ed6cb120a3b277dd290",
+      "archive": "tube.zip",
+      "archive_member": "BR-106279-300_RevB.STEP",
+      "archive_sha256": "29143ec9b68feb9e4c0417d709b2fbf6f9510c857051033738cc44b69df3bb85",
+      "capture": "Exact public vendor STEP bytes; not a render-derived drawing",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "BR-101040_RevC.step": {
+      "file": "BR-101040_RevC.step",
+      "url": "https://cad.bluerobotics.com/WTE4_FLANGE_RAILS_BR-100665.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "819126287e339b8e3f38a71da121a5e4440e7439debf7e78b1f08d9a34012b1c",
+      "archive": "flange.zip",
+      "archive_member": "BR-101040_RevC.step",
+      "archive_sha256": "c47b6ef430c179d312f7889231f78f0a22bbc17614a9b5edb69f3efe17611e96",
+      "capture": "Exact public vendor STEP bytes; not a render-derived drawing",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "WTE4-M-END-CAP-5XM10-R2.step": {
+      "file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "archive": "aft-cap.zip",
+      "archive_member": "WTE4-M-END-CAP-5XM10-R2.step",
+      "archive_sha256": "633a41a2d32b6a9bfb7be10de5e48c8780cc83e6663cc711a4a63f01afc6958b",
+      "capture": "Exact public vendor STEP bytes; not a render-derived drawing",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "BR-107201-dome.STEP": {
+      "file": "BR-107201-dome.STEP",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "3e8ec80e536fadf2f7b3e4b7d4f280762233b20d8522cfd64415923aaf11d9a1",
+      "archive": "dome.zip",
+      "archive_member": "BR-107201-dome.STEP",
+      "archive_sha256": "f1c106302f1ebd92a36fa22c78b81ae8208c32ac5707a2afa1d1456c4c7ddaa4",
+      "capture": "Exact public vendor STEP bytes; not a render-derived drawing",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "BR-107201-ring.STEP": {
+      "file": "BR-107201-ring.STEP",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "23d4be29d2eb2b590d29ce2e9e31402f848714f44a7b39fdf687f18c8d2c98e1",
+      "archive": "dome.zip",
+      "archive_member": "BR-107201-ring.STEP",
+      "archive_sha256": "f1c106302f1ebd92a36fa22c78b81ae8208c32ac5707a2afa1d1456c4c7ddaa4",
+      "capture": "Exact public vendor STEP bytes; not a render-derived drawing",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "LOW-LIGHT-HD-USB-CAMERA-R1.STEP": {
+      "file": "LOW-LIGHT-HD-USB-CAMERA-R1.STEP",
+      "url": "https://cad.bluerobotics.com/CAM-USB-WIDE-R1.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "2dc1767d9b595dd73abe3947902cc5bf25fe88ab296293e65117810ef6033f31",
+      "archive": "camera.zip",
+      "archive_member": "LOW-LIGHT-HD-USB-CAMERA-R1.STEP",
+      "archive_sha256": "a11427c54c9bd2353c75f94ece749bfff071ef2e21283152a6bc34b6c0f10690",
+      "capture": "Exact public vendor STEP bytes; not a render-derived drawing",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "WLP-M10-7.5MM-PUBLIC.step": {
+      "file": "WLP-M10-7.5MM-PUBLIC.step",
+      "url": "https://cad.bluerobotics.com/WLP-M10-7.5MM-R1.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "63599d4a64a1683b17248c73e8297399f4193bf52f5092e51c18b1cd7ee39253",
+      "archive": "wetlink.zip",
+      "archive_member": "WLP-M10-7.5MM-PUBLIC.step",
+      "archive_sha256": "869faafc2345001c63111190b7e434f8ecf4467f2b22d253862f165b9502eddf",
+      "capture": "Exact public vendor STEP bytes; not a render-derived drawing",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    "design-inputs.json": {
+      "file": "design-inputs.json",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "capture": "Explicit local design allocations; not vendor facts",
+      "license_status": "CERN-OHL-S-2.0"
+    }
+  },
+  "vendor_models": {
+    "tube": {
+      "file": "BR-106279-300_RevB.STEP",
+      "solids": 1,
+      "bbox_min_mm": [
+        -300.0000001,
+        -56.00000010000006,
+        -56.00000010000003
+      ],
+      "bbox_max_mm": [
+        1.0000000217316195e-07,
+        56.0000001,
+        56.00000010000003
+      ],
+      "bbox_size_mm": [
+        300.00000020000004,
+        112.00000020000006,
+        112.00000020000006
+      ],
+      "volume_mm3": 439924.6021648837,
+      "datasheet": "wte-datasheet.pdf",
+      "datasheet_page": 1,
+      "features": "Measured supplier envelope for fit comparison; original proxy in cad/v3_proxy.py.",
+      "part_number": "BR-106279-300",
+      "proxy_envelope_tolerance_mm": 0.02
+    },
+    "flange": {
+      "file": "BR-101040_RevC.step",
+      "solids": 1,
+      "bbox_min_mm": [
+        -57.15,
+        -57.15,
+        -1.0000000276124835e-07
+      ],
+      "bbox_max_mm": [
+        57.15,
+        57.1500001,
+        27.00000010000001
+      ],
+      "bbox_size_mm": [
+        114.3,
+        114.3000001,
+        27.00000020000001
+      ],
+      "volume_mm3": 38702.61559600212,
+      "datasheet": "wte-datasheet.pdf",
+      "datasheet_page": 1,
+      "features": "Measured supplier envelope for fit comparison; original proxy in cad/v3_proxy.py.",
+      "part_number": "BR-101040 (BR-100665 download conflict)",
+      "proxy_envelope_tolerance_mm": 0.02
+    },
+    "aft_cap": {
+      "file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "solids": 1,
+      "bbox_min_mm": [
+        -60.15,
+        -57.14999999999999,
+        -4.000000000000001
+      ],
+      "bbox_max_mm": [
+        60.15,
+        57.14999999999999,
+        6.000000000000001
+      ],
+      "bbox_size_mm": [
+        120.3,
+        114.29999999999998,
+        10.000000000000002
+      ],
+      "volume_mm3": 82682.68918135534,
+      "datasheet": "wte-datasheet.pdf",
+      "datasheet_page": 2,
+      "features": "Measured supplier envelope for fit comparison; original proxy in cad/v3_proxy.py.",
+      "penetrator_centers_xy_mm": [
+        [
+          -26.629582,
+          -8.652476
+        ],
+        [
+          -16.457987,
+          22.652476
+        ],
+        [
+          0.0,
+          -28.0
+        ],
+        [
+          16.457987,
+          22.652476
+        ],
+        [
+          26.629582,
+          -8.652476
+        ]
+      ],
+      "part_number": "BR-102993-005",
+      "proxy_envelope_tolerance_mm": 6.1
+    },
+    "dome": {
+      "file": "BR-107201-dome.STEP",
+      "solids": 1,
+      "bbox_min_mm": [
+        -52.328082488222215,
+        -9.999999689137553e-08,
+        -52.32808248822222
+      ],
+      "bbox_max_mm": [
+        52.328082488222215,
+        51.80199999999999,
+        52.32808248822222
+      ],
+      "bbox_size_mm": [
+        104.65616497644443,
+        51.80200009999999,
+        104.65616497644444
+      ],
+      "volume_mm3": 86525.01091114039,
+      "datasheet": "wte-datasheet.pdf",
+      "datasheet_page": 2,
+      "features": "Measured supplier envelope for fit comparison; original proxy in cad/v3_proxy.py.",
+      "part_number": "BR-107201",
+      "proxy_envelope_tolerance_mm": 1
+    },
+    "dome_ring": {
+      "file": "BR-107201-ring.STEP",
+      "solids": 1,
+      "bbox_min_mm": [
+        -57.150000100000014,
+        -1.0000000178419182e-07,
+        -57.1500001
+      ],
+      "bbox_max_mm": [
+        57.15000010000001,
+        10.350000099999999,
+        57.1500001
+      ],
+      "bbox_size_mm": [
+        114.30000020000003,
+        10.3500002,
+        114.3000002
+      ],
+      "volume_mm3": 21216.47164684554,
+      "datasheet": "wte-datasheet.pdf",
+      "datasheet_page": 2,
+      "features": "Measured supplier envelope for fit comparison; original proxy in cad/v3_proxy.py.",
+      "part_number": "BR-107201",
+      "proxy_envelope_tolerance_mm": 0.02
+    },
+    "camera": {
+      "file": "LOW-LIGHT-HD-USB-CAMERA-R1.STEP",
+      "solids": 2,
+      "bbox_min_mm": [
+        0.0,
+        -6.0,
+        -32.0
+      ],
+      "bbox_max_mm": [
+        32.0,
+        23.35,
+        0.0
+      ],
+      "bbox_size_mm": [
+        32.0,
+        29.35,
+        32.0
+      ],
+      "volume_mm3": 6237.464320257146,
+      "datasheet": "camera-drawing.png",
+      "datasheet_page": null,
+      "features": "Measured supplier envelope for fit comparison; original proxy in cad/v3_proxy.py.",
+      "part_number": "LOW-LIGHT-HD-USB-CAMERA-R1",
+      "proxy_envelope_tolerance_mm": 0.02
+    },
+    "wetlink": {
+      "file": "WLP-M10-7.5MM-PUBLIC.step",
+      "solids": 3,
+      "bbox_min_mm": [
+        -8.000000100000008,
+        -1.0000000077325108e-07,
+        -8.000000100000003
+      ],
+      "bbox_max_mm": [
+        8.000000100000003,
+        45.000000099999994,
+        8.000000100000005
+      ],
+      "bbox_size_mm": [
+        16.00000020000001,
+        45.000000199999995,
+        16.00000020000001
+      ],
+      "volume_mm3": 5693.727934718031,
+      "datasheet": "wetlink-datasheet.pdf",
+      "datasheet_page": 1,
+      "features": "Measured supplier envelope for fit comparison; original proxy in cad/v3_proxy.py.",
+      "part_number": "WLP-M10-7.5MM-R1",
+      "proxy_envelope_tolerance_mm": 0.02
+    }
+  },
+  "rights": "Supplier captures are not redistributed; their URLs, dates and hashes are retained. Original parameterized fit proxies are not manufacturing drawings for bought parts.",
+  "reuse_rights": {
+    "vendor_cad": "UNVERIFIED_NOT_CC0",
+    "derived_assembly_wholly_original": true,
+    "public_redistribution_authorized": true,
+    "review_required": "Supplier files are private and must be fetched on demand; the original fit proxies do not reproduce supplier CAD.",
+    "vendor_files_public_redistribution_authorized": false,
+    "original_design_license": "CERN-OHL-S-2.0"
+  }
+}

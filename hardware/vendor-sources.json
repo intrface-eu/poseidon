@@ -1,0 +1,287 @@
+{
+  "schema": "intrface.private-vendor-sources.v1",
+  "files": [
+    {
+      "path": "cad/RP-008343-DS-raspberry-pi-4-mechanical-drawing.pdf",
+      "url": "https://pip.raspberrypi.com/documents/RP-008343-DS-raspberry-pi-4-mechanical-drawing.pdf",
+      "retrieved": "2026-09-08",
+      "sha256": "a5c88057563016631ebca26666fd672614fc9aaa1c59128a541612c7798e9809",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "cad/Datasheet-BlueSolar-Monocrystalline-Panels-EN.pdf",
+      "url": "https://www.victronenergy.com/upload/documents/Datasheet-BlueSolar-Monocrystalline-Panels-EN.pdf",
+      "retrieved": "2026-09-08",
+      "sha256": "ad32cb7fe0ec45ceb325b3b61ba71e60b9d9a53c6a7808404a632cb0d727e191",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "cad/Victron-Lithium-Battery-Smart-technical-data.html",
+      "url": "https://www.victronenergy.com/media/pg/Lithium_Battery_Smart/en/technical-data.html",
+      "retrieved": "2026-09-08",
+      "sha256": "025ac0673f80092118abc92f6e134ce4fbba659fa0af5f7e360b66cbe34980b0",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "cad/LiFePO4-Battery-12.8V50AH-Smart.pdf",
+      "url": "https://www.victronenergy.com/upload/documents/LiFePO4-Battery-12.8V50AH-Smart.pdf",
+      "retrieved": "2026-09-08",
+      "sha256": "9e9623e440505c69a9ad2c4e681953d578936a198ead83753edc2491df545971",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v2/power/smallbms-datasheet.pdf",
+      "url": "https://www.victronenergy.com/upload/documents/Datasheet-smallBMS-with-pre-alarm-EN-.pdf",
+      "retrieved": "2026-09-08",
+      "sha256": "435f5b92427d74726dac8bc67a24f7bb40fc30dce3d934025555bf1680b049a9",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v2/power/smallbms-drawing.pdf",
+      "url": "https://www.victronenergy.com/upload/documents/smallBMS.pdf",
+      "retrieved": "2026-09-08",
+      "sha256": "c1f135518c019552108e265c58c6ba23bd64b478d7ef27e7f2b61c0e4154f09a",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v2/power/smallbms-manual.pdf",
+      "url": "https://www.victronenergy.com/upload/documents/smallBMS_with_pre-alarm/128558-smallBMS_with_pre-alarm-pdf-en.pdf",
+      "retrieved": "2026-09-08",
+      "sha256": "4e72391c13366047f508c8e4c1151646e3a0265aa6f306d883a8ab223be3e1f0",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v2/power/batteryprotect-drawing.pdf",
+      "url": "https://www.victronenergy.com/upload/documents/Smart-BatteryProtect_12V-24V-65A.pdf",
+      "retrieved": "2026-09-08",
+      "sha256": "dc6f97ea2e5f49db59b8ffa3a806d78e9699a23133e1154cbd1a9c3294120026",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v2/power/batteryprotect-specs.html",
+      "url": "https://www.victronenergy.com/media/pg/Smart_BatteryProtect_12V_24V/en/technical-specifications.html",
+      "retrieved": "2026-09-08",
+      "sha256": "3d5bfe4816146bdbbd2fb3a7c5745ff5286820dc15f668f02b6aa72b3e2f9646",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v2/power/batteryprotect-install.html",
+      "url": "https://www.victronenergy.com/media/pg/Smart_BatteryProtect_12V_24V/en/installation-and-wiring-examples.html",
+      "retrieved": "2026-09-08",
+      "sha256": "6470155a10a81f2b73a9703943a5f41b6d75076a72f390b1a9609657274c691f",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v2/power/vedirect-remote-manual.pdf",
+      "url": "https://www.victronenergy.com/upload/documents/Manual-VE.Direct-non-inverting-remote-on-off-cable-EN.pdf",
+      "retrieved": "2026-09-08",
+      "sha256": "d1595d99ec15d1cf940a8d4d752e0dacf94eac04cb75ef457a117aa615322278",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v2/power/pololu-5v.html",
+      "url": "https://www.pololu.com/product/3782",
+      "retrieved": "2026-09-08",
+      "sha256": "a3e8f2a2d356ffd920103bd8414838463941f7beaec04972af79c0f8eee306ab",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v2/power/pololu-3v3.html",
+      "url": "https://www.pololu.com/product/3781",
+      "retrieved": "2026-09-08",
+      "sha256": "52385023da0b22c16a067d2d94ad3b488e77cb600c550eb8ad6e2979740fa96d",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v2/power/pi-usbc-psu.pdf",
+      "url": "https://datasheets.raspberrypi.com/power-supply/usb-c-power-supply-product-brief.pdf",
+      "retrieved": "2026-09-08",
+      "sha256": "6df7bb5c05165cbf80978c05a36070a763523bb5a1cdf6724b87a1a6e673bd89",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v2/power/anderson-pp1545.pdf",
+      "url": "https://www.andersonpower.com/content/dam/app/ecommerce/product-pdfs/DS-PP1545.pdf",
+      "retrieved": "2026-09-08",
+      "sha256": "ac39c286d44528efab30061b96df6e64e6eeafb6e154af7a03397d518f45a04f",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v2/power/wago-221412.html",
+      "url": "https://www.wago.com/global/installation-terminal-blocks-and-connectors/compact-splicing-connector/p/221-412",
+      "retrieved": "2026-09-08",
+      "sha256": "077fbda06d591e815b0a8efbef8fc73ff27b8f4e2c264416340a24d0e055863c",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v2/power/wago-221415.html",
+      "url": "https://www.wago.com/global/installation-terminal-blocks-and-connectors/compact-splicing-connector/p/221-415",
+      "retrieved": "2026-09-08",
+      "sha256": "e4180c137c77c3e81255378c7e3e7b3d462cc289647d0542b050c34487154296",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v2/Hammond-1550WJ.pdf",
+      "url": "https://www.hammfg.com/files/parts/pdf/1550WJ.pdf",
+      "retrieved": "2026-09-08",
+      "sha256": "c5a25909908b686e83fe3ade063e770f9c9f359dd3177e28054f50ed305ca969",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v2/Wakefield-Thermal-Extrusions-2025.pdf",
+      "url": "https://wakefieldthermal.com/content/catalogs/Thermal_Extrusions_WakefieldThermal-2025.pdf",
+      "retrieved": "2026-09-08",
+      "sha256": "7baf0f6a605e88bd0a014414fea7d6776af4d20e62a0a6dafd33fa69c9913911",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v2/Henkel-SIL-PAD-TSP-1600.pdf",
+      "url": "https://datasheets.tdx.henkel.com/BERGQUIST-SIL-PAD-TSP-1600-en_GL.pdf",
+      "retrieved": "2026-09-08",
+      "sha256": "58f544583f86db7eb03736797e1d907a567717aecf095e8a0be5c29127dda9e3",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/wetlink.zip",
+      "url": "https://cad.bluerobotics.com/WLP-M10-7.5MM-R1.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "869faafc2345001c63111190b7e434f8ecf4467f2b22d253862f165b9502eddf",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/dome.zip",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "f1c106302f1ebd92a36fa22c78b81ae8208c32ac5707a2afa1d1456c4c7ddaa4",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/flange.zip",
+      "url": "https://cad.bluerobotics.com/WTE4_FLANGE_RAILS_BR-100665.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "c47b6ef430c179d312f7889231f78f0a22bbc17614a9b5edb69f3efe17611e96",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/aft-cap.zip",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "633a41a2d32b6a9bfb7be10de5e48c8780cc83e6663cc711a4a63f01afc6958b",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/camera-drawing.png",
+      "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+      "retrieved": "2026-09-09",
+      "sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/wte-datasheet.pdf",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/tube.zip",
+      "url": "https://cad.bluerobotics.com/WTE4_ALUMINUM_TUBES_BR-106279-XXX.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "29143ec9b68feb9e4c0417d709b2fbf6f9510c857051033738cc44b69df3bb85",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/wetlink-datasheet.pdf",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/camera.zip",
+      "url": "https://cad.bluerobotics.com/CAM-USB-WIDE-R1.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "a11427c54c9bd2353c75f94ece749bfff071ef2e21283152a6bc34b6c0f10690",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/cobalt-datasheet.pdf",
+      "url": "https://www.bluetrailengineering.com/_files/ugd/e4c7c5_be15154513ab488fb0f04c2260100f55.pdf?index=true",
+      "retrieved": "2026-09-09",
+      "sha256": "ee54fa62c313f5e8149bd8ea0fa35980ff0693fefb6e8b849f56083f9626874f",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/BR-106279-200_RevB.STEP",
+      "url": "https://cad.bluerobotics.com/WTE4_ALUMINUM_TUBES_BR-106279-XXX.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "75121dee58e4a680d1c049998e99250c7d55eba9cda535290fe5cd4fffa91241",
+      "archive": "passive-v3/tube.zip",
+      "archive_member": "BR-106279-200_RevB.STEP",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/BR-106279-300_RevB.STEP",
+      "url": "https://cad.bluerobotics.com/WTE4_ALUMINUM_TUBES_BR-106279-XXX.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "1cbd12460d7761c7d72cf30848154743961c80239b166ed6cb120a3b277dd290",
+      "archive": "passive-v3/tube.zip",
+      "archive_member": "BR-106279-300_RevB.STEP",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/BR-101040_RevC.step",
+      "url": "https://cad.bluerobotics.com/WTE4_FLANGE_RAILS_BR-100665.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "819126287e339b8e3f38a71da121a5e4440e7439debf7e78b1f08d9a34012b1c",
+      "archive": "passive-v3/flange.zip",
+      "archive_member": "BR-101040_RevC.step",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/WTE4-M-END-CAP-5XM10-R2.step",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "archive": "passive-v3/aft-cap.zip",
+      "archive_member": "WTE4-M-END-CAP-5XM10-R2.step",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/BR-107201-dome.STEP",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "3e8ec80e536fadf2f7b3e4b7d4f280762233b20d8522cfd64415923aaf11d9a1",
+      "archive": "passive-v3/dome.zip",
+      "archive_member": "BR-107201-dome.STEP",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/BR-107201-ring.STEP",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "23d4be29d2eb2b590d29ce2e9e31402f848714f44a7b39fdf687f18c8d2c98e1",
+      "archive": "passive-v3/dome.zip",
+      "archive_member": "BR-107201-ring.STEP",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/LOW-LIGHT-HD-USB-CAMERA-R1.STEP",
+      "url": "https://cad.bluerobotics.com/CAM-USB-WIDE-R1.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "2dc1767d9b595dd73abe3947902cc5bf25fe88ab296293e65117810ef6033f31",
+      "archive": "passive-v3/camera.zip",
+      "archive_member": "LOW-LIGHT-HD-USB-CAMERA-R1.STEP",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "path": "passive-v3/WLP-M10-7.5MM-PUBLIC.step",
+      "url": "https://cad.bluerobotics.com/WLP-M10-7.5MM-R1.zip",
+      "retrieved": "2026-09-09",
+      "sha256": "63599d4a64a1683b17248c73e8297399f4193bf52f5092e51c18b1cd7ee39253",
+      "archive": "passive-v3/wetlink.zip",
+      "archive_member": "WLP-M10-7.5MM-PUBLIC.step",
+      "license_status": "supplier_redistribution_unverified"
+    }
+  ]
+}

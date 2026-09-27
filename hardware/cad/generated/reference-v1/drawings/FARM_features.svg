@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="778" viewBox="0 0 1500 778">
+<rect width="1500" height="778" fill="white"/>
+<g font-family="monospace" fill="#172d39">
+<text x="35" y="40" font-size="25">FARM / HW-REF-1.1 / FEATURE AND FASTENER SCHEDULE</text>
+<text x="35" y="72" font-size="18">PROVISIONAL / mm / NOT FOR FABRICATION / features in assembly-local coordinates unless labelled local</text>
+<text x="35" y="100" font-size="16">Source-tagged Pi features and battery/panel/converter/MPPT envelopes have vendor evidence; other details/tolerances are assumptions.</text>
+<text x="35" y="140" font-size="15" font-weight="bold">CAD-FARM-BACKPLATE-01 / BOM CAD-FARM-BACKPLATE-01</text>
+<text x="50" y="163" font-size="15" font-weight="normal">size_mm: [180,250,8]</text>
+<text x="50" y="186" font-size="15" font-weight="normal">mount_hole_diameter_mm: 10.5</text>
+<text x="35" y="209" font-size="15" font-weight="bold">CAD-FARM-LOWER-SADDLE-1 / BOM CAD-FARM-LOWER-SADDLE-01</text>
+<text x="50" y="232" font-size="15" font-weight="normal">bore_mm: 62</text>
+<text x="50" y="255" font-size="15" font-weight="normal">pipe_assumed_diameter_mm: 60</text>
+<text x="50" y="278" font-size="15" font-weight="normal">split_gap_mm: 4</text>
+<text x="50" y="301" font-size="15" font-weight="normal">Through-bolt ears, purchased U-bolt/strap choice and slip/crush/load calculations remain open</text>
+<text x="35" y="324" font-size="15" font-weight="bold">CAD-FARM-LOWER-SADDLE-2 / BOM CAD-FARM-LOWER-SADDLE-01</text>
+<text x="50" y="347" font-size="15" font-weight="normal">bore_mm: 62</text>
+<text x="50" y="370" font-size="15" font-weight="normal">pipe_assumed_diameter_mm: 60</text>
+<text x="50" y="393" font-size="15" font-weight="normal">split_gap_mm: 4</text>
+<text x="50" y="416" font-size="15" font-weight="normal">Through-bolt ears, purchased U-bolt/strap choice and slip/crush/load calculations remain open</text>
+<text x="35" y="439" font-size="15" font-weight="bold">CAD-FARM-RETRIEVAL-LUG-01 / BOM CAD-FARM-RETRIEVAL-LUG-01</text>
+<text x="50" y="462" font-size="15" font-weight="normal">eye_diameter_mm: 16</text>
+<text x="50" y="485" font-size="15" font-weight="normal">plate_thickness_mm: 8</text>
+<text x="50" y="508" font-size="15" font-weight="normal">eye_centre_z_mm: 54</text>
+<text x="50" y="531" font-size="15" font-weight="normal">No safe working load. Independent rated retrieval hardware, eye edge distance, joint and corrosion review required; never print</text>
+<text x="35" y="554" font-size="15" font-weight="bold">CAD-FARM-STRAIN-RELIEF-1 / BOM CAD-FARM-STRAIN-RELIEF-01</text>
+<text x="50" y="577" font-size="15" font-weight="normal">bore_mm: 9</text>
+<text x="50" y="600" font-size="15" font-weight="normal">block_mm: [25,20,30]</text>
+<text x="50" y="623" font-size="15" font-weight="normal">Compression sleeve, split, bolt pattern, cable crush and pullout test open; not a qualified strain relief</text>
+<text x="35" y="646" font-size="15" font-weight="bold">CAD-FARM-STRAIN-RELIEF-2 / BOM CAD-FARM-STRAIN-RELIEF-01</text>
+<text x="50" y="669" font-size="15" font-weight="normal">bore_mm: 9</text>
+<text x="50" y="692" font-size="15" font-weight="normal">block_mm: [25,20,30]</text>
+<text x="50" y="715" font-size="15" font-weight="normal">Compression sleeve, split, bolt pattern, cable crush and pullout test open; not a qualified strain relief</text>
+</g>
+</svg>

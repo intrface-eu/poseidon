@@ -1,0 +1,208 @@
+{
+  "assumptions": {
+    "battery_rail": "SRC-BATTERY:11.2V end-of-discharge,14.4V upper charge. Nominal HUB bus12V is a reference, not measured regulation or transient bound.",
+    "converter": "SRC-SD50:9.2..18V,50W,10A,70% typical. Adjust5.1V only after qualification. Assumed50% available-power factor is a sensitivity input, not a read-off approved derating curve.",
+    "hub_loads": "ALL STATE CURRENTS ASSUMED. Pi-only allocations exclude separately listed USB load. USB1.2A aggregate provisional allocation requires official limit/revision confirmation. DAQ/storage placeholder draw is inside USB; wet camera terminal power is separate and calculated tether copper/contact loss at minimum battery voltage is added to the HUB input budget. No modem/gateway/lighting/heater/array/wiper/projector load included; these missing loads block final sizing.",
+    "inrush": "Capacitance4700uF,10ms linear voltage ramp, simultaneous startup, no active limiter are assumptions. Converter input capacitance/inrush is absent from retrieved datasheet. Capacitor ramp current is not an actual hot-plug peak bound.",
+    "reef_loads": "Whole ESP DevKit and interface currents are assumed, not chip deep-sleep data. Dedicated3.3V radio converter candidate is unselected; do not draw it from DevKit3V3.120mA radio burst allocation exceeds vendor87mA operating point but is not a measured maximum. MPPT19mA at12V is vendor load-on data; BMS0.1W and converter efficiencies are assumptions.",
+    "reserve": "SRC-BATTERY12.8V50Ah at25C.0.8DoD,0.8aged capacity,0.8cold capacity (vendor0C value),0.9discharge path efficiency and3days requested reserve are scenarios, not warranted lifetime/autonomy. Reserve applies to one REEF; HUB-on-same-battery is a separate illustration. Charging at0C is prohibited by candidate battery despite modeled discharge capacity.",
+    "solar": "SRC-PANEL40W STC,Voc22.45,Isc2.4,betaVoc-0.0035/C.1peak-sun-hour/day,0.65field derate,0.9charge efficiency and0.9discharge-path efficiency from reserve model (all solar energy conservatively cycles through storage before load-side comparison),1.25Isc factor,-10C cold cell and70C hot cell are sensitivity assumptions, not site data.40W model not suitable by mere catalog wattage.",
+    "tether": "25m one-way,0.75mm2 copper,40C,50mohm total contacts are examples only; not site cable/USB transport selections. Copper resistivity0.0175ohm mm2/m at20C and coefficient0.00393/C are handbook-level modeling assumptions.9..16V camera input range is not a vendor rating.",
+    "thermal": "35C shaded ambient,1.5K/W enclosure-to-air resistance and0.12m2 solar area/800Wm2/0.5absorptivity are assumed. All Pi/USB and DC/DC loss heat stays in HUB, camera power leaves enclosure. No measured thermal resistance or junction model; Pi50C is ambient limit, not junction."
+  },
+  "battery": {
+    "bms_power_path_qualified": false,
+    "hub_battery_not_selected": true,
+    "illustrative_hub_on_same_battery_hours": 17.102395213,
+    "reef_required_reserve_wh": 82.5742425,
+    "reef_reserve_screen_passes": true,
+    "reef_zero_solar_days": 10.714430714,
+    "usable_load_side_wh": 294.912
+  },
+  "battery_rail_screen": {
+    "converter_input_maximum_v": 18.0,
+    "converter_input_minimum_v": 9.2,
+    "converter_static_range_passes": true,
+    "direct_bus_to_esp_or_radio_forbidden": true,
+    "maximum_v": 14.4,
+    "minimum_v": 11.2,
+    "radio_static_regulated_range_passes": true,
+    "transients_drop_and_regulators_qualified": false
+  },
+  "configuration": "reference-v1",
+  "default_population": {
+    "amplifier_installed": false,
+    "output_actuation_gpio": [],
+    "projector_connected": false,
+    "wiper_installed": false
+  },
+  "energization_allowed": false,
+  "evidence_kind": "calculated_reference_not_measured",
+  "hub": {
+    "assumed_available_converter_w": 25.0,
+    "average_w": 17.24390042,
+    "converter_capacity_screen_passes": true,
+    "daily_wh": 413.853610085,
+    "full_usb_allocation_source_a": 3.0,
+    "peak": {
+      "bus_w": 30.666595114,
+      "camera_bus_w": 8.809452257,
+      "camera_cable_loss_w": 0.809452257,
+      "camera_load_w": 8.0,
+      "converter_loss_w": 6.557142857,
+      "output_5v_w": 15.3
+    },
+    "peak_bus_a_at_min_v": 2.738088849,
+    "required_source_a": 3.0,
+    "required_source_w": 15.3,
+    "states": [
+      {
+        "bus_w": 5.1,
+        "camera_bus_w": 0.0,
+        "camera_cable_loss_w": 0.0,
+        "camera_load_w": 0.0,
+        "converter_loss_w": 1.53,
+        "hours": 1.0,
+        "name": "idle",
+        "output_5v_w": 3.57,
+        "wh": 5.1
+      },
+      {
+        "bus_w": 17.296740811,
+        "camera_bus_w": 4.182455097,
+        "camera_cable_loss_w": 0.182455097,
+        "camera_load_w": 4.0,
+        "converter_loss_w": 3.934285714,
+        "hours": 20.0,
+        "name": "record",
+        "output_5v_w": 9.18,
+        "wh": 345.934816223
+      },
+      {
+        "bus_w": 20.939597954,
+        "camera_bus_w": 4.182455097,
+        "camera_cable_loss_w": 0.182455097,
+        "camera_load_w": 4.0,
+        "converter_loss_w": 5.027142857,
+        "hours": 3.0,
+        "name": "upload",
+        "output_5v_w": 11.73,
+        "wh": 62.818793862
+      }
+    ],
+    "usb_c_path_qualified": false
+  },
+  "inrush": {
+    "assumed_linear_ramp_capacitor_current_a": 6.768,
+    "coincident_assumed_current_a": 9.506088849,
+    "qualification": "unmeasured; does not bound hot-plug parasitic/ESR peaks or select a fuse",
+    "rectangular_coincident_i2t_a2s": 0.903657252,
+    "stored_energy_j": 0.487296
+  },
+  "open_gates": [
+    "USB-C source/OVP/current limit/cable/Pi revision and full USB limit verification",
+    "12V source and transient, fuse/connector/wire/fault-current coordination",
+    "Independent REEF5V/3V3 regulators and radio burst/backpower measurement",
+    "External Smart battery BMS, charger/load disconnect and temperature protection",
+    "Actual load states including missing gateway/backhaul/heater/lighting if needed",
+    "Thermal path, enclosure, shading and measured ambient/junction rise",
+    "Solar season/shading and hot-panel startup/charge compatibility",
+    "Wet DAQ/camera/hydrophone/harness/pressure/grounding integration",
+    "Optional physical output absent; safety hardware and all electrical/acoustic qualification open"
+  ],
+  "reef": {
+    "average_w": 1.146864479,
+    "daily_wh": 27.5247475,
+    "dedicated_3v3_supply_part_selected": false,
+    "devkit_3v3_spare_a": null,
+    "peak": {
+      "bus_w": 4.948,
+      "controller_bms_bus_w": 0.328,
+      "esp_bus_w": 3.125,
+      "probe_bus_w": 1.0,
+      "radio_bus_w": 0.495
+    },
+    "peak_bus_a_at_min_v": 0.441785714,
+    "radio_current_headroom_over_operating_point_a": 0.033,
+    "radio_design_peak_a": 0.12,
+    "radio_supply_capacity_qualified": false,
+    "radio_vendor_operating_point_a": 0.087,
+    "states": [
+      {
+        "bus_w": 1.0495325,
+        "controller_bms_bus_w": 0.328,
+        "esp_bus_w": 0.5,
+        "hours": 23.0,
+        "name": "idle",
+        "probe_bus_w": 0.2,
+        "radio_bus_w": 0.0215325,
+        "wh": 24.1392475
+      },
+      {
+        "bus_w": 3.3855,
+        "controller_bms_bus_w": 0.328,
+        "esp_bus_w": 1.5625,
+        "hours": 1.0,
+        "name": "sample_and_uplink",
+        "probe_bus_w": 1.0,
+        "radio_bus_w": 0.495,
+        "wh": 3.3855
+      }
+    ]
+  },
+  "reference": "HW-REF-1.1",
+  "solar": {
+    "assumed_design_isc_a": 3.0,
+    "break_even_peak_sun_hours": 1.306968067,
+    "charge_current_screen_passes": true,
+    "cold_voc_screen_passes": true,
+    "cold_voc_v": 25.200125,
+    "days_until_usable_reserve_exhaustion_at_deficit": 45.618487033,
+    "energy_boundary": "load-side; all harvested energy modeled through storage cycle",
+    "harvest_stored_wh_per_day": 23.4,
+    "harvest_wh_per_day": 21.06,
+    "hot_voc_start_screen_passes": false,
+    "hot_voc_v": 18.914125,
+    "ideal_stc_charge_a_at_min_battery": 3.571428571,
+    "isc_screen_passes": true,
+    "net_wh_per_day": -6.4647475,
+    "qualification": "site yield not measured; hot Voc startup is necessary not sufficient; BMS/charger interaction open",
+    "required_start_v_at_max_battery": 19.4,
+    "sustainable_under_assumptions": false
+  },
+  "tether": {
+    "at_max_battery": {
+      "cable_loss_w": 0.450586517,
+      "collapse_power_w": 39.621920461,
+      "current_a": 0.586846286,
+      "drop_v": 0.767810119,
+      "load_v": 13.632189881,
+      "source_w": 8.450586517
+    },
+    "at_min_battery": {
+      "cable_loss_w": 0.809452257,
+      "collapse_power_w": 23.968816081,
+      "current_a": 0.786558237,
+      "drop_v": 1.029106579,
+      "load_v": 10.170893421,
+      "source_w": 8.809452257
+    },
+    "camera_range_vendor_verified": false,
+    "input_range_screen_passes": true,
+    "loop_ohm": 1.308366667,
+    "maximum_unloaded_camera_v": 14.4,
+    "unmodeled": "transients, wet insulation/leakage, signal transport, startup/control stability",
+    "usb_tether_length_selected": false
+  },
+  "thermal": {
+    "absorbed_solar_w": 48.0,
+    "estimated_shade_internal_air_c": 67.785714286,
+    "estimated_sun_internal_air_c": 139.785714286,
+    "max_rth_for_shade_limit_k_per_w": 0.68627451,
+    "peak_enclosed_heat_w": 21.857142857,
+    "pi_ambient_limit_c": 50.0,
+    "qualification": "lumped steady-state screen only; no measured internal air/junction or marine thermal evidence",
+    "shade_screen_passes": false,
+    "sun_screen_passes": false
+  }
+}

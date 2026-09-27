@@ -1,0 +1,25 @@
+{
+  "deliverablePaths": [
+    "apps/aeolus-api/",
+    "tests/api/"
+  ],
+  "dependencies": [
+    132
+  ],
+  "description": "Expose the local monitor Hub through a bounded authenticated FastAPI interface.",
+  "details": "Implement the /healthz and /api/v1 monitor endpoints defined by the local monitor contract. Require a constant-time checked workspace bearer token on every non-health route, keep safe error shapes, validate input and pagination at the public boundary, stream bounded imports and video responses, and run one recoverable local replay-job worker. Bind the development CLI to loopback by default. Do not add an emit, arm, relay, kill-switch, open proxy, arbitrary URL fetch, filesystem-path import, permissive CORS, or external service integration.",
+  "id": 133,
+  "ownerRole": "software",
+  "phase": "P2-dev",
+  "priority": "high",
+  "researchPackages": [],
+  "status": "done",
+  "subtasks": [],
+  "testStrategy": "Run tests/api/ with the locked API dependencies for health, missing/wrong/right token handling, safe errors, endpoint validation, queue processing, pagination, stale review rejection, bounded file failures, authenticated video streaming, and API worker recovery.",
+  "title": "P2-dev Authenticated Local Monitor API",
+  "verification": {
+    "date": "2026-09-07",
+    "evidencePath": "docs/validation/development-tranche-002.md",
+    "scope": "Local loopback monitor API software only. This verifies no Internet hosting, production authentication or security lifecycle, field operation, hardware, output, permission, measurement, efficacy, compliance, or production-readiness gate."
+  }
+}

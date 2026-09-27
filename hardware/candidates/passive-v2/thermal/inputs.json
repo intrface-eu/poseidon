@@ -1,0 +1,19 @@
+{
+  "configuration":"passive-v2",
+  "revision":"HW-CAND-2.0",
+  "status":"NON_ADOPTED_NOT_BUILD_AUTHORIZED",
+  "frozen_comparison":{"ambient_c":35,"enclosed_peak_heat_w":21.857142857,"potential_absorbed_sun_w":48,"pi_vendor_ambient_limit_c":50},
+  "interface_path":"hardware/candidates/passive-v2/interface.json",
+  "source_registry_path":"hardware/candidates/passive-v2/sources/thermal-sources.json",
+  "contact_pressure_psi_cases":[10,25,50,100,200],
+  "material_conductivity_w_mk_cases":[70,120,200],
+  "internal_convection_w_m2k_cases":[2,5,10],
+  "sink_reference_multipliers":[1,1.5,2],
+  "effective_contact_area_fractions":[1,0.5],
+  "residual_solar_fraction_cases":[0,0.25,0.5,1],
+  "heat_capture_fraction_cases":[0,0.5,0.9,1],
+  "reference_sensitivity_case":{"contact_pressure_psi":10,"material_conductivity_w_mk":70,"internal_convection_w_m2k":5,"sink_reference_multiplier":1,"effective_contact_area_fraction":1,"residual_solar_fraction":1,"heat_capture_fraction":0},
+  "case_status":"Every row is an unvalidated sensitivity case, NOT a selected or guaranteed condition. Zero solar and full heat capture are ideal limits only.",
+  "actual_installed_values":{"contact_pressure_psi":null,"material_conductivity_w_mk":null,"internal_convection_w_m2k":null,"sink_resistance_k_per_w":null,"effective_contact_area_fraction":null,"residual_solar_fraction":null,"heat_capture_fraction":null,"source_to_collector_and_wall_spreading_resistance_k_per_w":null},
+  "model_limits":["Lumped steady-state linear reference network; not CFD, transient, radiation or a qualification model.","All baseline enclosed heat and48W potential absorbed-sun budget retained. Geometry does not justify setting residual solar fraction to zero.","Natural-convection catalog sink reference lacks installed boundary conditions; multipliers are exploratory, not certified bounds.","Pad area scaling and common wall/spreader conduction neglect nonuniform clamping, lateral spreading, casting texture, source-package contacts and collector-to-air feedback.","Full rectangular internal wallarea is an optimistic exchange-area allocation; component blockage and actual flow/radiation/coupling are not measured.","A conditional numerical air-temperature inequality is not actual local Pi/DAQ/converter ambient or junction qualification."]
+}

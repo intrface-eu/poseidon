@@ -1,0 +1,28 @@
+{
+  "schema": "intrface.passive-v3.baseline-lock.v1",
+  "scope": "Explicit immutable research inputs and baseline geometry/source files only, not a blanket lock of future lanes",
+  "excluded_mutable_catalog_metadata": [
+    "HARDWARE.md",
+    "hardware/candidates/passive-v2/baseline-lock.json",
+    "hardware/candidates/passive-v2/cad/baseline-lock.json",
+    "hardware/candidates/passive-v2/cad/generated/passive-v2/manifest.json",
+    "hardware/candidates/passive-v2/power/evidence.json"
+  ],
+  "exclusion_reason": "B3 updates artifact catalog rows; controller owns explicit v2 evidence relock. These metadata edits must not invalidate independent v3 geometry. V2 geometry and source inputs remain frozen here.",
+  "files": {
+    "hardware/cad/pyproject.toml": "5ea87ea4eb879d9b853bf6e5857d9389fb80a6aad43b3e25cbafd520ca1fbc6d",
+    "hardware/cad/uv.lock": "a0344c43c8abfe40ab0d9959f1795729f492d3464ea83ac45211096db890493b",
+    "hardware/candidates/passive-v2/interface.json": "47417cece50fad016051e953fbabb29473bb55fbbad18f2d6d562d567528cd17",
+    "hardware/candidates/passive-v2/cad/model.py": "d2bb3be4e08fb71a84cbd1b3e6bb540eced40aef0e74d5ffe35ba1afde49a1bf",
+    "hardware/candidates/passive-v2/cad/parameters.json": "276c73f6d37ee7c6ed9226dc14d066288336fe9e5dd685d86e11f80d25a6d3f0",
+    "hardware/candidates/passive-v2/cad/candidate_parameters.py": "e790af323f96b0fa65d4c284785b5e7263396a53fff2844edff55393c59fd2b7",
+    "hardware/candidates/passive-v2/cad/exporter.py": "16536d3c58815acb0f17bf8ced765f9303673a9002bc02d60fe4f96fb193f85b",
+    "research/results/hardware-run-A-2026-09-09.md": "a0affc572a978468229ec4cff9837d81f88e05031d931337029cae7ae742ad3f",
+    "research/literature/R5R6-marine-mechanical-power-2026-09-09.md": "b69eb07a8108dc60be84e1e1c01663d8e8919e03bdb881ac8417e245d8458f47",
+    "research/literature/R5R6-marine-mechanical-power-2026-09-09.sources.json": "8d8a8c90dd0c2132cb4cd86aac7665aab6623a56e16e60f04eefb8481b8c30d8",
+    "research/literature/R4-acoustic-output-chain-2026-09-09.md": "eb911e9a81149a4f50f6d098710e1be2ea2ce488cc9f8b52afd8ca96c12229d5",
+    "hardware/candidates/passive-v2/cad/generated/passive-v2/step/C2-TOP.step": "888498e927d863199bc16a41d44b104f7dc3c7b9552e0a8ec910571c045678c0",
+    "hardware/candidates/passive-v2/cad/generated/passive-v2/step/C2-HUB.step": "063fdec4b42b70a0a89ceb836e0cf3f0795fd54ca6eb5a2c8000a0249de4f8dc",
+    "hardware/candidates/passive-v2/cad/generated/passive-v2/step/C2-REEF.step": "4653715000f5868675c0a162a4c8f707af7750c56320db4bbd911918dc5325f5"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "deliverablePaths": [
+    "apps/nereid/",
+    "models/vision/"
+  ],
+  "dependencies": [
+    111,
+    114
+  ],
+  "description": "Implement paired visual evidence, synchronization, visibility status, and guarded wiper behavior.",
+  "details": "Capture clips around acoustic events; preserve camera/audio timing and visibility state. Add a wiper only with current, travel, time, jam, and failure telemetry guards. Do not count lost visibility as no predator.",
+  "id": 115,
+  "ownerRole": "vision",
+  "phase": "P5",
+  "priority": "medium",
+  "researchPackages": [
+    "R2",
+    "R6"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Use replay and hardware tests to verify timing, paired clips, missing camera handling, stale visibility, and wiper fault guards.",
+  "title": "P5 NEREID Vision, Synchronization, and Wiper Controls"
+}

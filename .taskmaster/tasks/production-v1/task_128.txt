@@ -1,0 +1,24 @@
+{
+  "deliverablePaths": [
+    "hardware/manufacturing/",
+    "docs/validation/pvt/"
+  ],
+  "dependencies": [
+    126,
+    127
+  ],
+  "description": "Build a controlled pilot batch and prove repeatable manufacture, provisioning, calibration, test, rework, and repair.",
+  "details": "Release controlled BOM/assembly instructions, fixtures, serialisation, key provisioning, per-unit calibration, end-of-line QA, packaging, repair, yield, and nonconformance records. A second assembler must build from the released package.",
+  "id": 128,
+  "ownerRole": "manufacturing",
+  "phase": "P8",
+  "priority": "high",
+  "researchPackages": [
+    "R6",
+    "R7"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Verify serial-linked build/calibration/test records, pilot yield/rework, controlled substitutions, independent assembly, and cost evidence meet the approved plan.",
+  "title": "P8 PVT Pilot Batch and Manufacturing QA"
+}

@@ -1,0 +1,5 @@
+{
+  "schema_version": "poseidon.digital-config.v2",
+  "simulation": true,
+  "health_interval_s": 30
+}

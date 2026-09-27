@@ -1,0 +1,335 @@
+{
+  "artifacts": [
+    {
+      "bytes": 18698,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-CONFORMITY",
+        "G-PRIVACY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/compliance/official-source-register.md",
+      "sha256": "3ea6599fac79d854595d472a3462691e85b3c710c651d6146f361cb3ab4e7f5e"
+    },
+    {
+      "bytes": 22647,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-CONFORMITY",
+        "G-PRIVACY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/compliance/regulatory-applicability-2026-09-08.md",
+      "sha256": "14aa0d14adeb284f759458edb1a5058d1150e34b9131fbb6fececcb10d3d1884"
+    },
+    {
+      "bytes": 12569,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-CONFORMITY",
+        "G-PRIVACY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/compliance/software-supply-chain/inventory-process.md",
+      "sha256": "edf53cb485678ba1c7614401da12a3be0a69242701c197aefecef00e00887318"
+    },
+    {
+      "bytes": 452117,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-CONFORMITY",
+        "G-PRIVACY"
+      ],
+      "kind": "inventory",
+      "level": "software-complete",
+      "path": "docs/compliance/software-supply-chain/license-inventory.json",
+      "sha256": "d74ad99987e7fe0c95c9ecc836066b4e274d474be5edc1893ce514e451fb4658"
+    },
+    {
+      "bytes": 133535,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-CONFORMITY",
+        "G-PRIVACY"
+      ],
+      "kind": "inventory",
+      "level": "software-complete",
+      "path": "docs/compliance/software-supply-chain/metadata-snapshot.json",
+      "sha256": "15ba7c41f396a1ca2779d7e94cb0c26bbee54272e4aae20f375149713f9776a3"
+    },
+    {
+      "bytes": 228730,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-CONFORMITY",
+        "G-PRIVACY"
+      ],
+      "kind": "inventory",
+      "level": "software-complete",
+      "path": "docs/compliance/software-supply-chain/sbom.cdx.json",
+      "sha256": "612ee14815e958e1bf3409ccb622bda9b5d316872132b815fbcc7bd2bbe13e4b"
+    },
+    {
+      "bytes": 164769,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-CONFORMITY",
+        "G-PRIVACY"
+      ],
+      "kind": "inventory",
+      "level": "software-complete",
+      "path": "docs/compliance/software-supply-chain/schema/bom-1.5.schema.json",
+      "sha256": "067f7824b08653839ea050ae9e09ca48375eadc2652b0e2a299476e7db90335b"
+    },
+    {
+      "bytes": 8058,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-CONFORMITY",
+        "G-PRIVACY"
+      ],
+      "kind": "inventory",
+      "level": "software-complete",
+      "path": "docs/compliance/software-supply-chain/schema/jsf-0.82.schema.json",
+      "sha256": "8bae002c25e723db7ee1f26afde680ae1a2b1a8f6b4b4b0fd65dc3becb090aae"
+    },
+    {
+      "bytes": 12322,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-CONFORMITY",
+        "G-PRIVACY"
+      ],
+      "kind": "inventory",
+      "level": "software-complete",
+      "path": "docs/compliance/software-supply-chain/schema/spdx.schema.json",
+      "sha256": "4f6e2b05c05d26a4f2dc5879fbc2fca94b0a28db46289d0c51345621b71cfbfc"
+    },
+    {
+      "bytes": 2775,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-CONFORMITY",
+        "G-PRIVACY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/compliance/software-supply-chain/support-window.md",
+      "sha256": "e5d62c76bc0f75a3c7eb4b672557ec6b369ad706becd9d42834a6e337a0cab22"
+    },
+    {
+      "bytes": 4442,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-CONFORMITY",
+        "G-PRIVACY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/compliance/software-supply-chain/vulnerability-intake.md",
+      "sha256": "a3162a950f986a4e743cf1ddbc97bd2a9a01cc4bf314afaabf8e1c809087abce"
+    },
+    {
+      "bytes": 16069,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-CONFORMITY",
+        "G-PRIVACY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/compliance/study-permission-dossier.md",
+      "sha256": "9b3adad8000418d84f202b7c460eb6a3c7c0943203fcab929fbd8c8ab3080f43"
+    },
+    {
+      "bytes": 24339,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-PRIVACY",
+        "G-CONFORMITY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/compliance/technical-file-index.md",
+      "sha256": "74607e118f8e4e566347ef8c4436c8b676ce47652c4a24ded53f2a544add7b50"
+    },
+    {
+      "bytes": 10562,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-MANUFACTURE",
+        "G-LIFECYCLE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/manufacturing/cost-and-quotation-request.md",
+      "sha256": "f6ce4043c86dfde267f2801e86f561e7f84bf7151991b1b47181e7c7d752b9b6"
+    },
+    {
+      "bytes": 19532,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-MANUFACTURE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/manufacturing/reference-build-and-eol.md",
+      "sha256": "78dd5b50b30b6e9fdebb16d26696e7d7c39c64a2f3a2769cc84853cc44ad4908"
+    },
+    {
+      "bytes": 17214,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-LIFECYCLE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/manufacturing/service-and-lifecycle.md",
+      "sha256": "bab2f663117b176bbeaffa7388ab86a8a213512c709e40caa28f75d7862ba646"
+    },
+    {
+      "bytes": 30355,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-MANUFACTURE",
+        "G-LIFECYCLE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/manufacturing/templates/unperformed-records.json",
+      "sha256": "09a827e0710b9335ae45503db8871487aa3ec3af8df047915b58cd257763b954"
+    },
+    {
+      "bytes": 13141,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-MANUFACTURE",
+        "G-LIFECYCLE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/manufacturing/traceability-and-records.md",
+      "sha256": "4ba270db2b9db6643da7a6b6304020ceaa5f967913151f19bf90f6c73d1e9ef6"
+    },
+    {
+      "bytes": 8279,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-SCOPE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/qualification/evidence-guide.md",
+      "sha256": "6e26be37052ea391bb17061ace66c24622726778e6fdc784d65bec2988663491"
+    },
+    {
+      "bytes": 18330,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-SCOPE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/qualification/evidence/tranche3-final-2026-09-09/gate-policy.json",
+      "sha256": "42926e0dcb92d9e9431a42504b785bd8744e0c0f18bcc5fed12e3d5c8604e2be"
+    },
+    {
+      "bytes": 15831,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-LOCAL"
+      ],
+      "kind": "test-report",
+      "level": "simulated",
+      "path": "docs/qualification/evidence/tranche3-final-2026-09-09/system/system-checks-v1.json",
+      "sha256": "5b239f49441f8681ad8d38642a1264d5d754b7375bfb7a43997ede8f5e0eda1c"
+    },
+    {
+      "bytes": 17393,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-DATA",
+        "G-SAFETY",
+        "G-NETWORK",
+        "G-MECHANICAL",
+        "G-POWER",
+        "G-SECURITY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/qualification/procedures/evt-dvt-pvt.md",
+      "sha256": "98b4849395e3f71b04cfdaed340b72772f66a0988941495597472a3ae0431749"
+    },
+    {
+      "bytes": 14090,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-MECHANICAL",
+        "G-POWER",
+        "G-SAFETY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/qualification/procedures/physical-test-record.md",
+      "sha256": "b176d1e2b4c068dc49260cf721623de7667c6abf0272bd097af22309d78ea67c"
+    },
+    {
+      "bytes": 10283,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-SCOPE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/qualification/readiness-2026-09-08.md",
+      "sha256": "81e69e1ae2491bedbe5ad7cb3e85f36aaecd276a3a207d8dac992d771d449ccc"
+    },
+    {
+      "bytes": 14823,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-EFFICACY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/research/prior-trial-follow-up-drafts.md",
+      "sha256": "c4c844d0eb64c3fba474305961b557c28ce8ed207d1a4b244f315657794509ab"
+    },
+    {
+      "bytes": 18232,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-SITE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/research/site-permissions-evidence-register.md",
+      "sha256": "0f35124f43d36c4fc137daf7fbc996b24dc2517477c14859fdbd667062312355"
+    }
+  ],
+  "claims": {
+    "G-CONFORMITY": "blocked",
+    "G-DATA": "blocked",
+    "G-EFFICACY": "blocked",
+    "G-LIFECYCLE": "blocked",
+    "G-LOCAL": "software-checks-passed",
+    "G-MANUFACTURE": "blocked",
+    "G-MECHANICAL": "blocked",
+    "G-NETWORK": "blocked",
+    "G-POWER": "blocked",
+    "G-PRIVACY": "blocked",
+    "G-SAFETY": "blocked",
+    "G-SCOPE": "blocked",
+    "G-SECURITY": "blocked",
+    "G-SITE": "blocked",
+    "G-SOFTWARE": "blocked"
+  },
+  "configuration": "local-monitor-reference-2026-09-08",
+  "created_at": "2026-09-09T08:40:12.513268+00:00",
+  "policy_id": "poseidon-assurance-tranche3-final-2026-09-09",
+  "release_authorized": false,
+  "schema_version": 1
+}

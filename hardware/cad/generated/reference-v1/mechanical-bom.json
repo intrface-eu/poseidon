@@ -1,0 +1,643 @@
+{
+  "revision": "HW-REF-1.1",
+  "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+  "note": "Counts per standalone reference assembly; fixtures and research options are not passive deployed BOM. TOP placement copies excluded.",
+  "parts": [
+    {
+      "id": "CAD-HUB-TRAY-01",
+      "assembly": "HUB",
+      "description": "Removable machined electronics tray",
+      "reference_quantity": 1,
+      "part_instances": [
+        "CAD-HUB-TRAY-01"
+      ],
+      "material_id": "AL6061",
+      "printable": false,
+      "critical_load": false,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Candidate hard anodize, isolate stainless couples; coating thickness not modelled"
+    },
+    {
+      "id": "FAST-HUB-M6-SPACER",
+      "assembly": "HUB",
+      "description": "Tray spacer, M6 clearance",
+      "reference_quantity": 4,
+      "part_instances": [
+        "HUB-SPACER-1",
+        "HUB-SPACER-2",
+        "HUB-SPACER-3",
+        "HUB-SPACER-4"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": false,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "FAST-PI-M2P5-STANDOFF",
+      "assembly": "HUB",
+      "description": "8 mm Pi support, M2.5 clearance assumption",
+      "reference_quantity": 4,
+      "part_instances": [
+        "HUB-PI-STANDOFF-1",
+        "HUB-PI-STANDOFF-2",
+        "HUB-PI-STANDOFF-3",
+        "HUB-PI-STANDOFF-4"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": false,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "PRINT-HUB-GUIDE-01",
+      "assembly": "HUB",
+      "description": "Internal loose cable comb, no strain or retention duty",
+      "reference_quantity": 1,
+      "part_instances": [
+        "PRINT-HUB-GUIDE-01"
+      ],
+      "material_id": "PETG",
+      "printable": true,
+      "critical_load": false,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Remove support, deburr; 100% solid-equivalent mass, print settings not qualified"
+    },
+    {
+      "id": "CAD-WET-BASE-01",
+      "assembly": "WET",
+      "description": "Perforated wet support plate",
+      "reference_quantity": 1,
+      "part_instances": [
+        "CAD-WET-BASE-01"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "CAD-WET-CAMERA-COLLAR-01",
+      "assembly": "WET",
+      "description": "Metal clearance collar with integral support foot",
+      "reference_quantity": 2,
+      "part_instances": [
+        "CAD-WET-CAMERA-COLLAR-1",
+        "CAD-WET-CAMERA-COLLAR-2"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "CAD-WET-HYD-COLLAR-01",
+      "assembly": "WET",
+      "description": "Receive collar and stand, no acoustic isolation claim",
+      "reference_quantity": 2,
+      "part_instances": [
+        "CAD-WET-HYD-COLLAR-1",
+        "CAD-WET-HYD-COLLAR-2"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "CAD-ARRAY-X-RAIL",
+      "assembly": "ARRAY",
+      "description": "Square array cross rail",
+      "reference_quantity": 2,
+      "part_instances": [
+        "CAD-ARRAY-X-N1",
+        "CAD-ARRAY-X-P1"
+      ],
+      "material_id": "AL6061",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Candidate hard anodize, isolate stainless couples; coating thickness not modelled"
+    },
+    {
+      "id": "CAD-ARRAY-Y-RAIL",
+      "assembly": "ARRAY",
+      "description": "Square array side rail",
+      "reference_quantity": 2,
+      "part_instances": [
+        "CAD-ARRAY-Y-N1",
+        "CAD-ARRAY-Y-P1"
+      ],
+      "material_id": "AL6061",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Candidate hard anodize, isolate stainless couples; coating thickness not modelled"
+    },
+    {
+      "id": "CAD-ARRAY-SENSOR-COLLAR-01",
+      "assembly": "ARRAY",
+      "description": "Unloaded collar geometry, restraint hardware unresolved",
+      "reference_quantity": 4,
+      "part_instances": [
+        "CAD-ARRAY-SENSOR-COLLAR-1",
+        "CAD-ARRAY-SENSOR-COLLAR-2",
+        "CAD-ARRAY-SENSOR-COLLAR-3",
+        "CAD-ARRAY-SENSOR-COLLAR-4"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "CAD-WIPER-GUARD-01",
+      "assembly": "WIPER",
+      "description": "Metal annular optical guard",
+      "reference_quantity": 1,
+      "part_instances": [
+        "CAD-WIPER-GUARD-01"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "CAD-WIPER-MOTOR-BRIDGE-01",
+      "assembly": "WIPER",
+      "description": "Motor and guard mounting bridge",
+      "reference_quantity": 1,
+      "part_instances": [
+        "CAD-WIPER-MOTOR-BRIDGE-01"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "CAD-WIPER-ARM-01",
+      "assembly": "WIPER",
+      "description": "Parked 70 mm metal wiper arm",
+      "reference_quantity": 1,
+      "part_instances": [
+        "CAD-WIPER-ARM-01"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "CAD-PROJECTOR-BASE-01",
+      "assembly": "PROJECTOR",
+      "description": "Projector support plate, not a pressure part",
+      "reference_quantity": 1,
+      "part_instances": [
+        "CAD-PROJECTOR-BASE-01"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "CAD-PROJECTOR-COLLAR-01",
+      "assembly": "PROJECTOR",
+      "description": "Metal support collar",
+      "reference_quantity": 2,
+      "part_instances": [
+        "CAD-PROJECTOR-COLLAR-1",
+        "CAD-PROJECTOR-COLLAR-2"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "ACT-ISOLATOR-01",
+      "assembly": "PROJECTOR",
+      "description": "Generic elastomer isolation annulus, uncompressed",
+      "reference_quantity": 2,
+      "part_instances": [
+        "PROJECTOR-ISOLATOR-1",
+        "PROJECTOR-ISOLATOR-2"
+      ],
+      "material_id": "ELASTOMER",
+      "printable": false,
+      "critical_load": false,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Purchased/moulded candidate, not printed; damping unmeasured"
+    },
+    {
+      "id": "CAD-REEF-POST-01",
+      "assembly": "REEF",
+      "description": "40x40x3 hollow frame post",
+      "reference_quantity": 4,
+      "part_instances": [
+        "CAD-REEF-POST-1",
+        "CAD-REEF-POST-2",
+        "CAD-REEF-POST-3",
+        "CAD-REEF-POST-4"
+      ],
+      "material_id": "AL6061",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Candidate hard anodize, isolate stainless couples; coating thickness not modelled"
+    },
+    {
+      "id": "CAD-REEF-BASE-RAIL-01",
+      "assembly": "REEF",
+      "description": "Frame cross rail",
+      "reference_quantity": 2,
+      "part_instances": [
+        "CAD-REEF-BASE-RAIL-1",
+        "CAD-REEF-BASE-RAIL-2"
+      ],
+      "material_id": "AL6061",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Candidate hard anodize, isolate stainless couples; coating thickness not modelled"
+    },
+    {
+      "id": "CAD-REEF-SOLAR-RAIL-01",
+      "assembly": "REEF",
+      "description": "Frame cross rail",
+      "reference_quantity": 2,
+      "part_instances": [
+        "CAD-REEF-SOLAR-RAIL-1",
+        "CAD-REEF-SOLAR-RAIL-2"
+      ],
+      "material_id": "AL6061",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Candidate hard anodize, isolate stainless couples; coating thickness not modelled"
+    },
+    {
+      "id": "CAD-REEF-BASE-TIE-01",
+      "assembly": "REEF",
+      "description": "Base side tie",
+      "reference_quantity": 2,
+      "part_instances": [
+        "CAD-REEF-BASE-TIE-1",
+        "CAD-REEF-BASE-TIE-2"
+      ],
+      "material_id": "AL6061",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Candidate hard anodize, isolate stainless couples; coating thickness not modelled"
+    },
+    {
+      "id": "CAD-REEF-BATTERY-SHELF-01",
+      "assembly": "REEF",
+      "description": "Battery shelf, edge stops and rated restraint needed",
+      "reference_quantity": 1,
+      "part_instances": [
+        "CAD-REEF-BATTERY-SHELF-01"
+      ],
+      "material_id": "AL6061",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Candidate hard anodize, isolate stainless couples; coating thickness not modelled"
+    },
+    {
+      "id": "CAD-REEF-BATTERY-STOP-01",
+      "assembly": "REEF",
+      "description": "Metal battery lateral stop",
+      "reference_quantity": 2,
+      "part_instances": [
+        "CAD-REEF-BATTERY-STOP-1",
+        "CAD-REEF-BATTERY-STOP-2"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "CAD-REEF-BOX-SHELF-01",
+      "assembly": "REEF",
+      "description": "Electronics enclosure shelf",
+      "reference_quantity": 1,
+      "part_instances": [
+        "CAD-REEF-BOX-SHELF-01"
+      ],
+      "material_id": "AL6061",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Candidate hard anodize, isolate stainless couples; coating thickness not modelled"
+    },
+    {
+      "id": "CAD-REEF-ELECTRONICS-TRAY-01",
+      "assembly": "REEF",
+      "description": "REEF controller/radio tray",
+      "reference_quantity": 1,
+      "part_instances": [
+        "CAD-REEF-ELECTRONICS-TRAY-01"
+      ],
+      "material_id": "AL6061",
+      "printable": false,
+      "critical_load": false,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Candidate hard anodize, isolate stainless couples; coating thickness not modelled"
+    },
+    {
+      "id": "SITE-PIPE-01",
+      "assembly": "FARM",
+      "description": "Fictional 60 mm farm rail, NOT surveyed infrastructure",
+      "reference_quantity": 1,
+      "part_instances": [
+        "FARM-PIPE-ENV"
+      ],
+      "material_id": "VENDOR_ENVELOPE",
+      "printable": false,
+      "critical_load": false,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "No fabrication allowed from envelope"
+    },
+    {
+      "id": "CAD-FARM-BACKPLATE-01",
+      "assembly": "FARM",
+      "description": "Attachment backplate",
+      "reference_quantity": 1,
+      "part_instances": [
+        "CAD-FARM-BACKPLATE-01"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "CAD-FARM-LOWER-SADDLE-01",
+      "assembly": "FARM",
+      "description": "Split lower metal saddle, 4 mm split gap",
+      "reference_quantity": 2,
+      "part_instances": [
+        "CAD-FARM-LOWER-SADDLE-1",
+        "CAD-FARM-LOWER-SADDLE-2"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "CAD-FARM-UPPER-SADDLE-01",
+      "assembly": "FARM",
+      "description": "Split upper metal saddle, fastening unresolved",
+      "reference_quantity": 2,
+      "part_instances": [
+        "CAD-FARM-UPPER-SADDLE-1",
+        "CAD-FARM-UPPER-SADDLE-2"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "CAD-FARM-RETRIEVAL-LUG-01",
+      "assembly": "FARM",
+      "description": "Metal secondary retrieval eye concept",
+      "reference_quantity": 1,
+      "part_instances": [
+        "CAD-FARM-RETRIEVAL-LUG-01"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "CAD-FARM-STRAIN-RELIEF-01",
+      "assembly": "FARM",
+      "description": "Bolted metal tether clamp geometry",
+      "reference_quantity": 2,
+      "part_instances": [
+        "CAD-FARM-STRAIN-RELIEF-1",
+        "CAD-FARM-STRAIN-RELIEF-2"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "PRINT-PI-TEMPLATE-01",
+      "assembly": "ASSEMBLY_FIXTURE",
+      "description": "Pi support-pattern alignment template, not drill tooling",
+      "reference_quantity": 1,
+      "part_instances": [
+        "PRINT-PI-TEMPLATE-01"
+      ],
+      "material_id": "PETG",
+      "printable": true,
+      "critical_load": false,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Remove support, deburr; 100% solid-equivalent mass, print settings not qualified"
+    },
+    {
+      "id": "PRINT-CABLE-RADIUS-GAUGE-01",
+      "assembly": "ASSEMBLY_FIXTURE",
+      "description": "Bench bend-radius mandrel; never structural or pressure tooling",
+      "reference_quantity": 1,
+      "part_instances": [
+        "PRINT-CABLE-RADIUS-GAUGE-01"
+      ],
+      "material_id": "PETG",
+      "printable": true,
+      "critical_load": false,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Remove support, deburr; 100% solid-equivalent mass, print settings not qualified"
+    },
+    {
+      "id": "CAD-CAL-RAIL-01",
+      "assembly": "CALIBRATION_FIXTURE",
+      "description": "600 mm bench spacing rail",
+      "reference_quantity": 1,
+      "part_instances": [
+        "CAD-CAL-RAIL-01"
+      ],
+      "material_id": "AL6061",
+      "printable": false,
+      "critical_load": false,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Candidate hard anodize, isolate stainless couples; coating thickness not modelled"
+    },
+    {
+      "id": "CAD-CAL-SLIDER-01",
+      "assembly": "CALIBRATION_FIXTURE",
+      "description": "Bench positioning slider",
+      "reference_quantity": 2,
+      "part_instances": [
+        "CAD-CAL-SLIDER-1",
+        "CAD-CAL-SLIDER-2"
+      ],
+      "material_id": "AL6061",
+      "printable": false,
+      "critical_load": false,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Candidate hard anodize, isolate stainless couples; coating thickness not modelled"
+    },
+    {
+      "id": "CAD-CAL-COLLAR-01",
+      "assembly": "CALIBRATION_FIXTURE",
+      "description": "Sensor position collar",
+      "reference_quantity": 2,
+      "part_instances": [
+        "CAD-CAL-COLLAR-1",
+        "CAD-CAL-COLLAR-2"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": false,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "PRINT-CAL-TARGET-HOLDER-01",
+      "assembly": "CALIBRATION_FIXTURE",
+      "description": "Dry-bench optical target card holder",
+      "reference_quantity": 1,
+      "part_instances": [
+        "PRINT-CAL-TARGET-HOLDER-01"
+      ],
+      "material_id": "PETG",
+      "printable": true,
+      "critical_load": false,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Remove support, deburr; 100% solid-equivalent mass, print settings not qualified"
+    },
+    {
+      "id": "CAD-PRESS-POS-BASE-01",
+      "assembly": "PRESSURE_POSITIONING_FIXTURE",
+      "description": "Open drained positioning plate, NOT containment",
+      "reference_quantity": 1,
+      "part_instances": [
+        "CAD-PRESS-POS-BASE-01"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    },
+    {
+      "id": "CAD-PRESS-POS-SADDLE-01",
+      "assembly": "PRESSURE_POSITIONING_FIXTURE",
+      "description": "Open-top metal cradle, no pressure reaction duty",
+      "reference_quantity": 2,
+      "part_instances": [
+        "CAD-PRESS-POS-SADDLE-1",
+        "CAD-PRESS-POS-SADDLE-2"
+      ],
+      "material_id": "SS316L",
+      "printable": false,
+      "critical_load": true,
+      "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+      "procurement_or_fabrication_authorized": false,
+      "vendor_quote": null,
+      "finish": "Deburr and passivate after machining/welding; process not qualified"
+    }
+  ]
+}

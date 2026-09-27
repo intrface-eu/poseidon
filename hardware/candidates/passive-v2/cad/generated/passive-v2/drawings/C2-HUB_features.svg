@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="2176"><rect width="100%" height="100%" fill="white"/>
+<g font-family="monospace" fill="#172d39">
+<text x="30" y="40" font-size="24">C2-HUB / HW-CAND-2.0 / FEATURE-SOURCE-FASTENER SCHEDULE</text>
+<text x="30" y="75" font-size="19">NON_ADOPTED_NOT_BUILD_AUTHORIZED / mm / No fabrication or thermal/load qualification</text>
+<text x="30" y="115" font-size="15">C2-HUB-ENCLOSURE / BOM C2-ENC-HUB-01 / SOURCE_VERIFIED_OVERALL_ENVELOPE_DETAIL_PROVISIONAL</text>
+<text x="30" y="136" font-size="15">  Hammond1550WJ simplified vertical shell; Source owns tapered walls/lips/bosses/gasket/fasteners; rectangular shell is a reference</text>
+<text x="30" y="157" font-size="15">  proxy. Do not fabricate, drill or transfer ingress/thermal qualification from this CAD.</text>
+<text x="30" y="178" font-size="15">  mpn: &quot;1550WJ&quot;</text>
+<text x="30" y="199" font-size="15">  overall_xyz_mm: [275, 66.6, 175]</text>
+<text x="30" y="220" font-size="15">  source_id: &quot;C2-SRC-HAMMOND-1550WJ&quot;</text>
+<text x="30" y="241" font-size="15">  base_reference_mm: 2.5</text>
+<text x="30" y="262" font-size="15">  inside_reference_lwh_mm: [266.91, 166.91, 61.6]</text>
+<text x="30" y="283" font-size="15">C2-HUB-LID / BOM C2-ENC-HUB-01 / SOURCE_THICKNESS_SIMPLIFIED_GEOMETRY</text>
+<text x="30" y="304" font-size="15">  1550WJ lid reference;</text>
+<text x="30" y="325" font-size="15">  thickness_reference_mm: 1.5</text>
+<text x="30" y="346" font-size="15">C2-HUB-TIM-INNER / BOM C2-TIM-01 / SOURCE_MATERIAL_THICKNESS_CUSTOM_CUT_PROVISIONAL</text>
+<text x="30" y="367" font-size="15">  SIL PAD TSP1600 nominal inner cut patch; Large-area pressure, flatness, electrical isolation and contact resistance unqualified;</text>
+<text x="30" y="388" font-size="15">  density assumed only for mass bookkeeping</text>
+<text x="30" y="409" font-size="15">  source_id: &quot;C2-SRC-HENKEL-TSP1600&quot;</text>
+<text x="30" y="430" font-size="15">  thickness_mm: 0.127</text>
+<text x="30" y="451" font-size="15">  patch_xz_mm: [200, 70]</text>
+<text x="30" y="472" font-size="15">C2-HUB-TIM-OUTER / BOM C2-TIM-01 / SOURCE_MATERIAL_THICKNESS_CUSTOM_CUT_PROVISIONAL</text>
+<text x="30" y="493" font-size="15">  SIL PAD TSP1600 nominal outer cut patch; No clamping-pressure or installed thermal-interface resistance evidence</text>
+<text x="30" y="514" font-size="15">  source_id: &quot;C2-SRC-HENKEL-TSP1600&quot;</text>
+<text x="30" y="535" font-size="15">  thickness_mm: 0.127</text>
+<text x="30" y="556" font-size="15">  patch_xz_mm: [200, 70]</text>
+<text x="30" y="577" font-size="15">C2-HUB-COLLECTOR / BOM C2-COLLECTOR-01 / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="598" font-size="15">  Custom aluminium collector against inside rear wall; No component thermal-pickup pad map is invented. Actual enclosed-heat capture</text>
+<text x="30" y="619" font-size="15">  fraction, component-to-plate path, clamping, alloy and conductivity remain unknown.</text>
+<text x="30" y="640" font-size="15">  size_mm: [200, 6, 120]</text>
+<text x="30" y="661" font-size="15">  contact_patch_xz_mm: [200, 70]</text>
+<text x="30" y="682" font-size="15">C2-HUB-SINK-BASE / BOM C2-SINK-01 / SOURCE_PROFILE_BASE_AND_OUTLINE_ONLY</text>
+<text x="30" y="703" font-size="15">  Wakefield125460/XX4559 base of3in candidate cut; Cut/drill operations not authorized. Catalog0.5K/W is a3in reference, not</text>
+<text x="30" y="724" font-size="15">  installed thermal qualification; density/total fin surface not inferred.</text>
+<text x="30" y="745" font-size="15">  source_id: &quot;C2-SRC-WAKEFIELD-XX4559&quot;</text>
+<text x="30" y="766" font-size="15">  stock_mpn: &quot;125460&quot;</text>
+<text x="30" y="787" font-size="15">  stock_length_mm: 304.8</text>
+<text x="30" y="808" font-size="15">  candidate_cut_length_mm: 76.2</text>
+<text x="30" y="829" font-size="15">  base_thickness_mm: 15.748</text>
+<text x="30" y="850" font-size="15">C2-HUB-SINK-FINFIELD / BOM C2-SINK-01 / SOURCE_OVERALL_OCCUPANCY_FIN_DETAILS_UNKNOWN</text>
+<text x="30" y="871" font-size="15">  Sink fin-field occupied volume, NOT a solid block or dimensioned fins; Transparent-in-meaning occupancy proxy only. Fin</text>
+<text x="30" y="892" font-size="15">  pitch/taper/count unprovided; no fin detail, mass, conduction or convection area derived from this block.</text>
+<text x="30" y="913" font-size="15">  source_id: &quot;C2-SRC-WAKEFIELD-XX4559&quot;</text>
+<text x="30" y="934" font-size="15">  fin_channels_axis: &quot;Z vertical&quot;</text>
+<text x="30" y="955" font-size="15">  fin_count_pitch_taper: null</text>
+<text x="30" y="976" font-size="15">  not_solid_metal: true</text>
+<text x="30" y="997" font-size="15">C2-HUB-PI-STANDOFF-1 / BOM C2-HUB-PI-STANDOFF / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1018" font-size="15">  Pi candidate M2.5 support, not a thermal pickup; Custom collector attachment, screw length and pad pressure require review; does</text>
+<text x="30" y="1039" font-size="15">  not clamp CPU packages</text>
+<text x="30" y="1060" font-size="15">  height_mm: 10</text>
+<text x="30" y="1081" font-size="15">  nominal_thread: &quot;M2.5 unthreaded reference&quot;</text>
+<text x="30" y="1102" font-size="15">C2-HUB-PI-STANDOFF-2 / BOM C2-HUB-PI-STANDOFF / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1123" font-size="15">  Pi candidate M2.5 support, not a thermal pickup; Custom collector attachment, screw length and pad pressure require review; does</text>
+<text x="30" y="1144" font-size="15">  not clamp CPU packages</text>
+<text x="30" y="1165" font-size="15">  height_mm: 10</text>
+<text x="30" y="1186" font-size="15">  nominal_thread: &quot;M2.5 unthreaded reference&quot;</text>
+<text x="30" y="1207" font-size="15">C2-HUB-PI-STANDOFF-3 / BOM C2-HUB-PI-STANDOFF / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1228" font-size="15">  Pi candidate M2.5 support, not a thermal pickup; Custom collector attachment, screw length and pad pressure require review; does</text>
+<text x="30" y="1249" font-size="15">  not clamp CPU packages</text>
+<text x="30" y="1270" font-size="15">  height_mm: 10</text>
+<text x="30" y="1291" font-size="15">  nominal_thread: &quot;M2.5 unthreaded reference&quot;</text>
+<text x="30" y="1312" font-size="15">C2-HUB-PI-STANDOFF-4 / BOM C2-HUB-PI-STANDOFF / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1333" font-size="15">  Pi candidate M2.5 support, not a thermal pickup; Custom collector attachment, screw length and pad pressure require review; does</text>
+<text x="30" y="1354" font-size="15">  not clamp CPU packages</text>
+<text x="30" y="1375" font-size="15">  height_mm: 10</text>
+<text x="30" y="1396" font-size="15">  nominal_thread: &quot;M2.5 unthreaded reference&quot;</text>
+<text x="30" y="1417" font-size="15">C2-HUB-PI-PCB / BOM HUB-CPU-001 / SOURCE_PLAN_PATTERN_THICKNESS_PROVISIONAL</text>
+<text x="30" y="1438" font-size="15">  Pi4 PCB verified plan mounting features; Baseline Pi source retained byte-for-byte; connector/component and corner-detail thermal</text>
+<text x="30" y="1459" font-size="15">  contact is not vendor CAD</text>
+<text x="30" y="1480" font-size="15">  source_id: &quot;SRC-PI4-MECH&quot;</text>
+<text x="30" y="1501" font-size="15">  outline_xz_mm: [85, 56]</text>
+<text x="30" y="1522" font-size="15">  hole_centres_xz_mm: [[-89.0, 61.0], [-31.0, 61.0], [-89.0, 110.0], [-31.0, 110.0]]</text>
+<text x="30" y="1543" font-size="15">  hole_diameter_mm: 2.7</text>
+<text x="30" y="1564" font-size="15">  thickness_assumed_mm: 1.6</text>
+<text x="30" y="1585" font-size="15">C2-HUB-PI-COMPONENT-ALLOCATION / BOM HUB-CPU-001 / PROVISIONAL_COMPONENT_HEIGHT_NO_THERMAL_PAD_MAP</text>
+<text x="30" y="1606" font-size="15">  Pi component clearance allocation; No source-to-collector bridge is invented. Collector temperature is not Pi junction/local-air</text>
+<text x="30" y="1627" font-size="15">  temperature.</text>
+<text x="30" y="1648" font-size="15">C2-HUB-DAQ-ALLOCATION / BOM HUB-DAQ-001 / PROVISIONAL_NOT_VENDOR_GEOMETRY</text>
+<text x="30" y="1669" font-size="15">  Unselected receive DAQ fit allocation;</text>
+<text x="30" y="1690" font-size="15">C2-HUB-SHADE / BOM C2-SHADE-01 / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1711" font-size="15">  Opaque aluminium roof with true overhang and open ventilation; No side baffles are modelled.48W baseline potential absorbed sun</text>
+<text x="30" y="1732" font-size="15">  remains in thermal comparison; roof geometry does not establish zero sun or thermal acceptance.</text>
+<text x="30" y="1753" font-size="15">  roof_xy_mm: [375, 275]</text>
+<text x="30" y="1774" font-size="15">  gap_above_enclosure_mm: 75</text>
+<text x="30" y="1795" font-size="15">  overhang_x_mm: 50</text>
+<text x="30" y="1816" font-size="15">  residual_solar_fraction: null</text>
+<text x="30" y="1837" font-size="15">C2-HUB-SHADE-POST-1 / BOM C2-HUB-SHADE-POST / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1858" font-size="15">  Outboard shade support, keeps sink channels unobstructed; Custom bracket candidate, attachment and wind/corrosion loads</text>
+<text x="30" y="1879" font-size="15">  unqualified</text>
+<text x="30" y="1900" font-size="15">C2-HUB-SHADE-POST-2 / BOM C2-HUB-SHADE-POST / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1921" font-size="15">  Outboard shade support, keeps sink channels unobstructed; Custom bracket candidate, attachment and wind/corrosion loads</text>
+<text x="30" y="1942" font-size="15">  unqualified</text>
+<text x="30" y="1963" font-size="15">C2-HUB-MOUNT-CROSSBAR / BOM C2-HUB-MOUNT-CROSSBAR / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1984" font-size="15">  Independent mounting-frame crossbar;</text>
+<text x="30" y="2005" font-size="15">C2-HUB-SUPPORT-PAD-1 / BOM C2-HUB-SUPPORT-PAD / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="2026" font-size="15">  Enclosure support/attachment allocation; No enclosure wall holes or sink bolt positions invented; attachment and proof load still</text>
+<text x="30" y="2047" font-size="15">  open</text>
+<text x="30" y="2068" font-size="15">C2-HUB-SUPPORT-PAD-2 / BOM C2-HUB-SUPPORT-PAD / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="2089" font-size="15">  Enclosure support/attachment allocation; No enclosure wall holes or sink bolt positions invented; attachment and proof load still</text>
+<text x="30" y="2110" font-size="15">  open</text>
+</g>
+</svg>

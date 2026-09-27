@@ -1,0 +1,23 @@
+{
+  "name": "Poseidon ESP32-DevKitC-32E compile-only reference HW-REF-1.1",
+  "vendor": "Espressif",
+  "url": "https://docs.espressif.com/projects/esp-idf/en/v5.3.1/esp32/hw-reference/esp32/get-started-devkitc.html",
+  "build": {
+    "core": "esp32",
+    "mcu": "esp32",
+    "variant": "esp32",
+    "f_cpu": "240000000L",
+    "f_flash": "40000000L",
+    "flash_mode": "dio"
+  },
+  "frameworks": ["espidf"],
+  "connectivity": ["wifi", "bluetooth"],
+  "upload": {
+    "flash_size": "4MB",
+    "maximum_ram_size": 327680,
+    "maximum_size": 4194304,
+    "require_upload_port": true,
+    "speed": 460800
+  },
+  "debug": {"openocd_target": "esp32.cfg"}
+}

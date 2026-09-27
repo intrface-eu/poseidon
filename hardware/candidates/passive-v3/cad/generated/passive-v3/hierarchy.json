@@ -1,0 +1,980 @@
+{
+  "schema": "intrface.passive-v3.hierarchy.v1",
+  "company": "Intrface",
+  "product": "Poseidon Trident",
+  "reuse_rights": {
+    "vendor_cad": "UNVERIFIED_NOT_CC0",
+    "derived_assembly_wholly_original": true,
+    "public_redistribution_authorized": true,
+    "review_required": "Supplier files are private and must be fetched on demand; the original fit proxies do not reproduce supplier CAD.",
+    "vendor_files_public_redistribution_authorized": false,
+    "original_design_license": "CERN-OHL-S-2.0"
+  },
+  "canonical_glb": "INTRFACE_PASSIVE_V3.glb",
+  "glb_sha256": "54e290ab26f3d27f62f54fae6715d11f2d0fc5157a368bc510bd1127a0408a9d",
+  "root": "INTRFACE_PASSIVE_V3",
+  "cad_units": "mm",
+  "glb_units": "m",
+  "coordinate_map": "CAD (x,y,z) -> glTF (x,z,-y)/1000",
+  "physical_parts": [
+    "V3_TUBE_AL6061_BR106279_300",
+    "V3_FLANGE_AFT_SOURCE_ID_CONFLICT",
+    "V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT",
+    "V3_AFT_CAP_5_M10_AL6061",
+    "V3_DOME_POLYCARBONATE_BR107201",
+    "V3_DOME_RETAINING_RING_ALUMINIUM",
+    "V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT",
+    "V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS",
+    "V3_CAMERA_TRAY_PEEK_ALLOCATION",
+    "V3_CAMERA_STANDOFF_00_PEEK",
+    "V3_CAMERA_STANDOFF_01_PEEK",
+    "V3_CAMERA_STANDOFF_10_PEEK",
+    "V3_CAMERA_STANDOFF_11_PEEK",
+    "V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+    "V3_AS1_NONMETAL_STANDOFF_BRACKET",
+    "V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+    "V3_DIVER_RELEASE_MOVING_JAW",
+    "V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+    "V3_DIVER_PULL_PIN_1_ISOLATED_316",
+    "V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+    "V3_DIVER_PULL_PIN_2_ISOLATED_316",
+    "V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+    "V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+    "V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+    "V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT"
+  ],
+  "empty_nonphysical_parts": [
+    "EMPTY_PREAMP_RESERVE_NONPOPULATED_DRY_PREAMP_ONLY",
+    "EMPTY_CAMERA_CABLE_SERVICE_ALLOCATION",
+    "EMPTY_FUTURE_PROJECTOR_MOUNT_ENVELOPE"
+  ],
+  "nodes": [
+    {
+      "index": 0,
+      "name": "INTRFACE_PASSIVE_V3",
+      "children": [
+        1,
+        9,
+        16,
+        20,
+        28,
+        31
+      ],
+      "extras": {}
+    },
+    {
+      "index": 1,
+      "name": "PRESSURE_BOUNDARY",
+      "children": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "extras": {}
+    },
+    {
+      "index": 2,
+      "name": "V3_TUBE_AL6061_BR106279_300",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_TUBE_AL6061_BR106279_300",
+        "physical": true,
+        "material_class": "aluminium_6061",
+        "source": "cad/v3_proxy.py:tube",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 3,
+      "name": "V3_FLANGE_AFT_SOURCE_ID_CONFLICT",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_FLANGE_AFT_SOURCE_ID_CONFLICT",
+        "physical": true,
+        "material_class": "aluminium_6061",
+        "source": "cad/v3_proxy.py:flange",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 4,
+      "name": "V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT",
+        "physical": true,
+        "material_class": "aluminium_6061",
+        "source": "cad/v3_proxy.py:flange",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 5,
+      "name": "V3_AFT_CAP_5_M10_AL6061",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_AFT_CAP_5_M10_AL6061",
+        "physical": true,
+        "material_class": "aluminium_6061",
+        "source": "cad/v3_proxy.py:aft_cap",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 6,
+      "name": "V3_DOME_POLYCARBONATE_BR107201",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_DOME_POLYCARBONATE_BR107201",
+        "physical": true,
+        "material_class": "polycarbonate",
+        "source": "cad/v3_proxy.py:dome",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 7,
+      "name": "V3_DOME_RETAINING_RING_ALUMINIUM",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_DOME_RETAINING_RING_ALUMINIUM",
+        "physical": true,
+        "material_class": "aluminium_alloy_unconfirmed",
+        "source": "cad/v3_proxy.py:dome_ring",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 8,
+      "name": "V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT",
+        "physical": true,
+        "material_class": "vendor_unknown_internals",
+        "source": "cad/v3_proxy.py:wetlink",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 9,
+      "name": "CAMERA_AND_INTERNAL_MOUNT",
+      "children": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "extras": {}
+    },
+    {
+      "index": 10,
+      "name": "V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS",
+        "physical": true,
+        "material_class": "camera_unknown_internals",
+        "source": "cad/v3_proxy.py:camera",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 11,
+      "name": "V3_CAMERA_TRAY_PEEK_ALLOCATION",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_CAMERA_TRAY_PEEK_ALLOCATION",
+        "physical": true,
+        "material_class": "peek",
+        "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 12,
+      "name": "V3_CAMERA_STANDOFF_00_PEEK",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_CAMERA_STANDOFF_00_PEEK",
+        "physical": true,
+        "material_class": "peek",
+        "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 13,
+      "name": "V3_CAMERA_STANDOFF_01_PEEK",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_CAMERA_STANDOFF_01_PEEK",
+        "physical": true,
+        "material_class": "peek",
+        "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 14,
+      "name": "V3_CAMERA_STANDOFF_10_PEEK",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_CAMERA_STANDOFF_10_PEEK",
+        "physical": true,
+        "material_class": "peek",
+        "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 15,
+      "name": "V3_CAMERA_STANDOFF_11_PEEK",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_CAMERA_STANDOFF_11_PEEK",
+        "physical": true,
+        "material_class": "peek",
+        "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 16,
+      "name": "PASSIVE_RECEIVE",
+      "children": [
+        17,
+        18,
+        19
+      ],
+      "extras": {}
+    },
+    {
+      "index": 17,
+      "name": "V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+        "physical": true,
+        "material_class": "polyurethane",
+        "source": "sources/dimension-traces.json:as1.diameter,as1.length",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 18,
+      "name": "V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_AS1_NONMETAL_STANDOFF_BRACKET",
+        "physical": true,
+        "material_class": "peek",
+        "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 19,
+      "name": "V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+        "physical": true,
+        "material_class": "polyurethane",
+        "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 20,
+      "name": "FARM_CLAMP",
+      "children": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "extras": {}
+    },
+    {
+      "index": 21,
+      "name": "V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+        "physical": true,
+        "material_class": "peek",
+        "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 22,
+      "name": "V3_DIVER_RELEASE_MOVING_JAW",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_DIVER_RELEASE_MOVING_JAW",
+        "physical": true,
+        "material_class": "peek",
+        "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 23,
+      "name": "V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+        "physical": true,
+        "material_class": "peek",
+        "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 24,
+      "name": "V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_DIVER_PULL_PIN_1_ISOLATED_316",
+        "physical": true,
+        "material_class": "stainless_316",
+        "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 25,
+      "name": "V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+        "physical": true,
+        "material_class": "peek",
+        "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 26,
+      "name": "V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_DIVER_PULL_PIN_2_ISOLATED_316",
+        "physical": true,
+        "material_class": "stainless_316",
+        "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 27,
+      "name": "V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+        "physical": true,
+        "material_class": "lanyard_polyester",
+        "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 28,
+      "name": "SURFACE_ROUTE_CONCEPT",
+      "children": [
+        29,
+        30
+      ],
+      "extras": {}
+    },
+    {
+      "index": 29,
+      "name": "V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+        "physical": true,
+        "material_class": "fathom_bulk_effective",
+        "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 30,
+      "name": "V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+        "physical": true,
+        "material_class": "peek",
+        "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+        "populated": true,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 31,
+      "name": "EMPTY_RESERVES_NOT_HARDWARE",
+      "children": [
+        32,
+        33,
+        34
+      ],
+      "extras": {}
+    },
+    {
+      "index": 32,
+      "name": "EMPTY_PREAMP_RESERVE_NONPOPULATED_DRY_PREAMP_ONLY",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "EMPTY_PREAMP_RESERVE_NONPOPULATED_DRY_PREAMP_ONLY",
+        "physical": false,
+        "material_class": "EMPTY",
+        "source": "sources/design-inputs.json",
+        "populated": false,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 33,
+      "name": "EMPTY_CAMERA_CABLE_SERVICE_ALLOCATION",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "EMPTY_CAMERA_CABLE_SERVICE_ALLOCATION",
+        "physical": false,
+        "material_class": "EMPTY",
+        "source": "sources/design-inputs.json",
+        "populated": false,
+        "digital_candidate_not_build_authorized": true
+      }
+    },
+    {
+      "index": 34,
+      "name": "EMPTY_FUTURE_PROJECTOR_MOUNT_ENVELOPE",
+      "children": [],
+      "extras": {
+        "intrface_part_id": "EMPTY_FUTURE_PROJECTOR_MOUNT_ENVELOPE",
+        "physical": false,
+        "material_class": "EMPTY",
+        "source": "sources/design-inputs.json",
+        "populated": false,
+        "digital_candidate_not_build_authorized": true
+      }
+    }
+  ],
+  "material_rule": "V3_DOME_POLYCARBONATE_BR107201 stays polycarbonate, not acrylic; unknown vendor interiors are not solid metal",
+  "boundary": "No underwater preamp, no active projector; EMPTY nodes must never become physical parts or mass",
+  "source_geometry_bboxes_mm": {
+    "V3_TUBE_AL6061_BR106279_300": {
+      "min_mm": [
+        -56.000000000000036,
+        -56.0,
+        -6.217248937900877e-15
+      ],
+      "max_mm": [
+        56.0,
+        56.0,
+        300.0
+      ],
+      "size_mm": [
+        112.00000000000003,
+        112.0,
+        300.0
+      ]
+    },
+    "V3_FLANGE_AFT_SOURCE_ID_CONFLICT": {
+      "min_mm": [
+        -57.15,
+        -57.15,
+        -7.900000000000006
+      ],
+      "max_mm": [
+        57.15,
+        57.15,
+        19.10000000000001
+      ],
+      "size_mm": [
+        114.3,
+        114.3,
+        27.000000000000014
+      ]
+    },
+    "V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT": {
+      "min_mm": [
+        -57.15,
+        -57.15,
+        280.9
+      ],
+      "max_mm": [
+        57.15,
+        57.15,
+        307.9
+      ],
+      "size_mm": [
+        114.3,
+        114.3,
+        27.0
+      ]
+    },
+    "V3_AFT_CAP_5_M10_AL6061": {
+      "min_mm": [
+        -57.15,
+        -57.15,
+        -13.900000000000006
+      ],
+      "max_mm": [
+        57.15,
+        57.15,
+        -3.8999999999999932
+      ],
+      "size_mm": [
+        114.3,
+        114.3,
+        10.000000000000012
+      ]
+    },
+    "V3_DOME_POLYCARBONATE_BR107201": {
+      "min_mm": [
+        -52.328082488222215,
+        -52.328082488222215,
+        307.8999999999999
+      ],
+      "max_mm": [
+        52.328082488222215,
+        52.328082488222215,
+        359.702
+      ],
+      "size_mm": [
+        104.65616497644443,
+        104.65616497644443,
+        51.80200000000008
+      ]
+    },
+    "V3_DOME_RETAINING_RING_ALUMINIUM": {
+      "min_mm": [
+        -57.15,
+        -57.15,
+        307.9
+      ],
+      "max_mm": [
+        57.15,
+        57.15,
+        318.2500002
+      ],
+      "size_mm": [
+        114.3,
+        114.3,
+        10.35000020000001
+      ]
+    },
+    "V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT": {
+      "min_mm": [
+        -8.0,
+        20.000000000000004,
+        -39.8
+      ],
+      "max_mm": [
+        8.0,
+        36.0,
+        5.200000000000001
+      ],
+      "size_mm": [
+        16.0,
+        15.999999999999996,
+        45.0
+      ]
+    },
+    "V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS": {
+      "min_mm": [
+        -16.0,
+        -16.0,
+        274.0
+      ],
+      "max_mm": [
+        16.0,
+        16.0,
+        303.35
+      ],
+      "size_mm": [
+        32.0,
+        32.0,
+        29.350000000000023
+      ]
+    },
+    "V3_CAMERA_TRAY_PEEK_ALLOCATION": {
+      "min_mm": [
+        -22.0,
+        -22.0,
+        263.0
+      ],
+      "max_mm": [
+        22.0,
+        22.0,
+        266.0
+      ],
+      "size_mm": [
+        44.0,
+        44.0,
+        3.0
+      ]
+    },
+    "V3_CAMERA_STANDOFF_00_PEEK": {
+      "min_mm": [
+        -16.5,
+        -16.5,
+        266.0
+      ],
+      "max_mm": [
+        -11.5,
+        -11.5,
+        280.0
+      ],
+      "size_mm": [
+        5.0,
+        5.0,
+        14.0
+      ]
+    },
+    "V3_CAMERA_STANDOFF_01_PEEK": {
+      "min_mm": [
+        -16.5,
+        11.5,
+        266.0
+      ],
+      "max_mm": [
+        -11.5,
+        16.5,
+        280.0
+      ],
+      "size_mm": [
+        5.0,
+        5.0,
+        14.0
+      ]
+    },
+    "V3_CAMERA_STANDOFF_10_PEEK": {
+      "min_mm": [
+        11.5,
+        -16.5,
+        266.0
+      ],
+      "max_mm": [
+        16.5,
+        -11.5,
+        280.0
+      ],
+      "size_mm": [
+        5.0,
+        5.0,
+        14.0
+      ]
+    },
+    "V3_CAMERA_STANDOFF_11_PEEK": {
+      "min_mm": [
+        11.5,
+        11.5,
+        266.0
+      ],
+      "max_mm": [
+        16.5,
+        16.5,
+        280.0
+      ],
+      "size_mm": [
+        5.0,
+        5.0,
+        14.0
+      ]
+    },
+    "V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE": {
+      "min_mm": [
+        89.0,
+        -6.0,
+        240.0
+      ],
+      "max_mm": [
+        101.0,
+        6.0,
+        280.0
+      ],
+      "size_mm": [
+        12.0,
+        12.0,
+        40.0
+      ]
+    },
+    "V3_AS1_NONMETAL_STANDOFF_BRACKET": {
+      "min_mm": [
+        -62.0,
+        -62.0,
+        250.0
+      ],
+      "max_mm": [
+        106.0,
+        62.0,
+        260.0
+      ],
+      "size_mm": [
+        168.0,
+        124.0,
+        10.0
+      ]
+    },
+    "V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG": {
+      "min_mm": [
+        -141.0,
+        -62.0,
+        80.0
+      ],
+      "max_mm": [
+        62.0,
+        62.0,
+        105.0
+      ],
+      "size_mm": [
+        203.0,
+        124.0,
+        25.0
+      ]
+    },
+    "V3_DIVER_RELEASE_MOVING_JAW": {
+      "min_mm": [
+        -125.0,
+        -12.0,
+        100.49999999999972
+      ],
+      "max_mm": [
+        -75.0,
+        12.0,
+        120.0
+      ],
+      "size_mm": [
+        50.0,
+        24.0,
+        19.500000000000284
+      ]
+    },
+    "V3_PIN_1_PEEK_ISOLATION_SLEEVE": {
+      "min_mm": [
+        -124.0,
+        -4.0,
+        80.0
+      ],
+      "max_mm": [
+        -116.0,
+        4.0,
+        120.0
+      ],
+      "size_mm": [
+        8.0,
+        8.0,
+        40.0
+      ]
+    },
+    "V3_DIVER_PULL_PIN_1_ISOLATED_316": {
+      "min_mm": [
+        -129.5000001,
+        -5.0000001,
+        79.9999999
+      ],
+      "max_mm": [
+        -110.4999999,
+        5.0000001,
+        142.5000001
+      ],
+      "size_mm": [
+        19.000000199999988,
+        10.0000002,
+        62.50000019999999
+      ]
+    },
+    "V3_PIN_2_PEEK_ISOLATION_SLEEVE": {
+      "min_mm": [
+        -84.0,
+        -4.0,
+        80.0
+      ],
+      "max_mm": [
+        -76.0,
+        4.0,
+        120.0
+      ],
+      "size_mm": [
+        8.0,
+        8.0,
+        40.0
+      ]
+    },
+    "V3_DIVER_PULL_PIN_2_ISOLATED_316": {
+      "min_mm": [
+        -89.5000001,
+        -5.0000001,
+        79.9999999
+      ],
+      "max_mm": [
+        -70.4999999,
+        5.0000001,
+        142.5000001
+      ],
+      "size_mm": [
+        19.000000199999988,
+        10.0000002,
+        62.50000019999999
+      ]
+    },
+    "V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED": {
+      "min_mm": [
+        -133.5,
+        0.0,
+        92.0
+      ],
+      "max_mm": [
+        -130.5,
+        140.0,
+        95.0
+      ],
+      "size_mm": [
+        3.0,
+        140.0,
+        3.0
+      ]
+    },
+    "V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT": {
+      "min_mm": [
+        -3.8000000999999997,
+        24.1999999,
+        -94.60000009999999
+      ],
+      "max_mm": [
+        3.8000000999999997,
+        300.0,
+        -40.799999899999996
+      ],
+      "size_mm": [
+        7.600000199999999,
+        275.8000001,
+        53.80000019999999
+      ]
+    },
+    "V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT": {
+      "min_mm": [
+        -62.0,
+        -62.0,
+        -106.0000001
+      ],
+      "max_mm": [
+        62.0,
+        135.0,
+        20.0
+      ],
+      "size_mm": [
+        124.0,
+        197.0,
+        126.0000001
+      ]
+    },
+    "V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT": {
+      "min_mm": [
+        92.7499999,
+        -2.2500000999999927,
+        27.7499999
+      ],
+      "max_mm": [
+        97.2500001,
+        300.0,
+        240.0
+      ],
+      "size_mm": [
+        4.500000199999988,
+        302.25000009999997,
+        212.2500001
+      ]
+    },
+    "EMPTY_PREAMP_RESERVE_NONPOPULATED_DRY_PREAMP_ONLY": {
+      "min_mm": [
+        -20.0,
+        -20.0,
+        160.0
+      ],
+      "max_mm": [
+        20.0,
+        20.0,
+        200.0
+      ],
+      "size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ]
+    },
+    "EMPTY_CAMERA_CABLE_SERVICE_ALLOCATION": {
+      "min_mm": [
+        -25.0,
+        -25.0,
+        50.0
+      ],
+      "max_mm": [
+        25.0,
+        25.0,
+        150.0
+      ],
+      "size_mm": [
+        50.0,
+        50.0,
+        100.0
+      ]
+    },
+    "EMPTY_FUTURE_PROJECTOR_MOUNT_ENVELOPE": {
+      "min_mm": [
+        -30.0,
+        -140.0,
+        135.0
+      ],
+      "max_mm": [
+        30.0,
+        -80.0,
+        205.0
+      ],
+      "size_mm": [
+        60.0,
+        60.0,
+        70.0
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "poseidon.hardware.mechanical-scenario.v1",
+  "configuration": "reference-v1",
+  "revision": "HW-REF-1.1",
+  "scenario_label": "ILLUSTRATIVE_NOT_OPERATING_LIMITS",
+  "operating_envelope_frozen": false,
+  "site_status": "UNSURVEYED",
+  "inputs": {
+    "water_density_kg_m3": 1025.0,
+    "air_density_kg_m3": 1.225,
+    "gravity_m_s2": 9.80665,
+    "illustrative_depth_m": 10.0,
+    "current_speeds_m_s": [0.25, 0.5, 1.0],
+    "wind_speeds_m_s": [10.0, 20.0, 25.0],
+    "camera_envelope_diameter_mm": 110.0,
+    "camera_envelope_length_mm": 250.0,
+    "camera_transverse_drag_coefficient": 1.1,
+    "hydrophone_envelope_diameter_mm": 32.0,
+    "hydrophone_envelope_length_mm": 100.0,
+    "hydrophone_transverse_drag_coefficient": 1.2,
+    "tether_wet_length_m": 10.0,
+    "tether_diameter_mm": 8.0,
+    "tether_transverse_drag_coefficient": 1.2,
+    "panel_width_mm": 668.0,
+    "panel_height_mm": 425.0,
+    "panel_normal_drag_coefficient": 1.2,
+    "illustrative_dry_wet_head_mass_kg": 3.0,
+    "support_drag_lever_arm_m": 0.25
+  },
+  "input_evidence": {
+    "panel_width_mm": "Vendor SPM040401200 drawing envelope; source in electrical/CAD register.",
+    "panel_height_mm": "Vendor SPM040401200 drawing envelope; source in electrical/CAD register.",
+    "camera_envelope": "Provisional integration envelope, NOT exact vendor or measured displacement.",
+    "hydrophone_envelope": "Provisional instrument envelope, NOT exact vendor or measured displacement.",
+    "all_other_inputs": "Explicit engineering assumptions for sensitivity only; not measured Lim Bay conditions, safety factors, supplier limits or design loads."
+  },
+  "omissions": [
+    "Wave acceleration, slamming, impact, entanglement and fouling",
+    "Frame drag, array variant, cable angle/catenary and dynamic amplification",
+    "Attachment strength, seabed/farm geometry and structural stress",
+    "Real sealed displacement, flooded voids, cable buoyancy and actual mass/CG",
+    "Partial immersion, compressibility and temperature/salinity variation",
+    "Wind uplift, overturning stability and farm support loads",
+    "Safety/proof factors and fatigue spectrum must be set by the marine engineer, not inferred here"
+  ]
+}

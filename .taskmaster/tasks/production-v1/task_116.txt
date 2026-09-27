@@ -1,0 +1,25 @@
+{
+  "deliverablePaths": [
+    "apps/siren/",
+    "libs/dsp/"
+  ],
+  "dependencies": [
+    112,
+    113,
+    114
+  ],
+  "description": "Implement only the safety-constrained active output integration authorized by prior gates.",
+  "details": "Connect bounded approved programs to TRIDENT and the independent inhibit; require startup silence, immediate stop, underrun/disconnect handling, calibrated limits, and audit records. Configuration changes cannot expand the acoustic envelope.",
+  "id": 116,
+  "ownerRole": "software-safety",
+  "phase": "P5",
+  "priority": "high",
+  "researchPackages": [
+    "R3",
+    "R4"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Verify against dummy loads and independent stop that invalid, stale, absent, or interrupted commands remain silent and all approved fault paths inhibit output.",
+  "title": "P5 SIREN Safe Integration"
+}

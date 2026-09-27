@@ -1,0 +1,51 @@
+# Readiness and blocked gates: 2026-09-08
+
+Status: wave-1 assurance artifacts ready for controller review; no production, field, acoustic-output, purchase or commercial authorization.
+
+The current product evidence is a local monitor/replay implementation with synthetic tests and a provisional physical reference. The first intended region is Limski zaljev/Istria, Croatia; exact farm/site, operating envelope and budget are not frozen. Orada identification, expected to be *Sparus aurata*, still needs the farm/ecology partner. The user is the product/budget owner; specialist decisions cannot be supplied by the software leads. Prior accepted software evidence remains in [development tranche 002](../validation/development-tranche-002.md).
+
+## Trace and decision priority
+
+The [15-gate trace matrix](gate-policy-v1.json) maps every current production requirement and roadmap P0–P9/V1–V9 to a tangible artifact, method, owner, dependency, actual status and missing proof. It does not rewrite the requirements or convert the old roadmap examples into thresholds.
+
+| Priority | Work that closes the next decision | Owner and required evidence | Present boundary |
+|---|---|---|---|
+| A1 | Close local software checks and additive-contract integration | Controller with platform/acquisition/firmware leads: stable source revision, complete root checks, scoped regression logs and source-bound assurance report | Can close in software now; cannot close selected ARM64/ESP hardware behavior or field safety |
+| A2 | Freeze the site and passive study before equipment spend | User/farm partner, marine ecologist, mechanical/electrical/acoustics specialists: site survey, access rights, numeric/categorical envelope, acquisition protocol and held-out scoring rules | Requires real partner/site inputs and specialist acceptance; no guessed depth, SPL, recall target or ground-truth denominator |
+| A3 | Obtain applicable activity decisions and data rules | Current competent Croatian nature/maritime authorities and data controller/adviser: written decisions with activity/coordinates/conditions/dates; retention/access/privacy decision | Draft requests remain unsent; historical ARIEL activity and farm consent do not authorize new work |
+| A4 | Quote and authorize staged expenditure | User, engineering owners, accredited/competent labs and manufacturing/service partners: complete EUR quote response, quantity, exclusions, validity, tax/logistics, NRE and lifetime support costs | No approved budget, actual quote, purchase or outreach in this wave |
+| A5 | Validate a physical reference and final design | Hardware/safety specialists and facilities: exact purchased configuration, unit traceability, measurements, calibration, fault/pressure/leak/load/power/thermal/endurance reports against frozen criteria | Reference CAD, vendor ratings and executable calculations remain distinct from measured assemblies |
+| A6 | Establish lawful market and manufacturing readiness | Compliance adviser/lab, legal manufacturer and second assembler: final-configuration assessment/tests, technical file, declarations/labels, real PVT/EOL records and support drills | Dossiers and templates prepared; no CE/conformity, manufacturing, shipment or warranty-performance claim |
+
+Active deterrence remains a separate gated branch. The official 2019 Lim Bay ARIEL DDD03L trial failed to sustain protection; the old device/frequency/output range is not a validated Poseidon baseline. No universal acoustic impossibility follows either. Only an authorized, preregistered, independently reviewed study can support a specific sustained protection claim. Flora remains a separate research track, not a release blocker for local monitoring.
+
+## Evidence artifacts
+
+| Record | Use | Evidence boundary |
+|---|---|---|
+| [Evidence guide](evidence-guide.md) and `scripts/assurance/` | Hash/structure checks, source-bound synthetic run recording, conservative release evaluation | Integrity and local checks only; external gates never auto-pass |
+| [Technical-file index](../compliance/technical-file-index.md) | Populated configuration/risk/evidence/label/privacy/support record and missing proofs | Desk dossier, not an issued declaration |
+| [Official source register](../compliance/official-source-register.md) | Dated official-source applicability inputs with source-access limits | Legal source research, not a professional applicability decision or approval |
+| [Manufacturing and EOL procedure](../manufacturing/reference-build-and-eol.md) | Receiving, controlled assembly and actual EOL work when authorized | Reference HW-REF-1.1 only, not fabrication or energization approval |
+| [EVT/DVT/PVT procedure](procedures/evt-dvt-pvt.md) | Entry/exit decisions, physical matrix and second-assembler evidence structure | All physical limits and results require competent owners and actual work |
+| [Service and lifecycle procedure](../manufacturing/service-and-lifecycle.md) | Repair/retrieval, spares, support, vulnerability and recall records | No field service, issued warranty, incident response or recall drill performed |
+| [Cost/quotation request structure](../manufacturing/cost-and-quotation-request.md) | Compare staged NRE/unit/test/logistics/tax/support costs and exclusions in EUR | Unsent; no invented vendor quote or committed budget |
+
+## Independent review of arriving artifacts
+
+| ID | Exact condition and evidence | Finding / required correction |
+|---|---|---|
+| AS-F1 | `hardware/interfaces/reference-v1.json` initially called SPM040401200 discontinued while `hardware/bom/sources.json` disputed that marker. The current official [Victron PDF](https://www.victronenergy.com/upload/documents/Datasheet-BlueSolar-Monocrystalline-Panels-EN.pdf), fetched and visually inspected on 2026-09-08, lists 40 W 425×668×25 mm, 3.1 kg, Vmp 18.3 V, Voc 22.45 V without `(2)`; 30 W and 55 W rows carry the discontinued footnote. WebFetch text extraction did not resolve the PDF, so it was not used as the deciding evidence. | Resolved in published HW-REF-1.1: hardware retracted the discontinued interpretation and explicitly retained unverified availability. Assurance reviewed the revision changes and rebound its dossiers/forms without granting physical approval. Proposal `assurance-panel-source-reconciliation.json` retains the finding history. |
+| AS-F2 | Official [Espressif guide](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html) and [RAK3272S datasheet](https://docs.rakwireless.com/product-categories/wisduo/rak3272s-breakout-board/datasheet/) independently fetched on 2026-09-08. GPIO17/16 map to J3.11/.12; UART2 TX/RX to J4.7/.8; stable RAK supply/ground to J5.9/.7. | Sampled pin/source claims agree. WROVER exclusions, mutually exclusive ESP power inputs and RAK J4.9 VerB/VerC difference remain mandatory constraints. No full harness/power/regional-SKU release or independent CAD fit verification follows. |
+| AS-F3 | A system run during platform edits encountered `platform.py:75` calling absent `Hub._authorize_method`; three scenarios errored. The preceding run had working Hub flows and one overstrict assurance assertion about `.hub.lock`. | Controller notified of unfinished concurrent integration, not an accepted defect. Final nine-scenario suite now passes on a stable-source run. The lock assertion permits the stable coordination inode while checking user-file content and metadata preservation; no product file was changed. Backup/restore operations and broader platform acceptance were not assessed here. |
+| AS-F4 | Four independent synthetic additive-contract probes passed: fixture/schema version agreement, canonical decimal uint64 boot boundaries including 2^64−1 and rejection of overflow/numeric JSON boot IDs, unverified clock claims, and digital-unit/calibration promotion rejection. | Local contract evidence only. It does not exercise JS rendering, persistent uint64 ordering, real radio frames or calibration authenticity. Those paths stay in the relevant owners' integration/physical matrices. |
+
+## Executed checks and remaining gaps
+
+Final focused checks: `python3 -m unittest discover -s tests/assurance -v` exited 0 with **33 tests passed**; `python3 -m unittest discover -s tests/system -v` exited 0 with **nine tests passed**. `python3 scripts/assurance/run_system_checks.py --output-dir docs/qualification/evidence` exited 0 and recorded another execution of those same nine tests with matching pre/post source hashes, verbose log and test identities. Repeated executions are not additional distinct tests. The report is [system-checks-v1.json](evidence/system-checks-v1.json); see the [evidence guide](evidence-guide.md) for integrity and blocked-release exit meanings.
+
+Earlier runs are retained in the campaign result: a five-scenario Hub run had four passes and one overstrict test-assertion failure; a concurrent platform-edit run had two passes and three integration errors. The first dossier-check run caught HW-REF-1.0/1.1 drift plus overstrict assumptions about generic blank forms and an `unpriced` cost marker; the docs were explicitly rebound and assertions corrected to the intended template rules. Independent child review also found contradictory-log acceptance, omitted non-code/dependency input hashes and malformed policy metadata in the new evaluator. All three were fixed with negative regression tests before the final 33-test run. No failed test or simulated result was promoted to physical evidence.
+
+No root build/typecheck, browser, application listener, live sensor/camera/hydrophone capture, acoustic emission, firmware flash, pressure test, physical assembly, calibration, field dataset, permit submission, external hosting, spending or outreach was performed by assurance. The source checks above sample published interfaces; they are not a whole-repository audit or an independent professional engineering certification.
+
+All external gates remain blocked: site and permissions; local ground truth/detection/timing; physical limits/inhibit/calibration; power and communications; secure deployed-device lifecycle; conditional ecological efficacy; final product conformity; PVT and funded support. Test counts are software evidence, not a percentage of product completion.

@@ -1,0 +1,10 @@
+{
+  "schema_version": "poseidon.command-ack.v1",
+  "command_id": "7f5aa304-8250-4216-8549-5b95fa4ec904",
+  "device_id": "synthetic-hub-1",
+  "received_at": "2026-09-08T12:00:01Z",
+  "outcome": "executed",
+  "reason": "digital simulation only; no physical dispatch",
+  "state_after": "observe",
+  "sequence_seen": "18446744073709551615"
+}

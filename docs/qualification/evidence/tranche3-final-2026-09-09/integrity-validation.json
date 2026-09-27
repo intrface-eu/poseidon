@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "policy_id": "poseidon-assurance-tranche3-final-2026-09-09",
+  "configuration": "local-monitor-reference-2026-09-08",
+  "integrity_valid": true,
+  "release_authorized": false,
+  "gates": [
+    {
+      "id": "G-LOCAL",
+      "status": "software-checks-passed",
+      "owner": "Software lead; controller accepts software scope",
+      "reason": "Local synthetic software checks only; not release evidence.",
+      "dependencies": []
+    },
+    {
+      "id": "G-SCOPE",
+      "status": "blocked",
+      "owner": "Product owner with ecology reviewer",
+      "reason": "Signed scope/configuration freeze and spending/release decisions.",
+      "dependencies": []
+    },
+    {
+      "id": "G-SITE",
+      "status": "blocked",
+      "owner": "Farm/site partner, marine engineer, ecologist and competent authorities",
+      "reason": "Site survey, access rights, authority decisions and approved numeric/categorical envelope.",
+      "dependencies": [
+        "G-SCOPE"
+      ]
+    },
+    {
+      "id": "G-DATA",
+      "status": "blocked",
+      "owner": "Acquisition/data lead, ecologist and statistics reviewer",
+      "reason": "Acquisition-owned frozen criteria, actual local recordings, calibration/timing evidence and independent study review.",
+      "dependencies": [
+        "G-SITE",
+        "G-PRIVACY"
+      ]
+    },
+    {
+      "id": "G-PRIVACY",
+      "status": "blocked",
+      "owner": "Data controller and Croatian/EU privacy adviser",
+      "reason": "Controller decisions, privacy assessment and deployed retention/deletion test.",
+      "dependencies": [
+        "G-SCOPE"
+      ]
+    },
+    {
+      "id": "G-SOFTWARE",
+      "status": "blocked",
+      "owner": "Software, acquisition and firmware leads; controller owns full checks",
+      "reason": "Root full-check results for this wave; selected-target reproducibility, acquisition and HIL evidence.",
+      "dependencies": [
+        "G-LOCAL"
+      ]
+    },
+    {
+      "id": "G-SAFETY",
+      "status": "blocked",
+      "owner": "Safety owner, electrical and underwater-acoustics specialists, ecologist",
+      "reason": "Signed method/envelope, physical safety design verification, facility authorization and calibrated measured reports.",
+      "dependencies": [
+        "G-SITE",
+        "G-MECHANICAL",
+        "G-POWER"
+      ]
+    },
+    {
+      "id": "G-NETWORK",
+      "status": "blocked",
+      "owner": "Communications/electrical engineer and software/firmware leads",
+      "reason": "Frozen topology, spectrum settings, field survey, real-network and outage results.",
+      "dependencies": [
+        "G-SITE",
+        "G-POWER"
+      ]
+    },
+    {
+      "id": "G-MECHANICAL",
+      "status": "blocked",
+      "owner": "Marine/mechanical engineer and competent test facility",
+      "reason": "Frozen hardware interface/envelope, purchased-unit traceability, facility reports and integrated endurance results.",
+      "dependencies": [
+        "G-SITE"
+      ]
+    },
+    {
+      "id": "G-POWER",
+      "status": "blocked",
+      "owner": "Electrical engineer and site partner",
+      "reason": "Numeric limits, selected power chain, calibrated instruments and bench/field results.",
+      "dependencies": [
+        "G-SITE"
+      ]
+    },
+    {
+      "id": "G-SECURITY",
+      "status": "blocked",
+      "owner": "Security owner with platform and firmware leads",
+      "reason": "Chosen target secure boot/update evidence, hardware power-cut matrix and independent security assessment.",
+      "dependencies": [
+        "G-SOFTWARE"
+      ]
+    },
+    {
+      "id": "G-EFFICACY",
+      "status": "blocked",
+      "owner": "Marine ecologist, statistics reviewer and farm partner",
+      "reason": "Prior raw methods, approved study, calibrated exposures, observed outcomes and independent gate decision.",
+      "dependencies": [
+        "G-DATA",
+        "G-SAFETY"
+      ]
+    },
+    {
+      "id": "G-CONFORMITY",
+      "status": "blocked",
+      "owner": "Qualified compliance adviser, test lab and legal manufacturer",
+      "reason": "Professional applicability decision, final-system reports, approved labeling/DoC and market/operator duties.",
+      "dependencies": [
+        "G-SCOPE",
+        "G-MECHANICAL",
+        "G-POWER",
+        "G-SECURITY"
+      ]
+    },
+    {
+      "id": "G-MANUFACTURE",
+      "status": "blocked",
+      "owner": "Manufacturing partner and engineering owners",
+      "reason": "Funded PVT plan, real second-assembler records, serial-linked test data and approved release decision.",
+      "dependencies": [
+        "G-CONFORMITY",
+        "G-MECHANICAL",
+        "G-POWER"
+      ]
+    },
+    {
+      "id": "G-LIFECYCLE",
+      "status": "blocked",
+      "owner": "Product owner, service/security owners and legal adviser",
+      "reason": "Budget/terms, competent service arrangements, spare lead times, drills and final commercial authorization.",
+      "dependencies": [
+        "G-MANUFACTURE",
+        "G-PRIVACY"
+      ]
+    }
+  ],
+  "limitation": "Integrity is not authenticity, legal approval, physical qualification or efficacy. External evidence requires independent human review; this tool cannot authorize release."
+}

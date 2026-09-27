@@ -1,0 +1,129 @@
+{
+  "schema": "poseidon.hardware.physical-validation-plan.v1",
+  "configuration": "reference-v1",
+  "revision": "HW-REF-1.1",
+  "issued_date": "2026-09-08",
+  "status": "PLAN_ONLY_NOT_AUTHORIZATION",
+  "physical_tests_performed": 0,
+  "global_prerequisites": [
+    "Root/user authorizes the specific activity and budget; this file grants neither.",
+    "Reviewer freezes exact specimen BOM, drawing revision and test acceptance limits before testing.",
+    "Qualified operator approves hazards, facility, instruments, calibration and emergency response.",
+    "Each test records raw measurements, units, uncertainty, calibration IDs, deviations and specimen serials."
+  ],
+  "tests": [
+    {
+      "id": "PV-01", "assemblies": ["HUB", "REEF", "WET"], "title": "Incoming part and dimension inspection",
+      "owner": "Mechanical engineer and assembler", "method": "Measure purchased part datums, mounts, protrusions, cable exits and mass; compare against exact vendor drawings and CAD assumptions.",
+      "equipment": ["Calibrated calipers", "Calibrated scale", "Exact vendor drawing revision"],
+      "freeze_before_test": ["Exact parts and configuration", "Drawing dimensions and tolerances", "Inspection sample plan"],
+      "acceptance_rule": "Every mating feature fits its approved tolerance and CAD allocation; vendor/provisional discrepancies cause a revision, not forced assembly.",
+      "status": "not_performed", "result": null, "raw_evidence": [], "blocks": ["fabrication_release", "purchased_part_fit"]
+    },
+    {
+      "id": "PV-02", "assemblies": ["HUB", "REEF", "WET", "WIPER", "PROJECTOR", "FARM", "JIG"], "title": "Dry fit, tool access and cable service",
+      "owner": "Mechanical engineer and independent assembler", "method": "Assemble inert parts and dummy instruments; check fastener access, removable tray travel, lid sweep, connector mating, strain-relief grip and bend radius at service extremes.",
+      "equipment": ["Released drawing set", "Selected cable bend-radius data", "Torque tools after torque specification freeze"],
+      "freeze_before_test": ["Exact cable/connector diameters and minimum bend radius", "Fastener stack and torque values", "Keep-out and tool-envelope requirements"],
+      "acceptance_rule": "Approved clearances and bend-radius limits hold at worst-case tolerances and service positions; no printed part carries a primary mooring or pressure load.",
+      "status": "not_performed", "result": null, "raw_evidence": [], "blocks": ["assembly_release", "serviceability"]
+    },
+    {
+      "id": "PV-03", "assemblies": ["WET"], "title": "Purchased pressure boundary and leak qualification",
+      "owner": "Qualified pressure-test facility and mechanical reviewer", "method": "Facility develops a guarded procedure for the exact purchased housing, endcaps, optical window, seals and penetrators; measure leakage and inspect before/after approved pressure and immersion cycles.",
+      "equipment": ["Rated guarded pressure-test equipment", "Traceably calibrated pressure and temperature instruments", "Leak detection method approved by facility"],
+      "freeze_before_test": ["Operating depth, duration, cycles and temperature", "Vendor assembly rating and instructions", "Test medium and approved test pressure", "Acceptance leakage and inspection limits"],
+      "acceptance_rule": "Exact configuration passes the facility-approved protocol with traceable raw data; neither an IP code nor a CAD model substitutes for this test.",
+      "safety_note": "The CAD pressure-test fixture is only a positioning cradle. It is not pressure containment, a pressure source, a safety guard or an instruction to overpressure equipment.",
+      "status": "not_performed", "result": null, "raw_evidence": [], "blocks": ["wet_release", "depth_rating"]
+    },
+    {
+      "id": "PV-04", "assemblies": ["FARM", "WET", "REEF", "HUB"], "title": "Loads, retention, buoyancy and retrieval",
+      "owner": "Marine mechanical engineer with farm operator", "method": "Calculate then verify configured mass/CG and buoyancy; apply approved static/cyclic loads to representative attachments and restraints; rehearse recovery using inert equipment in an authorized setting.",
+      "equipment": ["Calibrated load cell", "Approved load fixture", "Scale", "Controlled test site after authorization"],
+      "freeze_before_test": ["Current/wave/wind and handling load cases", "Farm attachment capacity", "Design and proof factors", "Maximum deflection and retention limits", "Recovery method"],
+      "acceptance_rule": "Approved load cases retain equipment without slip, damage or blocked recovery; cables and printed instrument supports are not substituted for the designed primary restraint.",
+      "status": "not_performed", "result": null, "raw_evidence": [], "blocks": ["farm_installation", "mechanical_load_rating"]
+    },
+    {
+      "id": "PV-05", "assemblies": ["HUB", "REEF", "WET", "FARM", "WIPER"], "title": "Corrosion, fouling and environmental exposure",
+      "owner": "Materials/mechanical reviewer", "method": "Test representative mixed-material joints, coatings, isolation washers, cables and seals under an approved marine exposure protocol; inspect fouling and galvanic/crevice corrosion at scheduled intervals.",
+      "equipment": ["Authorized exposure setup", "Material certificates where required", "Inspection imaging and measurement tools"],
+      "freeze_before_test": ["Material grades and finishes", "Galvanic isolation and cleaning method", "Salt/UV/temperature exposure conditions", "Duration and corrosion/fouling acceptance limits"],
+      "acceptance_rule": "Material and isolation system passes approved limits without loss of retention, sealing or service access; a generic stainless or printed polymer label is insufficient.",
+      "status": "not_performed", "result": null, "raw_evidence": [], "blocks": ["marine_service_life", "maintenance_interval"]
+    },
+    {
+      "id": "PV-06", "assemblies": ["HUB", "REEF"], "title": "Electrical inspection, fuse and isolation review",
+      "owner": "Qualified electrical engineer", "method": "Inspect against released wiring; verify polarity, continuity, protective bonding/isolation intent, fuse/wire/connector coordination, insulation and backfeed paths before energization.",
+      "equipment": ["Calibrated DMM", "Current-limited isolated bench source after authorization", "Appropriate insulation test equipment only under approved procedure"],
+      "freeze_before_test": ["Exact conductor insulation/gauge and ampacity conditions", "Fuse characteristic and fault-current capability", "Connector pin view and ratings", "Ground/shield/isolation design", "Safe test voltages"],
+      "acceptance_rule": "Approved continuity/isolation tests pass and faults are cleared within coordinated conductor/component limits. Numeric fuse placeholders cannot pass this gate.",
+      "status": "not_performed", "result": null, "raw_evidence": [], "blocks": ["energization", "electrical_safety"]
+    },
+    {
+      "id": "PV-07", "assemblies": ["HUB", "REEF"], "title": "Power states, inrush and brownout",
+      "owner": "Electrical engineer with firmware/platform reviewer", "method": "Measure steady, burst and startup loads at battery extrema with the exact USB-C source, DAQ, storage, radio and camera; apply approved supply ramps and interruption cases; record reset and data-recovery behavior.",
+      "equipment": ["Calibrated oscilloscope", "Current probe or characterized shunt", "Programmable current-limited DC source", "Electronic load"],
+      "freeze_before_test": ["Rail operating limits at each load", "Actual battery extrema and cutoff", "Transient measurement bandwidth", "USB-C current advertisement and backfeed checks", "Fault/recovery limits"],
+      "acceptance_rule": "Measured rails stay inside selected component limits for every approved state; protection trips safely, no unintended power path bypasses cutoff, and recovery does not arm output.",
+      "status": "not_performed", "result": null, "raw_evidence": [], "blocks": ["power_budget_validation", "brownout_qualification"]
+    },
+    {
+      "id": "PV-08", "assemblies": ["HUB", "REEF"], "title": "Thermal and solar reserve",
+      "owner": "Electrical/thermal engineer", "method": "Instrument the closed representative enclosures and selected battery under approved ambient/solar/load conditions; measure heat paths, charging limits and energy over representative worst-season profiles.",
+      "equipment": ["Calibrated temperature sensors", "DC energy logger", "Controlled environmental setup", "Site irradiance record or explicitly simulated bench profile"],
+      "freeze_before_test": ["Component derating and battery temperature limits", "Ambient/solar envelope", "Required autonomy and reserve", "Actual load duty cycle", "Battery aging and usable capacity"],
+      "acceptance_rule": "Measured temperatures and charging remain within selected part limits and required reserve holds under the approved profile. Assumed peak-sun-hours and lumped thermal resistance are not field evidence.",
+      "status": "not_performed", "result": null, "raw_evidence": [], "blocks": ["thermal_rating", "solar_autonomy"]
+    },
+    {
+      "id": "PV-09", "assemblies": ["WET", "ARRAY", "JIG"], "title": "Receive calibration and synchronization",
+      "owner": "Underwater acoustics specialist with acquisition lead", "method": "Calibrate the selected hydrophone/DAQ gain and frequency response using traceable reference equipment; measure channel delay, clock drift and camera time alignment. Record uncertainty and full-chain serials.",
+      "equipment": ["Traceable acoustic reference chain", "Authorized calibration facility", "Common timing reference", "Electrical signal source after test authorization"],
+      "freeze_before_test": ["Selected acquisition band and sample rate", "Hydrophone sensitivity/calibration basis", "Alignment uncertainty requirement", "Array geometry and clock topology if enabled"],
+      "acceptance_rule": "Measured gain/frequency/time response meets preregistered measurement requirements; digital RMS/peak is not reported as underwater SPL without this chain and its uncertainty.",
+      "status": "not_performed", "result": null, "raw_evidence": [], "blocks": ["calibrated_receive_claim", "array_localization_claim"]
+    },
+    {
+      "id": "PV-10", "assemblies": ["WIPER", "WET"], "title": "Optional wiper guard, jam and optical endurance",
+      "owner": "Mechanical/electrical engineer with acquisition reviewer", "method": "Use an authorized guarded bench setup for the selected drive and window; verify stop travel, current/time limits, jam response, scratch risk, image obstruction and service replacement over an approved cycle count.",
+      "equipment": ["Representative optical window", "Force/current measurement", "Guarded fixture", "Image inspection setup"],
+      "freeze_before_test": ["Drive/shaft/seal selection", "Torque and contact pressure", "Travel stops and end sensing", "Current/time/jam limits", "Endurance cycles and scratch/visibility limits"],
+      "acceptance_rule": "Drive stops independently within approved mechanical/electrical bounds, does not damage the window and restores required visibility. CAD swept volume alone cannot pass this test.",
+      "status": "not_performed", "result": null, "raw_evidence": [], "blocks": ["powered_wiper_population"]
+    },
+    {
+      "id": "PV-11", "assemblies": ["PROJECTOR", "HUB"], "title": "Optional output physical stop and fault injection, dummy load only",
+      "owner": "Independent electrical safety engineer", "method": "After separate authorization and released design, test the hardware inhibit against CPU halt, stuck commands, lost heartbeat, brownout, stop-loop opening/short faults and welded-contact/shorted-driver cases with inert dummy loads only.",
+      "equipment": ["Appropriate rated dummy loads", "Oscilloscope/current measurement", "Guarded fault-injection fixture", "Physical stop and independent watchdog circuit"],
+      "freeze_before_test": ["Exact power stage and disconnect design", "Independent watchdog and manual-rearm circuit", "Maximum residual energy and stop latency", "Fault coverage and acceptance bounds", "Safe fault-injection method"],
+      "acceptance_rule": "Every approved fault reaches independently bounded output or electrical silence within approved bounds; reset never rearms automatically. Software state reports do not prove power removal.",
+      "status": "not_performed", "result": null, "raw_evidence": [], "blocks": ["projector_connection", "active_output_electrical_release"]
+    },
+    {
+      "id": "PV-12", "assemblies": ["PROJECTOR", "WET"], "title": "Optional calibrated acoustic output and ecological gate",
+      "owner": "Acoustics/ecology specialists and competent authority", "method": "Only after written permissions and PV-11, calibrate the exact projector/amplifier chain at an authorized facility under the approved exposure protocol; biological efficacy remains a separate controlled study.",
+      "equipment": ["Calibrated hydrophone/reference chain", "Approved facility and geometry", "Exposure monitoring", "Independent observer/abort system"],
+      "freeze_before_test": ["Projector impedance/TVR and amplifier limits", "Frequency/pressure/exposure/particle-motion requirements as applicable", "Uncertainty and permitted program", "Non-target monitoring and abort rules", "Study design and permissions"],
+      "acceptance_rule": "Independent reviewers accept the calibrated chain and approved safety/exposure evidence. No universal acoustic safe level, species response or prevention efficacy is inferred from electrical tests.",
+      "status": "not_performed", "result": null, "raw_evidence": [], "blocks": ["acoustic_emission", "deterrence_claim"]
+    },
+    {
+      "id": "PV-13", "assemblies": ["REEF", "HUB"], "title": "Above-water communications and EMC",
+      "owner": "RF/conformity engineer with firmware/platform leads", "method": "Verify the exact regional radio/antenna/gateway configuration, airtime and installation against the approved radio plan; test co-located DC converters, receive chain, camera and radio for interference in authorized facilities.",
+      "equipment": ["Authorized RF test setup", "Exact antenna/cable configuration", "EMC lab equipment as required"],
+      "freeze_before_test": ["Region/SKU and radio settings", "Applicable regulatory requirements", "Link/airtime requirements", "EMC acceptance plan"],
+      "acceptance_rule": "Approved above-water link and interference limits pass for the complete assembly. Purchased module markings are not whole-system conformity evidence.",
+      "status": "not_performed", "result": null, "raw_evidence": [], "blocks": ["radio_operation", "system_conformity"]
+    },
+    {
+      "id": "PV-14", "assemblies": ["HUB", "WET", "REEF", "FARM"], "title": "Independent assembly and service reproduction",
+      "owner": "Independent assembler and quality reviewer", "method": "Build a serial-tracked reference unit from the released package without undocumented designer intervention; log missing instructions, rework, actual consumed parts, inspection and recovery/service trials.",
+      "equipment": ["Released BOM/drawings/wiring", "Approved assembly tools", "Unit traveler and inspection records"],
+      "freeze_before_test": ["Released manufacturing documents", "End-of-line checks", "Traceability fields", "Rework and deviation rules"],
+      "acceptance_rule": "Reviewer resolves every undocumented step and failed inspection before any production claim; actual yield, labor and cost come from records, not this plan.",
+      "status": "not_performed", "result": null, "raw_evidence": [], "blocks": ["manufacturing_release", "production_readiness"]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "poseidon.telemetry.v1",
+  "device_id": "synthetic-reef-001",
+  "site_id": "synthetic-site",
+  "boot_id": "1",
+  "sequence": 1,
+  "observed_at": null,
+  "delivery_age_s": 0,
+  "clock_quality": {
+    "status": "unknown",
+    "method": "unknown",
+    "uncertainty_ms": null,
+    "offset_ms": null,
+    "reference": null
+  },
+  "provenance": {
+    "source_kind": "synthetic",
+    "source_id": "synthetic-golden-v1",
+    "transport": "local"
+  },
+  "measurements": [
+    {
+      "name": "temperature",
+      "value": 21.5,
+      "unit": "Cel",
+      "quality": "uncalibrated",
+      "calibration_id": null
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "schema": "poseidon.surface-v3.mass-displacement.v1",
+  "parts": [
+    {
+      "name": "SV3_TRAY_PLATE",
+      "kind": "physical_custom",
+      "variant": "common",
+      "volume_mm3": 2694495.3993088827,
+      "density_assumed_kg_m3": 2700,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": 7.275137578133983,
+      "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+    },
+    {
+      "name": "SV3_OPEN_BOTTOM_SKIRT",
+      "kind": "physical_custom",
+      "variant": "common",
+      "volume_mm3": 1163520.0,
+      "density_assumed_kg_m3": 2700,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": 3.141504,
+      "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+    },
+    {
+      "name": "SV3_PANEL_A",
+      "kind": "purchased_envelope",
+      "variant": "common",
+      "volume_mm3": 7097500.000000007,
+      "density_assumed_kg_m3": null,
+      "vendor_nominal_mass_kg": 3.1,
+      "modeled_dry_mass_kg": 3.1,
+      "mass_basis": "Panel datasheet nominal mass, NOT solid-envelope density"
+    },
+    {
+      "name": "SV3_WEDGE_A_1",
+      "kind": "physical_custom",
+      "variant": "common",
+      "volume_mm3": 440685.1642059725,
+      "density_assumed_kg_m3": 2700,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": 1.1898499433561258,
+      "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+    },
+    {
+      "name": "SV3_WEDGE_A_2",
+      "kind": "physical_custom",
+      "variant": "common",
+      "volume_mm3": 440685.1642059725,
+      "density_assumed_kg_m3": 2700,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": 1.1898499433561258,
+      "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+    },
+    {
+      "name": "SV3_PANEL_B",
+      "kind": "purchased_envelope",
+      "variant": "common",
+      "volume_mm3": 7097500.000000007,
+      "density_assumed_kg_m3": null,
+      "vendor_nominal_mass_kg": 3.1,
+      "modeled_dry_mass_kg": 3.1,
+      "mass_basis": "Panel datasheet nominal mass, NOT solid-envelope density"
+    },
+    {
+      "name": "SV3_WEDGE_B_1",
+      "kind": "physical_custom",
+      "variant": "common",
+      "volume_mm3": 440685.1642059725,
+      "density_assumed_kg_m3": 2700,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": 1.1898499433561258,
+      "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+    },
+    {
+      "name": "SV3_WEDGE_B_2",
+      "kind": "physical_custom",
+      "variant": "common",
+      "volume_mm3": 440685.1642059725,
+      "density_assumed_kg_m3": 2700,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": 1.1898499433561258,
+      "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+    },
+    {
+      "name": "SV3_HUB_HAMMOND_1550WJ",
+      "kind": "purchased_envelope",
+      "variant": "common",
+      "volume_mm3": 3205125.000000001,
+      "density_assumed_kg_m3": null,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": null,
+      "mass_basis": "Unknown purchased mass"
+    },
+    {
+      "name": "SV3_HUB_CARRIER",
+      "kind": "physical_custom",
+      "variant": "common",
+      "volume_mm3": 234176.00000000023,
+      "density_assumed_kg_m3": 2700,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": 0.6322752000000006,
+      "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+    },
+    {
+      "name": "SV3_SHADE_ROOF",
+      "kind": "physical_custom",
+      "variant": "common",
+      "volume_mm3": 154687.5,
+      "density_assumed_kg_m3": 2700,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": 0.41765625,
+      "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+    },
+    {
+      "name": "SV3_SHADE_HANGER_1",
+      "kind": "physical_custom",
+      "variant": "common",
+      "volume_mm3": 319.99999999999994,
+      "density_assumed_kg_m3": 2700,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": 0.0008639999999999999,
+      "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+    },
+    {
+      "name": "SV3_SHADE_HANGER_2",
+      "kind": "physical_custom",
+      "variant": "common",
+      "volume_mm3": 319.99999999999994,
+      "density_assumed_kg_m3": 2700,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": 0.0008639999999999999,
+      "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+    },
+    {
+      "name": "SV3_SINK_OCCUPANCY_NOT_FINS",
+      "kind": "allocation",
+      "variant": "common",
+      "volume_mm3": 1997940.3395952,
+      "density_assumed_kg_m3": null,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": null,
+      "mass_basis": "Nonphysical allocation excluded from mass and displacement"
+    },
+    {
+      "name": "SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "kind": "allocation",
+      "variant": "common",
+      "volume_mm3": 1310984.4748000004,
+      "density_assumed_kg_m3": null,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": null,
+      "mass_basis": "Nonphysical allocation excluded from mass and displacement"
+    },
+    {
+      "name": "SV3_CROSS_BOLT_ALLOCATION_1",
+      "kind": "allocation",
+      "variant": "common",
+      "volume_mm3": 8168.140899333465,
+      "density_assumed_kg_m3": null,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": null,
+      "mass_basis": "Nonphysical allocation excluded from mass and displacement"
+    },
+    {
+      "name": "SV3_CROSS_BOLT_ALLOCATION_2",
+      "kind": "allocation",
+      "variant": "common",
+      "volume_mm3": 8168.140899333465,
+      "density_assumed_kg_m3": null,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": null,
+      "mass_basis": "Nonphysical allocation excluded from mass and displacement"
+    },
+    {
+      "name": "SV3_MAST_SOCKET",
+      "kind": "physical_custom",
+      "variant": "common",
+      "volume_mm3": 357642,
+      "density_assumed_kg_m3": 2700,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": 0.9656334,
+      "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+    },
+    {
+      "name": "SV3_POLE_60MM",
+      "kind": "physical_custom",
+      "variant": "pole",
+      "volume_mm3": 3705618.756633671,
+      "density_assumed_kg_m3": 8000,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": 29.644950053069365,
+      "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+    },
+    {
+      "name": "SV3_SEABED_FOOTING_PLATE",
+      "kind": "physical_custom",
+      "variant": "pole",
+      "volume_mm3": 3000000.0,
+      "density_assumed_kg_m3": 8000,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": 24.0,
+      "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+    },
+    {
+      "name": "SV3_CABLE_ROUTE_ALLOCATION_A",
+      "kind": "allocation",
+      "variant": "common",
+      "volume_mm3": 9047.7868423386,
+      "density_assumed_kg_m3": null,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": null,
+      "mass_basis": "Nonphysical allocation excluded from mass and displacement"
+    },
+    {
+      "name": "SV3_CABLE_ROUTE_ALLOCATION_B",
+      "kind": "allocation",
+      "variant": "common",
+      "volume_mm3": 9047.7868423386,
+      "density_assumed_kg_m3": null,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": null,
+      "mass_basis": "Nonphysical allocation excluded from mass and displacement"
+    },
+    {
+      "name": "SV3_FLOAT_COLLAR",
+      "kind": "physical_custom",
+      "variant": "float",
+      "volume_mm3": 213840000.0,
+      "density_assumed_kg_m3": 60,
+      "vendor_nominal_mass_kg": null,
+      "modeled_dry_mass_kg": 12.8304,
+      "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+    }
+  ],
+  "actual_complete_mass_kg": null,
+  "actual_buoyancy_sign": "UNKNOWN",
+  "known_plus_assumed_common_subtotal_kg": 23.39333420155849,
+  "pole_variant_known_plus_assumed_subtotal_kg": 77.03828425462785,
+  "excluded": [
+    "hub actual mass",
+    "sink actual mass",
+    "attachment fasteners",
+    "wiring and glands",
+    "electronics",
+    "battery and power integration",
+    "mooring",
+    "absorbed water and fouling"
+  ],
+  "float_scenario": {
+    "explicit_mass_allowances_kg": {
+      "hub_scenario_mass_kg": 1.2,
+      "sink_scenario_mass_kg": 1.8,
+      "unmodeled_payload_allowance_kg": 3
+    },
+    "collar_dry_mass_kg": 12.8304,
+    "dry_mass_kg": 42.223734201558486,
+    "foam_density_assumed_kg_m3": 60,
+    "seawater_density_assumed_kg_m3": 1025,
+    "waterplane_area_m2": 0.7128,
+    "fully_submerged_displacement_m3": 0.21384,
+    "fully_submerged_supported_mass_kg": 219.186,
+    "fully_submerged_net_lift_kg_equivalent": 176.96226579844154,
+    "fully_submerged_net_lift_n": 1735.4070038922866,
+    "fully_submerged_buoyancy_sign": "POSITIVE",
+    "posed_displacement_m3": 0.041193887025910716,
+    "conditional_equilibrium_draft_m": 0.057791648465082376,
+    "conditional_equilibrium_net_lift_n": 0,
+    "posed_buoyancy_sign": "NEUTRAL_BY_SCENARIO_CONSTRUCTION",
+    "float_surface_y_m": 0.2422083515349176,
+    "basis": "Illustrative dry-mass scenario, not actual assembled mass. Only foam displacement credited. Open skirt, flooded pole and vendor envelopes receive no sealed-volume credit. No stability, load or wave claim."
+  }
+}

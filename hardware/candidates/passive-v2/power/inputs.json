@@ -1,0 +1,18 @@
+{
+  "revision":"HW-CAND-2.0","configuration":"passive-v2","status":"NON_ADOPTED_NOT_BUILD_AUTHORIZED",
+  "baseline_inputs":"hardware/electronics/reference-inputs.json",
+  "baseline_evidence":"hardware/electronics/reference-evidence.json",
+  "baseline_evidence_sha256":"dfc71d2a6bfffc8a99b12e83af9e5daf9ad33ead8da6337c50cdfb7f1b17e40f",
+  "array":{"series":2,"parallel":1,"bom_part_id":"V2-PV-001","cad_bom_id":"REEF-PV-2S","panel_xyz_mm":[668,425,25],"panel_centres_y_mm":[-237.5,237.5],"panel_gap_mm":50,"combined_panel_footprint_mm":[668,900]},
+  "fixed_comparison":{"ambient_c":35,"hub_peak_enclosed_heat_w":21.857142857,"peak_sun_hours":1,"reef_baseline_daily_wh":27.5247475,"load_reduction_allowed":false,"zero_sun_shade_substitution_allowed":false},
+  "ancillary_accounting":{
+    "method":"Positive catalog-nominal overlay on unchanged baseline, including its existing0.1W generic BMS assumption. Do not subtract that allowance or change0.8 regulator efficiencies. Overlay may double-count some low-load conversion loss; it is conservative against the baseline but is NOT a worst-case bound because vendor quiescent values are typical and unknown outputs/conduction remain.",
+    "selected_quiescent_parts":["V2-BMS-001","V2-LOADSW-001","V2-REG5-001","V2-REG3-001"],
+    "quiescent_battery_reference_v":12.8,
+    "unknown_extra_w_sensitivity":[0,0.1,0.25,0.5,1.0],
+    "unknown_selected_overheads":["ASS030550320 inline cable and signal-input current","smallBMS output loads beyond its2.2mA own consumption","BatteryProtect on-state conduction and thermal loss","Worst-case quiescent current beyond published typical points","Actual low-load regulator efficiency/burst behavior versus retained0.8 assumptions","Fuses/contacts/actual cable drops and any required supervision peripherals"],
+    "measured_or_guaranteed_total_ancillary_w":null
+  },
+  "candidate_wire_example":{"anderson_service_awg":12,"pv_example_area_mm2":2.5,"wire_manufacturer_mpn":null,"actual_lengths_m":null,"ampacity_qualified":false,"pv_insulation_qualified":false},
+  "output_boundary":{"amplifier_installed":false,"projector_connected":false,"output_actuation_gpio":[],"custom_pcb_required":false}
+}

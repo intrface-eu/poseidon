@@ -1,0 +1,372 @@
+[
+  {
+    "id": "S01",
+    "url": "https://single-market-economy.ec.europa.eu/single-market/goods/european-standards/harmonised-standards/radio-equipment_en",
+    "title": "Radio equipment - harmonised standards",
+    "publisher": "European Commission, DG GROW",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F2; applicability matrix; identifies Implementing Decision (EU) 2022/2191 and its amendments through Implementing Decision (EU) 2026/2003 of 4 September 2026",
+    "quote": "The summary does not as such generate legal effects."
+  },
+  {
+    "id": "S02",
+    "url": "https://single-market-economy.ec.europa.eu/sectors/electrical-and-electronic-engineering-industries-eei/radio-equipment-directive-red_en",
+    "title": "Radio Equipment Directive (RED)",
+    "publisher": "European Commission, DG GROW",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F1, R7-F4, R7-F7; RED applicability from 13 June 2016, Article 3 essential requirements, Delegated Regulation 2022/30 and its repeal by 2026/339 effective 11 December 2027",
+    "quote": "manufacturers were allowed to place on the market radio equipment compliant with either the RED or the EU legislation"
+  },
+  {
+    "id": "S03",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act",
+    "title": "Cyber Resilience Act",
+    "publisher": "European Commission, DG CNECT",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F6, R7-F22; CRA entry into force 10 December 2024, reporting obligations from 11 September 2026, main obligations from 11 December 2027",
+    "quote": "The main obligations introduced by the Act will apply from 11 December 2027"
+  },
+  {
+    "id": "S04",
+    "url": "https://www.ezurio.com/resources/blog/understanding-eu-commission-implementation-of-decision-eu-2025-138-new-harmonized-standards-and-restrictions",
+    "title": "Understanding EU Commission Implementing Decision (EU) 2025/138 - New Harmonized Standards and Restrictions",
+    "publisher": "Ezurio",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F5; listing of EN 18031-1/-2/-3:2024 as Annex I entries 164-166 and the three published restriction notices",
+    "quote": "when applying its clauses 6.2.5.1 and 6.2.5.2, the user is allowed not to set and use any password"
+  },
+  {
+    "id": "S05",
+    "url": "https://www.tuv.com/regulations-and-standards/en/eu-commission-delegated-regulation-eu-2026-339-of-february-16-2026-repealing-delegated-regulation-eu-2022-30.html",
+    "title": "EU - Commission Delegated Regulation (EU) 2026/339 of February 16, 2026 Repealing Delegated Regulation (EU) 2022/30",
+    "publisher": "TUV Rheinland",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F4; identity and adoption date of Delegated Regulation (EU) 2026/339",
+    "quote": "Commission Delegated Regulation (EU) 2026/339 of February 16, 2026 Repealing Delegated Regulation (EU) 2022/30"
+  },
+  {
+    "id": "S06",
+    "url": "https://environment.ec.europa.eu/topics/waste-and-recycling/rohs-directive_en",
+    "title": "RoHS Directive",
+    "publisher": "European Commission, DG ENV",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "Applicability matrix; RoHS 2011/65/EU scope and the ten restricted substances under Annex II as amended by Delegated Directive (EU) 2015/863",
+    "quote": "All products with an electrical and electronic component, unless specifically excluded, have to comply"
+  },
+  {
+    "id": "S07",
+    "url": "https://environment.ec.europa.eu/topics/waste-and-recycling/waste-electrical-and-electronic-equipment-weee_en",
+    "title": "Waste from Electrical and Electronic Equipment (WEEE)",
+    "publisher": "European Commission, DG ENV",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "Applicability matrix; open item 7; B5 cost line - WEEE 2012/19/EU producer registration and reporting duties",
+    "quote": "Requires the separate collection and proper treatment of WEEE and sets targets for their collection, recovery and recycling"
+  },
+  {
+    "id": "S08",
+    "url": "https://environment.ec.europa.eu/topics/waste-and-recycling/batteries_en",
+    "title": "Batteries",
+    "publisher": "European Commission, DG ENV",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "Applicability matrix; open item 6; B5 cost line - entry into force of Regulation (EU) 2023/1542 on 17 August 2023",
+    "quote": "On 17 August 2023, the new Batteries Regulation entered into force"
+  },
+  {
+    "id": "S09",
+    "url": "https://echa.europa.eu/candidate-list-table",
+    "title": "Candidate List of substances of very high concern for Authorisation",
+    "publisher": "European Chemicals Agency (ECHA)",
+    "retrieved": "2026-09-09",
+    "accessed": "inaccessible",
+    "used_for": "Applicability matrix and open item 5; intended to verify the current REACH Candidate List entry count and latest update date. Returned HTTP 403; count left unverified",
+    "quote": ""
+  },
+  {
+    "id": "S10",
+    "url": "https://osha.europa.eu/en/legislation/directive/regulation-2023988eu-general-product-safety",
+    "title": "Regulation 2023/988/EU - general product safety",
+    "publisher": "European Agency for Safety and Health at Work (EU-OSHA)",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "Applicability matrix; GPSR application date for any consumer or foreseeable-consumer supply",
+    "quote": "The regulation is applicable since 13 December 2024."
+  },
+  {
+    "id": "S11",
+    "url": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-32019-processing-personal-data-through-video_en",
+    "title": "Guidelines 3/2019 on processing of personal data through video devices",
+    "publisher": "European Data Protection Board",
+    "retrieved": "2026-09-09",
+    "accessed": "abstract",
+    "used_for": "Applicability matrix; GDPR treatment of camera streams. Landing page read only; the guideline PDF itself was not opened",
+    "quote": "Guidelines 3/2019 on processing of personal data through video devices"
+  },
+  {
+    "id": "S12",
+    "url": "https://www.hakom.hr/en/bodies-for-conformity-assessment/952",
+    "title": "Bodies for Conformity Assessment",
+    "publisher": "HAKOM, Croatian Regulatory Authority for Network Industries",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F9, R7-F17; labs table - identifies the sole Croatian RED notified body and links the NANDO database",
+    "quote": "NB 2494 KONCAR-Institute for Electrical Engineering Ltd. 2014/53/EU - Radio Equipment"
+  },
+  {
+    "id": "S13",
+    "url": "https://www.hakom.hr/hr/opca-dozvola/2909",
+    "title": "Opca dozvola",
+    "publisher": "HAKOM, Croatian Regulatory Authority for Network Industries",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F8; applicability matrix; open item 8 - general authorisation regime, governing ordinance NN 40/23, and the list of withdrawn SRD authorisations",
+    "quote": "Svaka pravna i fizicka osoba ima pravo na uporabu radiofrekvencijskog pojasa"
+  },
+  {
+    "id": "S14",
+    "url": "https://koncar-institut.hr/en/laboratory-center",
+    "title": "Laboratory Center",
+    "publisher": "KONCAR - Electrical Engineering Institute Ltd.",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F9; labs table - Croatian notified body contact page and published service categories. HAA accreditation numbers are not shown on this page",
+    "quote": "testing, calibration, and certification to ensure product compliance with relevant standards and directives"
+  },
+  {
+    "id": "S15",
+    "url": "https://www.siq.si/en/our-services/testing-and-certification-of-products/emc/",
+    "title": "EMC testing laboratory",
+    "publisher": "SIQ Ljubljana",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F3, R7-F10, R7-F17; labs table - notified body 1304, accreditation LP-009, and the published radio, EMC and EMF/MPE scope including EN 300 220-2 and EN IEC 62311",
+    "quote": "We carry out the following EMC, radio and EMF/MPE tests according to relevant harmonized European standards"
+  },
+  {
+    "id": "S16",
+    "url": "https://www.imq.it/en/eu-directives/radio-equipment-directive-red-2014-53-eu",
+    "title": "Radio Equipment Directive - RED - 2014/53/EU: Conformity assessment services",
+    "publisher": "IMQ",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F11, R7-F17; labs table - Italian notified body, Annex III Module B, covering Articles 3.1(a), 3.1(b), 3.2 and 3.3(d)(e)(f)",
+    "quote": "IMQ is accredited and authorized by the Ministry of Enterprises and Made in Italy to operate as Notified Body"
+  },
+  {
+    "id": "S17",
+    "url": "https://www.nemko.com/product-certification/radio-equipment-directive-red",
+    "title": "Radio Equipment Directive (RED) Conformity Assessment Services",
+    "publisher": "Nemko",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F11, R7-F17; labs table - notified body 1622, RED type examination, accredited EMC, radio, exposure and safety testing, and third-party report acceptance policy",
+    "quote": "a EU Notified Body with listing on the NANDO webpage"
+  },
+  {
+    "id": "S18",
+    "url": "https://en.tuv.at/emc-testing/",
+    "title": "EMC testing",
+    "publisher": "TUV AUSTRIA",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F12; labs table - page read in full and found NOT to state notified-body designation for RED or EMC; provides contact and accreditation index links only",
+    "quote": "Accreditations Overview"
+  },
+  {
+    "id": "S19",
+    "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
+    "title": "EIC Accelerator",
+    "publisher": "European Innovation Council, European Commission",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F16; funding table - grant ceiling, equity range, 2026 cut-off dates and eligibility",
+    "quote": "Lump sum contribution below EUR 2.5 million, for innovation activities (TRL 6-8), to be completed within 24 months."
+  },
+  {
+    "id": "S20",
+    "url": "https://oceans-and-fisheries.ec.europa.eu/news/croatia-will-receive-eu2436-million-european-maritime-fisheries-and-aquaculture-fund-2021-2027-2022-11-29_en",
+    "title": "Croatia will receive EUR 243.6 million European Maritime, Fisheries and Aquaculture Fund 2021-2027",
+    "publisher": "European Commission, DG MARE",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F13; funding table - Croatian EMFAF programme size, EU contribution, priority split and adoption date 29 November 2022",
+    "quote": "The total financial allocation for the Croatian programme 2021-2027 is EUR 348 million over the next six years"
+  },
+  {
+    "id": "S21",
+    "url": "https://cinea.ec.europa.eu/programmes/european-maritime-fisheries-and-aquaculture-fund_en",
+    "title": "European Maritime, Fisheries and Aquaculture Fund",
+    "publisher": "CINEA, European Commission",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F13; funding table - direct-management EMFAF route, BlueInvest and the EU Aquaculture Assistance Mechanism. No budget figures published on this page",
+    "quote": "targeted public support for the Union's Maritime Policy, the Common Fisheries Policy"
+  },
+  {
+    "id": "S22",
+    "url": "https://www.pbiro.hr/poticaji-eu-mps-plan-objave-natjecaja-ribarstvo-akvakultura/",
+    "title": "Indikativni plan objave natjecaja za 2025. godinu - Program za ribarstvo i akvakulturu RH",
+    "publisher": "Poslovni biro PBIRO",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F14; funding table - measure I.1 and II.1 budgets, aid intensities and the scientific-body eligibility requirement. 2025 plan; the 2026 plan was not located",
+    "quote": "Ukupan iznos bespovratnih sredstava: 666.667,00 EUR"
+  },
+  {
+    "id": "S23",
+    "url": "https://mingo.gov.hr/vijesti/objava-poziva-za-dostavu-projektnih-prijedloga-inovacijski-vauceri-za-msp-ove-referentni-broj-pk-1-1-06/9723",
+    "title": "Objava poziva za dostavu projektnih prijedloga Inovacijski vauceri za MSP-ove (PK.1.1.06)",
+    "publisher": "Ministarstvo gospodarstva, Republika Hrvatska",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F15; funding table; B1 cost line - total allocation EUR 4,874,214, grant range, aid intensity and the 31 December 2026 16:00 deadline",
+    "quote": "Najnizi iznos bespovratnih sredstava koji se moze dodijeliti po pojedinom projektnom prijedlogu je 2.000,00 EUR"
+  },
+  {
+    "id": "S24",
+    "url": "https://www.victronenergy.com/information/pricelist",
+    "title": "Price list",
+    "publisher": "Victron Energy",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F20; B3 cost line - confirms an official published EUR ex-VAT end-user price list exists and is non-binding",
+    "quote": "All prices mentioned are per unit and EUR ex VAT."
+  },
+  {
+    "id": "S25",
+    "url": "https://store.rakwireless.com/products/wisduo-breakout-board-rak3272s",
+    "title": "RAK3272S XBee LoRaWAN Breakout Board",
+    "publisher": "RAKwireless Store",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F19; B3 cost line - published list price for BOM part REEF-RF-001 in the EU868 variant",
+    "quote": "8XX MHz for EU868/RU864/IN865 - $15.00 USD"
+  },
+  {
+    "id": "S26",
+    "url": "https://bluerobotics.com/store/watertight-enclosures/wte-vp/",
+    "title": "Watertight Enclosure (configurable)",
+    "publisher": "Blue Robotics",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F19; B3 cost line - published starting price and accessory prices for BOM part WET-PRESSURE-001. Final price is configuration-dependent",
+    "quote": "From: $ 61.00"
+  },
+  {
+    "id": "S27",
+    "url": "https://www.raspberrypi.com/products/raspberry-pi-4-model-b/",
+    "title": "Raspberry Pi 4 Model B",
+    "publisher": "Raspberry Pi Ltd",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F19; B3 cost line - only a starting price is published; the 4 GB variant relevant to HUB-CPU-001 has no listed price",
+    "quote": "From $35"
+  },
+  {
+    "id": "S28",
+    "url": "https://www.espressif.com/en/products/devkits/esp32-devkitc",
+    "title": "ESP32-DevKitC",
+    "publisher": "Espressif Systems",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F19; B3 cost line - confirms no price is published for BOM part REEF-CPU-001",
+    "quote": "Get Samples"
+  },
+  {
+    "id": "S29",
+    "url": "https://www.sonardyne.com/product/hydrostatic-pressure-testing-facility/",
+    "title": "Hydrostatic pressure testing facility",
+    "publisher": "Sonardyne",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F17; labs table; B4 cost line - chamber envelope and depth rating published, day rate stated as fixed but no figure published",
+    "quote": "Fixed priced per day"
+  },
+  {
+    "id": "S30",
+    "url": "https://www.emchire.co.uk/page/facility_hire_pricing",
+    "title": "EMC Facility Hire - Facility Hire Pricing",
+    "publisher": "EMC Hire",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F17; B4 cost line - page titled as pricing publishes booking options but no figure in any currency",
+    "quote": "Monday to Friday 8:00 - 16:00 for both half-day and full-day bookings"
+  },
+  {
+    "id": "S31",
+    "url": "https://www.eurocircuits.com/pcb-assembly-proto/",
+    "title": "PCB & Assembly Services - PCB Proto",
+    "publisher": "Eurocircuits",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F18; B3 cost line - no static prices published, no minimum order or tooling charge, 1-5 boards, 3 and 6 working day lead times, calculator limits",
+    "quote": "for a PCB containing more than 200 BOM lines or 1000 component placements"
+  },
+  {
+    "id": "S32",
+    "url": "https://jlcpcb.com/capabilities/pcb-assembly-capabilities",
+    "title": "PCB Assembly Capabilities",
+    "publisher": "JLCPCB",
+    "retrieved": "2026-09-09",
+    "accessed": "full",
+    "used_for": "R7-F18; B3 cost line - the only published fixed assembly fee found in this pass",
+    "quote": "The fixture cost is $23.57 per fixture, and the required quantity depends on your production volume."
+  },
+  {
+    "id": "S33",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202500138",
+    "title": "Commission Implementing Decision (EU) 2025/138 of 28 January 2025",
+    "publisher": "EUR-Lex, Publications Office of the European Union",
+    "retrieved": "2026-09-09",
+    "accessed": "inaccessible",
+    "used_for": "R7-F3, R7-F5; open item 1 - intended to retain the primary annex text and restriction notices for EN 18031. Empty body returned; EUR-Lex eli and HTML routes also returned empty bodies throughout",
+    "quote": ""
+  },
+  {
+    "id": "S34",
+    "url": "https://www.victronenergy.com/media/pricelist/Pricelist_Victron_EUR_C_2026-Q3_Web.pdf",
+    "title": "End user price list Victron Energy EUR C EX VAT (2026 Q3)",
+    "publisher": "Victron Energy",
+    "retrieved": "2026-09-09",
+    "accessed": "inaccessible",
+    "used_for": "R7-F20; B3 cost line - intended to price BAT512050610, SCC075010060R and SPM040401200. Text held in compressed PDF streams and not read; the lines remain unpriced but are closeable from this public document",
+    "quote": ""
+  },
+  {
+    "id": "S35",
+    "url": "https://www.redca.eu/Unrestricted%20Documents/TGN/REDCA%20TGN%2001%20RED%20Radio%20equipment%20modules%20V1.2a%20March%202020.pdf",
+    "title": "REDCA TGN 01 - RED Radio equipment modules V1.2a March 2020",
+    "publisher": "Radio Equipment Directive Compliance Association (REDCA)",
+    "retrieved": "2026-09-09",
+    "accessed": "inaccessible",
+    "used_for": "R7-F7; open item 4 - intended to source the treatment of CE-marked radio modules in a final product. Returned HTTP 425 on two attempts; the module-reuse question is left unanswered",
+    "quote": ""
+  },
+  {
+    "id": "S36",
+    "url": "https://www.tme.eu/en/details/1554v2gy/multipurpose-enclosures/hammond/",
+    "title": "1554V2GY multipurpose enclosure, Hammond",
+    "publisher": "TME (Transfer Multisort Elektronik)",
+    "retrieved": "2026-09-09",
+    "accessed": "inaccessible",
+    "used_for": "R7-F19; B3 cost line - intended as a published EUR distributor price for BOM part ENC-ALT-001. Returned HTTP 403; line left unpriced",
+    "quote": ""
+  },
+  {
+    "id": "S37",
+    "url": "https://www.sgs.com/en/news/2026/02/safeguards-02126-echa-expands-candidate-list-to-253-svhcs",
+    "title": "ECHA Expands Candidate List to 253 SVHCs",
+    "publisher": "SGS",
+    "retrieved": "2026-09-09",
+    "accessed": "inaccessible",
+    "used_for": "Applicability matrix REACH row; intended to corroborate the Candidate List entry count. Returned HTTP 403; no count is asserted in this package",
+    "quote": ""
+  }
+]

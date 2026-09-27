@@ -1,0 +1,28 @@
+{
+  "schema_version": "poseidon.calibration-record.v1",
+  "record_id": "synthetic-calibration-1",
+  "supersedes_id": null,
+  "instrument_id": "synthetic-hub-1",
+  "quantity": "temperature",
+  "unit": "Cel",
+  "method": "synthetic-declaration",
+  "reference_id": "synthetic-reference",
+  "value": "23.125",
+  "uncertainty": {
+    "value": "0.125",
+    "coverage_factor": "2"
+  },
+  "valid_from": "2026-09-08T00:00:00Z",
+  "valid_until": "2027-09-08T00:00:00Z",
+  "operator_id": "synthetic-operator-1",
+  "source_documents": [
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  ],
+  "key_id": "synthetic-command-key",
+  "digital_only": true,
+  "signature": {
+    "algorithm": "Ed25519",
+    "canonicalization": "poseidon-json-v1",
+    "value": "sv/NSwJSdpXDmlzzkeRESnTrc/CKJPXQdn8nCLpohveC/W60nO9iFlx9TzGk4pZdTiYBZLY+4KqBEvbD37QTDQ=="
+  }
+}

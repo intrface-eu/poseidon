@@ -1,0 +1,26 @@
+{
+  "deliverablePaths": [
+    "hardware/fixtures/passive-receive/",
+    "research/r2-receive-chain.md"
+  ],
+  "dependencies": [
+    104,
+    105,
+    108
+  ],
+  "description": "Select or borrow the passive receive chain and build a non-pressure bench/fit fixture after relevant approvals.",
+  "details": "Compare hydrophone, interface, synchronized audio/video, storage, and capture-driver options against R2 needs. Verify drivers, clocks, clipping/drop accounting, and fixture dimensions. Do not purchase a pressure enclosure or select an array geometry before measured need.",
+  "id": 109,
+  "ownerRole": "hardware-software",
+  "phase": "P2",
+  "priority": "high",
+  "researchPackages": [
+    "R2",
+    "R5",
+    "R6"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Bench-check capture drivers, clock behavior, dynamic range, overflow handling, storage budget, and fixture fit against the approved envelope and capped passive budget.",
+  "title": "P2 Receive-Chain Procurement, Bench Check, and Non-Pressure Fixture"
+}

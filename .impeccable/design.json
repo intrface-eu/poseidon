@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-07T16:29:19Z",
+  "title": "Design System: AEOLUS Operator Workbench",
+  "extensions": {
+    "shadows": [
+      {
+        "name": "access-panel",
+        "value": "0 10px 26px rgba(24, 35, 33, 0.09)",
+        "purpose": "Lift the local-access panel above the gridded canvas."
+      },
+      {
+        "name": "sticky-header",
+        "value": "0 5px 16px rgba(24, 35, 33, 0.06)",
+        "purpose": "Separate the sticky utility header from scrolling records."
+      },
+      {
+        "name": "state-halo",
+        "value": "0 0 0 3px #e8f4ef",
+        "purpose": "Ring the monitor-only success dot."
+      },
+      {
+        "name": "selected-edge",
+        "value": "inset 3px 0 0 #008aa6",
+        "purpose": "Mark the selected recording or event without lifting the row."
+      },
+      {
+        "name": "waveform-tooltip",
+        "value": "0 5px 14px rgba(24, 35, 33, 0.12)",
+        "purpose": "Separate exact waveform values from the trace beneath them."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-color",
+        "value": "160ms ease",
+        "purpose": "Transition button colors and refreshed-list opacity."
+      },
+      {
+        "name": "skeleton-pulse",
+        "value": "1.4s ease-in-out infinite",
+        "purpose": "Pulse loading placeholders between 0.55 and 0.95 opacity."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms; 1 iteration",
+        "purpose": "Replace transitions and animations when reduced motion is requested."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "workbench-stack",
+        "value": "1320px"
+      },
+      {
+        "name": "tablet-reflow",
+        "value": "980px"
+      },
+      {
+        "name": "mobile-inspection",
+        "value": "720px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Utility Boundary Header",
+      "kind": "nav",
+      "description": "Pairs the AEOLUS lockup with the visible monitor-only boundary.",
+      "html": "<header class=\"ds-utility-header\"><div class=\"ds-product-lockup\"><span class=\"ds-brand-mark\" aria-hidden=\"true\">A</span><div><strong>AEOLUS</strong><span>Poseidon Trident · local evidence monitor</span></div></div><div class=\"ds-mode-boundary\"><i></i><span><strong>Monitor only</strong> · output unavailable</span></div></header>",
+      "css": ".ds-utility-header { display: grid; grid-template-columns: minmax(220px, 1fr) auto; align-items: center; min-height: 58px; border: 1px solid var(--line-strong, #9eaeaa); background: rgba(255,255,255,.98); box-shadow: 0 5px 16px rgba(24,35,33,.06); color: var(--ink, #182321); font: 14px/1.45 ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .ds-product-lockup { display: flex; align-items: center; gap: 11px; padding: 9px 16px; } .ds-product-lockup > div { display: grid; } .ds-product-lockup strong { font-size: .8rem; letter-spacing: .1em; } .ds-product-lockup span:not(.ds-brand-mark) { color: var(--muted, #586864); font-size: .72rem; } .ds-brand-mark { display: inline-grid; width: 30px; height: 30px; place-items: center; background: var(--accent, #008aa6); color: #fff; font-size: .82rem; font-weight: 850; } .ds-mode-boundary { display: flex; align-items: center; gap: 8px; min-height: 32px; margin-right: 16px; padding: 6px 11px; border: 1px solid var(--line, #cbd5d2); background: var(--surface, #f7f9f8); color: var(--muted, #586864); font-size: .76rem; white-space: nowrap; } .ds-mode-boundary i { width: 7px; height: 7px; border-radius: 50%; background: var(--success, #34715d); box-shadow: 0 0 0 3px var(--success-wash, #e8f4ef); } .ds-mode-boundary strong { color: var(--ink-soft, #34433f); } @media (max-width: 720px) { .ds-utility-header { grid-template-columns: 1fr; } .ds-mode-boundary { justify-content: center; margin: 0 12px 8px; } }"
+    },
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Runs the main action in an intake, retry, or save state.",
+      "html": "<button class=\"ds-button-primary\" type=\"button\">Save review</button>",
+      "css": ".ds-button-primary { min-height: 38px; padding: 8px 14px; border: 1px solid var(--accent-dark, #00677c); border-radius: 3px; background: var(--accent-dark, #00677c); color: #fff; font: 750 14px/1.45 ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease; cursor: pointer; } .ds-button-primary:hover:not(:disabled) { border-color: #004e5e; background: #005b6d; } .ds-button-primary:focus-visible { outline: 3px solid rgba(0,138,166,.34); outline-offset: 2px; } .ds-button-primary:disabled { cursor: not-allowed; opacity: .58; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Supports import, retry, attachment, and conflict-resolution actions.",
+      "html": "<button class=\"ds-button-secondary\" type=\"button\">Attach video evidence</button>",
+      "css": ".ds-button-secondary { min-height: 38px; padding: 8px 14px; border: 1px solid var(--line-strong, #9eaeaa); border-radius: 3px; background: var(--paper, #fff); color: var(--ink, #182321); font: 750 14px/1.45 ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease; cursor: pointer; } .ds-button-secondary:hover:not(:disabled) { border-color: var(--accent, #008aa6); background: var(--accent-wash, #e0f3f6); color: var(--accent-ink, #004f60); } .ds-button-secondary:focus-visible { outline: 3px solid rgba(0,138,166,.34); outline-offset: 2px; } .ds-button-secondary:disabled { cursor: not-allowed; opacity: .58; }"
+    },
+    {
+      "name": "Labeled Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Collects operator-entered values with an explicit label and visible focus.",
+      "html": "<label class=\"ds-field\"><span>Reviewer</span><input type=\"text\" aria-label=\"Reviewer\" /></label>",
+      "css": ".ds-field { display: grid; gap: 7px; color: var(--ink-soft, #34433f); font: 700 .77rem/1.45 ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .ds-field input { width: 100%; min-height: 38px; padding: 8px 10px; border: 1px solid var(--line-strong, #9eaeaa); border-radius: 3px; background: var(--paper, #fff); color: var(--ink, #182321); font: 400 14px/1.45 ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .ds-field input:hover { border-color: var(--muted, #586864); } .ds-field input:focus-visible { outline: 3px solid rgba(0,138,166,.34); outline-offset: 2px; } .ds-field input:disabled { cursor: not-allowed; opacity: .58; }"
+    },
+    {
+      "name": "Review State Tag",
+      "kind": "chip",
+      "refersTo": "state-tag",
+      "description": "Pairs an uppercase review label with a state-specific rule and wash.",
+      "html": "<span class=\"ds-tag ds-tag-uncertain\">Uncertain</span>",
+      "css": ".ds-tag { display: inline-flex; align-items: center; width: fit-content; min-height: 20px; padding: 2px 6px; border: 1px solid var(--line-strong, #9eaeaa); border-radius: 2px; background: var(--surface, #f7f9f8); color: var(--ink-soft, #34433f); font: 800 .66rem/1.15 ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; letter-spacing: .025em; text-transform: uppercase; } .ds-tag-uncertain { border-color: #cfaa69; background: var(--warning-wash, #fff2d7); color: #6b4300; }"
+    },
+    {
+      "name": "Selected Event Row",
+      "kind": "custom",
+      "description": "Shows interval, exact peak, review state, and source in one selectable register row.",
+      "html": "<button class=\"ds-event-row ds-selected\" type=\"button\" aria-pressed=\"true\"><span class=\"ds-interval\"><strong>Candidate interval</strong><small>Full event identifier</small></span><span class=\"ds-measurement\">Normalized peak</span><span class=\"ds-row-tag\">Unreviewed</span><span class=\"ds-source\">Source</span></button>",
+      "css": ".ds-event-row { display: grid; grid-template-columns: minmax(130px,1fr) 74px minmax(130px,1fr) minmax(100px,.72fr); align-items: center; gap: 9px; width: 100%; min-height: 64px; padding: 9px 11px; border: 0; border-bottom: 1px solid var(--line, #cbd5d2); background: var(--paper, #fff); color: var(--ink, #182321); font: 14px/1.45 ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; text-align: left; cursor: pointer; } .ds-event-row:hover { background: var(--surface, #f7f9f8); } .ds-event-row:focus-visible { outline: 3px solid rgba(0,138,166,.34); outline-offset: 2px; } .ds-event-row.ds-selected { background: var(--accent-wash, #e0f3f6); box-shadow: inset 3px 0 0 var(--accent, #008aa6); } .ds-interval { display: grid; min-width: 0; gap: 3px; } .ds-interval strong, .ds-measurement { font-size: .74rem; font-variant-numeric: tabular-nums; } .ds-interval small, .ds-source { overflow: hidden; color: var(--muted, #586864); font-size: .68rem; text-overflow: ellipsis; white-space: nowrap; } .ds-row-tag { width: fit-content; padding: 2px 6px; border: 1px solid #cfaa69; border-radius: 2px; background: var(--warning-wash, #fff2d7); color: #6b4300; font-size: .66rem; font-weight: 800; text-transform: uppercase; } @media (max-width: 720px) { .ds-event-row { grid-template-columns: 1fr auto; gap: 7px; } .ds-measurement { grid-column: 2; grid-row: 1; } .ds-row-tag { grid-column: 1; } .ds-source { grid-column: 2; grid-row: 2; text-align: right; } }"
+    },
+    {
+      "name": "Waveform Evidence",
+      "kind": "custom",
+      "description": "Keeps the normalized envelope readable on narrow screens and exposes exact bucket values in a table.",
+      "html": "<figure class=\"ds-waveform\"><figcaption><strong>All-channel peak envelope</strong><span>Source-derived min/max buckets · normalized PCM16 full-scale · not SPL</span></figcaption><p class=\"ds-scroll-cue\">Scroll horizontally to inspect the full timeline. The data table follows the chart.</p><div class=\"ds-chart-wrap\"><div class=\"ds-chart-canvas\"><svg viewBox=\"0 0 1000 286\" role=\"img\" tabindex=\"0\" aria-label=\"Normalized waveform envelope from minus one to plus one\"><line x1=\"62\" x2=\"976\" y1=\"131\" y2=\"131\" class=\"ds-baseline\"/><rect x=\"480\" y=\"22\" width=\"120\" height=\"218\" class=\"ds-window\"/><path d=\"M62 131 L150 118 L240 144 L330 109 L420 151 L510 96 L600 140 L690 119 L780 147 L870 113 L976 131 L976 131 L870 149 L780 122 L690 143 L600 116 L510 162 L420 111 L330 153 L240 120 L150 144 L62 131 Z\" class=\"ds-envelope\"/><text x=\"486\" y=\"39\">candidate interval</text></svg></div></div><details class=\"ds-data-table\"><summary>Accessible waveform data table</summary><div><table><caption>All waveform min/max buckets returned by the local API.</caption><thead><tr><th>Bucket</th><th>Start (s)</th><th>End (s)</th><th>Minimum</th><th>Maximum</th></tr></thead></table></div></details></figure>",
+      "css": ".ds-waveform { margin: 0; color: var(--ink, #182321); font: 14px/1.45 ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .ds-waveform figcaption { display: grid; gap: 2px; margin-bottom: 10px; } .ds-waveform figcaption span { color: var(--muted, #586864); font-size: .78rem; } .ds-scroll-cue { display: none; margin: 0 0 7px; color: var(--accent-ink, #004f60); font-size: .72rem; font-weight: 700; } .ds-chart-wrap { max-width: 100%; overflow: hidden; border: 1px solid var(--line-strong, #9eaeaa); background: var(--surface, #f7f9f8); } .ds-chart-canvas { min-width: 0; } .ds-chart-canvas svg { display: block; width: 100%; min-height: 220px; } .ds-baseline { stroke: var(--line-strong, #9eaeaa); stroke-width: 1; } .ds-window { fill: rgba(0,138,166,.08); stroke: var(--accent-dark, #00677c); stroke-width: 1.5; } .ds-envelope { fill: rgba(0,138,166,.14); stroke: var(--accent, #008aa6); stroke-width: 2; stroke-linejoin: round; } .ds-chart-canvas text { fill: var(--accent-ink, #004f60); font-size: 10px; font-weight: 800; text-transform: uppercase; } .ds-chart-canvas svg:focus-visible, .ds-data-table summary:focus-visible { outline: 3px solid rgba(0,138,166,.34); outline-offset: 2px; } .ds-data-table { margin-top: 10px; border: 1px solid var(--line, #cbd5d2); background: var(--paper, #fff); } .ds-data-table summary { padding: 8px 10px; color: var(--accent-ink, #004f60); font-size: .72rem; font-weight: 750; cursor: pointer; } .ds-data-table > div { overflow: auto; max-height: 300px; border-top: 1px solid var(--line, #cbd5d2); } .ds-data-table table { width: 100%; border-collapse: collapse; font-size: .68rem; font-variant-numeric: tabular-nums; } .ds-data-table caption { padding: 8px; color: var(--muted, #586864); text-align: left; } .ds-data-table th { position: sticky; top: 0; padding: 6px 8px; border-bottom: 1px solid var(--line, #cbd5d2); background: var(--canvas-deep, #dde5e2); color: var(--ink-soft, #34433f); text-align: right; } .ds-data-table th:first-child { text-align: left; } @media (max-width: 720px) { .ds-scroll-cue { display: block; } .ds-chart-wrap { overflow-x: auto; overflow-y: hidden; overscroll-behavior-inline: contain; scrollbar-color: var(--accent, #008aa6) var(--canvas-deep, #dde5e2); scrollbar-gutter: stable; } .ds-chart-canvas, .ds-chart-canvas svg { min-width: 760px; } .ds-chart-canvas svg { min-height: 218px; } .ds-chart-canvas text { font-size: 16px; } }"
+    },
+    {
+      "name": "Revision Conflict Comparison",
+      "kind": "custom",
+      "description": "Preserves the local draft beside the latest server review before either resolution action.",
+      "html": "<section class=\"ds-conflict\" role=\"alert\"><strong>Revision conflict.</strong><span>A newer review exists. Your draft is preserved below beside the latest server review.</span><div class=\"ds-comparison\"><section><h4>Latest server review</h4><dl><div><dt>Revision</dt><dd>Current server value</dd></div><div><dt>Label</dt><dd>Current server value</dd></div></dl></section><section><h4>Preserved draft</h4><dl><div><dt>Label</dt><dd>Preserved local value</dd></div><div><dt>Notes</dt><dd>Preserved local value</dd></div></dl></section></div><p>Saving your draft over the displayed revision creates a new review revision only if that server revision is still current.</p><div class=\"ds-conflict-actions\"><button type=\"button\">Replace draft with server review</button><button type=\"button\" class=\"ds-conflict-primary\">Save my draft over revision</button></div></section>",
+      "css": ".ds-conflict { display: grid; gap: 9px; padding: 10px 12px; border: 1px solid #d8ba82; border-radius: 3px; background: var(--warning-wash, #fff2d7); color: #694000; font: 14px/1.45 ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .ds-comparison { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); border: 1px solid #d8ba82; background: var(--paper, #fff); color: var(--ink, #182321); } .ds-comparison > section { min-width: 0; padding: 11px; } .ds-comparison > section + section { border-left: 1px solid #d8ba82; } .ds-comparison h4 { margin: 0 0 8px; font-size: .78rem; } .ds-comparison dl { display: grid; gap: 7px; margin: 0; } .ds-comparison dl > div { display: grid; gap: 2px; } .ds-comparison dt { color: var(--muted, #586864); font-size: .62rem; font-weight: 800; text-transform: uppercase; } .ds-comparison dd { margin: 0; overflow-wrap: anywhere; font-size: .72rem; } .ds-conflict p { margin: 0; font-size: .7rem; } .ds-conflict-actions { display: flex; flex-wrap: wrap; gap: 8px; } .ds-conflict-actions button { min-height: 38px; padding: 8px 14px; border: 1px solid var(--line-strong, #9eaeaa); border-radius: 3px; background: var(--paper, #fff); color: var(--ink, #182321); font-weight: 750; cursor: pointer; } .ds-conflict-actions .ds-conflict-primary { border-color: var(--accent-dark, #00677c); background: var(--accent-dark, #00677c); color: #fff; } .ds-conflict-actions button:focus-visible { outline: 3px solid rgba(0,138,166,.34); outline-offset: 2px; } @media (max-width: 720px) { .ds-comparison { grid-template-columns: 1fr; } .ds-comparison > section + section { border-top: 1px solid #d8ba82; border-left: 0; } .ds-conflict-actions { display: grid; grid-template-columns: 1fr; } .ds-conflict-actions button { width: 100%; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Quality-control inspection traveler",
+    "overview": "This provisional system documents the shipped operator UI. It uses daylight off-white and cool-gray surfaces, graphite text, one measured teal accent, thin solid rules, compact records, and native controls. Information stays tied to its source, state, and revision instead of becoming decorative dashboard summaries.",
+    "keyCharacteristics": [
+      "Dense, readable inspection layouts with restrained hierarchy.",
+      "Teal reserved for selection, focus, and primary action.",
+      "Provenance, calibration, identifiers, and revisions remain visible.",
+      "Empty, loading, error, disabled, and conflict states use the same visual grammar as steady state."
+    ],
+    "rules": [
+      {
+        "name": "The Measured Accent Rule",
+        "body": "Teal identifies action or evidence state; it does not fill large decorative areas.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "**Do** keep source identifiers, calibration limits, normalized units, and review revisions next to the evidence they qualify.",
+      "**Do** preserve text labels alongside every status color and keep exact values selectable or available in a table.",
+      "**Do** keep the 720px waveform scroll and stacked conflict behavior when composing narrower surfaces."
+    ],
+    "donts": [
+      "**Don't** add decorative marine imagery, oversized metric cards, gradients, or broad accent fills to this provisional system.",
+      "**Don't** present normalized waveform values as SPL or turn candidate and human-review states into one claim.",
+      "**Don't** hide conflict, error, empty, loading, disabled, or provenance states to simplify a screen."
+    ]
+  }
+}

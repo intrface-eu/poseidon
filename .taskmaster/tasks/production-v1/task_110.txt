@@ -1,0 +1,25 @@
+{
+  "deliverablePaths": [
+    "research/datasets/",
+    "research/results/r2-data-card.md"
+  ],
+  "dependencies": [
+    103,
+    104,
+    109
+  ],
+  "description": "Collect permitted synchronized local passive recordings and observed ground truth with hard negatives.",
+  "details": "Capture audio/video and environmental context for feeding observations and hard negatives such as snapping shrimp, boats, ropes, handling, rain, and other species. Record calibration context, clocks, visibility limits, consent/permission scope, provenance, and annotation review. Synthetic replay remains independent.",
+  "id": 110,
+  "ownerRole": "field-research",
+  "phase": "P2",
+  "priority": "high",
+  "researchPackages": [
+    "R1",
+    "R2"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Audit a data card and manifests; verify annotation rules, observed ground truth, recording/day/site held-out split, and no unauthorized field activity.",
+  "title": "P2 Permitted Local Passive Recording and Annotation Dataset"
+}

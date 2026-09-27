@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="571" viewBox="0 0 1500 571">
+<rect width="1500" height="571" fill="white"/>
+<g font-family="monospace" fill="#172d39">
+<text x="35" y="40" font-size="25">ASSEMBLY_FIXTURE / HW-REF-1.1 / FEATURE AND FASTENER SCHEDULE</text>
+<text x="35" y="72" font-size="18">PROVISIONAL / mm / NOT FOR FABRICATION / features in assembly-local coordinates unless labelled local</text>
+<text x="35" y="100" font-size="16">Source-tagged Pi features and battery/panel/converter/MPPT envelopes have vendor evidence; other details/tolerances are assumptions.</text>
+<text x="35" y="140" font-size="15" font-weight="bold">PRINT-PI-TEMPLATE-01 / BOM PRINT-PI-TEMPLATE-01</text>
+<text x="50" y="163" font-size="15" font-weight="normal">size_mm: [95,66,4]</text>
+<text x="50" y="186" font-size="15" font-weight="normal">hole_centres_mm: [[-39.0,-24.5],[19.0,-24.5],[-39.0,24.5],[19.0,24.5]]</text>
+<text x="50" y="209" font-size="15" font-weight="normal">hole_diameter_mm: 3.2</text>
+<text x="50" y="232" font-size="15" font-weight="normal">verified_pattern_source: &quot;SRC-PI4-MECH&quot;</text>
+<text x="50" y="255" font-size="15" font-weight="normal">Do not drill a PCB. Verify print scale with callipers; no hardened guide bushings or process accuracy claim</text>
+<text x="35" y="278" font-size="15" font-weight="bold">FIXTURE-CABLE-BEND-ENV / BOM WET-HARNESS-001</text>
+<text x="50" y="301" font-size="15" font-weight="normal">centreline_arc_radius_mm: 56.0</text>
+<text x="50" y="324" font-size="15" font-weight="normal">diameter_mm: 8.0</text>
+<text x="50" y="347" font-size="15" font-weight="normal">arc_angle_degrees: 90</text>
+<text x="50" y="370" font-size="15" font-weight="normal">straight_lengths_mm: [60,80]</text>
+<text x="35" y="393" font-size="15" font-weight="bold">PRINT-CABLE-RADIUS-GAUGE-01 / BOM PRINT-CABLE-RADIUS-GAUGE-01</text>
+<text x="50" y="416" font-size="15" font-weight="normal">mandrel_radius_mm: 51.5</text>
+<text x="50" y="439" font-size="15" font-weight="normal">cable_centreline_radius_mm: 56.0</text>
+<text x="50" y="462" font-size="15" font-weight="normal">radial_test_gap_mm: 0.5</text>
+<text x="50" y="485" font-size="15" font-weight="normal">height_mm: 16</text>
+<text x="50" y="508" font-size="15" font-weight="normal">Assumed 6D minimum plus tolerance margin; check selected cable datasheet before use</text>
+</g>
+</svg>

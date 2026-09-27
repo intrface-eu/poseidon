@@ -1,0 +1,11 @@
+{
+  "source_domain": "synthetic-audio-monotonic",
+  "reference_domain": "synthetic-video-monotonic",
+  "source_anchor_s": 0,
+  "reference_anchor_s": 0.12,
+  "drift_ppm": 10,
+  "anchor_uncertainty_s": 0.02,
+  "drift_uncertainty_ppm": 5,
+  "method": "operator_declared",
+  "evidence_ref": null
+}

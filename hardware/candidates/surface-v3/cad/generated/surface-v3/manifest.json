@@ -1,0 +1,7150 @@
+{
+  "schema": "poseidon.surface-v3.manifest.v1",
+  "configuration": "surface-v3",
+  "revision": "HW-CAND-SURFACE-3.0",
+  "status": "NON_ADOPTED_NOT_BUILD_AUTHORIZED",
+  "adopted": false,
+  "build_authorized": false,
+  "physical_tests_performed": 0,
+  "generated_utc": "2026-09-27T12:50:51.757771+00:00",
+  "boundary": "this is a non-adopted digital candidate with no pressure, corrosion or suitability evidence.",
+  "interface": {
+    "schema": "poseidon.surface-v3.interface.v1",
+    "configuration": "surface-v3",
+    "revision": "HW-CAND-SURFACE-3.0",
+    "product": "Poseidon Trident",
+    "company": "Intrface",
+    "status": "NON_ADOPTED_NOT_BUILD_AUTHORIZED",
+    "adopted": false,
+    "build_authorized": false,
+    "procurement_authorized": false,
+    "active_emission_hardware_populated": false,
+    "physical_tests_performed": 0,
+    "units": {
+      "cad": "mm",
+      "glb": "m",
+      "mass": "kg"
+    },
+    "source_register_sha256": "b1e05abc7e6314089b85cba4deefd499e2085241c16f7270280a096d31eeccff",
+    "parameters": {
+      "panel_xyz_mm": {
+        "value": [
+          668,
+          425,
+          25
+        ],
+        "unit": "mm",
+        "kind": "source_record",
+        "basis": "Vendor envelope, length/width order in CAD.",
+        "source_id": "v2-interface",
+        "locator": "mechanical.reef.single_panel_xyz_mm"
+      },
+      "panel_mass_kg": {
+        "value": 3.1,
+        "unit": "kg",
+        "kind": "source_record",
+        "basis": "Vendor nominal mass per panel, not envelope density.",
+        "source_id": "v2-model",
+        "locator": "build_reef features.vendor_nominal_mass_kg; panel-datasheet page 1 SPM040401200"
+      },
+      "panel_gap_mm": {
+        "value": 50,
+        "unit": "mm",
+        "kind": "source_record",
+        "basis": "Inherited v2 design gap, not a vendor mounting requirement.",
+        "source_id": "v2-interface",
+        "locator": "mechanical.reef.gap_between_panels_mm"
+      },
+      "panel_tilt_deg": {
+        "value": 4,
+        "unit": "degree",
+        "kind": "design_assumption",
+        "basis": "Drainage study; allowed 3 to 5 degrees, no yield or load claim."
+      },
+      "tray_xy_mm": {
+        "value": [
+          720,
+          940
+        ],
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Shallow tray plan, 10 mm bearing overlap onto float collar on each side."
+      },
+      "tray_thickness_mm": {
+        "value": 4,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Custom aluminum plate; stiffness and joints unqualified."
+      },
+      "skirt_xy_mm": {
+        "value": [
+          700,
+          920
+        ],
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Open-bottom skirt outer plan equals float inner plan; no sealed buoyancy credit."
+      },
+      "skirt_wall_mm": {
+        "value": 2,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Custom sheet envelope; corner joining and ventilation review open."
+      },
+      "skirt_depth_mm": {
+        "value": 180,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Skirt below tray, not a housing rating."
+      },
+      "panel_low_clearance_mm": {
+        "value": 8,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Lowest panel underside above tray top, supported by wedges."
+      },
+      "wedge_length_mm": {
+        "value": 640,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Solid candidate wedge rails; mounting/clamp zone not vendor-approved."
+      },
+      "wedge_width_mm": {
+        "value": 22,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Candidate rail width, no fastener detail selected."
+      },
+      "wedge_edge_inset_mm": {
+        "value": 30,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Rail centre inset from panel side edges."
+      },
+      "hub_xyz_mm": {
+        "value": [
+          275,
+          175,
+          66.6
+        ],
+        "unit": "mm",
+        "kind": "source_record",
+        "basis": "Vendor L/W/H laid flat; v2 vertical orientation is not retained.",
+        "source_id": "v2-interface",
+        "locator": "mechanical.hub.vendor_lwh_mm"
+      },
+      "hub_center_xy_mm": {
+        "value": [
+          0,
+          -220
+        ],
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Hub offset keeps central socket, pole and cable stubs clear."
+      },
+      "shade_xy_mm": {
+        "value": [
+          375,
+          275
+        ],
+        "unit": "mm",
+        "kind": "source_record",
+        "basis": "Inherited v2 custom roof allocation, not a purchased roof.",
+        "source_id": "v2-interface",
+        "locator": "mechanical.shade.roof_xy_mm"
+      },
+      "shade_thickness_mm": {
+        "value": 1.5,
+        "unit": "mm",
+        "kind": "source_record",
+        "basis": "Inherited custom aluminum roof thickness.",
+        "source_id": "v2-interface",
+        "locator": "mechanical.shade.sheet_thickness_mm"
+      },
+      "shade_hub_gap_mm": {
+        "value": 75,
+        "unit": "mm",
+        "kind": "source_record",
+        "basis": "Inherited v2 shade gap; does not establish cooling or zero sunlight.",
+        "source_id": "v2-interface",
+        "locator": "mechanical.shade.vertical_gap_above_enclosure_mm"
+      },
+      "shade_to_tray_mm": {
+        "value": 8,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Roof top to tray underside; reopened thermal and service question."
+      },
+      "shade_support_x_mm": {
+        "value": 175,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Two roof hangers outside hub envelope."
+      },
+      "shade_support_xy_mm": {
+        "value": [
+          4,
+          10
+        ],
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Unqualified roof attachment tabs; no fasteners populated."
+      },
+      "sink_xyz_mm": {
+        "value": [
+          273.812,
+          95.758,
+          76.2
+        ],
+        "unit": "mm",
+        "kind": "source_record",
+        "basis": "Sourced overall occupancy only. Vertical extrusion allocation beside flat hub, not a designed thermal joint.",
+        "source_id": "v2-interface",
+        "locator": "mechanical.heat_sink.candidate_xyz_mm"
+      },
+      "sink_base_mm": {
+        "value": 15.748,
+        "unit": "mm",
+        "kind": "source_record",
+        "basis": "Sourced profile base thickness; not a complete sink solid.",
+        "source_id": "v2-interface",
+        "locator": "mechanical.heat_sink.profile_base_thickness_mm"
+      },
+      "sink_hub_gap_mm": {
+        "value": 0.127,
+        "unit": "mm",
+        "kind": "source_record",
+        "basis": "Inherited nominal TIM separation as space only; no thermal pad or contact assembly asserted.",
+        "source_id": "v2-interface",
+        "locator": "mechanical.thermal_interfaces.thickness_mm"
+      },
+      "sink_vent_height_mm": {
+        "value": 50,
+        "unit": "mm",
+        "kind": "source_record",
+        "basis": "Inherited minimum open-air allocation; skirt changes airflow.",
+        "source_id": "v2-interface",
+        "locator": "mechanical.shade.minimum_open_air_gap_mm"
+      },
+      "hub_carrier_width_mm": {
+        "value": 400,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Shelf and two hangers outside roof ends; joining/load release open."
+      },
+      "hub_carrier_thickness_mm": {
+        "value": 3,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Custom support shelf below hub."
+      },
+      "hub_hanger_xy_mm": {
+        "value": [
+          4,
+          20
+        ],
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Two vertical carrier hangers touch tray underside; no bolt/weld sizing."
+      },
+      "socket_od_mm": {
+        "value": 84,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Custom socket tube diameter."
+      },
+      "socket_id_mm": {
+        "value": 62,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "1 mm radial clearance around 60 mm pole; tolerances/isolation unqualified."
+      },
+      "socket_length_mm": {
+        "value": 120,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Socket lower end to tray underside."
+      },
+      "socket_flange_od_mm": {
+        "value": 140,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Custom flange touches tray underside; no bolt pattern invented."
+      },
+      "socket_flange_thickness_mm": {
+        "value": 6,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Custom flange thickness; structural question open."
+      },
+      "bolt_centres_below_tray_mm": {
+        "value": [
+          30,
+          85
+        ],
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Two transverse X-axis cross-bolt allocations, not sourced fasteners."
+      },
+      "bolt_hole_diameter_mm": {
+        "value": 11,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Holes through pole and socket with .5 mm radial allocation clearance."
+      },
+      "bolt_allocation_diameter_mm": {
+        "value": 10,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Nonphysical shank space; grade, threads, heads, washers and locking unselected."
+      },
+      "bolt_allocation_length_mm": {
+        "value": 104,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Nonphysical cross-bolt space, not a vendor length."
+      },
+      "pole_od_mm": {
+        "value": 60,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "User-requested pole interface; no selected vendor tube."
+      },
+      "pole_wall_mm": {
+        "value": 3,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Hollow flooded steel tube study, no tube buoyancy credit or strength claim."
+      },
+      "site_depth_mm": {
+        "value": 6400,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Copied illustrative site scene 6.4 m depth; R5R6 has no farm bathymetric survey. Not maximum inlet depth."
+      },
+      "freeboard_mm": {
+        "value": 500,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Tray underside and pole top above reference waterline. Pole length = depth + freeboard; zero embedment modeled."
+      },
+      "footing_xy_mm": {
+        "value": [
+          500,
+          500
+        ],
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Seabed footing plate outline, not an anchor/holding-capacity design."
+      },
+      "footing_thickness_mm": {
+        "value": 12,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Plate top at seabed datum, plate extends below it; no concrete or embedment asserted."
+      },
+      "float_outer_xy_mm": {
+        "value": [
+          1060,
+          1280
+        ],
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Rectangular closed-cell foam collar; inner opening from skirt plan."
+      },
+      "float_height_mm": {
+        "value": 300,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Foam collar height; no sealed skirt/hub displacement credit."
+      },
+      "cable_diameter_mm": {
+        "value": 8,
+        "unit": "mm",
+        "kind": "source_record",
+        "basis": "Inherited cable route allocation, not a selected cable diameter.",
+        "source_id": "v2-interface",
+        "locator": "mechanical.reef.cable_reference_diameter_mm"
+      },
+      "cable_bend_radius_mm": {
+        "value": 56,
+        "unit": "mm",
+        "kind": "source_record",
+        "basis": "Inherited routing radius assumption; stubs are not complete bent harnesses.",
+        "source_id": "v2-interface",
+        "locator": "mechanical.reef.cable_reference_centreline_bend_radius_mm"
+      },
+      "cable_x_mm": {
+        "value": 230,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Two vertical route stubs at panel centres, outside hub, shade and carrier hangers."
+      },
+      "cable_stub_z_mm": {
+        "value": [
+          -160,
+          20
+        ],
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Stub ends relative to tray underside. Gland/junction positions and real route unresolved."
+      },
+      "cable_hole_diameter_mm": {
+        "value": 10,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Tray pass-through clearance only; no gland or ingress claim."
+      },
+      "aluminum_density_kg_m3": {
+        "value": 2700,
+        "unit": "kg/m3",
+        "kind": "design_assumption",
+        "basis": "Assumed custom aluminum density; never applied to purchased panel or hub envelopes."
+      },
+      "steel_density_kg_m3": {
+        "value": 8000,
+        "unit": "kg/m3",
+        "kind": "design_assumption",
+        "basis": "Assumed pole/footing density; actual grade and corrosion isolation unselected."
+      },
+      "foam_density_kg_m3": {
+        "value": 60,
+        "unit": "kg/m3",
+        "kind": "design_assumption",
+        "basis": "Assumed dry closed-cell foam bulk density, no product/source or water-uptake evidence."
+      },
+      "seawater_density_kg_m3": {
+        "value": 1025,
+        "unit": "kg/m3",
+        "kind": "design_assumption",
+        "basis": "Assumed seawater density; not measured at site."
+      },
+      "hub_scenario_mass_kg": {
+        "value": 1.2,
+        "unit": "kg",
+        "kind": "design_assumption",
+        "basis": "Explicit illustrative hub dry mass, NOT vendor mass and NOT solid-envelope density. Actual unknown."
+      },
+      "sink_scenario_mass_kg": {
+        "value": 1.8,
+        "unit": "kg",
+        "kind": "design_assumption",
+        "basis": "Illustrative sink allowance independent of occupancy volume; actual unknown, no fin geometry inferred."
+      },
+      "unmodeled_payload_allowance_kg": {
+        "value": 3,
+        "unit": "kg",
+        "kind": "design_assumption",
+        "basis": "Illustrative mass contingency only; not a modeled battery, power integration or complete mass allowance."
+      },
+      "gravity_m_s2": {
+        "value": 9.80665,
+        "unit": "m/s2",
+        "kind": "design_assumption",
+        "basis": "Conventional gravity for conditional force arithmetic."
+      },
+      "brep_tolerance_mm": {
+        "value": 0.0001,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Digital comparison tolerance only, not a manufacturing tolerance."
+      },
+      "interference_tolerance_mm3": {
+        "value": 0.001,
+        "unit": "mm3",
+        "kind": "design_assumption",
+        "basis": "OCP common-volume numerical threshold, not allowable interference."
+      },
+      "glb_deflection_mm": {
+        "value": 0.3,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Display tessellation, source BRep remains authoritative."
+      },
+      "glb_angular_deflection_rad": {
+        "value": 0.35,
+        "unit": "radian",
+        "kind": "design_assumption",
+        "basis": "Display tessellation."
+      },
+      "dxf_curve_spacing_mm": {
+        "value": 4,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Sampled orthographic curves; exact geometry stays in STEP."
+      },
+      "dxf_view_gap_mm": {
+        "value": 100,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Drawing layout, not a part dimension."
+      },
+      "surface_height_limit_mm": {
+        "value": 300,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Digital shallow-layout screen for common surface only, excluding the mutually exclusive mounts; not a physical rating."
+      },
+      "dxf_text_height_mm": {
+        "value": 3,
+        "unit": "mm",
+        "kind": "design_assumption",
+        "basis": "Drawing annotation height, not a part dimension."
+      }
+    },
+    "variants": {
+      "pole": {
+        "common_surface": true,
+        "exclusive_with": "float",
+        "default": true,
+        "pole_length": "site_depth_mm + freeboard_mm",
+        "embedment_mm": null
+      },
+      "float": {
+        "common_surface": true,
+        "exclusive_with": "pole",
+        "default": false,
+        "waterline": "Conditional mass-scenario equilibrium, not measured draft",
+        "actual_complete_mass_kg": null,
+        "actual_buoyancy_sign": "UNKNOWN"
+      }
+    },
+    "website_contract": "poseidon.site.assets.v3",
+    "contract_groups": {
+      "surface": [
+        "tray",
+        "hub",
+        "panelA",
+        "panelB",
+        "mastSocket"
+      ],
+      "mountPole": [],
+      "mountFloat": []
+    },
+    "thermal": {
+      "v2_absorbed_sun_w": 48,
+      "v2_enclosed_heat_w": 21.9,
+      "reevaluated": false,
+      "installed_thermal_performance": null,
+      "note": "Heat-sink occupancy retains vertical extrusion allocation, but lies beside the flat hub. No designed contact path, fin detail or performance claim."
+    },
+    "power_parts_populated": [
+      "two panel envelopes only"
+    ],
+    "assembled_mass_kg": null,
+    "reuse_rights": "Vendor dimension provenance retained; no blanket licence or public redistribution authorization. No new downloads.",
+    "required_sentence": "this is a non-adopted digital candidate with no pressure, corrosion or suitability evidence.",
+    "open_gates": [
+      "G01 exact supplied panel/hub revisions, mounting zones, component inspection and unknown purchased masses",
+      "G02 battery, BMS, charger, protection, regulators, wiring, glands and full power integration omitted and unresolved",
+      "G03 reopened thermal analysis: v2 48 W absorbed-sun and 21.9 W enclosed-heat budgets not re-evaluated; flat hub thermal contact and ventilation unresolved",
+      "G04 pole bending, buckling, cross-bolts, flange joints, wind fatigue and corrosion isolation",
+      "G05 seabed survey, footing holding capacity, pole embedment/anchoring and recovery; zero embedment modeled",
+      "G06 wind, waves, storm current, mooring load and farm-line clearance require site/engineer review",
+      "G07 actual complete mass, CG, float water uptake, freeboard, stability, wave response and buoyancy unknown",
+      "G08 cable bend/pull, terminations, service access, splash ingress, corrosion and fouling",
+      "G09 farm/operator permissions, marking, loss prevention, retrieval and vendor-derived redistribution rights"
+    ]
+  },
+  "baseline": {
+    "files_checked": 21,
+    "changed": 0,
+    "lock_sha256": "66e38a70f18b5c8062bba3d6d9bd3cb9597a548168a28852858d394b07d7d74b"
+  },
+  "construction_sources": {
+    "hardware/candidates/surface-v3/interface.json": "29f6f828c17575c5f7285613d7b1743ba7cb77a0f6d4551766e1532ff36b9fd6",
+    "hardware/candidates/surface-v3/baseline-lock.json": "66e38a70f18b5c8062bba3d6d9bd3cb9597a548168a28852858d394b07d7d74b",
+    "hardware/candidates/surface-v3/sources/source-register.json": "b1e05abc7e6314089b85cba4deefd499e2085241c16f7270280a096d31eeccff",
+    "hardware/candidates/surface-v3/cad/generate.py": "5a0c299ecd0d4c2f94850bbb6269c35794fef14d00fd876cb240e0232ebf8fee",
+    "hardware/candidates/surface-v3/cad/check.py": "14b82d6460ca4685879ea2e55cd825d5fd48da5f0370bf615f71ac2240678136",
+    "hardware/candidates/surface-v3/cad/surface_contract.py": "4f907c227ab08cec7990ee66ef249137924e71c34c3c8ed28b7192519ed7afba",
+    "hardware/candidates/surface-v3/cad/surface_model.py": "ab458e970dc3e2f930ed690fcaefc1a131138042d29499f3b887300d98fcd63d",
+    "hardware/candidates/surface-v3/cad/surface_export.py": "015030883edc3514caf6bfa93ccabdfdc7116a86bc5a1f8e9d07dafa826ecd6f",
+    "hardware/candidates/surface-v3/cad/surface_glb.py": "fe558f204c108faf2b34b434ae7cc181a5ee0e1349ff62485aaab27f64263eb3"
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "cadquery": "2.6.1",
+    "cadquery_ocp": "7.8.1.1.post1",
+    "ezdxf": "1.4.3",
+    "kernel_preflight": "isValid 1x2x3 mm box, volume 6 mm3",
+    "new_installs": 0
+  },
+  "parts": [
+    {
+      "name": "SV3_TRAY_PLATE",
+      "group": "tray",
+      "variant": "common",
+      "kind": "physical_custom",
+      "physical": true,
+      "material": "aluminum",
+      "note": "Open central bore and two cable-clearance holes. Not a weather seal or released structural plate.",
+      "volume_mm3": 2694495.3993088827,
+      "source_bbox_mm": {
+        "min_mm": [
+          -360.0,
+          -470.0,
+          0.0
+        ],
+        "max_mm": [
+          360.0,
+          470.0,
+          4.0
+        ],
+        "size_mm": [
+          720.0,
+          940.0,
+          4.0
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -360.0,
+          -470.0,
+          500.0
+        ],
+        "max_mm": [
+          360.0,
+          470.0,
+          504.0
+        ],
+        "size_mm": [
+          720.0,
+          940.0,
+          4.0
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          500
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "tray_xy_mm",
+        "tray_thickness_mm",
+        "socket_id_mm",
+        "cable_hole_diameter_mm",
+        "cable_x_mm",
+        "panel_xyz_mm",
+        "panel_gap_mm"
+      ],
+      "features": {},
+      "step": "step/SV3_TRAY_PLATE.step"
+    },
+    {
+      "name": "SV3_OPEN_BOTTOM_SKIRT",
+      "group": "tray",
+      "variant": "common",
+      "kind": "physical_custom",
+      "physical": true,
+      "material": "aluminum",
+      "note": "Open-bottom skirt, no displaced sealed-air volume credited. Ventilation and splash ingress unresolved.",
+      "volume_mm3": 1163520.0,
+      "source_bbox_mm": {
+        "min_mm": [
+          -350.0,
+          -460.0,
+          0.0
+        ],
+        "max_mm": [
+          350.0,
+          460.0,
+          180.0
+        ],
+        "size_mm": [
+          700.0,
+          920.0,
+          180.0
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -350.0,
+          -460.0,
+          320.0
+        ],
+        "max_mm": [
+          350.0,
+          460.0,
+          500.0
+        ],
+        "size_mm": [
+          700.0,
+          920.0,
+          180.0
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          320
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          -180
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "skirt_xy_mm",
+        "skirt_wall_mm",
+        "skirt_depth_mm"
+      ],
+      "features": {},
+      "step": "step/SV3_OPEN_BOTTOM_SKIRT.step"
+    },
+    {
+      "name": "SV3_PANEL_A",
+      "group": "panelA",
+      "variant": "common",
+      "kind": "purchased_envelope",
+      "physical": true,
+      "material": "panel",
+      "note": "Victron SPM040401200 purchased envelope. 3.1 kg vendor nominal, not density-derived. Frame, cells, clamp zones and terminal positions unknown.",
+      "volume_mm3": 7097500.000000007,
+      "source_bbox_mm": {
+        "min_mm": [
+          -334.0,
+          -212.5,
+          0.0
+        ],
+        "max_mm": [
+          334.0,
+          212.5,
+          25.0
+        ],
+        "size_mm": [
+          668.0,
+          425.0,
+          25.0
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -334.9303046303844,
+          -450.0,
+          512.0
+        ],
+        "max_mm": [
+          333.18639278678137,
+          -25.0,
+          583.5364257175713
+        ],
+        "size_mm": [
+          668.1166974171658,
+          425.0,
+          71.53642571757132
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          0.9975640502598242,
+          0,
+          -0.0697564737441253,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -237.5
+        ],
+        [
+          0.0697564737441253,
+          0,
+          0.9975640502598242,
+          535.2986622305378
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          0.9975640502598242,
+          0,
+          -0.0697564737441253,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -237.5
+        ],
+        [
+          0.0697564737441253,
+          0,
+          0.9975640502598242,
+          35.29866223053785
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "panel_xyz_mm",
+        "panel_gap_mm",
+        "panel_tilt_deg",
+        "panel_low_clearance_mm",
+        "tray_thickness_mm"
+      ],
+      "features": {
+        "mpn": "SPM040401200",
+        "source_id": "panel-datasheet",
+        "source_dimensions_mm": [
+          668,
+          425,
+          25
+        ],
+        "drainage_tilt_deg": 4
+      },
+      "step": "step/SV3_PANEL_A.step"
+    },
+    {
+      "name": "SV3_WEDGE_A_1",
+      "group": "panelA",
+      "variant": "common",
+      "kind": "physical_custom",
+      "physical": true,
+      "material": "aluminum",
+      "note": "Solid custom wedge rail with a planar face tangent to the exact tilted panel underside; attachment/clamp design open.",
+      "volume_mm3": 440685.1642059725,
+      "source_bbox_mm": {
+        "min_mm": [
+          -320.0,
+          -11.0,
+          4.0
+        ],
+        "max_mm": [
+          320.0,
+          11.0,
+          57.675242052461186
+        ],
+        "size_mm": [
+          640.0,
+          22.0,
+          53.675242052461186
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -320.0000000000001,
+          -431.0,
+          504.0
+        ],
+        "max_mm": [
+          320.0,
+          -409.0,
+          557.6752420524612
+        ],
+        "size_mm": [
+          640.0000000000001,
+          22.0,
+          53.67524205246116
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -420.0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          500
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -420.0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "wedge_length_mm",
+        "wedge_width_mm",
+        "wedge_edge_inset_mm",
+        "panel_xyz_mm",
+        "panel_gap_mm",
+        "panel_tilt_deg",
+        "panel_low_clearance_mm",
+        "tray_thickness_mm"
+      ],
+      "features": {},
+      "step": "step/SV3_WEDGE_A_1.step"
+    },
+    {
+      "name": "SV3_WEDGE_A_2",
+      "group": "panelA",
+      "variant": "common",
+      "kind": "physical_custom",
+      "physical": true,
+      "material": "aluminum",
+      "note": "Solid custom wedge rail with a planar face tangent to the exact tilted panel underside; attachment/clamp design open.",
+      "volume_mm3": 440685.1642059725,
+      "source_bbox_mm": {
+        "min_mm": [
+          -320.0,
+          -11.0,
+          4.0
+        ],
+        "max_mm": [
+          320.0,
+          11.0,
+          57.675242052461186
+        ],
+        "size_mm": [
+          640.0,
+          22.0,
+          53.675242052461186
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -320.0000000000001,
+          -66.0,
+          504.0
+        ],
+        "max_mm": [
+          320.0,
+          -44.0,
+          557.6752420524612
+        ],
+        "size_mm": [
+          640.0000000000001,
+          22.0,
+          53.67524205246116
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -55.0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          500
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -55.0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "wedge_length_mm",
+        "wedge_width_mm",
+        "wedge_edge_inset_mm",
+        "panel_xyz_mm",
+        "panel_gap_mm",
+        "panel_tilt_deg",
+        "panel_low_clearance_mm",
+        "tray_thickness_mm"
+      ],
+      "features": {},
+      "step": "step/SV3_WEDGE_A_2.step"
+    },
+    {
+      "name": "SV3_PANEL_B",
+      "group": "panelB",
+      "variant": "common",
+      "kind": "purchased_envelope",
+      "physical": true,
+      "material": "panel",
+      "note": "Victron SPM040401200 purchased envelope. 3.1 kg vendor nominal, not density-derived. Frame, cells, clamp zones and terminal positions unknown.",
+      "volume_mm3": 7097500.000000007,
+      "source_bbox_mm": {
+        "min_mm": [
+          -334.0,
+          -212.5,
+          0.0
+        ],
+        "max_mm": [
+          334.0,
+          212.5,
+          25.0
+        ],
+        "size_mm": [
+          668.0,
+          425.0,
+          25.0
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -334.9303046303844,
+          25.0,
+          512.0
+        ],
+        "max_mm": [
+          333.18639278678137,
+          450.0,
+          583.5364257175713
+        ],
+        "size_mm": [
+          668.1166974171658,
+          425.0,
+          71.53642571757132
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          0.9975640502598242,
+          0,
+          -0.0697564737441253,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          237.5
+        ],
+        [
+          0.0697564737441253,
+          0,
+          0.9975640502598242,
+          535.2986622305378
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          0.9975640502598242,
+          0,
+          -0.0697564737441253,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          237.5
+        ],
+        [
+          0.0697564737441253,
+          0,
+          0.9975640502598242,
+          35.29866223053785
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "panel_xyz_mm",
+        "panel_gap_mm",
+        "panel_tilt_deg",
+        "panel_low_clearance_mm",
+        "tray_thickness_mm"
+      ],
+      "features": {
+        "mpn": "SPM040401200",
+        "source_id": "panel-datasheet",
+        "source_dimensions_mm": [
+          668,
+          425,
+          25
+        ],
+        "drainage_tilt_deg": 4
+      },
+      "step": "step/SV3_PANEL_B.step"
+    },
+    {
+      "name": "SV3_WEDGE_B_1",
+      "group": "panelB",
+      "variant": "common",
+      "kind": "physical_custom",
+      "physical": true,
+      "material": "aluminum",
+      "note": "Solid custom wedge rail with a planar face tangent to the exact tilted panel underside; attachment/clamp design open.",
+      "volume_mm3": 440685.1642059725,
+      "source_bbox_mm": {
+        "min_mm": [
+          -320.0,
+          -11.0,
+          4.0
+        ],
+        "max_mm": [
+          320.0,
+          11.0,
+          57.675242052461186
+        ],
+        "size_mm": [
+          640.0,
+          22.0,
+          53.675242052461186
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -320.0000000000001,
+          44.0,
+          504.0
+        ],
+        "max_mm": [
+          320.0,
+          66.0,
+          557.6752420524612
+        ],
+        "size_mm": [
+          640.0000000000001,
+          22.0,
+          53.67524205246116
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          55.0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          500
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          55.0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "wedge_length_mm",
+        "wedge_width_mm",
+        "wedge_edge_inset_mm",
+        "panel_xyz_mm",
+        "panel_gap_mm",
+        "panel_tilt_deg",
+        "panel_low_clearance_mm",
+        "tray_thickness_mm"
+      ],
+      "features": {},
+      "step": "step/SV3_WEDGE_B_1.step"
+    },
+    {
+      "name": "SV3_WEDGE_B_2",
+      "group": "panelB",
+      "variant": "common",
+      "kind": "physical_custom",
+      "physical": true,
+      "material": "aluminum",
+      "note": "Solid custom wedge rail with a planar face tangent to the exact tilted panel underside; attachment/clamp design open.",
+      "volume_mm3": 440685.1642059725,
+      "source_bbox_mm": {
+        "min_mm": [
+          -320.0,
+          -11.0,
+          4.0
+        ],
+        "max_mm": [
+          320.0,
+          11.0,
+          57.675242052461186
+        ],
+        "size_mm": [
+          640.0,
+          22.0,
+          53.675242052461186
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -320.0000000000001,
+          409.0,
+          504.0
+        ],
+        "max_mm": [
+          320.0,
+          431.0,
+          557.6752420524612
+        ],
+        "size_mm": [
+          640.0000000000001,
+          22.0,
+          53.67524205246116
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          420.0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          500
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          420.0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "wedge_length_mm",
+        "wedge_width_mm",
+        "wedge_edge_inset_mm",
+        "panel_xyz_mm",
+        "panel_gap_mm",
+        "panel_tilt_deg",
+        "panel_low_clearance_mm",
+        "tray_thickness_mm"
+      ],
+      "features": {},
+      "step": "step/SV3_WEDGE_B_2.step"
+    },
+    {
+      "name": "SV3_HUB_HAMMOND_1550WJ",
+      "group": "hub",
+      "variant": "common",
+      "kind": "purchased_envelope",
+      "physical": true,
+      "material": "hub",
+      "note": "Flat Hammond 1550WJ overall envelope only. Vendor tapered interior, gasket, bosses, fasteners and actual mass unknown; do not treat this solid as metal or sealed buoyancy.",
+      "volume_mm3": 3205125.000000001,
+      "source_bbox_mm": {
+        "min_mm": [
+          -137.5,
+          -87.5,
+          0.0
+        ],
+        "max_mm": [
+          137.5,
+          87.5,
+          66.6
+        ],
+        "size_mm": [
+          275.0,
+          175.0,
+          66.6
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -137.5,
+          -307.5,
+          348.9
+        ],
+        "max_mm": [
+          137.5,
+          -132.5,
+          415.5
+        ],
+        "size_mm": [
+          275.0,
+          175.0,
+          66.60000000000002
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -220
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          348.9
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -220
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          -151.1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "hub_xyz_mm",
+        "hub_center_xy_mm",
+        "shade_to_tray_mm",
+        "shade_thickness_mm",
+        "shade_hub_gap_mm"
+      ],
+      "features": {
+        "mpn": "1550WJ",
+        "source_id": "hub-drawing",
+        "source_dimensions_mm": [
+          275,
+          175,
+          66.6
+        ],
+        "actual_mass_kg": null
+      },
+      "step": "step/SV3_HUB_HAMMOND_1550WJ.step"
+    },
+    {
+      "name": "SV3_HUB_CARRIER",
+      "group": "hub",
+      "variant": "common",
+      "kind": "physical_custom",
+      "physical": true,
+      "material": "aluminum",
+      "note": "Shelf supports hub underside; two hanger tabs touch tray and clear shade ends. Welds/bolts, retention and loads not released.",
+      "volume_mm3": 234176.00000000023,
+      "source_bbox_mm": {
+        "min_mm": [
+          -200.0,
+          -307.5,
+          -154.1
+        ],
+        "max_mm": [
+          200.0,
+          -132.5,
+          0.0
+        ],
+        "size_mm": [
+          400.0,
+          175.0,
+          154.1
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -200.0,
+          -307.5,
+          345.9
+        ],
+        "max_mm": [
+          200.0,
+          -132.5,
+          500.0
+        ],
+        "size_mm": [
+          400.0,
+          175.0,
+          154.10000000000002
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          500
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "hub_carrier_width_mm",
+        "hub_carrier_thickness_mm",
+        "hub_hanger_xy_mm",
+        "hub_xyz_mm",
+        "hub_center_xy_mm",
+        "shade_to_tray_mm",
+        "shade_thickness_mm",
+        "shade_hub_gap_mm"
+      ],
+      "features": {},
+      "step": "step/SV3_HUB_CARRIER.step"
+    },
+    {
+      "name": "SV3_SHADE_ROOF",
+      "group": "hub",
+      "variant": "common",
+      "kind": "physical_custom",
+      "physical": true,
+      "material": "aluminum",
+      "note": "Inherited custom 375 x 275 x 1.5 mm shade roof and 75 mm hub gap. Directly under tray/panels now; no shade or thermal performance transferred.",
+      "volume_mm3": 154687.5,
+      "source_bbox_mm": {
+        "min_mm": [
+          -187.5,
+          -137.5,
+          0.0
+        ],
+        "max_mm": [
+          187.5,
+          137.5,
+          1.5
+        ],
+        "size_mm": [
+          375.0,
+          275.0,
+          1.5
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -187.5,
+          -405.4425,
+          490.5
+        ],
+        "max_mm": [
+          187.5,
+          -130.4425,
+          492.0
+        ],
+        "size_mm": [
+          375.0,
+          275.0,
+          1.5
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -267.9425
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          490.5
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -267.9425
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          -9.5
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "shade_xy_mm",
+        "shade_thickness_mm",
+        "shade_to_tray_mm",
+        "hub_xyz_mm",
+        "hub_center_xy_mm",
+        "sink_xyz_mm",
+        "sink_hub_gap_mm"
+      ],
+      "features": {},
+      "step": "step/SV3_SHADE_ROOF.step"
+    },
+    {
+      "name": "SV3_SHADE_HANGER_1",
+      "group": "hub",
+      "variant": "common",
+      "kind": "physical_custom",
+      "physical": true,
+      "material": "aluminum",
+      "note": "Custom candidate; joints and physical suitability unqualified.",
+      "volume_mm3": 319.99999999999994,
+      "source_bbox_mm": {
+        "min_mm": [
+          -2.0,
+          -5.0,
+          0.0
+        ],
+        "max_mm": [
+          2.0,
+          5.0,
+          8.0
+        ],
+        "size_mm": [
+          4.0,
+          10.0,
+          8.0
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -177.0,
+          -272.9425,
+          492.0
+        ],
+        "max_mm": [
+          -173.0,
+          -262.9425,
+          500.0
+        ],
+        "size_mm": [
+          4.0,
+          10.0,
+          8.0
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          -175
+        ],
+        [
+          0,
+          1,
+          0,
+          -267.9425
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          492
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          -175
+        ],
+        [
+          0,
+          1,
+          0,
+          -267.9425
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          -8
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "shade_support_xy_mm",
+        "shade_support_x_mm",
+        "shade_to_tray_mm",
+        "hub_xyz_mm",
+        "hub_center_xy_mm",
+        "sink_xyz_mm",
+        "sink_hub_gap_mm"
+      ],
+      "features": {},
+      "step": "step/SV3_SHADE_HANGER_1.step"
+    },
+    {
+      "name": "SV3_SHADE_HANGER_2",
+      "group": "hub",
+      "variant": "common",
+      "kind": "physical_custom",
+      "physical": true,
+      "material": "aluminum",
+      "note": "Custom candidate; joints and physical suitability unqualified.",
+      "volume_mm3": 319.99999999999994,
+      "source_bbox_mm": {
+        "min_mm": [
+          -2.0,
+          -5.0,
+          0.0
+        ],
+        "max_mm": [
+          2.0,
+          5.0,
+          8.0
+        ],
+        "size_mm": [
+          4.0,
+          10.0,
+          8.0
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          173.0,
+          -272.9425,
+          492.0
+        ],
+        "max_mm": [
+          177.0,
+          -262.9425,
+          500.0
+        ],
+        "size_mm": [
+          4.0,
+          10.0,
+          8.0
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          175
+        ],
+        [
+          0,
+          1,
+          0,
+          -267.9425
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          492
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          175
+        ],
+        [
+          0,
+          1,
+          0,
+          -267.9425
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          -8
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "shade_support_xy_mm",
+        "shade_support_x_mm",
+        "shade_to_tray_mm",
+        "hub_xyz_mm",
+        "hub_center_xy_mm",
+        "sink_xyz_mm",
+        "sink_hub_gap_mm"
+      ],
+      "features": {},
+      "step": "step/SV3_SHADE_HANGER_2.step"
+    },
+    {
+      "name": "SV3_SINK_OCCUPANCY_NOT_FINS",
+      "group": "hub",
+      "variant": "common",
+      "kind": "allocation",
+      "physical": false,
+      "material": "allocation",
+      "note": "Wakefield 125460/XX4559 full occupancy, NOT solid metal or dimensioned fins. Beside the flat hub, no designed rear-base contact, no installed thermal or mass result.",
+      "volume_mm3": 1997940.3395952,
+      "source_bbox_mm": {
+        "min_mm": [
+          -136.906,
+          -47.879,
+          0.0
+        ],
+        "max_mm": [
+          136.906,
+          47.879,
+          76.2
+        ],
+        "size_mm": [
+          273.812,
+          95.758,
+          76.2
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -136.906,
+          -403.385,
+          344.1
+        ],
+        "max_mm": [
+          136.906,
+          -307.62699999999995,
+          420.3
+        ],
+        "size_mm": [
+          273.812,
+          95.75800000000004,
+          76.19999999999999
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -355.506
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          344.1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -355.506
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          -155.9
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "sink_xyz_mm",
+        "sink_base_mm",
+        "sink_hub_gap_mm",
+        "hub_xyz_mm",
+        "hub_center_xy_mm",
+        "shade_to_tray_mm",
+        "shade_thickness_mm",
+        "shade_hub_gap_mm"
+      ],
+      "features": {
+        "source_id": "sink-catalog",
+        "source_dimensions_mm": [
+          273.812,
+          95.758,
+          76.2
+        ],
+        "profile_base_mm": 15.748,
+        "fin_count": null,
+        "fin_pitch_mm": null,
+        "thermal_resistance_k_w": null
+      },
+      "step": "allocations/SV3_SINK_OCCUPANCY_NOT_FINS.step"
+    },
+    {
+      "name": "SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "group": "hub",
+      "variant": "common",
+      "kind": "allocation",
+      "physical": false,
+      "material": "allocation",
+      "note": "Open-air reservation above vertical sink occupancy. Skirt changes ventilation; this clearance is not a convection result.",
+      "volume_mm3": 1310984.4748000004,
+      "source_bbox_mm": {
+        "min_mm": [
+          -136.906,
+          -47.879,
+          0.0
+        ],
+        "max_mm": [
+          136.906,
+          47.879,
+          50.0
+        ],
+        "size_mm": [
+          273.812,
+          95.758,
+          50.0
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -136.906,
+          -403.385,
+          420.3
+        ],
+        "max_mm": [
+          136.906,
+          -307.62699999999995,
+          470.3
+        ],
+        "size_mm": [
+          273.812,
+          95.75800000000004,
+          50.0
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -355.506
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          420.3
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -355.506
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          -79.7
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "sink_xyz_mm",
+        "sink_vent_height_mm",
+        "sink_hub_gap_mm",
+        "hub_xyz_mm",
+        "hub_center_xy_mm",
+        "shade_to_tray_mm",
+        "shade_thickness_mm",
+        "shade_hub_gap_mm"
+      ],
+      "features": {},
+      "step": "allocations/SV3_SINK_OUTLET_AIR_ALLOCATION.step"
+    },
+    {
+      "name": "SV3_CROSS_BOLT_ALLOCATION_1",
+      "group": "mastSocket",
+      "variant": "common",
+      "kind": "allocation",
+      "physical": false,
+      "material": "allocation",
+      "note": "Unpopulated cross-bolt space. Both socket and pole have larger clearance bores; no fastener/head/thread/locking design claimed.",
+      "volume_mm3": 8168.140899333465,
+      "source_bbox_mm": {
+        "min_mm": [
+          -52.0,
+          -5.0,
+          -35.0
+        ],
+        "max_mm": [
+          52.0,
+          5.0,
+          -25.0
+        ],
+        "size_mm": [
+          104.0,
+          10.0,
+          10.0
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -52.0,
+          -5.0,
+          465.0
+        ],
+        "max_mm": [
+          52.0,
+          5.0,
+          475.0
+        ],
+        "size_mm": [
+          104.0,
+          10.0,
+          10.0
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          500
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "bolt_centres_below_tray_mm",
+        "bolt_allocation_diameter_mm",
+        "bolt_allocation_length_mm"
+      ],
+      "features": {},
+      "step": "allocations/SV3_CROSS_BOLT_ALLOCATION_1.step"
+    },
+    {
+      "name": "SV3_CROSS_BOLT_ALLOCATION_2",
+      "group": "mastSocket",
+      "variant": "common",
+      "kind": "allocation",
+      "physical": false,
+      "material": "allocation",
+      "note": "Unpopulated cross-bolt space. Both socket and pole have larger clearance bores; no fastener/head/thread/locking design claimed.",
+      "volume_mm3": 8168.140899333465,
+      "source_bbox_mm": {
+        "min_mm": [
+          -52.0,
+          -5.0,
+          -90.0
+        ],
+        "max_mm": [
+          52.0,
+          5.0,
+          -80.0
+        ],
+        "size_mm": [
+          104.0,
+          10.0,
+          10.0
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -52.0,
+          -5.0,
+          410.0
+        ],
+        "max_mm": [
+          52.0,
+          5.0,
+          420.0
+        ],
+        "size_mm": [
+          104.0,
+          10.0,
+          10.0
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          500
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "bolt_centres_below_tray_mm",
+        "bolt_allocation_diameter_mm",
+        "bolt_allocation_length_mm"
+      ],
+      "features": {},
+      "step": "allocations/SV3_CROSS_BOLT_ALLOCATION_2.step"
+    },
+    {
+      "name": "SV3_MAST_SOCKET",
+      "group": "mastSocket",
+      "variant": "common",
+      "kind": "physical_custom",
+      "physical": true,
+      "material": "aluminum",
+      "note": "Custom candidate; joints and physical suitability unqualified.",
+      "volume_mm3": 357642,
+      "source_bbox_mm": {
+        "min_mm": [
+          -70.0,
+          -70.0,
+          -120.0
+        ],
+        "max_mm": [
+          70.0,
+          70.0,
+          0.0
+        ],
+        "size_mm": [
+          140.0,
+          140.0,
+          120.0
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -70.0,
+          -70.0,
+          380.0
+        ],
+        "max_mm": [
+          70.0,
+          70.0,
+          500.0
+        ],
+        "size_mm": [
+          140.0,
+          140.0,
+          120.0
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          500
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "socket_od_mm",
+        "socket_id_mm",
+        "socket_length_mm",
+        "socket_flange_od_mm",
+        "socket_flange_thickness_mm",
+        "bolt_centres_below_tray_mm",
+        "bolt_hole_diameter_mm",
+        "bolt_allocation_length_mm"
+      ],
+      "features": {
+        "pole_interface_od_mm": 60,
+        "bore_mm": 62,
+        "cross_bolt_count": 2
+      },
+      "step": "step/SV3_MAST_SOCKET.step"
+    },
+    {
+      "name": "SV3_POLE_60MM",
+      "group": "mountPole",
+      "variant": "pole",
+      "kind": "physical_custom",
+      "physical": true,
+      "material": "steel",
+      "note": "Hollow, unsealed 60 mm pole. Length is water depth plus freeboard; ends at footing plate top. No embedment, foundation or load capacity inferred.",
+      "volume_mm3": 3705618.756633671,
+      "source_bbox_mm": {
+        "min_mm": [
+          -30.0000001,
+          -30.0000001,
+          -6400.0000001
+        ],
+        "max_mm": [
+          30.0000001,
+          30.0000001,
+          500.0000001
+        ],
+        "size_mm": [
+          60.0000002,
+          60.0000002,
+          6900.0000002
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -30.0000001,
+          -30.0000001,
+          -6400.0000001
+        ],
+        "max_mm": [
+          30.0000001,
+          30.0000001,
+          500.0000001
+        ],
+        "size_mm": [
+          60.0000002,
+          60.0000002,
+          6900.0000002
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "pole_od_mm",
+        "pole_wall_mm",
+        "site_depth_mm",
+        "freeboard_mm",
+        "bolt_centres_below_tray_mm",
+        "bolt_hole_diameter_mm",
+        "bolt_allocation_length_mm"
+      ],
+      "features": {
+        "length_mm": 6900,
+        "embedment_mm": null
+      },
+      "step": "step/SV3_POLE_60MM.step"
+    },
+    {
+      "name": "SV3_SEABED_FOOTING_PLATE",
+      "group": "mountPole",
+      "variant": "pole",
+      "kind": "physical_custom",
+      "physical": true,
+      "material": "steel",
+      "note": "Seabed-top plate allocation represented as custom physical plate. Not an engineered anchor, deadweight or embedment design.",
+      "volume_mm3": 3000000.0,
+      "source_bbox_mm": {
+        "min_mm": [
+          -250.0,
+          -250.0,
+          0.0
+        ],
+        "max_mm": [
+          250.0,
+          250.0,
+          12.0
+        ],
+        "size_mm": [
+          500.0,
+          500.0,
+          12.0
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -250.0,
+          -250.0,
+          -6412.0
+        ],
+        "max_mm": [
+          250.0,
+          250.0,
+          -6400.0
+        ],
+        "size_mm": [
+          500.0,
+          500.0,
+          12.0
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          -6412
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          -6412
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "footing_xy_mm",
+        "footing_thickness_mm",
+        "site_depth_mm"
+      ],
+      "features": {},
+      "step": "step/SV3_SEABED_FOOTING_PLATE.step"
+    },
+    {
+      "name": "SV3_CABLE_ROUTE_ALLOCATION_A",
+      "group": "tray",
+      "variant": "common",
+      "kind": "allocation",
+      "physical": false,
+      "material": "allocation",
+      "note": "Unterminated route stub through tray clearance hole, not actual panel junction/gland geometry or a full harness. Inherited 56 mm bend allowance remains unresolved at ends.",
+      "volume_mm3": 9047.7868423386,
+      "source_bbox_mm": {
+        "min_mm": [
+          -4.0,
+          -4.0,
+          0.0
+        ],
+        "max_mm": [
+          4.0,
+          4.0,
+          180.0
+        ],
+        "size_mm": [
+          8.0,
+          8.0,
+          180.0
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          226.0,
+          -241.5,
+          340.0
+        ],
+        "max_mm": [
+          234.0,
+          -233.5,
+          520.0
+        ],
+        "size_mm": [
+          8.0,
+          8.0,
+          180.0
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          230
+        ],
+        [
+          0,
+          1,
+          0,
+          -237.5
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          340
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          230
+        ],
+        [
+          0,
+          1,
+          0,
+          -237.5
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          -160
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "cable_diameter_mm",
+        "cable_x_mm",
+        "cable_stub_z_mm",
+        "panel_xyz_mm",
+        "panel_gap_mm",
+        "cable_bend_radius_mm"
+      ],
+      "features": {},
+      "step": "allocations/SV3_CABLE_ROUTE_ALLOCATION_A.step"
+    },
+    {
+      "name": "SV3_CABLE_ROUTE_ALLOCATION_B",
+      "group": "tray",
+      "variant": "common",
+      "kind": "allocation",
+      "physical": false,
+      "material": "allocation",
+      "note": "Unterminated route stub through tray clearance hole, not actual panel junction/gland geometry or a full harness. Inherited 56 mm bend allowance remains unresolved at ends.",
+      "volume_mm3": 9047.7868423386,
+      "source_bbox_mm": {
+        "min_mm": [
+          -4.0,
+          -4.0,
+          0.0
+        ],
+        "max_mm": [
+          4.0,
+          4.0,
+          180.0
+        ],
+        "size_mm": [
+          8.0,
+          8.0,
+          180.0
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          226.0,
+          233.5,
+          340.0
+        ],
+        "max_mm": [
+          234.0,
+          241.5,
+          520.0
+        ],
+        "size_mm": [
+          8.0,
+          8.0,
+          180.0
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          230
+        ],
+        [
+          0,
+          1,
+          0,
+          237.5
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          340
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          230
+        ],
+        [
+          0,
+          1,
+          0,
+          237.5
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          -160
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "cable_diameter_mm",
+        "cable_x_mm",
+        "cable_stub_z_mm",
+        "panel_xyz_mm",
+        "panel_gap_mm",
+        "cable_bend_radius_mm"
+      ],
+      "features": {},
+      "step": "allocations/SV3_CABLE_ROUTE_ALLOCATION_B.step"
+    },
+    {
+      "name": "SV3_FLOAT_COLLAR",
+      "group": "mountFloat",
+      "variant": "float",
+      "kind": "physical_custom",
+      "physical": true,
+      "material": "foam",
+      "note": "Closed-cell dry foam assumption, not a sourced buoy. Tray bears on collar top; skirt fits open centre. Conditional mass scenario sets waterline, no stability or wave result.",
+      "volume_mm3": 213840000.0,
+      "source_bbox_mm": {
+        "min_mm": [
+          -530.0,
+          -640.0,
+          0.0
+        ],
+        "max_mm": [
+          530.0,
+          640.0,
+          300.0
+        ],
+        "size_mm": [
+          1060.0,
+          1280.0,
+          300.0
+        ]
+      },
+      "bbox": {
+        "min_mm": [
+          -530.0,
+          -640.0,
+          -57.791648465082375
+        ],
+        "max_mm": [
+          530.0,
+          640.0,
+          242.20835153491763
+        ],
+        "size_mm": [
+          1060.0,
+          1280.0,
+          300.0
+        ]
+      },
+      "source_to_cad_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          -57.791648465082375
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_to_group_matrix_mm": [
+        [
+          1.0,
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          -0.0,
+          0,
+          1.0,
+          -57.791648465082375
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "parameter_keys": [
+        "float_outer_xy_mm",
+        "skirt_xy_mm",
+        "float_height_mm",
+        "foam_density_kg_m3",
+        "seawater_density_kg_m3",
+        "hub_scenario_mass_kg",
+        "sink_scenario_mass_kg",
+        "unmodeled_payload_allowance_kg"
+      ],
+      "features": {},
+      "step": "step/SV3_FLOAT_COLLAR.step"
+    }
+  ],
+  "assembly_bounds_mm": {
+    "pole": {
+      "min_mm": [
+        -360.0,
+        -470.0,
+        -6412.0
+      ],
+      "max_mm": [
+        360.0,
+        470.0,
+        583.5364257175713
+      ],
+      "size_mm": [
+        720.0,
+        940.0,
+        6995.536425717572
+      ]
+    },
+    "float": {
+      "min_mm": [
+        -530.0,
+        -640.0,
+        -57.791648465082375
+      ],
+      "max_mm": [
+        530.0,
+        640.0,
+        325.7447772524889
+      ],
+      "size_mm": [
+        1060.0,
+        1280.0,
+        383.5364257175713
+      ]
+    }
+  },
+  "mass_displacement": {
+    "schema": "poseidon.surface-v3.mass-displacement.v1",
+    "parts": [
+      {
+        "name": "SV3_TRAY_PLATE",
+        "kind": "physical_custom",
+        "variant": "common",
+        "volume_mm3": 2694495.3993088827,
+        "density_assumed_kg_m3": 2700,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": 7.275137578133983,
+        "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+      },
+      {
+        "name": "SV3_OPEN_BOTTOM_SKIRT",
+        "kind": "physical_custom",
+        "variant": "common",
+        "volume_mm3": 1163520.0,
+        "density_assumed_kg_m3": 2700,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": 3.141504,
+        "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+      },
+      {
+        "name": "SV3_PANEL_A",
+        "kind": "purchased_envelope",
+        "variant": "common",
+        "volume_mm3": 7097500.000000007,
+        "density_assumed_kg_m3": null,
+        "vendor_nominal_mass_kg": 3.1,
+        "modeled_dry_mass_kg": 3.1,
+        "mass_basis": "Panel datasheet nominal mass, NOT solid-envelope density"
+      },
+      {
+        "name": "SV3_WEDGE_A_1",
+        "kind": "physical_custom",
+        "variant": "common",
+        "volume_mm3": 440685.1642059725,
+        "density_assumed_kg_m3": 2700,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": 1.1898499433561258,
+        "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+      },
+      {
+        "name": "SV3_WEDGE_A_2",
+        "kind": "physical_custom",
+        "variant": "common",
+        "volume_mm3": 440685.1642059725,
+        "density_assumed_kg_m3": 2700,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": 1.1898499433561258,
+        "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+      },
+      {
+        "name": "SV3_PANEL_B",
+        "kind": "purchased_envelope",
+        "variant": "common",
+        "volume_mm3": 7097500.000000007,
+        "density_assumed_kg_m3": null,
+        "vendor_nominal_mass_kg": 3.1,
+        "modeled_dry_mass_kg": 3.1,
+        "mass_basis": "Panel datasheet nominal mass, NOT solid-envelope density"
+      },
+      {
+        "name": "SV3_WEDGE_B_1",
+        "kind": "physical_custom",
+        "variant": "common",
+        "volume_mm3": 440685.1642059725,
+        "density_assumed_kg_m3": 2700,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": 1.1898499433561258,
+        "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+      },
+      {
+        "name": "SV3_WEDGE_B_2",
+        "kind": "physical_custom",
+        "variant": "common",
+        "volume_mm3": 440685.1642059725,
+        "density_assumed_kg_m3": 2700,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": 1.1898499433561258,
+        "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+      },
+      {
+        "name": "SV3_HUB_HAMMOND_1550WJ",
+        "kind": "purchased_envelope",
+        "variant": "common",
+        "volume_mm3": 3205125.000000001,
+        "density_assumed_kg_m3": null,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": null,
+        "mass_basis": "Unknown purchased mass"
+      },
+      {
+        "name": "SV3_HUB_CARRIER",
+        "kind": "physical_custom",
+        "variant": "common",
+        "volume_mm3": 234176.00000000023,
+        "density_assumed_kg_m3": 2700,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": 0.6322752000000006,
+        "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+      },
+      {
+        "name": "SV3_SHADE_ROOF",
+        "kind": "physical_custom",
+        "variant": "common",
+        "volume_mm3": 154687.5,
+        "density_assumed_kg_m3": 2700,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": 0.41765625,
+        "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+      },
+      {
+        "name": "SV3_SHADE_HANGER_1",
+        "kind": "physical_custom",
+        "variant": "common",
+        "volume_mm3": 319.99999999999994,
+        "density_assumed_kg_m3": 2700,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": 0.0008639999999999999,
+        "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+      },
+      {
+        "name": "SV3_SHADE_HANGER_2",
+        "kind": "physical_custom",
+        "variant": "common",
+        "volume_mm3": 319.99999999999994,
+        "density_assumed_kg_m3": 2700,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": 0.0008639999999999999,
+        "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+      },
+      {
+        "name": "SV3_SINK_OCCUPANCY_NOT_FINS",
+        "kind": "allocation",
+        "variant": "common",
+        "volume_mm3": 1997940.3395952,
+        "density_assumed_kg_m3": null,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": null,
+        "mass_basis": "Nonphysical allocation excluded from mass and displacement"
+      },
+      {
+        "name": "SV3_SINK_OUTLET_AIR_ALLOCATION",
+        "kind": "allocation",
+        "variant": "common",
+        "volume_mm3": 1310984.4748000004,
+        "density_assumed_kg_m3": null,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": null,
+        "mass_basis": "Nonphysical allocation excluded from mass and displacement"
+      },
+      {
+        "name": "SV3_CROSS_BOLT_ALLOCATION_1",
+        "kind": "allocation",
+        "variant": "common",
+        "volume_mm3": 8168.140899333465,
+        "density_assumed_kg_m3": null,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": null,
+        "mass_basis": "Nonphysical allocation excluded from mass and displacement"
+      },
+      {
+        "name": "SV3_CROSS_BOLT_ALLOCATION_2",
+        "kind": "allocation",
+        "variant": "common",
+        "volume_mm3": 8168.140899333465,
+        "density_assumed_kg_m3": null,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": null,
+        "mass_basis": "Nonphysical allocation excluded from mass and displacement"
+      },
+      {
+        "name": "SV3_MAST_SOCKET",
+        "kind": "physical_custom",
+        "variant": "common",
+        "volume_mm3": 357642,
+        "density_assumed_kg_m3": 2700,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": 0.9656334,
+        "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+      },
+      {
+        "name": "SV3_POLE_60MM",
+        "kind": "physical_custom",
+        "variant": "pole",
+        "volume_mm3": 3705618.756633671,
+        "density_assumed_kg_m3": 8000,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": 29.644950053069365,
+        "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+      },
+      {
+        "name": "SV3_SEABED_FOOTING_PLATE",
+        "kind": "physical_custom",
+        "variant": "pole",
+        "volume_mm3": 3000000.0,
+        "density_assumed_kg_m3": 8000,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": 24.0,
+        "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+      },
+      {
+        "name": "SV3_CABLE_ROUTE_ALLOCATION_A",
+        "kind": "allocation",
+        "variant": "common",
+        "volume_mm3": 9047.7868423386,
+        "density_assumed_kg_m3": null,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": null,
+        "mass_basis": "Nonphysical allocation excluded from mass and displacement"
+      },
+      {
+        "name": "SV3_CABLE_ROUTE_ALLOCATION_B",
+        "kind": "allocation",
+        "variant": "common",
+        "volume_mm3": 9047.7868423386,
+        "density_assumed_kg_m3": null,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": null,
+        "mass_basis": "Nonphysical allocation excluded from mass and displacement"
+      },
+      {
+        "name": "SV3_FLOAT_COLLAR",
+        "kind": "physical_custom",
+        "variant": "float",
+        "volume_mm3": 213840000.0,
+        "density_assumed_kg_m3": 60,
+        "vendor_nominal_mass_kg": null,
+        "modeled_dry_mass_kg": 12.8304,
+        "mass_basis": "Custom CAD material volume times explicitly assumed density, not measured"
+      }
+    ],
+    "actual_complete_mass_kg": null,
+    "actual_buoyancy_sign": "UNKNOWN",
+    "known_plus_assumed_common_subtotal_kg": 23.39333420155849,
+    "pole_variant_known_plus_assumed_subtotal_kg": 77.03828425462785,
+    "excluded": [
+      "hub actual mass",
+      "sink actual mass",
+      "attachment fasteners",
+      "wiring and glands",
+      "electronics",
+      "battery and power integration",
+      "mooring",
+      "absorbed water and fouling"
+    ],
+    "float_scenario": {
+      "explicit_mass_allowances_kg": {
+        "hub_scenario_mass_kg": 1.2,
+        "sink_scenario_mass_kg": 1.8,
+        "unmodeled_payload_allowance_kg": 3
+      },
+      "collar_dry_mass_kg": 12.8304,
+      "dry_mass_kg": 42.223734201558486,
+      "foam_density_assumed_kg_m3": 60,
+      "seawater_density_assumed_kg_m3": 1025,
+      "waterplane_area_m2": 0.7128,
+      "fully_submerged_displacement_m3": 0.21384,
+      "fully_submerged_supported_mass_kg": 219.186,
+      "fully_submerged_net_lift_kg_equivalent": 176.96226579844154,
+      "fully_submerged_net_lift_n": 1735.4070038922866,
+      "fully_submerged_buoyancy_sign": "POSITIVE",
+      "posed_displacement_m3": 0.041193887025910716,
+      "conditional_equilibrium_draft_m": 0.057791648465082376,
+      "conditional_equilibrium_net_lift_n": 0,
+      "posed_buoyancy_sign": "NEUTRAL_BY_SCENARIO_CONSTRUCTION",
+      "float_surface_y_m": 0.2422083515349176,
+      "basis": "Illustrative dry-mass scenario, not actual assembled mass. Only foam displacement credited. Open skirt, flooded pole and vendor envelopes receive no sealed-volume credit. No stability, load or wave claim."
+    }
+  },
+  "canonical_glb": "SURFACE_V3.glb",
+  "hierarchy": "hierarchy.json",
+  "open_gates": [
+    "G01 exact supplied panel/hub revisions, mounting zones, component inspection and unknown purchased masses",
+    "G02 battery, BMS, charger, protection, regulators, wiring, glands and full power integration omitted and unresolved",
+    "G03 reopened thermal analysis: v2 48 W absorbed-sun and 21.9 W enclosed-heat budgets not re-evaluated; flat hub thermal contact and ventilation unresolved",
+    "G04 pole bending, buckling, cross-bolts, flange joints, wind fatigue and corrosion isolation",
+    "G05 seabed survey, footing holding capacity, pole embedment/anchoring and recovery; zero embedment modeled",
+    "G06 wind, waves, storm current, mooring load and farm-line clearance require site/engineer review",
+    "G07 actual complete mass, CG, float water uptake, freeboard, stability, wave response and buoyancy unknown",
+    "G08 cable bend/pull, terminations, service access, splash ingress, corrosion and fouling",
+    "G09 farm/operator permissions, marking, loss prevention, retrieval and vendor-derived redistribution rights"
+  ],
+  "checks": {
+    "kernel_executed": true,
+    "total": 554,
+    "failed": 0
+  },
+  "check_records": [
+    {
+      "id": "valid:SV3_TRAY_PLATE",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 2694495.3993088827
+    },
+    {
+      "id": "source_transform:SV3_TRAY_PLATE",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_OPEN_BOTTOM_SKIRT",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 1163520.0
+    },
+    {
+      "id": "source_transform:SV3_OPEN_BOTTOM_SKIRT",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_PANEL_A",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 7097500.000000007
+    },
+    {
+      "id": "source_transform:SV3_PANEL_A",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_WEDGE_A_1",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 440685.1642059725
+    },
+    {
+      "id": "source_transform:SV3_WEDGE_A_1",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_WEDGE_A_2",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 440685.1642059725
+    },
+    {
+      "id": "source_transform:SV3_WEDGE_A_2",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_PANEL_B",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 7097500.000000007
+    },
+    {
+      "id": "source_transform:SV3_PANEL_B",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_WEDGE_B_1",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 440685.1642059725
+    },
+    {
+      "id": "source_transform:SV3_WEDGE_B_1",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_WEDGE_B_2",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 440685.1642059725
+    },
+    {
+      "id": "source_transform:SV3_WEDGE_B_2",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 3205125.000000001
+    },
+    {
+      "id": "source_transform:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_HUB_CARRIER",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 234176.00000000023
+    },
+    {
+      "id": "source_transform:SV3_HUB_CARRIER",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_SHADE_ROOF",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 154687.5
+    },
+    {
+      "id": "source_transform:SV3_SHADE_ROOF",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 319.99999999999994
+    },
+    {
+      "id": "source_transform:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 319.99999999999994
+    },
+    {
+      "id": "source_transform:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 1997940.3395952
+    },
+    {
+      "id": "source_transform:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 1310984.4748000004
+    },
+    {
+      "id": "source_transform:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 8168.140899333465
+    },
+    {
+      "id": "source_transform:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 8168.140899333465
+    },
+    {
+      "id": "source_transform:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_MAST_SOCKET",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 357641.96499039675
+    },
+    {
+      "id": "source_transform:SV3_MAST_SOCKET",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_POLE_60MM",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 3705618.756633671
+    },
+    {
+      "id": "source_transform:SV3_POLE_60MM",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 3000000.0
+    },
+    {
+      "id": "source_transform:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 9047.7868423386
+    },
+    {
+      "id": "source_transform:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 9047.7868423386
+    },
+    {
+      "id": "source_transform:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "valid:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "solids": 1,
+      "volume_mm3": 213840000.0
+    },
+    {
+      "id": "source_transform:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "bbox_delta_mm": 0.0
+    },
+    {
+      "id": "sourced_dimensions:SV3_PANEL_A",
+      "passed": true,
+      "measured_mm": [
+        668.0,
+        425.0,
+        25.0
+      ],
+      "expected_mm": [
+        668,
+        425,
+        25
+      ]
+    },
+    {
+      "id": "sourced_dimensions:SV3_PANEL_B",
+      "passed": true,
+      "measured_mm": [
+        668.0,
+        425.0,
+        25.0
+      ],
+      "expected_mm": [
+        668,
+        425,
+        25
+      ]
+    },
+    {
+      "id": "sourced_dimensions:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "measured_mm": [
+        275.0,
+        175.0,
+        66.6
+      ],
+      "expected_mm": [
+        275,
+        175,
+        66.6
+      ]
+    },
+    {
+      "id": "sourced_dimensions:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "measured_mm": [
+        273.812,
+        95.758,
+        76.2
+      ],
+      "expected_mm": [
+        273.812,
+        95.758,
+        76.2
+      ]
+    },
+    {
+      "id": "two_panel_gap",
+      "passed": true
+    },
+    {
+      "id": "pole_length",
+      "passed": true,
+      "expected_mm": 6900
+    },
+    {
+      "id": "pole_to_footing_contact",
+      "passed": true
+    },
+    {
+      "id": "socket_radial_clearance",
+      "passed": true
+    },
+    {
+      "id": "shade_hub_gap",
+      "passed": true
+    },
+    {
+      "id": "panel_wedge_contact:A:1",
+      "passed": true
+    },
+    {
+      "id": "panel_wedge_contact:A:2",
+      "passed": true
+    },
+    {
+      "id": "panel_wedge_contact:B:1",
+      "passed": true
+    },
+    {
+      "id": "panel_wedge_contact:B:2",
+      "passed": true
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_OPEN_BOTTOM_SKIRT",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_PANEL_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_WEDGE_A_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_WEDGE_A_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_PANEL_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_WEDGE_B_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_WEDGE_B_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_TRAY_PLATE:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_PANEL_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_WEDGE_A_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_WEDGE_A_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_PANEL_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_WEDGE_B_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_WEDGE_B_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_OPEN_BOTTOM_SKIRT:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_WEDGE_A_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_WEDGE_A_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_PANEL_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_WEDGE_B_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_WEDGE_B_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_A:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_WEDGE_A_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_PANEL_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_WEDGE_B_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_WEDGE_B_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_1:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_PANEL_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_WEDGE_B_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_WEDGE_B_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_A_2:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_B:SV3_WEDGE_B_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_B:SV3_WEDGE_B_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_B:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_B:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_B:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_B:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_B:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_B:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_B:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_B:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_B:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_B:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_B:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_B:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_B:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_PANEL_B:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_1:SV3_WEDGE_B_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_1:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_1:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_1:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_1:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_1:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_1:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_1:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_1:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_1:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_1:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_1:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_1:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_1:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_1:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_2:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_2:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_2:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_2:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_2:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_2:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_2:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_2:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_2:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_2:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_2:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_2:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_2:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_WEDGE_B_2:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_HUB_HAMMOND_1550WJ:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_HUB_HAMMOND_1550WJ:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_HUB_HAMMOND_1550WJ:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_HUB_HAMMOND_1550WJ:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_HUB_HAMMOND_1550WJ:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_HUB_HAMMOND_1550WJ:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_HUB_HAMMOND_1550WJ:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_HUB_HAMMOND_1550WJ:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_HUB_HAMMOND_1550WJ:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_HUB_HAMMOND_1550WJ:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_HUB_HAMMOND_1550WJ:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_HUB_HAMMOND_1550WJ:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_HUB_HAMMOND_1550WJ:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_HUB_CARRIER:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_HUB_CARRIER:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_HUB_CARRIER:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_HUB_CARRIER:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_HUB_CARRIER:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_HUB_CARRIER:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_HUB_CARRIER:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_HUB_CARRIER:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_HUB_CARRIER:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_HUB_CARRIER:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_HUB_CARRIER:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_HUB_CARRIER:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_ROOF:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_ROOF:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_ROOF:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_ROOF:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_ROOF:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_ROOF:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_ROOF:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_ROOF:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_ROOF:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_ROOF:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_ROOF:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_1:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_1:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_1:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_1:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_1:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_1:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_1:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_1:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_1:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_1:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_2:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_2:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_2:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_2:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_2:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_2:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_2:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_2:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SHADE_HANGER_2:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SINK_OCCUPANCY_NOT_FINS:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SINK_OCCUPANCY_NOT_FINS:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SINK_OCCUPANCY_NOT_FINS:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SINK_OCCUPANCY_NOT_FINS:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SINK_OCCUPANCY_NOT_FINS:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SINK_OCCUPANCY_NOT_FINS:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SINK_OCCUPANCY_NOT_FINS:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SINK_OCCUPANCY_NOT_FINS:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SINK_OUTLET_AIR_ALLOCATION:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SINK_OUTLET_AIR_ALLOCATION:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SINK_OUTLET_AIR_ALLOCATION:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SINK_OUTLET_AIR_ALLOCATION:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SINK_OUTLET_AIR_ALLOCATION:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SINK_OUTLET_AIR_ALLOCATION:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SINK_OUTLET_AIR_ALLOCATION:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_CROSS_BOLT_ALLOCATION_1:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_CROSS_BOLT_ALLOCATION_1:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_CROSS_BOLT_ALLOCATION_1:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_CROSS_BOLT_ALLOCATION_1:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_CROSS_BOLT_ALLOCATION_1:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_CROSS_BOLT_ALLOCATION_1:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_CROSS_BOLT_ALLOCATION_2:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_CROSS_BOLT_ALLOCATION_2:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_CROSS_BOLT_ALLOCATION_2:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_CROSS_BOLT_ALLOCATION_2:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_CROSS_BOLT_ALLOCATION_2:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_MAST_SOCKET:SV3_POLE_60MM",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_MAST_SOCKET:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_MAST_SOCKET:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_MAST_SOCKET:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_POLE_60MM:SV3_SEABED_FOOTING_PLATE",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:pole:SV3_POLE_60MM:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_POLE_60MM:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SEABED_FOOTING_PLATE:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_SEABED_FOOTING_PLATE:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:pole:SV3_CABLE_ROUTE_ALLOCATION_A:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_OPEN_BOTTOM_SKIRT",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_PANEL_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_WEDGE_A_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_WEDGE_A_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_PANEL_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_WEDGE_B_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_WEDGE_B_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_TRAY_PLATE:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_PANEL_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_WEDGE_A_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_WEDGE_A_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_PANEL_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_WEDGE_B_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_WEDGE_B_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_OPEN_BOTTOM_SKIRT:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_WEDGE_A_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_WEDGE_A_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_PANEL_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_WEDGE_B_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_WEDGE_B_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_PANEL_A:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_WEDGE_A_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_PANEL_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_WEDGE_B_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_WEDGE_B_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_1:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_2:SV3_PANEL_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_2:SV3_WEDGE_B_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_2:SV3_WEDGE_B_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_2:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_2:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_2:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_2:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_2:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_2:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_2:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_2:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_2:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_2:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_2:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_2:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_A_2:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_B:SV3_WEDGE_B_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_B:SV3_WEDGE_B_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_B:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_B:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_B:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_B:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_B:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_B:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_PANEL_B:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_PANEL_B:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_PANEL_B:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_PANEL_B:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_PANEL_B:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_PANEL_B:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_PANEL_B:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_1:SV3_WEDGE_B_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_1:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_1:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_1:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_1:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_1:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_1:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_1:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_1:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_1:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_1:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_1:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_1:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_1:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_2:SV3_HUB_HAMMOND_1550WJ",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_2:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_2:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_2:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_2:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_2:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_2:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_2:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_2:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_2:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_2:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_2:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_WEDGE_B_2:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_HUB_HAMMOND_1550WJ:SV3_HUB_CARRIER",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_HUB_HAMMOND_1550WJ:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_HUB_HAMMOND_1550WJ:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_HUB_HAMMOND_1550WJ:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_HUB_HAMMOND_1550WJ:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_HUB_HAMMOND_1550WJ:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_HUB_HAMMOND_1550WJ:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_HUB_HAMMOND_1550WJ:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_HUB_HAMMOND_1550WJ:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_HUB_HAMMOND_1550WJ:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_HUB_HAMMOND_1550WJ:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_HUB_HAMMOND_1550WJ:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_HUB_CARRIER:SV3_SHADE_ROOF",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_HUB_CARRIER:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_HUB_CARRIER:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_HUB_CARRIER:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_HUB_CARRIER:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_HUB_CARRIER:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_HUB_CARRIER:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_HUB_CARRIER:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_HUB_CARRIER:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_HUB_CARRIER:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_HUB_CARRIER:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_SHADE_ROOF:SV3_SHADE_HANGER_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_SHADE_ROOF:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_SHADE_ROOF:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_ROOF:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_ROOF:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_ROOF:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_ROOF:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_SHADE_ROOF:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_ROOF:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_ROOF:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_1:SV3_SHADE_HANGER_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_1:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_1:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_1:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_1:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_1:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_1:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_1:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_1:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_2:SV3_SINK_OCCUPANCY_NOT_FINS",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_2:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_2:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_2:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_2:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_2:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_2:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SHADE_HANGER_2:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_SINK_OCCUPANCY_NOT_FINS:SV3_SINK_OUTLET_AIR_ALLOCATION",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SINK_OCCUPANCY_NOT_FINS:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SINK_OCCUPANCY_NOT_FINS:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SINK_OCCUPANCY_NOT_FINS:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SINK_OCCUPANCY_NOT_FINS:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SINK_OCCUPANCY_NOT_FINS:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SINK_OCCUPANCY_NOT_FINS:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SINK_OUTLET_AIR_ALLOCATION:SV3_CROSS_BOLT_ALLOCATION_1",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SINK_OUTLET_AIR_ALLOCATION:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SINK_OUTLET_AIR_ALLOCATION:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SINK_OUTLET_AIR_ALLOCATION:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SINK_OUTLET_AIR_ALLOCATION:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_SINK_OUTLET_AIR_ALLOCATION:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_CROSS_BOLT_ALLOCATION_1:SV3_CROSS_BOLT_ALLOCATION_2",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_CROSS_BOLT_ALLOCATION_1:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_CROSS_BOLT_ALLOCATION_1:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_CROSS_BOLT_ALLOCATION_1:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_CROSS_BOLT_ALLOCATION_1:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_CROSS_BOLT_ALLOCATION_2:SV3_MAST_SOCKET",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_CROSS_BOLT_ALLOCATION_2:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_CROSS_BOLT_ALLOCATION_2:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_CROSS_BOLT_ALLOCATION_2:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_MAST_SOCKET:SV3_CABLE_ROUTE_ALLOCATION_A",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_MAST_SOCKET:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_MAST_SOCKET:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": false
+    },
+    {
+      "id": "interference:float:SV3_CABLE_ROUTE_ALLOCATION_A:SV3_CABLE_ROUTE_ALLOCATION_B",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_CABLE_ROUTE_ALLOCATION_A:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "interference:float:SV3_CABLE_ROUTE_ALLOCATION_B:SV3_FLOAT_COLLAR",
+      "passed": true,
+      "volume_mm3": 0.0,
+      "includes_nonphysical_allocation": true
+    },
+    {
+      "id": "float_tray_bearing_contact",
+      "passed": true
+    },
+    {
+      "id": "float_hub_above_scenario_waterline",
+      "passed": true
+    },
+    {
+      "id": "float_socket_above_scenario_waterline",
+      "passed": true
+    },
+    {
+      "id": "shallow_surface_envelope",
+      "passed": true,
+      "limit_basis": "Traced surface_height_limit_mm digital layout assumption, not physical load or suitability"
+    },
+    {
+      "id": "step_roundtrip:SV3_TRAY_PLATE.step",
+      "passed": true,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_TRAY_PLATE.dxf",
+      "passed": true,
+      "measurements_mm": [
+        720.0,
+        940.0,
+        720.0,
+        4.0,
+        940.0,
+        4.0
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_OPEN_BOTTOM_SKIRT.step",
+      "passed": true,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_OPEN_BOTTOM_SKIRT.dxf",
+      "passed": true,
+      "measurements_mm": [
+        700.0,
+        920.0,
+        700.0,
+        180.0,
+        920.0,
+        180.0
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_PANEL_A.step",
+      "passed": true,
+      "bbox_delta_mm": 8.185452315956354e-11,
+      "volume_delta_mm3": 2.0992010831832886e-06,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_PANEL_A.dxf",
+      "passed": true,
+      "measurements_mm": [
+        668.1166974171658,
+        425.0,
+        668.1166974171658,
+        71.53642571757132,
+        425.0,
+        71.53642571757132
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_WEDGE_A_1.step",
+      "passed": true,
+      "bbox_delta_mm": 1.1368683772161603e-12,
+      "volume_delta_mm3": 1.1059455573558807e-09,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_WEDGE_A_1.dxf",
+      "passed": true,
+      "measurements_mm": [
+        640.0000000000001,
+        22.0,
+        640.0000000000001,
+        53.67524205246116,
+        22.0,
+        53.67524205246116
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_WEDGE_A_2.step",
+      "passed": true,
+      "bbox_delta_mm": 1.1368683772161603e-12,
+      "volume_delta_mm3": 1.1059455573558807e-09,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_WEDGE_A_2.dxf",
+      "passed": true,
+      "measurements_mm": [
+        640.0000000000001,
+        22.0,
+        640.0000000000001,
+        53.67524205246116,
+        22.0,
+        53.67524205246116
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_PANEL_B.step",
+      "passed": true,
+      "bbox_delta_mm": 8.185452315956354e-11,
+      "volume_delta_mm3": 2.0992010831832886e-06,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_PANEL_B.dxf",
+      "passed": true,
+      "measurements_mm": [
+        668.1166974171658,
+        425.0,
+        668.1166974171658,
+        71.53642571757132,
+        425.0,
+        71.53642571757132
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_WEDGE_B_1.step",
+      "passed": true,
+      "bbox_delta_mm": 1.1368683772161603e-12,
+      "volume_delta_mm3": 1.1059455573558807e-09,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_WEDGE_B_1.dxf",
+      "passed": true,
+      "measurements_mm": [
+        640.0000000000001,
+        22.0,
+        640.0000000000001,
+        53.67524205246116,
+        22.0,
+        53.67524205246116
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_WEDGE_B_2.step",
+      "passed": true,
+      "bbox_delta_mm": 1.1368683772161603e-12,
+      "volume_delta_mm3": 1.1059455573558807e-09,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_WEDGE_B_2.dxf",
+      "passed": true,
+      "measurements_mm": [
+        640.0000000000001,
+        22.0,
+        640.0000000000001,
+        53.67524205246116,
+        22.0,
+        53.67524205246116
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_HUB_HAMMOND_1550WJ.step",
+      "passed": true,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_HUB_HAMMOND_1550WJ.dxf",
+      "passed": true,
+      "measurements_mm": [
+        275.0,
+        175.0,
+        275.0,
+        66.60000000000002,
+        175.0,
+        66.60000000000002
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_HUB_CARRIER.step",
+      "passed": true,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_HUB_CARRIER.dxf",
+      "passed": true,
+      "measurements_mm": [
+        400.0,
+        175.0,
+        400.0,
+        154.10000000000002,
+        175.0,
+        154.10000000000002
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_SHADE_ROOF.step",
+      "passed": true,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_SHADE_ROOF.dxf",
+      "passed": true,
+      "measurements_mm": [
+        375.0,
+        275.0,
+        375.0,
+        1.5,
+        275.0,
+        1.5
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_SHADE_HANGER_1.step",
+      "passed": true,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_SHADE_HANGER_1.dxf",
+      "passed": true,
+      "measurements_mm": [
+        4.0,
+        10.0,
+        4.0,
+        8.0,
+        10.0,
+        8.0
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_SHADE_HANGER_2.step",
+      "passed": true,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_SHADE_HANGER_2.dxf",
+      "passed": true,
+      "measurements_mm": [
+        4.0,
+        10.0,
+        4.0,
+        8.0,
+        10.0,
+        8.0
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_SINK_OCCUPANCY_NOT_FINS.step",
+      "passed": true,
+      "bbox_delta_mm": 5.684341886080802e-14,
+      "volume_delta_mm3": 4.656612873077393e-10,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_SINK_OCCUPANCY_NOT_FINS.dxf",
+      "passed": true,
+      "measurements_mm": [
+        273.812,
+        95.75800000000004,
+        273.812,
+        76.19999999999999,
+        95.75800000000004,
+        76.19999999999999
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_SINK_OUTLET_AIR_ALLOCATION.step",
+      "passed": true,
+      "bbox_delta_mm": 5.684341886080802e-14,
+      "volume_delta_mm3": 6.984919309616089e-10,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_SINK_OUTLET_AIR_ALLOCATION.dxf",
+      "passed": true,
+      "measurements_mm": [
+        273.812,
+        95.75800000000004,
+        273.812,
+        50.0,
+        95.75800000000004,
+        50.0
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_CROSS_BOLT_ALLOCATION_1.step",
+      "passed": true,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.7284841053187847e-12,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_CROSS_BOLT_ALLOCATION_1.dxf",
+      "passed": true,
+      "measurements_mm": [
+        104.0,
+        10.0,
+        104.0,
+        10.0,
+        10.0,
+        10.0
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_CROSS_BOLT_ALLOCATION_2.step",
+      "passed": true,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 2.7284841053187847e-12,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_CROSS_BOLT_ALLOCATION_2.dxf",
+      "passed": true,
+      "measurements_mm": [
+        104.0,
+        10.0,
+        104.0,
+        10.0,
+        10.0,
+        10.0
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_MAST_SOCKET.step",
+      "passed": true,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 6.9267116487026215e-09,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_MAST_SOCKET.dxf",
+      "passed": true,
+      "measurements_mm": [
+        140.0,
+        140.0,
+        140.0,
+        120.00000020000004,
+        140.0,
+        120.00000020000004
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_POLE_60MM.step",
+      "passed": true,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 7.078051567077637e-08,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_POLE_60MM.dxf",
+      "passed": true,
+      "measurements_mm": [
+        60.0000002,
+        60.0000002,
+        60.0000002,
+        6900.0000002,
+        60.00000019999999,
+        6900.0000002
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_SEABED_FOOTING_PLATE.step",
+      "passed": true,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_SEABED_FOOTING_PLATE.dxf",
+      "passed": true,
+      "measurements_mm": [
+        500.0,
+        500.0,
+        500.0,
+        12.0,
+        500.0,
+        12.0
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_CABLE_ROUTE_ALLOCATION_A.step",
+      "passed": true,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 3.637978807091713e-12,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_CABLE_ROUTE_ALLOCATION_A.dxf",
+      "passed": true,
+      "measurements_mm": [
+        8.0,
+        8.0,
+        8.0,
+        180.0,
+        8.0,
+        180.0
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_CABLE_ROUTE_ALLOCATION_B.step",
+      "passed": true,
+      "bbox_delta_mm": 0.0,
+      "volume_delta_mm3": 3.637978807091713e-12,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_CABLE_ROUTE_ALLOCATION_B.dxf",
+      "passed": true,
+      "measurements_mm": [
+        8.0,
+        8.0,
+        8.0,
+        180.0,
+        8.0,
+        180.0
+      ]
+    },
+    {
+      "id": "step_roundtrip:SV3_FLOAT_COLLAR.step",
+      "passed": true,
+      "bbox_delta_mm": 7.617018127348274e-12,
+      "volume_delta_mm3": 7.152557373046875e-06,
+      "solids": 1
+    },
+    {
+      "id": "dxf_roundtrip:SV3_FLOAT_COLLAR.dxf",
+      "passed": true,
+      "measurements_mm": [
+        1060.0,
+        1280.0,
+        1060.0,
+        300.0,
+        1280.0,
+        300.0
+      ]
+    },
+    {
+      "id": "step_roundtrip:SURFACE_V3_POLE.step",
+      "passed": true,
+      "bbox_delta_mm": 9.094947017729282e-13,
+      "volume_delta_mm3": 6.198883056640625e-06,
+      "solids": 16
+    },
+    {
+      "id": "dxf_roundtrip:SURFACE_V3_POLE.dxf",
+      "passed": true,
+      "measurements_mm": [
+        720.0,
+        940.0,
+        720.0,
+        6995.536425717572,
+        940.0,
+        6995.536425717572
+      ]
+    },
+    {
+      "id": "step_roundtrip:SURFACE_V3_FLOAT.step",
+      "passed": true,
+      "bbox_delta_mm": 8.412825991399586e-12,
+      "volume_delta_mm3": 8.046627044677734e-06,
+      "solids": 15
+    },
+    {
+      "id": "dxf_roundtrip:SURFACE_V3_FLOAT.dxf",
+      "passed": true,
+      "measurements_mm": [
+        1060.0,
+        1280.0,
+        1060.0,
+        383.5364257175713,
+        1280.0,
+        383.5364257175713
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "SURFACE_V3.glb",
+      "sha256": "fc981c9fe7296d190f5f9bdd152e757eac7d708b26ca38758456854f4331487f",
+      "bytes": 199052
+    },
+    {
+      "path": "allocations/SV3_CABLE_ROUTE_ALLOCATION_A.step",
+      "sha256": "c4e3f66ecf36d82734c78b94c251420e6dd48883857fd6ab6d41b589a090a2ab",
+      "bytes": 7280
+    },
+    {
+      "path": "allocations/SV3_CABLE_ROUTE_ALLOCATION_B.step",
+      "sha256": "d76d655b908dcbbf4347ceb1880fba76778acf12b2482bcb5caabd65ad407221",
+      "bytes": 7272
+    },
+    {
+      "path": "allocations/SV3_CROSS_BOLT_ALLOCATION_1.step",
+      "sha256": "85e9e6999e5c4a25614259233a3797b1e7954e9636490d5af9e9ba21fd310e48",
+      "bytes": 7292
+    },
+    {
+      "path": "allocations/SV3_CROSS_BOLT_ALLOCATION_2.step",
+      "sha256": "d421420c0ea0a5b1736f742c0277232a97b34e84640ed65eddb64f08bcce8540",
+      "bytes": 7292
+    },
+    {
+      "path": "allocations/SV3_SINK_OCCUPANCY_NOT_FINS.step",
+      "sha256": "ce184164a1f98b53d9068ecacb40eec1164e0b989d0624d9ecc125148bc0e427",
+      "bytes": 17405
+    },
+    {
+      "path": "allocations/SV3_SINK_OUTLET_AIR_ALLOCATION.step",
+      "sha256": "a44ca4cf7b0d9165a8dc5b7c958789210fd494a4ee6897c50c6808a9b43e42be",
+      "bytes": 17410
+    },
+    {
+      "path": "drawings/SURFACE_V3_FLOAT.dxf",
+      "sha256": "dcce0118e925f59947da91357c878e350140579af8b3f9edbb84b6d1e7d655eb",
+      "bytes": 201224
+    },
+    {
+      "path": "drawings/SURFACE_V3_POLE.dxf",
+      "sha256": "56a3312fbc3ee73e5b5a57f51d75378cd4bcb86e95c8c76119827631706b8f78",
+      "bytes": 249806
+    },
+    {
+      "path": "drawings/SV3_CABLE_ROUTE_ALLOCATION_A.dxf",
+      "sha256": "209e693ac55a3208ff6542148882d0371a96a99b3b4d4d178ab9e1e0d531250d",
+      "bytes": 31185
+    },
+    {
+      "path": "drawings/SV3_CABLE_ROUTE_ALLOCATION_B.dxf",
+      "sha256": "cf931857d737b98e435db5c12e4660850ff12016e3b4387e62e7d239356b6f51",
+      "bytes": 31185
+    },
+    {
+      "path": "drawings/SV3_CROSS_BOLT_ALLOCATION_1.dxf",
+      "sha256": "2793580e49b89d58a69d7888a52adc4b11dc2a072e9db43e705337e44dd6ae47",
+      "bytes": 31241
+    },
+    {
+      "path": "drawings/SV3_CROSS_BOLT_ALLOCATION_2.dxf",
+      "sha256": "326f3c5dd266b2d893bc30edda3bc3e649c29b7d686c4ddf639bb0bb6f81c3e9",
+      "bytes": 31241
+    },
+    {
+      "path": "drawings/SV3_FLOAT_COLLAR.dxf",
+      "sha256": "e25a3072377cc5a94fa8b4c7a81d7a9fa022bf07fb8175a08ba415143d7f1dab",
+      "bytes": 33597
+    },
+    {
+      "path": "drawings/SV3_HUB_CARRIER.dxf",
+      "sha256": "a069b3d410544fabdba41095946553c138c83a56e6ab121b11ab5766fa201a68",
+      "bytes": 37205
+    },
+    {
+      "path": "drawings/SV3_HUB_HAMMOND_1550WJ.dxf",
+      "sha256": "2ab0fd52b3d6451aa7990b99975a0d116b46fcc35745fe1491f1e7cee64bb4cd",
+      "bytes": 31265
+    },
+    {
+      "path": "drawings/SV3_MAST_SOCKET.dxf",
+      "sha256": "d40548b00eef5c0726d219b6728001f5525ba51258d394c0a32ac5ef015ccef7",
+      "bytes": 122416
+    },
+    {
+      "path": "drawings/SV3_OPEN_BOTTOM_SKIRT.dxf",
+      "sha256": "84c3e3940d5d2e92b9dc8f7a8a82849b8cd67664b62368f8d475462d3c4ac5f6",
+      "bytes": 33488
+    },
+    {
+      "path": "drawings/SV3_PANEL_A.dxf",
+      "sha256": "28f9a4214b0f9f1429a57c53f2d8332162964852047f336c3824968a6dade0e5",
+      "bytes": 33822
+    },
+    {
+      "path": "drawings/SV3_PANEL_B.dxf",
+      "sha256": "ec7d49960bb15ed87beaf3d357082dd45c0648969e094ccc393561bf16f5e9a7",
+      "bytes": 33822
+    },
+    {
+      "path": "drawings/SV3_POLE_60MM.dxf",
+      "sha256": "d1ac33e626dc83ea83268191a6f15b268ac49ad5902cad394be9382932737538",
+      "bytes": 85718
+    },
+    {
+      "path": "drawings/SV3_SEABED_FOOTING_PLATE.dxf",
+      "sha256": "66c2d59a4f1f9504eac6668fa419ccad928b0be4eced189a31f49b698c5a5e3a",
+      "bytes": 30136
+    },
+    {
+      "path": "drawings/SV3_SHADE_HANGER_1.dxf",
+      "sha256": "5b28f1ab6b4476340165d88ee7d9eaf9609c6de7ab1bbe3d0a593393ac4c1195",
+      "bytes": 30248
+    },
+    {
+      "path": "drawings/SV3_SHADE_HANGER_2.dxf",
+      "sha256": "0175eb4e3537bea56d1c1a800a3a0985dc3904b0c6d7e3e92d1fd35514af4c2c",
+      "bytes": 30248
+    },
+    {
+      "path": "drawings/SV3_SHADE_ROOF.dxf",
+      "sha256": "8f8a334ecded1bfbd4672b392b3b6b30e0094f18c18b24f3af16c9d773645571",
+      "bytes": 30795
+    },
+    {
+      "path": "drawings/SV3_SINK_OCCUPANCY_NOT_FINS.dxf",
+      "sha256": "2b5cf9158c1ece27e07ade1bd3ff6623a5e99a38fe22b188789e73732fb87049",
+      "bytes": 31395
+    },
+    {
+      "path": "drawings/SV3_SINK_OUTLET_AIR_ALLOCATION.dxf",
+      "sha256": "b1bd7cbe1273b8d12f59973e1bcd14a2fcbed2f0cef7a27367ee7ac3cfc1a808",
+      "bytes": 31167
+    },
+    {
+      "path": "drawings/SV3_TRAY_PLATE.dxf",
+      "sha256": "b7a6472dd074b3da872922b83b7c87511d0f215b73f86a9ac9849ad9381963b7",
+      "bytes": 49993
+    },
+    {
+      "path": "drawings/SV3_WEDGE_A_1.dxf",
+      "sha256": "8b747caa7f9a7a504269cf3bf14417d044ffa979864abf4533f35bf87174fec2",
+      "bytes": 32971
+    },
+    {
+      "path": "drawings/SV3_WEDGE_A_2.dxf",
+      "sha256": "82794c1529a989dd63a9288ad293e3895efb6ff8eff3d67c057b82032834598e",
+      "bytes": 32971
+    },
+    {
+      "path": "drawings/SV3_WEDGE_B_1.dxf",
+      "sha256": "c5d5b8ad4bc4014cff1678274af7f7af236a660602c6471c91c399ffe0655b99",
+      "bytes": 32971
+    },
+    {
+      "path": "drawings/SV3_WEDGE_B_2.dxf",
+      "sha256": "86bb4b85c83510eb32fea4cfbc2fcbf9d91dceb74f4950273d0a8712b7ba0811",
+      "bytes": 32971
+    },
+    {
+      "path": "hierarchy.json",
+      "sha256": "69c609179c62ac5581d9e2a048c835d56a7c2f216a1af1273785dadb58eb8b57",
+      "bytes": 121238
+    },
+    {
+      "path": "interface-used.json",
+      "sha256": "29f6f828c17575c5f7285613d7b1743ba7cb77a0f6d4551766e1532ff36b9fd6",
+      "bytes": 17385
+    },
+    {
+      "path": "mass-displacement.json",
+      "sha256": "f1102609d633a3cfa722c0f0724f320341897e5624c3dd72cc54b257569588e0",
+      "bytes": 9687
+    },
+    {
+      "path": "step/SURFACE_V3_FLOAT.step",
+      "sha256": "7b35eff7cb45ba5effa88b07a16501613e5e5cfea0a2f965ee96af90fb4a1235",
+      "bytes": 532687
+    },
+    {
+      "path": "step/SURFACE_V3_POLE.step",
+      "sha256": "5a0240d5c33264b4c585cdf46c7c9fd147a51d3b9d9c647e2038403790524ac8",
+      "bytes": 740459
+    },
+    {
+      "path": "step/SV3_FLOAT_COLLAR.step",
+      "sha256": "e3e12e88ab79f1d143d3297ac9accd313bc4c4e2351991eb1e324776eb5efe00",
+      "bytes": 31335
+    },
+    {
+      "path": "step/SV3_HUB_CARRIER.step",
+      "sha256": "7092a46284d5011ccecbe414614c38fdb9108bacaef1dc4776198ec5f3662a55",
+      "bytes": 44162
+    },
+    {
+      "path": "step/SV3_HUB_HAMMOND_1550WJ.step",
+      "sha256": "29b80de9b9b544cfcdeedf2cdf67d251e334cfd0cc9c6747a6ee35391275136b",
+      "bytes": 17263
+    },
+    {
+      "path": "step/SV3_MAST_SOCKET.step",
+      "sha256": "80b352516a7fc3a241467253a7fd0288c97a7b2a38185529ec6337df2edd9305",
+      "bytes": 223736
+    },
+    {
+      "path": "step/SV3_OPEN_BOTTOM_SKIRT.step",
+      "sha256": "f7bb1a6fc885783bae83162963576da180ea44effd9f818546ed75f8707ef4b7",
+      "bytes": 30735
+    },
+    {
+      "path": "step/SV3_PANEL_A.step",
+      "sha256": "72423d4a794bac3e88308de46d21faec96c147b40eccfc5728fe8fc5205b2ae4",
+      "bytes": 18267
+    },
+    {
+      "path": "step/SV3_PANEL_B.step",
+      "sha256": "70f401c56b7ae2c1e5e55c3e95e9f7236f8aa4b2e7d9b30cae54890e00a4461d",
+      "bytes": 18233
+    },
+    {
+      "path": "step/SV3_POLE_60MM.step",
+      "sha256": "bac9c55af70990050a809649c5a0c754809954e993350344c365108c5765078d",
+      "bytes": 221545
+    },
+    {
+      "path": "step/SV3_SEABED_FOOTING_PLATE.step",
+      "sha256": "de01896697f08165626b052ec91e02f15bc49b000a2b81cf7ac30405361fa27c",
+      "bytes": 17321
+    },
+    {
+      "path": "step/SV3_SHADE_HANGER_1.step",
+      "sha256": "3758ee9486a361b9eb39ace7bd6c149499e17997484df26dbf550aa22bbbd1ae",
+      "bytes": 17266
+    },
+    {
+      "path": "step/SV3_SHADE_HANGER_2.step",
+      "sha256": "f9a1e5d8c9bdf4396505a4059f6d26ca9ece087a5b4a44effc2e7480ee009983",
+      "bytes": 17240
+    },
+    {
+      "path": "step/SV3_SHADE_ROOF.step",
+      "sha256": "731bc1f91dde81b598f9c9034f7128eb9509021f1d5f4877931b901e1dda5bed",
+      "bytes": 17304
+    },
+    {
+      "path": "step/SV3_TRAY_PLATE.step",
+      "sha256": "a0efc19a9182060334ef35ae9e8ca386f11c63a53bf2b558ab3ce909927dcca6",
+      "bytes": 28097
+    },
+    {
+      "path": "step/SV3_WEDGE_A_1.step",
+      "sha256": "3cbff96d7851e7b41d2194b20b3e1732cb552b301e35cfd1643eac8534f91e3f",
+      "bytes": 17848
+    },
+    {
+      "path": "step/SV3_WEDGE_A_2.step",
+      "sha256": "cf65e3acdd40658e2c8d3b27678c116c2b61e5eeb82be5cf9bd5a02b2dc76ba7",
+      "bytes": 17822
+    },
+    {
+      "path": "step/SV3_WEDGE_B_1.step",
+      "sha256": "bf8c37ef48a44e3dc590a8c87efc4d0d0228e8fe0ed9e511d01b3f2fee0b502c",
+      "bytes": 17796
+    },
+    {
+      "path": "step/SV3_WEDGE_B_2.step",
+      "sha256": "de2e499fbad41d8f602fb0245343b7cd25b60bf47e680badd63f4815ef357663",
+      "bytes": 17822
+    }
+  ]
+}

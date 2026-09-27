@@ -1,0 +1,1492 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Initialize Monorepo Structure and Makefile",
+        "description": "Create the complete monorepo directory structure as defined in the PRD (apps/, firmware/, libs/, etc.) and set up a top-level Makefile for common developer shortcuts.",
+        "details": "Use shell commands to create the directory tree: `mkdir -p apps/{trident,nereid,siren,aquilon,aeolus-api,aeolus-ui} firmware/esp-sentinel libs/{proto-py,proto-ts,dsp} models ops/{docker,compose} configs/{sites,programs,vision,lorawan} ...`. Create a `Makefile` with initial targets like `dev`, `up`, `logs`, `down` that delegate to `docker-compose` within the `ops/compose` directory. Add standard files like `.gitignore`, `README.md`, `LICENSE`.",
+        "testStrategy": "Verify that `ls -R` shows the correct directory structure. Run `make up` and `make down` to ensure the Makefile targets are wired correctly, even with empty services.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "[proto-py] Define Core Pydantic Schemas and MQTT Topics",
+        "description": "In the `libs/proto-py` directory, create Pydantic models for the JSON payloads specified in the PRD (telemetry, vision event, audio command). Also create a module to centrally define the MQTT topic string templates.",
+        "details": "Create `libs/proto-py/schemas.py` with Pydantic classes like `SensorPayload`, `VisionEventPayload`, `AudioCommandPayload`. Use Python's `Enum` for fields with fixed values. Create `libs/proto-py/topics.py` with functions to generate valid topic strings, e.g., `def get_telemetry_topic(site, zone, device): return f'poseidon/{site}/{zone}/{device}/telemetry'`. This library will be a shared dependency for all Python services.",
+        "testStrategy": "Write unit tests using pytest for the Pydantic models to ensure they correctly parse and validate example JSON payloads from the PRD. Test the topic generation functions to confirm they produce the correct strings.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 3,
+        "title": "[ops] Setup Cloud Dev Stack with MQTT Broker",
+        "description": "Create a `docker-compose.cloud.dev.yml` file in `ops/compose/` to launch a development instance of an MQTT broker (EMQX or Mosquitto) with TLS and WebSocket support.",
+        "details": "The compose file should define a service for `emqx`. Use a standard EMQX image. Configure it to expose ports 1883 (MQTT), 8883 (MQTTS), and 8083 (WebSockets). Generate self-signed certificates for local development and mount them into the container for TLS. Include a basic `emqx.conf` to enable the required listeners.",
+        "testStrategy": "Run `docker compose -f ops/compose/cloud.dev.yml up`. Use an MQTT client like `mqttx` or `mosquitto_pub/sub` to connect to the broker on port 8883 with TLS and verify that messages can be published and subscribed successfully. Also test the WebSocket connection from a simple HTML page.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 4,
+        "title": "[ops] Setup CI Pipeline with Linting and Docker Builds",
+        "description": "Configure GitHub Actions in `.github/workflows/` to run on every push. The pipeline should lint all code (Python, C++, TS) and build multi-arch Docker images for the hub services.",
+        "details": "Create `ci.yml`. Use a matrix strategy. For Python, use `ruff` and `mypy`. For firmware, use `platformio check`. For UI, use `eslint`. Use `docker/setup-qemu-action` and `docker/setup-buildx-action` to enable multi-arch builds. The build step should target `linux/amd64` and `linux/arm64`. Initially, these builds can be for stub services.",
+        "testStrategy": "Push a commit with correctly formatted code and ensure the workflow passes. Push another commit with a linting error and confirm the workflow fails at the linting step. Check the GitHub Actions logs to verify that both `amd64` and `arm64` image variants are being built.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "[siren] Implement Basic WAV Playback Service",
+        "description": "Create the `siren` service to play a pre-curated WAV file from a playlist in response to an MQTT command. Use GStreamer or a similar Python library for audio playback via ALSA.",
+        "details": "In `apps/siren/main.py`, create a main async function. Use the `paho-mqtt` library to connect to the MQTT broker. Subscribe to a command topic like `poseidon/+/+/audio/cmd/play_wav`. On message receipt, use a library like `PyGObject` for GStreamer to create a playback pipeline: `filesrc location=... ! wavparse ! audioconvert ! alsasink`. The service should be containerized with a Dockerfile.",
+        "testStrategy": "Run the `siren` container on a Pi with a speaker connected. From another machine, publish an MQTT message with a valid WAV filename. Verify that the audio plays correctly through the speaker. Check service logs for connection and playback status.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 6,
+        "title": "[nereid] Implement CPU-based Motion Detection",
+        "description": "Create the `nereid` service that captures video from a CSI/USB camera, detects motion using a basic algorithm (e.g., frame differencing), and publishes a `vision/event` message via MQTT.",
+        "details": "In `apps/nereid/main.py`, use `opencv-python` to create a capture loop (`cv2.VideoCapture`). For motion detection, maintain a running average of frames (`cv2.accumulateWeighted`) and find contours in the difference between the current frame and the average. If a contour exceeds a certain size, publish a JSON payload to the `poseidon/{site}/{zone}/vision/event` topic using `paho-mqtt`.",
+        "testStrategy": "Run the `nereid` container on a Pi with a camera. Use `mqttx` to subscribe to the `vision/event` topic. Wave a hand in front of the camera and verify that a motion event JSON message is published. Check logs for FPS and detection info.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 7,
+        "title": "[trident] Implement Basic Vision-to-Audio Orchestration",
+        "description": "Create the `trident` orchestrator service that subscribes to `vision/event` from NEREID and, upon receiving a motion event, publishes a command to SIREN to trigger an audio playback.",
+        "details": "In `apps/trident/main.py`, create an MQTT client that subscribes to `poseidon/+/+/vision/event`. In the message handler, parse the event. If the event meets certain criteria (e.g., `event == 'motion'`), construct an audio command payload and publish it to `poseidon/{site}/{zone}/audio/cmd/play_wav` (or a similar topic that SIREN is listening to). This service wires the two components together.",
+        "testStrategy": "Run `trident`, `nereid`, and `siren` services together. Trigger a motion event with the camera. Verify that audio plays from the speaker. This is the first end-to-end integration test of the reactive loop. Monitor all service logs and MQTT traffic.",
+        "priority": "high",
+        "dependencies": [
+          6
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 8,
+        "title": "[ops] Create Docker Compose for Hub Services",
+        "description": "Create a `hub.dev.yml` file in `ops/compose/` that defines and networks the `trident`, `nereid`, and `siren` services for local development on a Raspberry Pi.",
+        "details": "The compose file will have three services. Each service will use `build: { context: ../.., dockerfile: ops/docker/app.Dockerfile, target: <app_name> }`. Network them together using a bridge network. Mount the `configs` directory as a volume. For `nereid` and `siren`, pass device mappings (`/dev/video0`, `/dev/snd`) to the containers. Use environment variables for configuration (e.g., MQTT broker address).",
+        "testStrategy": "On a Raspberry Pi with camera and audio hardware, navigate to `ops/compose/` and run `docker compose -f hub.dev.yml up`. Verify that all three containers start, connect to each other and the MQTT broker, and that the full motion-to-audio flow works.",
+        "priority": "high",
+        "dependencies": [
+          7
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 9,
+        "title": "[aeolus-ui] Create Minimal Live Event Viewer",
+        "description": "Bootstrap a Next.js application in `apps/aeolus-ui/` that connects to the cloud MQTT broker via WebSockets and displays a raw, real-time feed of all messages published under `poseidon/#`.",
+        "details": "Use `create-next-app` to initialize the project. Use a library like `mqtt.js` in a React client component or a custom hook (`useMqtt`). In a `useEffect` hook, connect to the broker's WebSocket port (e.g., `ws://<broker_ip>:8083`). Subscribe to `poseidon/#`. Store incoming messages in a React state array and render them as a simple list on the page.",
+        "testStrategy": "Run the Next.js dev server. Open the browser page. Trigger motion events on the Pi. Verify that `vision/event` and `audio/cmd` messages appear on the UI in real-time. Check the browser's developer console for connection errors.",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 10,
+        "title": "[siren] Implement Hard Safety Limiter for Audio Output",
+        "description": "Add a non-bypassable audio limiter to the SIREN service to enforce maximum RMS and peak output levels, preventing dangerously loud sounds.",
+        "details": "Within the audio processing pipeline (whether GStreamer or custom numpy), before the final output sink, insert a custom processing block. This block will analyze audio chunks in real-time. Use a sliding window to calculate the RMS level. If RMS or peak sample value exceeds the configured `max_rms` or `max_peak` from the program config, apply a gain reduction (e.g., dynamic range compression or hard clipping). Also add a compile-time constant as a final, absolute failsafe.",
+        "testStrategy": "Create a unit test that feeds a high-amplitude sine wave into the limiter function and asserts that the output amplitude is clipped at the configured threshold. For HIL testing, play a loud test file and measure the electrical output with an oscilloscope to verify it does not exceed the expected voltage corresponding to the safety limit.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 11,
+        "title": "[esp-sentinel] Implement Basic Firmware with LoRaWAN OTAA",
+        "description": "Create the PlatformIO project for the ESP32-based REEF node. Implement the basic firmware to join a LoRaWAN network (e.g., ChirpStack) via OTAA and enter a deep sleep cycle.",
+        "details": "In `firmware/esp-sentinel`, initialize a new PlatformIO project targeting a Heltec/TTGO board. Use the `MCCI LoRaWAN LMIC` library. In `main.cpp`, define the `AppEUI`, `DevEUI`, and `AppKey`. Implement the LMIC event callback to handle `EV_JOINED`. After a successful join, send a simple 'hello' packet and then use `ESP.deepSleep()` to sleep for a configured interval.",
+        "testStrategy": "Flash the firmware to an ESP32 board. In the ChirpStack or TTS console, verify that the device join request is received and accepted. Check the device's activation status and last-seen timestamp in the network server UI. Monitor serial output for join success and sleep cycle logs.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 12,
+        "title": "[esp-sentinel] Add Sensor Reading and CBOR Payload Encoding",
+        "description": "Extend the REEF firmware to read data from temperature, light, and battery voltage sensors, and encode the data into a compact CBOR payload for uplink.",
+        "details": "Add libraries for relevant sensors (e.g., `Adafruit_BME280`, or simple analog reads for light/voltage). Before sleeping, read the sensor values. Use a CBOR library like `tinycbor` or `ArduinoJson` (with CBOR support) to create a binary payload. Map keys to short integers to save space (e.g., `t` for temperature). The payload should match the format described in the PRD.",
+        "testStrategy": "Flash the firmware. In the ChirpStack/TTS console, inspect the `up_data` field of an incoming frame. It should be a base64-encoded string. Decode this string and run it through a CBOR-to-JSON converter to verify that the sensor data is correctly structured and has plausible values.",
+        "priority": "high",
+        "dependencies": [
+          11
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 13,
+        "title": "[aquilon] Implement LoRaWAN-to-MQTT Bridge Service",
+        "description": "Create the `aquilon` service on the hub. It will subscribe to the LoRaWAN network server's MQTT stream, decode the CBOR payload from REEF nodes, and republish it as a structured JSON message on the main Poseidon MQTT bus.",
+        "details": "In `apps/aquilon/main.py`, connect to the ChirpStack MQTT broker. Subscribe to `application/+/device/+/event/up`. When a message arrives, extract the base64 `data` field and decode it. Use a Python CBOR library (e.g., `cbor2`) to decode the binary payload into a dictionary. Map the short keys (`t`, `lx`) to full names (`temp_c`, `lux`). Use the `proto-py` schemas to build a valid `SensorPayload` and publish it to the appropriate `poseidon/.../telemetry` topic.",
+        "testStrategy": "Run `aquilon` and have a REEF node sending data. Subscribe to `poseidon/#` on the main MQTT broker. Verify that for each LoRaWAN uplink, a corresponding JSON-formatted telemetry message appears on the correct topic. Check that the values are correctly decoded.",
+        "priority": "high",
+        "dependencies": [
+          12
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 14,
+        "title": "[aeolus] Setup TimescaleDB and Telemetry Ingestion",
+        "description": "Add TimescaleDB and a simple ingestion service to the cloud Docker Compose stack. The service will subscribe to telemetry topics and write the data into the database.",
+        "details": "Update `docker-compose.cloud.dev.yml` to include a `timescaledb/tsdb-ha` service. Create an SQL init script to define a hypertable for sensor data (e.g., `CREATE TABLE sensor_data (...)`). Create a small Python service (`aeolus-ingestor`) that uses `paho-mqtt` and `psycopg2`. It subscribes to `poseidon/+/+/+/telemetry` and executes an `INSERT` statement for each message.",
+        "testStrategy": "Start the cloud stack. Have a REEF node send data, which is bridged by AQUILON. Connect to the TimescaleDB instance using `psql` and run `SELECT * FROM sensor_data;`. Verify that new rows are appearing with the correct timestamps and sensor values.",
+        "priority": "medium",
+        "dependencies": [
+          13
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 15,
+        "title": "[nereid] Integrate EdgeTPU/TensorRT Inference Backend",
+        "description": "Upgrade NEREID to support accelerated object detection using Google Coral (EdgeTPU) or Jetson Nano (TensorRT), selectable via configuration.",
+        "details": "Abstract the detection logic. Create a base `Detector` class with a `detect` method. Implement subclasses: `CpuDetector` (existing logic), `EdgeTpuDetector` (using `pycoral` library), and `TensorRtDetector` (using `tensorrt` Python bindings). In `main.py`, read a config value (`vision.backend`) and instantiate the correct detector class. The Dockerfile will need to handle installing different dependencies based on the target architecture.",
+        "testStrategy": "On a Coral device, set `backend: edgetpu` and verify object detection works and is significantly faster than CPU. On a Jetson, set `backend: tensorrt` and verify the same. Measure the camera-to-audio latency (as per success metrics) for each backend and confirm it meets the target.",
+        "priority": "medium",
+        "dependencies": [
+          6
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 16,
+        "title": "[nereid] Implement Servo Lens Wiper Control",
+        "description": "Integrate control for a servo-driven lens wiper using a PCA9685 PWM driver. Expose a mechanism for TRIDENT to trigger a cleaning cycle.",
+        "details": "In `apps/nereid`, add the `adafruit-circuitpython-pca9685` library. Create a `Wiper` class that initializes the I2C connection and PCA9685 board. Implement a `sweep()` method that moves the servo from a min to max angle and back. Expose this via an MQTT topic (`.../cmd/clean_lens`) or an IPC/gRPC call that TRIDENT can invoke.",
+        "testStrategy": "On a Pi with a PCA9685 and servo connected, run the `nereid` service. Publish a command to the `clean_lens` topic. Verify that the servo performs a full sweep action. Ensure the I2C bus is enabled on the Pi (`raspi-config`).",
+        "priority": "medium",
+        "dependencies": [
+          6
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 17,
+        "title": "[trident] Implement YAML Configuration Loading and Application",
+        "description": "Enhance TRIDENT to load site, program, and vision configurations from the `/configs` directory. Use these configurations to dynamically control the behavior of all hub services.",
+        "details": "Use the `PyYAML` library. On startup, TRIDENT should read `configs/sites/{site}.yml` (where site is an env var). It should then publish these configurations on retained MQTT topics (e.g., `poseidon/{site}/config/vision`, `poseidon/{site}/config/audio`) for other services to consume. Implement a file watcher (`watchdog` library) to detect changes and re-publish configs for live updates.",
+        "testStrategy": "Start the hub stack. Modify a value in `vrsar-reef.yml`, for example `vision.motion_threshold`. Verify from the logs that TRIDENT detects the change and publishes the new config. Verify that NEREID logs show it has received and applied the new threshold.",
+        "priority": "high",
+        "dependencies": [
+          7
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 18,
+        "title": "[siren] Implement Parametric Audio Synthesis Engine",
+        "description": "Add capabilities to SIREN to synthesize dolphin clicks/whistles and sea-flora tones based on parameters from audio program configuration files.",
+        "details": "In `libs/dsp`, create Python functions using `numpy` and `scipy` for audio generation (e.g., `generate_click_burst`, `generate_glide`). In SIREN, when an audio program command is received, load the corresponding YAML/JSON file from `configs/programs`. Parse the `blocks` and call the DSP functions to generate the audio buffer on the fly. Stream this buffer to the audio sink, passing it through the safety limiter.",
+        "testStrategy": "Create unit tests for each DSP generator function, verifying the output waveform's properties (frequency, duration). Trigger a synthetic program via MQTT and record the audio output. Analyze the recording with an audio tool (e.g., Audacity) to confirm the signal matches the program's specification (clicks, sweeps, etc.).",
+        "priority": "medium",
+        "dependencies": [
+          10,
+          17
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 19,
+        "title": "[trident] Implement 4G Connectivity Watchdog and Failover",
+        "description": "Add a robust connectivity manager to TRIDENT that monitors the 4G HAT connection using ModemManager, handles automatic reconnections, and can failover to Wi-Fi/Ethernet if available.",
+        "details": "Create a new asyncio task in TRIDENT. This task will periodically shell out to `mmcli -m any` to check the modem state. If the state is 'disconnected' or 'registered' but not 'connected', it should attempt to bring the connection up. It can also check network reachability by pinging a known host. If 4G fails and a Wi-Fi/Ethernet interface has a route, it should be used automatically. Log all connectivity state changes.",
+        "testStrategy": "Run the hub on a Pi with a 4G HAT. Disconnect the 4G antenna to simulate signal loss. Verify that the watchdog detects the disconnection and logs reconnection attempts. Reconnect the antenna and confirm it re-establishes a connection. Test failover by enabling Wi-Fi, then stopping the modem service; verify MQTT traffic continues over Wi-Fi.",
+        "priority": "high",
+        "dependencies": [
+          17
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 20,
+        "title": "[aeolus-api] Implement Device Registry and Config Endpoints",
+        "description": "Develop the FastAPI application (`aeolus-api`) with CRUD endpoints for device registration and endpoints for managing and retrieving configuration bundles.",
+        "details": "Create a FastAPI app in `apps/aeolus-api`. Use a PostgreSQL database (could be the same instance as TimescaleDB) for storing device registry info. Create Pydantic models for API requests/responses. Implement routes: `POST /devices`, `GET /devices/{id}`, `GET /configs/{site}`, `PUT /configs/{site}`. The config endpoints will allow a UI to push new YAML/JSON configs which can then be fetched by hubs.",
+        "testStrategy": "Run the API service locally. Use `curl` or the auto-generated Swagger UI (`/docs`) to test each endpoint. Create a device, retrieve it, update it, and delete it. Upload a new site configuration and then fetch it to verify it was stored correctly.",
+        "priority": "medium",
+        "dependencies": [
+          14
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 21,
+        "title": "[aeolus-ui] Develop Interactive Dashboard with Map and Controls",
+        "description": "Expand the Next.js dashboard to include a map view of sites (using Leaflet), device status cards, telemetry graphs, and UI controls for triggering audio programs or a kill-switch.",
+        "details": "Integrate `react-leaflet` to display devices on a map, fetching locations from the `/devices` API endpoint. Create a `DeviceCard` component that shows live status (from MQTT) and battery level graphs (querying a new API endpoint that reads from TimescaleDB). Add buttons that, when clicked, call API endpoints on `aeolus-api` which in turn publish the appropriate `.../cmd/...` MQTT messages.",
+        "testStrategy": "Launch the full cloud stack and a hub. Verify devices appear on the map. Check that telemetry graphs update. Click the 'Play Program' button for a site and verify the command is sent and the hub's speaker plays the audio. Test the remote kill-switch button.",
+        "priority": "medium",
+        "dependencies": [
+          9,
+          20
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 22,
+        "title": "[ops] Create Pi Hub Bootstrap Script",
+        "description": "Develop a comprehensive bootstrap script (Bash or Ansible) to provision a fresh Raspberry Pi OS image for field deployment.",
+        "details": "Create `ops/ansible/bootstrap.yml` or `scripts/bootstrap.sh`. The script must perform all steps from the PRD: 1) Install Docker, ModemManager, PPP. 2) Enable hardware interfaces (I2C, SPI, camera) using `raspi-config` non-interactively. 3) Configure Docker to start on boot. 4) Clone the repo. 5) Provision device-specific secrets/certs. 6) Start the Docker Compose stack using a `hub.prod.yml` file.",
+        "testStrategy": "Flash a fresh Raspberry Pi OS image to an SD card. Run the bootstrap script on it. After it completes, verify that all services are running (`docker ps`), the 4G connection is active (`mmcli -m any`), and the hub is publishing data to the cloud. The process should require no manual intervention.",
+        "priority": "high",
+        "dependencies": [
+          8
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 23,
+        "title": "[trident] Implement Remote Kill-Switch Command",
+        "description": "Implement the critical safety feature for a remote kill-switch. TRIDENT must listen on a specific MQTT topic and, upon receiving a signed command, immediately terminate all running services.",
+        "details": "In TRIDENT, subscribe to `poseidon/{site}/hub/cmd/killswitch`. The message payload should be a signed JWT or similar token to prevent unauthorized use. On receipt, TRIDENT will first attempt a graceful shutdown of other services (e.g., by sending them a termination signal via IPC), with a special, immediate command to SIREN to stop audio. After a short timeout, it will execute `docker compose down` or `systemctl stop` for all services, including itself.",
+        "testStrategy": "With the hub running, publish a signed kill-switch command from the AEOLUS-API (or manually for testing). Verify that all Docker containers on the Pi are stopped immediately. Especially confirm that any playing audio is cut off instantly.",
+        "priority": "high",
+        "dependencies": [
+          17
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 24,
+        "title": "[nereid] Implement Droplet/Smudge Detection",
+        "description": "Develop a small classifier model to detect water droplets or smudges on the camera lens and integrate it into the NEREID pipeline to trigger the lens wiper.",
+        "details": "Collect a small dataset of 'clean' vs 'smudged' images. Train a simple CNN model (e.g., MobileNetV2-based) using TensorFlow/Keras and convert it to TFLite. In NEREID, add a step after camera capture to periodically run this classifier on the image. If the 'smudged' class score exceeds a threshold, invoke the `Wiper.sweep()` method or publish an internal command to trigger the cleaning cycle.",
+        "testStrategy": "Run NEREID with the new model. Spray a fine mist of water on the camera lens. Verify that the service logs detect a 'smudge' and that the servo wiper is triggered automatically. Check for false positives on clear images.",
+        "priority": "low",
+        "dependencies": [
+          15,
+          16
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 25,
+        "title": "[docs] Author Field Runbook and SPL Calibration Guide",
+        "description": "Create initial versions of key operational documents: a field deployment runbook and a guide for performing sound pressure level (SPL) calibration.",
+        "details": "In `docs/`, create `runbook.md`. This should include a pre-flight checklist, step-by-step installation instructions, troubleshooting common issues (connectivity, power), and recovery procedures. Create `safety_calibration.md`. This guide should detail the process of using a hydrophone and signal generator to measure the output SPL at various gain settings, creating a calibration curve to be stored in the site config. Emphasize the importance of this step for environmental safety.",
+        "testStrategy": "Have a team member who was not involved in writing the docs attempt to follow them to deploy a hub and perform a mock calibration. Identify any confusing or missing steps. The document should be clear enough for a field technician to use.",
+        "priority": "medium",
+        "dependencies": [
+          22,
+          10
+        ],
+        "status": "pending",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-11-07T19:40:38.697Z",
+      "updated": "2025-11-07T19:40:38.697Z",
+      "description": "Tasks for master context"
+    }
+  },
+  "crack-attack": {
+    "tasks": [
+      {
+        "id": 6,
+        "title": "Hardware Purchasing Plan and Component Selection",
+        "description": "Finalize the hardware purchasing plan based on the completed cost analysis in `hardware-components-cost-analysis.md`. This task involves reviewing the existing analysis, moving it to the official `HARDWARE.md` document, and securing approval for procurement.",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "details": "A comprehensive hardware cost analysis has been completed and is available in `hardware-components-cost-analysis.md`. This document details the 'Budget-Conscious' and 'Performance-Oriented' builds, including itemized BOMs and recommendations. This task is to formalize this analysis by transferring the key information into the official `HARDWARE.md` project document, ensuring it is ready for final review and approval. The goal is to produce a definitive guide for procurement based on the existing research.",
+        "testStrategy": "1. The `HARDWARE.md` file is created in the project root by summarizing and transferring the essential details from `hardware-components-cost-analysis.md`.\n2. The final document clearly presents the two build options, their itemized BOMs, and total costs.\n3. The comparative analysis and final recommendation from the source document are included and are clear.\n4. The power budget calculations are correctly transcribed.\n5. The final `HARDWARE.md` is peer-reviewed and approved by the project lead, officially concluding the hardware selection phase.",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create and Structure HARDWARE.md",
+            "description": "Create the initial `HARDWARE.md` file in the project root. Populate its structure using the analysis from `hardware-components-cost-analysis.md`.",
+            "dependencies": [],
+            "details": "Create the `HARDWARE.md` file in the project root. Structure it with sections for Introduction, Build Options (Budget and Performance), Comparative Analysis, Final Recommendation, and Bill of Materials. The content for these sections should be sourced from the existing `hardware-components-cost-analysis.md` document.",
+            "status": "pending",
+            "testStrategy": "Verify that `HARDWARE.md` exists in the repository and contains the defined top-level sections populated with content from the analysis document."
+          },
+          {
+            "id": 2,
+            "title": "Transcribe 'Budget-Conscious Demo' Build and BOM",
+            "description": "Transcribe the 'Budget-Conscious Demo' build details and Bill of Materials from `hardware-components-cost-analysis.md` into the `HARDWARE.md` document.",
+            "dependencies": [],
+            "details": "Copy the finalized component list, vendors, SKUs, and costs for the budget build from the analysis document into the appropriate section of `HARDWARE.md`. Ensure the formatting is clear and the total cost is accurately represented.",
+            "status": "pending",
+            "testStrategy": "Review the BOM in `HARDWARE.md` to ensure all components for the budget build are listed and match the source analysis document."
+          },
+          {
+            "id": 3,
+            "title": "Transcribe 'Performance-Oriented' Build and BOM",
+            "description": "Transcribe the 'Performance-Oriented' build details and Bill of Materials from `hardware-components-cost-analysis.md` into the `HARDWARE.md` document.",
+            "dependencies": [],
+            "details": "Copy the finalized component list, vendors, SKUs, and costs for the performance build from the analysis document into the appropriate section of `HARDWARE.md`. Ensure the formatting is clear and the total cost is accurately represented.",
+            "status": "pending",
+            "testStrategy": "Review the BOM in `HARDWARE.md` to ensure all components for the performance build are listed and match the source analysis document."
+          },
+          {
+            "id": 4,
+            "title": "Transcribe Comparative Analysis and Recommendations",
+            "description": "Add the comparative analysis and final recommendation from `hardware-components-cost-analysis.md` to `HARDWARE.md`.",
+            "dependencies": [],
+            "details": "Summarize and transfer the comparative analysis, trade-offs discussion, and final purchasing recommendation from `hardware-components-cost-analysis.md` into the `HARDWARE.md` file. The goal is to present a clear, actionable conclusion for the project lead.",
+            "status": "pending",
+            "testStrategy": "Verify the analysis in `HARDWARE.md` is clear and provides a well-reasoned recommendation based on the source document."
+          },
+          {
+            "id": 5,
+            "title": "Transcribe Power Budgets for Both Builds",
+            "description": "Document the power budgets for both builds in `HARDWARE.md` by transcribing them from the analysis document.",
+            "dependencies": [],
+            "details": "Transcribe the power consumption calculations from `hardware-components-cost-analysis.md` into a dedicated section in `HARDWARE.md`. Verify that the final document clearly shows the power budget for each configuration and confirms the suitability of the chosen power system.",
+            "status": "pending",
+            "testStrategy": "The power budget calculations in `HARDWARE.md` must be present, itemized, and match the figures from the source analysis document."
+          },
+          {
+            "id": 6,
+            "title": "Submit for Peer Review and Approval",
+            "description": "Once the `HARDWARE.md` document is complete with all sections filled out, submit a pull request for peer review and formal approval from the project lead.",
+            "dependencies": [],
+            "details": "The pull request should link to this task (Task 6). The review process must be completed before any hardware procurement can begin. Address any feedback from the review by updating the document.",
+            "status": "pending",
+            "testStrategy": "Confirm that a pull request is created and successfully merged after receiving at least one approval from the project lead."
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "created": "2025-11-07T20:21:14.185Z",
+      "updated": "2025-11-07T20:47:36.168Z",
+      "description": "MVP sprint: underwater sound detection system for shellfish protection"
+    }
+  },
+  "production-v1": {
+    "tasks": [
+      {
+        "id": 101,
+        "title": "P0 Audited Baseline Documentation",
+        "description": "Establish the evidence-bound baseline for the first passive monitoring product and separately gated active intervention path.",
+        "details": "Create the requirements, claims, assumptions, owners, evidence links, and measurement methods. Map preserved legacy master and crack-attack tasks to this delivery DAG without treating old claims as implementation evidence.",
+        "testStrategy": "Review the requirements-to-test matrix: every claimed function has an owner, evidence type, acceptance method, and unresolved assumption.",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [],
+        "subtasks": [],
+        "phase": "P0",
+        "deliverablePaths": [
+          "docs/requirements/production-requirements.md",
+          "docs/decisions/0001-passive-first-system-boundary.md",
+          "docs/production-roadmap.md"
+        ],
+        "ownerRole": "product-safety",
+        "researchPackages": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6",
+          "R7"
+        ],
+        "verification": {
+          "date": "2026-09-07",
+          "evidencePath": "docs/validation/development-tranche-001.md",
+          "scope": "Baseline documents only: requirements, passive-first boundary, and reviewed roadmap evidence."
+        }
+      },
+      {
+        "id": 102,
+        "title": "P1 Desk Research, Protocol, and Access Preparation",
+        "description": "Prepare desk research, prior-trial requests, site interview and survey protocol, and access-request materials before field work.",
+        "details": "Collect site, species, farm, ecology, prior-trial, authority, and protocol questions. The preparation packet must distinguish farm consent, research permission, installation permission, and acoustic authorization. It does not grant any permission.",
+        "testStrategy": "Review the package for named site facts, data minimisation, requested activity, responsible authority, protocol owner, and explicit gaps; it must make no permission claim.",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          101
+        ],
+        "subtasks": [],
+        "phase": "P1",
+        "deliverablePaths": [
+          "docs/research/site-permissions-evidence-register.md",
+          "docs/research/passive-audio-video-collection-protocol.md",
+          "docs/research/prior-trial-follow-up-drafts.md",
+          "docs/safety/initial-hazard-register.md"
+        ],
+        "ownerRole": "field-research",
+        "researchPackages": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6",
+          "R7"
+        ],
+        "verification": {
+          "date": "2026-09-07",
+          "evidencePath": "docs/validation/development-tranche-001.md",
+          "scope": "Preparation packet only: site/permission evidence register, passive collection protocol, prior-trial follow-up drafts, and initial hazard register; not completed R1-R7 research, site permissions, or expert approval."
+        }
+      },
+      {
+        "id": 103,
+        "title": "P1 Passive Site Access, Installation, and Research Permission Gate",
+        "description": "Obtain the applicable written permissions before any local passive recording, installation, or retrieval activity.",
+        "details": "Record farm/site access, research, installation, and relevant authority approvals with site boundaries, dates, equipment, observer, retrieval, and stop-work limits. A document draft does not pass this gate; the responsible authority must actually grant the applicable permission.",
+        "testStrategy": "Verify auditable approvals cover the planned passive activity and are current. Deny field work if an activity lacks the required authorization.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          102
+        ],
+        "subtasks": [],
+        "phase": "P1",
+        "deliverablePaths": [
+          "ops/permissions/",
+          "research/r1-site-survey.md"
+        ],
+        "ownerRole": "field-operations",
+        "researchPackages": [
+          "R1"
+        ],
+        "gate": "passive-site-permission",
+        "blockedReason": "Blocked until the responsible farm, site, and regulatory authorities grant the permissions applicable to the proposed passive activity."
+      },
+      {
+        "id": 104,
+        "title": "P1 Measurement and Site Envelope Threshold Gate",
+        "description": "Freeze the local operating envelope and evidence thresholds before collection or scoring.",
+        "details": "Set site geometry, depth, currents, salinity, turbidity, sea-state, sample windows, hardware placement, calibration method, clock uncertainty, abort rules, held-out split rule, and decision owner. Do not invent product thresholds when measurements are absent.",
+        "testStrategy": "Approve an evidence plan with threshold rationale, equipment, owner, uncertainty, and stop condition for every planned measurement.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          102
+        ],
+        "subtasks": [],
+        "phase": "P1",
+        "deliverablePaths": [
+          "research/protocols/measurement-envelope.md",
+          "docs/validation/threshold-register.md"
+        ],
+        "ownerRole": "measurement",
+        "researchPackages": [
+          "R1",
+          "R2",
+          "R5",
+          "R6"
+        ],
+        "gate": "measurement-site-envelope",
+        "blockedReason": "Blocked until the measurement owner approves the local envelope, calibration method, thresholds, and abort conditions."
+      },
+      {
+        "id": 105,
+        "title": "P1 Stage-Specific Budget Approval Gate",
+        "description": "Obtain a capped approval for each next spend decision rather than a blanket future budget.",
+        "details": "Maintain separate approval records for desk/access work, passive capture and calibration, controlled active research, engineering units, qualification, pilot manufacture, and lifetime support. Each record names scope, cap, assumptions, approver, expiry, and release condition.",
+        "testStrategy": "Verify the applicable signed approval exists before each procurement or contracted spend. A prior tranche approval cannot authorize a later tranche.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          101
+        ],
+        "subtasks": [],
+        "phase": "P1",
+        "deliverablePaths": [
+          "ops/budget-gates/",
+          "hardware/bom/cost-model.csv"
+        ],
+        "ownerRole": "program-management",
+        "researchPackages": [
+          "R5",
+          "R6",
+          "R7"
+        ],
+        "gate": "stage-specific-spend",
+        "blockedReason": "Blocked until the accountable budget owner approves the specific next tranche; no blanket approval authorizes future spend."
+      },
+      {
+        "id": 106,
+        "title": "P3 Independent Acoustic, Ecology, and Active-Trial Permission Gate",
+        "description": "Obtain independent safety/ecology review and permissions for any controlled active acoustic study.",
+        "details": "Define pressure/exposure and particle-motion measures, permitted envelope, uncertainty, non-target monitoring, observer, abort and immediate-stop rules. Secure the specific facility/site and trial approvals. This gate is not passed by electrical limits, documentation, or a generic passive permission.",
+        "testStrategy": "Verify independent reviewer acceptance and auditable active-study permissions; verify an approved permitted-program catalog and stop procedure exist before energized active tests.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          102,
+          104,
+          111
+        ],
+        "subtasks": [],
+        "phase": "P3",
+        "deliverablePaths": [
+          "research/r3-active-study.md",
+          "research/r4-acoustic-safety.md",
+          "ops/active-permissions/"
+        ],
+        "ownerRole": "acoustic-ecology",
+        "researchPackages": [
+          "R3",
+          "R4"
+        ],
+        "gate": "active-safety-ecology-permission",
+        "blockedReason": "Blocked until independent acoustic/ecology review and the permissions specific to the proposed active trial are granted."
+      },
+      {
+        "id": 107,
+        "title": "P2-dev Synthetic Offline Schemas and Replay Tooling",
+        "description": "Implement independently completable Python synthetic/offline replay tooling before field evidence exists.",
+        "details": "Replay PCM WAV fixtures in Python; emit explicitly uncalibrated candidate events; write provenance and SHA-256 hash manifests; use SQLite idempotency for duplicate/restarted replays; provide CLI tests. It uses only synthetic or supplied offline inputs, never sends network or hardware commands, and has no site, permission, measurement, spend, safety, or efficacy dependency.",
+        "testStrategy": "Run CLI tests for deterministic PCM WAV replay, candidate-event flags, manifest hashes, SQLite idempotency, replay restart, and absence of network or hardware side effects.",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          101
+        ],
+        "subtasks": [],
+        "phase": "P2-dev",
+        "deliverablePaths": [
+          "libs/proto-py/",
+          "apps/acoustic/",
+          "tests/acoustic/",
+          "docs/development/passive-replay.md"
+        ],
+        "ownerRole": "software",
+        "researchPackages": [
+          "R2"
+        ],
+        "verification": {
+          "date": "2026-09-07",
+          "evidencePath": "docs/validation/development-tranche-001.md",
+          "scope": "Synthetic/offline file replay only: local PCM WAV replay, candidate events, provenance/hash manifest, SQLite idempotency, and CLI coverage; no field evidence or deployment."
+        }
+      },
+      {
+        "id": 108,
+        "title": "P1 Architecture, Interfaces, and Hazard Requirements",
+        "description": "Define the passive and conditionally active system boundary, interfaces, hazards, and fail-silent states.",
+        "details": "Specify versioned events, telemetry, commands, acknowledgements, calibration, device state, topic scope, deduplication, expiry, offline behavior, independent inhibit, and hazards. The cloud is outside the immediate safety loop.",
+        "testStrategy": "Review interface and hazard records against the baseline and confirm every active path has a bounded local state and independent inhibit requirement.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          101,
+          102
+        ],
+        "subtasks": [],
+        "phase": "P1",
+        "deliverablePaths": [
+          "docs/decisions/architecture.md",
+          "configs/",
+          "docs/validation/hazard-register.md"
+        ],
+        "ownerRole": "systems",
+        "researchPackages": [
+          "R2",
+          "R4",
+          "R5",
+          "R6",
+          "R7"
+        ]
+      },
+      {
+        "id": 109,
+        "title": "P2 Receive-Chain Procurement, Bench Check, and Non-Pressure Fixture",
+        "description": "Select or borrow the passive receive chain and build a non-pressure bench/fit fixture after relevant approvals.",
+        "details": "Compare hydrophone, interface, synchronized audio/video, storage, and capture-driver options against R2 needs. Verify drivers, clocks, clipping/drop accounting, and fixture dimensions. Do not purchase a pressure enclosure or select an array geometry before measured need.",
+        "testStrategy": "Bench-check capture drivers, clock behavior, dynamic range, overflow handling, storage budget, and fixture fit against the approved envelope and capped passive budget.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          104,
+          105,
+          108
+        ],
+        "subtasks": [],
+        "phase": "P2",
+        "deliverablePaths": [
+          "hardware/fixtures/passive-receive/",
+          "research/r2-receive-chain.md"
+        ],
+        "ownerRole": "hardware-software",
+        "researchPackages": [
+          "R2",
+          "R5",
+          "R6"
+        ]
+      },
+      {
+        "id": 110,
+        "title": "P2 Permitted Local Passive Recording and Annotation Dataset",
+        "description": "Collect permitted synchronized local passive recordings and observed ground truth with hard negatives.",
+        "details": "Capture audio/video and environmental context for feeding observations and hard negatives such as snapping shrimp, boats, ropes, handling, rain, and other species. Record calibration context, clocks, visibility limits, consent/permission scope, provenance, and annotation review. Synthetic replay remains independent.",
+        "testStrategy": "Audit a data card and manifests; verify annotation rules, observed ground truth, recording/day/site held-out split, and no unauthorized field activity.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          103,
+          104,
+          109
+        ],
+        "subtasks": [],
+        "phase": "P2",
+        "deliverablePaths": [
+          "research/datasets/",
+          "research/results/r2-data-card.md"
+        ],
+        "ownerRole": "field-research",
+        "researchPackages": [
+          "R1",
+          "R2"
+        ]
+      },
+      {
+        "id": 111,
+        "title": "P2 Held-Out Local Detection Feasibility Gate",
+        "description": "Decide whether passive local detection is useful before expanding the build or proceeding to active research.",
+        "details": "Evaluate simple detectors before ML on held-out recordings split by recording/day/site. Report precision, recall, false alarms per hour, range, SNR, coverage, clock uncertainty, clipped input, visibility limits, resource use, and uncertainty. Decide one hydrophone versus conditional localization.",
+        "testStrategy": "Review the predeclared decision record against held-out results. If events are not separable at useful range, revise modality or placement rather than claiming detection readiness.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          107,
+          110
+        ],
+        "subtasks": [],
+        "phase": "P2",
+        "deliverablePaths": [
+          "research/results/r2-feasibility.md",
+          "models/acoustic/"
+        ],
+        "ownerRole": "research-analysis",
+        "researchPackages": [
+          "R2",
+          "R3"
+        ],
+        "gate": "local-detection-feasibility",
+        "blockedReason": "Blocked until permitted held-out local data supports the stated passive detection decision."
+      },
+      {
+        "id": 112,
+        "title": "P3 Calibrated Emitter and Independent Inhibit Bench Engineering",
+        "description": "Engineer the controlled active output chain only after the active gate and specific budget approval.",
+        "details": "Select compatible projector/amplifier only for the approved study; implement hardware output inhibit, physical stop, watchdog, bounded duty/exposure program catalog, and calibrated measurement chain. No emitter procurement occurs before the specific active-study budget approval and gate 106.",
+        "testStrategy": "Use dummy loads and authorized calibrated bench/facility work to show all defined faults end in bounded output or silence; verify independent stop. Acceptance includes the specific active-study spend approval.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          105,
+          106,
+          108,
+          111
+        ],
+        "subtasks": [],
+        "phase": "P3",
+        "deliverablePaths": [
+          "hardware/electronics/acoustic-output/",
+          "docs/validation/inhibit-tests.md"
+        ],
+        "ownerRole": "electrical-acoustic",
+        "researchPackages": [
+          "R3",
+          "R4",
+          "R5"
+        ]
+      },
+      {
+        "id": 113,
+        "title": "P4 Controlled Efficacy, Habituation, and Non-Target Gate",
+        "description": "Run the approved controlled study before any protection claim or active product release.",
+        "details": "Use acoustic treatment, sham/no-output control, independent stock-loss and feeding measures, non-target observations, repeat-exposure/habituation analysis, and feasible non-acoustic alternatives. ARIEL 2019 LIM BAY DDD03L pinger results did not sustain protection after an initial quiet period; obtain/reanalyse raw protocol/data and do not assume efficacy.",
+        "testStrategy": "Compare preregistered outcomes, uncertainty, adverse effects, habituation, economic value, and alternatives with independent farm/ecology review. If results fail, harm, or remain inconclusive, stop active development; the owner must explicitly approve a monitor-only product rebaseline. Do not auto-ship or weaken gates.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          103,
+          106,
+          112
+        ],
+        "subtasks": [],
+        "phase": "P4",
+        "deliverablePaths": [
+          "research/results/r3-efficacy.md",
+          "research/results/r4-non-target.md"
+        ],
+        "ownerRole": "field-research",
+        "researchPackages": [
+          "R3",
+          "R4"
+        ],
+        "gate": "active-efficacy",
+        "blockedReason": "Blocked until an authorized controlled study satisfies preregistered efficacy and safety criteria.",
+        "stopCondition": "Failure, harm, or inconclusive results stop active development pending an explicit owner-approved monitor-only rebaseline."
+      },
+      {
+        "id": 114,
+        "title": "P5 TRIDENT Contracts and Offline Orchestration",
+        "description": "Implement versioned contracts and local fail-silent orchestration for the full approved path.",
+        "details": "Build TRIDENT observe/armed/emit/inhibited/fault state handling, supervision, bounded queues, local cache, config validation, expiry/deduplication, safe reboot, and offline recovery. It must use the validated contract and cannot use cloud availability as a safety control.",
+        "testStrategy": "Run synthetic replay and fault injection for duplicate/stale commands, lost time/network/sensor/storage, crash/restart, and inhibited recovery; verify no unauthorized output.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          107,
+          108,
+          111,
+          113
+        ],
+        "subtasks": [],
+        "phase": "P5",
+        "deliverablePaths": [
+          "apps/trident/",
+          "libs/proto-py/",
+          "libs/proto-ts/"
+        ],
+        "ownerRole": "software-safety",
+        "researchPackages": [
+          "R2",
+          "R3",
+          "R4"
+        ]
+      },
+      {
+        "id": 115,
+        "title": "P5 NEREID Vision, Synchronization, and Wiper Controls",
+        "description": "Implement paired visual evidence, synchronization, visibility status, and guarded wiper behavior.",
+        "details": "Capture clips around acoustic events; preserve camera/audio timing and visibility state. Add a wiper only with current, travel, time, jam, and failure telemetry guards. Do not count lost visibility as no predator.",
+        "testStrategy": "Use replay and hardware tests to verify timing, paired clips, missing camera handling, stale visibility, and wiper fault guards.",
+        "status": "pending",
+        "priority": "medium",
+        "dependencies": [
+          111,
+          114
+        ],
+        "subtasks": [],
+        "phase": "P5",
+        "deliverablePaths": [
+          "apps/nereid/",
+          "models/vision/"
+        ],
+        "ownerRole": "vision",
+        "researchPackages": [
+          "R2",
+          "R6"
+        ]
+      },
+      {
+        "id": 116,
+        "title": "P5 SIREN Safe Integration",
+        "description": "Implement only the safety-constrained active output integration authorized by prior gates.",
+        "details": "Connect bounded approved programs to TRIDENT and the independent inhibit; require startup silence, immediate stop, underrun/disconnect handling, calibrated limits, and audit records. Configuration changes cannot expand the acoustic envelope.",
+        "testStrategy": "Verify against dummy loads and independent stop that invalid, stale, absent, or interrupted commands remain silent and all approved fault paths inhibit output.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          112,
+          113,
+          114
+        ],
+        "subtasks": [],
+        "phase": "P5",
+        "deliverablePaths": [
+          "apps/siren/",
+          "libs/dsp/"
+        ],
+        "ownerRole": "software-safety",
+        "researchPackages": [
+          "R3",
+          "R4"
+        ]
+      },
+      {
+        "id": 117,
+        "title": "P5 REEF Firmware, Sensors, and Power Management",
+        "description": "Implement the specified ESP node with calibrated sensing, low-power behavior, and fault telemetry.",
+        "details": "Use one selected board, unique secrets outside source, calibrated units/uncertainty, CBOR schema tests, brownout handling, low-power scheduling, battery logs, and downlink acknowledgements.",
+        "testStrategy": "Run firmware tests and controlled hardware checks for sensor calibration, brownout, sleep/wake, counter persistence, malformed input, and fault telemetry.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          109,
+          114
+        ],
+        "subtasks": [],
+        "phase": "P5",
+        "deliverablePaths": [
+          "firmware/esp-sentinel/",
+          "firmware/esp-power-telemetry/"
+        ],
+        "ownerRole": "firmware",
+        "researchPackages": [
+          "R5",
+          "R6"
+        ]
+      },
+      {
+        "id": 118,
+        "title": "P5 AQUILON LoRaWAN Integration",
+        "description": "Integrate above-water LoRaWAN telemetry into the canonical event path.",
+        "details": "Use an EU-region gateway/network path, OTAA provisioning, payload validation, airtime/link budgets, device registry linkage, acknowledgements, and bounded offline behavior. Keep audio/video out of LoRaWAN.",
+        "testStrategy": "Test joins, malformed/stale payload rejection, duplicate handling, counter persistence, gateway loss, recovery, and airtime limits.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          117,
+          121
+        ],
+        "subtasks": [],
+        "phase": "P5",
+        "deliverablePaths": [
+          "apps/aquilon/",
+          "ops/compose/"
+        ],
+        "ownerRole": "connectivity",
+        "researchPackages": [
+          "R5",
+          "R7"
+        ]
+      },
+      {
+        "id": 119,
+        "title": "P5 AEOLUS API, Storage, and Private Media Evidence",
+        "description": "Implement scoped API, event/telemetry persistence, private evidence storage, and auditability.",
+        "details": "Provide device/site registry, authenticated role/device-scoped access, broker ACL integration, calibration status, retention/deletion policy, provenance, backup/restore, and private clip storage.",
+        "testStrategy": "Test scoped access, denied users, deduplication, retention metadata, evidence export, backup restore, and no public exposure of private media.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          114,
+          118,
+          121
+        ],
+        "subtasks": [],
+        "phase": "P5",
+        "deliverablePaths": [
+          "apps/aeolus-api/",
+          "ops/"
+        ],
+        "ownerRole": "cloud",
+        "researchPackages": [
+          "R2",
+          "R7"
+        ]
+      },
+      {
+        "id": 120,
+        "title": "P5 AEOLUS Operator UI",
+        "description": "Build the operator interface for suspected events, confirmed observations, health, calibration, offline/stale state, and audited controls.",
+        "details": "Distinguish suspected events, confirmed observations, requested actions, and acknowledged execution. Show unavailable active controls until their gates pass; make emergency inhibit and explicit rearm auditable.",
+        "testStrategy": "Exercise UI flows with replay data, stale/offline conditions, denied roles, missing evidence, emergency inhibit, and disabled active controls.",
+        "status": "pending",
+        "priority": "medium",
+        "dependencies": [
+          115,
+          119
+        ],
+        "subtasks": [],
+        "phase": "P5",
+        "deliverablePaths": [
+          "apps/aeolus-ui/"
+        ],
+        "ownerRole": "ui",
+        "researchPackages": [
+          "R2",
+          "R3",
+          "R7"
+        ]
+      },
+      {
+        "id": 121,
+        "title": "P5 Security, Provisioning, and Key Lifecycle",
+        "description": "Implement threat model controls, provisioning, device identity, secret lifecycle, and operational security.",
+        "details": "Use per-device credentials, TLS, broker/API least privilege, revocation/rotation, signed intent, security logs, dependency/SBOM inputs, and recovery drills. Keep secrets outside source.",
+        "testStrategy": "Test unauthorized device/user denial, key rotation/revocation, scoped credentials, tampered evidence rejection, and audit completeness.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          108,
+          114
+        ],
+        "subtasks": [],
+        "phase": "P5",
+        "deliverablePaths": [
+          "security/",
+          "ops/security/"
+        ],
+        "ownerRole": "security",
+        "researchPackages": [
+          "R5",
+          "R7"
+        ]
+      },
+      {
+        "id": 122,
+        "title": "P5 Signed Hub and ESP OTA with Rollback",
+        "description": "Implement signed, target-checked, recoverable updates for hub and firmware.",
+        "details": "Select one hub update mechanism and an ESP signature verification path. Enforce manifests, compatibility, staged rollout, security floor, known-good recovery, power-loss rollback, and service recovery.",
+        "testStrategy": "Inject interruption at each update stage; reject unsigned, wrong-target, and below-floor images; verify recovery to a supported known-good or service-recovery state.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          117,
+          121
+        ],
+        "subtasks": [],
+        "phase": "P5",
+        "deliverablePaths": [
+          "ops/ota/",
+          "firmware/ota/"
+        ],
+        "ownerRole": "security-firmware",
+        "researchPackages": [
+          "R5",
+          "R7"
+        ]
+      },
+      {
+        "id": 123,
+        "title": "P6 Editable CAD and Fabrication Package",
+        "description": "Produce editable mechanical CAD, drawings, assemblies, service interfaces, and fabrication package.",
+        "details": "Create native parametric assemblies, STEP, drawings, tolerances, materials/finishes, purchased-part references, mounting, buoyancy/CG, cable strain relief, seals, penetrators, retrieval, and service access. Printed parts are not pressure barriers without evidence.",
+        "testStrategy": "Review recomputability, scale, tolerances, sealing, supplier geometry, service access, and physical fit against the selected envelope.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          109,
+          112,
+          113,
+          115,
+          117
+        ],
+        "subtasks": [],
+        "phase": "P6",
+        "deliverablePaths": [
+          "hardware/cad/",
+          "hardware/manufacturing/"
+        ],
+        "ownerRole": "mechanical",
+        "researchPackages": [
+          "R4",
+          "R6"
+        ]
+      },
+      {
+        "id": 124,
+        "title": "P6 Electrical, Power, and Wiring Package",
+        "description": "Complete electrical design, power protection, harnesses, calculations, and manufacturing outputs.",
+        "details": "Document block diagram, distribution, fusing/isolation, grounding/EMI, independent inhibit/stop circuit, connector pinouts, harness lengths, test points, thermal/power/voltage-drop budgets, and custom-board KiCad sources when needed.",
+        "testStrategy": "Review schematic, harness, power, thermal, and fault calculations; verify protection and test points cover the declared operating envelope.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          109,
+          112,
+          113,
+          117
+        ],
+        "subtasks": [],
+        "phase": "P6",
+        "deliverablePaths": [
+          "hardware/electronics/",
+          "hardware/wiring/"
+        ],
+        "ownerRole": "electrical",
+        "researchPackages": [
+          "R4",
+          "R5",
+          "R6"
+        ]
+      },
+      {
+        "id": 125,
+        "title": "P6 Integrated EVT",
+        "description": "Assemble engineering-validation units and verify integration before design validation.",
+        "details": "Measure fit, pressure/immersion plan, power, thermal, EMI, corrosion controls, serviceability, interfaces, field-safe behavior, and critical hazard controls. Control supplier substitutions and record failure analysis.",
+        "testStrategy": "Execute the EVT matrix with traceable raw results; resolve or formally disposition critical failures before candidate design freeze.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          115,
+          116,
+          118,
+          120,
+          122,
+          123,
+          124
+        ],
+        "subtasks": [],
+        "phase": "P6",
+        "deliverablePaths": [
+          "docs/validation/evt/",
+          "hardware/test-jigs/"
+        ],
+        "ownerRole": "systems-engineering",
+        "researchPackages": [
+          "R4",
+          "R5",
+          "R6"
+        ]
+      },
+      {
+        "id": 126,
+        "title": "P7 DVT, Field Endurance, Safety, and Security",
+        "description": "Run design validation, representative endurance, local safety/security tests, and permitted field validation.",
+        "details": "Test environmental/mechanical envelope, seven-day engineering and proposed 30-day integrated runs, hardware faults, independent stop, offline recovery, update/power loss, security assessment, calibration, and non-active/passive field operation. Active claims remain bounded by task 113.",
+        "testStrategy": "Run the approved DVT matrix with traceable raw results; no unresolved critical safety/security defect or unreviewed material change may pass.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          103,
+          106,
+          125
+        ],
+        "subtasks": [],
+        "phase": "P7",
+        "deliverablePaths": [
+          "docs/validation/dvt/",
+          "tests/hil/"
+        ],
+        "ownerRole": "verification",
+        "researchPackages": [
+          "R1",
+          "R4",
+          "R5",
+          "R6",
+          "R7"
+        ]
+      },
+      {
+        "id": 127,
+        "title": "P7 EU Conformity and Technical File",
+        "description": "Complete the applicable EU conformity route, technical file, risk evidence, test reports, declarations, and labels.",
+        "details": "Maintain a dated applicability matrix for RED, safety, EMC, spectrum, RoHS, REACH, WEEE, battery, cybersecurity, privacy, and support requirements. Purchased module marks do not establish final-system conformity.",
+        "testStrategy": "Review the selected final configuration against qualified adviser/lab evidence; verify required risk file, test reports, declarations, labels, and permitted-use limits are complete.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          125,
+          126
+        ],
+        "subtasks": [],
+        "phase": "P7",
+        "deliverablePaths": [
+          "docs/compliance/",
+          "conformity/eu/"
+        ],
+        "ownerRole": "conformity",
+        "researchPackages": [
+          "R7"
+        ]
+      },
+      {
+        "id": 128,
+        "title": "P8 PVT Pilot Batch and Manufacturing QA",
+        "description": "Build a controlled pilot batch and prove repeatable manufacture, provisioning, calibration, test, rework, and repair.",
+        "details": "Release controlled BOM/assembly instructions, fixtures, serialisation, key provisioning, per-unit calibration, end-of-line QA, packaging, repair, yield, and nonconformance records. A second assembler must build from the released package.",
+        "testStrategy": "Verify serial-linked build/calibration/test records, pilot yield/rework, controlled substitutions, independent assembly, and cost evidence meet the approved plan.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          126,
+          127
+        ],
+        "subtasks": [],
+        "phase": "P8",
+        "deliverablePaths": [
+          "hardware/manufacturing/",
+          "docs/validation/pvt/"
+        ],
+        "ownerRole": "manufacturing",
+        "researchPackages": [
+          "R6",
+          "R7"
+        ]
+      },
+      {
+        "id": 129,
+        "title": "P9 Release and Funded Lifetime Support",
+        "description": "Release only approved configurations with funded support, installation, update, incident, repair, and end-of-support processes.",
+        "details": "Publish only permitted, evidence-backed claims. Establish site-specific permissions, CE/DoC where applicable, version records, warranty/service, vulnerability intake, recall/incident process, spares, support capacity, and declared support end dates.",
+        "testStrategy": "Verify PVT acceptance, final authorization, funded support capacity, serial traceability, installation/training, incident drill, update recovery, and commercial release approval.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          128
+        ],
+        "subtasks": [],
+        "phase": "P9",
+        "deliverablePaths": [
+          "docs/operations/",
+          "docs/service/",
+          "support/"
+        ],
+        "ownerRole": "release-support",
+        "researchPackages": [
+          "R1",
+          "R7"
+        ]
+      },
+      {
+        "id": 130,
+        "title": "R8 Independent Flora Research Track",
+        "description": "Research flora evidence separately from the core passive/protection product path.",
+        "details": "Review the actual algae/seagrass species and endpoint, then decide include/stop based on credible evidence and independently reviewed experiments covering light, nutrients, temperature, mixing, noise, and ecological effects.",
+        "testStrategy": "Review the R8 decision with evidence, uncertainty, permissions, and stop condition; confirm no core production task depends on it.",
+        "status": "pending",
+        "priority": "low",
+        "dependencies": [],
+        "subtasks": [],
+        "phase": "R8",
+        "deliverablePaths": [
+          "research/flora/",
+          "research/results/r8-decision.md"
+        ],
+        "ownerRole": "field-research",
+        "researchPackages": [
+          "R8"
+        ],
+        "stopCondition": "No credible replicated evidence or permission stops this track without blocking the core product."
+      },
+      {
+        "id": 131,
+        "title": "P0 Offline Backlog Validator, Generator, and Tests",
+        "description": "Maintain the local Taskmaster DAG validator, deterministic task-file generator, and fixture tests.",
+        "details": "Validate only the selected production tag by default; reject invalid numeric IDs, missing/self/cyclic/local dependency errors, unsafe generation paths, and stale generated files. This task is repository tooling and needs no field evidence.",
+        "testStrategy": "Run the stdlib fixture suite plus production-v1 validate, generate, and generate --check commands. Verify no field, hardware, permission, measurement, spend, safety, or efficacy gate is required.",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [],
+        "subtasks": [],
+        "phase": "P0",
+        "deliverablePaths": [
+          "scripts/task_graph.py",
+          "tests/tooling/",
+          ".taskmaster/tasks/production-v1/"
+        ],
+        "ownerRole": "tooling",
+        "researchPackages": [],
+        "verificationMetadata": {
+          "auditDate": "2026-09-07",
+          "pythonVersions": [
+            "3.11.15",
+            "3.14.7"
+          ],
+          "commands": [
+            "python3 -m unittest discover -s tests/tooling -v",
+            "python3 scripts/task_graph.py validate --tag production-v1",
+            "python3 scripts/task_graph.py generate --tag production-v1 --check"
+          ],
+          "evidencePath": "docs/validation/development-tranche-001.md"
+        }
+      },
+      {
+        "id": 132,
+        "title": "P2-dev Local Monitor Hub Foundation",
+        "description": "Build a local durable monitor workspace that reuses offline replay evidence and has no output or device-control capability.",
+        "details": "Implement the standard-library Hub workspace with single-owner locking, a restrictive private access token, separate hub metadata/job/review storage, immutable evidence files, recoverable queued replay jobs, waveform summaries, optional local video evidence, and append-only human review history. Reuse existing synthetic/offline replay semantics and keep the original evidence database schema unchanged. This foundation is local monitor software only: it adds no hardware control, network broker, field activity, permission claim, measurement threshold, spend, or efficacy claim.",
+        "testStrategy": "Run tests/trident/ for new/open/reopen workspace behavior, restrictive token creation, ownership locking, safe path rejection, import idempotency/conflict handling, replay restart recovery, queued job claims, review revision conflicts, waveform bounds, video attachment rejection, and closed resources.",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          107
+        ],
+        "subtasks": [],
+        "phase": "P2-dev",
+        "deliverablePaths": [
+          "apps/trident/src/poseidon_trident/",
+          "tests/trident/"
+        ],
+        "ownerRole": "software",
+        "researchPackages": [],
+        "verification": {
+          "date": "2026-09-07",
+          "evidencePath": "docs/validation/development-tranche-002.md",
+          "scope": "Local monitor-only Hub software, private local workspace handling, and offline or synthetic evidence processing. This verifies no field operation, hardware, output, permission, measurement, efficacy, production security, compliance, or production-readiness gate."
+        }
+      },
+      {
+        "id": 133,
+        "title": "P2-dev Authenticated Local Monitor API",
+        "description": "Expose the local monitor Hub through a bounded authenticated FastAPI interface.",
+        "details": "Implement the /healthz and /api/v1 monitor endpoints defined by the local monitor contract. Require a constant-time checked workspace bearer token on every non-health route, keep safe error shapes, validate input and pagination at the public boundary, stream bounded imports and video responses, and run one recoverable local replay-job worker. Bind the development CLI to loopback by default. Do not add an emit, arm, relay, kill-switch, open proxy, arbitrary URL fetch, filesystem-path import, permissive CORS, or external service integration.",
+        "testStrategy": "Run tests/api/ with the locked API dependencies for health, missing/wrong/right token handling, safe errors, endpoint validation, queue processing, pagination, stale review rejection, bounded file failures, authenticated video streaming, and API worker recovery.",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          132
+        ],
+        "subtasks": [],
+        "phase": "P2-dev",
+        "deliverablePaths": [
+          "apps/aeolus-api/",
+          "tests/api/"
+        ],
+        "ownerRole": "software",
+        "researchPackages": [],
+        "verification": {
+          "date": "2026-09-07",
+          "evidencePath": "docs/validation/development-tranche-002.md",
+          "scope": "Local loopback monitor API software only. This verifies no Internet hosting, production authentication or security lifecycle, field operation, hardware, output, permission, measurement, efficacy, compliance, or production-readiness gate."
+        }
+      },
+      {
+        "id": 134,
+        "title": "P2-dev Local Monitor Operator UI",
+        "description": "Build the local operator UI for monitor data, synthetic replay, and human review.",
+        "details": "Implement the Bun/Next.js UI and same-origin server proxy specified by the local monitor contract. Keep POSEIDON_API_URL server-only, issue a bounded HttpOnly local session cookie only after backend token validation, forward only known backend routes, and show API/offline/error/conflict states. Present recording, event, waveform, review, upload, optional video, and synthetic provenance views without active controls or claims. This is a local single-operator session, not production RBAC or Internet hosting.",
+        "testStrategy": "Run the UI typecheck and tests for session failure/success, restricted proxy routing, missing/offline API, synthetic import status, recording/event selection, accessible waveform table, review save/reload, stale revision conflict, upload validation, optional video state, and desktop/mobile layouts.",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          133
+        ],
+        "subtasks": [],
+        "phase": "P2-dev",
+        "deliverablePaths": [
+          "apps/aeolus-ui/",
+          "apps/aeolus-ui/lib/",
+          "apps/aeolus-ui/qa/",
+          "PRODUCT.md",
+          "DESIGN.md",
+          ".impeccable/design.json"
+        ],
+        "ownerRole": "ui",
+        "researchPackages": [],
+        "verification": {
+          "date": "2026-09-07",
+          "evidencePath": "docs/validation/development-tranche-002.md",
+          "scope": "Local single-operator monitor UI and same-origin proxy only. This verifies no production RBAC or security lifecycle, Internet hosting, field operation, hardware, output, permission, measurement, efficacy, compliance, or production-readiness gate."
+        }
+      },
+      {
+        "id": 135,
+        "title": "P2-dev Local Monitor Integration and Browser QA",
+        "description": "Provide repeatable local setup, supervised startup, and bounded end-to-end browser checks for the monitor application.",
+        "details": "Add locked local dependency setup, full local check/test/build targets, a standard-library development manager, runtime instructions, and browser QA against the real local API and UI. The manager must derive the repository root from its own file, bind services to loopback, reject occupied ports without killing their owners, supervise only launched process groups, use bounded readiness and shutdown, and never print the workspace token automatically. Browser scripts must close browsers in finally blocks and run under hard subprocess timeouts. This task is local development integration only and does not authorize field work, hardware, output, remote deployment, or production authentication.",
+        "testStrategy": "Run task-graph validation and generated-file check; make setup, check, test, and build-ui; then run bounded local browser QA for empty state, token failure/success, synthetic import completion, recording selection, waveform, review save/reload and stale conflict, genuine file upload, optional video/error state, API-offline recovery, and desktop/mobile layout. Confirm startup rejects an occupied loopback port and cleanup stops only owned processes.",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          132,
+          133,
+          134
+        ],
+        "subtasks": [],
+        "phase": "P2-dev",
+        "deliverablePaths": [
+          "Makefile",
+          "scripts/dev.py",
+          "tests/dev/",
+          "docs/development/monitor-runtime.md",
+          ".github/workflows/check.yml"
+        ],
+        "ownerRole": "developer-experience",
+        "researchPackages": [],
+        "verification": {
+          "date": "2026-09-07",
+          "evidencePath": "docs/validation/development-tranche-002.md",
+          "scope": "Local setup, supervised loopback integration, built-bundle verification, and bounded browser QA only. This verifies no remote deployment, field operation, hardware, output, permission, measurement, efficacy, production security, compliance, or production-readiness gate."
+        }
+      }
+    ],
+    "metadata": {
+      "created": "2026-09-07T00:00:00.000Z",
+      "updated": "2026-09-07T00:00:00.000Z",
+      "description": "Canonical production delivery DAG: passive evidence first, active protection separately gated.",
+      "sourcePlan": "poseidon_monorepo_taskmaster_prd_delivery_plan_v_0.md",
+      "legacyTaskMapping": {
+        "preservedTags": [
+          "master",
+          "crack-attack"
+        ],
+        "preservation": "Legacy task objects remain unchanged. Their historical self, missing, and cross-tag dependencies are not adopted by production-v1.",
+        "oldTaskIntentToProduction": {
+          "master": {
+            "1-25": [
+              101,
+              107,
+              108,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127,
+              128,
+              129,
+              131
+            ]
+          },
+          "crack-attack": {
+            "1-6": [
+              102,
+              103,
+              104,
+              106,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              120
+            ]
+          }
+        }
+      },
+      "researchPackageMapping": {
+        "R1": [
+          102,
+          103,
+          104,
+          110,
+          126,
+          129
+        ],
+        "R2": [
+          104,
+          107,
+          109,
+          110,
+          111,
+          114,
+          115,
+          119,
+          120
+        ],
+        "R3": [
+          102,
+          106,
+          111,
+          112,
+          113,
+          116
+        ],
+        "R4": [
+          106,
+          112,
+          113,
+          116,
+          123,
+          124,
+          126
+        ],
+        "R5": [
+          104,
+          105,
+          109,
+          112,
+          117,
+          118,
+          121,
+          122,
+          124,
+          126
+        ],
+        "R6": [
+          102,
+          104,
+          109,
+          115,
+          117,
+          123,
+          124,
+          125,
+          126,
+          128
+        ],
+        "R7": [
+          102,
+          105,
+          108,
+          118,
+          119,
+          120,
+          121,
+          122,
+          126,
+          127,
+          128,
+          129
+        ],
+        "R8": [
+          130
+        ]
+      },
+      "firstExecutableTranche": {
+        "baselineDocumentation": [
+          101
+        ],
+        "researchPreparation": [
+          102
+        ],
+        "externalGates": [
+          103,
+          104,
+          105
+        ],
+        "offlineSchemasAndReplay": [
+          107
+        ],
+        "offlineBacklogTooling": [
+          131
+        ],
+        "localMonitorFoundation": [
+          107,
+          132
+        ],
+        "localMonitorApplication": [
+          133,
+          134,
+          135
+        ]
+      },
+      "auditDate": "2026-09-07"
+    }
+  }
+}

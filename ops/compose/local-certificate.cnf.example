@@ -1,0 +1,19 @@
+# Template only. No production CA or private key is created by this repository.
+[req]
+prompt = no
+distinguished_name = dn
+req_extensions = extensions
+
+[dn]
+CN = mosquitto
+O = Poseidon local software test only
+
+[extensions]
+subjectAltName = @alt_names
+keyUsage = critical,digitalSignature,keyEncipherment
+extendedKeyUsage = serverAuth
+
+[alt_names]
+DNS.1 = mosquitto
+DNS.2 = localhost
+IP.1 = 127.0.0.1

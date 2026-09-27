@@ -1,0 +1,48 @@
+{
+  "name": "poseidon-local-network",
+  "services": {
+    "postgres": {
+      "image": "postgres:16.6-alpine",
+      "restart": "no",
+      "environment": {"POSTGRES_DB": "chirpstack", "POSTGRES_USER": "chirpstack", "POSTGRES_PASSWORD_FILE": "/run/secrets/postgres_password"},
+      "secrets": ["postgres_password"],
+      "volumes": ["postgres_data:/var/lib/postgresql/data"],
+      "networks": ["services"],
+      "healthcheck": {"test": ["CMD-SHELL", "pg_isready -U chirpstack -d chirpstack"], "interval": "10s", "timeout": "3s", "retries": 10},
+      "security_opt": ["no-new-privileges:true"],
+      "logging": {"driver": "json-file", "options": {"max-size": "10m", "max-file": "3"}}
+    },
+    "redis": {
+      "image": "redis:7.4.1-alpine",
+      "restart": "no",
+      "command": ["redis-server", "/usr/local/etc/redis/redis.conf"],
+      "volumes": ["redis_data:/data", "./secrets/redis.conf:/usr/local/etc/redis/redis.conf:ro"],
+      "networks": ["services"],
+      "security_opt": ["no-new-privileges:true"],
+      "logging": {"driver": "json-file", "options": {"max-size": "10m", "max-file": "3"}}
+    },
+    "mosquitto": {
+      "image": "eclipse-mosquitto:2.0.20",
+      "restart": "no",
+      "ports": ["127.0.0.1:8883:8883"],
+      "volumes": ["./mosquitto.conf:/mosquitto/config/mosquitto.conf:ro", "./mosquitto.acl:/mosquitto/config/acl:ro", "./secrets/mqtt:/mosquitto/private:ro", "mqtt_data:/mosquitto/data"],
+      "networks": ["services"],
+      "security_opt": ["no-new-privileges:true"],
+      "logging": {"driver": "json-file", "options": {"max-size": "10m", "max-file": "3"}}
+    },
+    "chirpstack": {
+      "image": "chirpstack/chirpstack:4.10.0",
+      "restart": "no",
+      "command": ["-c", "/etc/chirpstack"],
+      "ports": ["127.0.0.1:8081:8080"],
+      "volumes": ["./secrets/chirpstack:/etc/chirpstack:ro", "./secrets/mqtt/ca.crt:/run/poseidon/ca.crt:ro"],
+      "depends_on": {"postgres": {"condition": "service_healthy"}, "redis": {"condition": "service_started"}, "mosquitto": {"condition": "service_started"}},
+      "networks": ["services"],
+      "security_opt": ["no-new-privileges:true"],
+      "logging": {"driver": "json-file", "options": {"max-size": "10m", "max-file": "3"}}
+    }
+  },
+  "networks": {"services": {"internal": true}},
+  "volumes": {"postgres_data": {}, "redis_data": {}, "mqtt_data": {}},
+  "secrets": {"postgres_password": {"file": "./secrets/postgres-password.txt"}}
+}

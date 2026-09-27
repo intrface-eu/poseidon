@@ -1,0 +1,9 @@
+[project]
+name = "poseidon-reference-cad"
+version = "1.1.0"
+description = "Provisional HW-REF-1.1 mechanical integration and fixture CAD"
+requires-python = ">=3.12,<3.13"
+dependencies = ["cadquery==2.6.1", "ezdxf==1.4.3", "trimesh==4.8.3"]
+
+[tool.uv]
+package = false

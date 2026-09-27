@@ -1,0 +1,35 @@
+{
+  "deliverablePaths": [
+    "docs/research/site-permissions-evidence-register.md",
+    "docs/research/passive-audio-video-collection-protocol.md",
+    "docs/research/prior-trial-follow-up-drafts.md",
+    "docs/safety/initial-hazard-register.md"
+  ],
+  "dependencies": [
+    101
+  ],
+  "description": "Prepare desk research, prior-trial requests, site interview and survey protocol, and access-request materials before field work.",
+  "details": "Collect site, species, farm, ecology, prior-trial, authority, and protocol questions. The preparation packet must distinguish farm consent, research permission, installation permission, and acoustic authorization. It does not grant any permission.",
+  "id": 102,
+  "ownerRole": "field-research",
+  "phase": "P1",
+  "priority": "high",
+  "researchPackages": [
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7"
+  ],
+  "status": "done",
+  "subtasks": [],
+  "testStrategy": "Review the package for named site facts, data minimisation, requested activity, responsible authority, protocol owner, and explicit gaps; it must make no permission claim.",
+  "title": "P1 Desk Research, Protocol, and Access Preparation",
+  "verification": {
+    "date": "2026-09-07",
+    "evidencePath": "docs/validation/development-tranche-001.md",
+    "scope": "Preparation packet only: site/permission evidence register, passive collection protocol, prior-trial follow-up drafts, and initial hazard register; not completed R1-R7 research, site permissions, or expert approval."
+  }
+}

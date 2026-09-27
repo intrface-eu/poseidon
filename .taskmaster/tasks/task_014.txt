@@ -1,0 +1,11 @@
+# Task ID: 14
+# Title: [aeolus] Setup TimescaleDB and Telemetry Ingestion
+# Status: pending
+# Dependencies: 3, 13
+# Priority: medium
+# Description: Add TimescaleDB and a simple ingestion service to the cloud Docker Compose stack. The service will subscribe to telemetry topics and write the data into the database.
+# Details:
+Update `docker-compose.cloud.dev.yml` to include a `timescaledb/tsdb-ha` service. Create an SQL init script to define a hypertable for sensor data (e.g., `CREATE TABLE sensor_data (...)`). Create a small Python service (`aeolus-ingestor`) that uses `paho-mqtt` and `psycopg2`. It subscribes to `poseidon/+/+/+/telemetry` and executes an `INSERT` statement for each message.
+
+# Test Strategy:
+Start the cloud stack. Have a REEF node send data, which is bridged by AQUILON. Connect to the TimescaleDB instance using `psql` and run `SELECT * FROM sensor_data;`. Verify that new rows are appearing with the correct timestamps and sensor values.

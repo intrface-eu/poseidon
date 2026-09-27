@@ -1,0 +1,30 @@
+# Render into private secrets/chirpstack/chirpstack.toml before an authorized run.
+# Values marked REPLACE are deliberately unusable; do not commit rendered files.
+[logging]
+level = "warn"
+
+[postgresql]
+dsn = "postgres://chirpstack:REPLACE_WITH_URLENCODED_PRIVATE_PASSWORD@postgres/chirpstack?sslmode=disable"
+max_open_connections = 10
+
+[redis]
+servers = ["redis://:REPLACE_WITH_URLENCODED_PRIVATE_REDIS_PASSWORD@redis:6379/"]
+cluster = false
+
+[network]
+net_id = "000000"
+enabled_regions = ["eu868"]
+
+[api]
+bind = "0.0.0.0:8080"
+secret = "REPLACE_WITH_PRIVATE_RANDOM_API_SECRET"
+
+[integration]
+enabled = ["mqtt"]
+
+[integration.mqtt]
+server = "ssl://mosquitto:8883/"
+username = "chirpstack"
+password = "REPLACE_WITH_PRIVATE_MQTT_PASSWORD"
+ca_cert = "/run/poseidon/ca.crt"
+json = true

@@ -1,0 +1,25 @@
+{
+  "deliverablePaths": [
+    "apps/aeolus-api/",
+    "ops/"
+  ],
+  "dependencies": [
+    114,
+    118,
+    121
+  ],
+  "description": "Implement scoped API, event/telemetry persistence, private evidence storage, and auditability.",
+  "details": "Provide device/site registry, authenticated role/device-scoped access, broker ACL integration, calibration status, retention/deletion policy, provenance, backup/restore, and private clip storage.",
+  "id": 119,
+  "ownerRole": "cloud",
+  "phase": "P5",
+  "priority": "high",
+  "researchPackages": [
+    "R2",
+    "R7"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Test scoped access, denied users, deduplication, retention metadata, evidence export, backup restore, and no public exposure of private media.",
+  "title": "P5 AEOLUS API, Storage, and Private Media Evidence"
+}

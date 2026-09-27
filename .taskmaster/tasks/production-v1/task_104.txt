@@ -1,0 +1,27 @@
+{
+  "blockedReason": "Blocked until the measurement owner approves the local envelope, calibration method, thresholds, and abort conditions.",
+  "deliverablePaths": [
+    "research/protocols/measurement-envelope.md",
+    "docs/validation/threshold-register.md"
+  ],
+  "dependencies": [
+    102
+  ],
+  "description": "Freeze the local operating envelope and evidence thresholds before collection or scoring.",
+  "details": "Set site geometry, depth, currents, salinity, turbidity, sea-state, sample windows, hardware placement, calibration method, clock uncertainty, abort rules, held-out split rule, and decision owner. Do not invent product thresholds when measurements are absent.",
+  "gate": "measurement-site-envelope",
+  "id": 104,
+  "ownerRole": "measurement",
+  "phase": "P1",
+  "priority": "high",
+  "researchPackages": [
+    "R1",
+    "R2",
+    "R5",
+    "R6"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Approve an evidence plan with threshold rationale, equipment, owner, uncertainty, and stop condition for every planned measurement.",
+  "title": "P1 Measurement and Site Envelope Threshold Gate"
+}

@@ -1,0 +1,24 @@
+{
+  "deliverablePaths": [
+    "apps/aeolus-ui/"
+  ],
+  "dependencies": [
+    115,
+    119
+  ],
+  "description": "Build the operator interface for suspected events, confirmed observations, health, calibration, offline/stale state, and audited controls.",
+  "details": "Distinguish suspected events, confirmed observations, requested actions, and acknowledged execution. Show unavailable active controls until their gates pass; make emergency inhibit and explicit rearm auditable.",
+  "id": 120,
+  "ownerRole": "ui",
+  "phase": "P5",
+  "priority": "medium",
+  "researchPackages": [
+    "R2",
+    "R3",
+    "R7"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Exercise UI flows with replay data, stale/offline conditions, denied roles, missing evidence, emergency inhibit, and disabled active controls.",
+  "title": "P5 AEOLUS Operator UI"
+}

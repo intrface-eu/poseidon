@@ -1,0 +1,735 @@
+{
+  "profile": "reef-telemetry-cbor-v1-proposal",
+  "status": "implementation_input_pending_shared_contract_review",
+  "synthetic": true,
+  "boot_id_json": "canonical decimal string; CBOR uint64 on wire",
+  "calibration_note": "Synthetic IDs are not a calibration registry or verified calibration evidence.",
+  "max_payload_bytes": 64,
+  "field_names": [
+    "version",
+    "boot_id",
+    "sequence",
+    "uptime_s",
+    "clock_quality",
+    "observed_at_unix_s",
+    "battery_mv",
+    "solar_mv",
+    "power_mode",
+    "sensor_kind",
+    "sensor_value",
+    "sensor_quality",
+    "calibration_id"
+  ],
+  "valid": [
+    {
+      "name": "unsynchronized_missing",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        0,
+        null,
+        2,
+        null
+      ],
+      "hex": "8d0101000000f6f6f60000f602f6"
+    },
+    {
+      "name": "rtc_raw_temperature",
+      "fields": [
+        1,
+        "24",
+        23,
+        24,
+        1,
+        1700000000,
+        12800,
+        19000,
+        0,
+        1,
+        12345,
+        0,
+        null
+      ],
+      "hex": "8d011818171818011a6553f100193200194a38000119303900f6"
+    },
+    {
+      "name": "network_calibrated_temperature",
+      "fields": [
+        1,
+        "256",
+        256,
+        65536,
+        2,
+        1700000060,
+        12300,
+        0,
+        1,
+        1,
+        -125,
+        1,
+        7
+      ],
+      "hex": "8d011901001901001a00010000021a6553f13c19300c000101387c0107"
+    },
+    {
+      "name": "calibrated_salinity",
+      "fields": [
+        1,
+        "65536",
+        65536,
+        4294967295,
+        2,
+        4294967295,
+        11800,
+        null,
+        2,
+        2,
+        35000,
+        1,
+        8
+      ],
+      "hex": "8d011a000100001a000100001affffffff021affffffff192e18f602021988b80108"
+    },
+    {
+      "name": "calibrated_dissolved_oxygen",
+      "fields": [
+        1,
+        "4294967296",
+        1,
+        1,
+        1,
+        0,
+        0,
+        65535,
+        2,
+        3,
+        8500,
+        1,
+        65535
+      ],
+      "hex": "8d011b0000000100000000010101000019ffff02031921340119ffff"
+    },
+    {
+      "name": "all_maximum_unsigned_and_signed",
+      "fields": [
+        1,
+        "18446744073709551615",
+        4294967295,
+        4294967295,
+        2,
+        4294967295,
+        65535,
+        65535,
+        2,
+        3,
+        2147483647,
+        1,
+        65535
+      ],
+      "hex": "8d011bffffffffffffffff1affffffff1affffffff021affffffff19ffff19ffff02031a7fffffff0119ffff"
+    },
+    {
+      "name": "minimum_signed",
+      "fields": [
+        1,
+        "18446744073709551615",
+        4294967295,
+        4294967295,
+        2,
+        4294967295,
+        65535,
+        65535,
+        2,
+        3,
+        -2147483648,
+        1,
+        65535
+      ],
+      "hex": "8d011bffffffffffffffff1affffffff1affffffff021affffffff19ffff19ffff02033a7fffffff0119ffff"
+    },
+    {
+      "name": "invalid_sensor_1",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        1,
+        null,
+        2,
+        null
+      ],
+      "hex": "8d0101000000f6f6f60001f602f6"
+    },
+    {
+      "name": "invalid_sensor_2",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        2,
+        null,
+        2,
+        null
+      ],
+      "hex": "8d0101000000f6f6f60002f602f6"
+    },
+    {
+      "name": "invalid_sensor_3",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        3,
+        null,
+        2,
+        null
+      ],
+      "hex": "8d0101000000f6f6f60003f602f6"
+    },
+    {
+      "name": "raw_integer_0",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        1,
+        0,
+        0,
+        null
+      ],
+      "hex": "8d0101000000f6f6f600010000f6"
+    },
+    {
+      "name": "raw_integer_23",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        1,
+        23,
+        0,
+        null
+      ],
+      "hex": "8d0101000000f6f6f600011700f6"
+    },
+    {
+      "name": "raw_integer_24",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        1,
+        24,
+        0,
+        null
+      ],
+      "hex": "8d0101000000f6f6f60001181800f6"
+    },
+    {
+      "name": "raw_integer_255",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        1,
+        255,
+        0,
+        null
+      ],
+      "hex": "8d0101000000f6f6f6000118ff00f6"
+    },
+    {
+      "name": "raw_integer_256",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        1,
+        256,
+        0,
+        null
+      ],
+      "hex": "8d0101000000f6f6f6000119010000f6"
+    },
+    {
+      "name": "raw_integer_65535",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        1,
+        65535,
+        0,
+        null
+      ],
+      "hex": "8d0101000000f6f6f6000119ffff00f6"
+    },
+    {
+      "name": "raw_integer_65536",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        1,
+        65536,
+        0,
+        null
+      ],
+      "hex": "8d0101000000f6f6f600011a0001000000f6"
+    },
+    {
+      "name": "raw_integer_minus_1",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        1,
+        -1,
+        0,
+        null
+      ],
+      "hex": "8d0101000000f6f6f600012000f6"
+    },
+    {
+      "name": "raw_integer_minus_24",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        1,
+        -24,
+        0,
+        null
+      ],
+      "hex": "8d0101000000f6f6f600013700f6"
+    },
+    {
+      "name": "raw_integer_minus_25",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        1,
+        -25,
+        0,
+        null
+      ],
+      "hex": "8d0101000000f6f6f60001381800f6"
+    },
+    {
+      "name": "raw_integer_minus_256",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        1,
+        -256,
+        0,
+        null
+      ],
+      "hex": "8d0101000000f6f6f6000138ff00f6"
+    },
+    {
+      "name": "raw_integer_minus_257",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        1,
+        -257,
+        0,
+        null
+      ],
+      "hex": "8d0101000000f6f6f6000139010000f6"
+    },
+    {
+      "name": "raw_integer_minus_65536",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        1,
+        -65536,
+        0,
+        null
+      ],
+      "hex": "8d0101000000f6f6f6000139ffff00f6"
+    },
+    {
+      "name": "raw_integer_minus_65537",
+      "fields": [
+        1,
+        "1",
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        1,
+        -65537,
+        0,
+        null
+      ],
+      "hex": "8d0101000000f6f6f600013a0001000000f6"
+    }
+  ],
+  "invalid": [
+    {
+      "name": "empty",
+      "hex": ""
+    },
+    {
+      "name": "oversize_65",
+      "hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "name": "trailing",
+      "hex": "8d0101000000f6f6f60000f602f600"
+    },
+    {
+      "name": "indefinite_array",
+      "hex": "9f0101000000f6f6f60000f602f6ff"
+    },
+    {
+      "name": "nonminimal_array_length",
+      "hex": "980d0101000000f6f6f60000f602f6"
+    },
+    {
+      "name": "short_array",
+      "hex": "8c0101000000f6f6f60000f602f6"
+    },
+    {
+      "name": "long_array",
+      "hex": "8e0101000000f6f6f60000f602f6"
+    },
+    {
+      "name": "map",
+      "hex": "a00101000000f6f6f60000f602f6"
+    },
+    {
+      "name": "tag",
+      "hex": "c00101000000f6f6f60000f602f6"
+    },
+    {
+      "name": "version",
+      "hex": "8d0201000000f6f6f60000f602f6"
+    },
+    {
+      "name": "null_version",
+      "hex": "8df601000000f6f6f60000f602f6"
+    },
+    {
+      "name": "zero_boot",
+      "hex": "8d0100000000f6f6f60000f602f6"
+    },
+    {
+      "name": "negative_boot",
+      "hex": "8d0120000000f6f6f60000f602f6"
+    },
+    {
+      "name": "null_boot",
+      "hex": "8d01f6000000f6f6f60000f602f6"
+    },
+    {
+      "name": "negative_sequence",
+      "hex": "8d0101200000f6f6f60000f602f6"
+    },
+    {
+      "name": "sequence_overflow",
+      "hex": "8d01011b00000001000000000000f6f6f60000f602f6"
+    },
+    {
+      "name": "negative_uptime",
+      "hex": "8d0101002000f6f6f60000f602f6"
+    },
+    {
+      "name": "uptime_overflow",
+      "hex": "8d0101001b000000010000000000f6f6f60000f602f6"
+    },
+    {
+      "name": "clock_enum",
+      "hex": "8d0101000003f6f6f60000f602f6"
+    },
+    {
+      "name": "clock_enum_narrowing",
+      "hex": "8d01010000190100f6f6f60000f602f6"
+    },
+    {
+      "name": "synced_null_time",
+      "hex": "8d0101000001f6f6f60000f602f6"
+    },
+    {
+      "name": "unsynced_has_time",
+      "hex": "8d010100000001f6f60000f602f6"
+    },
+    {
+      "name": "battery_overflow",
+      "hex": "8d0101000000f61a00010000f60000f602f6"
+    },
+    {
+      "name": "negative_battery",
+      "hex": "8d0101000000f620f60000f602f6"
+    },
+    {
+      "name": "solar_overflow",
+      "hex": "8d0101000000f6f61a000100000000f602f6"
+    },
+    {
+      "name": "negative_solar",
+      "hex": "8d0101000000f6f6200000f602f6"
+    },
+    {
+      "name": "power_enum",
+      "hex": "8d0101000000f6f6f60300f602f6"
+    },
+    {
+      "name": "power_enum_narrowing",
+      "hex": "8d0101000000f6f6f619010000f602f6"
+    },
+    {
+      "name": "sensor_enum",
+      "hex": "8d0101000000f6f6f60004f602f6"
+    },
+    {
+      "name": "sensor_enum_narrowing",
+      "hex": "8d0101000000f6f6f600190100f602f6"
+    },
+    {
+      "name": "none_has_value",
+      "hex": "8d0101000000f6f6f600000002f6"
+    },
+    {
+      "name": "none_is_raw",
+      "hex": "8d0101000000f6f6f60000f600f6"
+    },
+    {
+      "name": "none_is_calibrated",
+      "hex": "8d0101000000f6f6f60000f601f6"
+    },
+    {
+      "name": "quality_enum",
+      "hex": "8d0101000000f6f6f60000f603f6"
+    },
+    {
+      "name": "quality_enum_narrowing",
+      "hex": "8d0101000000f6f6f60000f6190100f6"
+    },
+    {
+      "name": "none_has_calibration",
+      "hex": "8d0101000000f6f6f60000f60201"
+    },
+    {
+      "name": "calibration_overflow",
+      "hex": "8d0101000000f6f6f60000f6021a00010000"
+    },
+    {
+      "name": "utc_overflow",
+      "hex": "8d011901001901001a00010000021b000000010000000019300c000101387c0107"
+    },
+    {
+      "name": "negative_utc",
+      "hex": "8d011901001901001a00010000022019300c000101387c0107"
+    },
+    {
+      "name": "sensor_positive_overflow",
+      "hex": "8d011901001901001a00010000021a6553f13c19300c0001011a800000000107"
+    },
+    {
+      "name": "sensor_negative_overflow",
+      "hex": "8d011901001901001a00010000021a6553f13c19300c0001013a800000000107"
+    },
+    {
+      "name": "calibrated_null_value",
+      "hex": "8d011901001901001a00010000021a6553f13c19300c000101f60107"
+    },
+    {
+      "name": "calibrated_null_id",
+      "hex": "8d011901001901001a00010000021a6553f13c19300c000101387c01f6"
+    },
+    {
+      "name": "calibrated_zero_id",
+      "hex": "8d011901001901001a00010000021a6553f13c19300c000101387c0100"
+    },
+    {
+      "name": "negative_calibration",
+      "hex": "8d011901001901001a00010000021a6553f13c19300c000101387c0120"
+    },
+    {
+      "name": "raw_has_calibration",
+      "hex": "8d011901001901001a00010000021a6553f13c19300c000101387c0007"
+    },
+    {
+      "name": "invalid_has_value",
+      "hex": "8d011901001901001a00010000021a6553f13c19300c000101387c0207"
+    },
+    {
+      "name": "raw_null_value",
+      "hex": "8d0101000000f6f6f60001f600f6"
+    },
+    {
+      "name": "boolean",
+      "hex": "8df401000000f6f6f60000f602f6"
+    },
+    {
+      "name": "true",
+      "hex": "8df501000000f6f6f60000f602f6"
+    },
+    {
+      "name": "undefined",
+      "hex": "8df701000000f6f6f60000f602f6"
+    },
+    {
+      "name": "float",
+      "hex": "8dfa3f80000001000000f6f6f60000f602f6"
+    },
+    {
+      "name": "tagged_scalar",
+      "hex": "8dc00101000000f6f6f60000f602f6"
+    },
+    {
+      "name": "text",
+      "hex": "8d613101000000f6f6f60000f602f6"
+    },
+    {
+      "name": "bytes",
+      "hex": "8d410101000000f6f6f60000f602f6"
+    },
+    {
+      "name": "nested_array",
+      "hex": "8d8001000000f6f6f60000f602f6"
+    },
+    {
+      "name": "reserved_integer",
+      "hex": "8d1c01000000f6f6f60000f602f6"
+    },
+    {
+      "name": "indefinite_integer",
+      "hex": "8d1f01000000f6f6f60000f602f6"
+    },
+    {
+      "name": "nonminimal_u8",
+      "hex": "8d180101000000f6f6f60000f602f6"
+    },
+    {
+      "name": "nonminimal_u16",
+      "hex": "8d19000101000000f6f6f60000f602f6"
+    },
+    {
+      "name": "nonminimal_u32",
+      "hex": "8d1a0000000101000000f6f6f60000f602f6"
+    },
+    {
+      "name": "nonminimal_u64",
+      "hex": "8d1b000000000000000101000000f6f6f60000f602f6"
+    },
+    {
+      "name": "nonminimal_negative",
+      "hex": "8d0101000000f6f6f60001380000f6"
+    }
+  ]
+}

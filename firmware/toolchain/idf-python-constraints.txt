@@ -1,0 +1,31 @@
+# Exact pip freeze --all from the parent's ESP-IDF 5.3.1 compile environment.
+# Darwin arm64 / CPython 3.12.13, 2026-09-08. Not a dependency security audit.
+# Apply PIP_CONSTRAINT to the absolute path of this file before clean builds.
+CacheControl==0.14.4
+certifi==2026.7.22
+cffi==2.1.1
+chardet==3.0.4
+charset-normalizer==3.5.1
+click==8.5.0
+colorama==0.4.6
+contextlib2==21.6.0
+cryptography==41.0.7
+esp-idf-kconfig==1.5.0
+filelock==3.32.5
+future==1.0.0
+idf-component-manager==1.5.3
+idna==3.19
+kconfiglib==14.1.0
+msgpack==1.2.2
+packaging==26.3
+pip==25.0.1
+pycparser==3.0
+pyparsing==3.3.2
+PyYAML==6.0.3
+requests==2.34.2
+requests-file==1.5.1
+requests-toolbelt==1.0.0
+schema==0.7.5
+six==1.17.0
+tqdm==4.70.0
+urllib3==1.26.20

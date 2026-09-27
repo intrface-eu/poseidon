@@ -1,0 +1,11 @@
+# Task ID: 20
+# Title: [aeolus-api] Implement Device Registry and Config Endpoints
+# Status: pending
+# Dependencies: 14
+# Priority: medium
+# Description: Develop the FastAPI application (`aeolus-api`) with CRUD endpoints for device registration and endpoints for managing and retrieving configuration bundles.
+# Details:
+Create a FastAPI app in `apps/aeolus-api`. Use a PostgreSQL database (could be the same instance as TimescaleDB) for storing device registry info. Create Pydantic models for API requests/responses. Implement routes: `POST /devices`, `GET /devices/{id}`, `GET /configs/{site}`, `PUT /configs/{site}`. The config endpoints will allow a UI to push new YAML/JSON configs which can then be fetched by hubs.
+
+# Test Strategy:
+Run the API service locally. Use `curl` or the auto-generated Swagger UI (`/docs`) to test each endpoint. Create a device, retrieve it, update it, and delete it. Upload a new site configuration and then fetch it to verify it was stored correctly.

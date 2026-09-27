@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://poseidon.invalid/contracts/v1/independent-observation.schema.json",
+  "title": "Poseidon independent-observation v1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+      "maxLength": 128
+    },
+    "start_s": {
+      "type": "number",
+      "minimum": 0
+    },
+    "end_s": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "label": {
+      "enum": [
+        "feeding_observed",
+        "no_feeding_observed",
+        "uncertain",
+        "not_visible"
+      ]
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "observer": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "expected_revision": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    "review_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "protocol_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+              "maxLength": 128
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "maxItems": 32,
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+            "maxLength": 128
+          }
+        },
+        "visibility": {
+          "enum": [
+            "clear",
+            "limited",
+            "not_visible",
+            "unknown"
+          ]
+        },
+        "sync_uncertainty_s": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reviewed_coverage": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "protocol_id",
+        "evidence_refs",
+        "visibility",
+        "sync_uncertainty_s",
+        "reviewed_coverage"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "start_s",
+    "end_s",
+    "label",
+    "notes",
+    "observer",
+    "expected_revision"
+  ]
+}

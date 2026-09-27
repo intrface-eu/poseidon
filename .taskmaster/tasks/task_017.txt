@@ -1,0 +1,11 @@
+# Task ID: 17
+# Title: [trident] Implement YAML Configuration Loading and Application
+# Status: pending
+# Dependencies: 7
+# Priority: high
+# Description: Enhance TRIDENT to load site, program, and vision configurations from the `/configs` directory. Use these configurations to dynamically control the behavior of all hub services.
+# Details:
+Use the `PyYAML` library. On startup, TRIDENT should read `configs/sites/{site}.yml` (where site is an env var). It should then publish these configurations on retained MQTT topics (e.g., `poseidon/{site}/config/vision`, `poseidon/{site}/config/audio`) for other services to consume. Implement a file watcher (`watchdog` library) to detect changes and re-publish configs for live updates.
+
+# Test Strategy:
+Start the hub stack. Modify a value in `vrsar-reef.yml`, for example `vision.motion_threshold`. Verify from the logs that TRIDENT detects the change and publishes the new config. Verify that NEREID logs show it has received and applied the new threshold.

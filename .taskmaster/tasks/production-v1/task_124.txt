@@ -1,0 +1,27 @@
+{
+  "deliverablePaths": [
+    "hardware/electronics/",
+    "hardware/wiring/"
+  ],
+  "dependencies": [
+    109,
+    112,
+    113,
+    117
+  ],
+  "description": "Complete electrical design, power protection, harnesses, calculations, and manufacturing outputs.",
+  "details": "Document block diagram, distribution, fusing/isolation, grounding/EMI, independent inhibit/stop circuit, connector pinouts, harness lengths, test points, thermal/power/voltage-drop budgets, and custom-board KiCad sources when needed.",
+  "id": 124,
+  "ownerRole": "electrical",
+  "phase": "P6",
+  "priority": "high",
+  "researchPackages": [
+    "R4",
+    "R5",
+    "R6"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Review schematic, harness, power, thermal, and fault calculations; verify protection and test points cover the declared operating envelope.",
+  "title": "P6 Electrical, Power, and Wiring Package"
+}

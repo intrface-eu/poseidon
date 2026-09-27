@@ -1,0 +1,413 @@
+{
+  "revision": "HW-CAND-2.0",
+  "status": "NON_ADOPTED_NOT_BUILD_AUTHORIZED",
+  "parts": [
+    {
+      "id": "C2-ENC-HUB-01",
+      "assembly": "C2-HUB",
+      "geometry_instances": [
+        "C2-HUB-ENCLOSURE",
+        "C2-HUB-LID"
+      ],
+      "description": "Hammond1550WJ simplified vertical shell",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-TIM-01",
+      "assembly": "C2-HUB",
+      "geometry_instances": [
+        "C2-HUB-TIM-INNER",
+        "C2-HUB-TIM-OUTER"
+      ],
+      "description": "SIL PAD TSP1600 nominal inner cut patch",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-COLLECTOR-01",
+      "assembly": "C2-HUB",
+      "geometry_instances": [
+        "C2-HUB-COLLECTOR"
+      ],
+      "description": "Custom aluminium collector against inside rear wall",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-SINK-01",
+      "assembly": "C2-HUB",
+      "geometry_instances": [
+        "C2-HUB-SINK-BASE",
+        "C2-HUB-SINK-FINFIELD"
+      ],
+      "description": "Wakefield125460/XX4559 base of3in candidate cut",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-HUB-PI-STANDOFF",
+      "assembly": "C2-HUB",
+      "geometry_instances": [
+        "C2-HUB-PI-STANDOFF-1",
+        "C2-HUB-PI-STANDOFF-2",
+        "C2-HUB-PI-STANDOFF-3",
+        "C2-HUB-PI-STANDOFF-4"
+      ],
+      "description": "Pi candidate M2.5 support, not a thermal pickup",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "HUB-CPU-001",
+      "assembly": "C2-HUB",
+      "geometry_instances": [
+        "C2-HUB-PI-PCB",
+        "C2-HUB-PI-COMPONENT-ALLOCATION"
+      ],
+      "description": "Pi4 PCB verified plan mounting features",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "HUB-DAQ-001",
+      "assembly": "C2-HUB",
+      "geometry_instances": [
+        "C2-HUB-DAQ-ALLOCATION"
+      ],
+      "description": "Unselected receive DAQ fit allocation",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-SHADE-01",
+      "assembly": "C2-HUB",
+      "geometry_instances": [
+        "C2-HUB-SHADE"
+      ],
+      "description": "Opaque aluminium roof with true overhang and open ventilation",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-HUB-SHADE-POST",
+      "assembly": "C2-HUB",
+      "geometry_instances": [
+        "C2-HUB-SHADE-POST-1",
+        "C2-HUB-SHADE-POST-2"
+      ],
+      "description": "Outboard shade support, keeps sink channels unobstructed",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-HUB-MOUNT-CROSSBAR",
+      "assembly": "C2-HUB",
+      "geometry_instances": [
+        "C2-HUB-MOUNT-CROSSBAR"
+      ],
+      "description": "Independent mounting-frame crossbar",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-HUB-SUPPORT-PAD",
+      "assembly": "C2-HUB",
+      "geometry_instances": [
+        "C2-HUB-SUPPORT-PAD-1",
+        "C2-HUB-SUPPORT-PAD-2"
+      ],
+      "description": "Enclosure support/attachment allocation",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-REEF-BASE-L",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-BASE-L"
+      ],
+      "description": "Frame base rail with candidate anchor clearance",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-REEF-ANCHOR-M8",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-ANCHOR-L-1",
+        "C2-REEF-ANCHOR-L-2",
+        "C2-REEF-ANCHOR-R-1",
+        "C2-REEF-ANCHOR-R-2"
+      ],
+      "description": "M8 candidate fastener simplified shank/head, unthreaded model",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-REEF-WASHER-M8",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-WASHER-L-1",
+        "C2-REEF-WASHER-L-2",
+        "C2-REEF-WASHER-R-1",
+        "C2-REEF-WASHER-R-2"
+      ],
+      "description": "Candidate M8 washer allocation",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-REEF-BASE-R",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-BASE-R"
+      ],
+      "description": "Frame base rail with candidate anchor clearance",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-REEF-POST",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-POST-1",
+        "C2-REEF-POST-2",
+        "C2-REEF-POST-3",
+        "C2-REEF-POST-4"
+      ],
+      "description": "40x40x3 aluminium post, structural review open",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-REEF-PANEL-RAIL",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-PANEL-RAIL-1",
+        "C2-REEF-PANEL-RAIL-2"
+      ],
+      "description": "Longitudinal two-panel support rail",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-REEF-CROSS-TIE",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-CROSS-TIE-1",
+        "C2-REEF-CROSS-TIE-2"
+      ],
+      "description": "Frame bottom transverse tie",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "V2-PV-001",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-PV-1",
+        "C2-REEF-JUNCTION-ALLOC-1",
+        "C2-REEF-PV-2",
+        "C2-REEF-JUNCTION-ALLOC-2"
+      ],
+      "description": "Victron SPM040401200 physical panel envelope",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-REEF-PV-SUPPORT",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-PV-1-SUPPORT-1",
+        "C2-REEF-PV-1-SUPPORT-2",
+        "C2-REEF-PV-1-SUPPORT-3",
+        "C2-REEF-PV-1-SUPPORT-4",
+        "C2-REEF-PV-2-SUPPORT-1",
+        "C2-REEF-PV-2-SUPPORT-2",
+        "C2-REEF-PV-2-SUPPORT-3",
+        "C2-REEF-PV-2-SUPPORT-4"
+      ],
+      "description": "Metal panel support block",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-REEF-PV-END-CLAMP",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-PV-1-CLAMP-1",
+        "C2-REEF-PV-1-CLAMP-2",
+        "C2-REEF-PV-2-CLAMP-1",
+        "C2-REEF-PV-2-CLAMP-2"
+      ],
+      "description": "Custom metal end-clamp study, no approved panel interface",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-PV-SERIES-HARNESS",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-SERIES-LINK",
+        "C2-REEF-FREE-LEAD-1",
+        "C2-REEF-FREE-LEAD-2"
+      ],
+      "description": "Physical swept P1-positive to P2-negative jumper",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-REEF-SHELF-RAIL",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-BATTERY-SUPPORT-RAIL-1",
+        "C2-REEF-BATTERY-SUPPORT-RAIL-2",
+        "C2-REEF-ELECTRONICS-SUPPORT-RAIL-1",
+        "C2-REEF-ELECTRONICS-SUPPORT-RAIL-2"
+      ],
+      "description": "Shelf support rail between posts",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-REEF-BATTERY-SHELF",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-BATTERY-SHELF"
+      ],
+      "description": "Metal battery shelf, restraint and weather compartment unresolved",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "V2-BAT-001",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-BATTERY"
+      ],
+      "description": "Victron BAT512050610 upright conservative envelope",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-REEF-BATTERY-STOP",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-BATTERY-STOP-1",
+        "C2-REEF-BATTERY-STOP-2"
+      ],
+      "description": "Provisional metal lateral stop",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-REEF-ELECTRONICS-SHELF",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-ELECTRONICS-SHELF"
+      ],
+      "description": "REEF electronics support shelf",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-REEF-ENC-ALLOCATION",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-ELECTRONICS-ALLOCATION",
+        "C2-REEF-ELECTRONICS-LID"
+      ],
+      "description": "REEF enclosure allocation, exact purchased enclosure unselected",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "C2-REEF-COMPONENT-TRAY",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-COMPONENT-TRAY"
+      ],
+      "description": "Reference electronics mounting tray, holes pending source freeze",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "V2-MPPT-001",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-V2-MPPT-001"
+      ],
+      "description": "SCC075010060R source-bound candidate envelope",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "V2-BMS-001",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-V2-BMS-001"
+      ],
+      "description": "BMS400100000 source-bound candidate envelope",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "V2-LOADSW-001",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-V2-LOADSW-001"
+      ],
+      "description": "BPR065022000 source-bound candidate envelope",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "V2-REG5-001",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-V2-REG5-001"
+      ],
+      "description": "D36V28F5 source-bound candidate envelope",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "V2-REG3-001",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-V2-REG3-001"
+      ],
+      "description": "D36V28F3 source-bound candidate envelope",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "REEF-CPU-001",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-MCU-ALLOCATION"
+      ],
+      "description": "ESP32-DevKitC-32E provisional envelope",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    },
+    {
+      "id": "REEF-RF-001",
+      "assembly": "C2-REEF",
+      "geometry_instances": [
+        "C2-REEF-RADIO-ALLOCATION"
+      ],
+      "description": "RAK3272S conservative provisional envelope",
+      "procurement_authorized": false,
+      "quantity_note": "Model fragments can share a purchased parent; only V2-PV-001 distinct panel bodies establish quantity2, not junction allocations."
+    }
+  ],
+  "purchased_panel_quantity": 2,
+  "panel_bom_id": "V2-PV-001",
+  "panel_quantity_instances": [
+    "C2-REEF-PV-1",
+    "C2-REEF-PV-2"
+  ],
+  "top_placements_excluded_from_quantities": true
+}

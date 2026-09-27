@@ -1,0 +1,14 @@
+test_calibration_and_units_cannot_be_promoted (test_contract_boundary.ContractBoundaryTests.test_calibration_and_units_cannot_be_promoted) ... ok
+test_published_fixtures_and_schema_versions_agree (test_contract_boundary.ContractBoundaryTests.test_published_fixtures_and_schema_versions_agree) ... ok
+test_time_claim_cannot_become_verified_clock (test_contract_boundary.ContractBoundaryTests.test_time_claim_cannot_become_verified_clock) ... ok
+test_uint64_boot_identifier_has_exact_text_boundary (test_contract_boundary.ContractBoundaryTests.test_uint64_boot_identifier_has_exact_text_boundary) ... ok
+test_conflicting_provenance_does_not_replace_evidence (test_reference_system.ReferenceSystemTests.test_conflicting_provenance_does_not_replace_evidence) ... ok
+test_source_bound_replay_deduplication_review_restart (test_reference_system.ReferenceSystemTests.test_source_bound_replay_deduplication_review_restart) ... ok
+test_unknown_user_files_remain_untouched (test_reference_system.ReferenceSystemTests.test_unknown_user_files_remain_untouched) ... ok
+test_v1_manifest_rejects_schema_and_calibration_promotion (test_reference_system.ReferenceSystemTests.test_v1_manifest_rejects_schema_and_calibration_promotion) ... ok
+test_wrong_source_hash_cannot_produce_candidate (test_reference_system.ReferenceSystemTests.test_wrong_source_hash_cannot_produce_candidate) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.063s
+
+OK

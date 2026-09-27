@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="456" viewBox="0 0 1500 456">
+<rect width="1500" height="456" fill="white"/>
+<g font-family="monospace" fill="#172d39">
+<text x="35" y="40" font-size="25">WIPER / HW-REF-1.1 / FEATURE AND FASTENER SCHEDULE</text>
+<text x="35" y="72" font-size="18">PROVISIONAL / mm / NOT FOR FABRICATION / features in assembly-local coordinates unless labelled local</text>
+<text x="35" y="100" font-size="16">Source-tagged Pi features and battery/panel/converter/MPPT envelopes have vendor evidence; other details/tolerances are assumptions.</text>
+<text x="35" y="140" font-size="15" font-weight="bold">CAD-WIPER-GUARD-01 / BOM CAD-WIPER-GUARD-01</text>
+<text x="50" y="163" font-size="15" font-weight="normal">outer_diameter_mm: 148</text>
+<text x="50" y="186" font-size="15" font-weight="normal">inner_diameter_mm: 128</text>
+<text x="50" y="209" font-size="15" font-weight="normal">axial_width_mm: 8</text>
+<text x="50" y="232" font-size="15" font-weight="normal">Guard does not prove finger/debris safety; unpowered reference only</text>
+<text x="35" y="255" font-size="15" font-weight="bold">CAD-WIPER-MOTOR-BRIDGE-01 / BOM CAD-WIPER-MOTOR-BRIDGE-01</text>
+<text x="50" y="278" font-size="15" font-weight="normal">Fastener interfaces and housing-side attachment require selected motor and support design</text>
+<text x="35" y="301" font-size="15" font-weight="bold">CAD-WIPER-ARM-01 / BOM CAD-WIPER-ARM-01</text>
+<text x="50" y="324" font-size="15" font-weight="normal">reach_mm: 70</text>
+<text x="50" y="347" font-size="15" font-weight="normal">section_mm: [6,8]</text>
+<text x="50" y="370" font-size="15" font-weight="normal">pivot_hole_mm: 5.5</text>
+<text x="50" y="393" font-size="15" font-weight="normal">Unpowered pose study. Motor torque, shaft seal, hard stops, blade force, snagging and independent inhibit open</text>
+</g>
+</svg>

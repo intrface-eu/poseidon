@@ -1,0 +1,28 @@
+{
+  "blockedReason": "Blocked until independent acoustic/ecology review and the permissions specific to the proposed active trial are granted.",
+  "deliverablePaths": [
+    "research/r3-active-study.md",
+    "research/r4-acoustic-safety.md",
+    "ops/active-permissions/"
+  ],
+  "dependencies": [
+    102,
+    104,
+    111
+  ],
+  "description": "Obtain independent safety/ecology review and permissions for any controlled active acoustic study.",
+  "details": "Define pressure/exposure and particle-motion measures, permitted envelope, uncertainty, non-target monitoring, observer, abort and immediate-stop rules. Secure the specific facility/site and trial approvals. This gate is not passed by electrical limits, documentation, or a generic passive permission.",
+  "gate": "active-safety-ecology-permission",
+  "id": 106,
+  "ownerRole": "acoustic-ecology",
+  "phase": "P3",
+  "priority": "high",
+  "researchPackages": [
+    "R3",
+    "R4"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Verify independent reviewer acceptance and auditable active-study permissions; verify an approved permitted-program catalog and stop procedure exist before energized active tests.",
+  "title": "P3 Independent Acoustic, Ecology, and Active-Trial Permission Gate"
+}

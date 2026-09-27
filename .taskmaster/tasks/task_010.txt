@@ -1,0 +1,11 @@
+# Task ID: 10
+# Title: [siren] Implement Hard Safety Limiter for Audio Output
+# Status: pending
+# Dependencies: 5
+# Priority: high
+# Description: Add a non-bypassable audio limiter to the SIREN service to enforce maximum RMS and peak output levels, preventing dangerously loud sounds.
+# Details:
+Within the audio processing pipeline (whether GStreamer or custom numpy), before the final output sink, insert a custom processing block. This block will analyze audio chunks in real-time. Use a sliding window to calculate the RMS level. If RMS or peak sample value exceeds the configured `max_rms` or `max_peak` from the program config, apply a gain reduction (e.g., dynamic range compression or hard clipping). Also add a compile-time constant as a final, absolute failsafe.
+
+# Test Strategy:
+Create a unit test that feeds a high-amplitude sine wave into the limiter function and asserts that the output amplitude is clipped at the configured threshold. For HIL testing, play a loud test file and measure the electrical output with an oscilloscope to verify it does not exceed the expected voltage corresponding to the safety limit.

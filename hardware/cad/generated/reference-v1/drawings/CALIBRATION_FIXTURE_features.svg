@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="479" viewBox="0 0 1500 479">
+<rect width="1500" height="479" fill="white"/>
+<g font-family="monospace" fill="#172d39">
+<text x="35" y="40" font-size="25">CALIBRATION_FIXTURE / HW-REF-1.1 / FEATURE AND FASTENER SCHEDULE</text>
+<text x="35" y="72" font-size="18">PROVISIONAL / mm / NOT FOR FABRICATION / features in assembly-local coordinates unless labelled local</text>
+<text x="35" y="100" font-size="16">Source-tagged Pi features and battery/panel/converter/MPPT envelopes have vendor evidence; other details/tolerances are assumptions.</text>
+<text x="35" y="140" font-size="15" font-weight="bold">CAD-CAL-RAIL-01 / BOM CAD-CAL-RAIL-01</text>
+<text x="50" y="163" font-size="15" font-weight="normal">length_mm: 600</text>
+<text x="50" y="186" font-size="15" font-weight="normal">section_mm: [35,20]</text>
+<text x="50" y="209" font-size="15" font-weight="normal">Datum marks defined in drawing; straightness, distance and alignment require measurement</text>
+<text x="35" y="232" font-size="15" font-weight="bold">CAD-CAL-SLIDER-1 / BOM CAD-CAL-SLIDER-01</text>
+<text x="50" y="255" font-size="15" font-weight="normal">centre_x_mm: -200</text>
+<text x="50" y="278" font-size="15" font-weight="normal">mount_hole_diameter_mm: 6.6</text>
+<text x="35" y="301" font-size="15" font-weight="bold">CAD-CAL-SLIDER-2 / BOM CAD-CAL-SLIDER-01</text>
+<text x="50" y="324" font-size="15" font-weight="normal">centre_x_mm: 200</text>
+<text x="50" y="347" font-size="15" font-weight="normal">mount_hole_diameter_mm: 6.6</text>
+<text x="35" y="370" font-size="15" font-weight="bold">PRINT-CAL-TARGET-HOLDER-01 / BOM PRINT-CAL-TARGET-HOLDER-01</text>
+<text x="50" y="393" font-size="15" font-weight="normal">slot_mm: [82,4,12]</text>
+<text x="50" y="416" font-size="15" font-weight="normal">Holds a separately measured passive target; target artwork and calibration not supplied</text>
+</g>
+</svg>

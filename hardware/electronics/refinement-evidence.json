@@ -1,0 +1,237 @@
+{
+  "adopted_configuration": false,
+  "adoption_boundary": "Physical CAD frame, BOM, panel count and harness remain the1-panel HW-REF-1.1 reference. Any2-panel choice needs a new reference issue, frame/loads/geometry, cable/connector/protection and BMS/MPPT review before adoption.",
+  "all_reference_hardware_qualified": false,
+  "arrays": [
+    {
+      "adopted_configuration": false,
+      "all_array_calculation_screens_pass": false,
+      "all_reference_hardware_qualified": false,
+      "array_design_isc_a": 3.0,
+      "array_stc_power_w": 40.0,
+      "array_stc_voc_v": 22.45,
+      "cold_voc_v": 25.200125,
+      "disposition": "BLOCKED_ON_THERMAL_POWER_PATH_AND_PART_SELECTION",
+      "energization_allowed": false,
+      "energy": {
+        "break_even_peak_sun_hours": 1.306968067,
+        "energy_boundary": "load-side; all harvested energy modeled through storage cycle",
+        "harvest_stored_wh_per_day": 23.4,
+        "harvest_wh_per_day": 21.06,
+        "net_wh_per_day": -6.4647475,
+        "sustainable_under_assumptions": false
+      },
+      "hot_voc_v": 18.914125,
+      "ideal_stc_charge_a_at_min_battery": 3.571428571,
+      "panel_count": 1,
+      "panel_mpn": "SPM040401200",
+      "parallel": 1,
+      "reef_daily_load_wh": 27.5247475,
+      "required_start_v": 19.4,
+      "scenario": "1S1P",
+      "screen_limits": "Voc is a necessary startup screen, not loaded startup/MPPT validation. No series mismatch, shading, cable, connector, tolerance or fault qualification is implied.",
+      "screens": {
+        "cold_voc_below_controller_max": true,
+        "design_isc_below_controller_max": true,
+        "hot_voc_above_start_requirement": false,
+        "ideal_stc_charge_within_controller_limit": true,
+        "load_side_daily_energy_covers_reef": false,
+        "stc_power_within_nominal_12v_pv_limit": true
+      },
+      "series": 1
+    },
+    {
+      "adopted_configuration": false,
+      "all_array_calculation_screens_pass": true,
+      "all_reference_hardware_qualified": false,
+      "array_design_isc_a": 3.0,
+      "array_stc_power_w": 80.0,
+      "array_stc_voc_v": 44.9,
+      "cold_voc_v": 50.40025,
+      "disposition": "BLOCKED_ON_THERMAL_POWER_PATH_AND_PART_SELECTION",
+      "energization_allowed": false,
+      "energy": {
+        "break_even_peak_sun_hours": 0.653484034,
+        "energy_boundary": "load-side; all harvested energy modeled through storage cycle",
+        "harvest_stored_wh_per_day": 46.8,
+        "harvest_wh_per_day": 42.12,
+        "net_wh_per_day": 14.5952525,
+        "sustainable_under_assumptions": true
+      },
+      "hot_voc_v": 37.82825,
+      "ideal_stc_charge_a_at_min_battery": 7.142857143,
+      "panel_count": 2,
+      "panel_mpn": "SPM040401200",
+      "parallel": 1,
+      "reef_daily_load_wh": 27.5247475,
+      "required_start_v": 19.4,
+      "scenario": "2S1P",
+      "screen_limits": "Voc is a necessary startup screen, not loaded startup/MPPT validation. No series mismatch, shading, cable, connector, tolerance or fault qualification is implied.",
+      "screens": {
+        "cold_voc_below_controller_max": true,
+        "design_isc_below_controller_max": true,
+        "hot_voc_above_start_requirement": true,
+        "ideal_stc_charge_within_controller_limit": true,
+        "load_side_daily_energy_covers_reef": true,
+        "stc_power_within_nominal_12v_pv_limit": true
+      },
+      "series": 2
+    },
+    {
+      "adopted_configuration": false,
+      "all_array_calculation_screens_pass": false,
+      "all_reference_hardware_qualified": false,
+      "array_design_isc_a": 6.0,
+      "array_stc_power_w": 80.0,
+      "array_stc_voc_v": 22.45,
+      "cold_voc_v": 25.200125,
+      "disposition": "BLOCKED_ON_THERMAL_POWER_PATH_AND_PART_SELECTION",
+      "energization_allowed": false,
+      "energy": {
+        "break_even_peak_sun_hours": 0.653484034,
+        "energy_boundary": "load-side; all harvested energy modeled through storage cycle",
+        "harvest_stored_wh_per_day": 46.8,
+        "harvest_wh_per_day": 42.12,
+        "net_wh_per_day": 14.5952525,
+        "sustainable_under_assumptions": true
+      },
+      "hot_voc_v": 18.914125,
+      "ideal_stc_charge_a_at_min_battery": 7.142857143,
+      "panel_count": 2,
+      "panel_mpn": "SPM040401200",
+      "parallel": 2,
+      "reef_daily_load_wh": 27.5247475,
+      "required_start_v": 19.4,
+      "scenario": "1S2P",
+      "screen_limits": "Voc is a necessary startup screen, not loaded startup/MPPT validation. No series mismatch, shading, cable, connector, tolerance or fault qualification is implied.",
+      "screens": {
+        "cold_voc_below_controller_max": true,
+        "design_isc_below_controller_max": true,
+        "hot_voc_above_start_requirement": false,
+        "ideal_stc_charge_within_controller_limit": true,
+        "load_side_daily_energy_covers_reef": true,
+        "stc_power_within_nominal_12v_pv_limit": true
+      },
+      "series": 1
+    }
+  ],
+  "baseline_configuration": "reference-v1",
+  "baseline_evidence_sha256": "dfc71d2a6bfffc8a99b12e83af9e5daf9ad33ead8da6337c50cdfb7f1b17e40f",
+  "baseline_failed_case_preserved": true,
+  "baseline_file_sha256": {
+    "hardware/bom/reference-v1.json": "bfb56a82e072c9b6d6ceb2e97327ac6f983e537737ac1034e31cc825cc148025",
+    "hardware/bom/sources.json": "9c8a3fb77ee0ddd6b15307ed501e4cdc7babdb876015161572e5b49b9b5ebcc5",
+    "hardware/electronics/calculate.py": "9456e8cebd587968a5a489161778a8d1c3280bc7ea5e499e46bc84779cc91643",
+    "hardware/electronics/reference-evidence.json": "dfc71d2a6bfffc8a99b12e83af9e5daf9ad33ead8da6337c50cdfb7f1b17e40f",
+    "hardware/electronics/reference-inputs.json": "7afc060fbe742dade187ee153ad8991ddee9c105d1207eb9e798a9eaadeecd97",
+    "hardware/wiring/connectors.csv": "b2189f640b46fb7cf449cb2b5179c7369e19b4ad205551655dec034337cea608",
+    "hardware/wiring/design.json": "a989f2ef1508a58f1be67497a0cf548f2ade441e781f757d4ecbc4f7e540573e",
+    "hardware/wiring/harnesses.csv": "d3fa72bd238fed7331f442c021a1abee42be42dd2f63cd2962ccb9bc5972b48e",
+    "hardware/wiring/schematic.txt": "dc95aa473eef7a6cf40f40c95e4d2e75f04ad5e61bf81e7935b7eeca130aaf44"
+  },
+  "baseline_reference": "HW-REF-1.1",
+  "claims_not_supported": [
+    "viable passive product",
+    "field autonomy",
+    "thermal qualification",
+    "procurement approval",
+    "two-panel adoption",
+    "live-test authorization"
+  ],
+  "controller_nominal_pv_power_limit_w_at_12v": 145,
+  "disposition": "BLOCKED_ON_THERMAL_POWER_PATH_AND_PART_SELECTION",
+  "energization_allowed": false,
+  "evidence_kind": "calculated_comparison_not_measured_or_adopted",
+  "frozen_battery_inputs": {
+    "aged_capacity_fraction": 0.8,
+    "capacity_ah": 50.0,
+    "cold_capacity_fraction": 0.8,
+    "discharge_efficiency": 0.9,
+    "reserve_days": 3.0,
+    "usable_depth_fraction": 0.8
+  },
+  "frozen_battery_rail_v": [
+    11.2,
+    14.4
+  ],
+  "frozen_solar_inputs": {
+    "charge_efficiency": 0.9,
+    "cold_cell_c": -10.0,
+    "field_derate": 0.65,
+    "hot_cell_c": 70.0,
+    "isc_sizing_multiplier": 1.25,
+    "mppt_max_charge_a": 10.0,
+    "mppt_max_isc_a": 13.0,
+    "mppt_max_voc_v": 75.0,
+    "mppt_start_margin_v": 5.0,
+    "panel_isc_stc_a": 2.4,
+    "panel_stc_w": 40.0,
+    "panel_voc_stc_v": 22.45,
+    "peak_sun_hours": 1.0,
+    "voc_temperature_coefficient_per_c": -0.0035
+  },
+  "remaining_physical_blockers": [
+    "Unselected/unmeasured enclosure heat path and exposure control; current thermal assumption fails.",
+    "Pi USB-C source/CC/current limit/OVP/cable and12V source/protection are not a qualified power path.",
+    "External Smart-battery BMS, charger/load disconnects and REEF regulators remain unselected.",
+    "Two-panel framing/mount loads, series voltage insulation/connectors, parallel reverse-current/fusing and MPPT hot loaded startup need separate design and qualification.",
+    "Panel availability, wet acquisition/pressure/connector parts, site solar and all electrical qualification remain open."
+  ],
+  "study": "POWER-REFINEMENT-1",
+  "thermal": {
+    "absorbed_solar_w": 48.0,
+    "ambient_c": 35.0,
+    "existing_assumed_rtheta_k_per_w": 1.5,
+    "headroom_c": 15.0,
+    "measured_rtheta_k_per_w": null,
+    "mechanical_measurement_blocker": "No selected purchased enclosure wall material/thickness, Pi/converter heat-spreader/contact stack, external dissipator mounting/area, or sun-shield spacing/ventilation. No measured internal-air rise or effective heat-path resistance at frozen load/exposure. A lower convenient Rtheta cannot be substituted for those missing parts and measurements.",
+    "peak_enclosed_heat_w": 21.857142857,
+    "pi_vendor_ambient_limit_c": 50.0,
+    "replacement_rtheta_selected": null,
+    "required_shade_rtheta_max_k_per_w": 0.68627451,
+    "required_sun_rtheta_max_k_per_w": 0.214723926,
+    "requirements_are_zero_uncertainty_upper_bounds": true,
+    "shade_enclosed_heat_cap_w_at_existing_rtheta": 10.0,
+    "shade_pi_and_usb_output_cap_a_at_5v1": 1.37254902,
+    "shade_pi_and_usb_output_cap_w_at_existing_rtheta": 7.0,
+    "shade_temperature_at_existing_assumption_c": 67.785714286,
+    "sun_heat_alone_exceeds_headroom_at_existing_rtheta": true,
+    "sun_temperature_at_existing_assumption_c": 139.785714286,
+    "thermal_path_selected": false,
+    "thermal_qualified": false,
+    "uncertainty_acceptance": {
+      "extra_requirements": "Verify Pi/converter local hotspots, junction/derating and fault behavior separately; air-temperature inequality alone is not full qualification.",
+      "frozen_conditions": "35degC ambient, frozen simultaneous peak load and declared shade or48W absorbed-sun exposure; no cooler ambient or reduced load substitution",
+      "inequality": "Tair_measured + U <= 50 degC",
+      "live_tests_authorized": false,
+      "measurement": null,
+      "method_owner": "qualified reviewer sets approved sensor locations, calibration, uncertainty, stabilization, duration and exposure method before testing",
+      "uncertainty": null
+    },
+    "workload_comparison": [
+      {
+        "exceeds_shade_output_cap": false,
+        "pi_and_usb_output_w": 3.57,
+        "state": "idle"
+      },
+      {
+        "exceeds_shade_output_cap": true,
+        "pi_and_usb_output_w": 9.18,
+        "state": "record"
+      },
+      {
+        "exceeds_shade_output_cap": true,
+        "pi_and_usb_output_w": 11.73,
+        "state": "upload"
+      },
+      {
+        "exceeds_shade_output_cap": true,
+        "pi_and_usb_output_w": 15.3,
+        "state": "peak"
+      }
+    ],
+    "workload_reduction_justified": false
+  },
+  "unchanged_reef_daily_load_wh": 27.5247475,
+  "unchanged_usable_load_side_battery_wh": 294.912
+}

@@ -1,0 +1,123 @@
+{
+  "configuration": "passive-v2",
+  "revision": "HW-CAND-2.0",
+  "retrieved_date": "2026-09-08",
+  "status": "NON_ADOPTED_SOURCE_REFERENCE",
+  "sources": [
+    {
+      "id": "C2-SRC-HAMMOND-1550WJ",
+      "manufacturer": "Hammond Manufacturing",
+      "url": "https://www.hammfg.com/files/parts/pdf/1550WJ.pdf",
+      "local_file": "Hammond-1550WJ.pdf",
+      "drawing_title": "1550J",
+      "drawing_revision": "09.04.2025 as printed; date convention not inferred",
+      "locator": "Page1 overall views, sections A-A/B-B and part table",
+      "mpn": "1550WJ",
+      "verified": {
+        "overall_lwh_mm": [
+          275,
+          175,
+          66.6
+        ],
+        "inside_length_mm": 266.91,
+        "inside_width_mm": 166.91,
+        "inside_height_mm": 61.6,
+        "base_reference_thickness_mm": 2.5,
+        "lid_reference_thickness_mm": 1.5,
+        "material": "Diecast aluminum alloy; exact grade absent",
+        "cover_screws_included": 6
+      },
+      "caveats": [
+        "The drawing is shared by1550J/1550WJ families;Wpart table says liquid-resistant silicone gasket while generic notes mentionEVA. Exact supplied gasket and assembly revision require confirmation.",
+        "No numeric IP or pressure rating is adopted from this drawing. Modified thermal mounting/holes/clamps do not inherit an ingress claim.",
+        "Taper/bosses/lips mean the three inside dimensions are not a constant empty rectangular box.245x145x48mm usable reservation is a conservative DESIGN assumption.",
+        "Wall thermal conductivity, surface flatness, contact compression and installed thermal resistance are not specified."
+      ],
+      "sha256": "c5a25909908b686e83fe3ade063e770f9c9f359dd3177e28054f50ed305ca969",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "id": "C2-SRC-WAKEFIELD-XX4559",
+      "manufacturer": "Wakefield Thermal",
+      "url": "https://wakefieldthermal.com/content/catalogs/Thermal_Extrusions_WakefieldThermal-2025.pdf",
+      "local_file": "Wakefield-Thermal-Extrusions-2025.pdf",
+      "locator": "PDF page21 / printed page17, XX4559 profile and125460/125461 rows",
+      "stock_mpn": "125460",
+      "verified": {
+        "stock_length_in": 12,
+        "profile_width_in": 10.78,
+        "profile_height_in": 3.77,
+        "profile_base_in": 0.62,
+        "thermal_reference_length_in": 3,
+        "natural_convection_thermal_reference_k_per_w": 0.5
+      },
+      "caveats": [
+        "0.5K/W is explicitly based on3inch natural-convection reference, not the12inch stock length or installed Poseidon enclosure.",
+        "Candidate3inch cut segment requires a future cutting/finishing operation; no cut stock is ordered or fabricated.",
+        "Do not divide the catalog thermal resistance by stock length or treat a chosen multiplier as a vendor-qualified worst case.",
+        "Fin pitch/count/taper are not dimensioned on this page. CAD visualization may reserve a fin envelope but cannot invent manufacturing precision.",
+        "Test heat, orientation, surface treatment, ambient and mounting boundary conditions are not stated on the retrieved page; installed sink performance remains unknown."
+      ],
+      "sha256": "7baf0f6a605e88bd0a014414fea7d6776af4d20e62a0a6dafd33fa69c9913911",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "id": "C2-SRC-HENKEL-TSP1600",
+      "manufacturer": "Henkel BERGQUIST",
+      "url": "https://datasheets.tdx.henkel.com/BERGQUIST-SIL-PAD-TSP-1600-en_GL.pdf",
+      "local_file": "Henkel-SIL-PAD-TSP-1600.pdf",
+      "locator": "Page1 thickness, thermal properties and ASTM D5470 pressure table; footnote1",
+      "revision": "November2018",
+      "material": "SIL PAD TSP1600, formerly SIL-PAD800",
+      "verified": {
+        "thickness_mm": 0.127,
+        "typical_thermal_conductivity_w_mk": 1.6,
+        "thermal_impedance_c_in2_per_w_by_psi": {
+          "10": 0.92,
+          "25": 0.6,
+          "50": 0.45,
+          "100": 0.36,
+          "200": 0.29
+        },
+        "reported_operating_temperature_c": [
+          -60,
+          180
+        ]
+      },
+      "caveats": [
+        "Datasheet calls these typical/reference properties, not product specifications.",
+        "ASTM D5470 impedance includes test-fixture interfacial resistance. Actual application depends on surface roughness, flatness and applied pressure.",
+        "Do not add t/k to the quoted area-normalized impedance: that would double-count material/contact terms.",
+        "The200x70mm patch and two interfaces are custom candidate geometry, not a selected die-cut supplierSKU.",
+        "Large-area force frompressure*area is a sizing calculation, not a permitted clamp load on the diecast enclosure or PCB. No torque orpressure is selected.",
+        "Material electrical values do not qualify assembled electrical insulation or marine sealing."
+      ],
+      "sha256": "58f544583f86db7eb03736797e1d907a567717aecf095e8a0be5c29127dda9e3",
+      "license_status": "supplier_redistribution_unverified"
+    }
+  ],
+  "unsourced_design_inputs": [
+    {
+      "input": "Collector aluminum conductivity sensitivity70/120/200W/mK",
+      "status": "Illustrative material sensitivity, NOT vendor bound or selectedalloy. Actual material certificate/conductivity remains open."
+    },
+    {
+      "input": "Air-to-wall convection sensitivity2/5/10W/m2K",
+      "status": "Exploratory convection sensitivity, NOT validated internal coefficient. Calculated full wallarea is an optimistic availablearea, component obstruction and radiation/coupling unverified."
+    },
+    {
+      "input": "Sink multiplier1/1.5/2 and effective contact-area fractions1/0.5",
+      "status": "Sensitivity only, NOT proof these bound installed performance. No favorable multiplier selected."
+    },
+    {
+      "input": "Shade residual solar fractions0/0.25/0.5/1",
+      "status": "Zero is an ideal mathematical lower limit only, NEVER adopted. Geometry does not close unknown direct/diffuse/radiative/convection coupling."
+    },
+    {
+      "input": "Heat collection fraction0/0.5/0.9/1",
+      "status": "No heat-capture fraction selected or measured;1 is an ideal limiting case, not acceptance. Air/PCB/junction temperature cannot be inferred from collector temperature alone."
+    }
+  ],
+  "prices_and_availability": "All unverified; no quotes, contact or purchases.",
+  "physical_qualification": "None performed. Source-backed geometry/thermal data remain reference inputs, not assembled performance."
+}

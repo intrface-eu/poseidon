@@ -1,0 +1,24 @@
+{
+  "deliverablePaths": [
+    "apps/aquilon/",
+    "ops/compose/"
+  ],
+  "dependencies": [
+    117,
+    121
+  ],
+  "description": "Integrate above-water LoRaWAN telemetry into the canonical event path.",
+  "details": "Use an EU-region gateway/network path, OTAA provisioning, payload validation, airtime/link budgets, device registry linkage, acknowledgements, and bounded offline behavior. Keep audio/video out of LoRaWAN.",
+  "id": 118,
+  "ownerRole": "connectivity",
+  "phase": "P5",
+  "priority": "high",
+  "researchPackages": [
+    "R5",
+    "R7"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Test joins, malformed/stale payload rejection, duplicate handling, counter persistence, gateway loss, recovery, and airtime limits.",
+  "title": "P5 AQUILON LoRaWAN Integration"
+}

@@ -1,0 +1,8 @@
+bind 0.0.0.0
+protected-mode yes
+port 6379
+appendonly yes
+dir /data
+requirepass REPLACE_WITH_PRIVATE_REDIS_PASSWORD
+maxmemory 128mb
+maxmemory-policy noeviction

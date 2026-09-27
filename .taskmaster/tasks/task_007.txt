@@ -1,0 +1,11 @@
+# Task ID: 7
+# Title: [trident] Implement Basic Vision-to-Audio Orchestration
+# Status: pending
+# Dependencies: 5, 6
+# Priority: high
+# Description: Create the `trident` orchestrator service that subscribes to `vision/event` from NEREID and, upon receiving a motion event, publishes a command to SIREN to trigger an audio playback.
+# Details:
+In `apps/trident/main.py`, create an MQTT client that subscribes to `poseidon/+/+/vision/event`. In the message handler, parse the event. If the event meets certain criteria (e.g., `event == 'motion'`), construct an audio command payload and publish it to `poseidon/{site}/{zone}/audio/cmd/play_wav` (or a similar topic that SIREN is listening to). This service wires the two components together.
+
+# Test Strategy:
+Run `trident`, `nereid`, and `siren` services together. Trigger a motion event with the camera. Verify that audio plays from the speaker. This is the first end-to-end integration test of the reactive loop. Monitor all service logs and MQTT traffic.

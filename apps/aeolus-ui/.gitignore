@@ -1,0 +1,5 @@
+.next/
+node_modules/
+*.tsbuildinfo
+qa/artifacts/*.png
+qa/artifacts/*.json

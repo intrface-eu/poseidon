@@ -1,0 +1,51 @@
+{
+  "schema": "poseidon.hardware.thermal-power-hold-point.v1",
+  "configuration": "reference-v1",
+  "reference_revision": "HW-REF-1.1",
+  "status": "BLOCKED_NOT_AUTHORIZATION",
+  "baseline_evidence": "hardware/electronics/reference-evidence.json",
+  "baseline_evidence_sha256": "dfc71d2a6bfffc8a99b12e83af9e5daf9ad33ead8da6337c50cdfb7f1b17e40f",
+  "refinement_evidence": "hardware/electronics/refinement-evidence.json",
+  "physical_tests_performed": 0,
+  "configuration_changes_adopted": false,
+  "blockers": [
+    {
+      "id": "HB-THERMAL-01",
+      "owner": "Qualified thermal/electrical engineer with hardware lead",
+      "blocked_claim": "The issued HUB can operate at the illustrative35C ambient/peak-load scenario inside its closed enclosure.",
+      "reason": "No selected and source-backed or measured enclosure-to-ambient heat path exists. The declared1.5K/W assumption predicts67.786C internal air at peak shade load, above the Pi50C ambient limit. Removing absorbed sun alone does not fix this.",
+      "unchanged_inputs": {"ambient_c": 35, "pi_vendor_max_ambient_c": 50, "modeled_peak_enclosed_heat_w": 21.857142857142858, "assumed_enclosure_rth_k_per_w": 1.5, "assumed_absorbed_sun_w": 48},
+      "nominal_zero_uncertainty_screen_only": {"maximum_shade_rth_k_per_w": 0.6862745098039216, "maximum_sun_rth_k_per_w": 0.2147239263803681},
+      "required_design_inputs": ["Exact enclosure, tray/converter mounting and thermal interfaces", "Source-backed heat spreader/sink/ventilation/shade design compatible with ingress/corrosion/service requirements", "Actual electronics duty/peak and converter efficiency", "Declared ambient/sun/wind envelope", "Measurement uncertainty and component-specific derating"],
+      "measurement_hold_point": {
+        "activity_authorized": false,
+        "test_result": null,
+        "raw_evidence": [],
+        "test_type": "Approved guarded dry dummy-load heat-path characterization; no underwater instruments or acoustic hardware.",
+        "specimen": "Exact closed enclosure, mounting orientation, passive heat path and proposed shading. Do not use the open CAD cavity as a thermal specimen.",
+        "heat_load": "Apply a calibrated safe dummy-load distribution representing21.857142857W enclosed heat, then the approved uncertainty/worst-state margin. Reviewer must validate component heat locations and method; this record does not authorize energization.",
+        "exposure": "Characterize shaded ambient first, then the approved external irradiance/absorption case. A physical shade must be tested or conservatively bounded; do not silently set absorbed solar heat to zero.",
+        "instrumentation": ["Traceably calibrated ambient and internal-air sensors near Pi/DAQ/converter", "Selected component case/terminal measurement where required", "Measured electrical input heat with uncertainty", "Timestamped logging and approved stabilization criterion"],
+        "acceptance_inequality": "At the frozen load and environment, maximum measured local component ambient + expanded uncertainty <= applicable vendor ambient limit. For Pi the current source limit is50C. Also pass every other component, terminal, battery and accessible-surface constraint; a Pi-only pass is insufficient.",
+        "effective_rth_equation": "(steady internal_air_c - ambient_c) / measured_enclosed_heat_w for the stated setup; treat solar loading separately rather than reporting one universal Rtheta.",
+        "freeze_before_test": ["Separate root/user authorization and safe facility/method", "Exact specimen/BOM and sensor locations", "Electrical source/current limit/guarding and abort temperatures", "Uncertainty budget and stabilization rule", "Approved maximum ambient/load/sun cases and sample plan"],
+        "stop_rule": "Qualified operator stops under the approved abort criterion; no unattended or unguarded heater test is authorized. A failed or unperformed test cannot release the reference."
+      }
+    },
+    {
+      "id": "HB-POWER-PATH-02",
+      "owner": "Qualified electrical engineer",
+      "blocked_claim": "The passive reference is ready for energization.",
+      "reason": "USB-C source/OVP/current limit, independent REEF regulators, compatible external battery BMS/charge-load disconnect and coordinated wire/fuse/connector parts remain unselected. A steady-state energy pass cannot close these gaps.",
+      "close_with": ["Exact selected components and reviewed wiring/connector/grounding design", "Source role/backfeed/OVP and voltage-extrema tests", "Measured inrush/radio burst, fault clearing and low-temperature charging inhibition", "Updated approved BOM and assembly instructions before physical build"]
+    },
+    {
+      "id": "HB-SOLAR-03",
+      "owner": "Electrical/mechanical engineer with root/user configuration decision",
+      "blocked_claim": "The issued one-panel REEF is autonomous under its illustrative1PSH scenario.",
+      "reason": "The unchanged40W case has negative energy balance and insufficient modeled hot-panel startup voltage. Comparison cases are analytical candidates, not adopted hardware.",
+      "candidate_boundary": "Two series-connected40W reference panels can be screened under the unchanged assumptions. The current1.1 CAD and BOM still contain one panel; no two-panel mounting, wiring, procurement quantity or deployment is released.",
+      "close_with": ["Explicit configuration selection and a new reference revision if panel count/topology changes", "Revised frame, wind/load/attachment and cable/connector/protection design", "Current source availability and exact module/controller/BMS data", "Site-specific worst-season irradiance/shading and measured consumption", "Actual cold/hot startup, charging and reserve measurements"]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# Task ID: 23
+# Title: [trident] Implement Remote Kill-Switch Command
+# Status: pending
+# Dependencies: 17
+# Priority: high
+# Description: Implement the critical safety feature for a remote kill-switch. TRIDENT must listen on a specific MQTT topic and, upon receiving a signed command, immediately terminate all running services.
+# Details:
+In TRIDENT, subscribe to `poseidon/{site}/hub/cmd/killswitch`. The message payload should be a signed JWT or similar token to prevent unauthorized use. On receipt, TRIDENT will first attempt a graceful shutdown of other services (e.g., by sending them a termination signal via IPC), with a special, immediate command to SIREN to stop audio. After a short timeout, it will execute `docker compose down` or `systemctl stop` for all services, including itself.
+
+# Test Strategy:
+With the hub running, publish a signed kill-switch command from the AEOLUS-API (or manually for testing). Verify that all Docker containers on the Pi are stopped immediately. Especially confirm that any playing audio is cut off instantly.

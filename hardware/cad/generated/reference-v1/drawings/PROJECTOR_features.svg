@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="548" viewBox="0 0 1500 548">
+<rect width="1500" height="548" fill="white"/>
+<g font-family="monospace" fill="#172d39">
+<text x="35" y="40" font-size="25">PROJECTOR / HW-REF-1.1 / FEATURE AND FASTENER SCHEDULE</text>
+<text x="35" y="72" font-size="18">PROVISIONAL / mm / NOT FOR FABRICATION / features in assembly-local coordinates unless labelled local</text>
+<text x="35" y="100" font-size="16">Source-tagged Pi features and battery/panel/converter/MPPT envelopes have vendor evidence; other details/tolerances are assumptions.</text>
+<text x="35" y="140" font-size="15" font-weight="bold">PROJECTOR-ENV / BOM PROJECTOR-XDCR-OPT-001</text>
+<text x="50" y="163" font-size="15" font-weight="normal">diameter_assumed_mm: 120</text>
+<text x="50" y="186" font-size="15" font-weight="normal">length_assumed_mm: 160</text>
+<text x="50" y="209" font-size="15" font-weight="normal">No frequency, power, depth, source-level or biological-safe claim. Not a historical pinger selection.</text>
+<text x="35" y="232" font-size="15" font-weight="bold">CAD-PROJECTOR-COLLAR-1 / BOM CAD-PROJECTOR-COLLAR-01</text>
+<text x="50" y="255" font-size="15" font-weight="normal">bore_mm: 140</text>
+<text x="50" y="278" font-size="15" font-weight="normal">outside_diameter_mm: 160</text>
+<text x="35" y="301" font-size="15" font-weight="bold">PROJECTOR-ISOLATOR-1 / BOM ACT-ISOLATOR-01</text>
+<text x="50" y="324" font-size="15" font-weight="normal">0.8 mm inner/0.5 mm outer clearance is a geometry study, not assembled preload. Durometer, compression, restraint, creep and</text>
+<text x="50" y="347" font-size="15" font-weight="normal">modal/transmissibility tests open.</text>
+<text x="35" y="370" font-size="15" font-weight="bold">CAD-PROJECTOR-COLLAR-2 / BOM CAD-PROJECTOR-COLLAR-01</text>
+<text x="50" y="393" font-size="15" font-weight="normal">bore_mm: 140</text>
+<text x="50" y="416" font-size="15" font-weight="normal">outside_diameter_mm: 160</text>
+<text x="35" y="439" font-size="15" font-weight="bold">PROJECTOR-ISOLATOR-2 / BOM ACT-ISOLATOR-01</text>
+<text x="50" y="462" font-size="15" font-weight="normal">0.8 mm inner/0.5 mm outer clearance is a geometry study, not assembled preload. Durometer, compression, restraint, creep and</text>
+<text x="50" y="485" font-size="15" font-weight="normal">modal/transmissibility tests open.</text>
+</g>
+</svg>

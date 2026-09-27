@@ -1,0 +1,289 @@
+{
+  "format": "poseidon-literature-sources-v1",
+  "package": "R4",
+  "title": "Acoustic safety and output chain",
+  "reviewed_on": "2026-09-09",
+  "review_type": "targeted desk review by a research worker; not a systematic review and not an underwater-acoustics specialist sign-off",
+  "field_data_available": false,
+  "measurement_performed": false,
+  "permission_or_emission_authorized": false,
+  "purchase_or_quote_obtained": false,
+  "contact_made_with_vendor_or_authority": false,
+  "access_legend": {
+    "full": "page text retrieved and read in this run",
+    "abstract": "only abstract, product summary or search-index summary readable; publisher full text or datasheet PDF not read",
+    "inaccessible": "login wall, HTTP 403, or PDF text streams not readable in this run"
+  },
+  "sources": [
+    {
+      "id": "R4-S01",
+      "url": "https://link.springer.com/content/pdf/10.1007%2F978-3-319-06659-2.pdf",
+      "title": "ASA S3/SC1.4 TR-2014 Sound Exposure Guidelines for Fishes and Sea Turtles",
+      "publisher": "Acoustical Society of America / Springer (SpringerBriefs in Oceanography)",
+      "retrieved": "2026-09-09",
+      "accessed": "inaccessible",
+      "used_for": "R4-F1, R4-U1, R4-O1: names the reference framework for fish sound-exposure criteria. Publisher redirected to an identity-provider login; no numeric criterion was read or transcribed.",
+      "quote": "ASA S3/SC1.4 TR-2014 Sound Exposure Guidelines for Fishes and Sea Turtles"
+    },
+    {
+      "id": "R4-S02",
+      "url": "https://tethys.pnnl.gov/publications/best-practice-guide-underwater-particle-motion-measurement-biological-applications",
+      "title": "Best Practice Guide for Underwater Particle Motion Measurement for Biological Applications",
+      "publisher": "University of Exeter (Nedelec et al., 2021; DOI 10.25607/OBP-1726), hosted by Tethys / PNNL",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R4-F5, R4-O2: all fishes sense particle motion; particle motion is not predictable from pressure near surface, bottom or in shallow water; guidance on instrument choice and calibration.",
+      "quote": "key findings on best practice for PM measurement for biological applications"
+    },
+    {
+      "id": "R4-S03",
+      "url": "https://indicators.helcom.fi/indicator/continuous-noise/",
+      "title": "Continuous low frequency anthropogenic sound (continuous noise indicator)",
+      "publisher": "HELCOM",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R4-F2, R4-F3, R4-F4: units (dB re 1 uPa), decidecade bands, averaging rule, LOBE definition, receptor-specific band choice (125 Hz fish, 500 Hz mammals), 20 percent spatial threshold.",
+      "quote": "The noise level at which individual animals start to have adverse effects that could affect their fitness"
+    },
+    {
+      "id": "R4-S04",
+      "url": "https://environment.ec.europa.eu/news/zero-pollution-and-biodiversity-first-ever-eu-wide-limits-underwater-noise-2022-11-29_en",
+      "title": "Zero pollution and Biodiversity: First ever EU-wide limits for underwater noise",
+      "publisher": "European Commission, DG Environment",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R4-F23: agreed 29 November 2022; area-exposure threshold values for continuous and impulsive noise; status as recommendations feeding member-state marine strategies, not a per-device permitted level.",
+      "quote": "no more than 20% of a marine habitat can be exposed to impulsive noise over a given day"
+    },
+    {
+      "id": "R4-S05",
+      "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC133476/JRC133476_01.pdf",
+      "title": "Setting EU Threshold Values for continuous underwater sound (TG NOISE, MSFD Common Implementation Strategy)",
+      "publisher": "European Commission Joint Research Centre",
+      "retrieved": "2026-09-09",
+      "accessed": "inaccessible",
+      "used_for": "R4-F23: cited as the technical basis document behind the agreed EU threshold values. PDF text was not readable in this run; no value was taken from it directly.",
+      "quote": "Setting EU Threshold Values for continuous underwater sound"
+    },
+    {
+      "id": "R4-S06",
+      "url": "https://water.europa.eu/marine/assessment-module/national-descriptors-assessments/hr/mad/d11/art11/@@view-report-data-2020",
+      "title": "Member State report / Art11 / 2020 / D11 / Croatia / Mediterranean: Adriatic Sea",
+      "publisher": "European Environment Agency / WISE Marine (report submitted by the Institute of Oceanography and Fisheries, Croatia)",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R4-F24, R4-F28: Croatian D11 monitoring programmes MADHR-D11-03 (impulsive, 10 Hz-10 kHz) and MADHR-D11-04 (continuous, third-octave 20 Hz-10 kHz incl. 63 and 125 Hz); no threshold values set; no impulsive-noise register law.",
+      "quote": "There is no law on the register of impulsive underwater noise and corresponding data."
+    },
+    {
+      "id": "R4-S07",
+      "url": "https://www.natura-histrica.hr/hr/zasticena-podrucja/posebni-rezervat-u-moru-limski-zaljev-26",
+      "title": "Posebni rezervat u moru Limski zaljev",
+      "publisher": "Javna ustanova Natura Histrica",
+      "retrieved": "2026-09-09",
+      "accessed": "abstract",
+      "used_for": "R4-F25, R4-U7: confirms the marine special reserve designation and the managing public institution. The page reached carried navigation and gallery content only; designation year and restricted-activity list were not readable.",
+      "quote": "POSEBNI REZERVAT U MORU LIMSKI ZALJEV"
+    },
+    {
+      "id": "R4-S08",
+      "url": "https://mingo.gov.hr/o-ministarstvu-1065/djelokrug-4925/zastita-prirode/zasticena-podrucja/zahvati-i-istrazivanja-u-zasticenim-podrucjima/1200",
+      "title": "Zahvati i istrazivanja u zasticenim podrucjima",
+      "publisher": "Ministarstvo (Croatian ministry nature-protection pages)",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R4-F26, R4-F27, R4-O8: permission (dopustenje) duty for interventions and scientific research in special reserves; the Ministry as issuing authority; published application content for research and for interventions.",
+      "quote": "Pravna i fizicka osoba koja namjerava provoditi zahvat na zasticenom podrucju"
+    },
+    {
+      "id": "R4-S09",
+      "url": "https://pubs.aip.org/asa/jasa/article-abstract/147/6/3795/963224/The-effect-of-low-frequency-noise-on-the-behaviour",
+      "title": "The effect of low frequency noise on the behaviour of juvenile Sparus aurata",
+      "publisher": "Journal of the Acoustical Society of America 147(6):3795 (2020), DOI 10.1121/10.0001255",
+      "retrieved": "2026-09-09",
+      "accessed": "abstract",
+      "used_for": "R4-F8, R4-F33, R4-U3: the only species-specific noise-response data found for Sparus aurata; tank exposure at 63, 125, 500 and 1000 Hz, 140-150 dB re 1 uPa, with habituation at low frequencies after about 2 h.",
+      "quote": "white noise filtered in third-octave bands centred at 63, 125, 500, and 1000 Hz"
+    },
+    {
+      "id": "R4-S10",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12764546/",
+      "title": "Hearing thresholds in European sea bass (Dicentrarchus labrax): new insights into auditory sensitivity",
+      "publisher": "Fish Physiology and Biochemistry 52(1):9 (2026), DOI 10.1007/s10695-025-01628-2, via PubMed Central",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R4-F7, R4-U2: proxy audiogram for a Mediterranean farmed species; AEP on 114 juveniles at 100-600 Hz; best sensitivity 116.8 +/- 3.3 dB re 1 uPa at 300 Hz; states hearing data are lacking for many species.",
+      "quote": "Our results revealed a U-shaped audiogram with highest sensitivity at 300 Hz"
+    },
+    {
+      "id": "R4-S11",
+      "url": "https://zenodo.org/records/13325653",
+      "title": "Managing Aquaculture Noise: Impacts on Fish Hearing, Welfare, and Mitigation Strategies",
+      "publisher": "Duan et al., Ocean University of China; Zenodo record 13325653, DOI 10.5281/zenodo.13325653 (journal version Reviews in Aquaculture, DOI 10.1111/raq.70013)",
+      "retrieved": "2026-09-09",
+      "accessed": "abstract",
+      "used_for": "R4-F9: farm equipment noise sits below 2000 Hz and overlaps the hearing range of most cultured species, supporting a low-frequency-generalist treatment of Sparus aurata.",
+      "quote": "particularly below 2000 Hz, matching the hearing range of most cultured species"
+    },
+    {
+      "id": "R4-S12",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/raq.70028",
+      "title": "Fish Predation in Bivalve Aquaculture: Impacts and Potential Mitigation Strategies",
+      "publisher": "Stobart, Jeffs and Skelton, Reviews in Aquaculture (2025), DOI 10.1111/raq.70028, Wiley",
+      "retrieved": "2026-09-09",
+      "accessed": "abstract",
+      "used_for": "R4-F30, R4-F33: publisher full text returned HTTP 403; abstract read. Crop losses up to 100 percent; four mitigation categories; the French acoustic device initially effective then habituated, reported as unpublished personal communication.",
+      "quote": "Fish predation poses a significant challenge to bivalve aquaculture throughout the global range of production"
+    },
+    {
+      "id": "R4-S13",
+      "url": "https://thefishsite.com/articles/acoustic-device-helps-prevent-sea-bream-damage-to-shellfish-farms",
+      "title": "Acoustic Device Helps Prevent Sea Bream Damage to Shellfish Farms",
+      "publisher": "The Fish Site (reporting on Ifremer PREDADOR)",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R4-F29, R4-O10: Ifremer prototype adapted from a cetacean pinger, tested 2013 and 2014 for five months in Rade de Brest and Bay of Quiberon; no frequency, level, duty cycle or loss-reduction figure published.",
+      "quote": "a range of between 200 and 300 metres"
+    },
+    {
+      "id": "R4-S14",
+      "url": "https://www.gov.scot/publications/use-efficacy-acoustic-deterrent-devices-adds-aquaculture/pages/2/",
+      "title": "Aquaculture - use and efficacy of Acoustic Deterrent Devices (ADDs): report, Introduction",
+      "publisher": "Scottish Government",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R4-F31, R4-U10, R4-O11: little evidence for long-term ADD use; habituation to common signal types; dinner-bell effect; device-dependent results including 70 percent and 50 percent depredation reductions and one device with no effect; non-target cetacean disturbance.",
+      "quote": "there is currently little scientific evidence to support their long-term use."
+    },
+    {
+      "id": "R4-S15",
+      "url": "https://www.lubell.com/products/lubell-ll916c-ll916h-portable-underwater-speakers-for-lap-synchro-swimming/",
+      "title": "Lubell LL916C & LL916H Portable underwater speakers",
+      "publisher": "Lubell Labs Inc.",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R4-F10, R4-F13, shortlist: 200 Hz-23 kHz (500 Hz-21,000 Hz +/-10 dB); 180 dB/uPa/m at 1 kHz; capacitive load with no ohm rating; mandatory AC-series transformer boxes at 200 W/40 Vrms, 50 W/20 Vrms and 78 W/25 Vrms; 20 Vrms/3 A cable limit at 100 percent duty; depth 1-18 m; 5.67 kg and 8.0 kg; no price.",
+      "quote": "180 dB/uPa/m @ 1 kHz"
+    },
+    {
+      "id": "R4-S16",
+      "url": "https://www.lubell.com/products/ll9162/",
+      "title": "LL9162 underwater acoustic transducer",
+      "publisher": "Lubell Labs Inc.",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R4-F11, shortlist: 200 Hz-20 kHz; nominal 16 ohms; 50 Vrms/5 A drive limit; amp up to 300 W into 8 ohms; GFCI and transformer-isolated output, series resistor and fuse, 12 dB/octave roll-off below 200 Hz; depth 1-18 m; 17 lbs; government sales only; no price.",
+      "quote": "186dB/uPa/m @ 1 kHz and 190dB/uPa/m @ 10 kHz with 50 Vrms applied"
+    },
+    {
+      "id": "R4-S17",
+      "url": "https://www.industrialspareparts.co.uk/products/itc-1032-deep-water-omnidirectional-transducer",
+      "title": "ITC-1032 Deep Water Omnidirectional Transducer",
+      "publisher": "Industrial Spare Parts (distributor listing for Gavial ITC part 009761)",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R4-F12, shortlist: 0.01-50 kHz band, 33 kHz resonance, OCV -194 dB//1V/uPa, 250 m depth, 800 W power handling, spherical beam; weight, dimensions and price not published.",
+      "quote": "TVR 149 dB/μPa/V@1m"
+    },
+    {
+      "id": "R4-S18",
+      "url": "https://www.gavialitc.com/itc-products",
+      "title": "ITC Products",
+      "publisher": "Gavial ITC (formerly International Transducer Corporation)",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R4-F12: manufacturer index confirming the ITC-1032 and related omnidirectional and free-flooded-ring families; the page publishes model names and downloadable datasheets only, with no specifications and no prices.",
+      "quote": "View and Download"
+    },
+    {
+      "id": "R4-S19",
+      "url": "https://benthowave.com/products/poweramplifier.html",
+      "title": "Power Amplifiers for SONAR and Ultrasonics",
+      "publisher": "Benthowave Instrument Inc.",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R4-F15, shortlist: BII5160 at 208 W RMS over 100 Hz-20 kHz (linear, portable-case option) and BII5060 at 208-415 W over 0.1-70 kHz; output voltage, load impedance, supply, weight and price not published.",
+      "quote": "100 Hz – 20 kHz"
+    },
+    {
+      "id": "R4-S20",
+      "url": "https://instrumentsinc.com/amplifier-and-sensor-specs",
+      "title": "Product Specifications - amplifiers and sensors",
+      "publisher": "Instruments Inc.",
+      "retrieved": "2026-09-09",
+      "accessed": "abstract",
+      "used_for": "R4-F14, shortlist: L2 at 260 VA continuous and 650 VA 1-second burst at 10 percent duty; L6 at 800 VA continuous and 2,000 VA burst; 19-inch rack, single-phase mains. Detailed specification tables on the page are images and were not machine-readable; voltage, current, weight and price not published.",
+      "quote": "400 Hz to 100 kHz in the continuous mode, and 400 Hz to 40 kHz in the higher-power pulsed mode"
+    },
+    {
+      "id": "R4-S21",
+      "url": "https://www.bksv.com/en/transducers/acoustic/microphones/hydrophones/8104",
+      "title": "Hydrophone Type 8104",
+      "publisher": "Bruel & Kjaer / HBK",
+      "retrieved": "2026-09-09",
+      "accessed": "abstract",
+      "used_for": "R4-F20, shortlist: 0.1 Hz-120 kHz, receiving sensitivity -205 dB re 1V/uPa, documented as usable as a projector for reciprocity, calibrated-projector and comparison calibration; no price. Product page redirected to a regional site and returned HTTP 403; values come from the vendor product summary in the search index.",
+      "quote": "0.1 Hz to 120 kHz with a receiving sensitivity of −205 dB re 1V/μPa"
+    },
+    {
+      "id": "R4-S22",
+      "url": "https://www.bksv.com/media/doc/bp1024.pdf",
+      "title": "Product Data: Hydrophone Calibrator Type 4229",
+      "publisher": "Bruel & Kjaer / HBK",
+      "retrieved": "2026-09-09",
+      "accessed": "abstract",
+      "used_for": "R4-F21, shortlist: 251.2 Hz tone controlled to +/-0.1 percent; coupler levels typically 156.5, 166, 162 and 151.5 dB re 1 uPa for types 8101, 8103, 8100/8104 and 8105; +/-0.6 dB field and +/-0.3 dB laboratory accuracy; NIST-traceable; no price. Datasheet PDF text not read directly; values come from the vendor product summary in the search index.",
+      "quote": "The tone of 251.2 Hz is electronically controlled to ±0.1%"
+    },
+    {
+      "id": "R4-S23",
+      "url": "https://www.npl.co.uk/products-services/underwater-acoustics/hydrophone-calibration",
+      "title": "Underwater acoustics hydrophone calibration",
+      "publisher": "National Physical Laboratory (NPL), UK",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R4-F17, R4-F19, R4-O5, shortlist: UKAS laboratory 0478, ISO 17025; free-field reciprocity 315 Hz-500 kHz; free-field comparison 1 kHz-1 MHz; pressure comparison 5 Hz-315 Hz; impedance/admittance 1 Hz-20 MHz; recorder pressure calibration 20 Hz-315 Hz; prices not published.",
+      "quote": "360 degrees of rotation in both the horizontal and vertical plane"
+    },
+    {
+      "id": "R4-S24",
+      "url": "https://www.inm.cnr.it/labs/ual/",
+      "title": "Underwater acoustics laboratory (UAL)",
+      "publisher": "CNR-INM, Institute of Marine Engineering, Rome, Italy",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R4-F18, R4-F19, R4-U6, R4-O5, shortlist: tank 6 m x 4 m x 5.5 m deep with motorised X-Y and rotation, 100 kg capacity; calibration 100 Hz-20 kHz outdoor at Lake Nemi and 3 kHz-500 kHz main tank; uncertainty 0.8-1.5 dB; ISO/IEC 17025 accreditation held 2007-2010; prices not published.",
+      "quote": "free-field international standard methods (comparison and reciprocity)"
+    },
+    {
+      "id": "R4-S25",
+      "url": "https://geospectrum.ca/product-category/commercial/vector-sensors/",
+      "title": "Vector Sensors - Particle Motion Sensor",
+      "publisher": "GeoSpectrum Technologies Inc.",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R4-F6, R4-U11, shortlist: the vendor category page publishes no frequency range, sensitivity, depth rating, dimensions, weight or price for the particle motion sensor; enquiry-only.",
+      "quote": "Showing the single result"
+    },
+    {
+      "id": "R4-S26",
+      "url": "https://www.aquarianaudio.com/AqAudDocs/AS-1_manual.pdf",
+      "title": "AS-1 Aquarian Scientific Broadband Measurement Hydrophone manual",
+      "publisher": "Aquarian Audio / Aquarian Scientific",
+      "retrieved": "2026-09-09",
+      "accessed": "abstract",
+      "used_for": "R4-F22, shortlist: nominal free-field voltage sensitivity and nominal 5 Hz-100 kHz range; units are not individually calibrated, with a +/-3 dB tolerance on nominal sensitivity plus measurement error; 10 m cable standard; no price. Manual PDF text not read directly; values come from the vendor summary in the search index.",
+      "quote": "-207.6 (+2.1 / -2.0) dB re: 1V/µPa"
+    },
+    {
+      "id": "R4-S27",
+      "url": "https://lab.irbim.cnr.it/wp-content/uploads/2022/08/ARIEL_D.T3.1.1_policytechnical_reccommendations_final_version.pdf",
+      "title": "ARIEL D.T3.1.1 Policy and technical recommendations, final version",
+      "publisher": "ARIEL project (Interreg ADRION), hosted by CNR-IRBIM",
+      "retrieved": "2026-09-09",
+      "accessed": "inaccessible",
+      "used_for": "R4-F32, R4-O9: cited as the record of a Croatian seabream pinger pilot. The PDF was fetched but its text streams were not readable in this run; the repository audit records an earlier direct inspection of pages 3 and 19 showing partners and the pilot, with no usable efficacy result.",
+      "quote": "ARIEL_D.T3.1.1_policytechnical_reccommendations_final_version"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "deliverablePaths": [
+    "security/",
+    "ops/security/"
+  ],
+  "dependencies": [
+    108,
+    114
+  ],
+  "description": "Implement threat model controls, provisioning, device identity, secret lifecycle, and operational security.",
+  "details": "Use per-device credentials, TLS, broker/API least privilege, revocation/rotation, signed intent, security logs, dependency/SBOM inputs, and recovery drills. Keep secrets outside source.",
+  "id": 121,
+  "ownerRole": "security",
+  "phase": "P5",
+  "priority": "high",
+  "researchPackages": [
+    "R5",
+    "R7"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Test unauthorized device/user denial, key rotation/revocation, scoped credentials, tampered evidence rejection, and audit completeness.",
+  "title": "P5 Security, Provisioning, and Key Lifecycle"
+}

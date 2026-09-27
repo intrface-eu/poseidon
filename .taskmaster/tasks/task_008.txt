@@ -1,0 +1,11 @@
+# Task ID: 8
+# Title: [ops] Create Docker Compose for Hub Services
+# Status: pending
+# Dependencies: 7
+# Priority: high
+# Description: Create a `hub.dev.yml` file in `ops/compose/` that defines and networks the `trident`, `nereid`, and `siren` services for local development on a Raspberry Pi.
+# Details:
+The compose file will have three services. Each service will use `build: { context: ../.., dockerfile: ops/docker/app.Dockerfile, target: <app_name> }`. Network them together using a bridge network. Mount the `configs` directory as a volume. For `nereid` and `siren`, pass device mappings (`/dev/video0`, `/dev/snd`) to the containers. Use environment variables for configuration (e.g., MQTT broker address).
+
+# Test Strategy:
+On a Raspberry Pi with camera and audio hardware, navigate to `ops/compose/` and run `docker compose -f hub.dev.yml up`. Verify that all three containers start, connect to each other and the MQTT broker, and that the full motion-to-audio flow works.

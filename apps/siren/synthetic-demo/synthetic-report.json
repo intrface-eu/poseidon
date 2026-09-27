@@ -1,0 +1,141 @@
+{
+  "simulation_only": true,
+  "physical_output_enabled": false,
+  "provenance": "generated synthetic sine and integer simulation clock; no sensor data",
+  "limits_status": "software test envelopes ONLY; no biological safety or efficacy claim",
+  "startup_denial": "inhibited",
+  "overlap_denial": "overlap",
+  "signal_spec": {
+    "sample_rate_hz": 8000,
+    "sample_count": 2000,
+    "frequency_hz": 440.0,
+    "amplitude": 0.8
+  },
+  "reservation": {
+    "start_ms": 0,
+    "end_ms": 250,
+    "simulation_only": true,
+    "physical_output_enabled": false
+  },
+  "wav": {
+    "simulation_only": true,
+    "physical_output_enabled": false,
+    "provenance": "synthetic/offline normalized samples; not a field recording",
+    "calibration_status": "uncalibrated; digital amplitude is not underwater SPL",
+    "sample_rate_hz": 8000,
+    "sample_count": 2000,
+    "duration_seconds": 0.25,
+    "normalized_peak": 0.21213203435596417,
+    "normalized_rms": 0.14999999999999997,
+    "peak_limit": 0.25,
+    "rms_limit": 0.15,
+    "gain": 0.2651650429449552,
+    "pcm_scale": 32767
+  },
+  "scheduler": {
+    "audit": [
+      {
+        "action": "initialize",
+        "inhibited": true,
+        "interval": null,
+        "now_ms": null,
+        "physical_output_enabled": false,
+        "reason": "new_simulation_workspace",
+        "sequence": 1,
+        "simulation_only": true
+      },
+      {
+        "action": "boot_inhibit",
+        "inhibited": true,
+        "interval": null,
+        "now_ms": null,
+        "physical_output_enabled": false,
+        "reason": "restart_requires_explicit_simulation_rearm",
+        "sequence": 2,
+        "simulation_only": true
+      },
+      {
+        "action": "deny",
+        "inhibited": true,
+        "interval": null,
+        "now_ms": 0,
+        "physical_output_enabled": false,
+        "reason": "inhibited",
+        "sequence": 3,
+        "simulation_only": true
+      },
+      {
+        "action": "simulation_rearm",
+        "inhibited": false,
+        "interval": null,
+        "now_ms": 0,
+        "physical_output_enabled": false,
+        "reason": "",
+        "sequence": 4,
+        "simulation_only": true
+      },
+      {
+        "action": "reserve",
+        "inhibited": false,
+        "interval": [
+          0,
+          250
+        ],
+        "now_ms": 0,
+        "physical_output_enabled": false,
+        "reason": "",
+        "sequence": 5,
+        "simulation_only": true
+      },
+      {
+        "action": "deny",
+        "inhibited": false,
+        "interval": null,
+        "now_ms": 0,
+        "physical_output_enabled": false,
+        "reason": "overlap",
+        "sequence": 6,
+        "simulation_only": true
+      },
+      {
+        "action": "stop",
+        "inhibited": true,
+        "interval": null,
+        "now_ms": 0,
+        "physical_output_enabled": false,
+        "reason": "full_reservations_retained",
+        "sequence": 7,
+        "simulation_only": true
+      },
+      {
+        "action": "close",
+        "inhibited": true,
+        "interval": null,
+        "now_ms": 0,
+        "physical_output_enabled": false,
+        "reason": "full_reservations_retained",
+        "sequence": 8,
+        "simulation_only": true
+      }
+    ],
+    "config": {
+      "cooldown_ms": 1000,
+      "max_burst_ms": 500,
+      "max_on_ms": 1000,
+      "window_ms": 10000
+    },
+    "fault": null,
+    "inhibited": true,
+    "last_now_ms": 0,
+    "physical_output_enabled": false,
+    "provenance": "synthetic clock and reservations; software test only",
+    "reservations": [
+      [
+        0,
+        250
+      ]
+    ],
+    "simulation_only": true,
+    "version": 1
+  }
+}

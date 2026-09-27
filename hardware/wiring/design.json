@@ -1,0 +1,52 @@
+{
+  "reference": "HW-REF-1.1",
+  "configuration": "reference-v1",
+  "revision": "electrical-1",
+  "status": "NOT ENERGIZABLE; design and qualification open",
+  "custom_pcb": {"required":false,"reason":"COTS boards, protected converters and manufacturer interconnects are preferred. No need for a custom PCB is established. No EDA/ERC/DRC claim."},
+  "default_physical_population": {"mode":"passive","amplifier_installed":false,"projector_connected":false,"wiper_installed":false,"output_harness_installed":false,"output_ports":"absent or unwired and capped","output_actuation_gpio":[]},
+  "power_domains": [
+    {"id":"BUS12","nominal_v":12,"static_sizing_range_v":[11.2,14.4],"location":"above-water protected DC compartment","source_selected":false,"missing":["site/source fault current","reverse-polarity/UVLO/OVP/transient hardware","fusing/disconnect","bond plan"],"prohibited":["12V directly to Pi/ESP/RAK","raw battery divider to ESP ADC","seawater or cable shield as load return"]},
+    {"id":"PI5V1","nominal_v":5.1,"required_continuous_a":3,"candidate":"HUB-DC5-001","status":"USB-C source implementation open","isolation":"SD-50 component has vendor AC withstand ratings; USB/Ethernet shield/data/FG bonds can defeat system isolation","requirements":["qualified COTS source-role CC3A advertisement, both plug orientations","5V OVP and current limit separate from inadequate converter OVP threshold","3A-capable retained cable with measured attach/load/transient drop","no service USB or second supply backfeed","no arbitrary buck wires into USB-C"]},
+    {"id":"ESP5","nominal_v":5.0,"source_selected":false,"requirements":["conditioned protected COTS supply","ESP J2.19 5V and J2.14 GND only after harness release","Micro-USB and3V3-header supplies absent when5V-header powered","5V supply input does not permit5V GPIO"]},
+    {"id":"RAK3V3","nominal_v":3.3,"vendor_vcc_range_v":[2.0,3.6],"source_selected":false,"design_burst_a_assumed":0.12,"devkit_spare_current_a":null,"requirements":["independent regulated3.3V radio supply, not assumed DevKit spare current","J5.9 supply and J5.7 ground; J4.9 unconnected","decoupling/startup/burst/current limit measured","UART power-off isolation prevents driving unpowered device"]},
+    {"id":"WET_RX_CAMERA","nominal_v":null,"source_selected":false,"requirements":["analog hydrophone plus above-water DAQ is candidate only","camera Ethernet or isolated wet interface candidate","no wet radio or underwater USB length assumption","bias/voltage/pressure/penetrator and shield pinout from actual part selection"]},
+    {"id":"OUTPUT_OPTIONAL","nominal_v":null,"source_selected":false,"populated":false,"requirements":["independent normally-open disconnects in actual energy path","no software-only amplifier-enable substitute","all energy/signal/backfeed paths reviewed","default amplifier/projector absent"]}
+  ],
+  "fuse_schedule": [
+    {"id":"F-BAT","assembly":"REEF","location":"positive terminal before outgoing battery cable, as close as practicable","rating_a":null,"dc_voltage_rating_v":null,"interrupt_rating_a":null,"wire_size_mm2":null,"status":"OPEN; prospective fault current and cable let-through unknown"},
+    {"id":"F-HUB","assembly":"HUB","location":"near protected DC source before HUB feed","rating_a":null,"dc_voltage_rating_v":null,"interrupt_rating_a":null,"wire_size_mm2":null,"status":"OPEN; calculated sustained/assumed startup envelope is not fuse selection"},
+    {"id":"F-PI5","assembly":"HUB","location":"converter output before USB-C source assembly","rating_a":null,"dc_voltage_rating_v":null,"interrupt_rating_a":null,"wire_size_mm2":null,"status":"OPEN; must protect3A path from50W converter and coordinate source current limit/OVP"},
+    {"id":"F-CAM","assembly":"WET","location":"above-water camera branch before wet tether","rating_a":null,"dc_voltage_rating_v":null,"interrupt_rating_a":null,"wire_size_mm2":null,"status":"OPEN;25m/0.75mm2 model is not cable ampacity or camera rating"},
+    {"id":"F-REEF","assembly":"REEF","location":"BMS-controlled load output before DC regulators","rating_a":null,"dc_voltage_rating_v":null,"interrupt_rating_a":null,"wire_size_mm2":null,"status":"OPEN; regulator inrush/UVLO, radio burst and wire protection"},
+    {"id":"F-PV","assembly":"REEF","location":"PV circuit per selected array/controller fault study","rating_a":null,"dc_voltage_rating_v":null,"interrupt_rating_a":null,"wire_size_mm2":null,"status":"OPEN; single-panel protection/disconnect need must be checked, not an invented fuse requirement"},
+    {"id":"F-OUT","assembly":"PROJECTOR","location":"separate optional power branch before K1/K2; absent by default","rating_a":null,"dc_voltage_rating_v":null,"interrupt_rating_a":null,"wire_size_mm2":null,"status":"OMITTED; amplifier/projector voltage/current/fault energy unknown"}
+  ],
+  "wire_coordination": {"qualified":false,"necessary_screen":"design load <= fuse nominal <= installation-derated cable and connector ampacity","not_sufficient":["fuse DC interrupt rating >= prospective short-circuit current","time-current trip and minimum remote fault current clear faults before cable thermal damage","startup I2t vs fuse non-trip and cable/connector withstand","temperature/bundling/voltage drop, salt corrosion and lug/ferrule torque","battery BMS is not automatically a fuse or service isolator"],"numerical_screen_function":"hardware/electronics/calculate.py:fuse_coordination_screen","all_actual_fuse_and_wire_ratings_unresolved":true},
+  "grounding_isolation": {
+    "selected_system_bond_topology":null,
+    "rules":["Never use seawater, frame or shield for normal DC return.","SD-50 FG pin3 terminates to a reviewed frame/equipotential bond, not blindly to DC negative. Conductive accessible parts require specialist touch/fault assessment; plastic enclosure is not a grounding solution by itself.","Separate input and output negative until whole-system bond/isolation review; USB, Ethernet, antenna and sensor shields can bridge converter isolation.","Above-water local ESP and RAK grounds share the intended logic reference only after power topology review; power-off UART backfeed remains a gate.","Route hydrophone low-level analog/shield away from DC/DC inductors, PV switching, radio and any later output path. Shield single-ended/both-ended/chassis termination depends on sensor/DAQ and measured noise, not a universal rule.","Use galvanically isolated conditioned interfaces for wet probes where required by reviewed design. No direct wet I2C,12V,5V logic or unconditioned battery divider into ESP pins.","Lightning/surge protection, shore protective earth, equipotential bonding, corrosion couples and vessel/farm earth arrangements require a site-specific specialist review. No claimed marine isolation or electrical certification."],
+    "test_points":["TP-BUS: protected plus to dedicated return","TP-PI: at actual Pi USB-C load input using rated test fixture, not live loose probes","TP-RAK: J5.9 to J5.7 for ripple/burst","TP-FG: continuity/isolation fixture with equipment disconnected","TP-STOP: contact/coil state using isolated dummy-load fixture only"]
+  },
+  "optional_output_safety": {
+    "status":"CONCEPT ONLY; absent by default; no selected safety hardware or authorization",
+    "independent_of_software":true,
+    "normally_open_disconnects":["K1","K2"],
+    "physical_stop_contact_type":"two independent NC channels proposed; final safety architecture review required",
+    "manual_rearm":"local monitored NO momentary button; release must be seen healthy before a new press; no tied-down or remote reset; power return/stop release/watchdog recovery never rearms",
+    "physical_key":"local key permission required in series with safety logic; key alone cannot rearm",
+    "watchdog":"independent hardware window/edge watchdog with independent failure assessment; healthy signal deasserts on missing/too-fast/static heartbeat, power loss or watchdog fault; no Pi/ESP internal watchdog substitute",
+    "coil_control":"independent selected safety controller owns K1/K2 coils; Pi/ESP/GPIO only may veto/request, never supply coil or bypass latch",
+    "feedback":"monitor K1/K2 mechanically linked/force-guided auxiliary state as appropriate; reject welded contact/rearm discrepancy; exact COTS device and monitoring timing unresolved",
+    "energy_path":"F-OUT and lockable service isolator precede dual series NO disconnects. For floating two-wire supply, review dual-pole interruption of both conductors. Amplifier enable also defaults low but is not primary protection. Signal/power grounds, USB/audio inputs and spare feeds must not bypass isolation.",
+    "stored_energy":"downstream amplifier/filter/cable energy and discharge/dump path require sizing and measured time-to-safe; opening supply alone does not prove immediate acoustic silence",
+    "separate_keep_alive":"passive monitoring/diagnostics remain on separate fused path if electrically safe",
+    "required_fault_tests":["open either NC stop wire","short/cross-fault stop channels per chosen architecture","held/shorted manual reset","power loss and restoration","missing/too-fast/stuck heartbeat","host/ESP crash and stuck request","K1 welded; K2 welded; feedback discrepancy","5V/12V alternate supply or signal backfeed","residual capacitor energy and discharge fault","ground/shield bypass and cable short","rearm after any fault requires physical release then press"],
+    "selected_parts":null,
+    "stop_time_bound_s":null,
+    "safe_residual_energy_j":null,
+    "safety_integrity_or_performance_level_claim":null,
+    "qualification_open":true
+  },
+  "assembly_release_requirements":["Exact locking connector pairs and mating orientation drawings","Wire lengths/gauges/insulation/ampacity and crimp/lug/ferrule/torque data","Fuse curves/interrupt ratings/prospective fault current","Independent electrical design review and approved dry dummy-load test plan","Insulation/continuity/polarity/ground isolation and all brownout/inrush/thermal/stop tests","No purchase, assembly, live hardware operation or acoustic exposure authorized by this package"]
+}

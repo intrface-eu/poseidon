@@ -1,0 +1,11 @@
+# Task ID: 22
+# Title: [ops] Create Pi Hub Bootstrap Script
+# Status: pending
+# Dependencies: 8
+# Priority: high
+# Description: Develop a comprehensive bootstrap script (Bash or Ansible) to provision a fresh Raspberry Pi OS image for field deployment.
+# Details:
+Create `ops/ansible/bootstrap.yml` or `scripts/bootstrap.sh`. The script must perform all steps from the PRD: 1) Install Docker, ModemManager, PPP. 2) Enable hardware interfaces (I2C, SPI, camera) using `raspi-config` non-interactively. 3) Configure Docker to start on boot. 4) Clone the repo. 5) Provision device-specific secrets/certs. 6) Start the Docker Compose stack using a `hub.prod.yml` file.
+
+# Test Strategy:
+Flash a fresh Raspberry Pi OS image to an SD card. Run the bootstrap script on it. After it completes, verify that all services are running (`docker ps`), the 4G connection is active (`mmcli -m any`), and the hub is publishing data to the cloud. The process should require no manual intervention.

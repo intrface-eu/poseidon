@@ -1,0 +1,27 @@
+{
+  "deliverablePaths": [
+    "hardware/electronics/acoustic-output/",
+    "docs/validation/inhibit-tests.md"
+  ],
+  "dependencies": [
+    105,
+    106,
+    108,
+    111
+  ],
+  "description": "Engineer the controlled active output chain only after the active gate and specific budget approval.",
+  "details": "Select compatible projector/amplifier only for the approved study; implement hardware output inhibit, physical stop, watchdog, bounded duty/exposure program catalog, and calibrated measurement chain. No emitter procurement occurs before the specific active-study budget approval and gate 106.",
+  "id": 112,
+  "ownerRole": "electrical-acoustic",
+  "phase": "P3",
+  "priority": "high",
+  "researchPackages": [
+    "R3",
+    "R4",
+    "R5"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Use dummy loads and authorized calibrated bench/facility work to show all defined faults end in bounded output or silence; verify independent stop. Acceptance includes the specific active-study spend approval.",
+  "title": "P3 Calibrated Emitter and Independent Inhibit Bench Engineering"
+}

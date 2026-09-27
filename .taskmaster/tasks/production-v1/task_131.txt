@@ -1,0 +1,32 @@
+{
+  "deliverablePaths": [
+    "scripts/task_graph.py",
+    "tests/tooling/",
+    ".taskmaster/tasks/production-v1/"
+  ],
+  "dependencies": [],
+  "description": "Maintain the local Taskmaster DAG validator, deterministic task-file generator, and fixture tests.",
+  "details": "Validate only the selected production tag by default; reject invalid numeric IDs, missing/self/cyclic/local dependency errors, unsafe generation paths, and stale generated files. This task is repository tooling and needs no field evidence.",
+  "id": 131,
+  "ownerRole": "tooling",
+  "phase": "P0",
+  "priority": "high",
+  "researchPackages": [],
+  "status": "done",
+  "subtasks": [],
+  "testStrategy": "Run the stdlib fixture suite plus production-v1 validate, generate, and generate --check commands. Verify no field, hardware, permission, measurement, spend, safety, or efficacy gate is required.",
+  "title": "P0 Offline Backlog Validator, Generator, and Tests",
+  "verificationMetadata": {
+    "auditDate": "2026-09-07",
+    "commands": [
+      "python3 -m unittest discover -s tests/tooling -v",
+      "python3 scripts/task_graph.py validate --tag production-v1",
+      "python3 scripts/task_graph.py generate --tag production-v1 --check"
+    ],
+    "evidencePath": "docs/validation/development-tranche-001.md",
+    "pythonVersions": [
+      "3.11.15",
+      "3.14.7"
+    ]
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "artifacts": [
+    {
+      "bytes": 18698,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-CONFORMITY",
+        "G-PRIVACY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/compliance/official-source-register.md",
+      "sha256": "3ea6599fac79d854595d472a3462691e85b3c710c651d6146f361cb3ab4e7f5e"
+    },
+    {
+      "bytes": 22647,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-CONFORMITY",
+        "G-PRIVACY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/compliance/regulatory-applicability-2026-09-08.md",
+      "sha256": "14aa0d14adeb284f759458edb1a5058d1150e34b9131fbb6fececcb10d3d1884"
+    },
+    {
+      "bytes": 16069,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-CONFORMITY",
+        "G-PRIVACY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/compliance/study-permission-dossier.md",
+      "sha256": "9b3adad8000418d84f202b7c460eb6a3c7c0943203fcab929fbd8c8ab3080f43"
+    },
+    {
+      "bytes": 24339,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-PRIVACY",
+        "G-CONFORMITY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/compliance/technical-file-index.md",
+      "sha256": "74607e118f8e4e566347ef8c4436c8b676ce47652c4a24ded53f2a544add7b50"
+    },
+    {
+      "bytes": 10562,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-MANUFACTURE",
+        "G-LIFECYCLE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/manufacturing/cost-and-quotation-request.md",
+      "sha256": "f6ce4043c86dfde267f2801e86f561e7f84bf7151991b1b47181e7c7d752b9b6"
+    },
+    {
+      "bytes": 19532,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-MANUFACTURE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/manufacturing/reference-build-and-eol.md",
+      "sha256": "78dd5b50b30b6e9fdebb16d26696e7d7c39c64a2f3a2769cc84853cc44ad4908"
+    },
+    {
+      "bytes": 17214,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-LIFECYCLE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/manufacturing/service-and-lifecycle.md",
+      "sha256": "bab2f663117b176bbeaffa7388ab86a8a213512c709e40caa28f75d7862ba646"
+    },
+    {
+      "bytes": 30355,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-MANUFACTURE",
+        "G-LIFECYCLE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/manufacturing/templates/unperformed-records.json",
+      "sha256": "09a827e0710b9335ae45503db8871487aa3ec3af8df047915b58cd257763b954"
+    },
+    {
+      "bytes": 13141,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-MANUFACTURE",
+        "G-LIFECYCLE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/manufacturing/traceability-and-records.md",
+      "sha256": "4ba270db2b9db6643da7a6b6304020ceaa5f967913151f19bf90f6c73d1e9ef6"
+    },
+    {
+      "bytes": 8027,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-SCOPE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/qualification/evidence-guide.md",
+      "sha256": "cc7e72c10d3c01e99a419cccf595f55f61d450023c379df3a0a8e783e862fa9f"
+    },
+    {
+      "bytes": 8244,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-LOCAL"
+      ],
+      "kind": "test-report",
+      "level": "simulated",
+      "path": "docs/qualification/evidence/system-checks-v1.json",
+      "sha256": "7361a37da7be9666f03dea958b4a391103f473bd362c25f9f9e55564ba443a4b"
+    },
+    {
+      "bytes": 15628,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-SCOPE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/qualification/gate-policy-v1.json",
+      "sha256": "8fbd61a11b531dd360c0dd86bd786155294e0b6ce2060cd1c5e786236c337f07"
+    },
+    {
+      "bytes": 17393,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-DATA",
+        "G-SAFETY",
+        "G-NETWORK",
+        "G-MECHANICAL",
+        "G-POWER",
+        "G-SECURITY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/qualification/procedures/evt-dvt-pvt.md",
+      "sha256": "98b4849395e3f71b04cfdaed340b72772f66a0988941495597472a3ae0431749"
+    },
+    {
+      "bytes": 14090,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-MECHANICAL",
+        "G-POWER",
+        "G-SAFETY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/qualification/procedures/physical-test-record.md",
+      "sha256": "b176d1e2b4c068dc49260cf721623de7667c6abf0272bd097af22309d78ea67c"
+    },
+    {
+      "bytes": 10283,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-SCOPE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/qualification/readiness-2026-09-08.md",
+      "sha256": "81e69e1ae2491bedbe5ad7cb3e85f36aaecd276a3a207d8dac992d771d449ccc"
+    },
+    {
+      "bytes": 14823,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-EFFICACY"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/research/prior-trial-follow-up-drafts.md",
+      "sha256": "c4c844d0eb64c3fba474305961b557c28ce8ed207d1a4b244f315657794509ab"
+    },
+    {
+      "bytes": 18232,
+      "configuration": "local-monitor-reference-2026-09-08",
+      "gates": [
+        "G-SITE"
+      ],
+      "kind": "plan",
+      "level": "documented-plan",
+      "path": "docs/research/site-permissions-evidence-register.md",
+      "sha256": "0f35124f43d36c4fc137daf7fbc996b24dc2517477c14859fdbd667062312355"
+    }
+  ],
+  "claims": {
+    "G-CONFORMITY": "blocked",
+    "G-DATA": "blocked",
+    "G-EFFICACY": "blocked",
+    "G-LIFECYCLE": "blocked",
+    "G-LOCAL": "software-checks-passed",
+    "G-MANUFACTURE": "blocked",
+    "G-MECHANICAL": "blocked",
+    "G-NETWORK": "blocked",
+    "G-POWER": "blocked",
+    "G-PRIVACY": "blocked",
+    "G-SAFETY": "blocked",
+    "G-SCOPE": "blocked",
+    "G-SECURITY": "blocked",
+    "G-SITE": "blocked",
+    "G-SOFTWARE": "blocked"
+  },
+  "configuration": "local-monitor-reference-2026-09-08",
+  "created_at": "2026-09-08T07:25:58.823640+00:00",
+  "policy_id": "poseidon-assurance-w1-v1",
+  "release_authorized": false,
+  "schema_version": 1
+}

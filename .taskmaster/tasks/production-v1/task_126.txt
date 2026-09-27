@@ -1,0 +1,28 @@
+{
+  "deliverablePaths": [
+    "docs/validation/dvt/",
+    "tests/hil/"
+  ],
+  "dependencies": [
+    103,
+    106,
+    125
+  ],
+  "description": "Run design validation, representative endurance, local safety/security tests, and permitted field validation.",
+  "details": "Test environmental/mechanical envelope, seven-day engineering and proposed 30-day integrated runs, hardware faults, independent stop, offline recovery, update/power loss, security assessment, calibration, and non-active/passive field operation. Active claims remain bounded by task 113.",
+  "id": 126,
+  "ownerRole": "verification",
+  "phase": "P7",
+  "priority": "high",
+  "researchPackages": [
+    "R1",
+    "R4",
+    "R5",
+    "R6",
+    "R7"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Run the approved DVT matrix with traceable raw results; no unresolved critical safety/security defect or unreviewed material change may pass.",
+  "title": "P7 DVT, Field Endurance, Safety, and Security"
+}

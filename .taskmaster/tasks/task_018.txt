@@ -1,0 +1,11 @@
+# Task ID: 18
+# Title: [siren] Implement Parametric Audio Synthesis Engine
+# Status: pending
+# Dependencies: 10, 17
+# Priority: medium
+# Description: Add capabilities to SIREN to synthesize dolphin clicks/whistles and sea-flora tones based on parameters from audio program configuration files.
+# Details:
+In `libs/dsp`, create Python functions using `numpy` and `scipy` for audio generation (e.g., `generate_click_burst`, `generate_glide`). In SIREN, when an audio program command is received, load the corresponding YAML/JSON file from `configs/programs`. Parse the `blocks` and call the DSP functions to generate the audio buffer on the fly. Stream this buffer to the audio sink, passing it through the safety limiter.
+
+# Test Strategy:
+Create unit tests for each DSP generator function, verifying the output waveform's properties (frequency, duration). Trigger a synthetic program via MQTT and record the audio output. Analyze the recording with an audio tool (e.g., Audacity) to confirm the signal matches the program's specification (clicks, sweeps, etc.).

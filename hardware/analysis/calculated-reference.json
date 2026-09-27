@@ -1,0 +1,122 @@
+{
+  "schema": "poseidon.hardware.mechanical-calculation.v1",
+  "configuration": "reference-v1",
+  "revision": "HW-REF-1.1",
+  "evidence_class": "ILLUSTRATIVE_CALCULATION_NOT_MEASURED_OR_QUALIFIED",
+  "operating_envelope_frozen": false,
+  "physical_tests_performed": 0,
+  "equations": {
+    "drag": "F_N = 0.5 * rho_kg_m3 * Cd * projected_area_m2 * speed_m_s^2",
+    "hydrostatic_gauge_pressure": "p_Pa = water_density_kg_m3 * gravity_m_s2 * depth_m",
+    "cylinder_displacement": "V_m3 = pi * (diameter_mm / 2000)^2 * length_mm / 1000",
+    "buoyancy": "B_N = water_density_kg_m3 * gravity_m_s2 * V_m3",
+    "weight": "W_N = assumed_mass_kg * gravity_m_s2",
+    "illustrative_support_moment": "M_Nm = sum_of_modeled_drag_N * assumed_lever_arm_m"
+  },
+  "projected_areas_m2": {
+    "camera": 0.0275,
+    "hydrophone": 0.0032,
+    "tether": 0.08,
+    "panel": 0.2839
+  },
+  "submerged_drag_sensitivity": [
+    {
+      "current_m_s": 0.25,
+      "camera_drag_n": 0.9689453125,
+      "hydrophone_drag_n": 0.12300000000000001,
+      "tether_drag_n": 3.075,
+      "sum_of_modeled_transverse_drag_n": 4.1669453125,
+      "illustrative_support_moment_nm": 1.041736328125
+    },
+    {
+      "current_m_s": 0.5,
+      "camera_drag_n": 3.87578125,
+      "hydrophone_drag_n": 0.49200000000000005,
+      "tether_drag_n": 12.3,
+      "sum_of_modeled_transverse_drag_n": 16.66778125,
+      "illustrative_support_moment_nm": 4.1669453125
+    },
+    {
+      "current_m_s": 1.0,
+      "camera_drag_n": 15.503125,
+      "hydrophone_drag_n": 1.9680000000000002,
+      "tether_drag_n": 49.2,
+      "sum_of_modeled_transverse_drag_n": 66.671125,
+      "illustrative_support_moment_nm": 16.66778125
+    }
+  ],
+  "panel_wind_sensitivity": [
+    {
+      "wind_m_s": 10.0,
+      "panel_normal_force_n": 20.866649999999996
+    },
+    {
+      "wind_m_s": 20.0,
+      "panel_normal_force_n": 83.46659999999999
+    },
+    {
+      "wind_m_s": 25.0,
+      "panel_normal_force_n": 130.4165625
+    }
+  ],
+  "illustrative_pressure": {
+    "depth_m": 10.0,
+    "gauge_pressure_pa": 100518.1625,
+    "meaning": "Hydrostatic calculation only, NOT allowed operating depth or pressure-test instruction."
+  },
+  "illustrative_buoyancy": {
+    "gross_camera_cylinder_volume_m3": 0.002375829444277281,
+    "gross_camera_cylinder_volume_l": 2.375829444277281,
+    "gross_camera_cylinder_buoyancy_n": 23.88140101521484,
+    "assumed_total_wet_head_weight_n": 29.41995,
+    "weight_minus_gross_camera_buoyancy_n": 5.538548984785159,
+    "meaning": "Mixed assumed total mass and gross camera envelope only; NOT as-built net buoyancy. Other displacement, flooded voids and cables omitted."
+  },
+  "inputs": {
+    "water_density_kg_m3": 1025.0,
+    "air_density_kg_m3": 1.225,
+    "gravity_m_s2": 9.80665,
+    "illustrative_depth_m": 10.0,
+    "current_speeds_m_s": [
+      0.25,
+      0.5,
+      1.0
+    ],
+    "wind_speeds_m_s": [
+      10.0,
+      20.0,
+      25.0
+    ],
+    "camera_envelope_diameter_mm": 110.0,
+    "camera_envelope_length_mm": 250.0,
+    "camera_transverse_drag_coefficient": 1.1,
+    "hydrophone_envelope_diameter_mm": 32.0,
+    "hydrophone_envelope_length_mm": 100.0,
+    "hydrophone_transverse_drag_coefficient": 1.2,
+    "tether_wet_length_m": 10.0,
+    "tether_diameter_mm": 8.0,
+    "tether_transverse_drag_coefficient": 1.2,
+    "panel_width_mm": 668.0,
+    "panel_height_mm": 425.0,
+    "panel_normal_drag_coefficient": 1.2,
+    "illustrative_dry_wet_head_mass_kg": 3.0,
+    "support_drag_lever_arm_m": 0.25
+  },
+  "input_evidence": {
+    "panel_width_mm": "Vendor SPM040401200 drawing envelope; source in electrical/CAD register.",
+    "panel_height_mm": "Vendor SPM040401200 drawing envelope; source in electrical/CAD register.",
+    "camera_envelope": "Provisional integration envelope, NOT exact vendor or measured displacement.",
+    "hydrophone_envelope": "Provisional instrument envelope, NOT exact vendor or measured displacement.",
+    "all_other_inputs": "Explicit engineering assumptions for sensitivity only; not measured Lim Bay conditions, safety factors, supplier limits or design loads."
+  },
+  "omissions": [
+    "Wave acceleration, slamming, impact, entanglement and fouling",
+    "Frame drag, array variant, cable angle/catenary and dynamic amplification",
+    "Attachment strength, seabed/farm geometry and structural stress",
+    "Real sealed displacement, flooded voids, cable buoyancy and actual mass/CG",
+    "Partial immersion, compressibility and temperature/salinity variation",
+    "Wind uplift, overturning stability and farm support loads",
+    "Safety/proof factors and fatigue spectrum must be set by the marine engineer, not inferred here"
+  ],
+  "release_note": "Do not size or approve restraints from these incomplete load cases. Site survey, independent load review and physical tests remain open."
+}

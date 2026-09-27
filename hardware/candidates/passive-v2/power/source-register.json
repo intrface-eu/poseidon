@@ -1,0 +1,488 @@
+{
+  "revision": "HW-CAND-2.0",
+  "configuration": "passive-v2",
+  "status": "NON_ADOPTED_NOT_BUILD_AUTHORIZED",
+  "retrieved_date": "2026-09-08",
+  "review_method": "Primary PDF tables/drawings and captured manufacturer HTML inspected directly. HTML summaries were checked against captured text for ratings. calculate.py emits SHA256 for every successful capture. Failed retrievals are NOT source verification. Public list-price/stock text in archived HTML is not a quote or procurement decision.",
+  "sources": [
+    {
+      "id": "S-BMS",
+      "manufacturer": "Victron Energy",
+      "captures": [
+        {
+          "file": "sources/smallbms-datasheet.pdf",
+          "url": "https://www.victronenergy.com/upload/documents/Datasheet-smallBMS-with-pre-alarm-EN-.pdf",
+          "sha256": "435f5b92427d74726dac8bc67a24f7bb40fc30dce3d934025555bf1680b049a9",
+          "license_status": "supplier_redistribution_unverified"
+        },
+        {
+          "file": "sources/smallbms-drawing.pdf",
+          "url": "https://www.victronenergy.com/upload/documents/smallBMS.pdf",
+          "sha256": "c1f135518c019552108e265c58c6ba23bd64b478d7ef27e7f2b61c0e4154f09a",
+          "license_status": "supplier_redistribution_unverified"
+        },
+        {
+          "file": "sources/smallbms-manual.pdf",
+          "url": "https://www.victronenergy.com/upload/documents/smallBMS_with_pre-alarm/128558-smallBMS_with_pre-alarm-pdf-en.pdf",
+          "sha256": "4e72391c13366047f508c8e4c1151646e3a0265aa6f306d883a8ab223be3e1f0",
+          "license_status": "supplier_redistribution_unverified"
+        }
+      ],
+      "locator": "Datasheetpp1-2; drawingRev01; manualrev02 01/2023 sections3.2/3.3.1",
+      "verified": {
+        "mpn": "BMS400100000",
+        "battery_family": "Victron Lithium Battery Smart, NOT an NG-only selection",
+        "input_v": [
+          8,
+          70
+        ],
+        "remote_on_current_a_excluding_output_loads": 0.0022,
+        "remote_off_or_low_cell_current_a": 0.0012,
+        "load_output_high_drop_v": 0.1,
+        "load_output_source_limit_a": 1,
+        "load_output_short_circuit_protected": false,
+        "charge_output_high_drop_v": 0.6,
+        "charge_output_source_limit_a": 0.01,
+        "charge_output_short_circuit_protected": true,
+        "charge_output_can_drive_relay_coil": false,
+        "off_output": "free floating",
+        "datasheet_hwd_mm": [
+          106,
+          42,
+          23
+        ],
+        "drawing_plan_mm": [
+          107,
+          46
+        ],
+        "drawing_height_mm": 12,
+        "ip": "IP20",
+        "ambient_c": [
+          -20,
+          50
+        ],
+        "recommended_supply_fuse_a_range": [
+          0.3,
+          2.5
+        ]
+      },
+      "unknown": [
+        "Exact cover/revision causing drawing-vs-datasheet dimensions; conservative union is not one verified part envelope",
+        "Selected inline remote cable/control input current and total output loading",
+        "Actual whole-system fault coverage and protected supply fuse part"
+      ],
+      "connection_evidence": "Manual3.3.1: smallBMS Load disconnect to Smart BatteryProtect remote H; Charge disconnect through VE.Direct non-inverting cable to SmartSolar. High healthy, floating on fault. Battery M8 BTV cables connect to matching smallBMS inputs; no GPIO connection."
+    },
+    {
+      "id": "S-BP",
+      "manufacturer": "Victron Energy",
+      "captures": [
+        {
+          "file": "sources/batteryprotect-drawing.pdf",
+          "url": "https://www.victronenergy.com/upload/documents/Smart-BatteryProtect_12V-24V-65A.pdf",
+          "sha256": "dc6f97ea2e5f49db59b8ffa3a806d78e9699a23133e1154cbd1a9c3294120026",
+          "license_status": "supplier_redistribution_unverified"
+        },
+        {
+          "file": "sources/batteryprotect-specs.html",
+          "url": "https://www.victronenergy.com/media/pg/Smart_BatteryProtect_12V_24V/en/technical-specifications.html",
+          "sha256": "3d5bfe4816146bdbbd2fb3a7c5745ff5286820dc15f668f02b6aa72b3e2f9646",
+          "license_status": "supplier_redistribution_unverified"
+        },
+        {
+          "file": "sources/batteryprotect-install.html",
+          "url": "https://www.victronenergy.com/media/pg/Smart_BatteryProtect_12V_24V/en/installation-and-wiring-examples.html",
+          "sha256": "6470155a10a81f2b73a9703943a5f41b6d75076a72f390b1a9609657274c691f",
+          "license_status": "supplier_redistribution_unverified"
+        }
+      ],
+      "locator": "DrawingRev01 title block;65A specification column; externalBMS/ModeC installation example",
+      "verified": {
+        "mpn": "BPR065022000",
+        "input_v": [
+          6,
+          35
+        ],
+        "continuous_a": 65,
+        "peak_a": 250,
+        "peak_duration_s": null,
+        "bluetooth_on_operating_a": 0.0014,
+        "bluetooth_on_off_a": 0.0009,
+        "bluetooth_disabled_operating_a": 0.0012,
+        "bluetooth_disabled_off_a": 0.0007,
+        "terminal": "M6",
+        "terminal_torque_nm": 5,
+        "drawing_plan_mm": [
+          106.3,
+          55
+        ],
+        "drawing_total_height_from_24plus22_mm": 46,
+        "manual_hwd_mm": [
+          40,
+          48,
+          106
+        ],
+        "mount_hole_diameter_mm": 6.4,
+        "mount_centres_mm": 84.3,
+        "current_direction": "IN to OUT only",
+        "ground_fuse_manual_sufficient_a": 0.3
+      },
+      "unknown": [
+        "Manual-versus-drawing envelope discrepancy; larger drawing used pending exact revision",
+        "On-state resistance/loss at selected small load and temperature",
+        "Prospective fault current, protective fuse, auto-reconnect fault test"
+      ],
+      "connection_evidence": "ModeC Li-ion: smallBMS Load disconnect to remoteH; remove bypass/remote jumper per selected diagram, do not hold H high independently. Battery/fused bus to IN; regulators only to OUT. MPPT charge current never flows backwards through OUT. Source specifies immediate load disconnect and at least30s off/reconnect logic; this is NOT a manual-rearm acoustic safety controller."
+    },
+    {
+      "id": "S-CHGCABLE",
+      "manufacturer": "Victron Energy",
+      "captures": [
+        {
+          "file": "sources/vedirect-remote-manual.pdf",
+          "url": "https://www.victronenergy.com/upload/documents/Manual-VE.Direct-non-inverting-remote-on-off-cable-EN.pdf",
+          "sha256": "d1595d99ec15d1cf940a8d4d752e0dacf94eac04cb75ef457a117aa615322278",
+          "license_status": "supplier_redistribution_unverified"
+        }
+      ],
+      "locator": "p1 part number, configuration and specification",
+      "verified": {
+        "mpn": "ASS030550320",
+        "input_max_v": 70,
+        "switch_on_input_v_approx": 6,
+        "switch_off_input_below_v": 1,
+        "floating_input_disables": true,
+        "compatible_control": "VE.Bus BMS or smallBMS",
+        "compatible_controller": "BlueSolar/SmartSolar incl75/10; load-output models require RX port setting",
+        "ve_direct_port_reserved": true
+      },
+      "unknown": [
+        "Inline electronics/cable envelope and lead lengths",
+        "Input/operating current",
+        "Actual configured75/10 firmware RX-function setting and fault test"
+      ],
+      "connection_evidence": "smallBMS Charge disconnect feeds the cable control lead. Configure75/10 VE.Direct RX function for remote on/off using approved manual procedure; this is not its unconditional default. High enables; below1V or floating disables. VE.Direct cannot simultaneously carry GX/serial telemetry."
+    },
+    {
+      "id": "S-REG5",
+      "manufacturer": "Pololu",
+      "captures": [
+        {
+          "file": "sources/pololu-5v.html",
+          "url": "https://www.pololu.com/product/3782",
+          "sha256": "a3e8f2a2d356ffd920103bd8414838463941f7beaec04972af79c0f8eee306ab",
+          "license_status": "supplier_redistribution_unverified"
+        }
+      ],
+      "locator": "D36V28F5 Features/Connections/specifications",
+      "verified": {
+        "mpn": "D36V28F5",
+        "item": "3782",
+        "input_v": [
+          5.3,
+          50
+        ],
+        "output_v": 5,
+        "output_accuracy_fraction": 0.04,
+        "typical_continuous_a_at_36v": 3.2,
+        "dimensions_mm": [
+          17.8,
+          20.3,
+          8.8
+        ],
+        "no_load_current_a_typical_range": [
+          0.002,
+          0.003
+        ],
+        "reverse_protection_v": 40,
+        "protections_named": [
+          "output undervoltage",
+          "output overvoltage",
+          "overcurrent",
+          "short circuit",
+          "thermal shutdown"
+        ],
+        "connections": [
+          "PG",
+          "EN",
+          "VIN",
+          "VOUT",
+          "GND",
+          "GND"
+        ],
+        "pg_type": "open drain",
+        "pg_low_above_nominal_factor": 1.2,
+        "pg_low_below_nominal_factor": 0.9,
+        "en_default": "enabled; pulled toward VIN",
+        "en_disable_below_v": 1.2,
+        "en_enable_above_v": 1.35
+      },
+      "unknown": [
+        "OVP shutdown threshold/timing and maximum fault output",
+        "Overcurrent/short-circuit threshold and let-through energy",
+        "Guaranteed12V low-load efficiency/thermal continuous-current curve point",
+        "Whole-board ripple/burst/voltage fit to ESP input tolerance"
+      ],
+      "limits": "REEF regulator only. It is not a USB-C source and PG thresholds are status, NOT protection thresholds. Never connect EN pulled toward VIN directly to ESP GPIO."
+    },
+    {
+      "id": "S-REG3",
+      "manufacturer": "Pololu",
+      "captures": [
+        {
+          "file": "sources/pololu-3v3.html",
+          "url": "https://www.pololu.com/product/3781",
+          "sha256": "52385023da0b22c16a067d2d94ad3b488e77cb600c550eb8ad6e2979740fa96d",
+          "license_status": "supplier_redistribution_unverified"
+        }
+      ],
+      "locator": "D36V28F3 Features/Connections/specifications",
+      "verified": {
+        "mpn": "D36V28F3",
+        "item": "3781",
+        "input_v": [
+          4.5,
+          50
+        ],
+        "output_v": 3.3,
+        "output_accuracy_fraction": 0.04,
+        "dimensions_mm": [
+          17.8,
+          20.3,
+          8.8
+        ],
+        "no_load_current_a_typical_range": [
+          0.002,
+          0.003
+        ],
+        "reverse_protection_v": 40,
+        "protections_named": [
+          "output undervoltage",
+          "output overvoltage",
+          "overcurrent",
+          "short circuit",
+          "thermal shutdown"
+        ],
+        "connections": [
+          "PG",
+          "EN",
+          "VIN",
+          "VOUT",
+          "GND",
+          "GND"
+        ],
+        "pg_type": "open drain",
+        "pg_low_above_nominal_factor": 1.2,
+        "pg_low_below_nominal_factor": 0.9
+      },
+      "unknown": [
+        "OVP shutdown threshold/timing and whether fault output stays below RAK3.6V absolute supply boundary",
+        "Overcurrent threshold and RAK wiring protection",
+        "Worst-case current/efficiency at12V low-load120mA burst",
+        "Power-off UART backfeed and actual rail ripple"
+      ],
+      "limits": "Independent RAK supply, not DevKit3V3 spare current. Nominal3.3V+/-4% is a static screen; PG high threshold3.96V cannot prove RAK overvoltage safety."
+    },
+    {
+      "id": "S-PIBENCH",
+      "manufacturer": "Raspberry Pi / Kuantech",
+      "captures": [
+        {
+          "file": "sources/pi-usbc-psu.pdf",
+          "url": "https://datasheets.raspberrypi.com/power-supply/usb-c-power-supply-product-brief.pdf",
+          "sha256": "6df7bb5c05165cbf80978c05a36070a763523bb5a1cdf6724b87a1a6e673bd89",
+          "license_status": "supplier_redistribution_unverified"
+        }
+      ],
+      "locator": "April2024 briefpp2-5: purpose, ratings, plug/order table, drawings",
+      "verified": {
+        "mpn": "KSA-15E-051300HE",
+        "white_eu_product_code": "SC0444",
+        "black_eu_product_code": "SC0217",
+        "output_v": 5.1,
+        "nominal_output_a": 3,
+        "published_max_power_w": 15,
+        "input_operating_ac_v": [
+          96,
+          264
+        ],
+        "captive_cable_m": 1.5,
+        "cable_awg": 18,
+        "connector": "USB-C",
+        "protections_named": [
+          "short circuit",
+          "overcurrent",
+          "overtemperature"
+        ],
+        "ambient_c": [
+          0,
+          40
+        ],
+        "no_load_input_w_max": 0.075,
+        "manufacturer_intended_use": "Raspberry Pi4 ModelB and400"
+      },
+      "unknown": [
+        "Internal CC resistor/source-role electrical implementation details",
+        "Numerical OCP/OVP threshold; OVP not claimed in this brief",
+        "Bench adapter body dimensions not extracted; remains outside HUB",
+        "12V DC operation: NOT SUPPORTED"
+      ],
+      "limits": "Exact official dry-bench alternative only, external mains. Nominal5.1Vx3A=15.3W arithmetic versus catalog15W label retained, not a51W-style uprating. Does not resolve field12V DC power source or authorize bench operation."
+    },
+    {
+      "id": "S-PP",
+      "manufacturer": "Anderson Power",
+      "captures": [
+        {
+          "file": "sources/anderson-pp1545.pdf",
+          "url": "https://www.andersonpower.com/content/dam/app/ecommerce/product-pdfs/DS-PP1545.pdf",
+          "sha256": "ac39c286d44528efab30061b96df6e64e6eeafb6e154af7a03397d518f45a04f",
+          "license_status": "supplier_redistribution_unverified"
+        }
+      ],
+      "locator": "Catalogpp30-31 housing/contact table, accessories retention/BlockLok, specification table",
+      "verified": {
+        "red_fingerproof_housing": "1327FP",
+        "black_fingerproof_housing": "1327G6FP",
+        "silver_contact": "1331",
+        "contact_wire_awg": [
+          16,
+          12
+        ],
+        "contact_wire_mm2": [
+          1.3,
+          3.3
+        ],
+        "block_lok_2pole": "110G21",
+        "housing_unmated_length_mm": 24.6,
+        "housing_front_square_mm": 7.9,
+        "housing_max_profile_mm": 8.4,
+        "mated_length_mm": 41.2,
+        "family_voltage_ac_dc_ul1977_v": 600,
+        "family_current_a_singlepole_10awg_ul1977": 55,
+        "fingerproof_ip": "IP20",
+        "fingerproof_mates_standard": false
+      },
+      "unknown": [
+        "Final assembled2-pole plus BlockLok envelope",
+        "Installation-derated rating for selected12AWG/contact/connector bundle",
+        "Crimp-tool/process qualification, strain restraint, polarity/key drawing and fuse let-through"
+      ],
+      "limits": "Both ends fingerproof with1331 contacts; do not mix standard housings. Source55A is a10AWG family test condition, NOT the chosen12AWG assembly rating. Above-water dry enclosure only; no wet connector or load-break approval."
+    },
+    {
+      "id": "S-WAGO2",
+      "manufacturer": "WAGO",
+      "captures": [
+        {
+          "file": "sources/wago-221412.html",
+          "url": "https://www.wago.com/global/installation-terminal-blocks-and-connectors/compact-splicing-connector/p/221-412",
+          "sha256": "077fbda06d591e815b0a8efbef8fc73ff27b8f4e2c264416340a24d0e055863c",
+          "license_status": "supplier_redistribution_unverified"
+        }
+      ],
+      "locator": "Captured product description embedded in HTML",
+      "verified": {
+        "mpn": "221-412",
+        "conductors": 2,
+        "rated_v": 450,
+        "rated_a": 32,
+        "dimensions_whd_mm": [
+          13.1,
+          8.3,
+          18.6
+        ],
+        "conductor_mm2": [
+          0.2,
+          4
+        ],
+        "connection": "CAGE CLAMP lever splice"
+      },
+      "unknown": [
+        "Final enclosed mounting/lever access, wet/PV interface insulation and installation derating"
+      ],
+      "limits": "Insulated splice inside a reviewed enclosure, NOT weatherproof inline connector."
+    },
+    {
+      "id": "S-WAGO5",
+      "manufacturer": "WAGO",
+      "captures": [
+        {
+          "file": "sources/wago-221415.html",
+          "url": "https://www.wago.com/global/installation-terminal-blocks-and-connectors/compact-splicing-connector/p/221-415",
+          "sha256": "e4180c137c77c3e81255378c7e3e7b3d462cc289647d0542b050c34487154296",
+          "license_status": "supplier_redistribution_unverified"
+        }
+      ],
+      "locator": "Captured product description embedded in HTML",
+      "verified": {
+        "mpn": "221-415",
+        "conductors": 5,
+        "rated_v": 450,
+        "rated_a": 32,
+        "dimensions_whd_mm": [
+          30,
+          8.4,
+          18.6
+        ],
+        "conductor_mm2": [
+          0.2,
+          4
+        ],
+        "connection": "CAGE CLAMP lever splice"
+      },
+      "unknown": [
+        "Final enclosed mounting/lever access, cable ampacity and fault let-through"
+      ],
+      "limits": "One5-way positive distribution splice and two linked5-way negative splices are a candidate topology; no chassis/seawater load return."
+    }
+  ],
+  "bounded_source_blocks": [
+    {
+      "function": "12V DC to Pi USB-C source",
+      "families_screened": [
+        "Coolgear ChargeIt PD industrial source",
+        "Official Raspberry Pi15W AC bench alternative"
+      ],
+      "attempted_urls": [
+        "https://www.coolgear.com/product/chargeit-100-watt-usb-type-c-charger",
+        "https://www.coolgear.com/product/chargeit-100-watt-usb-type-c-charging-board",
+        "https://www.coolgear.com/product/chargeit-dual-port-usb-charger-1-type-c-pd-27w-1-type-a-15w-variable-voltage-1228v-input"
+      ],
+      "result": "Coolgear primary pages HTTP403; no exact SKU/CC-source path/current limit/OVP thresholds/envelope verified. Search indexing suggests12V lower bound, which does not prove11.2V operation. Stop this family; choose exact official external drybench alternative only. FIELD_DC_POWER_PATH_UNKNOWN."
+    },
+    {
+      "function": "DC branch fuses and holders",
+      "families_screened": [
+        "Littelfuse287ATOF/155ATO holders",
+        "EatonATC/HHF-JFCU"
+      ],
+      "attempted_urls": [
+        "https://www.littelfuse.com/assetdocs/littelfuse-datasheet-287-atof?assetguid=43dcdce8-8ca2-426f-8998-7e566f048d40",
+        "https://info.littelfuse.com/ato-155-series-landing-page",
+        "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-atc-blade-fuses-data-sheet.pdf",
+        "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-hhf-jfcu-automotive-in-line-fuse-holder-atc-blade-type-data-sheet.pdf"
+      ],
+      "result": "Littelfuse PDF403; landing page identifies01550320ZXU only, not ratings/dimensions. Eaton retrieval HTTP2error then bounded HTTP1 timeout; WebFetch timeout. Source-indexed0287005 fuse base and01550320ZXU holder retained as UNVERIFIED_RATING candidates;5A target/32V/1000A index claims NOT accepted as retrieved primary values. No protective fuse/holder rating or geometry qualified. Stop after two families."
+    },
+    {
+      "function": "REEF DC regulation",
+      "families_screened": [
+        "PololuD36V28 selected",
+        "PololuD24V22 screened alternate only"
+      ],
+      "result": "D36V28 sources captured; exact fault thresholds/low-load efficiency unknown. No additional families searched."
+    }
+  ],
+  "inherited_source_register": "hardware/bom/sources.json",
+  "inherited_parts": [
+    "SPM040401200",
+    "BAT512050610",
+    "SCC075010060R",
+    "ESP32-DevKitC-32E",
+    "RAK3272S"
+  ],
+  "quotes_available": false,
+  "availability_approved": false,
+  "procurement_authorized": false
+}

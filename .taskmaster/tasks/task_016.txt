@@ -1,0 +1,11 @@
+# Task ID: 16
+# Title: [nereid] Implement Servo Lens Wiper Control
+# Status: pending
+# Dependencies: 6
+# Priority: medium
+# Description: Integrate control for a servo-driven lens wiper using a PCA9685 PWM driver. Expose a mechanism for TRIDENT to trigger a cleaning cycle.
+# Details:
+In `apps/nereid`, add the `adafruit-circuitpython-pca9685` library. Create a `Wiper` class that initializes the I2C connection and PCA9685 board. Implement a `sweep()` method that moves the servo from a min to max angle and back. Expose this via an MQTT topic (`.../cmd/clean_lens`) or an IPC/gRPC call that TRIDENT can invoke.
+
+# Test Strategy:
+On a Pi with a PCA9685 and servo connected, run the `nereid` service. Publish a command to the `clean_lens` topic. Verify that the servo performs a full sweep action. Ensure the I2C bus is enabled on the Pi (`raspi-config`).

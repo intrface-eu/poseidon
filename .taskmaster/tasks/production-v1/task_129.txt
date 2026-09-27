@@ -1,0 +1,24 @@
+{
+  "deliverablePaths": [
+    "docs/operations/",
+    "docs/service/",
+    "support/"
+  ],
+  "dependencies": [
+    128
+  ],
+  "description": "Release only approved configurations with funded support, installation, update, incident, repair, and end-of-support processes.",
+  "details": "Publish only permitted, evidence-backed claims. Establish site-specific permissions, CE/DoC where applicable, version records, warranty/service, vulnerability intake, recall/incident process, spares, support capacity, and declared support end dates.",
+  "id": 129,
+  "ownerRole": "release-support",
+  "phase": "P9",
+  "priority": "high",
+  "researchPackages": [
+    "R1",
+    "R7"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Verify PVT acceptance, final authorization, funded support capacity, serial traceability, installation/training, incident drill, update recovery, and commercial release approval.",
+  "title": "P9 Release and Funded Lifetime Support"
+}

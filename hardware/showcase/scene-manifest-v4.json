@@ -1,0 +1,812 @@
+{
+  "schema": "poseidon.showcase.scene-manifest.v4",
+  "status": "Design renders of a non-adopted candidate. Nothing shown here has been built or tested.",
+  "frame": {
+    "units": "metres",
+    "upAxis": "+Y",
+    "origin": "hero.glb: the water surface at y = 0 on the pole axis (x = z = 0); depth is negative y. head.glb: the enclosure tube centre.",
+    "handedness": "glTF right-handed, +Y up; Blender authoring axes Z-up were converted by the exporter."
+  },
+  "decoder": {
+    "needed": "KHR_draco_mesh_compression",
+    "threejs": "GLTFLoader with DRACOLoader (setDecoderPath to a hosted copy of the three.js draco decoder files).",
+    "alsoUsed": "KHR_materials_transmission, KHR_materials_ior, EXT_texture_webp (hero only); all handled by GLTFLoader."
+  },
+  "exports": {
+    "hero": {
+      "file": "hardware/showcase/hero.glb",
+      "bytes": 912044,
+      "sha256": "d5b0c7b4e7e449ddce1aa5602cf22bf2599037ec1396c677f5c032b68ef7bfad",
+      "sourceRaw": "hardware/showcase/build/hero.raw.glb",
+      "rawBytes": 4319556,
+      "root": "poseidonHero",
+      "rootExtras": {
+        "label": "Poseidon Trident at a Limski kanal mussel farm",
+        "contract": "poseidon.showcase.hero.v4",
+        "units": "metres",
+        "upAxis": "+Y",
+        "origin": "Water surface at y = 0; depth is negative y; the pole axis is x = z = 0.",
+        "seabedTopY": -6.4,
+        "trayTopY": 0.504,
+        "floatSurfaceY": 0.24220835166429533,
+        "variantRule": "Pole (default): mountPole visible, mountFloat hidden, surface y = 0.5. Float: hide mountPole, show mountFloat, set surface y = floatSurfaceY. Nothing else moves.",
+        "status": "Design render of a non-adopted candidate. Nothing shown has been built or tested."
+      },
+      "boundsMin": [
+        -32,
+        -6.6114,
+        -26
+      ],
+      "boundsMax": [
+        32,
+        0.92,
+        26
+      ],
+      "triangles": 631806,
+      "uniqueTriangles": 157942,
+      "meshes": 90,
+      "nodes": 221,
+      "materials": 41,
+      "textures": 2,
+      "extensionsUsed": [
+        "EXT_texture_webp",
+        "KHR_draco_mesh_compression",
+        "KHR_materials_ior",
+        "KHR_materials_transmission"
+      ],
+      "extensionsRequired": [
+        "EXT_texture_webp",
+        "KHR_draco_mesh_compression"
+      ],
+      "clips": [
+        {
+          "name": "descend",
+          "durationSeconds": 2,
+          "channels": [
+            "head.translation",
+            "tetherFloat.weights",
+            "tetherPole.weights"
+          ]
+        },
+        {
+          "name": "swim",
+          "durationSeconds": 20,
+          "channels": [
+            "orada01Tail.rotation",
+            "orada02Tail.rotation",
+            "orada03Tail.rotation",
+            "orada04Tail.rotation",
+            "orada05Tail.rotation",
+            "orada06Tail.rotation",
+            "orada07Tail.rotation",
+            "orada08Tail.rotation",
+            "orada09Tail.rotation",
+            "school.rotation"
+          ]
+        }
+      ],
+      "namedNodes": [
+        {
+          "name": "longlineBack",
+          "parent": "farm",
+          "label": "Longline behind",
+          "mesh": false
+        },
+        {
+          "name": "longlineFront",
+          "parent": "farm",
+          "label": "Longline in front",
+          "mesh": false
+        },
+        {
+          "name": "sensorLine",
+          "parent": "longlineNear",
+          "label": "Sensor line the head clamps to",
+          "mesh": true
+        },
+        {
+          "name": "sensorWeight",
+          "parent": "longlineNear",
+          "label": "Sensor line weight",
+          "mesh": true
+        },
+        {
+          "name": "longlineNear",
+          "parent": "farm",
+          "label": "Longline beside the unit",
+          "mesh": false
+        },
+        {
+          "name": "farm",
+          "parent": "poseidonHero",
+          "label": "Mussel longlines",
+          "mesh": false
+        },
+        {
+          "name": "cableConnector",
+          "parent": "head",
+          "label": "Cable connector",
+          "mesh": true
+        },
+        {
+          "name": "cameraBoard",
+          "parent": "camera",
+          "label": "Camera board and lens",
+          "mesh": true
+        },
+        {
+          "name": "cameraStandoffs",
+          "parent": "camera",
+          "label": "Camera standoffs",
+          "mesh": true
+        },
+        {
+          "name": "cameraTray",
+          "parent": "camera",
+          "label": "Camera tray",
+          "mesh": true
+        },
+        {
+          "name": "camera",
+          "parent": "head",
+          "label": "Camera",
+          "mesh": false
+        },
+        {
+          "name": "dome",
+          "parent": "head",
+          "label": "Camera dome",
+          "mesh": true
+        },
+        {
+          "name": "domeRing",
+          "parent": "head",
+          "label": "Dome retaining ring",
+          "mesh": true
+        },
+        {
+          "name": "enclosureTube",
+          "parent": "head",
+          "label": "Enclosure tube",
+          "mesh": true
+        },
+        {
+          "name": "endCap",
+          "parent": "head",
+          "label": "End cap",
+          "mesh": true
+        },
+        {
+          "name": "frontFlange",
+          "parent": "head",
+          "label": "Front flange",
+          "mesh": true
+        },
+        {
+          "name": "hydrophoneBracket",
+          "parent": "hydrophone",
+          "label": "Hydrophone bracket",
+          "mesh": true
+        },
+        {
+          "name": "hydrophoneCable",
+          "parent": "hydrophone",
+          "label": "Hydrophone cable",
+          "mesh": true
+        },
+        {
+          "name": "hydrophoneElement",
+          "parent": "hydrophone",
+          "label": "Hydrophone element",
+          "mesh": true
+        },
+        {
+          "name": "hydrophone",
+          "parent": "head",
+          "label": "Hydrophone",
+          "mesh": false
+        },
+        {
+          "name": "clampJaw",
+          "parent": "longlineClamp",
+          "label": "Release jaw",
+          "mesh": true
+        },
+        {
+          "name": "clampLanyard",
+          "parent": "longlineClamp",
+          "label": "Safety lanyard",
+          "mesh": true
+        },
+        {
+          "name": "clampPins",
+          "parent": "longlineClamp",
+          "label": "Pull pins",
+          "mesh": true
+        },
+        {
+          "name": "clampPinSleeves",
+          "parent": "longlineClamp",
+          "label": "Pin sleeves",
+          "mesh": true
+        },
+        {
+          "name": "clampSaddle",
+          "parent": "longlineClamp",
+          "label": "Clamp saddle",
+          "mesh": true
+        },
+        {
+          "name": "longlineClamp",
+          "parent": "head",
+          "label": "Longline clamp",
+          "mesh": false
+        },
+        {
+          "name": "rearFlange",
+          "parent": "head",
+          "label": "Rear flange",
+          "mesh": true
+        },
+        {
+          "name": "strainRelief",
+          "parent": "tetherStrainRelief",
+          "label": "Strain relief",
+          "mesh": true
+        },
+        {
+          "name": "tetherCable",
+          "parent": "tetherStrainRelief",
+          "label": "Tether",
+          "mesh": true
+        },
+        {
+          "name": "tetherStrainRelief",
+          "parent": "head",
+          "label": "Tether and strain relief",
+          "mesh": false
+        },
+        {
+          "name": "head",
+          "parent": "poseidonHero",
+          "label": "Listening head, clamped to its sensor line",
+          "mesh": false
+        },
+        {
+          "name": "floatCollar",
+          "parent": "mountFloat",
+          "label": "Foam float collar",
+          "mesh": true
+        },
+        {
+          "name": "tetherFloat",
+          "parent": "mountFloat",
+          "label": "Tether and hydrophone cable",
+          "mesh": true
+        },
+        {
+          "name": "mountFloat",
+          "parent": "poseidonHero",
+          "label": "Float collar mount (variant)",
+          "mesh": false
+        },
+        {
+          "name": "footingPlate",
+          "parent": "mountPole",
+          "label": "Seabed footing plate",
+          "mesh": true
+        },
+        {
+          "name": "pole",
+          "parent": "mountPole",
+          "label": "60 mm pole",
+          "mesh": true
+        },
+        {
+          "name": "tetherPole",
+          "parent": "mountPole",
+          "label": "Tether and hydrophone cable",
+          "mesh": true
+        },
+        {
+          "name": "mountPole",
+          "parent": "poseidonHero",
+          "label": "Pole mount (default)",
+          "mesh": false
+        },
+        {
+          "name": "orada01",
+          "parent": "school",
+          "label": "Gilthead seabream",
+          "mesh": false
+        },
+        {
+          "name": "orada02",
+          "parent": "school",
+          "label": "Gilthead seabream",
+          "mesh": false
+        },
+        {
+          "name": "orada03",
+          "parent": "school",
+          "label": "Gilthead seabream",
+          "mesh": false
+        },
+        {
+          "name": "orada04",
+          "parent": "school",
+          "label": "Gilthead seabream",
+          "mesh": false
+        },
+        {
+          "name": "orada05",
+          "parent": "school",
+          "label": "Gilthead seabream",
+          "mesh": false
+        },
+        {
+          "name": "orada06",
+          "parent": "school",
+          "label": "Gilthead seabream",
+          "mesh": false
+        },
+        {
+          "name": "orada07",
+          "parent": "school",
+          "label": "Gilthead seabream",
+          "mesh": false
+        },
+        {
+          "name": "orada08",
+          "parent": "school",
+          "label": "Gilthead seabream",
+          "mesh": false
+        },
+        {
+          "name": "orada09",
+          "parent": "school",
+          "label": "Gilthead seabream",
+          "mesh": false
+        },
+        {
+          "name": "school",
+          "parent": "poseidonHero",
+          "label": "Gilthead seabream (orada), adults about 32 cm",
+          "mesh": false
+        },
+        {
+          "name": "seabedGround",
+          "parent": "seabed",
+          "label": "Seabed mud",
+          "mesh": true
+        },
+        {
+          "name": "seabedShells",
+          "parent": "seabed",
+          "label": "Shell litter and stones",
+          "mesh": true
+        },
+        {
+          "name": "seabed",
+          "parent": "poseidonHero",
+          "label": "Seabed",
+          "mesh": false
+        },
+        {
+          "name": "hubCarrier",
+          "parent": "hub",
+          "label": "Hub carrier",
+          "mesh": true
+        },
+        {
+          "name": "hubEnclosure",
+          "parent": "hub",
+          "label": "Hub enclosure",
+          "mesh": true
+        },
+        {
+          "name": "hubShade",
+          "parent": "hub",
+          "label": "Hub sun shade",
+          "mesh": true
+        },
+        {
+          "name": "hub",
+          "parent": "surface",
+          "label": "Electronics hub",
+          "mesh": false
+        },
+        {
+          "name": "socketBody",
+          "parent": "mastSocket",
+          "label": "Mast socket",
+          "mesh": true
+        },
+        {
+          "name": "mastSocket",
+          "parent": "surface",
+          "label": "Mast socket",
+          "mesh": false
+        },
+        {
+          "name": "panelAModule",
+          "parent": "panelA",
+          "label": "Solar panel A",
+          "mesh": true
+        },
+        {
+          "name": "panelAWedges",
+          "parent": "panelA",
+          "label": "Panel A tilt wedges",
+          "mesh": true
+        },
+        {
+          "name": "panelA",
+          "parent": "surface",
+          "label": "Solar panel A with wedges",
+          "mesh": false
+        },
+        {
+          "name": "panelBModule",
+          "parent": "panelB",
+          "label": "Solar panel B",
+          "mesh": true
+        },
+        {
+          "name": "panelBWedges",
+          "parent": "panelB",
+          "label": "Panel B tilt wedges",
+          "mesh": true
+        },
+        {
+          "name": "panelB",
+          "parent": "surface",
+          "label": "Solar panel B with wedges",
+          "mesh": false
+        },
+        {
+          "name": "trayPlate",
+          "parent": "tray",
+          "label": "Tray plate",
+          "mesh": true
+        },
+        {
+          "name": "traySkirt",
+          "parent": "tray",
+          "label": "Open-bottom skirt",
+          "mesh": true
+        },
+        {
+          "name": "tray",
+          "parent": "surface",
+          "label": "Tray",
+          "mesh": false
+        },
+        {
+          "name": "surface",
+          "parent": "poseidonHero",
+          "label": "Surface unit",
+          "mesh": false
+        },
+        {
+          "name": "waterSurface",
+          "parent": "poseidonHero",
+          "label": "Water surface (replaceable by the page's own water)",
+          "mesh": true
+        },
+        {
+          "name": "workBoat",
+          "parent": "poseidonHero",
+          "label": "5.2 m open work boat, for scale",
+          "mesh": false
+        },
+        {
+          "name": "poseidonHero",
+          "parent": null,
+          "label": "Poseidon Trident at a Limski kanal mussel farm",
+          "mesh": false
+        }
+      ],
+      "contents": "Surface unit on its 60 mm pole with the seabed footing plate, the float-collar variant, the listening head on its sensor line, three mussel longlines with barrel buoys and droppers, seabed, a school of nine gilthead seabream, a 5.2 m work boat for scale, and a water surface.",
+      "variants": {
+        "rule": "Show mountPole (default) or mountFloat, never both. mountFloat carries extras.defaultHidden = true; hide it on load. Each mount group holds its own tether (tetherPole, tetherFloat).",
+        "floatSurfaceY": 0.24220835166429533
+      },
+      "clipNotes": {
+        "descend": "Lowers the head from just below the surface to its working depth among the droppers; the tether follows through its headRaised morph weight (1 at the start, 0 at the end).",
+        "swim": "The school circles once; tails beat. Loops."
+      },
+      "waterNode": "waterSurface carries extras.role = 'water'. Hide it if the page draws its own water."
+    },
+    "head": {
+      "file": "hardware/showcase/head.glb",
+      "bytes": 88888,
+      "sha256": "4e82e29495f1266c6c36ebed83aa3883e0248bf6c085f1198a86f441feccbb13",
+      "sourceRaw": "hardware/showcase/build/head.raw.glb",
+      "rawBytes": 503664,
+      "root": "head",
+      "rootExtras": {
+        "label": "Listening head",
+        "contract": "poseidon.showcase.head.v4",
+        "units": "metres",
+        "explodeAxis": "Enclosure tube axis, glTF +X toward the dome. Hydrophone lifts +Y, clamp drops -Y.",
+        "datum": "enclosureTube and head never move in any clip.",
+        "status": "Design render of a non-adopted candidate. Not built, not tested."
+      },
+      "boundsMin": [
+        -0.256,
+        -0.062,
+        -0.106
+      ],
+      "boundsMax": [
+        0.2097,
+        0.3,
+        0.141
+      ],
+      "triangles": 18144,
+      "uniqueTriangles": 18144,
+      "meshes": 20,
+      "nodes": 25,
+      "materials": 12,
+      "textures": 0,
+      "extensionsUsed": [
+        "KHR_draco_mesh_compression",
+        "KHR_materials_ior",
+        "KHR_materials_transmission"
+      ],
+      "extensionsRequired": [
+        "KHR_draco_mesh_compression"
+      ],
+      "clips": [
+        {
+          "name": "explode",
+          "durationSeconds": 1.5,
+          "channels": [
+            "cableConnector.translation",
+            "camera.translation",
+            "dome.translation",
+            "domeRing.translation",
+            "endCap.translation",
+            "frontFlange.translation",
+            "hydrophone.translation",
+            "longlineClamp.translation",
+            "rearFlange.translation",
+            "tetherStrainRelief.translation"
+          ]
+        },
+        {
+          "name": "assemble",
+          "durationSeconds": 1.5,
+          "channels": [
+            "cableConnector.translation",
+            "camera.translation",
+            "dome.translation",
+            "domeRing.translation",
+            "endCap.translation",
+            "frontFlange.translation",
+            "hydrophone.translation",
+            "longlineClamp.translation",
+            "rearFlange.translation",
+            "tetherStrainRelief.translation"
+          ]
+        }
+      ],
+      "namedNodes": [
+        {
+          "name": "cableConnector",
+          "parent": "head",
+          "label": "Cable connector",
+          "mesh": true
+        },
+        {
+          "name": "cameraBoard",
+          "parent": "camera",
+          "label": "Camera board and lens",
+          "mesh": true
+        },
+        {
+          "name": "cameraStandoffs",
+          "parent": "camera",
+          "label": "Camera standoffs",
+          "mesh": true
+        },
+        {
+          "name": "cameraTray",
+          "parent": "camera",
+          "label": "Camera tray",
+          "mesh": true
+        },
+        {
+          "name": "camera",
+          "parent": "head",
+          "label": "Camera",
+          "mesh": false
+        },
+        {
+          "name": "dome",
+          "parent": "head",
+          "label": "Camera dome",
+          "mesh": true
+        },
+        {
+          "name": "domeRing",
+          "parent": "head",
+          "label": "Dome retaining ring",
+          "mesh": true
+        },
+        {
+          "name": "enclosureTube",
+          "parent": "head",
+          "label": "Enclosure tube",
+          "mesh": true
+        },
+        {
+          "name": "endCap",
+          "parent": "head",
+          "label": "End cap",
+          "mesh": true
+        },
+        {
+          "name": "frontFlange",
+          "parent": "head",
+          "label": "Front flange",
+          "mesh": true
+        },
+        {
+          "name": "hydrophoneBracket",
+          "parent": "hydrophone",
+          "label": "Hydrophone bracket",
+          "mesh": true
+        },
+        {
+          "name": "hydrophoneCable",
+          "parent": "hydrophone",
+          "label": "Hydrophone cable",
+          "mesh": true
+        },
+        {
+          "name": "hydrophoneElement",
+          "parent": "hydrophone",
+          "label": "Hydrophone element",
+          "mesh": true
+        },
+        {
+          "name": "hydrophone",
+          "parent": "head",
+          "label": "Hydrophone",
+          "mesh": false
+        },
+        {
+          "name": "clampJaw",
+          "parent": "longlineClamp",
+          "label": "Release jaw",
+          "mesh": true
+        },
+        {
+          "name": "clampLanyard",
+          "parent": "longlineClamp",
+          "label": "Safety lanyard",
+          "mesh": true
+        },
+        {
+          "name": "clampPins",
+          "parent": "longlineClamp",
+          "label": "Pull pins",
+          "mesh": true
+        },
+        {
+          "name": "clampPinSleeves",
+          "parent": "longlineClamp",
+          "label": "Pin sleeves",
+          "mesh": true
+        },
+        {
+          "name": "clampSaddle",
+          "parent": "longlineClamp",
+          "label": "Clamp saddle",
+          "mesh": true
+        },
+        {
+          "name": "longlineClamp",
+          "parent": "head",
+          "label": "Longline clamp",
+          "mesh": false
+        },
+        {
+          "name": "rearFlange",
+          "parent": "head",
+          "label": "Rear flange",
+          "mesh": true
+        },
+        {
+          "name": "strainRelief",
+          "parent": "tetherStrainRelief",
+          "label": "Strain relief",
+          "mesh": true
+        },
+        {
+          "name": "tetherCable",
+          "parent": "tetherStrainRelief",
+          "label": "Tether",
+          "mesh": true
+        },
+        {
+          "name": "tetherStrainRelief",
+          "parent": "head",
+          "label": "Tether and strain relief",
+          "mesh": false
+        },
+        {
+          "name": "head",
+          "parent": null,
+          "label": "Listening head",
+          "mesh": false
+        }
+      ],
+      "contents": "The passive listening head alone, at the origin, with explode and assemble clips.",
+      "clipNotes": {
+        "explode": "Parts move apart along the tube axis (glTF +X toward the dome); the hydrophone lifts on +Y and the clamp drops on -Y. The enclosure tube and the head root never move.",
+        "assemble": "The reverse of explode."
+      }
+    }
+  },
+  "sources": {
+    "surface": "hardware/candidates/surface-v3/cad/generated/surface-v3/SURFACE_V3.glb (+ hierarchy.json)",
+    "head": "hardware/candidates/passive-v3/cad/generated/passive-v3/INTRFACE_PASSIVE_V3.glb (+ hierarchy.json)",
+    "excludedAllocations": [
+      "Surface: SINK_OCCUPANCY_NOT_FINS, SINK_OUTLET_AIR_ALLOCATION, CROSS_BOLT_ALLOCATION_1/2, CABLE_ROUTE_ALLOCATION_A/B (space reservations, not parts)",
+      "Head: EMPTY_* reserve envelopes (space reservations, not parts)"
+    ],
+    "modelledHere": "Longlines, buoys, mussel droppers, seabed, shells, seabream, work boat, water and the render stage are modelled by the build scripts in this folder. No third-party models are used.",
+    "lighting": "Renders use the Poly Haven HDRI kloofendal_48d_partly_cloudy_puresky (CC0). It is not stored in the repository and is not part of any GLB."
+  },
+  "build": {
+    "blender": "Blender 5.2 LTS",
+    "steps": [
+      "Blender -b --factory-startup --python hardware/showcase/build_head_v4.py",
+      "Blender -b --factory-startup --python hardware/showcase/build_hero_v4.py",
+      "bun hardware/showcase/package_v4.ts"
+    ],
+    "masters": [
+      "hardware/showcase/hero.blend",
+      "hardware/showcase/head.blend"
+    ]
+  },
+  "lineage": {
+    "replaces": "Run B (unit.glb, site.glb, orada.glb) and the v3 scenes (unit-v3.glb, site-v3.glb). Both were built from geometry that included vendor-derived CAD and were retired together with their .blend files, build scripts, manifests and renders.",
+    "retiredFiles": [
+      "hardware/showcase/blender/{unit,site,unit-v3,site-v3}.blend",
+      "hardware/showcase/exports/{unit,site,orada,unit-v3,site-v3,hub-source,reef-source,surface-v3-source}.glb",
+      "hardware/showcase/exports/scene-manifest.json, scene-manifest-v3.json",
+      "hardware/showcase/renders/{unit,site,unit-v3,site-v3}.png",
+      "hardware/showcase/build_{unit,site}_blender.py, build_{unit,site}_v3_blender.py, blender_common.py, blender_fish.py, blender_v3_bindings.py, export_surface_cad.py",
+      "hardware/showcase/scene-spec.json, unit-build-checks.json, site-build-checks.json, surface-cad-baseline.json, validate_assets.ts"
+    ],
+    "fixedDefects": [
+      "The explode clip keeps the enclosure tube and the head root still; only the parts move.",
+      "The descend clip ends at the working depth among the droppers, not below them.",
+      "Root extras match the mesh: seabedTopY is the footing plate top.",
+      "The tether is parented to its mount group and follows the head through a morph target.",
+      "The water surface is a named, flagged node the page can hide.",
+      "Renders use an HDRI sky, a water volume and a sun.",
+      "The footing plate uses dark galvanised steel.",
+      "The float collar sits clear of the head, which hangs on its own sensor line."
+    ]
+  },
+  "renders": {
+    "dir": "hardware/showcase/renders-v4",
+    "licence": "CC-BY-4.0",
+    "files": [
+      "hero-16x9.png",
+      "og-image.png",
+      "farm-wide.png",
+      "unit-closeup.png",
+      "head-exploded.png"
+    ],
+    "script": "hardware/showcase/render_v4.py"
+  },
+  "licence": {
+    "models": "CERN-OHL-S-2.0",
+    "renders": "CC-BY-4.0"
+  }
+}

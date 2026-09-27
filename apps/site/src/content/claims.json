@@ -1,0 +1,420 @@
+{
+  "note": "The claims register. Every sentence on the site that states a fact is a claim: its text lives in the locale module (src/content/en.ts, under `claims`), its sources live here. A source is either an ID from apps/site/content/sources.md (S, P or F) or a path in this repository. tests/claims.test.ts fails when a claim has no entry, an entry has no source, an ID is missing from sources.md, a path does not exist, or a number appears in copy outside a claim.",
+  "claims": {
+    "hero-headline": [
+      "S1",
+      "S3",
+      "S4"
+    ],
+    "hero-lead": [
+      "apps/site/content/pitch.md"
+    ],
+    "hero-want": [
+      "apps/site/content/ask.md"
+    ],
+    "hero-caption": [
+      "hardware/candidates/surface-v3",
+      "hardware/candidates/passive-v3"
+    ],
+    "problem-heading": [
+      "S1",
+      "S3"
+    ],
+    "fig-ropes-title": [
+      "S1"
+    ],
+    "problem-who": [
+      "S1",
+      "S3"
+    ],
+    "problem-ropes": [
+      "S1"
+    ],
+    "problem-young": [
+      "S3"
+    ],
+    "problem-night": [
+      "S4"
+    ],
+    "problem-value": [
+      "S2"
+    ],
+    "fig-ropes": [
+      "S1"
+    ],
+    "problem-france": [
+      "S2"
+    ],
+    "problem-spezia": [
+      "S5"
+    ],
+    "problem-common": [
+      "S1",
+      "S2",
+      "S6"
+    ],
+    "problem-fidelity": [
+      "S7"
+    ],
+    "fig-output": [
+      "S1",
+      "S8"
+    ],
+    "problem-small": [
+      "S1"
+    ],
+    "problem-2025": [
+      "S8"
+    ],
+    "problem-compensation": [
+      "S9"
+    ],
+    "lim-geo": [
+      "S10"
+    ],
+    "lim-farming": [
+      "S11",
+      "S12"
+    ],
+    "lim-reserve": [
+      "S11",
+      "S13",
+      "S1"
+    ],
+    "lim-last-farmer": [
+      "S14"
+    ],
+    "lim-no-figure": [
+      "apps/site/content/pitch.md"
+    ],
+    "fix-nets": [
+      "S1"
+    ],
+    "fix-nets-heavy": [
+      "S15"
+    ],
+    "fix-nets-cost": [
+      "S2"
+    ],
+    "fix-fishing": [
+      "S1",
+      "S2",
+      "S15"
+    ],
+    "fix-sound-lim": [
+      "S1"
+    ],
+    "fix-sound-elsewhere": [
+      "S2",
+      "S16",
+      "S5"
+    ],
+    "missing-data": [
+      "apps/site/content/pitch.md",
+      "S2"
+    ],
+    "missing-why": [
+      "apps/site/content/pitch.md",
+      "S9"
+    ],
+    "how-listen": [
+      "apps/site/content/pitch.md",
+      "apps/siren"
+    ],
+    "how-measure": [
+      "apps/site/content/pitch.md",
+      "docs/research/passive-audio-video-collection-protocol.md"
+    ],
+    "how-test": [
+      "apps/site/content/pitch.md"
+    ],
+    "how-eagle-rays": [
+      "S17"
+    ],
+    "how-no-recording": [
+      "apps/site/content/pitch.md"
+    ],
+    "how-value": [
+      "apps/site/content/pitch.md"
+    ],
+    "unit-parts": [
+      "apps/site/content/pitch.md",
+      "hardware/interfaces/reference-v1.json"
+    ],
+    "unit-surface": [
+      "apps/site/content/pitch.md",
+      "hardware/candidates/surface-v3/interface.json"
+    ],
+    "unit-head": [
+      "apps/site/content/pitch.md",
+      "hardware/candidates/passive-v3/interface.json"
+    ],
+    "unit-flow": [
+      "apps/site/content/pitch.md",
+      "apps/acoustic",
+      "apps/aeolus-ui"
+    ],
+    "unit-sensors": [
+      "apps/site/content/pitch.md",
+      "firmware/reef",
+      "docs/telemetry/aquilon.md"
+    ],
+    "unit-listens-only": [
+      "apps/site/content/pitch.md",
+      "apps/siren"
+    ],
+    "head-caption": [
+      "hardware/candidates/passive-v3/interface.json"
+    ],
+    "part-dome": [
+      "hardware/candidates/passive-v3/interface.json"
+    ],
+    "part-hydrophone": [
+      "hardware/candidates/passive-v3/interface.json"
+    ],
+    "part-tube": [
+      "hardware/candidates/passive-v3/interface.json"
+    ],
+    "part-cable": [
+      "hardware/candidates/passive-v3/interface.json"
+    ],
+    "part-clamp": [
+      "hardware/candidates/passive-v3/interface.json"
+    ],
+    "today-detector": [
+      "apps/acoustic",
+      "docs/development/passive-replay.md"
+    ],
+    "today-hub": [
+      "apps/trident",
+      "apps/aeolus-api"
+    ],
+    "today-review": [
+      "apps/aeolus-ui",
+      "docs/platform/ui.md"
+    ],
+    "today-telemetry": [
+      "apps/aquilon",
+      "docs/telemetry/aquilon.md"
+    ],
+    "today-firmware": [
+      "firmware/reef"
+    ],
+    "today-scheduler": [
+      "apps/siren"
+    ],
+    "today-hardware": [
+      "hardware/candidates/surface-v3",
+      "hardware/candidates/passive-v3"
+    ],
+    "today-research": [
+      "research/literature"
+    ],
+    "today-limits": [
+      "apps/site/content/pitch.md",
+      "README.md"
+    ],
+    "next-access": [
+      "apps/site/content/pitch.md",
+      "docs/research/site-permissions-evidence-register.md"
+    ],
+    "next-build": [
+      "apps/site/content/pitch.md"
+    ],
+    "next-answer": [
+      "apps/site/content/pitch.md"
+    ],
+    "stage-1-body": [
+      "apps/site/content/ask.md"
+    ],
+    "stage-1-end": [
+      "apps/site/content/ask.md"
+    ],
+    "stage-1-months": [
+      "apps/site/content/ask.md"
+    ],
+    "stage-1-cost": [
+      "apps/site/content/ask.md",
+      "apps/site/content/pitch.md"
+    ],
+    "stage-2-body": [
+      "apps/site/content/ask.md"
+    ],
+    "stage-2-end": [
+      "apps/site/content/ask.md"
+    ],
+    "stage-2-months": [
+      "apps/site/content/ask.md"
+    ],
+    "stage-2-cost": [
+      "apps/site/content/ask.md"
+    ],
+    "stage-3-body": [
+      "apps/site/content/ask.md",
+      "S2",
+      "S19",
+      "S18"
+    ],
+    "stage-3-end": [
+      "apps/site/content/ask.md"
+    ],
+    "stage-3-months": [
+      "apps/site/content/ask.md"
+    ],
+    "stage-3-cost": [
+      "apps/site/content/ask.md"
+    ],
+    "budget-total": [
+      "apps/site/content/ask.md",
+      "apps/site/content/pitch.md"
+    ],
+    "budget-unit": [
+      "apps/site/content/ask.md",
+      "apps/site/content/press-kit.md"
+    ],
+    "budget-basis": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-lead": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-farms-get": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-farms-need": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-biology-get": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-biology-need": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-acoustics-get": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-acoustics-need": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-engineers-get": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-engineers-need": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-permits-get": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-permits-need": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-making-get": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-making-need": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-grants-get": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-grants-need": [
+      "apps/site/content/ask.md",
+      "F1",
+      "F8",
+      "F9",
+      "F10",
+      "F11"
+    ],
+    "ask-investors-get": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-investors-need": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-public-get": [
+      "apps/site/content/ask.md"
+    ],
+    "ask-public-need": [
+      "apps/site/content/ask.md"
+    ],
+    "team-company": [
+      "apps/site/content/pitch.md"
+    ],
+    "team-alex": [
+      "apps/site/content/pitch.md"
+    ],
+    "team-grow": [
+      "apps/site/content/pitch.md"
+    ],
+    "company-registration": [
+      "apps/site/content/pitch.md"
+    ],
+    "open-licences": [
+      "NOTICE",
+      "LICENSES"
+    ],
+    "open-why": [
+      "apps/site/content/pitch.md"
+    ],
+    "open-contribute": [
+      "CONTRIBUTING.md"
+    ],
+    "press-50": [
+      "apps/site/content/press-kit.md"
+    ],
+    "press-150a": [
+      "apps/site/content/press-kit.md",
+      "S1"
+    ],
+    "press-150b": [
+      "apps/site/content/press-kit.md"
+    ],
+    "qa-stop": [
+      "apps/site/content/press-kit.md",
+      "S1"
+    ],
+    "qa-nets": [
+      "apps/site/content/press-kit.md",
+      "S1"
+    ],
+    "qa-recognise": [
+      "apps/site/content/press-kit.md"
+    ],
+    "qa-tested": [
+      "apps/site/content/press-kit.md"
+    ],
+    "qa-safe": [
+      "apps/site/content/press-kit.md"
+    ],
+    "qa-open": [
+      "apps/site/content/press-kit.md"
+    ],
+    "qa-cost": [
+      "apps/site/content/press-kit.md",
+      "apps/site/content/ask.md"
+    ],
+    "qa-need": [
+      "apps/site/content/press-kit.md",
+      "apps/site/content/ask.md"
+    ],
+    "fact-site": [
+      "apps/site/content/press-kit.md",
+      "S11",
+      "S13"
+    ],
+    "fact-problem": [
+      "apps/site/content/press-kit.md",
+      "S1"
+    ],
+    "fact-what": [
+      "apps/site/content/press-kit.md"
+    ],
+    "fact-status": [
+      "apps/site/content/press-kit.md",
+      "README.md"
+    ],
+    "fact-next": [
+      "apps/site/content/press-kit.md"
+    ]
+  }
+}

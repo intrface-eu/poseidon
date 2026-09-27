@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="4864"><rect width="100%" height="100%" fill="white"/>
+<g font-family="monospace" fill="#172d39">
+<text x="30" y="40" font-size="24">C2-REEF / HW-CAND-2.0 / FEATURE-SOURCE-FASTENER SCHEDULE</text>
+<text x="30" y="75" font-size="19">NON_ADOPTED_NOT_BUILD_AUTHORIZED / mm / No fabrication or thermal/load qualification</text>
+<text x="30" y="115" font-size="15">C2-REEF-BASE-L / BOM C2-REEF-BASE-L / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="136" font-size="15">  Frame base rail with candidate anchor clearance;</text>
+<text x="30" y="157" font-size="15">  mount_holes_mm: [[-270, -430], [-270, 430]]</text>
+<text x="30" y="178" font-size="15">  hole_diameter_mm: 8.5</text>
+<text x="30" y="199" font-size="15">C2-REEF-ANCHOR-L-1 / BOM C2-REEF-ANCHOR-M8 / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="220" font-size="15">  M8 candidate fastener simplified shank/head, unthreaded model; Generic envelope, not a verified ISO/supplier part. Embedment,</text>
+<text x="30" y="241" font-size="15">  tensile class, washer, locking and torque require structural/site review.</text>
+<text x="30" y="262" font-size="15">  nominal_thread_candidate: &quot;M8&quot;</text>
+<text x="30" y="283" font-size="15">  head_envelope_diameter_mm: 15</text>
+<text x="30" y="304" font-size="15">C2-REEF-WASHER-L-1 / BOM C2-REEF-WASHER-M8 / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="325" font-size="15">  Candidate M8 washer allocation;</text>
+<text x="30" y="346" font-size="15">C2-REEF-ANCHOR-L-2 / BOM C2-REEF-ANCHOR-M8 / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="367" font-size="15">  M8 candidate fastener simplified shank/head, unthreaded model; Generic envelope, not a verified ISO/supplier part. Embedment,</text>
+<text x="30" y="388" font-size="15">  tensile class, washer, locking and torque require structural/site review.</text>
+<text x="30" y="409" font-size="15">  nominal_thread_candidate: &quot;M8&quot;</text>
+<text x="30" y="430" font-size="15">  head_envelope_diameter_mm: 15</text>
+<text x="30" y="451" font-size="15">C2-REEF-WASHER-L-2 / BOM C2-REEF-WASHER-M8 / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="472" font-size="15">  Candidate M8 washer allocation;</text>
+<text x="30" y="493" font-size="15">C2-REEF-BASE-R / BOM C2-REEF-BASE-R / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="514" font-size="15">  Frame base rail with candidate anchor clearance;</text>
+<text x="30" y="535" font-size="15">  mount_holes_mm: [[270, -430], [270, 430]]</text>
+<text x="30" y="556" font-size="15">  hole_diameter_mm: 8.5</text>
+<text x="30" y="577" font-size="15">C2-REEF-ANCHOR-R-1 / BOM C2-REEF-ANCHOR-M8 / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="598" font-size="15">  M8 candidate fastener simplified shank/head, unthreaded model; Generic envelope, not a verified ISO/supplier part. Embedment,</text>
+<text x="30" y="619" font-size="15">  tensile class, washer, locking and torque require structural/site review.</text>
+<text x="30" y="640" font-size="15">  nominal_thread_candidate: &quot;M8&quot;</text>
+<text x="30" y="661" font-size="15">  head_envelope_diameter_mm: 15</text>
+<text x="30" y="682" font-size="15">C2-REEF-WASHER-R-1 / BOM C2-REEF-WASHER-M8 / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="703" font-size="15">  Candidate M8 washer allocation;</text>
+<text x="30" y="724" font-size="15">C2-REEF-ANCHOR-R-2 / BOM C2-REEF-ANCHOR-M8 / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="745" font-size="15">  M8 candidate fastener simplified shank/head, unthreaded model; Generic envelope, not a verified ISO/supplier part. Embedment,</text>
+<text x="30" y="766" font-size="15">  tensile class, washer, locking and torque require structural/site review.</text>
+<text x="30" y="787" font-size="15">  nominal_thread_candidate: &quot;M8&quot;</text>
+<text x="30" y="808" font-size="15">  head_envelope_diameter_mm: 15</text>
+<text x="30" y="829" font-size="15">C2-REEF-WASHER-R-2 / BOM C2-REEF-WASHER-M8 / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="850" font-size="15">  Candidate M8 washer allocation;</text>
+<text x="30" y="871" font-size="15">C2-REEF-POST-1 / BOM C2-REEF-POST / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="892" font-size="15">  40x40x3 aluminium post, structural review open; Generic section, not a sourced extrusion/bolt system; no joint or load release</text>
+<text x="30" y="913" font-size="15">  section_mm: [40, 40, 3]</text>
+<text x="30" y="934" font-size="15">  length_mm: 1050</text>
+<text x="30" y="955" font-size="15">C2-REEF-POST-2 / BOM C2-REEF-POST / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="976" font-size="15">  40x40x3 aluminium post, structural review open; Generic section, not a sourced extrusion/bolt system; no joint or load release</text>
+<text x="30" y="997" font-size="15">  section_mm: [40, 40, 3]</text>
+<text x="30" y="1018" font-size="15">  length_mm: 1050</text>
+<text x="30" y="1039" font-size="15">C2-REEF-POST-3 / BOM C2-REEF-POST / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1060" font-size="15">  40x40x3 aluminium post, structural review open; Generic section, not a sourced extrusion/bolt system; no joint or load release</text>
+<text x="30" y="1081" font-size="15">  section_mm: [40, 40, 3]</text>
+<text x="30" y="1102" font-size="15">  length_mm: 1050</text>
+<text x="30" y="1123" font-size="15">C2-REEF-POST-4 / BOM C2-REEF-POST / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1144" font-size="15">  40x40x3 aluminium post, structural review open; Generic section, not a sourced extrusion/bolt system; no joint or load release</text>
+<text x="30" y="1165" font-size="15">  section_mm: [40, 40, 3]</text>
+<text x="30" y="1186" font-size="15">  length_mm: 1050</text>
+<text x="30" y="1207" font-size="15">C2-REEF-PANEL-RAIL-1 / BOM C2-REEF-PANEL-RAIL / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1228" font-size="15">  Longitudinal two-panel support rail; Panel rails carry twice the reference module face area; wind/fatigue/joint sizing not</text>
+<text x="30" y="1249" font-size="15">  qualified</text>
+<text x="30" y="1270" font-size="15">  size_mm: [40, 980, 40]</text>
+<text x="30" y="1291" font-size="15">C2-REEF-PANEL-RAIL-2 / BOM C2-REEF-PANEL-RAIL / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1312" font-size="15">  Longitudinal two-panel support rail; Panel rails carry twice the reference module face area; wind/fatigue/joint sizing not</text>
+<text x="30" y="1333" font-size="15">  qualified</text>
+<text x="30" y="1354" font-size="15">  size_mm: [40, 980, 40]</text>
+<text x="30" y="1375" font-size="15">C2-REEF-CROSS-TIE-1 / BOM C2-REEF-CROSS-TIE / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1396" font-size="15">  Frame bottom transverse tie;</text>
+<text x="30" y="1417" font-size="15">C2-REEF-CROSS-TIE-2 / BOM C2-REEF-CROSS-TIE / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1438" font-size="15">  Frame bottom transverse tie;</text>
+<text x="30" y="1459" font-size="15">C2-REEF-PV-1 / BOM V2-PV-001 / SOURCE_VERIFIED_OVERALL_ENVELOPE_DETAIL_PROVISIONAL</text>
+<text x="30" y="1480" font-size="15">  Victron SPM040401200 physical panel envelope; Two separate purchased references, not two quantities assigned to one solid. Clamp</text>
+<text x="30" y="1501" font-size="15">  zones, frame profile, junction-box location and current availability unverified.</text>
+<text x="30" y="1522" font-size="15">  mpn: &quot;SPM040401200&quot;</text>
+<text x="30" y="1543" font-size="15">  size_mm: [668, 425, 25]</text>
+<text x="30" y="1564" font-size="15">  instance: 1</text>
+<text x="30" y="1585" font-size="15">  electrical_series_position: 1</text>
+<text x="30" y="1606" font-size="15">  vendor_nameplate_w: 40</text>
+<text x="30" y="1627" font-size="15">  vendor_nominal_mass_kg: 3.1</text>
+<text x="30" y="1648" font-size="15">  source_id: &quot;SRC-PANEL&quot;</text>
+<text x="30" y="1669" font-size="15">  centre_y_mm: -237.5</text>
+<text x="30" y="1690" font-size="15">C2-REEF-JUNCTION-ALLOC-1 / BOM V2-PV-001 / PROVISIONAL_TERMINAL_POSITIONS_NOT_VENDOR_GEOMETRY</text>
+<text x="30" y="1711" font-size="15">  Unverified panel junction/terminal allocation; Datasheet does not locate junction terminals. Swept cables terminate at these</text>
+<text x="30" y="1732" font-size="15">  assumed faces; not a released panel harness.</text>
+<text x="30" y="1753" font-size="15">  allocation_only_not_extra_panel: true</text>
+<text x="30" y="1774" font-size="15">C2-REEF-PV-1-SUPPORT-1 / BOM C2-REEF-PV-SUPPORT / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1795" font-size="15">  Metal panel support block; Custom candidate support; actual permitted panel mounting/clamp zones and insulating pads unresolved</text>
+<text x="30" y="1816" font-size="15">  size_mm: [40, 50, 40]</text>
+<text x="30" y="1837" font-size="15">C2-REEF-PV-1-SUPPORT-2 / BOM C2-REEF-PV-SUPPORT / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1858" font-size="15">  Metal panel support block; Custom candidate support; actual permitted panel mounting/clamp zones and insulating pads unresolved</text>
+<text x="30" y="1879" font-size="15">  size_mm: [40, 50, 40]</text>
+<text x="30" y="1900" font-size="15">C2-REEF-PV-1-SUPPORT-3 / BOM C2-REEF-PV-SUPPORT / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1921" font-size="15">  Metal panel support block; Custom candidate support; actual permitted panel mounting/clamp zones and insulating pads unresolved</text>
+<text x="30" y="1942" font-size="15">  size_mm: [40, 50, 40]</text>
+<text x="30" y="1963" font-size="15">C2-REEF-PV-1-SUPPORT-4 / BOM C2-REEF-PV-SUPPORT / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="1984" font-size="15">  Metal panel support block; Custom candidate support; actual permitted panel mounting/clamp zones and insulating pads unresolved</text>
+<text x="30" y="2005" font-size="15">  size_mm: [40, 50, 40]</text>
+<text x="30" y="2026" font-size="15">C2-REEF-PV-1-CLAMP-1 / BOM C2-REEF-PV-END-CLAMP / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="2047" font-size="15">  Custom metal end-clamp study, no approved panel interface; Not a sourced complete clamp. Panel manufacturer mounting zones, edge</text>
+<text x="30" y="2068" font-size="15">  crush, uplift and attachment remain open.</text>
+<text x="30" y="2089" font-size="15">  nominal_fastener: &quot;M6 candidate; thread/torque/rail attachment unresolved&quot;</text>
+<text x="30" y="2110" font-size="15">C2-REEF-PV-1-CLAMP-2 / BOM C2-REEF-PV-END-CLAMP / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="2131" font-size="15">  Custom metal end-clamp study, no approved panel interface; Not a sourced complete clamp. Panel manufacturer mounting zones, edge</text>
+<text x="30" y="2152" font-size="15">  crush, uplift and attachment remain open.</text>
+<text x="30" y="2173" font-size="15">  nominal_fastener: &quot;M6 candidate; thread/torque/rail attachment unresolved&quot;</text>
+<text x="30" y="2194" font-size="15">C2-REEF-PV-2 / BOM V2-PV-001 / SOURCE_VERIFIED_OVERALL_ENVELOPE_DETAIL_PROVISIONAL</text>
+<text x="30" y="2215" font-size="15">  Victron SPM040401200 physical panel envelope; Two separate purchased references, not two quantities assigned to one solid. Clamp</text>
+<text x="30" y="2236" font-size="15">  zones, frame profile, junction-box location and current availability unverified.</text>
+<text x="30" y="2257" font-size="15">  mpn: &quot;SPM040401200&quot;</text>
+<text x="30" y="2278" font-size="15">  size_mm: [668, 425, 25]</text>
+<text x="30" y="2299" font-size="15">  instance: 2</text>
+<text x="30" y="2320" font-size="15">  electrical_series_position: 2</text>
+<text x="30" y="2341" font-size="15">  vendor_nameplate_w: 40</text>
+<text x="30" y="2362" font-size="15">  vendor_nominal_mass_kg: 3.1</text>
+<text x="30" y="2383" font-size="15">  source_id: &quot;SRC-PANEL&quot;</text>
+<text x="30" y="2404" font-size="15">  centre_y_mm: 237.5</text>
+<text x="30" y="2425" font-size="15">C2-REEF-JUNCTION-ALLOC-2 / BOM V2-PV-001 / PROVISIONAL_TERMINAL_POSITIONS_NOT_VENDOR_GEOMETRY</text>
+<text x="30" y="2446" font-size="15">  Unverified panel junction/terminal allocation; Datasheet does not locate junction terminals. Swept cables terminate at these</text>
+<text x="30" y="2467" font-size="15">  assumed faces; not a released panel harness.</text>
+<text x="30" y="2488" font-size="15">  allocation_only_not_extra_panel: true</text>
+<text x="30" y="2509" font-size="15">C2-REEF-PV-2-SUPPORT-1 / BOM C2-REEF-PV-SUPPORT / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="2530" font-size="15">  Metal panel support block; Custom candidate support; actual permitted panel mounting/clamp zones and insulating pads unresolved</text>
+<text x="30" y="2551" font-size="15">  size_mm: [40, 50, 40]</text>
+<text x="30" y="2572" font-size="15">C2-REEF-PV-2-SUPPORT-2 / BOM C2-REEF-PV-SUPPORT / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="2593" font-size="15">  Metal panel support block; Custom candidate support; actual permitted panel mounting/clamp zones and insulating pads unresolved</text>
+<text x="30" y="2614" font-size="15">  size_mm: [40, 50, 40]</text>
+<text x="30" y="2635" font-size="15">C2-REEF-PV-2-SUPPORT-3 / BOM C2-REEF-PV-SUPPORT / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="2656" font-size="15">  Metal panel support block; Custom candidate support; actual permitted panel mounting/clamp zones and insulating pads unresolved</text>
+<text x="30" y="2677" font-size="15">  size_mm: [40, 50, 40]</text>
+<text x="30" y="2698" font-size="15">C2-REEF-PV-2-SUPPORT-4 / BOM C2-REEF-PV-SUPPORT / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="2719" font-size="15">  Metal panel support block; Custom candidate support; actual permitted panel mounting/clamp zones and insulating pads unresolved</text>
+<text x="30" y="2740" font-size="15">  size_mm: [40, 50, 40]</text>
+<text x="30" y="2761" font-size="15">C2-REEF-PV-2-CLAMP-1 / BOM C2-REEF-PV-END-CLAMP / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="2782" font-size="15">  Custom metal end-clamp study, no approved panel interface; Not a sourced complete clamp. Panel manufacturer mounting zones, edge</text>
+<text x="30" y="2803" font-size="15">  crush, uplift and attachment remain open.</text>
+<text x="30" y="2824" font-size="15">  nominal_fastener: &quot;M6 candidate; thread/torque/rail attachment unresolved&quot;</text>
+<text x="30" y="2845" font-size="15">C2-REEF-PV-2-CLAMP-2 / BOM C2-REEF-PV-END-CLAMP / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="2866" font-size="15">  Custom metal end-clamp study, no approved panel interface; Not a sourced complete clamp. Panel manufacturer mounting zones, edge</text>
+<text x="30" y="2887" font-size="15">  crush, uplift and attachment remain open.</text>
+<text x="30" y="2908" font-size="15">  nominal_fastener: &quot;M6 candidate; thread/torque/rail attachment unresolved&quot;</text>
+<text x="30" y="2929" font-size="15">C2-REEF-SERIES-LINK / BOM C2-PV-SERIES-HARNESS / PROVISIONAL_ROUTE_AND_TERMINATIONS</text>
+<text x="30" y="2950" font-size="15">  Physical swept P1-positive to P2-negative jumper; Actual 3D route, but panel terminal coordinates, cable spec, glands and polarity</text>
+<text x="30" y="2971" font-size="15">  qualification remain open; no energized hardware.</text>
+<text x="30" y="2992" font-size="15">  from: &quot;PV1_POS&quot;</text>
+<text x="30" y="3013" font-size="15">  to: &quot;PV2_NEG&quot;</text>
+<text x="30" y="3034" font-size="15">  centreline_radius_mm: 56</text>
+<text x="30" y="3055" font-size="15">  diameter_mm: 8</text>
+<text x="30" y="3076" font-size="15">  centreline_length_mm: 720.8583772020569</text>
+<text x="30" y="3097" font-size="15">  arc_count: 4</text>
+<text x="30" y="3118" font-size="15">C2-REEF-FREE-LEAD-1 / BOM C2-PV-SERIES-HARNESS / PROVISIONAL_ROUTE_AND_TERMINATIONS</text>
+<text x="30" y="3139" font-size="15">  Swept array free lead to unconnected power-service zone; Free ends stop at service boundary, not wired directly to an unselected</text>
+<text x="30" y="3160" font-size="15">  MPPT/BMS connector. Requires disconnect, polarity, conductor and protection review.</text>
+<text x="30" y="3181" font-size="15">  terminal: &quot;ARRAY_NEG&quot;</text>
+<text x="30" y="3202" font-size="15">  from: &quot;PV1_NEG&quot;</text>
+<text x="30" y="3223" font-size="15">  end_xyz_mm: [30, -144, 650]</text>
+<text x="30" y="3244" font-size="15">  centreline_radius_mm: 56</text>
+<text x="30" y="3265" font-size="15">  diameter_mm: 8</text>
+<text x="30" y="3286" font-size="15">C2-REEF-FREE-LEAD-2 / BOM C2-PV-SERIES-HARNESS / PROVISIONAL_ROUTE_AND_TERMINATIONS</text>
+<text x="30" y="3307" font-size="15">  Swept array free lead to unconnected power-service zone; Free ends stop at service boundary, not wired directly to an unselected</text>
+<text x="30" y="3328" font-size="15">  MPPT/BMS connector. Requires disconnect, polarity, conductor and protection review.</text>
+<text x="30" y="3349" font-size="15">  terminal: &quot;ARRAY_POS&quot;</text>
+<text x="30" y="3370" font-size="15">  from: &quot;PV2_POS&quot;</text>
+<text x="30" y="3391" font-size="15">  end_xyz_mm: [30, 144, 650]</text>
+<text x="30" y="3412" font-size="15">  centreline_radius_mm: 56</text>
+<text x="30" y="3433" font-size="15">  diameter_mm: 8</text>
+<text x="30" y="3454" font-size="15">C2-REEF-BATTERY-SUPPORT-RAIL-1 / BOM C2-REEF-SHELF-RAIL / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="3475" font-size="15">  Shelf support rail between posts; Face-contact joint allocation only; welding/bolting, fatigue and corrosion review open</text>
+<text x="30" y="3496" font-size="15">C2-REEF-BATTERY-SUPPORT-RAIL-2 / BOM C2-REEF-SHELF-RAIL / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="3517" font-size="15">  Shelf support rail between posts; Face-contact joint allocation only; welding/bolting, fatigue and corrosion review open</text>
+<text x="30" y="3538" font-size="15">C2-REEF-ELECTRONICS-SUPPORT-RAIL-1 / BOM C2-REEF-SHELF-RAIL / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="3559" font-size="15">  Shelf support rail between posts; Face-contact joint allocation only; welding/bolting, fatigue and corrosion review open</text>
+<text x="30" y="3580" font-size="15">C2-REEF-ELECTRONICS-SUPPORT-RAIL-2 / BOM C2-REEF-SHELF-RAIL / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="3601" font-size="15">  Shelf support rail between posts; Face-contact joint allocation only; welding/bolting, fatigue and corrosion review open</text>
+<text x="30" y="3622" font-size="15">C2-REEF-BATTERY-SHELF / BOM C2-REEF-BATTERY-SHELF / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="3643" font-size="15">  Metal battery shelf, restraint and weather compartment unresolved;</text>
+<text x="30" y="3664" font-size="15">C2-REEF-BATTERY / BOM V2-BAT-001 / SOURCE_VERIFIED_OVERALL_ENVELOPE_DETAIL_PROVISIONAL</text>
+<text x="30" y="3685" font-size="15">  Victron BAT512050610 upright conservative envelope; No inferred capacity or operating voltage from CAD. External BMS, isolation,</text>
+<text x="30" y="3706" font-size="15">  weather guarding and approved straps required.</text>
+<text x="30" y="3727" font-size="15">  size_mm: [188, 147, 199]</text>
+<text x="30" y="3748" font-size="15">  vendor_mass_kg: 7</text>
+<text x="30" y="3769" font-size="15">  source_id: &quot;SRC-BATTERY&quot;</text>
+<text x="30" y="3790" font-size="15">  thread: &quot;M8&quot;</text>
+<text x="30" y="3811" font-size="15">C2-REEF-BATTERY-STOP-1 / BOM C2-REEF-BATTERY-STOP / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="3832" font-size="15">  Provisional metal lateral stop;</text>
+<text x="30" y="3853" font-size="15">C2-REEF-BATTERY-STOP-2 / BOM C2-REEF-BATTERY-STOP / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="3874" font-size="15">  Provisional metal lateral stop;</text>
+<text x="30" y="3895" font-size="15">C2-REEF-ELECTRONICS-SHELF / BOM C2-REEF-ELECTRONICS-SHELF / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="3916" font-size="15">  REEF electronics support shelf;</text>
+<text x="30" y="3937" font-size="15">C2-REEF-ELECTRONICS-ALLOCATION / BOM C2-REEF-ENC-ALLOCATION / PROVISIONAL_NOT_VENDOR_GEOMETRY</text>
+<text x="30" y="3958" font-size="15">  REEF enclosure allocation, exact purchased enclosure unselected; Conservative cavity only. Component fit checked below; complete</text>
+<text x="30" y="3979" font-size="15">  glands/terminals/charge-disable cable and cooling remain open.</text>
+<text x="30" y="4000" font-size="15">  size_mm: [300, 220, 140]</text>
+<text x="30" y="4021" font-size="15">C2-REEF-ELECTRONICS-LID / BOM C2-REEF-ENC-ALLOCATION / PROVISIONAL_NOT_VENDOR_GEOMETRY</text>
+<text x="30" y="4042" font-size="15">  Electronics lid allocation;</text>
+<text x="30" y="4063" font-size="15">C2-REEF-COMPONENT-TRAY / BOM C2-REEF-COMPONENT-TRAY / CUSTOM_PROVISIONAL_NOT_FABRICATION</text>
+<text x="30" y="4084" font-size="15">  Reference electronics mounting tray, holes pending source freeze;</text>
+<text x="30" y="4105" font-size="15">C2-REEF-V2-MPPT-001 / BOM V2-MPPT-001 / inherited manufacturer W/D/H, candidate mounting orientation must retain cooling</text>
+<text x="30" y="4126" font-size="15">  SCC075010060R source-bound candidate envelope; VE.Direct port reserved for charge-disable cable, not simultaneous telemetry.</text>
+<text x="30" y="4147" font-size="15">  Terminal/cooling space open.</text>
+<text x="30" y="4168" font-size="15">  size_mm: [113, 40, 100]</text>
+<text x="30" y="4189" font-size="15">  source_url: &quot;https://www.victronenergy.com/upload/documents/BlueSolar-&amp;-SmartSolar-MPPT-75-10-&amp;-75-15.pdf&quot;</text>
+<text x="30" y="4210" font-size="15">  mpn: &quot;SCC075010060R&quot;</text>
+<text x="30" y="4231" font-size="15">C2-REEF-V2-BMS-001 / BOM V2-BMS-001 / CONSERVATIVE UNION, NOT ONE VERIFIED VENDOR ENVELOPE: drawing107x46x12 versus datasheet106x42x23; reconcile exact revision/cover</text>
+<text x="30" y="4252" font-size="15">  BMS400100000 source-bound candidate envelope; smallBMS with pre-alarm for Lithium Battery Smart; compatible family verified, not</text>
+<text x="30" y="4273" font-size="15">  NG. Keepout provisional.</text>
+<text x="30" y="4294" font-size="15">  size_mm: [107, 46, 23]</text>
+<text x="30" y="4315" font-size="15">  source_url: &quot;https://www.victronenergy.com/upload/documents/smallBMS.pdf&quot;</text>
+<text x="30" y="4336" font-size="15">  mpn: &quot;BMS400100000&quot;</text>
+<text x="30" y="4357" font-size="15">C2-REEF-V2-LOADSW-001 / BOM V2-LOADSW-001 / drawing Rev01 overall plan and base24+terminal22 height; manual40x48x106 differs, use larger drawing envelope pending reconciliation</text>
+<text x="30" y="4378" font-size="15">  BPR065022000 source-bound candidate envelope; Smart BatteryProtect12/24V65A, load path only IN from battery OUT to regulators. M6</text>
+<text x="30" y="4399" font-size="15">  studs; no reverse charging. Additional cable/tool space provisional.</text>
+<text x="30" y="4420" font-size="15">  size_mm: [106.3, 55, 46]</text>
+<text x="30" y="4441" font-size="15">  source_url: &quot;https://www.victronenergy.com/upload/documents/Smart-BatteryProtect_12V-24V-65A.pdf&quot;</text>
+<text x="30" y="4462" font-size="15">  mpn: &quot;BPR065022000&quot;</text>
+<text x="30" y="4483" font-size="15">C2-REEF-V2-REG5-001 / BOM V2-REG5-001 / manufacturer board envelope rotated; added headers/wires not included</text>
+<text x="30" y="4504" font-size="15">  D36V28F5 source-bound candidate envelope; Independent5V REEF supply only, not USB-C source. 5V+/-4%; exact fault</text>
+<text x="30" y="4525" font-size="15">  thresholds/derating transient qualification open.</text>
+<text x="30" y="4546" font-size="15">  size_mm: [20.3, 17.8, 8.8]</text>
+<text x="30" y="4567" font-size="15">  source_url: &quot;https://www.pololu.com/product/3782&quot;</text>
+<text x="30" y="4588" font-size="15">  mpn: &quot;D36V28F5&quot;</text>
+<text x="30" y="4609" font-size="15">C2-REEF-V2-REG3-001 / BOM V2-REG3-001 / manufacturer board envelope rotated; added headers/wires not included</text>
+<text x="30" y="4630" font-size="15">  D36V28F3 source-bound candidate envelope; Independent3.3V RAK supply, not DevKit spare. No12V/5V direct GPIO. Lower-</text>
+<text x="30" y="4651" font-size="15">  profile/service space provisional.</text>
+<text x="30" y="4672" font-size="15">  size_mm: [20.3, 17.8, 8.8]</text>
+<text x="30" y="4693" font-size="15">  source_url: &quot;https://www.pololu.com/product/3781&quot;</text>
+<text x="30" y="4714" font-size="15">  mpn: &quot;D36V28F3&quot;</text>
+<text x="30" y="4735" font-size="15">C2-REEF-MCU-ALLOCATION / BOM REEF-CPU-001 / PROVISIONAL_NOT_VENDOR_GEOMETRY</text>
+<text x="30" y="4756" font-size="15">  ESP32-DevKitC-32E provisional envelope;</text>
+<text x="30" y="4777" font-size="15">C2-REEF-RADIO-ALLOCATION / BOM REEF-RF-001 / PROVISIONAL_BOARD_MODULE_HEADER_UNCERTAINTY</text>
+<text x="30" y="4798" font-size="15">  RAK3272S conservative provisional envelope;</text>
+</g>
+</svg>

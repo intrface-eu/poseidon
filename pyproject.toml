@@ -1,0 +1,11 @@
+[project]
+name = "poseidon-trident-workspace"
+version = "0.0.0"
+description = "Source-root workspace metadata for Poseidon Trident"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.poseidon-workspace]
+installable = false
+source-roots = ["libs/proto-py/src", "apps/acoustic/src"]
+test-roots = ["tests/tooling", "tests/acoustic"]

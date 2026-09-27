@@ -1,0 +1,966 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://poseidon.invalid/contracts/v1/telemetry-envelope.schema.json",
+  "title": "Poseidon telemetry-envelope v1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "poseidon.telemetry.v1"
+    },
+    "device_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+      "maxLength": 128
+    },
+    "site_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+      "maxLength": 128
+    },
+    "boot_id": {
+      "type": "string",
+      "pattern": "^[1-9][0-9]{0,19}$",
+      "maxLength": 20
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "observed_at": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "delivery_age_s": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 604800
+    },
+    "clock_quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "unknown",
+            "operator_declared",
+            "synchronized",
+            "holdover"
+          ]
+        },
+        "method": {
+          "enum": [
+            "unknown",
+            "operator_offset",
+            "ntp",
+            "gnss",
+            "shared_clock",
+            "measured_reference"
+          ]
+        },
+        "uncertainty_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 604800000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "offset_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": -604800000,
+              "maximum": 604800000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reference": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "method",
+        "uncertainty_ms",
+        "offset_ms",
+        "reference"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_kind": {
+          "enum": [
+            "synthetic",
+            "bench",
+            "field"
+          ]
+        },
+        "source_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+          "maxLength": 128
+        },
+        "transport": {
+          "enum": [
+            "local",
+            "aquilon",
+            "import"
+          ]
+        }
+      },
+      "required": [
+        "source_kind",
+        "source_id",
+        "transport"
+      ]
+    },
+    "measurements": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 32,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "const": "temperature"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "const": "Cel"
+              },
+              "quality": {
+                "enum": [
+                  "uncalibrated",
+                  "calibrated",
+                  "invalid"
+                ]
+              },
+              "calibration_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+                    "maxLength": 128
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "value",
+              "unit",
+              "quality",
+              "calibration_id"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "const": "voltage"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "const": "V"
+              },
+              "quality": {
+                "enum": [
+                  "uncalibrated",
+                  "calibrated",
+                  "invalid"
+                ]
+              },
+              "calibration_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+                    "maxLength": 128
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "value",
+              "unit",
+              "quality",
+              "calibration_id"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "const": "current"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "const": "A"
+              },
+              "quality": {
+                "enum": [
+                  "uncalibrated",
+                  "calibrated",
+                  "invalid"
+                ]
+              },
+              "calibration_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+                    "maxLength": 128
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "value",
+              "unit",
+              "quality",
+              "calibration_id"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "const": "relative_humidity"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "const": "%RH"
+              },
+              "quality": {
+                "enum": [
+                  "uncalibrated",
+                  "calibrated",
+                  "invalid"
+                ]
+              },
+              "calibration_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+                    "maxLength": 128
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "value",
+              "unit",
+              "quality",
+              "calibration_id"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "const": "pressure"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "const": "Pa"
+              },
+              "quality": {
+                "enum": [
+                  "uncalibrated",
+                  "calibrated",
+                  "invalid"
+                ]
+              },
+              "calibration_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+                    "maxLength": 128
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "value",
+              "unit",
+              "quality",
+              "calibration_id"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "const": "conductivity"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "const": "S/m"
+              },
+              "quality": {
+                "enum": [
+                  "uncalibrated",
+                  "calibrated",
+                  "invalid"
+                ]
+              },
+              "calibration_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+                    "maxLength": 128
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "value",
+              "unit",
+              "quality",
+              "calibration_id"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "const": "battery_soc"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "const": "%"
+              },
+              "quality": {
+                "enum": [
+                  "uncalibrated",
+                  "calibrated",
+                  "invalid"
+                ]
+              },
+              "calibration_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+                    "maxLength": 128
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "value",
+              "unit",
+              "quality",
+              "calibration_id"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "const": "digital_rms"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "const": "normalized_pcm16_full_scale"
+              },
+              "quality": {
+                "enum": [
+                  "uncalibrated",
+                  "calibrated",
+                  "invalid"
+                ]
+              },
+              "calibration_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+                    "maxLength": 128
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "value",
+              "unit",
+              "quality",
+              "calibration_id"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "const": "battery_voltage"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "const": "V"
+              },
+              "quality": {
+                "enum": [
+                  "uncalibrated",
+                  "calibrated",
+                  "invalid"
+                ]
+              },
+              "calibration_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+                    "maxLength": 128
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "value",
+              "unit",
+              "quality",
+              "calibration_id"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "const": "solar_voltage"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "const": "V"
+              },
+              "quality": {
+                "enum": [
+                  "uncalibrated",
+                  "calibrated",
+                  "invalid"
+                ]
+              },
+              "calibration_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+                    "maxLength": 128
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "value",
+              "unit",
+              "quality",
+              "calibration_id"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "const": "salinity"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "const": "1"
+              },
+              "quality": {
+                "enum": [
+                  "uncalibrated",
+                  "calibrated",
+                  "invalid"
+                ]
+              },
+              "calibration_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+                    "maxLength": 128
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "value",
+              "unit",
+              "quality",
+              "calibration_id"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "const": "dissolved_oxygen"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "const": "ug/L"
+              },
+              "quality": {
+                "enum": [
+                  "uncalibrated",
+                  "calibrated",
+                  "invalid"
+                ]
+              },
+              "calibration_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+                    "maxLength": 128
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "value",
+              "unit",
+              "quality",
+              "calibration_id"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "const": "temperature_raw"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "const": "count"
+              },
+              "quality": {
+                "enum": [
+                  "uncalibrated",
+                  "calibrated",
+                  "invalid"
+                ]
+              },
+              "calibration_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+                    "maxLength": 128
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "value",
+              "unit",
+              "quality",
+              "calibration_id"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "const": "salinity_raw"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "const": "count"
+              },
+              "quality": {
+                "enum": [
+                  "uncalibrated",
+                  "calibrated",
+                  "invalid"
+                ]
+              },
+              "calibration_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+                    "maxLength": 128
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "value",
+              "unit",
+              "quality",
+              "calibration_id"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "const": "dissolved_oxygen_raw"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "const": "count"
+              },
+              "quality": {
+                "enum": [
+                  "uncalibrated",
+                  "calibrated",
+                  "invalid"
+                ]
+              },
+              "calibration_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+                    "maxLength": 128
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "value",
+              "unit",
+              "quality",
+              "calibration_id"
+            ]
+          }
+        ]
+      }
+    },
+    "radio": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "dev_eui": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{16}$"
+        },
+        "uptime_s": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "power_mode": {
+          "enum": [
+            "normal",
+            "conserve",
+            "critical"
+          ]
+        },
+        "clock_claim": {
+          "enum": [
+            "unsynchronized",
+            "rtc",
+            "network"
+          ]
+        },
+        "observed_at_unix_s": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 4294967295
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "network_received_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "frame_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "calibration_code": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 65535
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "dev_eui",
+        "uptime_s",
+        "power_mode",
+        "clock_claim",
+        "observed_at_unix_s",
+        "network_received_at",
+        "frame_sha256",
+        "calibration_code"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "device_id",
+    "site_id",
+    "boot_id",
+    "sequence",
+    "observed_at",
+    "delivery_age_s",
+    "clock_quality",
+    "provenance",
+    "measurements"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "synthetic-observation-001",
+  "start_s": 0.0,
+  "end_s": 0.1,
+  "label": "uncertain",
+  "notes": "Synthetic interval fixture; no biological evidence.",
+  "observer": "Synthetic test operator",
+  "expected_revision": 0
+}

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1744" viewBox="0 0 1500 1744">
+<rect width="1500" height="1744" fill="white"/>
+<g font-family="monospace" fill="#172d39">
+<text x="35" y="40" font-size="25">REEF / HW-REF-1.1 / FEATURE AND FASTENER SCHEDULE</text>
+<text x="35" y="72" font-size="18">PROVISIONAL / mm / NOT FOR FABRICATION / features in assembly-local coordinates unless labelled local</text>
+<text x="35" y="100" font-size="16">Source-tagged Pi features and battery/panel/converter/MPPT envelopes have vendor evidence; other details/tolerances are assumptions.</text>
+<text x="35" y="140" font-size="15" font-weight="bold">CAD-REEF-POST-1 / BOM CAD-REEF-POST-01</text>
+<text x="50" y="163" font-size="15" font-weight="normal">section_mm: [40,40,3]</text>
+<text x="50" y="186" font-size="15" font-weight="normal">length_mm: 970</text>
+<text x="50" y="209" font-size="15" font-weight="normal">Marine frame load/buckling/wind/wave/fatigue and joining design open; never print</text>
+<text x="35" y="232" font-size="15" font-weight="bold">CAD-REEF-POST-2 / BOM CAD-REEF-POST-01</text>
+<text x="50" y="255" font-size="15" font-weight="normal">section_mm: [40,40,3]</text>
+<text x="50" y="278" font-size="15" font-weight="normal">length_mm: 970</text>
+<text x="50" y="301" font-size="15" font-weight="normal">Marine frame load/buckling/wind/wave/fatigue and joining design open; never print</text>
+<text x="35" y="324" font-size="15" font-weight="bold">CAD-REEF-POST-3 / BOM CAD-REEF-POST-01</text>
+<text x="50" y="347" font-size="15" font-weight="normal">section_mm: [40,40,3]</text>
+<text x="50" y="370" font-size="15" font-weight="normal">length_mm: 970</text>
+<text x="50" y="393" font-size="15" font-weight="normal">Marine frame load/buckling/wind/wave/fatigue and joining design open; never print</text>
+<text x="35" y="416" font-size="15" font-weight="bold">CAD-REEF-POST-4 / BOM CAD-REEF-POST-01</text>
+<text x="50" y="439" font-size="15" font-weight="normal">section_mm: [40,40,3]</text>
+<text x="50" y="462" font-size="15" font-weight="normal">length_mm: 970</text>
+<text x="50" y="485" font-size="15" font-weight="normal">Marine frame load/buckling/wind/wave/fatigue and joining design open; never print</text>
+<text x="35" y="508" font-size="15" font-weight="bold">CAD-REEF-BASE-RAIL-1 / BOM CAD-REEF-BASE-RAIL-01</text>
+<text x="50" y="531" font-size="15" font-weight="normal">size_mm: [570,40,20]</text>
+<text x="35" y="554" font-size="15" font-weight="bold">CAD-REEF-BASE-RAIL-2 / BOM CAD-REEF-BASE-RAIL-01</text>
+<text x="50" y="577" font-size="15" font-weight="normal">size_mm: [570,40,20]</text>
+<text x="35" y="600" font-size="15" font-weight="bold">CAD-REEF-SOLAR-RAIL-1 / BOM CAD-REEF-SOLAR-RAIL-01</text>
+<text x="50" y="623" font-size="15" font-weight="normal">size_mm: [570,40,20]</text>
+<text x="35" y="646" font-size="15" font-weight="bold">CAD-REEF-SOLAR-RAIL-2 / BOM CAD-REEF-SOLAR-RAIL-01</text>
+<text x="50" y="669" font-size="15" font-weight="normal">size_mm: [570,40,20]</text>
+<text x="35" y="692" font-size="15" font-weight="bold">REEF-SOLAR-ENV / BOM REEF-PV-001</text>
+<text x="50" y="715" font-size="15" font-weight="normal">size_mm: [668.0,425.0,25.0]</text>
+<text x="50" y="738" font-size="15" font-weight="normal">source_id: &quot;SRC-VICTRON-SOLAR&quot;</text>
+<text x="50" y="761" font-size="15" font-weight="normal">vendor_mass_kg: 3.1</text>
+<text x="50" y="784" font-size="15" font-weight="normal">tilt_degrees_assumed: 0</text>
+<text x="50" y="807" font-size="15" font-weight="normal">panel_overhang_from_support_y_mm: 42.5</text>
+<text x="50" y="830" font-size="15" font-weight="normal">Primary PDF p1 verifies 425x668x25, rotated here. Historical drawing reference; current availability/obsolescence unresolved. No</text>
+<text x="50" y="853" font-size="15" font-weight="normal">purchase approval.</text>
+<text x="50" y="876" font-size="15" font-weight="normal">Horizontal packaging pose only, not an energy-optimal or wind-qualified installation. Clamp zones and junction box unresolved. Nominal</text>
+<text x="50" y="899" font-size="15" font-weight="normal">support overhang 42.5 mm each Y side.</text>
+<text x="35" y="922" font-size="15" font-weight="bold">CAD-REEF-BATTERY-SHELF-01 / BOM CAD-REEF-BATTERY-SHELF-01</text>
+<text x="50" y="945" font-size="15" font-weight="normal">size_mm: [460,210,5]</text>
+<text x="35" y="968" font-size="15" font-weight="bold">REEF-BATTERY-ENV / BOM REEF-BAT-001</text>
+<text x="50" y="991" font-size="15" font-weight="normal">size_mm: [188.0,147.0,199.0]</text>
+<text x="50" y="1014" font-size="15" font-weight="normal">source_id: &quot;SRC-VICTRON-BATTERY&quot;</text>
+<text x="50" y="1037" font-size="15" font-weight="normal">vendor_mass_kg: 7.0</text>
+<text x="50" y="1060" font-size="15" font-weight="normal">terminal_thread: &quot;M8&quot;</text>
+<text x="50" y="1083" font-size="15" font-weight="normal">Manual HxWxD199x188x147, mapped XYZ188x147x199. Drawing Rev01 and manual differ in detail; reconcile selected revision before</text>
+<text x="50" y="1106" font-size="15" font-weight="normal">fabrication.</text>
+<text x="50" y="1129" font-size="15" font-weight="normal">Upright pose. Terminal/lug positions, fuse, isolation, ventilation and rated restraint remain open. 7 kg vendor nominal mass, not</text>
+<text x="50" y="1152" font-size="15" font-weight="normal">geometry-derived.</text>
+<text x="35" y="1175" font-size="15" font-weight="bold">REEF-BOX-ENV / BOM REEF-ENC-001</text>
+<text x="50" y="1198" font-size="15" font-weight="normal">Conservative cavity proxy; no ingress protection or fabrication claim</text>
+<text x="35" y="1221" font-size="15" font-weight="bold">CAD-REEF-ELECTRONICS-TRAY-01 / BOM CAD-REEF-ELECTRONICS-TRAY-01</text>
+<text x="50" y="1244" font-size="15" font-weight="normal">size_mm: [250,170,4]</text>
+<text x="50" y="1267" font-size="15" font-weight="normal">mount_hole_diameter_mm: 4.5</text>
+<text x="35" y="1290" font-size="15" font-weight="bold">REEF-MCU-ENV / BOM REEF-CPU-001</text>
+<text x="50" y="1313" font-size="15" font-weight="normal">size_mm: [55.0,28.0,14.0]</text>
+<text x="50" y="1336" font-size="15" font-weight="normal">mount_holes_verified: false</text>
+<text x="35" y="1359" font-size="15" font-weight="bold">REEF-RADIO-ENV / BOM REEF-RF-001</text>
+<text x="50" y="1382" font-size="15" font-weight="normal">size_mm: [40.0,30.0,15.0]</text>
+<text x="50" y="1405" font-size="15" font-weight="normal">mount_holes_verified: false</text>
+<text x="50" y="1428" font-size="15" font-weight="normal">source_id: &quot;SRC-RAK&quot;</text>
+<text x="50" y="1451" font-size="15" font-weight="normal">documented_plan_mm: [25.4,32.3]</text>
+<text x="50" y="1474" font-size="15" font-weight="normal">40x30x15 mm is a conservative provisional allocation. Source board/module wording and header/antenna height are unresolved; not</text>
+<text x="50" y="1497" font-size="15" font-weight="normal">detailed vendor CAD.</text>
+<text x="35" y="1520" font-size="15" font-weight="bold">REEF-CHARGE-ENV / BOM REEF-MPPT-001</text>
+<text x="50" y="1543" font-size="15" font-weight="normal">size_mm: [113.0,40.0,100.0]</text>
+<text x="50" y="1566" font-size="15" font-weight="normal">source_id: &quot;SRC-MPPT&quot;</text>
+<text x="50" y="1589" font-size="15" font-weight="normal">verification: &quot;Lead electrical source evidence; terminal and mounting holes unresolved&quot;</text>
+<text x="35" y="1612" font-size="15" font-weight="bold">REEF-ANTENNA-ENV / BOM REEF-ANT-001</text>
+<text x="50" y="1635" font-size="15" font-weight="normal">RF clearance only; gain, cable loss, solar shading and range unverified</text>
+<text x="35" y="1658" font-size="15" font-weight="bold">REEF-PROBE-CABLE-ENV / BOM REEF-PROBE-001</text>
+<text x="50" y="1681" font-size="15" font-weight="normal">Not a terminated harness; add drip loop, gland, conditioning and minimum bend review after selection</text>
+</g>
+</svg>

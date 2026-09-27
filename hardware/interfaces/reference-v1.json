@@ -1,0 +1,108 @@
+{
+  "schema": "poseidon.hardware.reference.v1",
+  "configuration": "reference-v1",
+  "revision": "HW-REF-1.1",
+  "supersedes": "HW-REF-1.0",
+  "revision_changes": ["Source-verified ESP32/RAK pin positions added without releasing harness or power path", "Battery envelope updated from provisional181x77x167 to vendor-manualXYZ188x147x199mm plus40mm provisional terminal service space", "Panel envelope changed from provisional670x540x30 to vendor668x425x25mm", "Panel40W row has no discontinued footnote in inspected PDF; prior adjacent-row interpretation retracted; current availability remains unverified"],
+  "published_date": "2026-09-08",
+  "status": "PROVISIONAL_REFERENCE_NOT_FOR_FABRICATION",
+  "purchase_authorized": false,
+  "field_release_authorized": false,
+  "units": {"length": "mm", "voltage": "V_dc", "current": "A", "power": "W", "mass": "kg"},
+  "coordinate_system": "Right-handed assembly-local Cartesian coordinates; CAD placement transforms define the top-level illustrative installation, not a surveyed farm.",
+  "default_variant": "passive_monitor",
+  "variants": {
+    "passive_monitor": {"acoustic_output_hardware_populated": false, "wiper_drive_populated": false},
+    "array_research": {"enabled_by_default": false, "shared_acquisition_clock_required": true, "channel_count_frozen": false},
+    "acoustic_research": {"enabled_by_default": false, "projector_selected": false, "amplifier_selected": false, "physical_authorization_required": true}
+  },
+  "arrangement": {
+    "hub": "Above water: compute, DAQ candidate, storage, protected DC distribution, radio/gateway candidate.",
+    "wet_head": "Wired receive and camera instruments in purchased rated boundaries; no printed pressure hull.",
+    "reef": "Above-water electronics, battery, solar and radio with wired wet probes.",
+    "rf": "Above water only; EU868 LoRaWAN candidate star topology, not an underwater link or mesh. No radio operation authorized."
+  },
+  "boards": [
+    {
+      "id": "CPU-01", "manufacturer": "Raspberry Pi", "model": "Raspberry Pi 4 Model B, 4GB", "manufacturer_part_number": "SC0194",
+      "role": "Reference Linux ARM64 hub CPU; no accelerator selected",
+      "selection_status": "reference_not_purchase_approval",
+      "power_interface": "USB-C 5 V DC, minimum 3 A supply per vendor. Actual converter/USB-C source implementation remains open.",
+      "data_interfaces": ["2 x USB 3.0", "2 x USB 2.0", "Gigabit Ethernet", "3.3 V GPIO, unallocated"],
+      "source_ids": ["SRC-PI4-SPEC"],
+      "source_verification": "Vendor specifications page retrieved; board mounting drawing verification belongs to CAD evidence.",
+      "gpio_external_harness_allocated": false
+    },
+    {
+      "id": "MCU-01", "manufacturer": "Espressif", "model": "ESP32-DevKitC-32E",
+      "role": "REEF reference controller",
+      "selection_status": "reference_pin_functions_source_verified_power_and_harness_not_released",
+      "logic_voltage_v": 3.3,
+      "reserved_logical_interfaces": {
+        "radio_uart": {"tx_gpio": 17, "tx_board_pin": "J3.11", "rx_gpio": 16, "rx_board_pin": "J3.12", "status": "VENDOR_PIN_FUNCTION_VERIFIED_LOGICAL_ALLOCATION_PROVISIONAL"},
+        "probe_i2c": {"sda_gpio": 21, "sda_board_pin": "J3.6", "scl_gpio": 22, "scl_board_pin": "J3.3", "status": "VENDOR_GPIO_POSITION_VERIFIED_I2C_ALLOCATION_PROVISIONAL"}
+      },
+      "source_verification": "Espressif DevKitC V4 guide GPIO tables, ESP32-WROOM-32E variant; electrical source schedule retains exact URL/date. Pin numbers refer to board designators, not a guessed mating connector view.",
+      "constraints": ["No 12 V or 5 V signals on GPIO", "No direct battery measurement connection", "No acoustic output-enable GPIO allocated", "USB and external power paths require backfeed review", "GPIO numbers are not connector pin numbers"]
+    },
+    {
+      "id": "RADIO-01", "manufacturer": "RAKwireless", "model": "RAK3272S evaluation board with RAK3172, EU868 candidate",
+      "role": "Above-water UART LoRaWAN modem candidate, not the gateway",
+      "selection_status": "reference_pin_functions_source_verified_regional_sku_power_and_harness_open",
+      "host_interface": "UART2 AT interface at 3.3 V logic reference; host TX connects to radio RX and host RX to radio TX",
+      "vendor_supply_range_v": [2.0, 3.6],
+      "board_pins": {"UART2_TX": "J4.7", "UART2_RX": "J4.8", "3V3": "J5.9", "GND": "J5.7"},
+      "source_verification": "RAK3272S current vendor datasheet verified; J4.9 differs between VerB (PA8) and VerC (3V3), so it is not allocated as a revision-independent supply.",
+      "constraints": ["No RF emissions authorized", "Regional core/board ordering suffix and antenna remain open; vendor regional naming inconsistencies must be resolved before purchase", "Do not connect J4.9 as a shared-revision supply", "A real EU-region LoRaWAN gateway and network server are separate unresolved items", "No audio/video over LoRa"]
+    }
+  ],
+  "power_rails": [
+    {"id": "VBAT", "nominal_v": 12.8, "range_v": null, "status": "PROVISIONAL_4S_LIFEPO4_CANDIDATE", "location": "above_water", "note": "BMS, fuse, isolation, cutoff, charger compatibility, usable capacity and temperature limits require exact pack review."},
+    {"id": "V12", "nominal_v": 12.0, "range_v": null, "status": "PROVISIONAL_NOMINAL_BUS_NOT_REGULATED_12V", "note": "Protected battery-derived bus. Every load must accept actual battery extrema; do not wire a strict 12 V load without regulation."},
+    {"id": "V5_HUB", "nominal_v": 5.1, "source_current_budget_a": 5.0, "status": "PROVISIONAL_CONVERTER_REQUIREMENT", "note": "Pi vendor requires 5 V minimum 3 A. Five amperes is a distribution design allowance, not negotiated Pi USB-C input or a measured load."},
+    {"id": "V3V3_REEF", "nominal_v": 3.3, "source_current_budget_a": null, "status": "BOARD_REGULATOR_CAPACITY_UNRESOLVED", "note": "Radio burst and external probe current require regulator and backfeed checks."},
+    {"id": "VACT", "nominal_v": null, "status": "ABSENT_IN_PASSIVE_BUILD", "note": "Separate independently inhibited power branch. No amplifier or projector selected or connected."}
+  ],
+  "harness_allocations": [
+    {"id": "H-01", "from": "Protected above-water DC distribution", "to": "CPU USB-C source", "interface": "Regulated 5 V power through validated USB-C source implementation", "connector": null, "release_status": "OPEN_POWER_PATH_REVIEW"},
+    {"id": "H-02", "from": "Wet receive instrument", "to": "Above-water receive DAQ", "interface": "Shielded analog receive cable candidate", "connector": null, "release_status": "OPEN_HYDROPHONE_DAQ_CABLE_SELECTION"},
+    {"id": "H-03", "from": "Rated wet camera", "to": "Above-water hub", "interface": "Wired Ethernet camera candidate; power/isolation unresolved", "connector": null, "release_status": "OPEN_CAMERA_TETHER_SELECTION"},
+    {"id": "H-04", "from": "MCU-01 GPIO17 J3.11 TX / GPIO16 J3.12 RX", "to": "RADIO-01 J4.8 UART2_RX / J4.7 UART2_TX", "interface": "Crossed TX/RX plus signal return, 3.3 V only. Radio power J5.9 3V3 and J5.7 GND; never use revision-dependent J4.9 as shared supply.", "connector": null, "release_status": "PIN_FUNCTIONS_VERIFIED_POWER_AND_HARNESS_NOT_RELEASED"},
+    {"id": "H-05", "from": "REEF controller", "to": "Wet probes through conditioned interface", "interface": "Probe interface unresolved; local I2C is not a long underwater tether interface", "connector": null, "release_status": "OPEN_PROBE_AND_ISOLATION_SELECTION"},
+    {"id": "H-06", "from": "Solar module", "to": "Charge controller and protected battery", "interface": "DC, polarity-keyed, fused per coordinated design", "connector": null, "release_status": "OPEN_SOLAR_WIRE_PROTECTION_REVIEW"},
+    {"id": "H-07", "from": "Independent physical stop/inhibit chain", "to": "Optional actuator disconnect", "interface": "Normally-open power disconnect; normally-closed physical stop loop; independent watchdog and manual rearm required", "connector": null, "release_status": "NOT_POPULATED_NOT_RELEASED"}
+  ],
+  "mechanical_envelopes": [
+    {"assembly": "HUB", "envelope_mm": [400, 300, 180], "usable_interior_mm": [360, 260, 140], "status": "PROVISIONAL_DESIGN_ALLOCATION_NOT_VENDOR_DIMENSIONS"},
+    {"assembly": "WET", "camera_reference_diameter_mm": 110, "camera_reference_length_mm": 250, "hydrophone_reference_diameter_mm": 32, "hydrophone_reference_length_mm": 100, "status": "PROVISIONAL_INTEGRATION_ENVELOPES_NOT_VENDOR_DIMENSIONS", "pressure_boundary": "Purchased rated assembly candidate only. Exact tube/endcap/penetrator/window SKU and depth/time envelope unresolved."},
+    {"assembly": "REEF", "solar_envelope_mm": [668, 425, 25], "battery_envelope_mm": [188, 147, 199], "battery_terminal_service_allowance_mm": 40, "electronics_envelope_mm": [300, 220, 140], "status": "VENDOR_COMPONENT_ENVELOPES_WITH_PROVISIONAL_FRAME_ELECTRONICS_AND_SERVICE_ALLOWANCES", "axis_mapping": "CAD X width, Y depth, Z height. Panel laid flat for its envelope; placement rotation belongs to CAD.", "solar_part": "Victron SPM040401200, 40 W, DRAWING_REFERENCE_AVAILABILITY_UNRESOLVED_NOT_PROCUREMENT_RELEASE", "battery_part": "Victron BAT512050610, 12.8 V 50 Ah", "source_note": "Vendor panel table gives 425x668x25 mm, rotated here. Battery manual HxWxD199x188x147 mm; drawing Rev01 width is approximately187 mm, so manual188 used conservatively pending reconciliation. Terminal lug/bend/tool space is additional and provisional. These envelopes do not qualify the frame or battery installation."}
+  ],
+  "physical_safety": {
+    "passive_default": "No acoustic power stage/projector or powered wiper in the passive reference assembly.",
+    "software_is_not_interlock": true,
+    "future_output_requirements": ["Independent physical stop opens the output power path without CPU cooperation", "Normally-open disconnect with loss-of-power silence", "Explicit manual rearm after trip or restart", "Independent watchdog and hardware-bounded output gating", "Prove welded-contact and shorted-driver fault handling before connecting a projector", "Diagnostics supply separate from output power"],
+    "acoustic_limit": null,
+    "acoustic_limit_reason": "No calibrated output chain, permitted program, biological safety envelope or efficacy evidence.",
+    "depth_limit_m": null,
+    "depth_limit_reason": "No exact wet configuration and independent pressure/leak qualification.",
+    "environmental_operating_envelope": null
+  },
+  "unresolved_decisions": [
+    {"id": "HD-01", "owner": "Root/user with farm partner", "decision": "Exact site, deployment depth/time, current/wave loads, attachment, retrieval and budget"},
+    {"id": "HD-02", "owner": "Acquisition with acoustics specialist", "decision": "Receive bandwidth, hydrophone/DAQ, clock, channels and calibrated recording chain"},
+    {"id": "HD-03", "owner": "Hardware with camera/acquisition reviewer", "decision": "Wet camera, optical window, rated housing and Ethernet/power tether"},
+    {"id": "HD-04", "owner": "Hardware with electrical reviewer", "decision": "Battery/charger/converter/USB-C source, conductor/fuse coordination and exact allowed voltage range"},
+    {"id": "HD-05", "owner": "Firmware with hardware reviewer", "decision": "Verify ESP32/RAK pin positions, regulator capacity, regional radio SKU and gateway"},
+    {"id": "HD-06", "owner": "Hardware with mechanical reviewer", "decision": "Exact enclosure, panel availability/current part selection, battery dimension reconciliation, loads, buoyancy, material/corrosion and tolerances"},
+    {"id": "HD-07", "owner": "Root with independent acoustics/ecology/electrical reviewers", "decision": "Whether active output is justified; physical interlock, calibration, permissions and controlled trials"},
+    {"id": "HD-08", "owner": "Hardware with validation reviewer", "decision": "Qualification protocols, measured pass limits and authorized facilities"}
+  ],
+  "sources": [
+    {"id": "SRC-PI4-SPEC", "url": "https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/", "retrieved_date": "2026-09-08", "evidence": "Vendor page: 5 V DC via USB-C, minimum 3 A; two USB 3.0 and two USB 2.0 ports; Raspberry Pi 15 W USB-C supply recommended. SC0194 is a hardware-lead reference ordering code, not manufacturer-SKU-verified by this page."},
+    {"id": "SRC-ESP", "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html", "retrieved_date": "2026-09-08", "evidence": "DevKitC V4 ESP32-WROOM-32E GPIO/header identity and mutually exclusive power options; not a WROVER pin allocation."},
+    {"id": "SRC-RAK", "url": "https://docs.rakwireless.com/product-categories/wisduo/rak3272s-breakout-board/datasheet/", "retrieved_date": "2026-09-08", "evidence": "J4/J5 UART2,3V3,GND pin definitions; J4.9 revision difference;2.0..3.6V vendor supply range. Exact regional ordering variant remains open."},
+    {"id": "SRC-BATTERY", "url": "https://www.victronenergy.com/media/pg/Lithium_Battery_Smart/en/technical-data.html", "retrieved_date": "2026-09-08", "evidence": "12.8V50Ah Smart manual HxWxD199x188x147mm; external BMS required. Exact assembled power/charge protection remains open."},
+    {"id": "SRC-PANEL", "url": "https://www.victronenergy.com/upload/documents/Datasheet-BlueSolar-Monocrystalline-Panels-EN.pdf", "retrieved_date": "2026-09-08", "sha256": "ad32cb7fe0ec45ceb325b3b61ba71e60b9d9a53c6a7808404a632cb0d727e191", "evidence": "Page1 SPM04040120040W425x668x25mm row has NO discontinued(2) marker;30W/55W rows do. Independently visually inspected by hardware lead. Availability not checked."}
+  ],
+  "compatibility": "Physical design input only. Does not change recording/event v1 schemas, evidence DB, wire contracts or authorize live drivers. Downstream adapters must reject unresolved physical values rather than supplying invented defaults."
+}

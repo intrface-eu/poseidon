@@ -1,0 +1,51 @@
+"use client";
+
+import { useState, type FormEvent } from "react";
+import type { ApiPage, Recording } from "@/lib/api-types";
+import { apiRequest, jsonRequest } from "@/lib/client-api";
+import { canAdmin, canImport, parseBoundedObject, PLATFORM_API, type AcquisitionSession, type ClockRelation, type Identity, type SourceKind } from "@/lib/platform";
+import { Ledger, PageControls, RequestError, SourceClock, errorMessage, useResource } from "./PlatformCommon";
+
+export function AcquisitionPanel({ identity, recording }: { identity: Identity; recording: Recording | null }) {
+  const [offset, setOffset] = useState(0);
+  const [version, setVersion] = useState(0);
+  const sessions = useResource<ApiPage<AcquisitionSession>>(`${PLATFORM_API}/acquisition-sessions?limit=25&offset=${offset}`, version);
+  const [selectedId, setSelectedId] = useState("");
+  const session = useResource<AcquisitionSession>(selectedId ? `${PLATFORM_API}/acquisition-sessions/${encodeURIComponent(selectedId)}` : null, version);
+  const binding = useResource<AcquisitionSession | null>(recording ? `${PLATFORM_API}/recordings/${encodeURIComponent(recording.recording_id)}/acquisition-session` : null, version);
+  const [error, setError] = useState<string | null>(null);
+  const [message, setMessage] = useState<string | null>(null);
+  const [pending, setPending] = useState(false);
+  const [clock, setClock] = useState<"unknown" | "operator_declared">("unknown");
+  async function create(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault(); if (!canAdmin(identity)) return;
+    const formElement = event.currentTarget;
+    const form = new FormData(formElement);
+    const text = (key: string) => String(form.get(key) ?? "").trim();
+    const numberOrNull = (key: string) => text(key) ? Number(text(key)) : null;
+    const body: AcquisitionSession = {
+      schema_version: "poseidon.acquisition-session.v1", id: text("id"), site_id: text("site_id"), device_id: text("device_id") || null,
+      started_at: text("started_at") || null, ended_at: text("ended_at") || null,
+      clock_quality: clock === "unknown" ? { status: "unknown", method: "unknown", uncertainty_ms: null, offset_ms: null, reference: null } : { status: "operator_declared", method: "operator_offset", uncertainty_ms: numberOrNull("uncertainty_ms"), offset_ms: numberOrNull("offset_ms"), reference: text("reference") || null },
+      provenance: { source_kind: text("source_kind") as SourceKind, source_id: text("source_id"), transport: "import" }, operator: text("operator"), notes: text("notes"),
+    };
+    if (text("clock_relation")) {
+      try { body.clock_relation = parseBoundedObject(text("clock_relation")) as ClockRelation; }
+      catch { setError("Clock relation must be a JSON object within 64 KiB. The session draft is unchanged."); return; }
+    }
+    if ([body.clock_quality.offset_ms, body.clock_quality.uncertainty_ms].some((value) => value !== null && !Number.isFinite(value))) { setError("Clock values must be finite milliseconds or empty when unknown."); return; }
+    setPending(true); setError(null); setMessage(null);
+    try { const row = await apiRequest<AcquisitionSession>(`${PLATFORM_API}/acquisition-sessions`, jsonRequest("POST", body)); setSelectedId(row.id); setVersion((value) => value + 1); setMessage(`Stored acquisition session ${row.id}. No capture or synchronization was performed.`); formElement.reset(); setClock("unknown"); }
+    catch (caught) { setError(errorMessage(caught)); } finally { setPending(false); }
+  }
+  async function bind() {
+    if (!recording || !session.data || !canImport(identity) || !window.confirm(`Bind recording ${recording.recording_id} to session ${session.data.id}? This is one-time source attribution and cannot be reassigned here.`)) return;
+    setPending(true); setError(null); setMessage(null);
+    try { await apiRequest(`${PLATFORM_API}/recordings/${encodeURIComponent(recording.recording_id)}/acquisition-session`, jsonRequest("PUT", { session_id: session.data.id })); setVersion((value) => value + 1); setMessage("Acquisition session bound. The original manifest was not changed."); }
+    catch (caught) { setError(errorMessage(caught)); } finally { setPending(false); }
+  }
+  return <section className="platform-panel" aria-labelledby="sessions-title"><header className="platform-heading"><div><h2 id="sessions-title">Acquisition sessions</h2><p>Declared capture context and clock quality. An operator offset never proves synchronization.</p></div><button className="button secondary" type="button" onClick={() => setVersion((value) => value + 1)}>Refresh sessions</button></header><div className="platform-split"><div className="inspection-block"><RequestError message={sessions.error} retry={() => setVersion((value) => value + 1)} />{sessions.loading ? <p role="status">Loading acquisition sessions…</p> : null}{sessions.data?.items.length === 0 ? <p className="list-empty">No acquisition sessions in this scope. Legacy recordings keep their original manifests.</p> : null}{sessions.data?.items.map((row) => <button key={row.id} type="button" className={`recording-row ${selectedId === row.id ? "selected" : ""}`} onClick={() => setSelectedId(row.id)}><strong className="full-identifier">{row.id}</strong><span>Site {row.site_id} · clock {row.clock_quality.status}</span><span className={`tag ${row.provenance.source_kind}`}>{row.provenance.source_kind}</span></button>)}<PageControls page={sessions.data} onPage={setOffset} /></div><div className="inspection-block"><h3>Session detail</h3><RequestError message={session.error} />{session.data ? <><SessionRecord session={session.data} /><SourceClock provenance={session.data.provenance} clock={session.data.clock_quality} /></> : <p className="platform-note">Select a session to see its exact identity, declared operator, source, and clock metadata.</p>}</div></div>
+    <div className="inspection-block"><h3>Bind the selected recording</h3>{recording ? <><Ledger rows={[["Recording ID", recording.recording_id], ["Source", recording.provenance], ["SHA-256", recording.wav_sha256], ["Current session", binding.loading ? "Loading…" : binding.error ? "Unavailable" : binding.data?.id ?? "Unbound; local development access only"]]} /><RequestError message={binding.error} />{binding.data ? <SourceClock provenance={binding.data.provenance} clock={binding.data.clock_quality} /> : null}<button type="button" className="button primary" disabled={!canImport(identity) || !session.data || Boolean(binding.data) || binding.loading || Boolean(binding.error) || pending} onClick={() => void bind()}>Bind selected session once</button><p className="platform-note">Only the local development key can attribute unbound legacy evidence. The API checks source compatibility and rejects reassignment. Scoped users see evidence only after binding.</p></> : <p>Select a recording in Evidence review first. Zero-candidate recordings can also be bound.</p>}</div>
+    <div className="inspection-block"><details><summary>Declare an acquisition session</summary><p className="platform-note">This stores metadata only. No microphone, camera, network enrollment or capture starts. Leave unknown timestamps empty; use UTC ending in Z when known.</p><form className="platform-form" onSubmit={create}><fieldset disabled={!canAdmin(identity) || pending}><label>Session ID<input name="id" required maxLength={128} /></label><label>Session site ID<input name="site_id" defaultValue={identity.site_ids[0] ?? recording?.site_id ?? ""} required maxLength={128} /></label><label>Session device ID (optional)<input name="device_id" maxLength={128} /></label><label>Source kind<select name="source_kind" defaultValue="synthetic"><option value="synthetic">Synthetic</option><option value="bench">Bench</option><option value="field">Field · declared evidence only</option></select></label><label>Exact source ID<input name="source_id" required maxLength={128} /></label><label>Declared session operator<input name="operator" required maxLength={80} /></label><label>Started at (UTC; optional)<input name="started_at" placeholder="YYYY-MM-DDTHH:mm:ssZ" /></label><label>Ended at (UTC; optional)<input name="ended_at" placeholder="YYYY-MM-DDTHH:mm:ssZ" /></label><label>Declared clock quality<select value={clock} onChange={(event) => setClock(event.target.value as typeof clock)}><option value="unknown">Unknown</option><option value="operator_declared">Operator-declared offset · unverified</option></select></label>{clock === "operator_declared" ? <><label>Declared offset (ms)<input name="offset_ms" type="number" step="any" min={-604800000} max={604800000} /></label><label>Declared uncertainty (ms)<input name="uncertainty_ms" type="number" step="any" min={0} max={604800000} /></label><label>Clock reference (optional)<input name="reference" maxLength={256} /></label></> : null}<label className="full">Session notes<textarea aria-label="Session notes" name="notes" maxLength={2000} /></label><label className="full">Optional clock relation JSON<textarea aria-label="Optional clock relation JSON" name="clock_relation" className="full-identifier" rows={6} maxLength={65536} /><small>Exact fields: source_domain, reference_domain, source_anchor_s, reference_anchor_s, drift_ppm, anchor_uncertainty_s, drift_uncertainty_ppm, method, evidence_ref. Method is operator_declared, measured_reference, or shared_clock. The latter two require an evidence reference. No domain is assumed to be UTC; leave empty when unknown.</small></label></fieldset><button type="submit" className="button primary" disabled={!canAdmin(identity) || pending}>{pending ? "Storing session…" : "Store declared session"}</button>{!canAdmin(identity) ? <p>Your {identity.role} role cannot create sessions.</p> : null}</form></details><RequestError message={error} />{message ? <p role="status">{message}</p> : null}</div></section>;
+}
+function SessionRecord({ session }: { session: AcquisitionSession }) { return <Ledger rows={[["Session ID", session.id], ["Site", session.site_id], ["Device", session.device_id], ["Started", session.started_at], ["Ended", session.ended_at], ["Declared operator", session.operator], ["Notes", session.notes || "No notes"], ["Clock relation", session.clock_relation ? JSON.stringify(session.clock_relation, null, 2) : "Not declared; no UTC relation inferred"]]} />; }

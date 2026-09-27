@@ -1,0 +1,432 @@
+{
+  "configuration": "local-monitor-reference-2026-09-08",
+  "date": "2026-09-08",
+  "evidence_levels": [
+    "software-complete",
+    "simulated",
+    "source-verified-vendor-data",
+    "independently-reviewed",
+    "physically-tested",
+    "authority-decision",
+    "documented-plan"
+  ],
+  "gates": [
+    {
+      "artifact": "docs/qualification/evidence/tranche3-final-2026-09-09/system/system-checks-v1.json",
+      "automated": true,
+      "criterion": "Every listed system test passes for the hashed source configuration; no skipped tests. This is local software evidence only.",
+      "dependencies": [],
+      "id": "G-LOCAL",
+      "method": "Run tests/system on real Hub, replay and v1 model components using synthetic WAVs, source hashes and isolated temporary workspaces; check duplicates, provenance, forbidden output claims, restart and user-file preservation.",
+      "missing": "Controller review of this bounded software evidence; broader hardware-output and release qualification remain separate.",
+      "owner": "Software lead; controller accepts software scope",
+      "required_levels": [
+        "simulated"
+      ],
+      "requirements": [
+        "REQ-SW-001",
+        "REQ-SW-003"
+      ],
+      "roadmap": [
+        "P0",
+        "P2",
+        "V3"
+      ],
+      "status": "Nine independent synthetic real-component system/contract scenarios passed on 2026-09-08; source-bound report accompanies this policy. Prior local acceptance remains in docs/validation/development-tranche-002.md.",
+      "title": "Local passive replay and source-bound evidence"
+    },
+    {
+      "artifact": "docs/qualification/readiness-2026-09-08.md",
+      "automated": false,
+      "criterion": "Named owner approves a revisioned scope and budget; flora remains separate and no prevention claim follows detector output.",
+      "dependencies": [],
+      "id": "G-SCOPE",
+      "method": "Review intended use, first variant, claims, flora branch decision, support capacity and funding authorization against the passive-first ADR.",
+      "missing": "Signed scope/configuration freeze and spending/release decisions.",
+      "owner": "Product owner with ecology reviewer",
+      "required_levels": [
+        "independently-reviewed"
+      ],
+      "requirements": [
+        "REQ-SCOPE-001",
+        "REQ-SCOPE-002"
+      ],
+      "roadmap": [
+        "P0",
+        "P1",
+        "P9"
+      ],
+      "status": "Staged EU/EEA scope agreed; variant, budget and commercial authorization open.",
+      "title": "Declared product and funded release scope"
+    },
+    {
+      "artifact": "docs/research/site-permissions-evidence-register.md",
+      "automated": false,
+      "criterion": "No applicable permission unknown, pending, expired or denied; owner freezes the site envelope before field work.",
+      "dependencies": [
+        "G-SCOPE"
+      ],
+      "id": "G-SITE",
+      "method": "Confirm site/concession and species; measure survey inputs; match each planned activity and coordinates to current written decisions and conditions; verify access, installation, recording and acoustic permission separately.",
+      "missing": "Site survey, access rights, authority decisions and approved numeric/categorical envelope.",
+      "owner": "Farm/site partner, marine engineer, ecologist and competent authorities",
+      "required_levels": [
+        "authority-decision",
+        "independently-reviewed",
+        "physically-tested"
+      ],
+      "requirements": [
+        "REQ-SITE-001",
+        "REQ-SITE-002",
+        "REQ-PERM-001"
+      ],
+      "roadmap": [
+        "P1"
+      ],
+      "status": "Region only: Limski zaljev/Istria; no exact site or permission accepted.",
+      "title": "Site access and operating envelope"
+    },
+    {
+      "artifact": "docs/qualification/procedures/evt-dvt-pvt.md",
+      "automated": false,
+      "criterion": "Qualified owners preregister thresholds and sample sizes; local held-out data meets them with stated uncertainty. Roadmap example metrics are not thresholds.",
+      "dependencies": [
+        "G-SITE",
+        "G-PRIVACY"
+      ],
+      "id": "G-DATA",
+      "method": "Lock acquisition-owned protocol and recording/day/site partitions before holdout scoring; audit observed feeding labels and hard negatives; measure timing, precision/recall/false alerts, coverage, uncertainty and missing/clipped inputs.",
+      "missing": "Acquisition-owned frozen criteria, actual local recordings, calibration/timing evidence and independent study review.",
+      "owner": "Acquisition/data lead, ecologist and statistics reviewer",
+      "required_levels": [
+        "physically-tested",
+        "independently-reviewed"
+      ],
+      "requirements": [
+        "REQ-DATA-001",
+        "REQ-DATA-002",
+        "REQ-DATA-003",
+        "REQ-DET-001",
+        "REQ-SYNC-001"
+      ],
+      "roadmap": [
+        "P1",
+        "P2",
+        "V2"
+      ],
+      "status": "No permitted local dataset or accepted detection/timing result.",
+      "title": "Local detection, labels and synchronization"
+    },
+    {
+      "artifact": "docs/compliance/technical-file-index.md",
+      "automated": false,
+      "criterion": "Approved handling rules and controller roles precede collection/sharing; deletion behavior has measured software evidence.",
+      "dependencies": [
+        "G-SCOPE"
+      ],
+      "id": "G-PRIVACY",
+      "method": "Assess personal/sensitive data, lawful basis, necessity, field of view, recipients, DPIA need and transfers; approve retention/access; execute deletion and restore/retention checks on the chosen deployment.",
+      "missing": "Controller decisions, privacy assessment and deployed retention/deletion test.",
+      "owner": "Data controller and Croatian/EU privacy adviser",
+      "required_levels": [
+        "independently-reviewed",
+        "simulated"
+      ],
+      "requirements": [
+        "REQ-DATA-004"
+      ],
+      "roadmap": [
+        "P1",
+        "P2",
+        "P9"
+      ],
+      "status": "Synthetic local fixtures only; field data rules unresolved.",
+      "title": "Collection and data handling"
+    },
+    {
+      "artifact": "docs/qualification/evidence/tranche3-final-2026-09-09/system/system-checks-v1.json",
+      "automated": false,
+      "criterion": "Frozen target/fault matrix passes on chosen devices; local host tests cannot stand in for ARM64, ESP or HIL.",
+      "dependencies": [
+        "G-LOCAL"
+      ],
+      "id": "G-SOFTWARE",
+      "method": "Controller runs clean-checkout pinned builds and full suites; verify selected ARM64 and ESP targets, live input drop/overflow/clock counters, resource bounds and paired evidence failures.",
+      "missing": "Root full-check results for this wave; selected-target reproducibility, acquisition and HIL evidence.",
+      "owner": "Software, acquisition and firmware leads; controller owns full checks",
+      "required_levels": [
+        "simulated",
+        "physically-tested",
+        "independently-reviewed"
+      ],
+      "requirements": [
+        "REQ-SW-002"
+      ],
+      "roadmap": [
+        "P2",
+        "P5",
+        "V1",
+        "V3"
+      ],
+      "status": "Prior local monitor checks accepted; target hardware and full new integration not accepted.",
+      "title": "Reproducibility and acquisition fault handling"
+    },
+    {
+      "artifact": "docs/qualification/procedures/evt-dvt-pvt.md",
+      "automated": false,
+      "criterion": "Specialist-approved envelope and fault/abort bounds pass; independent inhibit defeats host failure and recovery never rearms. Digital RMS/peak is not SPL.",
+      "dependencies": [
+        "G-SITE",
+        "G-MECHANICAL",
+        "G-POWER"
+      ],
+      "id": "G-SAFETY",
+      "method": "Review HAZ-001/002/003/005/013/014/015; approved dummy-load faults and physical stop tests precede authorized calibrated water tests; measure pressure/exposure with reference units, geometry and uncertainty, particle motion where needed.",
+      "missing": "Signed method/envelope, physical safety design verification, facility authorization and calibrated measured reports.",
+      "owner": "Safety owner, electrical and underwater-acoustics specialists, ecologist",
+      "required_levels": [
+        "physically-tested",
+        "independently-reviewed",
+        "authority-decision"
+      ],
+      "requirements": [
+        "REQ-SAF-001",
+        "REQ-SAF-002"
+      ],
+      "roadmap": [
+        "P3",
+        "P7",
+        "V4"
+      ],
+      "status": "No output authorized; no physical stop or acoustic calibration evidence.",
+      "title": "Independent stop and calibrated acoustic safety"
+    },
+    {
+      "artifact": "docs/qualification/procedures/evt-dvt-pvt.md",
+      "automated": false,
+      "criterion": "Measured field link and offline behavior meet approved criteria; old 95%/five-minute goal is not accepted without denominator and scope.",
+      "dependencies": [
+        "G-SITE",
+        "G-POWER"
+      ],
+      "id": "G-NETWORK",
+      "method": "Inspect wired wet/surface RF architecture; freeze link, airtime, load and retention assumptions; fault-test bounded buffering, deduplication, expiry and reconnect; measure actual gateway coverage and offered-load denominator.",
+      "missing": "Frozen topology, spectrum settings, field survey, real-network and outage results.",
+      "owner": "Communications/electrical engineer and software/firmware leads",
+      "required_levels": [
+        "simulated",
+        "physically-tested",
+        "independently-reviewed"
+      ],
+      "requirements": [
+        "REQ-ARCH-001",
+        "REQ-NET-001"
+      ],
+      "roadmap": [
+        "P5",
+        "P7",
+        "V5"
+      ],
+      "status": "No accepted site radio survey or deployed network-server/gateway evidence.",
+      "title": "Surface communications and offline recovery"
+    },
+    {
+      "artifact": "docs/qualification/procedures/evt-dvt-pvt.md",
+      "automated": false,
+      "criterion": "Declared depth/time/load/service envelope passes competent tests. CAD, IP labels and vendor depth claims cannot pass final assemblies.",
+      "dependencies": [
+        "G-SITE"
+      ],
+      "id": "G-MECHANICAL",
+      "method": "Trace selected housings/seals/materials and revisions to vendor sources; independent calculations and approved guarded facility pressure/leak/load/corrosion/thermal/endurance methods; serial-linked raw measurements and post-test inspection.",
+      "missing": "Frozen hardware interface/envelope, purchased-unit traceability, facility reports and integrated endurance results.",
+      "owner": "Marine/mechanical engineer and competent test facility",
+      "required_levels": [
+        "source-verified-vendor-data",
+        "physically-tested",
+        "independently-reviewed"
+      ],
+      "requirements": [
+        "REQ-MECH-001"
+      ],
+      "roadmap": [
+        "P6",
+        "P7",
+        "V6"
+      ],
+      "status": "Provisional reference engineering only; no assembled tested unit.",
+      "title": "Marine envelope and endurance"
+    },
+    {
+      "artifact": "docs/qualification/procedures/evt-dvt-pvt.md",
+      "automated": false,
+      "criterion": "Measured worst-case power and thermal limits meet the reviewed envelope; bench supply or spreadsheet is not field autonomy.",
+      "dependencies": [
+        "G-SITE"
+      ],
+      "id": "G-POWER",
+      "method": "Freeze hardware-owned load states and site solar inputs; measure peak/inrush/drop/brownout/thermal behavior and battery autonomy; reconcile losses and protection to component source data.",
+      "missing": "Numeric limits, selected power chain, calibrated instruments and bench/field results.",
+      "owner": "Electrical engineer and site partner",
+      "required_levels": [
+        "source-verified-vendor-data",
+        "physically-tested",
+        "independently-reviewed"
+      ],
+      "requirements": [
+        "REQ-POWER-001"
+      ],
+      "roadmap": [
+        "P6",
+        "P7",
+        "V6"
+      ],
+      "status": "No accepted measured power budget or seasonal reserve evidence.",
+      "title": "Electrical, thermal and solar reserve"
+    },
+    {
+      "artifact": "docs/qualification/procedures/evt-dvt-pvt.md",
+      "automated": false,
+      "criterion": "All approved cases reach known-good or tested service recovery; no unexplained brick or automatic rearm; secret custody and support obligations funded.",
+      "dependencies": [
+        "G-SOFTWARE"
+      ],
+      "id": "G-SECURITY",
+      "method": "Test unsigned/wrong-target/rollback-floor rejection, privilege/scope/expiry/replay checks, every update interruption stage, restore and key rotation/revocation; independently review signer, boot chain and release process.",
+      "missing": "Chosen target secure boot/update evidence, hardware power-cut matrix and independent security assessment.",
+      "owner": "Security owner with platform and firmware leads",
+      "required_levels": [
+        "simulated",
+        "physically-tested",
+        "independently-reviewed"
+      ],
+      "requirements": [
+        "REQ-SEC-001"
+      ],
+      "roadmap": [
+        "P5",
+        "P7",
+        "P9",
+        "V7"
+      ],
+      "status": "Local authentication evidence exists; final device/boot/update trust chain not accepted.",
+      "title": "Signed lifecycle and recoverable update"
+    },
+    {
+      "artifact": "docs/research/prior-trial-follow-up-drafts.md",
+      "automated": false,
+      "criterion": "Authorized trial meets preregistered safety and sustained effect criteria; failed/harmful/inconclusive results block deterrence, not passive monitoring.",
+      "dependencies": [
+        "G-DATA",
+        "G-SAFETY"
+      ],
+      "id": "G-EFFICACY",
+      "method": "Acquisition-owned preregistered controlled study with independent loss/feeding outcomes, sham/no-output, repeat-exposure/habituation and non-target monitoring; contextualize failed 2019 Lim Bay DDD03L trial.",
+      "missing": "Prior raw methods, approved study, calibrated exposures, observed outcomes and independent gate decision.",
+      "owner": "Marine ecologist, statistics reviewer and farm partner",
+      "required_levels": [
+        "physically-tested",
+        "independently-reviewed",
+        "authority-decision"
+      ],
+      "requirements": [
+        "REQ-EFF-001"
+      ],
+      "roadmap": [
+        "P4",
+        "V8"
+      ],
+      "status": "Negative prior pinger evidence; no Poseidon trial or effect accepted.",
+      "title": "Conditional deterrence claim"
+    },
+    {
+      "artifact": "docs/compliance/technical-file-index.md",
+      "automated": false,
+      "criterion": "Applicable duties closed for exact released configuration and placing-on-market date. Source research is not certification; module CE does not establish final conformity.",
+      "dependencies": [
+        "G-SCOPE",
+        "G-MECHANICAL",
+        "G-POWER",
+        "G-SECURITY"
+      ],
+      "id": "G-CONFORMITY",
+      "method": "Dated intended-use/variant applicability assessment, current standards and conformity route; final-system tests, technical file, instructions, labels and manufacturer declaration with authority/notified-body involvement where required.",
+      "missing": "Professional applicability decision, final-system reports, approved labeling/DoC and market/operator duties.",
+      "owner": "Qualified compliance adviser, test lab and legal manufacturer",
+      "required_levels": [
+        "independently-reviewed",
+        "physically-tested"
+      ],
+      "requirements": [
+        "REQ-COMP-001"
+      ],
+      "roadmap": [
+        "P7",
+        "P9",
+        "V9"
+      ],
+      "status": "Desk source review in this wave; no final configuration assessment or declaration.",
+      "title": "EU/EEA and Croatian applicable duties"
+    },
+    {
+      "artifact": "docs/manufacturing/reference-build-and-eol.md",
+      "automated": false,
+      "criterion": "Every unit has genuine traceable passing EOL records and controlled nonconformance; approved pilot yield and cost criteria pass.",
+      "dependencies": [
+        "G-CONFORMITY",
+        "G-MECHANICAL",
+        "G-POWER"
+      ],
+      "id": "G-MANUFACTURE",
+      "method": "Freeze pilot quantity, yield/rework limits and travelers; independent second assembler builds from revisioned instructions; reconcile serial/lot/BOM/software/key-reference/calibration/EOL records, failures and actual cost.",
+      "missing": "Funded PVT plan, real second-assembler records, serial-linked test data and approved release decision.",
+      "owner": "Manufacturing partner and engineering owners",
+      "required_levels": [
+        "physically-tested",
+        "independently-reviewed"
+      ],
+      "requirements": [
+        "REQ-MFG-001"
+      ],
+      "roadmap": [
+        "P6",
+        "P8",
+        "V9"
+      ],
+      "status": "Procedures/templates only; no manufactured batch or measured yield.",
+      "title": "Repeatable pilot manufacture"
+    },
+    {
+      "artifact": "docs/manufacturing/service-and-lifecycle.md",
+      "automated": false,
+      "criterion": "Named accountable people, funded support period and measured drills support declared obligations before commercial authorization.",
+      "dependencies": [
+        "G-MANUFACTURE",
+        "G-PRIVACY"
+      ],
+      "id": "G-LIFECYCLE",
+      "method": "Approve and fund maintenance/retrieval/spares/warranty/vulnerability/recall/disposal/end-of-support processes; execute representative service, key-revocation, incident and recovery drills.",
+      "missing": "Budget/terms, competent service arrangements, spare lead times, drills and final commercial authorization.",
+      "owner": "Product owner, service/security owners and legal adviser",
+      "required_levels": [
+        "independently-reviewed",
+        "simulated",
+        "physically-tested"
+      ],
+      "requirements": [
+        "REQ-LIFE-001"
+      ],
+      "roadmap": [
+        "P7",
+        "P9",
+        "V9"
+      ],
+      "status": "No approved lifetime budget or exercised service organization.",
+      "title": "Funded service, incidents and support"
+    }
+  ],
+  "policy_id": "poseidon-assurance-tranche3-final-2026-09-09",
+  "requirements_source": "docs/requirements/production-requirements.md",
+  "roadmap_source": "docs/production-roadmap.md",
+  "schema_version": 1
+}

@@ -1,0 +1,19 @@
+# Candidate receive-only local network-server configuration. No gateway IO.
+# Verify against pinned ChirpStack release and farm radio survey before hardware use.
+[[regions]]
+id = "eu868"
+description = "EU868 candidate, not field authorized"
+common_name = "EU868"
+
+[regions.gateway]
+force_gws_private = true
+
+[regions.gateway.backend]
+enabled = "mqtt"
+
+[regions.gateway.backend.mqtt]
+topic_prefix = "eu868"
+server = "ssl://mosquitto:8883/"
+username = "chirpstack"
+password = "REPLACE_WITH_PRIVATE_MQTT_PASSWORD"
+ca_cert = "/run/poseidon/ca.crt"

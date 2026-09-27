@@ -1,0 +1,11 @@
+# Task ID: 25
+# Title: [docs] Author Field Runbook and SPL Calibration Guide
+# Status: pending
+# Dependencies: 22, 10
+# Priority: medium
+# Description: Create initial versions of key operational documents: a field deployment runbook and a guide for performing sound pressure level (SPL) calibration.
+# Details:
+In `docs/`, create `runbook.md`. This should include a pre-flight checklist, step-by-step installation instructions, troubleshooting common issues (connectivity, power), and recovery procedures. Create `safety_calibration.md`. This guide should detail the process of using a hydrophone and signal generator to measure the output SPL at various gain settings, creating a calibration curve to be stored in the site config. Emphasize the importance of this step for environmental safety.
+
+# Test Strategy:
+Have a team member who was not involved in writing the docs attempt to follow them to deploy a hub and perform a mock calibration. Identify any confusing or missing steps. The document should be clear enough for a field technician to use.

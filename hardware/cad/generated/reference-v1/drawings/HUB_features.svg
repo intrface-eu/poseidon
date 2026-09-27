@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1261" viewBox="0 0 1500 1261">
+<rect width="1500" height="1261" fill="white"/>
+<g font-family="monospace" fill="#172d39">
+<text x="35" y="40" font-size="25">HUB / HW-REF-1.1 / FEATURE AND FASTENER SCHEDULE</text>
+<text x="35" y="72" font-size="18">PROVISIONAL / mm / NOT FOR FABRICATION / features in assembly-local coordinates unless labelled local</text>
+<text x="35" y="100" font-size="16">Source-tagged Pi features and battery/panel/converter/MPPT envelopes have vendor evidence; other details/tolerances are assumptions.</text>
+<text x="35" y="140" font-size="15" font-weight="bold">HUB-ENV-01 / BOM HUB-ENC-001</text>
+<text x="50" y="163" font-size="15" font-weight="normal">Wall thickness/cavity are conservative allocation, NOT an enclosure design. No seals, vents, latches or penetrators selected.</text>
+<text x="35" y="186" font-size="15" font-weight="bold">CAD-HUB-TRAY-01 / BOM CAD-HUB-TRAY-01</text>
+<text x="50" y="209" font-size="15" font-weight="normal">size_mm: [340.0,240.0,4.0]</text>
+<text x="50" y="232" font-size="15" font-weight="normal">tray_mount_holes_mm: [[-155,-105],[155,-105],[-155,105],[155,105]]</text>
+<text x="50" y="255" font-size="15" font-weight="normal">tray_mount_diameter_mm: 6.6</text>
+<text x="50" y="278" font-size="15" font-weight="normal">pi_support_holes_mm: [[-144.0,-84.5],[-86.0,-84.5],[-144.0,-35.5],[-86.0,-35.5]]</text>
+<text x="50" y="301" font-size="15" font-weight="normal">pi_support_hole_diameter_mm: 3.2</text>
+<text x="50" y="324" font-size="15" font-weight="normal">M6 candidate tray hardware and M2.5 Pi fasteners; thread engagement, washer stack, torque and captive nut retention open.</text>
+<text x="35" y="347" font-size="15" font-weight="bold">HUB-PI-STANDOFF-1 / BOM FAST-PI-M2P5-STANDOFF</text>
+<text x="50" y="370" font-size="15" font-weight="normal">height_mm: 8</text>
+<text x="50" y="393" font-size="15" font-weight="normal">nominal_fastener: &quot;M2.5&quot;</text>
+<text x="50" y="416" font-size="15" font-weight="normal">location_mm: [-144.0,-84.5]</text>
+<text x="50" y="439" font-size="15" font-weight="normal">Not threaded geometry; PCB maximum screw/head envelope and torque review open</text>
+<text x="35" y="462" font-size="15" font-weight="bold">HUB-PI-STANDOFF-2 / BOM FAST-PI-M2P5-STANDOFF</text>
+<text x="50" y="485" font-size="15" font-weight="normal">height_mm: 8</text>
+<text x="50" y="508" font-size="15" font-weight="normal">nominal_fastener: &quot;M2.5&quot;</text>
+<text x="50" y="531" font-size="15" font-weight="normal">location_mm: [-86.0,-84.5]</text>
+<text x="50" y="554" font-size="15" font-weight="normal">Not threaded geometry; PCB maximum screw/head envelope and torque review open</text>
+<text x="35" y="577" font-size="15" font-weight="bold">HUB-PI-STANDOFF-3 / BOM FAST-PI-M2P5-STANDOFF</text>
+<text x="50" y="600" font-size="15" font-weight="normal">height_mm: 8</text>
+<text x="50" y="623" font-size="15" font-weight="normal">nominal_fastener: &quot;M2.5&quot;</text>
+<text x="50" y="646" font-size="15" font-weight="normal">location_mm: [-144.0,-35.5]</text>
+<text x="50" y="669" font-size="15" font-weight="normal">Not threaded geometry; PCB maximum screw/head envelope and torque review open</text>
+<text x="35" y="692" font-size="15" font-weight="bold">HUB-PI-STANDOFF-4 / BOM FAST-PI-M2P5-STANDOFF</text>
+<text x="50" y="715" font-size="15" font-weight="normal">height_mm: 8</text>
+<text x="50" y="738" font-size="15" font-weight="normal">nominal_fastener: &quot;M2.5&quot;</text>
+<text x="50" y="761" font-size="15" font-weight="normal">location_mm: [-86.0,-35.5]</text>
+<text x="50" y="784" font-size="15" font-weight="normal">Not threaded geometry; PCB maximum screw/head envelope and torque review open</text>
+<text x="35" y="807" font-size="15" font-weight="bold">HUB-CPU-01 / BOM HUB-CPU-001</text>
+<text x="50" y="830" font-size="15" font-weight="normal">source_id: &quot;SRC-PI4-MECH&quot;</text>
+<text x="50" y="853" font-size="15" font-weight="normal">verified_outline_mm: [85,56]</text>
+<text x="50" y="876" font-size="15" font-weight="normal">verified_corner_radius_mm: 3</text>
+<text x="50" y="899" font-size="15" font-weight="normal">verified_hole_diameter_mm: 2.7</text>
+<text x="50" y="922" font-size="15" font-weight="normal">verified_hole_centres_local_mm: [[3.5,3.5],[61.5,3.5],[3.5,52.5],[61.5,52.5]]</text>
+<text x="50" y="945" font-size="15" font-weight="normal">placement_lower_left_mm: [-147.5,-88]</text>
+<text x="50" y="968" font-size="15" font-weight="normal">thickness_assumed_mm: 1.6</text>
+<text x="35" y="991" font-size="15" font-weight="bold">HUB-CPU-COMPONENT-ENV / BOM HUB-CPU-001</text>
+<text x="50" y="1014" font-size="15" font-weight="normal">NOT connector geometry. Separate USB-C/cable access allocations below.</text>
+<text x="35" y="1037" font-size="15" font-weight="bold">HUB-POWER-ENV / BOM HUB-DC5-001</text>
+<text x="50" y="1060" font-size="15" font-weight="normal">size_mm: [159.0,97.0,38.0]</text>
+<text x="50" y="1083" font-size="15" font-weight="normal">source_id: &quot;SRC-SD50&quot;</text>
+<text x="50" y="1106" font-size="15" font-weight="normal">verification: &quot;Lead electrical source evidence; terminal geometry unresolved&quot;</text>
+<text x="35" y="1129" font-size="15" font-weight="bold">PRINT-HUB-GUIDE-01 / BOM PRINT-HUB-GUIDE-01</text>
+<text x="50" y="1152" font-size="15" font-weight="normal">groove_diameter_mm: 10</text>
+<text x="50" y="1175" font-size="15" font-weight="normal">groove_pitch_mm: 15</text>
+<text x="50" y="1198" font-size="15" font-weight="normal">Internal dry fit prototype only; never substitute for bolted tether strain relief</text>
+</g>
+</svg>

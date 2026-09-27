@@ -1,0 +1,22 @@
+{
+  "schema_version": "poseidon.acquisition-session.v1",
+  "id": "synthetic-session-001",
+  "site_id": "synthetic-site",
+  "device_id": null,
+  "started_at": null,
+  "ended_at": null,
+  "clock_quality": {
+    "status": "unknown",
+    "method": "unknown",
+    "uncertainty_ms": null,
+    "offset_ms": null,
+    "reference": null
+  },
+  "provenance": {
+    "source_kind": "synthetic",
+    "source_id": "synthetic-golden-v1",
+    "transport": "local"
+  },
+  "operator": "Synthetic test operator",
+  "notes": "Software fixture only; no field capture or verified synchronization."
+}

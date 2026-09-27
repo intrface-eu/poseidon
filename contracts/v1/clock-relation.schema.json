@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://poseidon.invalid/contracts/v1/clock-relation.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "source_domain": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+      "maxLength": 128
+    },
+    "reference_domain": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+      "maxLength": 128
+    },
+    "source_anchor_s": {
+      "type": "number"
+    },
+    "reference_anchor_s": {
+      "type": "number"
+    },
+    "drift_ppm": {
+      "type": "number",
+      "exclusiveMinimum": -1000000
+    },
+    "anchor_uncertainty_s": {
+      "type": "number",
+      "minimum": 0
+    },
+    "drift_uncertainty_ppm": {
+      "type": "number",
+      "minimum": 0
+    },
+    "method": {
+      "enum": [
+        "operator_declared",
+        "measured_reference",
+        "shared_clock"
+      ]
+    },
+    "evidence_ref": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+          "maxLength": 128
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "source_domain",
+    "reference_domain",
+    "source_anchor_s",
+    "reference_anchor_s",
+    "drift_ppm",
+    "anchor_uncertainty_s",
+    "drift_uncertainty_ppm",
+    "method",
+    "evidence_ref"
+  ]
+}

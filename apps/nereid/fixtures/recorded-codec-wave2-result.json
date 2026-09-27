@@ -1,0 +1,120 @@
+{
+  "lead": "recorded-codec-wave2",
+  "state": "ready-for-review",
+  "summary": "Real local MP4/avc1 H264 decoding with exact encoded-sample/PTS mapping, bounded owned native process, explicit timing/provenance declarations, PGM8 derivatives and existing session/index/excerpt bridge.",
+  "changedPaths": [
+    "apps/nereid/pyproject.toml",
+    "apps/nereid/uv.lock",
+    "apps/nereid/src/poseidon_nereid/codec.py",
+    "apps/nereid/src/poseidon_nereid/codec_mp4.py",
+    "apps/nereid/src/poseidon_nereid/_codec_worker.py",
+    "apps/nereid/src/poseidon_nereid/codec_cli.py",
+    "apps/nereid/src/poseidon_nereid/video.py",
+    "apps/nereid/src/poseidon_nereid/cli.py",
+    "tests/nereid/test_codec.py",
+    "tests/nereid/test_video.py",
+    "docs/acquisition/recorded-codec-wave2.md",
+    "apps/nereid/fixtures/recorded-codec-wave2",
+    "apps/nereid/fixtures/recorded-codec-wave2-result.json"
+  ],
+  "artifacts": [
+    "apps/nereid/fixtures/recorded-codec-wave2/input/synthetic.mp4",
+    "apps/nereid/fixtures/recorded-codec-wave2/input/synthetic-recipe.codec-v1.json",
+    "apps/nereid/fixtures/recorded-codec-wave2/input/declaration.codec-v1.json",
+    "apps/nereid/fixtures/recorded-codec-wave2/bundle/mapping.codec-v1.json",
+    "apps/nereid/fixtures/recorded-codec-wave2/index/index.codec-v1.json",
+    "apps/nereid/fixtures/recorded-codec-wave2/excerpt/excerpt.codec-v1.json",
+    "apps/nereid/fixtures/recorded-codec-wave2/artifacts.sha256.json"
+  ],
+  "environment": {
+    "pythonExecutable": "apps/nereid/.venv/bin/python",
+    "python": "3.12.13",
+    "pyav": "16.1.0",
+    "platform": "macOS arm64, Darwin 25.6.0",
+    "pythonPath": "libs/proto-py/src:apps/acoustic/src:apps/nereid/src",
+    "workerInterpreter": "sys.executable; no fallback or auto-install; API environment without PyAV must invoke the explicit codec CLI interpreter",
+    "wheel": "av-16.1.0-cp312-cp312-macosx_14_0_arm64.whl",
+    "wheelSha256": "ae3fb658eec00852ebd7412fdc141f17f3ddce8afee2d2e1cf366263ad2a3b35",
+    "decoder": "bundled FFmpeg software h264, one thread",
+    "fixtureEncoder": "bundled libx264, one thread, CRF 18, medium, bframes=2:b-adapt=0:scenecut=0:keyint=30:threads=1",
+    "nativeLibraries": {
+      "libavcodec": "62.11.100",
+      "libavformat": "62.3.100",
+      "libavutil": "60.8.100",
+      "libavdevice": "62.1.100",
+      "libavfilter": "11.4.100",
+      "libswscale": "9.1.100",
+      "libswresample": "6.1.100"
+    },
+    "loadedLibraryLocation": "dladdr-checked wheel av/.dylibs; external/system codec libraries refused",
+    "avcodecLicenseReported": "LGPL version 3 or later; distribution and libx264 licensing review remains open"
+  },
+  "testResults": [
+    {
+      "command": "uv lock --project apps/nereid --python 3.12 --no-python-downloads && uv sync --project apps/nereid --locked --python 3.12 --no-python-downloads",
+      "exit": 0,
+      "result": "Installed av 16.1.0 wheel into the project-scoped NEREID .venv; no global FFmpeg or environment repair"
+    },
+    {
+      "command": "PYTHONPATH=<environment.pythonPath> apps/nereid/.venv/bin/python -m unittest discover -s tests/nereid -v",
+      "exit": 0,
+      "result": "64 tests passed in 4.110 seconds: 31 codec tests, 33 PGM/wiper tests; no skips"
+    },
+    {
+      "command": "PYTHONPATH=<environment.pythonPath> apps/nereid/.venv/bin/python -m unittest discover -s tests/acoustic -p test_session.py -v",
+      "exit": 0,
+      "result": "41 tests passed in 0.237 seconds; unchanged session and clock model"
+    },
+    {
+      "command": "uv lock --project apps/nereid --check --offline",
+      "exit": 0,
+      "result": "Locked two-package environment verified"
+    },
+    {
+      "command": "Explicit codec Python -m poseidon_nereid.codec_cli fixture/decode/index/excerpt; exact reproducible arguments in docs/acquisition/recorded-codec-wave2.md",
+      "exit": 0,
+      "result": "All four CLI commands exited 0; six actual H264 frames decoded/indexed, four frames excerpted; 35 artifact hashes verified without changes, 65,477 bytes excluding hash manifest"
+    },
+    {
+      "command": "git diff --check -- apps/nereid tests/nereid docs/acquisition/recorded-codec-wave2.md",
+      "exit": 0,
+      "result": "No whitespace errors reported; repository app sources are pre-existing untracked work, so this is not a substitute for test execution"
+    }
+  ],
+  "evidence": {
+    "provenance": "synthetic",
+    "sourceSha256": "2eb6715d3125c0d3e9df06b0a06c87eddee49546294da9acf7581bdeeb34d597",
+    "streamIndex": 0,
+    "originalDimensions": [32, 24],
+    "decodedPts": [32000, 32640, 33600, 33920, 35200, 35840],
+    "timeBase": [1, 16000],
+    "presentationToEncodedSampleIndexes": [0, 2, 3, 1, 5, 4],
+    "originalColorBytesInPgm": false,
+    "originalEncodedBytesPreserved": true,
+    "sessionModelChanged": false,
+    "softwareOnly": true,
+    "biologicalClassifier": false,
+    "calibration": "none"
+  },
+  "assumptions": [
+    "Private operator-controlled local directories; hashes are not signatures or hostile-filesystem protection",
+    "Explicit source clock/reference epoch/provenance and final-frame duration attestation",
+    "Opted-in next-PTS interior intervals are display-hold inferences, never attested exposure durations",
+    "Selected nonfragmented avc1 H264, 8-bit yuv420p, bounded sample tables and one picture per sample",
+    "Excerpts contain PGM derivatives and exact mappings, not the full original MP4; the source bundle must remain available"
+  ],
+  "remainingGates": [
+    "Controller-owned root/API integration; codec tests require the separate pinned codec environment",
+    "Linux/ARM64 execution and broader real recorded-camera compatibility not exercised on this macOS host",
+    "macOS RSS watchdog is sampled, not an atomic memory cap; hostile-native-media security sandbox and atomic memory containment remain open",
+    "Codec and bundled encoder licensing/distribution review",
+    "Permissioned field data, measured source clocks, optical calibration, biological validation and all live hardware remain unverified"
+  ],
+  "crossScopeRequests": [
+    "No session.py or API-environment dependency change is required. If integrating from an API environment without av, invoke the explicit apps/nereid/.venv/bin/python CLI instead of decoding under the API interpreter.",
+    "Lead may add the wave-2 document link to docs/acquisition/session-and-video.md, whose no-MP4 wording describes wave 1; child did not edit that out-of-bounded-doc-scope file."
+  ],
+  "reviewFixes": [
+    "Resolved-path containment guards reject index/excerpt outputs inside the source bundle/session, including symlink-parent aliases; regression proves no source-inventory mutation"
+  ]
+}

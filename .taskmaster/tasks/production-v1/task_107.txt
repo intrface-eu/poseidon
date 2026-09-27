@@ -1,0 +1,29 @@
+{
+  "deliverablePaths": [
+    "libs/proto-py/",
+    "apps/acoustic/",
+    "tests/acoustic/",
+    "docs/development/passive-replay.md"
+  ],
+  "dependencies": [
+    101
+  ],
+  "description": "Implement independently completable Python synthetic/offline replay tooling before field evidence exists.",
+  "details": "Replay PCM WAV fixtures in Python; emit explicitly uncalibrated candidate events; write provenance and SHA-256 hash manifests; use SQLite idempotency for duplicate/restarted replays; provide CLI tests. It uses only synthetic or supplied offline inputs, never sends network or hardware commands, and has no site, permission, measurement, spend, safety, or efficacy dependency.",
+  "id": 107,
+  "ownerRole": "software",
+  "phase": "P2-dev",
+  "priority": "high",
+  "researchPackages": [
+    "R2"
+  ],
+  "status": "done",
+  "subtasks": [],
+  "testStrategy": "Run CLI tests for deterministic PCM WAV replay, candidate-event flags, manifest hashes, SQLite idempotency, replay restart, and absence of network or hardware side effects.",
+  "title": "P2-dev Synthetic Offline Schemas and Replay Tooling",
+  "verification": {
+    "date": "2026-09-07",
+    "evidencePath": "docs/validation/development-tranche-001.md",
+    "scope": "Synthetic/offline file replay only: local PCM WAV replay, candidate events, provenance/hash manifest, SQLite idempotency, and CLI coverage; no field evidence or deployment."
+  }
+}

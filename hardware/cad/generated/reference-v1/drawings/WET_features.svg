@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="847" viewBox="0 0 1500 847">
+<rect width="1500" height="847" fill="white"/>
+<g font-family="monospace" fill="#172d39">
+<text x="35" y="40" font-size="25">WET / HW-REF-1.1 / FEATURE AND FASTENER SCHEDULE</text>
+<text x="35" y="72" font-size="18">PROVISIONAL / mm / NOT FOR FABRICATION / features in assembly-local coordinates unless labelled local</text>
+<text x="35" y="100" font-size="16">Source-tagged Pi features and battery/panel/converter/MPPT envelopes have vendor evidence; other details/tolerances are assumptions.</text>
+<text x="35" y="140" font-size="15" font-weight="bold">CAD-WET-BASE-01 / BOM CAD-WET-BASE-01</text>
+<text x="50" y="163" font-size="15" font-weight="normal">size_mm: [300,350,8]</text>
+<text x="50" y="186" font-size="15" font-weight="normal">mount_holes_mm: [[-5,-120],[255,-120],[-5,180],[255,180]]</text>
+<text x="50" y="209" font-size="15" font-weight="normal">mount_hole_diameter_mm: 8.5</text>
+<text x="50" y="232" font-size="15" font-weight="normal">M8 candidate fasteners; farm loads, galvanic isolation and lifting proof open</text>
+<text x="35" y="255" font-size="15" font-weight="bold">WET-CAMERA-ENV / BOM WET-PRESSURE-001</text>
+<text x="50" y="278" font-size="15" font-weight="normal">diameter_mm: 110.0</text>
+<text x="50" y="301" font-size="15" font-weight="normal">length_mm: 250.0</text>
+<text x="50" y="324" font-size="15" font-weight="normal">related_bom_ids: [&quot;WET-CAM-001&quot;,&quot;WET-PRESSURE-001&quot;]</text>
+<text x="50" y="347" font-size="15" font-weight="normal">Blue Robotics 4in watertight enclosure is a pressure-boundary CANDIDATE only, not selected exact SKU. This 110 mm cylinder is not</text>
+<text x="50" y="370" font-size="15" font-weight="normal">vendor geometry, a tube, a seal, or a pressure design.</text>
+<text x="35" y="393" font-size="15" font-weight="bold">CAD-WET-CAMERA-COLLAR-1 / BOM CAD-WET-CAMERA-COLLAR-01</text>
+<text x="50" y="416" font-size="15" font-weight="normal">bore_mm: 112.8</text>
+<text x="50" y="439" font-size="15" font-weight="normal">outside_diameter_mm: 130</text>
+<text x="50" y="462" font-size="15" font-weight="normal">width_mm: 16</text>
+<text x="50" y="485" font-size="15" font-weight="normal">axis_x_mm: 47</text>
+<text x="50" y="508" font-size="15" font-weight="normal">Retention/liner and split-clamp fasteners unresolved; clearance collar is NOT a proven restraint</text>
+<text x="35" y="531" font-size="15" font-weight="bold">CAD-WET-CAMERA-COLLAR-2 / BOM CAD-WET-CAMERA-COLLAR-01</text>
+<text x="50" y="554" font-size="15" font-weight="normal">bore_mm: 112.8</text>
+<text x="50" y="577" font-size="15" font-weight="normal">outside_diameter_mm: 130</text>
+<text x="50" y="600" font-size="15" font-weight="normal">width_mm: 16</text>
+<text x="50" y="623" font-size="15" font-weight="normal">axis_x_mm: 187</text>
+<text x="50" y="646" font-size="15" font-weight="normal">Retention/liner and split-clamp fasteners unresolved; clearance collar is NOT a proven restraint</text>
+<text x="35" y="669" font-size="15" font-weight="bold">CAD-WET-HYD-COLLAR-1 / BOM CAD-WET-HYD-COLLAR-01</text>
+<text x="50" y="692" font-size="15" font-weight="normal">bore_mm: 34.0</text>
+<text x="50" y="715" font-size="15" font-weight="normal">width_mm: 12</text>
+<text x="35" y="738" font-size="15" font-weight="bold">CAD-WET-HYD-COLLAR-2 / BOM CAD-WET-HYD-COLLAR-01</text>
+<text x="50" y="761" font-size="15" font-weight="normal">bore_mm: 34.0</text>
+<text x="50" y="784" font-size="15" font-weight="normal">width_mm: 12</text>
+</g>
+</svg>

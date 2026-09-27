@@ -1,0 +1,28 @@
+{
+  "name": "aeolus-ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "qa:browser": "python3 qa/run-browser-qa.py",
+    "qa:tranche3": "PLATFORM_QA_TRANCHE3_ONLY=1 python3 qa/run-platform-qa.py",
+    "lint": "bun run typecheck"
+  },
+  "dependencies": {
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/bun": "1.4.1",
+    "@types/node": "26.5.0",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "typescript": "7.0.2"
+  }
+}

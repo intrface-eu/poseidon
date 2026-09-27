@@ -1,0 +1,419 @@
+{
+  "format": "poseidon-literature-sources-v1",
+  "package": "R5R6",
+  "title": "Electrical, power, communications, mechanical and marine feasibility - source register",
+  "reviewed_on": "2026-09-09",
+  "review_type": "desk research (web search and page fetch only)",
+  "field_data_available": false,
+  "measurement_performed": false,
+  "permission_or_emission_authorized": false,
+  "purchase_or_quote_obtained": false,
+  "contact_made_with_vendor_or_authority": false,
+  "access_legend": {
+    "full": "page or document text was retrieved and read on the retrieved date",
+    "abstract": "only an abstract, product summary or search-index summary was readable",
+    "inaccessible": "HTTP error, connection refused, captcha or paywall; no content read"
+  },
+  "sources": [
+    {
+      "id": "R5R6-S01",
+      "url": "https://bluerobotics.com/store/watertight-enclosures/wte-vp/",
+      "title": "Watertight Enclosure Configurator",
+      "publisher": "Blue Robotics",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R6-F1, R6-F2, enclosure candidate table, BOM check WET-PRESSURE-001: per-length depth ratings for aluminium and acrylic tubes, end caps, domes, base price, PRV and vacuum pump prices",
+      "quote": "only for short-term submersions lasting less than two weeks"
+    },
+    {
+      "id": "R5R6-S02",
+      "url": "https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/",
+      "title": "WetLink Penetrator",
+      "publisher": "Blue Robotics",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R6-F3, connector table, materials table: depth rating condition, design lifetime, materials, seal sizes, unit and volume prices",
+      "quote": "1000 meter (3,280 feet) water depth when used with tested cables"
+    },
+    {
+      "id": "R5R6-S03",
+      "url": "https://bluerobotics.com/store/cables-connectors/cables/fathom-rov-tether-by-the-meter/",
+      "title": "Fathom ROV Tether (by the meter)",
+      "publisher": "Blue Robotics",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R6-F6, cable table, gap G-05: price per metre, diameters, breaking and working strength, conductor construction, absence of a published depth rating",
+      "quote": "350 lb breaking strength"
+    },
+    {
+      "id": "R5R6-S04",
+      "url": "https://bluerobotics.com/store/sensors-cameras/cameras/cam-usb-low-light-r1/",
+      "title": "Low-Light HD USB Camera",
+      "publisher": "Blue Robotics",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R6-F7, camera candidate: sensor, minimum illumination, resolution, field of view, USB interface, current draw, PCB size, price",
+      "quote": "Sony Exmor IMX322 / IMX323"
+    },
+    {
+      "id": "R5R6-S05",
+      "url": "https://bluerobotics.com/store/sensors-cameras/cameras/deepwater-exploration-explorehd-usb-camera/",
+      "title": "DeepWater Exploration exploreHD USB Camera",
+      "publisher": "Blue Robotics (DeepWater Exploration product)",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R6-F7, R6-F9, enclosure and camera tables: 400 m depth rating, anodised aluminium housing and wetted materials, sensor, field of view, power draw, preinstalled penetrator, price",
+      "quote": "Depth rating: 400 m"
+    },
+    {
+      "id": "R5R6-S06",
+      "url": "https://www.macartney.com/connectivity/subconn/subconn-micro-circular-series/subconn-micro-circular-2-3-and-4-contacts/",
+      "title": "SubConn Micro Circular - 2, 3 and 4 contacts",
+      "publisher": "MacArtney Underwater Technology",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R6-F4, connector table, materials table: qualified pressure test, PEEK bulkhead rating, wet matings, voltage and current, water temperature range, wetted materials; no price published",
+      "quote": "1,400 bar, 20,300 psi (mated), 800 bar, 11,600 psi (open face)"
+    },
+    {
+      "id": "R5R6-S07",
+      "url": "https://www.bluetrailengineering.com/_files/ugd/e4c7c5_be15154513ab488fb0f04c2260100f55.pdf?index=true",
+      "title": "Cobalt Series Connectors datasheet",
+      "publisher": "Blue Trail Engineering",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R6-F5, connector table, materials table: 600 m depth rating, 316 stainless shell with PEEK insert, M10 x 1.5 bulkhead thread, temperature range, per-pin voltage and current ratings",
+      "quote": "they withstand long-term use in seawater at depths up to 600 meters"
+    },
+    {
+      "id": "R5R6-S08",
+      "url": "https://www.teledynemarine.com/en-us/products/SiteAssets/RESON/TC4013%20product%20leaflet.pdf",
+      "title": "TC4013 Reference Hydrophone product leaflet",
+      "publisher": "Teledyne Marine (RESON)",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R5-F5, hydrophone table, quote-ready line 7: usable frequency range, receiving sensitivity, operating and survival depth, nominal capacitance, standard cable length, encapsulation; no price published",
+      "quote": "Receiving sensitivity: -211dB ±3dB re 1V/µPa"
+    },
+    {
+      "id": "R5R6-S09",
+      "url": "https://www.hightechincusa.com/products/hydrophones/hti96minexportable.html",
+      "title": "HTI-96-Min Exportable Hydrophone",
+      "publisher": "High Tech Inc",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "hydrophone table, quote-ready line 8: sensitivity with and without preamp, frequency response, equivalent input self noise, depth rating and implosion depth; no cable, connector or price published",
+      "quote": "500 meters with no signal degradation"
+    },
+    {
+      "id": "R5R6-S10",
+      "url": "https://ambient.de/en/products/asf-2-mkii-klein-hydrophon-mit-48v-phantomspeisung",
+      "title": "ASF-2 MKII small hydrophone with 48V phantom power",
+      "publisher": "Ambient Recording GmbH",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "hydrophone table: published price in EUR, linear frequency range, 10 m maximum depth and cable, XLR connector and phantom power, housing material; sensitivity and self-noise not published",
+      "quote": "Linear Frequency Range 70Hz-20kHz"
+    },
+    {
+      "id": "R5R6-S11",
+      "url": "http://www.oceaninstruments.co.nz/wp-content/uploads/2020/08/SoundTrap-600-Spec.pdf",
+      "title": "SoundTrap ST600 Long Deploy Underwater Sound Recorder Specification",
+      "publisher": "Ocean Instruments NZ",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R5-F5, hydrophone and DAQ tables: STD and HF bandwidth, self-noise, sample rates, 16-bit ADC, calibration, memory, batteries and endurance, titanium housing depth, dimensions and mass",
+      "quote": "Titanium. Max depth is 200m, or 500m with optional PRV safety valve."
+    },
+    {
+      "id": "R5R6-S12",
+      "url": "https://www.oceaninstruments.co.nz/product/soundtrap-st600-std-long-term-recorder/",
+      "title": "SoundTrap ST600 STD Long Term Recorder",
+      "publisher": "Ocean Instruments NZ",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "hydrophone and DAQ tables, quote-ready line 10: published USD price, what the price includes, batteries excluded, published production lead time",
+      "quote": "has up to 10 weeks production lead time"
+    },
+    {
+      "id": "R5R6-S13",
+      "url": "https://www.nauta-rcs.it/EN/Hydrophones/Aquarian_Scientific/",
+      "title": "Aquarian Scientific Hydrophones (AS-1, PA4, PA6)",
+      "publisher": "NAUTA scientific (European distributor)",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "hydrophone table, quote-ready line 9: AS-1 frequency range, receiving sensitivity, operating and survival depth, cable length and BNC output, phantom-powered preamps; no price published",
+      "quote": "-208dBV re 1μPa (40μV / Pascal)"
+    },
+    {
+      "id": "R5R6-S14",
+      "url": "https://www.aquarianaudio.com/as-1-hydrophone.html",
+      "title": "AS-1 Hydrophone (manufacturer page)",
+      "publisher": "Aquarian Audio / Aquarian Scientific",
+      "retrieved": "2026-09-09",
+      "accessed": "inaccessible",
+      "used_for": "Sources reviewed: recorded as unreachable (connection refused, ECONNREFUSED 38.46.223.119) on repeated attempts; AS-1 figures were taken from the distributor page R5R6-S13 instead",
+      "quote": ""
+    },
+    {
+      "id": "R5R6-S15",
+      "url": "https://www.scirp.org/pdf/OJMS20110100002_61767847.pdf",
+      "title": "Abiotic Sponge Ecology Conditions, Limski Kanal and Northern Adriatic Sea, Croatia",
+      "publisher": "Open Journal of Marine Science 1(1):18-30 (Klöppel, Messal, Pfannkuchen, Matschullat, Zucht, Hamer, Brümmer, 2011)",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "Site parameters table, R6-F15, gap G-03: maximum depth and width, temperature, salinity, current velocity, Secchi visibility, dissolved oxygen, pH, PAR, sediment grain size",
+      "quote": "width of about 650 m and a maximum depth of 32 m"
+    },
+    {
+      "id": "R5R6-S16",
+      "url": "https://hrcak.srce.hr/en/323830",
+      "title": "Shellfisheries in Croatia: From Manual Collection to Contemporary Practices",
+      "publisher": "NAŠE MORE 71(3):154-165, via Hrčak (Bratoš Cetinić, 2024)",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "Site parameters table, R6-F15: off-bottom longline culture as the only Croatian method, pergolari and spat collectors, Lim Bay algal overgrowth killing mussels, licensed operator counts",
+      "quote": "the oldest form of mariculture"
+    },
+    {
+      "id": "R5R6-S17",
+      "url": "https://www.frontiersin.org/journals/climate/articles/10.3389/fclim.2024.1449633/full",
+      "title": "Adriatic Sea temperature, salinity and sea level in historical and projected climate simulations",
+      "publisher": "Frontiers in Climate (2024)",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "Site parameters table: Adriatic basin sea-surface temperature mean, 5th-95th percentile range and historical warming trend",
+      "quote": "the historical period reveals a greater trend compared to the projection period, being 0.04°C/year and 0.022°C/year"
+    },
+    {
+      "id": "R5R6-S18",
+      "url": "https://pip-assets.raspberrypi.com/categories/892-raspberry-pi-5/documents/RP-008348-DS-6-raspberry-pi-5-product-brief.pdf",
+      "title": "Raspberry Pi 5 product brief",
+      "publisher": "Raspberry Pi Ltd",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R5-F1, R5-F3, power table, gap G-10: 5V/5A USB-C Power Delivery input, operating temperature range, MTBF, production lifetime commitment, list prices per memory variant",
+      "quote": "Operating temperature: 0°C to 70°C"
+    },
+    {
+      "id": "R5R6-S19",
+      "url": "https://pip-assets.raspberrypi.com/categories/944-raspberry-pi-compute-module-5/documents/RP-008180-DS-7-cm5-datasheet.pdf",
+      "title": "Raspberry Pi Compute Module 5 datasheet",
+      "publisher": "Raspberry Pi Ltd",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R5-F2, R5-F3, power table: shutdown, idle, operation and RTC currents, operating temperature range, reduced passive heat sinking versus Raspberry Pi 5",
+      "quote": "CM5′s overall operating temperature range is from −20°C to +85°C (non-condensing)"
+    },
+    {
+      "id": "R5R6-S20",
+      "url": "https://www.raspberrypi.com/products/raspberry-pi-4-model-b/",
+      "title": "Raspberry Pi 4 Model B",
+      "publisher": "Raspberry Pi Ltd",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R5-F3, power table, BOM check HUB-CPU-001: product still listed for sale, starting price, absence of any production-lifetime or end-of-life statement on the page",
+      "quote": "From $35"
+    },
+    {
+      "id": "R5R6-S21",
+      "url": "https://motu.com/en-us/products/m-series/m2/",
+      "title": "MOTU M2 USB audio interface",
+      "publisher": "MOTU",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R5-F4, R5-F5, DAQ table, BOM check HUB-DAQ-001: sample rate range, measured dynamic range and EIN, per-input phantom power, USB-C bus power; no price published",
+      "quote": "Measured -129 dBu EIN on mic inputs"
+    },
+    {
+      "id": "R5R6-S22",
+      "url": "https://store.rakwireless.com/products/rak7289-8-16-channel-outdoor-lorawan-gateway",
+      "title": "RAK7289V2 / RAK7289CV2 WisGate Edge Pro outdoor LoRaWAN gateway",
+      "publisher": "RAKwireless",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R5-F7, comms table, BOM checks HUB-GATEWAY-001 and REEF-ANT-001: price range, IP67 enclosure, PoE and 12 VDC input, EU868 support, channel options, antennas not included, solar-charger warning",
+      "quote": "IP67/NEMA-6 industrial-grade enclosure with cable glands"
+    },
+    {
+      "id": "R5R6-S23",
+      "url": "https://docs.rakwireless.com/product-categories/wisduo/rak3272s-breakout-board/datasheet/",
+      "title": "RAK3272S Breakout Board datasheet",
+      "publisher": "RAKwireless",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R5-F8, comms table, BOM check REEF-RF-001: supply voltage range and typical VCC, UART pin assignment, EU868 region support, absence of an end-of-life notice, deprecated firmware V1.0.4",
+      "quote": "Supports AT commands and firmware updates"
+    },
+    {
+      "id": "R5R6-S24",
+      "url": "https://www.thethingsnetwork.org/country/croatia/",
+      "title": "The Things Network - Croatia",
+      "publisher": "The Things Network",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R5-F6, comms table, gap G-12: countrywide gateway count, per-community gateway listings, absence of any community in the Lim / Rovinj / Vrsar area",
+      "quote": "0 gateways"
+    },
+    {
+      "id": "R5R6-S25",
+      "url": "https://www.hakom.hr/en/coverage-maps/12425",
+      "title": "Coverage maps (mobile networks of A1, Hrvatski Telekom and Telemach)",
+      "publisher": "HAKOM - Croatian Regulatory Authority for Network Industries",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R5-F9, comms table, gap G-11: which operators are mapped, indoor/outdoor and voice/data layers, 2G-5G technology filters, quarterly publication, operator responsibility for accuracy",
+      "quote": "The coverage data, i.e. the coverage maps, are produced by the operators, who are responsible for the accuracy of the submitted maps"
+    },
+    {
+      "id": "R5R6-S26",
+      "url": "https://www.teltonika-networks.com/products/routers/rut241",
+      "title": "RUT241 industrial 4G LTE router",
+      "publisher": "Teltonika Networks",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R5-F10, comms table: the product page publishes no electrical, thermal, IP-rating, dimensional or price data, only placeholder specification entries and an enquiry call to action",
+      "quote": "INQUIRE NOW"
+    },
+    {
+      "id": "R5R6-S27",
+      "url": "https://www.meanwell.com/Upload/PDF/SD-50/SD-50-SPEC.PDF",
+      "title": "SD-50 series DC-DC converter specification",
+      "publisher": "MEAN WELL",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R5-F11, power table, BOM check HUB-DC5-001, gap G-10: SD-50A-5 output voltage and current, input range, adjust range, typical efficiency, working temperature, dimensions, isolation",
+      "quote": "-10 ~ +60℃ (Refer to \"Derating Curve\")"
+    },
+    {
+      "id": "R5R6-S28",
+      "url": "https://www.victronenergy.com/upload/documents/Datasheet-BlueSolar-Monocrystalline-Panels-EN.pdf",
+      "title": "BlueSolar Monocrystalline Panels datasheet",
+      "publisher": "Victron Energy",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R5-F12, power table, BOM check REEF-PV-001: SPM040401200 dimensions, Pmpp, Vmpp, Impp, Voc, Isc, temperature coefficients, mass, and which rows carry the discontinued footnote",
+      "quote": "2) Discontinued, see current models datasheet"
+    },
+    {
+      "id": "R5R6-S29",
+      "url": "https://www.victronenergy.com/media/pg/Lithium_Battery_Smart/en/technical-data.html",
+      "title": "Lithium Battery Smart - technical data",
+      "publisher": "Victron Energy",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R5-F13, power table, BOM checks REEF-BAT-001 and REEF-BMS-001: 12.8V/50Ah model listing, dimensions and mass, BMS interface connector, absence of any discontinuation statement",
+      "quote": "Male + female cable with M8 circular 3 pole connector, length 50cm"
+    },
+    {
+      "id": "R5R6-S30",
+      "url": "https://www.victronenergy.com/solar-charge-controllers/smartsolar-mppt-75-10-75-15-100-15-100-20",
+      "title": "SmartSolar MPPT 75/10, 75/15, 100/15 & 100/20",
+      "publisher": "Victron Energy",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R5-F14, power table, BOM check REEF-MPPT-001: product page live with an EU RED declaration of conformity for the 75/10; ordering code, maximum PV power and maximum PV Voc not on the page",
+      "quote": "Declaration of Conformity - SmartSolar MPPT 75/10 (EU doc RED)"
+    },
+    {
+      "id": "R5R6-S31",
+      "url": "https://www.mouser.com/ProductDetail/Espressif-Systems/ESP32-DevKitC-32E",
+      "title": "ESP32-DevKitC-32E product listing (search-index summary)",
+      "publisher": "Mouser Electronics / DigiKey listings via web search",
+      "retrieved": "2026-09-09",
+      "accessed": "abstract",
+      "used_for": "R5-F15, BOM check REEF-CPU-001: the -32E is not discontinued but supply is constrained (out of stock, orderable, restocks scheduled); sibling variants -32U and -32D-F are marked obsolete or discontinued",
+      "quote": "Obsolete and no longer manufactured"
+    },
+    {
+      "id": "R5R6-S32",
+      "url": "https://worldstainless.org/wp-content/uploads/2025/02/Contact_with_Other_EN.pdf",
+      "title": "Stainless steel in contact with other metallic materials",
+      "publisher": "worldstainless (International Stainless Steel Forum)",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R6-F8, materials and corrosion table, gap G-08: prerequisites for galvanic corrosion, seawater conductivity effect, cathode/anode area ratio and distance, insulation, plastic bushes, polyamide washers, coating guidance",
+      "quote": "As a highly conductive environment, seawater tends to encourage galvanic corrosion."
+    },
+    {
+      "id": "R5R6-S33",
+      "url": "https://koreascience.kr/article/JAKO202032860595623.page",
+      "title": "Effect of hard anodizing treatment on corrosion and stress corrosion cracking of Al 6061-T6 in natural seawater",
+      "publisher": "KoreaScience (Korean journal article record)",
+      "retrieved": "2026-09-09",
+      "accessed": "abstract",
+      "used_for": "R6-F9, materials and corrosion table: roughly 25 micron uniform oxide layer, base metal corrosion current density about 13 times greater than the anodised sample, no significant effect on stress corrosion cracking",
+      "quote": "the anodizing film showed no significant effect on SCC in the slow strain rate test"
+    },
+    {
+      "id": "R5R6-S34",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5936910/",
+      "title": "Effects of hydrostatic pressure on seawater absorption and degradation of PEEK and its composites",
+      "publisher": "PubMed Central (PMC5936910)",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R6-F10, materials and corrosion table: pressure-accelerated seawater absorption, decline in tensile, flexural, compressive and impact strength, crystallinity change, test conditions per ASTM D1141-98",
+      "quote": "seawater absorption of PEEK and its composites were greatly accelerated by increased hydrostatic pressure in the deep sea"
+    },
+    {
+      "id": "R5R6-S35",
+      "url": "https://repository.library.noaa.gov/view/noaa/71156/noaa_71156_DS1.pdf",
+      "title": "A technical guide to marine aquaculture gear (NOAA Technical Memorandum)",
+      "publisher": "NOAA Fisheries / NOAA Institutional Repository",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R6-F12, R6-F13, mooring options table, gap G-03: shellfish anchor types and their trade-offs, toggle and auger anchor practice, chain sizing, longline rope material and diameter basis, buoys and farm markers",
+      "quote": "Auger anchors are widely used for floating systems as they are low cost and readily available."
+    },
+    {
+      "id": "R5R6-S36",
+      "url": "https://www.fao.org/responsible-fishing/marking-of-fishing-gear/voluntary-guidelines-for-the-marking-of-fishing-gear/en",
+      "title": "Voluntary Guidelines on the Marking of Fishing Gear (VGMFG)",
+      "publisher": "Food and Agriculture Organization of the United Nations",
+      "retrieved": "2026-09-09",
+      "accessed": "full",
+      "used_for": "R6-F14, mooring options table: purpose of gear marking, COFI 33 endorsement in July 2018, systems approach covering lost gear reporting, recovery and disposal of ALDFG",
+      "quote": "mechanisms to ensure legality, enforcement, lost gear reporting and recovery, and the safe and environmentally sound disposal of ALDFG"
+    },
+    {
+      "id": "R5R6-S37",
+      "url": "https://www.ingentaconnect.com/content/mts/mtsj/2015/00000049/00000001/art00008",
+      "title": "Demonstration of Biofouling Mitigation Methods for Long-Term Deployments of Optical Cameras (Jolin & Polagye, 2015)",
+      "publisher": "Marine Technology Society Journal, via IngentaConnect",
+      "retrieved": "2026-09-09",
+      "accessed": "abstract",
+      "used_for": "R6-F11, materials and corrosion table, gap G-06, quote-ready line 18, C4 recommendation: four-month field test combining copper rings, ClearSignal coating and mechanical wipers on optical ports",
+      "quote": "barnacles colonized almost every surface of the camera system except the optical ports with fouling mitigation measures"
+    },
+    {
+      "id": "R5R6-S38",
+      "url": "https://nickelinstitute.org/media/1806/stainlesssteelinwatersgalvaniccorrosionandit-preventionaebauer.pdf",
+      "title": "Stainless Steel in Waters: Galvanic Corrosion and its Prevention",
+      "publisher": "Nickel Institute",
+      "retrieved": "2026-09-09",
+      "accessed": "inaccessible",
+      "used_for": "Sources reviewed: recorded as unreachable (HTTP 403 Forbidden); galvanic guidance was taken from R5R6-S32 instead",
+      "quote": ""
+    },
+    {
+      "id": "R5R6-S39",
+      "url": "https://www.hammfg.com/electronics/enclosures/plastic/1554",
+      "title": "1554 series watertight plastic enclosures",
+      "publisher": "Hammond Manufacturing",
+      "retrieved": "2026-09-09",
+      "accessed": "inaccessible",
+      "used_for": "Sources reviewed, BOM check ENC-ALT-001, quote-ready line 20: recorded as unreachable (HTTP 403 Forbidden on the manufacturer site, 60 s timeout on the Mouser part page), so ENC-ALT-001 has no availability result",
+      "quote": ""
+    },
+    {
+      "id": "R5R6-S40",
+      "url": "https://openknowledge.fao.org/handle/20.500.14283/cd8213en",
+      "title": "FAO OpenKnowledge repository record cd8213en (shellfish farming manual)",
+      "publisher": "Food and Agriculture Organization of the United Nations",
+      "retrieved": "2026-09-09",
+      "accessed": "inaccessible",
+      "used_for": "Sources reviewed: recorded as unreachable (HTTP 403 Forbidden); mooring evidence was taken from R5R6-S35 instead",
+      "quote": ""
+    }
+  ]
+}

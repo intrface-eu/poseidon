@@ -1,0 +1,44 @@
+[
+  {
+    "contract": "telemetry-envelope",
+    "mutation": "measurements.0.unit",
+    "value": "dB",
+    "reason": "temperature is Cel, not acoustic dB"
+  },
+  {
+    "contract": "telemetry-envelope",
+    "mutation": "sequence",
+    "value": true,
+    "reason": "boolean is not a counter"
+  },
+  {
+    "contract": "telemetry-envelope",
+    "mutation": "delivery_age_s",
+    "value": 604801,
+    "reason": "bounded offline delivery"
+  },
+  {
+    "contract": "telemetry-envelope",
+    "mutation": "provenance.source_kind",
+    "value": "real",
+    "reason": "unrecognized source kind"
+  },
+  {
+    "contract": "independent-observation",
+    "mutation": "end_s",
+    "value": 0,
+    "reason": "empty interval"
+  },
+  {
+    "contract": "signed-manifest",
+    "mutation": "payload.config.monitor_only",
+    "value": false,
+    "reason": "no active-output configuration"
+  },
+  {
+    "contract": "acquisition-session",
+    "mutation": "unexpected",
+    "value": "no",
+    "reason": "unknown field"
+  }
+]

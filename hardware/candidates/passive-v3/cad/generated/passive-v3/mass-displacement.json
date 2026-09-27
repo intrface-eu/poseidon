@@ -1,0 +1,298 @@
+{
+  "density_assumptions_kg_m3": {
+    "aluminium_6061": 2700,
+    "aluminium_7075": 2810,
+    "stainless_316": 8000,
+    "peek": 1300,
+    "polycarbonate": 1200,
+    "polyurethane": 1200,
+    "lanyard_polyester": 1380,
+    "seawater": 1025,
+    "fathom_bulk_effective": 1025
+  },
+  "per_part": [
+    {
+      "name": "V3_TUBE_AL6061_BR106279_300",
+      "geometric_volume_mm3": 450149.8615794387,
+      "modeled_mass_kg": 1.2154046262644844,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 2700,
+      "flooded_external_solid_displacement_mm3": 0,
+      "internal_or_pressure_shell_no_double_count": true,
+      "note": "Original enclosure tube fit proxy; compare catalog nominal 1.066 kg, not as-built mass."
+    },
+    {
+      "name": "V3_FLANGE_AFT_SOURCE_ID_CONFLICT",
+      "geometric_volume_mm3": 78814.44942936722,
+      "modeled_mass_kg": 0.21279901345929148,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 2700,
+      "flooded_external_solid_displacement_mm3": 0,
+      "internal_or_pressure_shell_no_double_count": true,
+      "note": "Flange supplier identity conflicts with archive filename; proxy models the envelope and fit bore."
+    },
+    {
+      "name": "V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT",
+      "geometric_volume_mm3": 78814.44942936722,
+      "modeled_mass_kg": 0.21279901345929148,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 2700,
+      "flooded_external_solid_displacement_mm3": 0,
+      "internal_or_pressure_shell_no_double_count": true,
+      "note": "Same unresolved supplier identity as aft flange; original fit proxy."
+    },
+    {
+      "name": "V3_AFT_CAP_5_M10_AL6061",
+      "geometric_volume_mm3": 81807.8109737518,
+      "modeled_mass_kg": 0.22088108962912986,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 2700,
+      "flooded_external_solid_displacement_mm3": 0,
+      "internal_or_pressure_shell_no_double_count": true,
+      "note": "Five traced penetrator bore positions; four remain OPEN. Original fit proxy, not a sealed boundary."
+    },
+    {
+      "name": "V3_DOME_POLYCARBONATE_BR107201",
+      "geometric_volume_mm3": 97483.3924541448,
+      "modeled_mass_kg": 0.11698007094497377,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 1200,
+      "flooded_external_solid_displacement_mm3": 0,
+      "internal_or_pressure_shell_no_double_count": true,
+      "note": "Hollow polycarbonate optical fit proxy; spherical surface allocation, not supplier design."
+    },
+    {
+      "name": "V3_DOME_RETAINING_RING_ALUMINIUM",
+      "geometric_volume_mm3": 17164.738429045465,
+      "modeled_mass_kg": 0.04634479375842276,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 2700,
+      "flooded_external_solid_displacement_mm3": 0,
+      "internal_or_pressure_shell_no_double_count": true,
+      "note": "Original retaining-ring fit proxy; supplier alloy unconfirmed."
+    },
+    {
+      "name": "V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT",
+      "geometric_volume_mm3": 3901.8580757585223,
+      "modeled_mass_kg": null,
+      "mass_basis": "unknown_omitted_not_solid_metal",
+      "density_assumption_kg_m3": null,
+      "flooded_external_solid_displacement_mm3": 2401.7475836693957,
+      "internal_or_pressure_shell_no_double_count": false,
+      "note": "Source revision measures 16 mm OD, current PDF states 18 mm. Original fit proxy; seal and compression unresolved."
+    },
+    {
+      "name": "V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS",
+      "geometric_volume_mm3": 7517.570916161139,
+      "modeled_mass_kg": null,
+      "mass_basis": "unknown_omitted_not_solid_metal",
+      "density_assumption_kg_m3": null,
+      "flooded_external_solid_displacement_mm3": 0,
+      "internal_or_pressure_shell_no_double_count": true,
+      "note": "Original camera PCB and optical envelope; internals and mass unknown."
+    },
+    {
+      "name": "V3_CAMERA_TRAY_PEEK_ALLOCATION",
+      "geometric_volume_mm3": 4080.0,
+      "modeled_mass_kg": 0.005304,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 1300,
+      "flooded_external_solid_displacement_mm3": 0,
+      "internal_or_pressure_shell_no_double_count": true,
+      "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+    },
+    {
+      "name": "V3_CAMERA_STANDOFF_00_PEEK",
+      "geometric_volume_mm3": 209.4261061106642,
+      "modeled_mass_kg": 0.00027225393794386344,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 1300,
+      "flooded_external_solid_displacement_mm3": 0,
+      "internal_or_pressure_shell_no_double_count": true,
+      "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+    },
+    {
+      "name": "V3_CAMERA_STANDOFF_01_PEEK",
+      "geometric_volume_mm3": 209.4261061106642,
+      "modeled_mass_kg": 0.00027225393794386344,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 1300,
+      "flooded_external_solid_displacement_mm3": 0,
+      "internal_or_pressure_shell_no_double_count": true,
+      "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+    },
+    {
+      "name": "V3_CAMERA_STANDOFF_10_PEEK",
+      "geometric_volume_mm3": 209.4261061106642,
+      "modeled_mass_kg": 0.00027225393794386344,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 1300,
+      "flooded_external_solid_displacement_mm3": 0,
+      "internal_or_pressure_shell_no_double_count": true,
+      "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+    },
+    {
+      "name": "V3_CAMERA_STANDOFF_11_PEEK",
+      "geometric_volume_mm3": 209.4261061106642,
+      "modeled_mass_kg": 0.00027225393794386344,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 1300,
+      "flooded_external_solid_displacement_mm3": 0,
+      "internal_or_pressure_shell_no_double_count": true,
+      "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+    },
+    {
+      "name": "V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "geometric_volume_mm3": 4523.893421169301,
+      "modeled_mass_kg": 0.008,
+      "mass_basis": "source_mass",
+      "density_assumption_kg_m3": null,
+      "flooded_external_solid_displacement_mm3": 4523.893421169301,
+      "internal_or_pressure_shell_no_double_count": false,
+      "note": "8 g distributor mass without cable. Outer encapsulated envelope is NOT solid-metal mass."
+    },
+    {
+      "name": "V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "geometric_volume_mm3": 25303.97045049796,
+      "modeled_mass_kg": 0.03289516158564735,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 1300,
+      "flooded_external_solid_displacement_mm3": 25303.97045049796,
+      "internal_or_pressure_shell_no_double_count": false,
+      "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+    },
+    {
+      "name": "V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "geometric_volume_mm3": 40004.32070881789,
+      "modeled_mass_kg": 0.05200561692146326,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 1300,
+      "flooded_external_solid_displacement_mm3": 40004.32070881789,
+      "internal_or_pressure_shell_no_double_count": false,
+      "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+    },
+    {
+      "name": "V3_DIVER_RELEASE_MOVING_JAW",
+      "geometric_volume_mm3": 15849.07993946813,
+      "modeled_mass_kg": 0.020603803921308568,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 1300,
+      "flooded_external_solid_displacement_mm3": 15849.07993946813,
+      "internal_or_pressure_shell_no_double_count": false,
+      "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+    },
+    {
+      "name": "V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "geometric_volume_mm3": 1094.5308805106833,
+      "modeled_mass_kg": 0.0014228901446638883,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 1300,
+      "flooded_external_solid_displacement_mm3": 1094.5308805106833,
+      "internal_or_pressure_shell_no_double_count": false,
+      "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+    },
+    {
+      "name": "V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "geometric_volume_mm3": 1406.6028450094773,
+      "modeled_mass_kg": 0.011252822760075819,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 8000,
+      "flooded_external_solid_displacement_mm3": 1406.6028450094773,
+      "internal_or_pressure_shell_no_double_count": false,
+      "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+    },
+    {
+      "name": "V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "geometric_volume_mm3": 1094.5308805106833,
+      "modeled_mass_kg": 0.0014228901446638883,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 1300,
+      "flooded_external_solid_displacement_mm3": 1094.5308805106833,
+      "internal_or_pressure_shell_no_double_count": false,
+      "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+    },
+    {
+      "name": "V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "geometric_volume_mm3": 1406.602845009478,
+      "modeled_mass_kg": 0.011252822760075824,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 8000,
+      "flooded_external_solid_displacement_mm3": 1406.602845009478,
+      "internal_or_pressure_shell_no_double_count": false,
+      "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+    },
+    {
+      "name": "V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "geometric_volume_mm3": 989.6016858807855,
+      "modeled_mass_kg": 0.0013656503265154839,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 1380,
+      "flooded_external_solid_displacement_mm3": 989.6016858807855,
+      "internal_or_pressure_shell_no_double_count": false,
+      "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+    },
+    {
+      "name": "V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "geometric_volume_mm3": 13633.86792655298,
+      "modeled_mass_kg": 0.013974714624716805,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 1025,
+      "flooded_external_solid_displacement_mm3": 13633.86792655298,
+      "internal_or_pressure_shell_no_double_count": false,
+      "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+    },
+    {
+      "name": "V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "geometric_volume_mm3": 48676.20456640115,
+      "modeled_mass_kg": 0.0632790659363215,
+      "mass_basis": "geometric_density_assumption",
+      "density_assumption_kg_m3": 1300,
+      "flooded_external_solid_displacement_mm3": 48676.20426309423,
+      "internal_or_pressure_shell_no_double_count": false,
+      "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+    },
+    {
+      "name": "V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "geometric_volume_mm3": 7769.890058620182,
+      "modeled_mass_kg": 0.013679114857512857,
+      "mass_basis": "source_mass",
+      "density_assumption_kg_m3": null,
+      "flooded_external_solid_displacement_mm3": 7769.890058620182,
+      "internal_or_pressure_shell_no_double_count": false,
+      "note": "28 g/m distributor linear cable mass for this modeled stub only; no full 30 m cable mass invented"
+    }
+  ],
+  "known_or_assumed_mass_subtotal_kg": 2.2627561772503344,
+  "actual_complete_dry_mass_kg": null,
+  "unknown_mass_parts": [
+    "V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT",
+    "V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS"
+  ],
+  "other_omitted_mass": [
+    "Tube/flange O-rings",
+    "locking cords",
+    "closure fasteners and isolation/engagement detail",
+    "unused-hole plugs or verified connector assemblies",
+    "pressure relief valve",
+    "WetLink nut and final compression/stripped-core termination",
+    "Full length 30 m transport, surface hub and farm rope, fouling and water ingress"
+  ],
+  "pressure_shell_material_volume_mm3": 804234.7022951152,
+  "conditional_sealed_external_envelope_volume_mm3": 3472353.4684303203,
+  "flooded_external_mount_and_stub_solid_volume_mm3": 164154.84348881117,
+  "conditional_total_displacement_m3": 0.0036365083119191313,
+  "seawater_mass_displaced_kg": 3.7274210197171094,
+  "modeled_upward_mass_difference_kg": 1.464664842466775,
+  "modeled_buoyancy_sign": "positive",
+  "sign_basis": "Conditional closed nominal exterior minus modeled mass subtotal only; incomplete real mass and open boundary prevent an actual unit buoyancy conclusion",
+  "actual_unit_buoyancy_sign": null,
+  "sealed_boundary_present": false,
+  "displacement_method": "OCP union of source-sized tube/flange/nominal cap cylinders with original hollow dome fit proxy and inner-sphere fill. Cap lifting ears omitted; chamfers/slots approximated. This conditional envelope is checked for BRep validity, one solid and volume retention. Flooded mounts contribute only their solids outside it, never bounding boxes. Internal camera/tray and EMPTY reserves add no sealed displacement.",
+  "source_mass_comparisons_kg": {
+    "tube": 1.066,
+    "each_flange_identity_unresolved": 0.107,
+    "aft_cap": 0.223,
+    "dome_and_ring_combined": 0.16
+  },
+  "physical_measurements_performed": 0
+}

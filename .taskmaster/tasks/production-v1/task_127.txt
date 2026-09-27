@@ -1,0 +1,23 @@
+{
+  "deliverablePaths": [
+    "docs/compliance/",
+    "conformity/eu/"
+  ],
+  "dependencies": [
+    125,
+    126
+  ],
+  "description": "Complete the applicable EU conformity route, technical file, risk evidence, test reports, declarations, and labels.",
+  "details": "Maintain a dated applicability matrix for RED, safety, EMC, spectrum, RoHS, REACH, WEEE, battery, cybersecurity, privacy, and support requirements. Purchased module marks do not establish final-system conformity.",
+  "id": 127,
+  "ownerRole": "conformity",
+  "phase": "P7",
+  "priority": "high",
+  "researchPackages": [
+    "R7"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Review the selected final configuration against qualified adviser/lab evidence; verify required risk file, test reports, declarations, labels, and permitted-use limits are complete.",
+  "title": "P7 EU Conformity and Technical File"
+}

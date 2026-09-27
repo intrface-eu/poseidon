@@ -1,0 +1,26 @@
+{
+  "blockedReason": "Blocked until permitted held-out local data supports the stated passive detection decision.",
+  "deliverablePaths": [
+    "research/results/r2-feasibility.md",
+    "models/acoustic/"
+  ],
+  "dependencies": [
+    107,
+    110
+  ],
+  "description": "Decide whether passive local detection is useful before expanding the build or proceeding to active research.",
+  "details": "Evaluate simple detectors before ML on held-out recordings split by recording/day/site. Report precision, recall, false alarms per hour, range, SNR, coverage, clock uncertainty, clipped input, visibility limits, resource use, and uncertainty. Decide one hydrophone versus conditional localization.",
+  "gate": "local-detection-feasibility",
+  "id": 111,
+  "ownerRole": "research-analysis",
+  "phase": "P2",
+  "priority": "high",
+  "researchPackages": [
+    "R2",
+    "R3"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Review the predeclared decision record against held-out results. If events are not separable at useful range, revise modality or placement rather than claiming detection readiness.",
+  "title": "P2 Held-Out Local Detection Feasibility Gate"
+}

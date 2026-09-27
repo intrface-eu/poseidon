@@ -1,0 +1,11 @@
+# Task ID: 24
+# Title: [nereid] Implement Droplet/Smudge Detection
+# Status: pending
+# Dependencies: 15, 16
+# Priority: low
+# Description: Develop a small classifier model to detect water droplets or smudges on the camera lens and integrate it into the NEREID pipeline to trigger the lens wiper.
+# Details:
+Collect a small dataset of 'clean' vs 'smudged' images. Train a simple CNN model (e.g., MobileNetV2-based) using TensorFlow/Keras and convert it to TFLite. In NEREID, add a step after camera capture to periodically run this classifier on the image. If the 'smudged' class score exceeds a threshold, invoke the `Wiper.sweep()` method or publish an internal command to trigger the cleaning cycle.
+
+# Test Strategy:
+Run NEREID with the new model. Spray a fine mist of water on the camera lens. Verify that the service logs detect a 'smudge' and that the servo wiper is triggered automatically. Check for false positives on clear images.

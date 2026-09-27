@@ -1,0 +1,25 @@
+{
+  "deliverablePaths": [
+    "apps/trident/src/poseidon_trident/",
+    "tests/trident/"
+  ],
+  "dependencies": [
+    107
+  ],
+  "description": "Build a local durable monitor workspace that reuses offline replay evidence and has no output or device-control capability.",
+  "details": "Implement the standard-library Hub workspace with single-owner locking, a restrictive private access token, separate hub metadata/job/review storage, immutable evidence files, recoverable queued replay jobs, waveform summaries, optional local video evidence, and append-only human review history. Reuse existing synthetic/offline replay semantics and keep the original evidence database schema unchanged. This foundation is local monitor software only: it adds no hardware control, network broker, field activity, permission claim, measurement threshold, spend, or efficacy claim.",
+  "id": 132,
+  "ownerRole": "software",
+  "phase": "P2-dev",
+  "priority": "high",
+  "researchPackages": [],
+  "status": "done",
+  "subtasks": [],
+  "testStrategy": "Run tests/trident/ for new/open/reopen workspace behavior, restrictive token creation, ownership locking, safe path rejection, import idempotency/conflict handling, replay restart recovery, queued job claims, review revision conflicts, waveform bounds, video attachment rejection, and closed resources.",
+  "title": "P2-dev Local Monitor Hub Foundation",
+  "verification": {
+    "date": "2026-09-07",
+    "evidencePath": "docs/validation/development-tranche-002.md",
+    "scope": "Local monitor-only Hub software, private local workspace handling, and offline or synthetic evidence processing. This verifies no field operation, hardware, output, permission, measurement, efficacy, production security, compliance, or production-readiness gate."
+  }
+}

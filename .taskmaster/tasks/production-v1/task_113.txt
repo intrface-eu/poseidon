@@ -1,0 +1,28 @@
+{
+  "blockedReason": "Blocked until an authorized controlled study satisfies preregistered efficacy and safety criteria.",
+  "deliverablePaths": [
+    "research/results/r3-efficacy.md",
+    "research/results/r4-non-target.md"
+  ],
+  "dependencies": [
+    103,
+    106,
+    112
+  ],
+  "description": "Run the approved controlled study before any protection claim or active product release.",
+  "details": "Use acoustic treatment, sham/no-output control, independent stock-loss and feeding measures, non-target observations, repeat-exposure/habituation analysis, and feasible non-acoustic alternatives. ARIEL 2019 LIM BAY DDD03L pinger results did not sustain protection after an initial quiet period; obtain/reanalyse raw protocol/data and do not assume efficacy.",
+  "gate": "active-efficacy",
+  "id": 113,
+  "ownerRole": "field-research",
+  "phase": "P4",
+  "priority": "high",
+  "researchPackages": [
+    "R3",
+    "R4"
+  ],
+  "status": "pending",
+  "stopCondition": "Failure, harm, or inconclusive results stop active development pending an explicit owner-approved monitor-only rebaseline.",
+  "subtasks": [],
+  "testStrategy": "Compare preregistered outcomes, uncertainty, adverse effects, habituation, economic value, and alternatives with independent farm/ecology review. If results fail, harm, or remain inconclusive, stop active development; the owner must explicitly approve a monitor-only product rebaseline. Do not auto-ship or weaken gates.",
+  "title": "P4 Controlled Efficacy, Habituation, and Non-Target Gate"
+}

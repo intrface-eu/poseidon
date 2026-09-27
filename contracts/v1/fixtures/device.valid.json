@@ -1,0 +1,8 @@
+{
+  "id": "synthetic-reef-001",
+  "site_id": "synthetic-site",
+  "label": "Synthetic contract fixture; not connected",
+  "kind": "reef",
+  "hardware_revision": "simulation-v1",
+  "source_kind": "synthetic"
+}

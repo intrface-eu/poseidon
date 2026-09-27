@@ -1,0 +1,21 @@
+{
+  "deliverablePaths": [
+    "research/flora/",
+    "research/results/r8-decision.md"
+  ],
+  "dependencies": [],
+  "description": "Research flora evidence separately from the core passive/protection product path.",
+  "details": "Review the actual algae/seagrass species and endpoint, then decide include/stop based on credible evidence and independently reviewed experiments covering light, nutrients, temperature, mixing, noise, and ecological effects.",
+  "id": 130,
+  "ownerRole": "field-research",
+  "phase": "R8",
+  "priority": "low",
+  "researchPackages": [
+    "R8"
+  ],
+  "status": "pending",
+  "stopCondition": "No credible replicated evidence or permission stops this track without blocking the core product.",
+  "subtasks": [],
+  "testStrategy": "Review the R8 decision with evidence, uncertainty, permissions, and stop condition; confirm no core production task depends on it.",
+  "title": "R8 Independent Flora Research Track"
+}

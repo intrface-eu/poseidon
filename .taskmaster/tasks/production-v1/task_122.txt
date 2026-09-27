@@ -1,0 +1,24 @@
+{
+  "deliverablePaths": [
+    "ops/ota/",
+    "firmware/ota/"
+  ],
+  "dependencies": [
+    117,
+    121
+  ],
+  "description": "Implement signed, target-checked, recoverable updates for hub and firmware.",
+  "details": "Select one hub update mechanism and an ESP signature verification path. Enforce manifests, compatibility, staged rollout, security floor, known-good recovery, power-loss rollback, and service recovery.",
+  "id": 122,
+  "ownerRole": "security-firmware",
+  "phase": "P5",
+  "priority": "high",
+  "researchPackages": [
+    "R5",
+    "R7"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Inject interruption at each update stage; reject unsigned, wrong-target, and below-floor images; verify recovery to a supported known-good or service-recovery state.",
+  "title": "P5 Signed Hub and ESP OTA with Rollback"
+}

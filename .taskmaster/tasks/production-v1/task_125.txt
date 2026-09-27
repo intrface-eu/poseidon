@@ -1,0 +1,30 @@
+{
+  "deliverablePaths": [
+    "docs/validation/evt/",
+    "hardware/test-jigs/"
+  ],
+  "dependencies": [
+    115,
+    116,
+    118,
+    120,
+    122,
+    123,
+    124
+  ],
+  "description": "Assemble engineering-validation units and verify integration before design validation.",
+  "details": "Measure fit, pressure/immersion plan, power, thermal, EMI, corrosion controls, serviceability, interfaces, field-safe behavior, and critical hazard controls. Control supplier substitutions and record failure analysis.",
+  "id": 125,
+  "ownerRole": "systems-engineering",
+  "phase": "P6",
+  "priority": "high",
+  "researchPackages": [
+    "R4",
+    "R5",
+    "R6"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Execute the EVT matrix with traceable raw results; resolve or formally disposition critical failures before candidate design freeze.",
+  "title": "P6 Integrated EVT"
+}

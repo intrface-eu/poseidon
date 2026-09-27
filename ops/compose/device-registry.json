@@ -1,0 +1,19 @@
+{
+  "schema_version": "poseidon.topic-registry.v1",
+  "simulation": true,
+  "devices": [
+    {"device_id":"synthetic-hub-1","site_id":"synthetic-site-1","zone_id":"synthetic-zone-1","revoked":false,"health_profile":{"stale_after_s":30,"offline_after_s":120}},
+    {"device_id":"synthetic-reef-1","site_id":"synthetic-site-1","zone_id":"synthetic-zone-1","revoked":false,"health_profile":{"stale_after_s":30,"offline_after_s":120}}
+  ],
+  "principals": [
+    {"username":"synthetic-device-hub","role":"device","site_ids":["synthetic-site-1"],"device_id":"synthetic-hub-1","revoked":false},
+    {"username":"synthetic-device-reef","role":"device","site_ids":["synthetic-site-1"],"device_id":"synthetic-reef-1","revoked":false},
+    {"username":"synthetic-operator","role":"operator","site_ids":["synthetic-site-1"],"device_id":null,"revoked":false},
+    {"username":"synthetic-viewer","role":"viewer","site_ids":["synthetic-site-1"],"device_id":null,"revoked":false},
+    {"username":"synthetic-admin","role":"admin","site_ids":["synthetic-site-1"],"device_id":null,"revoked":false}
+  ],
+  "legacy_service_grants": {
+    "chirpstack": ["write application/+/device/+/event/+", "read eu868/gateway/+/event/+"],
+    "aquilon": ["read application/+/device/+/event/up"]
+  }
+}

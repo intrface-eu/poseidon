@@ -1,0 +1,100 @@
+{
+  "reference": "HW-REF-1.1",
+  "configuration": "reference-v1",
+  "retrieved_date": "2026-09-08",
+  "method": "Public manufacturer HTML and PDF retrieval. PDF table values checked with curl and pdftotext; battery drawing also visually inspected. Facts below are vendor claims, not physical measurements.",
+  "sources": [
+    {
+      "id": "SRC-PI4",
+      "manufacturer": "Raspberry Pi",
+      "url": "https://pip.raspberrypi.com/documents/RP-008344-DS-raspberry-pi-4-product-brief.pdf",
+      "revision": "Published April 2026",
+      "locator": "pages 3 and 5",
+      "verified_facts": {"ram_4gb_variant_exists": true, "input_v": 5.0, "minimum_supply_a": 3.0, "alternative_recommended_supply_v": 5.1, "operating_ambient_c": [0, 50], "board_drawing_mm": [85, 56]},
+      "caveats": ["Drawing says approximate reference only, not production data.", "SC0194 is the hardware-lead reference ordering code, manufacturer SKU evidence pending; this product brief does not prove the code.", "Aggregate USB current 1.2A is a provisional allocation in this package, not verified by this retrieved brief. Verify current USB limit and board revision before power-path release."]
+    },
+    {
+      "id": "SRC-PI-PSU",
+      "manufacturer": "Raspberry Pi",
+      "url": "https://www.raspberrypi.com/products/type-c-power-supply/",
+      "revision": "Live manufacturer product page",
+      "locator": "Specifications",
+      "verified_facts": {"product_name": "Raspberry Pi 15W USB-C Power Supply", "output_v": 5.1, "output_a": 3.0, "input_ac_v": [100, 240], "captive_cable_m": 1.5, "cable_awg": 18},
+      "caveats": ["Regional EU ordering SKU not verified. Bench alternative only, never tied in parallel to DC converter. Mains remains outside the reference enclosure and outside this DC design."]
+    },
+    {
+      "id": "SRC-ESP",
+      "manufacturer": "Espressif",
+      "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html",
+      "revision": "ESP32-DevKitC V4 guide, live latest",
+      "locator": "Power Supply Options; J2 and J3 pin tables",
+      "verified_facts": {"board": "ESP32-DevKitC-32E", "module": "ESP32-WROOM-32E", "gpio17": "J3.11", "gpio16": "J3.12", "gpio21": "J3.6", "gpio22": "J3.3", "3V3": "J2.1", "5V": "J2.19", "GND": ["J2.14", "J3.1", "J3.7"]},
+      "caveats": ["Micro-USB, 5V-header and 3V3-header power options are mutually exclusive.", "GPIO16/17 are unavailable for this purpose on WROVER variants. No board substitution.", "GPIO logic is 3.3V, not 5V or 12V tolerant. Header power input labels are not GPIO voltage ratings.", "Available DevKit 3V3 regulator current and transient performance with radio are unverified."]
+    },
+    {
+      "id": "SRC-RAK",
+      "manufacturer": "RAKwireless",
+      "url": "https://docs.rakwireless.com/product-categories/wisduo/rak3272s-breakout-board/datasheet/",
+      "revision": "Live datasheet; J4 table applies to VerC",
+      "locator": "J4/J5 pin definitions; Electrical Characteristics; RF Characteristics",
+      "verified_facts": {"board": "RAK3272S", "module_family": "RAK3172", "vcc_v": [2.0, 3.3, 3.6], "uart2_tx": "J4.7 / PA2", "uart2_rx": "J4.8 / PA3", "stable_supply": "J5.9 / 3V3", "stable_ground": "J5.7 / GND", "tx_current_a_at_20dbm_868mhz": 0.087, "rx_current_a": 0.00522, "sleep_current_a_typical": 0.00000169, "documented_plan_dimensions_mm": [25.4, 32.3]},
+      "caveats": ["J4.9 is PA8 on VerB and 3V3 on VerC: do not use it as the common power pin.", "UART2/LPUART1 supports AT commands and firmware updates; UART1 has different configuration behavior.", "87mA is a vendor TX operating point, not worst-case current and not permission to transmit at 20dBm.", "Regional table says RAK3172P and prose contains apparent RAK3372 naming errors; exact EU868 core suffix, antenna connector and supplied firmware/order variant need supplier documentation, not invention.", "Module/board dimension wording is ambiguous; height and full connector envelope remain unresolved."]
+    },
+    {
+      "id": "SRC-SD50",
+      "manufacturer": "MEAN WELL",
+      "url": "https://www.meanwell.com/Upload/PDF/SD-50/SD-50-SPEC.PDF",
+      "revision": "SD-50-SPEC 2024-11-22",
+      "locator": "page 1 SD-50A-5 column; page 2 terminal assignments and dimensions",
+      "verified_facts": {"mpn": "SD-50A-5", "input_v": [9.2, 18.0], "output_nominal_v": 5.0, "output_adjustment_v": [4.5, 5.5], "rated_output_a": 10.0, "rated_output_w": 50.0, "efficiency_typical": 0.70, "dimensions_lwh_mm": [159, 97, 38], "mass_kg": 0.43, "input_output_withstand_vac": 1500, "input_fg_withstand_vac": 2000, "output_fg_withstand_vac": 500, "terminal_map": {"1": "DC INPUT V+", "2": "DC INPUT V-", "3": "FG", "4": "DC OUTPUT -V", "5": "DC OUTPUT +V"}, "overvoltage_trip_range_v_at_10_percent_load": [5.75, 6.75], "working_ambient_c": [-10, 60]},
+      "caveats": ["Earlier automated summary incorrectly gave 9.5V input minimum, 78% efficiency, 111.5x97x36mm, DC isolation, and 20A inrush. Direct PDF inspection supersedes all those values.", "Inrush current is NOT specified in this retrieved datasheet; all inrush model inputs are assumptions.", "50W and 10A are nominal at 5V: at 5.1V do not assume 51W available.", "Orientation and ambient derating curves apply; 60C is not full-load approval.", "Internal overvoltage trip is above Pi nominal supply and is not adequate evidence of Pi protection. Separate validated 5V OVP/current limit and USB-C source path remain unresolved.", "Isolation withstand is a component test rating, not verified system galvanic isolation or marine electrical qualification."]
+    },
+    {
+      "id": "SRC-MPPT",
+      "manufacturer": "Victron Energy",
+      "url": "https://www.victronenergy.com/upload/documents/Datasheet-SmartSolar-charge-controller-MPPT-75-10,-75-15,-100-15,-100-20_48V-EN.pdf",
+      "additional_urls": ["https://www.victronenergy.com/upload/documents/BlueSolar-&-SmartSolar-MPPT-75-10-&-75-15.pdf"],
+      "revision": "Datasheet retrieved 2026-09-08; dimension drawing Rev00",
+      "locator": "page 1, 75/10 column; drawing title block",
+      "verified_facts": {"mpn": "SCC075010060R", "name": "SmartSolar MPPT 75/10 Retail", "battery_system_v": [12, 24], "max_charge_a": 10, "nominal_pv_w_at_12v": 145, "max_pv_voc_v": 75, "max_pv_isc_a": 13, "load_output_continuous_a": 15, "self_consumption_load_on_a_at_12v": 0.019, "self_consumption_load_off_a_at_12v": 0.010, "dimensions_hwd_mm": [100, 113, 40], "mass_kg": 0.5, "pv_start_margin_over_battery_v": 5, "pv_running_margin_over_battery_v": 1, "full_rated_output_max_ambient_c": 40, "electronics_ip": "IP43", "terminal_area_ip": "IP22"},
+      "caveats": ["No invented linear 1.5%/C derating: direct PDF states full output up to40C only.", "Controller is above water inside a weather enclosure. It is not a battery BMS.", "Battery chemistry settings, external BMS charge/load disconnect path, low temperature inhibition and cold-start behavior remain open.", "Terminal torque, wire ratings, sense/data isolation and mounting clearances require installation manual review."]
+    },
+    {
+      "id": "SRC-BATTERY",
+      "manufacturer": "Victron Energy",
+      "url": "https://www.victronenergy.com/media/pg/Lithium_Battery_Smart/en/technical-data.html",
+      "additional_urls": ["https://www.victronenergy.com/media/pg/Lithium_Battery_Smart/en/introduction.html", "https://www.victronenergy.com/upload/documents/LiFePO4-Battery-12.8V50AH-Smart.pdf"],
+      "revision": "Live Smart battery manual; drawing Rev01",
+      "locator": "12.8V/50Ah column; introduction external BMS paragraph; drawing page1 title block",
+      "verified_facts": {"mpn": "BAT512050610", "nominal_v": 12.8, "capacity_ah_at_25c": 50, "energy_wh_at_25c": 640, "capacity_ah_at_0c": 40, "capacity_ah_at_minus20c": 25, "dimensions_hwd_mm_from_manual": [199, 188, 147], "mass_kg": 7, "terminal": "M8 threaded inserts", "charge_voltage_v": [14.0, 14.4], "recommended_charge_v": 14.2, "float_v": 13.5, "end_of_discharge_v": 11.2, "recommended_charge_current_max_a": 30, "recommended_discharge_current_max_a": 50, "charge_temperature_c": [5, 50], "discharge_temperature_c": [-20, 50], "external_bms_required": true},
+      "caveats": ["Integrated BTV is cell balancing/temperature/voltage monitoring, NOT a complete disconnect BMS.", "Drawing shows 173mm body width and 7mm protrusion; reconcile width/drawing revision with manual188mm before released fit. Use conservative CAD W188 D147 H199 plus independent terminal/tool keepout.", "Old181x77x167mm provisional battery envelope is incompatible. Lead/CAD integration update is separate; electrical sources do not assert fit.", "Charge/discharge current ratings are not fault current or fuse interrupt ratings. No prospective short-circuit measurement exists."]
+    },
+    {
+      "id": "SRC-PANEL",
+      "manufacturer": "Victron Energy",
+      "url": "https://www.victronenergy.com/upload/documents/Datasheet-BlueSolar-Monocrystalline-Panels-EN.pdf",
+      "revision": "Manufacturer table retrieved 2026-09-08; includes discontinued alternatives",
+      "locator": "page1 SPM040401200 row and coefficient/connector table",
+      "verified_facts": {"mpn": "SPM040401200", "name": "40W-12V Mono series4a", "dimensions_mm_as_listed": [425, 668, 25], "mass_kg": 3.1, "stc_power_w": 40, "vmp_v": 18.3, "imp_a": 2.19, "voc_v": 22.45, "isc_a": 2.4, "voc_temperature_coefficient_per_c": -0.0035, "power_tolerance_fraction": 0.03, "factory_cable": "No cable for this small-panel column"},
+      "caveats": ["Map rotated CAD X668 Y425 Z25; frame/mounting and junction box access additional. Do not assume MC4 cable is supplied on this40W model.", "55W SPM040551200 is marked discontinued,545x668x25mm, not selected.", "Availability/quote/current revision unknown. Resolved extraction correction: sibling initially confused the discontinuation marker; lead and electrical direct visual inspection agree40W has no(2), while30W/55W have(2); sibling retracted. Retrieved PDF SHA256 ad32cb7fe0ec45ceb325b3b61ba71e60b9d9a53c6a7808404a632cb0d727e191. Absence of that marker does not prove current production or availability. STC watts are not winter yield. Hot-panel startup versus14.4V battery must be tested."]
+    },
+    {
+      "id": "SRC-HAMMOND",
+      "manufacturer": "Hammond Manufacturing",
+      "url": "https://www.hammfg.com/files/parts/pdf/1554V2GY.pdf",
+      "revision": "1554V drawing REV28.02.2020",
+      "locator": "page1 dimensions and part table",
+      "verified_facts": {"mpn": "1554V2GY", "material": "Polycarbonate RAL7035", "exterior_lwh_mm": [240, 160, 90.5], "inside_length_width_height_mm": [232.26, 148.26, 83.5], "drawing_label": "UL Type4,4X polycarbonate version only", "included": ["box", "lid", "4 cover screws", "preformed silicone gasket"]},
+      "caveats": ["Not a fit-equivalent to HUB400x300x180 or REEF300x220x140 reference envelopes. Screened alternate only; selected enclosure SKU is unresolved.", "No assembled modified enclosure ingress or marine rating is claimed; glands, mounting, sealing and environment remain unqualified."]
+    },
+    {
+      "id": "SRC-WET-CANDIDATE",
+      "manufacturer": "Blue Robotics",
+      "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-locking-tube-r1-vp/",
+      "revision": "Live product selector retrieved2026-09-08",
+      "locator": "Tube variants and contents",
+      "verified_facts": {"family": "Watertight Enclosure locking-series tubes", "tube_only": true},
+      "caveats": ["Exact diameter/length/material/revision SKU and matching endcaps, window, flanges, O-rings, penetrators unresolved. No tube or system depth rating adopted in this design.", "Vendor revisions carry different ratings. Do not copy a family depth claim onto an unselected assembled system.", "Wet110mm-diameter x250mm envelope is provisional, not vendor geometry. Printed parts never form the pressure boundary."]
+    }
+  ]
+}

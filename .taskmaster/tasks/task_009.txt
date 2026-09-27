@@ -1,0 +1,11 @@
+# Task ID: 9
+# Title: [aeolus-ui] Create Minimal Live Event Viewer
+# Status: pending
+# Dependencies: 3
+# Priority: medium
+# Description: Bootstrap a Next.js application in `apps/aeolus-ui/` that connects to the cloud MQTT broker via WebSockets and displays a raw, real-time feed of all messages published under `poseidon/#`.
+# Details:
+Use `create-next-app` to initialize the project. Use a library like `mqtt.js` in a React client component or a custom hook (`useMqtt`). In a `useEffect` hook, connect to the broker's WebSocket port (e.g., `ws://<broker_ip>:8083`). Subscribe to `poseidon/#`. Store incoming messages in a React state array and render them as a simple list on the page.
+
+# Test Strategy:
+Run the Next.js dev server. Open the browser page. Trigger motion events on the Pi. Verify that `vision/event` and `audio/cmd` messages appear on the UI in real-time. Check the browser's developer console for connection errors.

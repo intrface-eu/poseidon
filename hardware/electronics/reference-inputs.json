@@ -1,0 +1,39 @@
+{
+  "reference": "HW-REF-1.1",
+  "configuration": "reference-v1",
+  "evidence_kind": "calculated_reference_not_measured",
+  "provenance": {
+    "battery_rail": "SRC-BATTERY:11.2V end-of-discharge,14.4V upper charge. Nominal HUB bus12V is a reference, not measured regulation or transient bound.",
+    "converter": "SRC-SD50:9.2..18V,50W,10A,70% typical. Adjust5.1V only after qualification. Assumed50% available-power factor is a sensitivity input, not a read-off approved derating curve.",
+    "hub_loads": "ALL STATE CURRENTS ASSUMED. Pi-only allocations exclude separately listed USB load. USB1.2A aggregate provisional allocation requires official limit/revision confirmation. DAQ/storage placeholder draw is inside USB; wet camera terminal power is separate and calculated tether copper/contact loss at minimum battery voltage is added to the HUB input budget. No modem/gateway/lighting/heater/array/wiper/projector load included; these missing loads block final sizing.",
+    "reef_loads": "Whole ESP DevKit and interface currents are assumed, not chip deep-sleep data. Dedicated3.3V radio converter candidate is unselected; do not draw it from DevKit3V3.120mA radio burst allocation exceeds vendor87mA operating point but is not a measured maximum. MPPT19mA at12V is vendor load-on data; BMS0.1W and converter efficiencies are assumptions.",
+    "inrush": "Capacitance4700uF,10ms linear voltage ramp, simultaneous startup, no active limiter are assumptions. Converter input capacitance/inrush is absent from retrieved datasheet. Capacitor ramp current is not an actual hot-plug peak bound.",
+    "tether": "25m one-way,0.75mm2 copper,40C,50mohm total contacts are examples only; not site cable/USB transport selections. Copper resistivity0.0175ohm mm2/m at20C and coefficient0.00393/C are handbook-level modeling assumptions.9..16V camera input range is not a vendor rating.",
+    "thermal": "35C shaded ambient,1.5K/W enclosure-to-air resistance and0.12m2 solar area/800Wm2/0.5absorptivity are assumed. All Pi/USB and DC/DC loss heat stays in HUB, camera power leaves enclosure. No measured thermal resistance or junction model; Pi50C is ambient limit, not junction.",
+    "solar": "SRC-PANEL40W STC,Voc22.45,Isc2.4,betaVoc-0.0035/C.1peak-sun-hour/day,0.65field derate,0.9charge efficiency and0.9discharge-path efficiency from reserve model (all solar energy conservatively cycles through storage before load-side comparison),1.25Isc factor,-10C cold cell and70C hot cell are sensitivity assumptions, not site data.40W model not suitable by mere catalog wattage.",
+    "reserve": "SRC-BATTERY12.8V50Ah at25C.0.8DoD,0.8aged capacity,0.8cold capacity (vendor0C value),0.9discharge path efficiency and3days requested reserve are scenarios, not warranted lifetime/autonomy. Reserve applies to one REEF; HUB-on-same-battery is a separate illustration. Charging at0C is prohibited by candidate battery despite modeled discharge capacity."
+  },
+  "rails": {"bus_nominal_v":12.0,"battery_nominal_v":12.8,"battery_min_v":11.2,"battery_max_v":14.4,"pi_source_v":5.1,"pi_min_supply_a":3.0,"pi_only_peak_a":1.8,"usb_budget_a":1.2,"esp_supply_v":5.0,"radio_supply_v":3.3,"radio_min_v":2.0,"radio_max_v":3.6,"devkit_3v3_spare_a":null},
+  "converter": {"min_input_v":9.2,"max_input_v":18.0,"efficiency":0.70,"rated_output_w":50.0,"rated_output_a":10.0,"assumed_available_power_factor":0.5},
+  "hub_states": [
+    {"name":"idle","hours":1.0,"pi_a":0.55,"usb_a":0.15,"camera_load_w":0.0},
+    {"name":"record","hours":20.0,"pi_a":1.2,"usb_a":0.6,"camera_load_w":4.0},
+    {"name":"upload","hours":3.0,"pi_a":1.5,"usb_a":0.8,"camera_load_w":4.0}
+  ],
+  "hub_peak": {"pi_a":1.8,"usb_a":1.2,"camera_load_w":8.0},
+  "reef": {
+    "efficiency_5v":0.8,"efficiency_3v3":0.8,"mppt_self_consumption_a_at_12v":0.019,"bms_assumed_w":0.1,
+    "states":[
+      {"name":"idle","hours":23.0,"esp_a":0.08,"radio_a":0.00522,"probe_bus_w":0.2},
+      {"name":"sample_and_uplink","hours":1.0,"esp_a":0.25,"radio_a":0.12,"probe_bus_w":1.0}
+    ],
+    "peak":{"esp_a":0.5,"radio_a":0.12,"probe_bus_w":1.0},
+    "vendor_radio_tx_operating_point_a":0.087
+  },
+  "inrush": {"input_capacitance_f":0.0047,"voltage_ramp_s":0.01},
+  "tether": {"one_way_m":25.0,"area_mm2":0.75,"conductor_c":40.0,"contact_loop_ohm":0.05,"resistivity_20c_ohm_mm2_per_m":0.0175,"temperature_coefficient_per_c":0.00393,"camera_power_w":8.0,"assumed_camera_min_v":9.0,"assumed_camera_max_v":16.0},
+  "thermal": {"ambient_c":35.0,"enclosure_rth_k_per_w":1.5,"pi_max_ambient_c":50.0,"sun_irradiance_w_m2":800.0,"exposed_area_m2":0.12,"absorptivity":0.5},
+  "battery": {"capacity_ah":50.0,"usable_depth_fraction":0.8,"aged_capacity_fraction":0.8,"cold_capacity_fraction":0.8,"discharge_efficiency":0.9,"reserve_days":3.0},
+  "solar": {"panel_stc_w":40.0,"peak_sun_hours":1.0,"field_derate":0.65,"charge_efficiency":0.9,"panel_voc_stc_v":22.45,"panel_isc_stc_a":2.4,"voc_temperature_coefficient_per_c":-0.0035,"cold_cell_c":-10.0,"hot_cell_c":70.0,"isc_sizing_multiplier":1.25,"mppt_max_voc_v":75.0,"mppt_max_isc_a":13.0,"mppt_max_charge_a":10.0,"mppt_start_margin_v":5.0},
+  "default_population": {"amplifier_installed":false,"projector_connected":false,"wiper_installed":false,"output_actuation_gpio":[]}
+}

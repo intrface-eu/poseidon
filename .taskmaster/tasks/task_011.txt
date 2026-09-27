@@ -1,0 +1,11 @@
+# Task ID: 11
+# Title: [esp-sentinel] Implement Basic Firmware with LoRaWAN OTAA
+# Status: pending
+# Dependencies: 1
+# Priority: high
+# Description: Create the PlatformIO project for the ESP32-based REEF node. Implement the basic firmware to join a LoRaWAN network (e.g., ChirpStack) via OTAA and enter a deep sleep cycle.
+# Details:
+In `firmware/esp-sentinel`, initialize a new PlatformIO project targeting a Heltec/TTGO board. Use the `MCCI LoRaWAN LMIC` library. In `main.cpp`, define the `AppEUI`, `DevEUI`, and `AppKey`. Implement the LMIC event callback to handle `EV_JOINED`. After a successful join, send a simple 'hello' packet and then use `ESP.deepSleep()` to sleep for a configured interval.
+
+# Test Strategy:
+Flash the firmware to an ESP32 board. In the ChirpStack or TTS console, verify that the device join request is received and accepted. Check the device's activation status and last-seen timestamp in the network server UI. Monitor serial output for join success and sleep cycle logs.

@@ -1,0 +1,305 @@
+{
+  "configuration": "passive-v2",
+  "revision": "HW-CAND-2.0",
+  "status": "NON_ADOPTED_NOT_BUILD_AUTHORIZED",
+  "adopted": false,
+  "build_authorized": false,
+  "units": "mm",
+  "parent_interface": {
+    "path": "hardware/candidates/passive-v2/interface.json",
+    "sha256": "47417cece50fad016051e953fbabb29473bb55fbbad18f2d6d562d567528cd17"
+  },
+  "source_files": [
+    {
+      "path": "hardware/candidates/passive-v2/interface.json",
+      "sha256": "47417cece50fad016051e953fbabb29473bb55fbbad18f2d6d562d567528cd17"
+    },
+    {
+      "path": "hardware/candidates/passive-v2/power/part-envelopes.json",
+      "sha256": "94e5b6e80ea2241a485a0b136d6985168e2bd47efee70a1fd4595ae62be5c5ec"
+    },
+    {
+      "path": "hardware/candidates/passive-v2/sources/Hammond-1550WJ.pdf",
+      "sha256": "c5a25909908b686e83fe3ade063e770f9c9f359dd3177e28054f50ed305ca969"
+    },
+    {
+      "path": "hardware/candidates/passive-v2/sources/Henkel-SIL-PAD-TSP-1600.pdf",
+      "sha256": "58f544583f86db7eb03736797e1d907a567717aecf095e8a0be5c29127dda9e3"
+    },
+    {
+      "path": "hardware/candidates/passive-v2/sources/Wakefield-Thermal-Extrusions-2025.pdf",
+      "sha256": "7baf0f6a605e88bd0a014414fea7d6776af4d20e62a0a6dafd33fa69c9913911"
+    },
+    {
+      "path": "hardware/cad/sources/RP-008343-DS-raspberry-pi-4-mechanical-drawing.pdf",
+      "sha256": "a5c88057563016631ebca26666fd672614fc9aaa1c59128a541612c7798e9809"
+    },
+    {
+      "path": "hardware/cad/sources/Datasheet-BlueSolar-Monocrystalline-Panels-EN.pdf",
+      "sha256": "ad32cb7fe0ec45ceb325b3b61ba71e60b9d9a53c6a7808404a632cb0d727e191"
+    },
+    {
+      "path": "hardware/cad/sources/Victron-Lithium-Battery-Smart-technical-data.html",
+      "sha256": "025ac0673f80092118abc92f6e134ce4fbba659fa0af5f7e360b66cbe34980b0"
+    }
+  ],
+  "panel": {
+    "count": 2,
+    "series_count": 2,
+    "parallel_count": 1,
+    "size_mm": [
+      668,
+      425,
+      25
+    ],
+    "mpn": "SPM040401200",
+    "bom_id": "V2-PV-001",
+    "source_id": "SRC-PANEL"
+  },
+  "battery": {
+    "size_mm": [
+      188,
+      147,
+      199
+    ],
+    "mpn": "BAT512050610",
+    "bom_id": "V2-BAT-001",
+    "source_id": "SRC-BATTERY"
+  },
+  "panel_gap_mm": 50,
+  "battery_terminal_gap_mm": 40,
+  "cable_radius_mm": 56,
+  "cable_diameter_mm": 8,
+  "hub": {
+    "size_mm": [
+      275,
+      66.6,
+      175
+    ],
+    "inside_reference_lwh_mm": [
+      266.91,
+      166.91,
+      61.6
+    ],
+    "usable_lwh_allocation_mm": [
+      245,
+      145,
+      48
+    ],
+    "mpn": "1550WJ",
+    "bom_id": "C2-ENC-HUB-01",
+    "source_id": "C2-SRC-HAMMOND-1550WJ",
+    "source_bound": true,
+    "dimension_status": "SOURCE_VERIFIED_OVERALL_ENVELOPE_DETAIL_PROVISIONAL",
+    "base_thickness_mm": 2.5,
+    "lid_thickness_mm": 1.5
+  },
+  "collector": {
+    "size_mm": [
+      200,
+      6,
+      120
+    ],
+    "bom_id": "C2-COLLECTOR-01"
+  },
+  "tim": {
+    "bom_id": "C2-TIM-01",
+    "source_id": "C2-SRC-HENKEL-TSP1600",
+    "thickness_mm": 0.127,
+    "patch_xz_mm": [
+      200,
+      70
+    ],
+    "layer_count": 2
+  },
+  "sink": {
+    "size_mm": [
+      273.812,
+      95.758,
+      76.2
+    ],
+    "base_thickness_mm": 15.748,
+    "bom_id": "C2-SINK-01",
+    "source_id": "C2-SRC-WAKEFIELD-XX4559",
+    "mpn": "125460"
+  },
+  "shade": {
+    "size_xy_mm": [
+      375,
+      275
+    ],
+    "thickness_mm": 1.5,
+    "gap_mm": 75,
+    "overhang_mm": 50,
+    "bom_id": "C2-SHADE-01"
+  },
+  "reef_box": {
+    "size_mm": [
+      300,
+      220,
+      140
+    ],
+    "bom_id": "C2-REEF-ENC-ALLOCATION"
+  },
+  "wiring": {
+    "series_bom_id": "C2-PV-SERIES-HARNESS"
+  },
+  "power_components": [
+    {
+      "id": "V2-PV-001",
+      "manufacturer": "Victron Energy",
+      "mpn": "SPM040401200",
+      "quantity": 2,
+      "cad_envelope_xyz_mm": [
+        668,
+        425,
+        25
+      ],
+      "envelope_status": "vendor table dimensions rotated; inherited verified source",
+      "service_keepout_mm": null,
+      "source_url": "https://www.victronenergy.com/upload/documents/Datasheet-BlueSolar-Monocrystalline-Panels-EN.pdf",
+      "notes": "Two physical panels wired in series. Availability, mounting and junction-box cable clearance remain open."
+    },
+    {
+      "id": "V2-BAT-001",
+      "manufacturer": "Victron Energy",
+      "mpn": "BAT512050610",
+      "quantity": 1,
+      "cad_envelope_xyz_mm": [
+        188,
+        147,
+        199
+      ],
+      "envelope_status": "inherited conservative manual dimensions W/D/H",
+      "service_keepout_mm": {
+        "above_terminals": 40
+      },
+      "source_url": "https://www.victronenergy.com/media/pg/Lithium_Battery_Smart/en/technical-data.html",
+      "notes": "Smart battery, NOT NG; existing1.1 source/drawing-width caveat retained. Terminal service keepout is provisional."
+    },
+    {
+      "id": "V2-MPPT-001",
+      "manufacturer": "Victron Energy",
+      "mpn": "SCC075010060R",
+      "quantity": 1,
+      "cad_envelope_xyz_mm": [
+        113,
+        40,
+        100
+      ],
+      "envelope_status": "inherited manufacturer W/D/H, candidate mounting orientation must retain cooling",
+      "service_keepout_mm": null,
+      "source_url": "https://www.victronenergy.com/upload/documents/BlueSolar-&-SmartSolar-MPPT-75-10-&-75-15.pdf",
+      "notes": "VE.Direct port reserved for charge-disable cable, not simultaneous telemetry. Terminal/cooling space open."
+    },
+    {
+      "id": "V2-BMS-001",
+      "manufacturer": "Victron Energy",
+      "mpn": "BMS400100000",
+      "quantity": 1,
+      "cad_envelope_xyz_mm": [
+        107,
+        46,
+        23
+      ],
+      "envelope_status": "CONSERVATIVE UNION, NOT ONE VERIFIED VENDOR ENVELOPE: drawing107x46x12 versus datasheet106x42x23; reconcile exact revision/cover",
+      "service_keepout_mm": {
+        "connector_access": 30
+      },
+      "source_url": "https://www.victronenergy.com/upload/documents/smallBMS.pdf",
+      "additional_source_url": "https://www.victronenergy.com/upload/documents/Datasheet-smallBMS-with-pre-alarm-EN-.pdf",
+      "notes": "smallBMS with pre-alarm for Lithium Battery Smart; compatible family verified, not NG. Keepout provisional."
+    },
+    {
+      "id": "V2-LOADSW-001",
+      "manufacturer": "Victron Energy",
+      "mpn": "BPR065022000",
+      "quantity": 1,
+      "cad_envelope_xyz_mm": [
+        106.3,
+        55,
+        46
+      ],
+      "envelope_status": "drawing Rev01 overall plan and base24+terminal22 height; manual40x48x106 differs, use larger drawing envelope pending reconciliation",
+      "service_keepout_mm": {
+        "terminal_access": 40
+      },
+      "source_url": "https://www.victronenergy.com/upload/documents/Smart-BatteryProtect_12V-24V-65A.pdf",
+      "notes": "Smart BatteryProtect12/24V65A, load path only IN from battery OUT to regulators. M6 studs; no reverse charging. Additional cable/tool space provisional."
+    },
+    {
+      "id": "V2-REG5-001",
+      "manufacturer": "Pololu",
+      "mpn": "D36V28F5",
+      "manufacturer_item": "3782",
+      "quantity": 1,
+      "cad_envelope_xyz_mm": [
+        20.3,
+        17.8,
+        8.8
+      ],
+      "envelope_status": "manufacturer board envelope rotated; added headers/wires not included",
+      "service_keepout_mm": {
+        "all_plan_sides": 5
+      },
+      "source_url": "https://www.pololu.com/product/3782",
+      "notes": "Independent5V REEF supply only, not USB-C source. 5V+/-4%; exact fault thresholds/derating transient qualification open."
+    },
+    {
+      "id": "V2-REG3-001",
+      "manufacturer": "Pololu",
+      "mpn": "D36V28F3",
+      "manufacturer_item": "3781",
+      "quantity": 1,
+      "cad_envelope_xyz_mm": [
+        20.3,
+        17.8,
+        8.8
+      ],
+      "envelope_status": "manufacturer board envelope rotated; added headers/wires not included",
+      "service_keepout_mm": {
+        "all_plan_sides": 5
+      },
+      "source_url": "https://www.pololu.com/product/3781",
+      "notes": "Independent3.3V RAK supply, not DevKit spare. No12V/5V direct GPIO. Lower-profile/service space provisional."
+    },
+    {
+      "id": "V2-CHGCTRL-001",
+      "manufacturer": "Victron Energy",
+      "mpn": "ASS030550320",
+      "quantity": 1,
+      "cad_envelope_xyz_mm": null,
+      "envelope_status": "UNKNOWN cable/inline-module dimensions; reserve routing without inventing module geometry",
+      "service_keepout_mm": null,
+      "source_url": "https://www.victronenergy.com/upload/documents/Manual-VE.Direct-non-inverting-remote-on-off-cable-EN.pdf",
+      "notes": "smallBMS charge-disconnect to MPPT75/10 VE.Direct RX remote-on/off; charger off on low/floating; exact RX setting mandatory."
+    },
+    {
+      "id": "V2-PIBENCH-001",
+      "manufacturer": "Raspberry Pi / Kuantech",
+      "mpn": "KSA-15E-051300HE",
+      "manufacturer_product_code": "SC0444",
+      "quantity": 1,
+      "cad_envelope_xyz_mm": null,
+      "envelope_status": "bench-external only; EU plug drawing not yet dimension-extracted, no HUB placement",
+      "service_keepout_mm": null,
+      "source_url": "https://datasheets.raspberrypi.com/power-supply/usb-c-power-supply-product-brief.pdf",
+      "notes": "Official white EU15W USB-C PSU; product brief April2024 verifies SC0444. Dry bench external mains alternative only. Does NOT resolve12V DC field source/CC/OVP implementation."
+    }
+  ],
+  "frozen_comparison": {
+    "ambient_c": 35,
+    "enclosed_peak_heat_w": 21.857142857,
+    "potential_absorbed_sun_w": 48,
+    "reef_daily_load_wh": 27.5247475,
+    "peak_sun_hours": 1
+  },
+  "unknowns": {
+    "heat_capture_fraction": null,
+    "source_to_collector_resistance_k_per_w": null,
+    "installed_sink_resistance_k_per_w": null,
+    "residual_solar_fraction": null,
+    "whole_box_thermal_pass": null,
+    "field_usb_c_source_dimensions": null
+  }
+}

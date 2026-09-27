@@ -1,0 +1,10 @@
+Poseidon Trident
+Copyright (C) 2026 INTRFACE j.d.o.o.
+
+First-party code in apps/, libs/, contracts/, firmware/, scripts/, tests/ and ops/ is licensed under AGPL-3.0-or-later (LICENSES/AGPL-3.0-or-later.txt; also LICENSE at the repository root).
+Hardware design files in hardware/, including CAD source, exports, BOMs and drawings, are licensed under CERN-OHL-S-2.0 (LICENSES/CERN-OHL-S-2.0.txt).
+Documentation, research and datasets in docs/, research/, datasets/ and first-party *.md files are licensed under CC-BY-4.0 (LICENSES/CC-BY-4.0.txt).
+
+Third-party material retains its own copyright and license notices where indicated. Vendor CAD files and datasheets are not redistributed here; the hardware scripts fetch them from their respective suppliers. Access and use remain subject to those suppliers' terms.
+
+These licenses do not grant rights to the "Poseidon Trident" or "INTRFACE" trademarks.

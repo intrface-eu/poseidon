@@ -1,0 +1,371 @@
+{
+  "accounting_caveat": "Positive catalog-nominal overlay on unchanged baseline, including its existing0.1W generic BMS assumption. Do not subtract that allowance or change0.8 regulator efficiencies. Overlay may double-count some low-load conversion loss; it is conservative against the baseline but is NOT a worst-case bound because vendor quiescent values are typical and unknown outputs/conduction remain.",
+  "all_hardware_qualified": false,
+  "ancillary_accounting": {
+    "actual_autonomy_days": null,
+    "actual_total_ancillary_w": null,
+    "actual_total_candidate_load_wh_per_day": null,
+    "cases": [
+      {
+        "assumed_unknown_extra_w": 0.0,
+        "autonomy_qualified": false,
+        "candidate_load_wh_per_day_under_assumption": 30.4738675,
+        "energy_screen_passes_under_assumption": true,
+        "measured_or_guaranteed": false,
+        "net_load_side_wh_per_day_under_assumption": 11.6461325,
+        "zero_solar_days_under_assumption": 9.677537648
+      },
+      {
+        "assumed_unknown_extra_w": 0.1,
+        "autonomy_qualified": false,
+        "candidate_load_wh_per_day_under_assumption": 32.8738675,
+        "energy_screen_passes_under_assumption": true,
+        "measured_or_guaranteed": false,
+        "net_load_side_wh_per_day_under_assumption": 9.2461325,
+        "zero_solar_days_under_assumption": 8.971016264
+      },
+      {
+        "assumed_unknown_extra_w": 0.25,
+        "autonomy_qualified": false,
+        "candidate_load_wh_per_day_under_assumption": 36.4738675,
+        "energy_screen_passes_under_assumption": true,
+        "measured_or_guaranteed": false,
+        "net_load_side_wh_per_day_under_assumption": 5.6461325,
+        "zero_solar_days_under_assumption": 8.085569758
+      },
+      {
+        "assumed_unknown_extra_w": 0.5,
+        "autonomy_qualified": false,
+        "candidate_load_wh_per_day_under_assumption": 42.4738675,
+        "energy_screen_passes_under_assumption": false,
+        "measured_or_guaranteed": false,
+        "net_load_side_wh_per_day_under_assumption": -0.3538675,
+        "zero_solar_days_under_assumption": 6.943375241
+      },
+      {
+        "assumed_unknown_extra_w": 1.0,
+        "autonomy_qualified": false,
+        "candidate_load_wh_per_day_under_assumption": 54.4738675,
+        "energy_screen_passes_under_assumption": false,
+        "measured_or_guaranteed": false,
+        "net_load_side_wh_per_day_under_assumption": -12.3538675,
+        "zero_solar_days_under_assumption": 5.413825262
+      }
+    ],
+    "nominal_added_w": 0.12288,
+    "nominal_added_wh_per_day": 2.94912,
+    "overall_energy_disposition": "UNKNOWN_SELECTED_ANCILLARY_CONSUMPTION_AND_SITE_YIELD",
+    "remaining_unknown_power_allowance_before_energy_deficit_w": 0.485255521,
+    "retained_baseline_load_wh_per_day": 27.5247475
+  },
+  "array": {
+    "all_catalog_array_screens_pass": true,
+    "array_stc_w": 80.0,
+    "cold_voc_v": 50.40025,
+    "design_isc_a": 3.0,
+    "hot_voc_v": 37.82825,
+    "ideal_charge_a_at_min_battery": 7.142857143,
+    "panel_count": 2,
+    "parallel": 1,
+    "pv_protection_selected": false,
+    "required_start_v": 19.4,
+    "screens": {
+      "charge_current_within10a": true,
+      "cold_voc_below75v": true,
+      "design_isc_below13a": true,
+      "hot_voc_above_battery_plus5v": true,
+      "stc_power_within_nominal145w": true
+    },
+    "series": 2,
+    "stc_voc_v": 44.9,
+    "tolerance_cable_and_loaded_start_qualified": false
+  },
+  "baseline_check": {
+    "all_unchanged": true,
+    "evidence_sha256": "dfc71d2a6bfffc8a99b12e83af9e5daf9ad33ead8da6337c50cdfb7f1b17e40f",
+    "file_count": 140,
+    "manifest_sha256": "0d87fbfbabe105d20d5e0c4709c62a9b07966d6bf6f1b200fd2e88acf4c46afd"
+  },
+  "baseline_only_energy_comparison": {
+    "break_even_peak_sun_hours": 0.653484034,
+    "energy_boundary": "load-side; all harvested energy modeled through storage cycle",
+    "harvest_stored_wh_per_day": 46.8,
+    "harvest_wh_per_day": 42.12,
+    "net_wh_per_day": 14.5952525,
+    "sustainable_under_assumptions": true
+  },
+  "bounded_source_blocks": [
+    {
+      "attempted_urls": [
+        "https://www.coolgear.com/product/chargeit-100-watt-usb-type-c-charger",
+        "https://www.coolgear.com/product/chargeit-100-watt-usb-type-c-charging-board",
+        "https://www.coolgear.com/product/chargeit-dual-port-usb-charger-1-type-c-pd-27w-1-type-a-15w-variable-voltage-1228v-input"
+      ],
+      "families_screened": [
+        "Coolgear ChargeIt PD industrial source",
+        "Official Raspberry Pi15W AC bench alternative"
+      ],
+      "function": "12V DC to Pi USB-C source",
+      "result": "Coolgear primary pages HTTP403; no exact SKU/CC-source path/current limit/OVP thresholds/envelope verified. Search indexing suggests12V lower bound, which does not prove11.2V operation. Stop this family; choose exact official external drybench alternative only. FIELD_DC_POWER_PATH_UNKNOWN."
+    },
+    {
+      "attempted_urls": [
+        "https://www.littelfuse.com/assetdocs/littelfuse-datasheet-287-atof?assetguid=43dcdce8-8ca2-426f-8998-7e566f048d40",
+        "https://info.littelfuse.com/ato-155-series-landing-page",
+        "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-atc-blade-fuses-data-sheet.pdf",
+        "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-hhf-jfcu-automotive-in-line-fuse-holder-atc-blade-type-data-sheet.pdf"
+      ],
+      "families_screened": [
+        "Littelfuse287ATOF/155ATO holders",
+        "EatonATC/HHF-JFCU"
+      ],
+      "function": "DC branch fuses and holders",
+      "result": "Littelfuse PDF403; landing page identifies01550320ZXU only, not ratings/dimensions. Eaton retrieval HTTP2error then bounded HTTP1 timeout; WebFetch timeout. Source-indexed0287005 fuse base and01550320ZXU holder retained as UNVERIFIED_RATING candidates;5A target/32V/1000A index claims NOT accepted as retrieved primary values. No protective fuse/holder rating or geometry qualified. Stop after two families."
+    },
+    {
+      "families_screened": [
+        "PololuD36V28 selected",
+        "PololuD24V22 screened alternate only"
+      ],
+      "function": "REEF DC regulation",
+      "result": "D36V28 sources captured; exact fault thresholds/low-load efficiency unknown. No additional families searched."
+    }
+  ],
+  "charge_control": {
+    "actual_rx_remote_setting_verified": false,
+    "bms_battery_family": "Lithium Battery Smart; BAT512050610; NOT NG-only BMS",
+    "bms_high_signal_range_v": [
+      10.6,
+      13.8
+    ],
+    "cable_output_load_current_a": null,
+    "cable_static_enable_screen_passes": true,
+    "charge_disconnect_is_remote_control_not_service_isolation": true,
+    "manufacturer_topology_supported": true,
+    "physical_fault_tests_complete": false,
+    "ve_direct_telemetry_available_simultaneously": false
+  },
+  "configuration": "passive-v2",
+  "disposition": "BLOCKED_ON_FIELD_DC_POWER_PROTECTION_AND_ANCILLARY_UNCERTAINTY",
+  "energization_allowed": false,
+  "evidence_kind": "source_backed_candidate_calculations_not_measurements",
+  "geometry_contract": {
+    "actual_step_and_mount_checks_owned_by_cad": true,
+    "cad_bom_id": "REEF-PV-2S",
+    "centres_y_mm": [
+      -237.5,
+      237.5
+    ],
+    "combined_panel_footprint_mm": [
+      668,
+      900
+    ],
+    "fit_qualified_here": false,
+    "gap_mm": 50,
+    "panel_quantity": 2,
+    "panel_xyz_mm": [
+      668,
+      425,
+      25
+    ],
+    "power_part_id": "V2-PV-001"
+  },
+  "hub_power": {
+    "bench_alternative": "SC0444 / KSA-15E-051300HE, official external AC supply only",
+    "bench_alternative_resolves_field_dc": false,
+    "bench_operations_authorized": false,
+    "field_dc_status": "UNKNOWN_SOURCE_CC_OVP_CURRENT_LIMIT_AND_11V2_OPERATION",
+    "qualified_12v_usbc_source_selected": false
+  },
+  "load_control": {
+    "actual_mode_c_verified": false,
+    "batteryprotect_mpn": "BPR065022000",
+    "direction": "battery IN to load OUT only",
+    "external_bms_mode_c_required": true,
+    "mppt_bat_branch_bypasses_load_switch": true,
+    "not_an_acoustic_manual_rearm_device": true,
+    "on_state_loss_w": null,
+    "pv_must_not_pass_through35v_batteryprotect": true
+  },
+  "preserved_comparison": {
+    "absorbed_sun_w": 48.0,
+    "ambient_c": 35,
+    "hub_peak_enclosed_heat_w": 21.857142857,
+    "peak_sun_hours": 1.0,
+    "reef_daily_wh": 27.5247475
+  },
+  "protection": {
+    "battery_prospective_fault_a": null,
+    "fuse_interrupt_and_wire_coordination_qualified": false,
+    "fuse_source_block": "Littelfuse403 and Eaton transport timeout; indexed ratings not promoted to verified primary values",
+    "minimum_catalog_pv_voltage_envelope_v_before_unknown_tolerance": 50.40025,
+    "selected_verified_load_fuse": null,
+    "selected_verified_main_fuse": null,
+    "selected_verified_pv_isolator": null
+  },
+  "reef_voltage_screens": {
+    "current_limit_ovp_and_burst_qualified": false,
+    "fault_voltage_guaranteed_below3v6": false,
+    "pg_is_not_ovp": true,
+    "radio_nominal_tolerance_within2_to3v6": true,
+    "radio_output_tolerance_range_v": [
+      3.168,
+      3.432
+    ],
+    "radio_pg_high_status_v": 3.96,
+    "regulator_input_static_range_passes": true
+  },
+  "remaining_gates": [
+    "HUB field DC-to-USB-C power path",
+    "Main/branch/PV protection and fault current",
+    "BMS/MPPT/BatteryProtect actual settings and fault tests",
+    "Selected ancillary consumption and actual site reserve",
+    "Regulator fault threshold/burst/thermal and signal backfeed",
+    "CAD frame/enclosure/protection/connector integration",
+    "Parent heat-path physical review/measurement",
+    "All electrical qualification, purchases and field authorization"
+  ],
+  "revision": "HW-CAND-2.0",
+  "selected_nominal_ancillary_overlay": [
+    {
+      "added_nominal_w": 0.02816,
+      "catalog_current_a": 0.0022,
+      "guaranteed_maximum": false,
+      "part_id": "V2-BMS-001",
+      "reference_v": 12.8,
+      "source_id": "S-BMS"
+    },
+    {
+      "added_nominal_w": 0.01792,
+      "catalog_current_a": 0.0014,
+      "guaranteed_maximum": false,
+      "part_id": "V2-LOADSW-001",
+      "reference_v": 12.8,
+      "source_id": "S-BP"
+    },
+    {
+      "added_nominal_w": 0.0384,
+      "catalog_current_a": 0.003,
+      "guaranteed_maximum": false,
+      "part_id": "V2-REG5-001",
+      "reference_v": 12.8,
+      "source_id": "S-REG5"
+    },
+    {
+      "added_nominal_w": 0.0384,
+      "catalog_current_a": 0.003,
+      "guaranteed_maximum": false,
+      "part_id": "V2-REG3-001",
+      "reference_v": 12.8,
+      "source_id": "S-REG3"
+    }
+  ],
+  "source_captures": [
+    {
+      "file": "sources/smallbms-datasheet.pdf",
+      "retrieved_date": "2026-09-08",
+      "sha256": "435f5b92427d74726dac8bc67a24f7bb40fc30dce3d934025555bf1680b049a9",
+      "source_id": "S-BMS",
+      "url": "https://www.victronenergy.com/upload/documents/Datasheet-smallBMS-with-pre-alarm-EN-.pdf"
+    },
+    {
+      "file": "sources/smallbms-drawing.pdf",
+      "retrieved_date": "2026-09-08",
+      "sha256": "c1f135518c019552108e265c58c6ba23bd64b478d7ef27e7f2b61c0e4154f09a",
+      "source_id": "S-BMS",
+      "url": "https://www.victronenergy.com/upload/documents/smallBMS.pdf"
+    },
+    {
+      "file": "sources/smallbms-manual.pdf",
+      "retrieved_date": "2026-09-08",
+      "sha256": "4e72391c13366047f508c8e4c1151646e3a0265aa6f306d883a8ab223be3e1f0",
+      "source_id": "S-BMS",
+      "url": "https://www.victronenergy.com/upload/documents/smallBMS_with_pre-alarm/128558-smallBMS_with_pre-alarm-pdf-en.pdf"
+    },
+    {
+      "file": "sources/batteryprotect-drawing.pdf",
+      "retrieved_date": "2026-09-08",
+      "sha256": "dc6f97ea2e5f49db59b8ffa3a806d78e9699a23133e1154cbd1a9c3294120026",
+      "source_id": "S-BP",
+      "url": "https://www.victronenergy.com/upload/documents/Smart-BatteryProtect_12V-24V-65A.pdf"
+    },
+    {
+      "file": "sources/batteryprotect-specs.html",
+      "retrieved_date": "2026-09-08",
+      "sha256": "3d5bfe4816146bdbbd2fb3a7c5745ff5286820dc15f668f02b6aa72b3e2f9646",
+      "source_id": "S-BP",
+      "url": "https://www.victronenergy.com/media/pg/Smart_BatteryProtect_12V_24V/en/technical-specifications.html"
+    },
+    {
+      "file": "sources/batteryprotect-install.html",
+      "retrieved_date": "2026-09-08",
+      "sha256": "6470155a10a81f2b73a9703943a5f41b6d75076a72f390b1a9609657274c691f",
+      "source_id": "S-BP",
+      "url": "https://www.victronenergy.com/media/pg/Smart_BatteryProtect_12V_24V/en/installation-and-wiring-examples.html"
+    },
+    {
+      "file": "sources/vedirect-remote-manual.pdf",
+      "retrieved_date": "2026-09-08",
+      "sha256": "d1595d99ec15d1cf940a8d4d752e0dacf94eac04cb75ef457a117aa615322278",
+      "source_id": "S-CHGCABLE",
+      "url": "https://www.victronenergy.com/upload/documents/Manual-VE.Direct-non-inverting-remote-on-off-cable-EN.pdf"
+    },
+    {
+      "file": "sources/pololu-5v.html",
+      "retrieved_date": "2026-09-08",
+      "sha256": "a3e8f2a2d356ffd920103bd8414838463941f7beaec04972af79c0f8eee306ab",
+      "source_id": "S-REG5",
+      "url": "https://www.pololu.com/product/3782"
+    },
+    {
+      "file": "sources/pololu-3v3.html",
+      "retrieved_date": "2026-09-08",
+      "sha256": "52385023da0b22c16a067d2d94ad3b488e77cb600c550eb8ad6e2979740fa96d",
+      "source_id": "S-REG3",
+      "url": "https://www.pololu.com/product/3781"
+    },
+    {
+      "file": "sources/pi-usbc-psu.pdf",
+      "retrieved_date": "2026-09-08",
+      "sha256": "6df7bb5c05165cbf80978c05a36070a763523bb5a1cdf6724b87a1a6e673bd89",
+      "source_id": "S-PIBENCH",
+      "url": "https://datasheets.raspberrypi.com/power-supply/usb-c-power-supply-product-brief.pdf"
+    },
+    {
+      "file": "sources/anderson-pp1545.pdf",
+      "retrieved_date": "2026-09-08",
+      "sha256": "ac39c286d44528efab30061b96df6e64e6eeafb6e154af7a03397d518f45a04f",
+      "source_id": "S-PP",
+      "url": "https://www.andersonpower.com/content/dam/app/ecommerce/product-pdfs/DS-PP1545.pdf"
+    },
+    {
+      "file": "sources/wago-221412.html",
+      "retrieved_date": "2026-09-08",
+      "sha256": "077fbda06d591e815b0a8efbef8fc73ff27b8f4e2c264416340a24d0e055863c",
+      "source_id": "S-WAGO2",
+      "url": "https://www.wago.com/global/installation-terminal-blocks-and-connectors/compact-splicing-connector/p/221-412"
+    },
+    {
+      "file": "sources/wago-221415.html",
+      "retrieved_date": "2026-09-08",
+      "sha256": "e4180c137c77c3e81255378c7e3e7b3d462cc289647d0542b050c34487154296",
+      "source_id": "S-WAGO5",
+      "url": "https://www.wago.com/global/installation-terminal-blocks-and-connectors/compact-splicing-connector/p/221-415"
+    }
+  ],
+  "status": "NON_ADOPTED_NOT_BUILD_AUTHORIZED",
+  "thermal": {
+    "heat_path_qualified_here": false,
+    "load_changed_here": false,
+    "overall_thermal_status": "UNKNOWN_UNMEASURED_SOURCE_PATH_AND_CONTACTS",
+    "owned_by": "parent thermal candidate package"
+  },
+  "unknown_selected_overheads": [
+    "ASS030550320 inline cable and signal-input current",
+    "smallBMS output loads beyond its2.2mA own consumption",
+    "BatteryProtect on-state conduction and thermal loss",
+    "Worst-case quiescent current beyond published typical points",
+    "Actual low-load regulator efficiency/burst behavior versus retained0.8 assumptions",
+    "Fuses/contacts/actual cable drops and any required supervision peripherals"
+  ]
+}

@@ -1,0 +1,11 @@
+# Task ID: 6
+# Title: [nereid] Implement CPU-based Motion Detection
+# Status: pending
+# Dependencies: 2, 3
+# Priority: high
+# Description: Create the `nereid` service that captures video from a CSI/USB camera, detects motion using a basic algorithm (e.g., frame differencing), and publishes a `vision/event` message via MQTT.
+# Details:
+In `apps/nereid/main.py`, use `opencv-python` to create a capture loop (`cv2.VideoCapture`). For motion detection, maintain a running average of frames (`cv2.accumulateWeighted`) and find contours in the difference between the current frame and the average. If a contour exceeds a certain size, publish a JSON payload to the `poseidon/{site}/{zone}/vision/event` topic using `paho-mqtt`.
+
+# Test Strategy:
+Run the `nereid` container on a Pi with a camera. Use `mqttx` to subscribe to the `vision/event` topic. Wave a hand in front of the camera and verify that a motion event JSON message is published. Check logs for FPS and detection info.

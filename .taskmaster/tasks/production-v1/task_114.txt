@@ -1,0 +1,28 @@
+{
+  "deliverablePaths": [
+    "apps/trident/",
+    "libs/proto-py/",
+    "libs/proto-ts/"
+  ],
+  "dependencies": [
+    107,
+    108,
+    111,
+    113
+  ],
+  "description": "Implement versioned contracts and local fail-silent orchestration for the full approved path.",
+  "details": "Build TRIDENT observe/armed/emit/inhibited/fault state handling, supervision, bounded queues, local cache, config validation, expiry/deduplication, safe reboot, and offline recovery. It must use the validated contract and cannot use cloud availability as a safety control.",
+  "id": 114,
+  "ownerRole": "software-safety",
+  "phase": "P5",
+  "priority": "high",
+  "researchPackages": [
+    "R2",
+    "R3",
+    "R4"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Run synthetic replay and fault injection for duplicate/stale commands, lost time/network/sensor/storage, crash/restart, and inhibited recovery; verify no unauthorized output.",
+  "title": "P5 TRIDENT Contracts and Offline Orchestration"
+}

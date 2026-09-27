@@ -1,0 +1,11 @@
+# Task ID: 12
+# Title: [esp-sentinel] Add Sensor Reading and CBOR Payload Encoding
+# Status: pending
+# Dependencies: 11
+# Priority: high
+# Description: Extend the REEF firmware to read data from temperature, light, and battery voltage sensors, and encode the data into a compact CBOR payload for uplink.
+# Details:
+Add libraries for relevant sensors (e.g., `Adafruit_BME280`, or simple analog reads for light/voltage). Before sleeping, read the sensor values. Use a CBOR library like `tinycbor` or `ArduinoJson` (with CBOR support) to create a binary payload. Map keys to short integers to save space (e.g., `t` for temperature). The payload should match the format described in the PRD.
+
+# Test Strategy:
+Flash the firmware. In the ChirpStack/TTS console, inspect the `up_data` field of an incoming frame. It should be a base64-encoded string. Decode this string and run it through a CBOR-to-JSON converter to verify that the sensor data is correctly structured and has plausible values.

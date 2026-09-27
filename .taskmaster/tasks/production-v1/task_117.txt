@@ -1,0 +1,24 @@
+{
+  "deliverablePaths": [
+    "firmware/esp-sentinel/",
+    "firmware/esp-power-telemetry/"
+  ],
+  "dependencies": [
+    109,
+    114
+  ],
+  "description": "Implement the specified ESP node with calibrated sensing, low-power behavior, and fault telemetry.",
+  "details": "Use one selected board, unique secrets outside source, calibrated units/uncertainty, CBOR schema tests, brownout handling, low-power scheduling, battery logs, and downlink acknowledgements.",
+  "id": 117,
+  "ownerRole": "firmware",
+  "phase": "P5",
+  "priority": "high",
+  "researchPackages": [
+    "R5",
+    "R6"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Run firmware tests and controlled hardware checks for sensor calibration, brownout, sleep/wake, counter persistence, malformed input, and fault telemetry.",
+  "title": "P5 REEF Firmware, Sensors, and Power Management"
+}

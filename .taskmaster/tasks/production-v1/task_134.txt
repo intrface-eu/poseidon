@@ -1,0 +1,29 @@
+{
+  "deliverablePaths": [
+    "apps/aeolus-ui/",
+    "apps/aeolus-ui/lib/",
+    "apps/aeolus-ui/qa/",
+    "PRODUCT.md",
+    "DESIGN.md",
+    ".impeccable/design.json"
+  ],
+  "dependencies": [
+    133
+  ],
+  "description": "Build the local operator UI for monitor data, synthetic replay, and human review.",
+  "details": "Implement the Bun/Next.js UI and same-origin server proxy specified by the local monitor contract. Keep POSEIDON_API_URL server-only, issue a bounded HttpOnly local session cookie only after backend token validation, forward only known backend routes, and show API/offline/error/conflict states. Present recording, event, waveform, review, upload, optional video, and synthetic provenance views without active controls or claims. This is a local single-operator session, not production RBAC or Internet hosting.",
+  "id": 134,
+  "ownerRole": "ui",
+  "phase": "P2-dev",
+  "priority": "high",
+  "researchPackages": [],
+  "status": "done",
+  "subtasks": [],
+  "testStrategy": "Run the UI typecheck and tests for session failure/success, restricted proxy routing, missing/offline API, synthetic import status, recording/event selection, accessible waveform table, review save/reload, stale revision conflict, upload validation, optional video state, and desktop/mobile layouts.",
+  "title": "P2-dev Local Monitor Operator UI",
+  "verification": {
+    "date": "2026-09-07",
+    "evidencePath": "docs/validation/development-tranche-002.md",
+    "scope": "Local single-operator monitor UI and same-origin proxy only. This verifies no production RBAC or security lifecycle, Internet hosting, field operation, hardware, output, permission, measurement, efficacy, compliance, or production-readiness gate."
+  }
+}

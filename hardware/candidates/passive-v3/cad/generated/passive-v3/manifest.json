@@ -1,0 +1,5271 @@
+{
+  "schema": "intrface.passive-v3.cad.v1",
+  "product": "Poseidon Trident",
+  "company": "Intrface",
+  "reuse_rights": {
+    "vendor_cad": "UNVERIFIED_NOT_CC0",
+    "derived_assembly_wholly_original": true,
+    "public_redistribution_authorized": true,
+    "review_required": "Supplier files are private and must be fetched on demand; the original fit proxies do not reproduce supplier CAD.",
+    "vendor_files_public_redistribution_authorized": false,
+    "original_design_license": "CERN-OHL-S-2.0"
+  },
+  "configuration": "passive-v3",
+  "revision": "HW-CAND-3.0",
+  "status": "NON_ADOPTED_NOT_BUILD_AUTHORIZED",
+  "generated_utc": "2026-09-27T12:27:15.199033+00:00",
+  "adopted": false,
+  "build_authorized": false,
+  "procurement_authorized": false,
+  "active_emission_hardware_populated": false,
+  "physical_tests_performed": [],
+  "units": {
+    "cad": "mm",
+    "glb": "m",
+    "mass": "kg",
+    "volume": "mm3"
+  },
+  "interface": {
+    "schema": "intrface.passive-v3.interface.v1",
+    "product": "Poseidon Trident",
+    "configuration": "passive-v3",
+    "revision": "HW-CAND-3.0",
+    "status": "NON_ADOPTED_NOT_BUILD_AUTHORIZED",
+    "adopted": false,
+    "build_authorized": false,
+    "procurement_authorized": false,
+    "active_emission_hardware_populated": false,
+    "physical_tests_performed": [],
+    "target_envelope": {
+      "depth_m": 30,
+      "continuous_immersion_days": 90,
+      "classification": "required target, NOT verified assembly rating",
+      "verified_assembly_depth_m": null,
+      "verified_assembly_immersion_days": null
+    },
+    "units": {
+      "cad": "mm",
+      "glb": "m",
+      "mass": "kg",
+      "volume": "mm3"
+    },
+    "sources": {
+      "register_sha256": "29477466e1bce94c90eacd845f238a89171bcd5db04cec22083cf2f470223255",
+      "dimension_traces_sha256": "80dbad5e5fa0ea9cc88c23314ea0a13981c41d74e21d1c2322c0504a751c9f2b"
+    },
+    "dimensions": {
+      "tube.bbox_min_x": -300.0000001,
+      "tube.bbox_min_y": -56.00000010000006,
+      "tube.bbox_min_z": -56.00000010000003,
+      "tube.bbox_max_x": 1.0000000217316195e-07,
+      "tube.bbox_max_y": 56.0000001,
+      "tube.bbox_max_z": 56.00000010000003,
+      "tube.bbox_size_x": 300.00000020000004,
+      "tube.bbox_size_y": 112.00000020000006,
+      "tube.bbox_size_z": 112.00000020000006,
+      "tube.volume": 439924.6021648837,
+      "flange.bbox_min_x": -57.15,
+      "flange.bbox_min_y": -57.15,
+      "flange.bbox_min_z": -1.0000000276124835e-07,
+      "flange.bbox_max_x": 57.15,
+      "flange.bbox_max_y": 57.1500001,
+      "flange.bbox_max_z": 27.00000010000001,
+      "flange.bbox_size_x": 114.3,
+      "flange.bbox_size_y": 114.3000001,
+      "flange.bbox_size_z": 27.00000020000001,
+      "flange.volume": 38702.61559600212,
+      "aft_cap.bbox_min_x": -60.15,
+      "aft_cap.bbox_min_y": -57.14999999999999,
+      "aft_cap.bbox_min_z": -4.000000000000001,
+      "aft_cap.bbox_max_x": 60.15,
+      "aft_cap.bbox_max_y": 57.14999999999999,
+      "aft_cap.bbox_max_z": 6.000000000000001,
+      "aft_cap.bbox_size_x": 120.3,
+      "aft_cap.bbox_size_y": 114.29999999999998,
+      "aft_cap.bbox_size_z": 10.000000000000002,
+      "aft_cap.volume": 82682.68918135534,
+      "dome.bbox_min_x": -52.328082488222215,
+      "dome.bbox_min_y": -9.999999689137553e-08,
+      "dome.bbox_min_z": -52.32808248822222,
+      "dome.bbox_max_x": 52.328082488222215,
+      "dome.bbox_max_y": 51.80199999999999,
+      "dome.bbox_max_z": 52.32808248822222,
+      "dome.bbox_size_x": 104.65616497644443,
+      "dome.bbox_size_y": 51.80200009999999,
+      "dome.bbox_size_z": 104.65616497644444,
+      "dome.volume": 86525.01091114039,
+      "dome_ring.bbox_min_x": -57.150000100000014,
+      "dome_ring.bbox_min_y": -1.0000000178419182e-07,
+      "dome_ring.bbox_min_z": -57.1500001,
+      "dome_ring.bbox_max_x": 57.15000010000001,
+      "dome_ring.bbox_max_y": 10.350000099999999,
+      "dome_ring.bbox_max_z": 57.1500001,
+      "dome_ring.bbox_size_x": 114.30000020000003,
+      "dome_ring.bbox_size_y": 10.3500002,
+      "dome_ring.bbox_size_z": 114.3000002,
+      "dome_ring.volume": 21216.47164684554,
+      "camera.bbox_min_x": 0.0,
+      "camera.bbox_min_y": -6.0,
+      "camera.bbox_min_z": -32.0,
+      "camera.bbox_max_x": 32.0,
+      "camera.bbox_max_y": 23.35,
+      "camera.bbox_max_z": 0.0,
+      "camera.bbox_size_x": 32.0,
+      "camera.bbox_size_y": 29.35,
+      "camera.bbox_size_z": 32.0,
+      "camera.volume": 6237.464320257146,
+      "wetlink.bbox_min_x": -8.000000100000008,
+      "wetlink.bbox_min_y": -1.0000000077325108e-07,
+      "wetlink.bbox_min_z": -8.000000100000003,
+      "wetlink.bbox_max_x": 8.000000100000003,
+      "wetlink.bbox_max_y": 45.000000099999994,
+      "wetlink.bbox_max_z": 8.000000100000005,
+      "wetlink.bbox_size_x": 16.00000020000001,
+      "wetlink.bbox_size_y": 45.000000199999995,
+      "wetlink.bbox_size_z": 16.00000020000001,
+      "wetlink.volume": 5693.727934718031,
+      "tube.length": 300,
+      "tube.od": 112,
+      "tube.id": 103,
+      "tube.mass": 1.066,
+      "tube.depth": 1000,
+      "flange.od": 114.3,
+      "flange.piston_diameter": 103.91,
+      "flange.piston_length": 19.1,
+      "flange.length": 27,
+      "flange.mass": 0.107,
+      "aft_cap.thickness": 10,
+      "aft_cap.hole_circle": 108,
+      "aft_cap.mass": 0.223,
+      "dome.internal_radius": 44,
+      "dome.wall": 5.8,
+      "dome_and_ring.mass": 0.16,
+      "dome.depth": 1000,
+      "camera.pcb_width": 32,
+      "camera.pcb_height": 32,
+      "camera.mount_pitch": 28,
+      "camera.mount_hole": 2.44,
+      "camera.pcb_thickness": 1.6,
+      "camera.front_depth": 23.35,
+      "camera.rear_depth": 6,
+      "as1.diameter": 12,
+      "as1.length": 40,
+      "as1.mass": 0.008,
+      "as1.cable_diameter": 4.5,
+      "as1.cable_mass_per_m": 0.028,
+      "as1.standard_cable_length": 9,
+      "as1.depth": 200,
+      "wetlink.thread_diameter": 10,
+      "wetlink.thread_pitch": 1.5,
+      "wetlink.current_overall_od": 18,
+      "wetlink.seal_nominal": 7.5,
+      "tether.diameter": 7.6,
+      "cobalt.thread_diameter": 10,
+      "cobalt.thread_pitch": 1.5,
+      "cobalt.hex_af": 16,
+      "cobalt.depth": 600,
+      "aft_cap.penetrator_hole_diameter": 10.2,
+      "aft_cap.penetrator_0_x": -26.629582,
+      "aft_cap.penetrator_0_y": -8.652476,
+      "aft_cap.penetrator_1_x": -16.457987,
+      "aft_cap.penetrator_1_y": 22.652476,
+      "aft_cap.penetrator_2_x": 0.0,
+      "aft_cap.penetrator_2_y": -28.0,
+      "aft_cap.penetrator_3_x": 16.457987,
+      "aft_cap.penetrator_3_y": 22.652476,
+      "aft_cap.penetrator_4_x": 26.629582,
+      "aft_cap.penetrator_4_y": -8.652476,
+      "design.tube_length_mm": 300,
+      "design.camera_board_from_front_mm": 20,
+      "design.camera_mount_depth_mm": 17,
+      "design.camera_tray_width_mm": 44,
+      "design.camera_tray_thickness_mm": 3,
+      "design.camera_tray_opening_mm": 24,
+      "design.camera_support_od_mm": 5,
+      "design.camera_support_hole_mm": 2.44,
+      "design.service_route_axial_mm": 100,
+      "design.empty_preamp_reserve_size_mm.0": 40,
+      "design.empty_preamp_reserve_size_mm.1": 40,
+      "design.empty_preamp_reserve_size_mm.2": 40,
+      "design.empty_preamp_reserve_z_mm": 180,
+      "design.stack_clearance_mm": 10,
+      "design.mount_tube_radial_gap_mm": 0.6,
+      "design.saddle_outer_radius_mm": 62,
+      "design.saddle_width_mm": 10,
+      "design.hydrophone_center_x_mm": 95,
+      "design.hydrophone_front_from_tube_front_mm": 20,
+      "design.hydrophone_collar_from_rear_mm": 10,
+      "design.hydrophone_collar_radial_gap_mm": 0.5,
+      "design.hydrophone_collar_outer_radius_mm": 11,
+      "design.hydrophone_arm_width_mm": 12,
+      "design.hydrophone_arm_overlap_mm": 1,
+      "design.clamp_center_mm.0": -100,
+      "design.clamp_center_mm.1": 0,
+      "design.clamp_center_mm.2": 100,
+      "design.clamp_size_mm.0": 50,
+      "design.clamp_size_mm.1": 24,
+      "design.clamp_size_mm.2": 40,
+      "design.clamp_split_gap_mm": 1,
+      "design.longline_hole_radius_mm": 12.5,
+      "design.clamp_bridge_size_mm.0": 25,
+      "design.clamp_bridge_size_mm.1": 18,
+      "design.clamp_bridge_size_mm.2": 10,
+      "design.clamp_bridge_center_x_mm": -68,
+      "design.pin_centers_x_mm.0": -120,
+      "design.pin_centers_x_mm.1": -80,
+      "design.pin_radius_mm": 2.5,
+      "design.pin_sleeve_inner_radius_mm": 2.7,
+      "design.pin_sleeve_outer_radius_mm": 4,
+      "design.pin_length_mm": 45,
+      "design.pin_head_radius_mm": 5,
+      "design.pin_head_height_mm": 3,
+      "design.pin_pull_ring_major_radius_mm": 8,
+      "design.pin_pull_ring_minor_radius_mm": 1.5,
+      "design.lanyard_lug_center_mm.0": -132,
+      "design.lanyard_lug_center_mm.1": 0,
+      "design.lanyard_lug_center_mm.2": 85,
+      "design.lanyard_lug_outer_radius_mm": 9,
+      "design.lanyard_lug_inner_radius_mm": 4,
+      "design.lanyard_lug_thickness_mm": 6,
+      "design.lanyard_lug_bridge_size_mm.0": 10,
+      "design.lanyard_lug_bridge_size_mm.1": 12,
+      "design.lanyard_lug_bridge_size_mm.2": 6,
+      "design.lanyard_lug_bridge_center_mm.0": -123,
+      "design.lanyard_lug_bridge_center_mm.1": 0,
+      "design.lanyard_lug_bridge_center_mm.2": 88,
+      "design.lanyard_diameter_mm": 3,
+      "design.lanyard_length_mm": 140,
+      "design.lanyard_visual_gap_mm": 1,
+      "design.penetrator_origin_z_mm": 5.2,
+      "design.penetrator_surface_gap_mm": 0.3,
+      "design.tether_route_start_z_mm": -40.8,
+      "design.tether_bend_radius_mm": 50,
+      "design.tether_surface_endpoint_y_mm": 300,
+      "design.analog_bend_start_z_mm": 80,
+      "design.analog_bend_radius_mm": 50,
+      "design.analog_surface_endpoint_y_mm": 300,
+      "design.strain_relief_center_mm.0": 0,
+      "design.strain_relief_center_mm.1": 120,
+      "design.strain_relief_center_mm.2": -90.8,
+      "design.strain_relief_size_mm.0": 24,
+      "design.strain_relief_size_mm.1": 30,
+      "design.strain_relief_size_mm.2": 18,
+      "design.strain_relief_radial_gap_mm": 0.4,
+      "design.strain_relief_support_size_mm.0": 12,
+      "design.strain_relief_support_size_mm.1": 60,
+      "design.strain_relief_support_size_mm.2": 10,
+      "design.strain_relief_support_center_mm.0": 0,
+      "design.strain_relief_support_center_mm.1": 81,
+      "design.strain_relief_support_center_mm.2": -101,
+      "design.strain_relief_riser_size_mm.0": 12,
+      "design.strain_relief_riser_size_mm.1": 10,
+      "design.strain_relief_riser_size_mm.2": 116,
+      "design.strain_relief_riser_center_mm.0": 0,
+      "design.strain_relief_riser_center_mm.1": 56,
+      "design.strain_relief_riser_center_mm.2": -43,
+      "design.strain_relief_saddle_z_mm": 10,
+      "design.future_projector_envelope_size_mm.0": 60,
+      "design.future_projector_envelope_size_mm.1": 60,
+      "design.future_projector_envelope_size_mm.2": 70,
+      "design.future_projector_envelope_center_mm.0": 0,
+      "design.future_projector_envelope_center_mm.1": -110,
+      "design.future_projector_envelope_center_mm.2": 170,
+      "design.camera_service_envelope_size_mm.0": 50,
+      "design.camera_service_envelope_size_mm.1": 50,
+      "design.camera_service_envelope_size_mm.2": 100,
+      "design.camera_service_envelope_center_mm.0": 0,
+      "design.camera_service_envelope_center_mm.1": 0,
+      "design.camera_service_envelope_center_mm.2": 100,
+      "design.dxf_curve_sample_spacing_mm": 4,
+      "design.dxf_view_gap_mm": 100,
+      "design.dxf_dimension_offset_mm": 25,
+      "design.dxf_text_height_mm": 3,
+      "design.geometry_linear_tolerance_mm": 0.0001,
+      "design.interference_volume_tolerance_mm3": 0.001,
+      "design.step_relative_volume_tolerance": 1e-06,
+      "design.glb_linear_deflection_mm": 0.3,
+      "design.glb_angular_deflection_rad": 0.35,
+      "design.mass_density_kg_m3.aluminium_6061": 2700,
+      "design.mass_density_kg_m3.aluminium_7075": 2810,
+      "design.mass_density_kg_m3.stainless_316": 8000,
+      "design.mass_density_kg_m3.peek": 1300,
+      "design.mass_density_kg_m3.polycarbonate": 1200,
+      "design.mass_density_kg_m3.polyurethane": 1200,
+      "design.mass_density_kg_m3.lanyard_polyester": 1380,
+      "design.mass_density_kg_m3.seawater": 1025,
+      "design.mass_density_kg_m3.fathom_bulk_effective": 1025,
+      "dome.wall_tolerance": 0.1
+    },
+    "allocations": {
+      "tube_length_mm": 300,
+      "camera_board_from_front_mm": 20,
+      "camera_mount_depth_mm": 17,
+      "camera_tray_width_mm": 44,
+      "camera_tray_thickness_mm": 3,
+      "camera_tray_opening_mm": 24,
+      "camera_support_od_mm": 5,
+      "camera_support_hole_mm": 2.44,
+      "service_route_axial_mm": 100,
+      "empty_preamp_reserve_size_mm": [
+        40,
+        40,
+        40
+      ],
+      "empty_preamp_reserve_z_mm": 180,
+      "stack_clearance_mm": 10,
+      "mount_tube_radial_gap_mm": 0.6,
+      "saddle_outer_radius_mm": 62,
+      "saddle_width_mm": 10,
+      "hydrophone_center_x_mm": 95,
+      "hydrophone_front_from_tube_front_mm": 20,
+      "hydrophone_collar_from_rear_mm": 10,
+      "hydrophone_collar_radial_gap_mm": 0.5,
+      "hydrophone_collar_outer_radius_mm": 11,
+      "hydrophone_arm_width_mm": 12,
+      "hydrophone_arm_overlap_mm": 1,
+      "clamp_center_mm": [
+        -100,
+        0,
+        100
+      ],
+      "clamp_size_mm": [
+        50,
+        24,
+        40
+      ],
+      "clamp_split_gap_mm": 1,
+      "longline_hole_radius_mm": 12.5,
+      "clamp_bridge_size_mm": [
+        25,
+        18,
+        10
+      ],
+      "clamp_bridge_center_x_mm": -68,
+      "pin_centers_x_mm": [
+        -120,
+        -80
+      ],
+      "pin_radius_mm": 2.5,
+      "pin_sleeve_inner_radius_mm": 2.7,
+      "pin_sleeve_outer_radius_mm": 4,
+      "pin_length_mm": 45,
+      "pin_head_radius_mm": 5,
+      "pin_head_height_mm": 3,
+      "pin_pull_ring_major_radius_mm": 8,
+      "pin_pull_ring_minor_radius_mm": 1.5,
+      "lanyard_lug_center_mm": [
+        -132,
+        0,
+        85
+      ],
+      "lanyard_lug_outer_radius_mm": 9,
+      "lanyard_lug_inner_radius_mm": 4,
+      "lanyard_lug_thickness_mm": 6,
+      "lanyard_lug_bridge_size_mm": [
+        10,
+        12,
+        6
+      ],
+      "lanyard_lug_bridge_center_mm": [
+        -123,
+        0,
+        88
+      ],
+      "lanyard_diameter_mm": 3,
+      "lanyard_length_mm": 140,
+      "lanyard_visual_gap_mm": 1,
+      "penetrator_origin_z_mm": 5.2,
+      "penetrator_surface_gap_mm": 0.3,
+      "tether_route_start_z_mm": -40.8,
+      "tether_bend_radius_mm": 50,
+      "tether_surface_endpoint_y_mm": 300,
+      "analog_bend_start_z_mm": 80,
+      "analog_bend_radius_mm": 50,
+      "analog_surface_endpoint_y_mm": 300,
+      "strain_relief_center_mm": [
+        0,
+        120,
+        -90.8
+      ],
+      "strain_relief_size_mm": [
+        24,
+        30,
+        18
+      ],
+      "strain_relief_radial_gap_mm": 0.4,
+      "strain_relief_support_size_mm": [
+        12,
+        60,
+        10
+      ],
+      "strain_relief_support_center_mm": [
+        0,
+        81,
+        -101
+      ],
+      "strain_relief_riser_size_mm": [
+        12,
+        10,
+        116
+      ],
+      "strain_relief_riser_center_mm": [
+        0,
+        56,
+        -43
+      ],
+      "strain_relief_saddle_z_mm": 10,
+      "future_projector_envelope_size_mm": [
+        60,
+        60,
+        70
+      ],
+      "future_projector_envelope_center_mm": [
+        0,
+        -110,
+        170
+      ],
+      "camera_service_envelope_size_mm": [
+        50,
+        50,
+        100
+      ],
+      "camera_service_envelope_center_mm": [
+        0,
+        0,
+        100
+      ],
+      "dxf_curve_sample_spacing_mm": 4,
+      "dxf_view_gap_mm": 100,
+      "dxf_dimension_offset_mm": 25,
+      "dxf_text_height_mm": 3,
+      "geometry_linear_tolerance_mm": 0.0001,
+      "interference_volume_tolerance_mm3": 0.001,
+      "step_relative_volume_tolerance": 1e-06,
+      "glb_linear_deflection_mm": 0.3,
+      "glb_angular_deflection_rad": 0.35,
+      "mass_density_kg_m3": {
+        "aluminium_6061": 2700,
+        "aluminium_7075": 2810,
+        "stainless_316": 8000,
+        "peek": 1300,
+        "polycarbonate": 1200,
+        "polyurethane": 1200,
+        "lanyard_polyester": 1380,
+        "seawater": 1025,
+        "fathom_bulk_effective": 1025
+      }
+    },
+    "pressure_boundary": {
+      "tube": "BR-106279-300 RevB, aluminium 6061-T6 anodised",
+      "flange": "BR-100665 download contains BR-101040 RevC; identity unresolved",
+      "aft_cap": "BR-102993-005 download contains WTE4-M-END-CAP-5XM10-R2",
+      "dome": "BR-107201 hardened polycarbonate, NOT acrylic",
+      "ring": "BR-107201 aluminium",
+      "wetlink": "WLP-M10-7.5MM-R1 public CAD; current tested Fathom candidate BR-100875-175 HC; revision/termination unresolved",
+      "sealed_in_model": false,
+      "unused_open_penetrator_holes": 4,
+      "missing_items": [
+        "Tube/flange O-rings",
+        "locking cords",
+        "closure fasteners and isolation/engagement detail",
+        "unused-hole plugs or verified connector assemblies",
+        "pressure relief valve",
+        "WetLink nut and final compression/stripped-core termination"
+      ]
+    },
+    "receive_chain": {
+      "hydrophone": "Aquarian AS-1 class, distributor dimensions 12 mm D x40 mm L; 200 m component rating",
+      "preamp": "PA4/PA6 phantom preamp ABOVE WATER dry hub",
+      "underwater_preamp_populated": false,
+      "underwater_preamp_dimensions_mm": null,
+      "preamp_reserve": "EMPTY_NONPOPULATED_LOCAL_ALLOCATION",
+      "standard_as1_cable_m": 9,
+      "required_analog_transport_m": 30,
+      "analog_transport_verified": false,
+      "camera": "Blue Robotics Low-Light HD USB board",
+      "camera_usb_transport_30m_verified": false,
+      "surface_route": "Concept stub only; not a validated 30 m communications path",
+      "conditioner_relocated": false
+    },
+    "connector_option": {
+      "name": "Blue Trail Engineering Cobalt COB-1160 (6-pin dry-mate bulkhead option)",
+      "source": "cobalt-datasheet.pdf pp4,7",
+      "populated": false,
+      "thread": "M10 x1.5",
+      "hex_af_mm": 16,
+      "body_length_mm": null,
+      "body_diameter_mm": null,
+      "mass_kg": null,
+      "cad_exported": false,
+      "note": "Named sourced option, not fabricated from incomplete dimensions; isolation into aluminium, cable and pinout unchosen"
+    },
+    "unresolved": {
+      "allowable_cable_pull_N": null,
+      "exact_usb_transport_and_termination": null,
+      "as1_extended_cable_and_termination": null,
+      "assembled_mass_kg": null,
+      "sealed_displacement_measured_m3": null,
+      "marine_suitability": null,
+      "manufactured_tolerances": null,
+      "service_interval_days": null,
+      "camera_mass_kg": null,
+      "wetlink_exact_mass_kg": null,
+      "vendor_camera_internal_fit": null,
+      "vendor_wetlink_internal_fit": null
+    },
+    "future_projector": {
+      "label": "EMPTY_FUTURE_PROJECTOR_MOUNT_ENVELOPE",
+      "populated": false,
+      "included_in_physical_interference": false,
+      "included_in_mass": false,
+      "included_in_displacement": false
+    },
+    "open_gates": [
+      {
+        "id": "G01",
+        "title": "Exact vendor revisions, supplied parts and dimensional inspection",
+        "status": "not_performed",
+        "result": null
+      },
+      {
+        "id": "G02",
+        "title": "Pressure boundary seals, plugs, locking cords, PRV and closure screw design",
+        "status": "not_performed",
+        "result": null
+      },
+      {
+        "id": "G03",
+        "title": "Authorized leak, vacuum and 30 m pressure proof/cycling",
+        "status": "not_performed",
+        "result": null
+      },
+      {
+        "id": "G04",
+        "title": "90-day continuous immersion and thermal/pressure cycling",
+        "status": "not_performed",
+        "result": null
+      },
+      {
+        "id": "G05",
+        "title": "Aluminium/316 galvanic isolation, coating damage and crevice corrosion",
+        "status": "not_performed",
+        "result": null
+      },
+      {
+        "id": "G06",
+        "title": "PEEK mount water uptake, creep, fatigue and load capacity",
+        "status": "not_performed",
+        "result": null
+      },
+      {
+        "id": "G07",
+        "title": "Cable pull, bend, abrasion, strain relief and exact terminations",
+        "status": "not_performed",
+        "result": null
+      },
+      {
+        "id": "G08",
+        "title": "30 m analog and USB transport, power drop, noise and capture stability",
+        "status": "not_performed",
+        "result": null
+      },
+      {
+        "id": "G09",
+        "title": "Hydrophone calibrated receive chain and mount self-noise",
+        "status": "not_performed",
+        "result": null
+      },
+      {
+        "id": "G10",
+        "title": "Camera optical alignment, dome aberration and low-light performance",
+        "status": "not_performed",
+        "result": null
+      },
+      {
+        "id": "G11",
+        "title": "Local biofouling and cleaning/coating compatibility",
+        "status": "not_performed",
+        "result": null
+      },
+      {
+        "id": "G12",
+        "title": "Actual assembled mass, displacement, centre of gravity and buoyancy",
+        "status": "not_performed",
+        "result": null
+      },
+      {
+        "id": "G13",
+        "title": "Farm survey, storm/current load, diver release and lanyard retention",
+        "status": "not_performed",
+        "result": null
+      },
+      {
+        "id": "G14",
+        "title": "Dry service, retrieval, marking, permission and independent suitability review",
+        "status": "not_performed",
+        "result": null
+      }
+    ],
+    "required_sentence": "this is a non-adopted digital candidate with no pressure, corrosion or suitability evidence.",
+    "company": "Intrface",
+    "reuse_rights": {
+      "vendor_cad": "UNVERIFIED_NOT_CC0",
+      "derived_assembly_wholly_original": true,
+      "public_redistribution_authorized": true,
+      "review_required": "Supplier files are private and must be fetched on demand; the original fit proxies do not reproduce supplier CAD.",
+      "vendor_files_public_redistribution_authorized": false,
+      "original_design_license": "CERN-OHL-S-2.0"
+    }
+  },
+  "baseline": {
+    "files_checked": 14,
+    "changed": 0,
+    "lock_sha256": "f2e9578cf57f1419fd1d0f9f9924c08e138a556a00bb0371a0b82c202d0c133b"
+  },
+  "source_files": {
+    "interface.json": "1432da7f9dd63f852fb4ea83fa130688f13c85d7049fe2047e72443388b4cb08",
+    "baseline-lock.json": "f2e9578cf57f1419fd1d0f9f9924c08e138a556a00bb0371a0b82c202d0c133b",
+    "sources/source-register.json": "29477466e1bce94c90eacd845f238a89171bcd5db04cec22083cf2f470223255",
+    "sources/dimension-traces.json": "80dbad5e5fa0ea9cc88c23314ea0a13981c41d74e21d1c2322c0504a751c9f2b",
+    "cad/v3_contract.py": "24240ecadf63c3bb6f6d633d7608dd11241414a0d1369a19e713d1a343631c03",
+    "cad/v3_model.py": "c707c9033faca62458f6ff926303b3a942c1c59ac3d35aa050b6e0945a0ec9cc",
+    "cad/v3_proxy.py": "c9643cc79375898909e97a5c29f06acbe709d43b8f0d81ca209fe509b9115922",
+    "cad/v3_export.py": "f8595d8dd4b263734334fbfd6ffe6825377fad3a7033ffea219305388f3cabfb",
+    "cad/generate.py": "ef860194cc9c3668936e1edf1e9d46a9ebfab5aef62d031c897db6f4a2d2f070",
+    "cad/check.py": "e903c19adeb2938507f5206e0c8a14c3f296dce86d5ed4231bbe9644fcf94820"
+  },
+  "stack_budget": {
+    "contributions_mm": {
+      "camera_front_and_rear": 29.35,
+      "camera_mount": 17,
+      "service_route": 100,
+      "EMPTY_preamp_reserve": 40,
+      "two_flange_insertions": 38.2,
+      "clearance": 10
+    },
+    "required_mm": 234.55,
+    "selected_tube_length_mm": 300,
+    "margin_mm": 65.44999999999999,
+    "rejected_200mm_margin_mm": -34.55000000000001,
+    "note": "Axial allocation budget only; EMPTY reserve is not preamp hardware. Vendor 300 mm is shortest listed length that fits this budget."
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "cadquery": "2.6.1",
+    "cadquery_ocp": "7.8.1.1.post1",
+    "ezdxf": "1.4.3",
+    "environment": "Existing hardware/cad/.venv reused read-only; no install/sync/config changes",
+    "model_identity": "Not inferred by generator; child execution report records actual runtime context"
+  },
+  "parts": [
+    {
+      "name": "V3_TUBE_AL6061_BR106279_300",
+      "group": "PRESSURE_BOUNDARY",
+      "physical": true,
+      "material": "aluminium_6061",
+      "source": "cad/v3_proxy.py:tube",
+      "source_model": "tube",
+      "transforms": [
+        {
+          "rotate_axis": [
+            0,
+            1,
+            0
+          ],
+          "degrees": 90
+        },
+        {
+          "translate_mm": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "bbox": {
+        "min_mm": [
+          -56.000000000000036,
+          -56.0,
+          -6.217248937900877e-15
+        ],
+        "max_mm": [
+          56.0,
+          56.0,
+          300.0
+        ],
+        "size_mm": [
+          112.00000000000003,
+          112.0,
+          300.0
+        ]
+      },
+      "volume_mm3": 450149.8615794387,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 2700,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 1.2154046262644844,
+      "mass_note": "Original enclosure tube fit proxy; compare catalog nominal 1.066 kg, not as-built mass.",
+      "wetted": true,
+      "features": {
+        "vendor_part_number": "BR-106279-300"
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_FLANGE_AFT_SOURCE_ID_CONFLICT",
+      "group": "PRESSURE_BOUNDARY",
+      "physical": true,
+      "material": "aluminium_6061",
+      "source": "cad/v3_proxy.py:flange",
+      "source_model": "flange",
+      "transforms": [
+        {
+          "rotate_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 180
+        },
+        {
+          "translate_mm": [
+            0,
+            0,
+            19.1
+          ]
+        }
+      ],
+      "bbox": {
+        "min_mm": [
+          -57.15,
+          -57.15,
+          -7.900000000000006
+        ],
+        "max_mm": [
+          57.15,
+          57.15,
+          19.10000000000001
+        ],
+        "size_mm": [
+          114.3,
+          114.3,
+          27.000000000000014
+        ]
+      },
+      "volume_mm3": 78814.44942936722,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 2700,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.21279901345929148,
+      "mass_note": "Flange supplier identity conflicts with archive filename; proxy models the envelope and fit bore.",
+      "wetted": true,
+      "features": {
+        "vendor_part_number": "BR-101040 (BR-100665 download conflict)"
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT",
+      "group": "PRESSURE_BOUNDARY",
+      "physical": true,
+      "material": "aluminium_6061",
+      "source": "cad/v3_proxy.py:flange",
+      "source_model": "flange",
+      "transforms": [
+        {
+          "translate_mm": [
+            0,
+            0,
+            280.9
+          ]
+        }
+      ],
+      "bbox": {
+        "min_mm": [
+          -57.15,
+          -57.15,
+          280.9
+        ],
+        "max_mm": [
+          57.15,
+          57.15,
+          307.9
+        ],
+        "size_mm": [
+          114.3,
+          114.3,
+          27.0
+        ]
+      },
+      "volume_mm3": 78814.44942936722,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 2700,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.21279901345929148,
+      "mass_note": "Same unresolved supplier identity as aft flange; original fit proxy.",
+      "wetted": true,
+      "features": {
+        "vendor_part_number": "BR-101040 (BR-100665 download conflict)"
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_AFT_CAP_5_M10_AL6061",
+      "group": "PRESSURE_BOUNDARY",
+      "physical": true,
+      "material": "aluminium_6061",
+      "source": "cad/v3_proxy.py:aft_cap",
+      "source_model": "aft_cap",
+      "transforms": [
+        {
+          "rotate_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 180
+        },
+        {
+          "translate_mm": [
+            0,
+            0,
+            -7.899999999999999
+          ]
+        }
+      ],
+      "bbox": {
+        "min_mm": [
+          -57.15,
+          -57.15,
+          -13.900000000000006
+        ],
+        "max_mm": [
+          57.15,
+          57.15,
+          -3.8999999999999932
+        ],
+        "size_mm": [
+          114.3,
+          114.3,
+          10.000000000000012
+        ]
+      },
+      "volume_mm3": 81807.8109737518,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 2700,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.22088108962912986,
+      "mass_note": "Five traced penetrator bore positions; four remain OPEN. Original fit proxy, not a sealed boundary.",
+      "wetted": true,
+      "features": {
+        "vendor_part_number": "BR-102993-005",
+        "penetrator_centers_source_xy_mm": [
+          [
+            -26.629582,
+            -8.652476
+          ],
+          [
+            -16.457987,
+            22.652476
+          ],
+          [
+            0.0,
+            -28.0
+          ],
+          [
+            16.457987,
+            22.652476
+          ],
+          [
+            26.629582,
+            -8.652476
+          ]
+        ]
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_DOME_POLYCARBONATE_BR107201",
+      "group": "PRESSURE_BOUNDARY",
+      "physical": true,
+      "material": "polycarbonate",
+      "source": "cad/v3_proxy.py:dome",
+      "source_model": "dome",
+      "transforms": [
+        {
+          "rotate_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 90
+        },
+        {
+          "translate_mm": [
+            0,
+            0,
+            307.9
+          ]
+        }
+      ],
+      "bbox": {
+        "min_mm": [
+          -52.328082488222215,
+          -52.328082488222215,
+          307.8999999999999
+        ],
+        "max_mm": [
+          52.328082488222215,
+          52.328082488222215,
+          359.702
+        ],
+        "size_mm": [
+          104.65616497644443,
+          104.65616497644443,
+          51.80200000000008
+        ]
+      },
+      "volume_mm3": 97483.3924541448,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 1200,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.11698007094497377,
+      "mass_note": "Hollow polycarbonate optical fit proxy; spherical surface allocation, not supplier design.",
+      "wetted": true,
+      "features": {
+        "vendor_part_number": "BR-107201"
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_DOME_RETAINING_RING_ALUMINIUM",
+      "group": "PRESSURE_BOUNDARY",
+      "physical": true,
+      "material": "aluminium_alloy_unconfirmed",
+      "source": "cad/v3_proxy.py:dome_ring",
+      "source_model": "dome_ring",
+      "transforms": [
+        {
+          "rotate_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 90
+        },
+        {
+          "translate_mm": [
+            0,
+            0,
+            307.9
+          ]
+        }
+      ],
+      "bbox": {
+        "min_mm": [
+          -57.15,
+          -57.15,
+          307.9
+        ],
+        "max_mm": [
+          57.15,
+          57.15,
+          318.2500002
+        ],
+        "size_mm": [
+          114.3,
+          114.3,
+          10.35000020000001
+        ]
+      },
+      "volume_mm3": 17164.738429045465,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 2700,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.04634479375842276,
+      "mass_note": "Original retaining-ring fit proxy; supplier alloy unconfirmed.",
+      "wetted": true,
+      "features": {
+        "vendor_part_number": "BR-107201"
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT",
+      "group": "PRESSURE_BOUNDARY",
+      "physical": true,
+      "material": "vendor_unknown_internals",
+      "source": "cad/v3_proxy.py:wetlink",
+      "source_model": "wetlink",
+      "transforms": [
+        {
+          "rotate_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": -90
+        },
+        {
+          "translate_mm": [
+            0.0,
+            28.0,
+            5.2
+          ]
+        }
+      ],
+      "bbox": {
+        "min_mm": [
+          -8.0,
+          20.000000000000004,
+          -39.8
+        ],
+        "max_mm": [
+          8.0,
+          36.0,
+          5.200000000000001
+        ],
+        "size_mm": [
+          16.0,
+          15.999999999999996,
+          45.0
+        ]
+      },
+      "volume_mm3": 3901.8580757585223,
+      "solid_count": 1,
+      "density_assumption_kg_m3": null,
+      "source_mass_kg": null,
+      "modeled_mass_kg": null,
+      "mass_note": "Source revision measures 16 mm OD, current PDF states 18 mm. Original fit proxy; seal and compression unresolved.",
+      "wetted": true,
+      "features": {
+        "vendor_part_number": "WLP-M10-7.5MM-R1",
+        "current_candidate": "BR-100875-175 HC tested Fathom row; not verified exact CAD revision"
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS",
+      "group": "CAMERA_AND_INTERNAL_MOUNT",
+      "physical": true,
+      "material": "camera_unknown_internals",
+      "source": "cad/v3_proxy.py:camera",
+      "source_model": "camera",
+      "transforms": [
+        {
+          "rotate_axis": [
+            1,
+            0,
+            0
+          ],
+          "degrees": 90
+        },
+        {
+          "translate_mm": [
+            -16.0,
+            -16.0,
+            280
+          ]
+        }
+      ],
+      "bbox": {
+        "min_mm": [
+          -16.0,
+          -16.0,
+          274.0
+        ],
+        "max_mm": [
+          16.0,
+          16.0,
+          303.35
+        ],
+        "size_mm": [
+          32.0,
+          32.0,
+          29.350000000000023
+        ]
+      },
+      "volume_mm3": 7517.570916161139,
+      "solid_count": 1,
+      "density_assumption_kg_m3": null,
+      "source_mass_kg": null,
+      "modeled_mass_kg": null,
+      "mass_note": "Original camera PCB and optical envelope; internals and mass unknown.",
+      "wetted": false,
+      "features": {
+        "vendor_part_number": "LOW-LIGHT-HD-USB-CAMERA-R1"
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_CAMERA_TRAY_PEEK_ALLOCATION",
+      "group": "CAMERA_AND_INTERNAL_MOUNT",
+      "physical": true,
+      "material": "peek",
+      "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          -22.0,
+          -22.0,
+          263.0
+        ],
+        "max_mm": [
+          22.0,
+          22.0,
+          266.0
+        ],
+        "size_mm": [
+          44.0,
+          44.0,
+          3.0
+        ]
+      },
+      "volume_mm3": 4080.0,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 1300,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.005304,
+      "mass_note": "Geometric solid with explicit nominal density assumption; not measured mass",
+      "wetted": false,
+      "features": {},
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_CAMERA_STANDOFF_00_PEEK",
+      "group": "CAMERA_AND_INTERNAL_MOUNT",
+      "physical": true,
+      "material": "peek",
+      "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          -16.5,
+          -16.5,
+          266.0
+        ],
+        "max_mm": [
+          -11.5,
+          -11.5,
+          280.0
+        ],
+        "size_mm": [
+          5.0,
+          5.0,
+          14.0
+        ]
+      },
+      "volume_mm3": 209.4261061106642,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 1300,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.00027225393794386344,
+      "mass_note": "Geometric solid with explicit nominal density assumption; not measured mass",
+      "wetted": false,
+      "features": {},
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_CAMERA_STANDOFF_01_PEEK",
+      "group": "CAMERA_AND_INTERNAL_MOUNT",
+      "physical": true,
+      "material": "peek",
+      "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          -16.5,
+          11.5,
+          266.0
+        ],
+        "max_mm": [
+          -11.5,
+          16.5,
+          280.0
+        ],
+        "size_mm": [
+          5.0,
+          5.0,
+          14.0
+        ]
+      },
+      "volume_mm3": 209.4261061106642,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 1300,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.00027225393794386344,
+      "mass_note": "Geometric solid with explicit nominal density assumption; not measured mass",
+      "wetted": false,
+      "features": {},
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_CAMERA_STANDOFF_10_PEEK",
+      "group": "CAMERA_AND_INTERNAL_MOUNT",
+      "physical": true,
+      "material": "peek",
+      "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          11.5,
+          -16.5,
+          266.0
+        ],
+        "max_mm": [
+          16.5,
+          -11.5,
+          280.0
+        ],
+        "size_mm": [
+          5.0,
+          5.0,
+          14.0
+        ]
+      },
+      "volume_mm3": 209.4261061106642,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 1300,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.00027225393794386344,
+      "mass_note": "Geometric solid with explicit nominal density assumption; not measured mass",
+      "wetted": false,
+      "features": {},
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_CAMERA_STANDOFF_11_PEEK",
+      "group": "CAMERA_AND_INTERNAL_MOUNT",
+      "physical": true,
+      "material": "peek",
+      "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          11.5,
+          11.5,
+          266.0
+        ],
+        "max_mm": [
+          16.5,
+          16.5,
+          280.0
+        ],
+        "size_mm": [
+          5.0,
+          5.0,
+          14.0
+        ]
+      },
+      "volume_mm3": 209.4261061106642,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 1300,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.00027225393794386344,
+      "mass_note": "Geometric solid with explicit nominal density assumption; not measured mass",
+      "wetted": false,
+      "features": {},
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "group": "PASSIVE_RECEIVE",
+      "physical": true,
+      "material": "polyurethane",
+      "source": "sources/dimension-traces.json:as1.diameter,as1.length",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          89.0,
+          -6.0,
+          240.0
+        ],
+        "max_mm": [
+          101.0,
+          6.0,
+          280.0
+        ],
+        "size_mm": [
+          12.0,
+          12.0,
+          40.0
+        ]
+      },
+      "volume_mm3": 4523.893421169301,
+      "solid_count": 1,
+      "density_assumption_kg_m3": null,
+      "source_mass_kg": 0.008,
+      "modeled_mass_kg": 0.008,
+      "mass_note": "8 g distributor mass without cable. Outer encapsulated envelope is NOT solid-metal mass.",
+      "wetted": true,
+      "features": {
+        "source_envelope_mm": [
+          12,
+          12,
+          40
+        ],
+        "transmit_connected": false
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "group": "PASSIVE_RECEIVE",
+      "physical": true,
+      "material": "peek",
+      "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          -62.0,
+          -62.0,
+          250.0
+        ],
+        "max_mm": [
+          106.0,
+          62.0,
+          260.0
+        ],
+        "size_mm": [
+          168.0,
+          124.0,
+          10.0
+        ]
+      },
+      "volume_mm3": 25303.97045049796,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 1300,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.03289516158564735,
+      "mass_note": "Geometric solid with explicit nominal density assumption; not measured mass",
+      "wetted": true,
+      "features": {
+        "stand_off_skin_to_sensor_mm": 33.0,
+        "fit_and_acoustic_self_noise": "unperformed"
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "group": "FARM_CLAMP",
+      "physical": true,
+      "material": "peek",
+      "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          -141.0,
+          -62.0,
+          80.0
+        ],
+        "max_mm": [
+          62.0,
+          62.0,
+          105.0
+        ],
+        "size_mm": [
+          203.0,
+          124.0,
+          25.0
+        ]
+      },
+      "volume_mm3": 40004.32070881789,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 1300,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.05200561692146326,
+      "mass_note": "Geometric solid with explicit nominal density assumption; not measured mass",
+      "wetted": true,
+      "features": {
+        "farm_rope_diameter_unknown": true,
+        "allocated_opening_diameter_mm": 25.0
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_DIVER_RELEASE_MOVING_JAW",
+      "group": "FARM_CLAMP",
+      "physical": true,
+      "material": "peek",
+      "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          -125.0,
+          -12.0,
+          100.49999999999972
+        ],
+        "max_mm": [
+          -75.0,
+          12.0,
+          120.0
+        ],
+        "size_mm": [
+          50.0,
+          24.0,
+          19.500000000000284
+        ]
+      },
+      "volume_mm3": 15849.07993946813,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 1300,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.020603803921308568,
+      "mass_note": "Geometric solid with explicit nominal density assumption; not measured mass",
+      "wetted": true,
+      "features": {
+        "release": "Withdraw two concept pull pins, lift jaw; detent/captive-pin retention unqualified"
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "group": "FARM_CLAMP",
+      "physical": true,
+      "material": "peek",
+      "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          -124.0,
+          -4.0,
+          80.0
+        ],
+        "max_mm": [
+          -116.0,
+          4.0,
+          120.0
+        ],
+        "size_mm": [
+          8.0,
+          8.0,
+          40.0
+        ]
+      },
+      "volume_mm3": 1094.5308805106833,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 1300,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.0014228901446638883,
+      "mass_note": "Geometric solid with explicit nominal density assumption; not measured mass",
+      "wetted": true,
+      "features": {},
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "group": "FARM_CLAMP",
+      "physical": true,
+      "material": "stainless_316",
+      "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          -129.5000001,
+          -5.0000001,
+          79.9999999
+        ],
+        "max_mm": [
+          -110.4999999,
+          5.0000001,
+          142.5000001
+        ],
+        "size_mm": [
+          19.000000199999988,
+          10.0000002,
+          62.50000019999999
+        ]
+      },
+      "volume_mm3": 1406.6028450094773,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 8000,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.011252822760075819,
+      "mass_note": "Geometric solid with explicit nominal density assumption; not measured mass",
+      "wetted": true,
+      "features": {
+        "nominal_shank_diameter_mm": 5.0,
+        "threads_and_detent": null,
+        "isolation": "PEEK sleeve and PEEK clamp; no conductive aluminium contact modeled"
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "group": "FARM_CLAMP",
+      "physical": true,
+      "material": "peek",
+      "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          -84.0,
+          -4.0,
+          80.0
+        ],
+        "max_mm": [
+          -76.0,
+          4.0,
+          120.0
+        ],
+        "size_mm": [
+          8.0,
+          8.0,
+          40.0
+        ]
+      },
+      "volume_mm3": 1094.5308805106833,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 1300,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.0014228901446638883,
+      "mass_note": "Geometric solid with explicit nominal density assumption; not measured mass",
+      "wetted": true,
+      "features": {},
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "group": "FARM_CLAMP",
+      "physical": true,
+      "material": "stainless_316",
+      "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          -89.5000001,
+          -5.0000001,
+          79.9999999
+        ],
+        "max_mm": [
+          -70.4999999,
+          5.0000001,
+          142.5000001
+        ],
+        "size_mm": [
+          19.000000199999988,
+          10.0000002,
+          62.50000019999999
+        ]
+      },
+      "volume_mm3": 1406.602845009478,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 8000,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.011252822760075824,
+      "mass_note": "Geometric solid with explicit nominal density assumption; not measured mass",
+      "wetted": true,
+      "features": {
+        "nominal_shank_diameter_mm": 5.0,
+        "threads_and_detent": null,
+        "isolation": "PEEK sleeve and PEEK clamp; no conductive aluminium contact modeled"
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "group": "FARM_CLAMP",
+      "physical": true,
+      "material": "lanyard_polyester",
+      "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          -133.5,
+          0.0,
+          92.0
+        ],
+        "max_mm": [
+          -130.5,
+          140.0,
+          95.0
+        ],
+        "size_mm": [
+          3.0,
+          140.0,
+          3.0
+        ]
+      },
+      "volume_mm3": 989.6016858807855,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 1380,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.0013656503265154839,
+      "mass_note": "Geometric solid with explicit nominal density assumption; not measured mass",
+      "wetted": true,
+      "features": {
+        "end_termination": null,
+        "load_rating": null
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "group": "SURFACE_ROUTE_CONCEPT",
+      "physical": true,
+      "material": "fathom_bulk_effective",
+      "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          -3.8000000999999997,
+          24.1999999,
+          -94.60000009999999
+        ],
+        "max_mm": [
+          3.8000000999999997,
+          300.0,
+          -40.799999899999996
+        ],
+        "size_mm": [
+          7.600000199999999,
+          275.8000001,
+          53.80000019999999
+        ]
+      },
+      "volume_mm3": 13633.86792655298,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 1025,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.013974714624716805,
+      "mass_note": "Geometric solid with explicit nominal density assumption; not measured mass",
+      "wetted": true,
+      "features": {
+        "path_length_mm": 300.5398163397448,
+        "bend_radius_mm": 50,
+        "jacket_diameter_mm": 7.6,
+        "full_30m_route_modeled": false,
+        "communications_verified": false
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "group": "SURFACE_ROUTE_CONCEPT",
+      "physical": true,
+      "material": "peek",
+      "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          -62.0,
+          -62.0,
+          -106.0000001
+        ],
+        "max_mm": [
+          62.0,
+          135.0,
+          20.0
+        ],
+        "size_mm": [
+          124.0,
+          197.0,
+          126.0000001
+        ]
+      },
+      "volume_mm3": 48676.20456640115,
+      "solid_count": 1,
+      "density_assumption_kg_m3": 1300,
+      "source_mass_kg": null,
+      "modeled_mass_kg": 0.0632790659363215,
+      "mass_note": "Geometric solid with explicit nominal density assumption; not measured mass",
+      "wetted": true,
+      "features": {
+        "pull_limit_N": null,
+        "termination": "No verified cable load transfer or fastener sizing"
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "group": "PASSIVE_RECEIVE",
+      "physical": true,
+      "material": "polyurethane",
+      "source": "sources/design-inputs.json: allocations; all dimensions hash traced",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          92.7499999,
+          -2.2500000999999927,
+          27.7499999
+        ],
+        "max_mm": [
+          97.2500001,
+          300.0,
+          240.0
+        ],
+        "size_mm": [
+          4.500000199999988,
+          302.25000009999997,
+          212.2500001
+        ]
+      },
+      "volume_mm3": 7769.890058620182,
+      "solid_count": 1,
+      "density_assumption_kg_m3": null,
+      "source_mass_kg": 0.013679114857512857,
+      "modeled_mass_kg": 0.013679114857512857,
+      "mass_note": "28 g/m distributor linear cable mass for this modeled stub only; no full 30 m cable mass invented",
+      "wetted": true,
+      "features": {
+        "path_length_mm": 488.53981633974485,
+        "jacket_diameter_mm": 4.5,
+        "bend_radius_mm": 50,
+        "standard_cable_m": 9,
+        "30m_analog_front_end": "UNRESOLVED, preamp remains dry"
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    }
+  ],
+  "empty_nonphysical": [
+    {
+      "name": "EMPTY_PREAMP_RESERVE_NONPOPULATED_DRY_PREAMP_ONLY",
+      "group": "EMPTY_RESERVES_NOT_HARDWARE",
+      "physical": false,
+      "material": "EMPTY",
+      "source": "sources/design-inputs.json",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          -20.0,
+          -20.0,
+          160.0
+        ],
+        "max_mm": [
+          20.0,
+          20.0,
+          200.0
+        ],
+        "size_mm": [
+          40.0,
+          40.0,
+          40.0
+        ]
+      },
+      "volume_mm3": 63999.999999999985,
+      "solid_count": 1,
+      "density_assumption_kg_m3": null,
+      "source_mass_kg": null,
+      "modeled_mass_kg": null,
+      "mass_note": "EMPTY, not hardware; excluded from physical mass, displacement and interference",
+      "wetted": false,
+      "features": {
+        "populated": false
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "EMPTY_CAMERA_CABLE_SERVICE_ALLOCATION",
+      "group": "EMPTY_RESERVES_NOT_HARDWARE",
+      "physical": false,
+      "material": "EMPTY",
+      "source": "sources/design-inputs.json",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          -25.0,
+          -25.0,
+          50.0
+        ],
+        "max_mm": [
+          25.0,
+          25.0,
+          150.0
+        ],
+        "size_mm": [
+          50.0,
+          50.0,
+          100.0
+        ]
+      },
+      "volume_mm3": 249999.99999999997,
+      "solid_count": 1,
+      "density_assumption_kg_m3": null,
+      "source_mass_kg": null,
+      "modeled_mass_kg": null,
+      "mass_note": "EMPTY, not hardware; excluded from physical mass, displacement and interference",
+      "wetted": false,
+      "features": {
+        "populated": false
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    },
+    {
+      "name": "EMPTY_FUTURE_PROJECTOR_MOUNT_ENVELOPE",
+      "group": "EMPTY_RESERVES_NOT_HARDWARE",
+      "physical": false,
+      "material": "EMPTY",
+      "source": "sources/design-inputs.json",
+      "source_model": null,
+      "transforms": [],
+      "bbox": {
+        "min_mm": [
+          -30.0,
+          -140.0,
+          135.0
+        ],
+        "max_mm": [
+          30.0,
+          -80.0,
+          205.0
+        ],
+        "size_mm": [
+          60.0,
+          60.0,
+          70.0
+        ]
+      },
+      "volume_mm3": 252000.00000000003,
+      "solid_count": 1,
+      "density_assumption_kg_m3": null,
+      "source_mass_kg": null,
+      "modeled_mass_kg": null,
+      "mass_note": "EMPTY, not hardware; excluded from physical mass, displacement and interference",
+      "wetted": false,
+      "features": {
+        "populated": false
+      },
+      "pressure_or_load_qualified": false,
+      "printable": false
+    }
+  ],
+  "physical_bbox": {
+    "min_mm": [
+      -141.0,
+      -62.0,
+      -106.0000001
+    ],
+    "max_mm": [
+      106.0,
+      300.0,
+      359.702
+    ],
+    "size_mm": [
+      247.0,
+      362.0,
+      465.70200009999996
+    ]
+  },
+  "mass_displacement": {
+    "density_assumptions_kg_m3": {
+      "aluminium_6061": 2700,
+      "aluminium_7075": 2810,
+      "stainless_316": 8000,
+      "peek": 1300,
+      "polycarbonate": 1200,
+      "polyurethane": 1200,
+      "lanyard_polyester": 1380,
+      "seawater": 1025,
+      "fathom_bulk_effective": 1025
+    },
+    "per_part": [
+      {
+        "name": "V3_TUBE_AL6061_BR106279_300",
+        "geometric_volume_mm3": 450149.8615794387,
+        "modeled_mass_kg": 1.2154046262644844,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 2700,
+        "flooded_external_solid_displacement_mm3": 0,
+        "internal_or_pressure_shell_no_double_count": true,
+        "note": "Original enclosure tube fit proxy; compare catalog nominal 1.066 kg, not as-built mass."
+      },
+      {
+        "name": "V3_FLANGE_AFT_SOURCE_ID_CONFLICT",
+        "geometric_volume_mm3": 78814.44942936722,
+        "modeled_mass_kg": 0.21279901345929148,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 2700,
+        "flooded_external_solid_displacement_mm3": 0,
+        "internal_or_pressure_shell_no_double_count": true,
+        "note": "Flange supplier identity conflicts with archive filename; proxy models the envelope and fit bore."
+      },
+      {
+        "name": "V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT",
+        "geometric_volume_mm3": 78814.44942936722,
+        "modeled_mass_kg": 0.21279901345929148,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 2700,
+        "flooded_external_solid_displacement_mm3": 0,
+        "internal_or_pressure_shell_no_double_count": true,
+        "note": "Same unresolved supplier identity as aft flange; original fit proxy."
+      },
+      {
+        "name": "V3_AFT_CAP_5_M10_AL6061",
+        "geometric_volume_mm3": 81807.8109737518,
+        "modeled_mass_kg": 0.22088108962912986,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 2700,
+        "flooded_external_solid_displacement_mm3": 0,
+        "internal_or_pressure_shell_no_double_count": true,
+        "note": "Five traced penetrator bore positions; four remain OPEN. Original fit proxy, not a sealed boundary."
+      },
+      {
+        "name": "V3_DOME_POLYCARBONATE_BR107201",
+        "geometric_volume_mm3": 97483.3924541448,
+        "modeled_mass_kg": 0.11698007094497377,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 1200,
+        "flooded_external_solid_displacement_mm3": 0,
+        "internal_or_pressure_shell_no_double_count": true,
+        "note": "Hollow polycarbonate optical fit proxy; spherical surface allocation, not supplier design."
+      },
+      {
+        "name": "V3_DOME_RETAINING_RING_ALUMINIUM",
+        "geometric_volume_mm3": 17164.738429045465,
+        "modeled_mass_kg": 0.04634479375842276,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 2700,
+        "flooded_external_solid_displacement_mm3": 0,
+        "internal_or_pressure_shell_no_double_count": true,
+        "note": "Original retaining-ring fit proxy; supplier alloy unconfirmed."
+      },
+      {
+        "name": "V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT",
+        "geometric_volume_mm3": 3901.8580757585223,
+        "modeled_mass_kg": null,
+        "mass_basis": "unknown_omitted_not_solid_metal",
+        "density_assumption_kg_m3": null,
+        "flooded_external_solid_displacement_mm3": 2401.7475836693957,
+        "internal_or_pressure_shell_no_double_count": false,
+        "note": "Source revision measures 16 mm OD, current PDF states 18 mm. Original fit proxy; seal and compression unresolved."
+      },
+      {
+        "name": "V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS",
+        "geometric_volume_mm3": 7517.570916161139,
+        "modeled_mass_kg": null,
+        "mass_basis": "unknown_omitted_not_solid_metal",
+        "density_assumption_kg_m3": null,
+        "flooded_external_solid_displacement_mm3": 0,
+        "internal_or_pressure_shell_no_double_count": true,
+        "note": "Original camera PCB and optical envelope; internals and mass unknown."
+      },
+      {
+        "name": "V3_CAMERA_TRAY_PEEK_ALLOCATION",
+        "geometric_volume_mm3": 4080.0,
+        "modeled_mass_kg": 0.005304,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 1300,
+        "flooded_external_solid_displacement_mm3": 0,
+        "internal_or_pressure_shell_no_double_count": true,
+        "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+      },
+      {
+        "name": "V3_CAMERA_STANDOFF_00_PEEK",
+        "geometric_volume_mm3": 209.4261061106642,
+        "modeled_mass_kg": 0.00027225393794386344,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 1300,
+        "flooded_external_solid_displacement_mm3": 0,
+        "internal_or_pressure_shell_no_double_count": true,
+        "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+      },
+      {
+        "name": "V3_CAMERA_STANDOFF_01_PEEK",
+        "geometric_volume_mm3": 209.4261061106642,
+        "modeled_mass_kg": 0.00027225393794386344,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 1300,
+        "flooded_external_solid_displacement_mm3": 0,
+        "internal_or_pressure_shell_no_double_count": true,
+        "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+      },
+      {
+        "name": "V3_CAMERA_STANDOFF_10_PEEK",
+        "geometric_volume_mm3": 209.4261061106642,
+        "modeled_mass_kg": 0.00027225393794386344,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 1300,
+        "flooded_external_solid_displacement_mm3": 0,
+        "internal_or_pressure_shell_no_double_count": true,
+        "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+      },
+      {
+        "name": "V3_CAMERA_STANDOFF_11_PEEK",
+        "geometric_volume_mm3": 209.4261061106642,
+        "modeled_mass_kg": 0.00027225393794386344,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 1300,
+        "flooded_external_solid_displacement_mm3": 0,
+        "internal_or_pressure_shell_no_double_count": true,
+        "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+      },
+      {
+        "name": "V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+        "geometric_volume_mm3": 4523.893421169301,
+        "modeled_mass_kg": 0.008,
+        "mass_basis": "source_mass",
+        "density_assumption_kg_m3": null,
+        "flooded_external_solid_displacement_mm3": 4523.893421169301,
+        "internal_or_pressure_shell_no_double_count": false,
+        "note": "8 g distributor mass without cable. Outer encapsulated envelope is NOT solid-metal mass."
+      },
+      {
+        "name": "V3_AS1_NONMETAL_STANDOFF_BRACKET",
+        "geometric_volume_mm3": 25303.97045049796,
+        "modeled_mass_kg": 0.03289516158564735,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 1300,
+        "flooded_external_solid_displacement_mm3": 25303.97045049796,
+        "internal_or_pressure_shell_no_double_count": false,
+        "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+      },
+      {
+        "name": "V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+        "geometric_volume_mm3": 40004.32070881789,
+        "modeled_mass_kg": 0.05200561692146326,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 1300,
+        "flooded_external_solid_displacement_mm3": 40004.32070881789,
+        "internal_or_pressure_shell_no_double_count": false,
+        "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+      },
+      {
+        "name": "V3_DIVER_RELEASE_MOVING_JAW",
+        "geometric_volume_mm3": 15849.07993946813,
+        "modeled_mass_kg": 0.020603803921308568,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 1300,
+        "flooded_external_solid_displacement_mm3": 15849.07993946813,
+        "internal_or_pressure_shell_no_double_count": false,
+        "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+      },
+      {
+        "name": "V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+        "geometric_volume_mm3": 1094.5308805106833,
+        "modeled_mass_kg": 0.0014228901446638883,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 1300,
+        "flooded_external_solid_displacement_mm3": 1094.5308805106833,
+        "internal_or_pressure_shell_no_double_count": false,
+        "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+      },
+      {
+        "name": "V3_DIVER_PULL_PIN_1_ISOLATED_316",
+        "geometric_volume_mm3": 1406.6028450094773,
+        "modeled_mass_kg": 0.011252822760075819,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 8000,
+        "flooded_external_solid_displacement_mm3": 1406.6028450094773,
+        "internal_or_pressure_shell_no_double_count": false,
+        "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+      },
+      {
+        "name": "V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+        "geometric_volume_mm3": 1094.5308805106833,
+        "modeled_mass_kg": 0.0014228901446638883,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 1300,
+        "flooded_external_solid_displacement_mm3": 1094.5308805106833,
+        "internal_or_pressure_shell_no_double_count": false,
+        "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+      },
+      {
+        "name": "V3_DIVER_PULL_PIN_2_ISOLATED_316",
+        "geometric_volume_mm3": 1406.602845009478,
+        "modeled_mass_kg": 0.011252822760075824,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 8000,
+        "flooded_external_solid_displacement_mm3": 1406.602845009478,
+        "internal_or_pressure_shell_no_double_count": false,
+        "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+      },
+      {
+        "name": "V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+        "geometric_volume_mm3": 989.6016858807855,
+        "modeled_mass_kg": 0.0013656503265154839,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 1380,
+        "flooded_external_solid_displacement_mm3": 989.6016858807855,
+        "internal_or_pressure_shell_no_double_count": false,
+        "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+      },
+      {
+        "name": "V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+        "geometric_volume_mm3": 13633.86792655298,
+        "modeled_mass_kg": 0.013974714624716805,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 1025,
+        "flooded_external_solid_displacement_mm3": 13633.86792655298,
+        "internal_or_pressure_shell_no_double_count": false,
+        "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+      },
+      {
+        "name": "V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+        "geometric_volume_mm3": 48676.20456640115,
+        "modeled_mass_kg": 0.0632790659363215,
+        "mass_basis": "geometric_density_assumption",
+        "density_assumption_kg_m3": 1300,
+        "flooded_external_solid_displacement_mm3": 48676.20426309423,
+        "internal_or_pressure_shell_no_double_count": false,
+        "note": "Geometric solid with explicit nominal density assumption; not measured mass"
+      },
+      {
+        "name": "V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+        "geometric_volume_mm3": 7769.890058620182,
+        "modeled_mass_kg": 0.013679114857512857,
+        "mass_basis": "source_mass",
+        "density_assumption_kg_m3": null,
+        "flooded_external_solid_displacement_mm3": 7769.890058620182,
+        "internal_or_pressure_shell_no_double_count": false,
+        "note": "28 g/m distributor linear cable mass for this modeled stub only; no full 30 m cable mass invented"
+      }
+    ],
+    "known_or_assumed_mass_subtotal_kg": 2.2627561772503344,
+    "actual_complete_dry_mass_kg": null,
+    "unknown_mass_parts": [
+      "V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT",
+      "V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS"
+    ],
+    "other_omitted_mass": [
+      "Tube/flange O-rings",
+      "locking cords",
+      "closure fasteners and isolation/engagement detail",
+      "unused-hole plugs or verified connector assemblies",
+      "pressure relief valve",
+      "WetLink nut and final compression/stripped-core termination",
+      "Full length 30 m transport, surface hub and farm rope, fouling and water ingress"
+    ],
+    "pressure_shell_material_volume_mm3": 804234.7022951152,
+    "conditional_sealed_external_envelope_volume_mm3": 3472353.4684303203,
+    "flooded_external_mount_and_stub_solid_volume_mm3": 164154.84348881117,
+    "conditional_total_displacement_m3": 0.0036365083119191313,
+    "seawater_mass_displaced_kg": 3.7274210197171094,
+    "modeled_upward_mass_difference_kg": 1.464664842466775,
+    "modeled_buoyancy_sign": "positive",
+    "sign_basis": "Conditional closed nominal exterior minus modeled mass subtotal only; incomplete real mass and open boundary prevent an actual unit buoyancy conclusion",
+    "actual_unit_buoyancy_sign": null,
+    "sealed_boundary_present": false,
+    "displacement_method": "OCP union of source-sized tube/flange/nominal cap cylinders with original hollow dome fit proxy and inner-sphere fill. Cap lifting ears omitted; chamfers/slots approximated. This conditional envelope is checked for BRep validity, one solid and volume retention. Flooded mounts contribute only their solids outside it, never bounding boxes. Internal camera/tray and EMPTY reserves add no sealed displacement.",
+    "source_mass_comparisons_kg": {
+      "tube": 1.066,
+      "each_flange_identity_unresolved": 0.107,
+      "aft_cap": 0.223,
+      "dome_and_ring_combined": 0.16
+    },
+    "physical_measurements_performed": 0
+  },
+  "checks": {
+    "kernel_executed": true,
+    "total": 394,
+    "passed": 394,
+    "failed": 0,
+    "physical_pair_checks": 300
+  },
+  "check_records": [
+    {
+      "id": "brep:V3_TUBE_AL6061_BR106279_300",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_FLANGE_AFT_SOURCE_ID_CONFLICT",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_AFT_CAP_5_M10_AL6061",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_DOME_POLYCARBONATE_BR107201",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_DOME_RETAINING_RING_ALUMINIUM",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_CAMERA_TRAY_PEEK_ALLOCATION",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_CAMERA_STANDOFF_00_PEEK",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_CAMERA_STANDOFF_01_PEEK",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_CAMERA_STANDOFF_10_PEEK",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_CAMERA_STANDOFF_11_PEEK",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:EMPTY_PREAMP_RESERVE_NONPOPULATED_DRY_PREAMP_ONLY",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:EMPTY_CAMERA_CABLE_SERVICE_ALLOCATION",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "brep:EMPTY_FUTURE_PROJECTOR_MOUNT_ENVELOPE",
+      "passed": true,
+      "evidence": "OCP BRepCheck_Analyzer; EMPTY validity is not physical membership",
+      "solids": 1
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_FLANGE_AFT_SOURCE_ID_CONFLICT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_AFT_CAP_5_M10_AL6061",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_DOME_POLYCARBONATE_BR107201",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_DOME_RETAINING_RING_ALUMINIUM",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_CAMERA_TRAY_PEEK_ALLOCATION",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_CAMERA_STANDOFF_00_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_CAMERA_STANDOFF_01_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_CAMERA_STANDOFF_10_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_CAMERA_STANDOFF_11_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TUBE_AL6061_BR106279_300:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_AFT_CAP_5_M10_AL6061",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_DOME_POLYCARBONATE_BR107201",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_DOME_RETAINING_RING_ALUMINIUM",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_CAMERA_TRAY_PEEK_ALLOCATION",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_CAMERA_STANDOFF_00_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_CAMERA_STANDOFF_01_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_CAMERA_STANDOFF_10_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_CAMERA_STANDOFF_11_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_AFT_SOURCE_ID_CONFLICT:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_AFT_CAP_5_M10_AL6061",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_DOME_POLYCARBONATE_BR107201",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_DOME_RETAINING_RING_ALUMINIUM",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_CAMERA_TRAY_PEEK_ALLOCATION",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_CAMERA_STANDOFF_00_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_CAMERA_STANDOFF_01_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_CAMERA_STANDOFF_10_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_CAMERA_STANDOFF_11_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_DOME_POLYCARBONATE_BR107201",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_DOME_RETAINING_RING_ALUMINIUM",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_CAMERA_TRAY_PEEK_ALLOCATION",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_CAMERA_STANDOFF_00_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_CAMERA_STANDOFF_01_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_CAMERA_STANDOFF_10_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_CAMERA_STANDOFF_11_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AFT_CAP_5_M10_AL6061:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_DOME_RETAINING_RING_ALUMINIUM",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_CAMERA_TRAY_PEEK_ALLOCATION",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_CAMERA_STANDOFF_00_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_CAMERA_STANDOFF_01_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_CAMERA_STANDOFF_10_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_CAMERA_STANDOFF_11_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_POLYCARBONATE_BR107201:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_CAMERA_TRAY_PEEK_ALLOCATION",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_CAMERA_STANDOFF_00_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_CAMERA_STANDOFF_01_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_CAMERA_STANDOFF_10_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_CAMERA_STANDOFF_11_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DOME_RETAINING_RING_ALUMINIUM:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_CAMERA_TRAY_PEEK_ALLOCATION",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_CAMERA_STANDOFF_00_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_CAMERA_STANDOFF_01_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_CAMERA_STANDOFF_10_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_CAMERA_STANDOFF_11_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_CAMERA_TRAY_PEEK_ALLOCATION",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_CAMERA_STANDOFF_00_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_CAMERA_STANDOFF_01_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_CAMERA_STANDOFF_10_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_CAMERA_STANDOFF_11_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_TRAY_PEEK_ALLOCATION:V3_CAMERA_STANDOFF_00_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_TRAY_PEEK_ALLOCATION:V3_CAMERA_STANDOFF_01_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_TRAY_PEEK_ALLOCATION:V3_CAMERA_STANDOFF_10_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_TRAY_PEEK_ALLOCATION:V3_CAMERA_STANDOFF_11_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_TRAY_PEEK_ALLOCATION:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_TRAY_PEEK_ALLOCATION:V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_TRAY_PEEK_ALLOCATION:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_TRAY_PEEK_ALLOCATION:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_TRAY_PEEK_ALLOCATION:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_TRAY_PEEK_ALLOCATION:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_TRAY_PEEK_ALLOCATION:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_TRAY_PEEK_ALLOCATION:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_TRAY_PEEK_ALLOCATION:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_TRAY_PEEK_ALLOCATION:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_TRAY_PEEK_ALLOCATION:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_TRAY_PEEK_ALLOCATION:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_00_PEEK:V3_CAMERA_STANDOFF_01_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_00_PEEK:V3_CAMERA_STANDOFF_10_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_00_PEEK:V3_CAMERA_STANDOFF_11_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_00_PEEK:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_00_PEEK:V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_00_PEEK:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_00_PEEK:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_00_PEEK:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_00_PEEK:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_00_PEEK:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_00_PEEK:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_00_PEEK:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_00_PEEK:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_00_PEEK:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_00_PEEK:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_01_PEEK:V3_CAMERA_STANDOFF_10_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_01_PEEK:V3_CAMERA_STANDOFF_11_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_01_PEEK:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_01_PEEK:V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_01_PEEK:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_01_PEEK:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_01_PEEK:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_01_PEEK:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_01_PEEK:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_01_PEEK:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_01_PEEK:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_01_PEEK:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_01_PEEK:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_01_PEEK:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_10_PEEK:V3_CAMERA_STANDOFF_11_PEEK",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_10_PEEK:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_10_PEEK:V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_10_PEEK:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_10_PEEK:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_10_PEEK:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_10_PEEK:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_10_PEEK:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_10_PEEK:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_10_PEEK:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_10_PEEK:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_10_PEEK:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_10_PEEK:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_11_PEEK:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_11_PEEK:V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_11_PEEK:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_11_PEEK:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_11_PEEK:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_11_PEEK:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_11_PEEK:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_11_PEEK:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_11_PEEK:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_11_PEEK:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_11_PEEK:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_CAMERA_STANDOFF_11_PEEK:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE:V3_AS1_NONMETAL_STANDOFF_BRACKET",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_NONMETAL_STANDOFF_BRACKET:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_NONMETAL_STANDOFF_BRACKET:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_NONMETAL_STANDOFF_BRACKET:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_NONMETAL_STANDOFF_BRACKET:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_NONMETAL_STANDOFF_BRACKET:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_NONMETAL_STANDOFF_BRACKET:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_NONMETAL_STANDOFF_BRACKET:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_NONMETAL_STANDOFF_BRACKET:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_NONMETAL_STANDOFF_BRACKET:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_AS1_NONMETAL_STANDOFF_BRACKET:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG:V3_DIVER_RELEASE_MOVING_JAW",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_RELEASE_MOVING_JAW:V3_PIN_1_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_RELEASE_MOVING_JAW:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_RELEASE_MOVING_JAW:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_RELEASE_MOVING_JAW:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_RELEASE_MOVING_JAW:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_RELEASE_MOVING_JAW:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_RELEASE_MOVING_JAW:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_RELEASE_MOVING_JAW:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_PIN_1_PEEK_ISOLATION_SLEEVE:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_PIN_1_PEEK_ISOLATION_SLEEVE:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_PIN_1_PEEK_ISOLATION_SLEEVE:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_PIN_1_PEEK_ISOLATION_SLEEVE:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_PIN_1_PEEK_ISOLATION_SLEEVE:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_PIN_1_PEEK_ISOLATION_SLEEVE:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_PIN_1_PEEK_ISOLATION_SLEEVE:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_PULL_PIN_1_ISOLATED_316:V3_PIN_2_PEEK_ISOLATION_SLEEVE",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_PULL_PIN_1_ISOLATED_316:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_PULL_PIN_1_ISOLATED_316:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_PULL_PIN_1_ISOLATED_316:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_PULL_PIN_1_ISOLATED_316:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_PULL_PIN_1_ISOLATED_316:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_PIN_2_PEEK_ISOLATION_SLEEVE:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_PIN_2_PEEK_ISOLATION_SLEEVE:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_PIN_2_PEEK_ISOLATION_SLEEVE:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_PIN_2_PEEK_ISOLATION_SLEEVE:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_PIN_2_PEEK_ISOLATION_SLEEVE:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_PULL_PIN_2_ISOLATED_316:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_PULL_PIN_2_ISOLATED_316:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_PULL_PIN_2_ISOLATED_316:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_DIVER_PULL_PIN_2_ISOLATED_316:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "interference:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT",
+      "passed": true,
+      "overlap_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "evidence": "Fresh OCP Boolean common of positioned part pair"
+    },
+    {
+      "id": "source_bbox:tube",
+      "passed": true,
+      "max_delta_mm": 2.0000005918063835e-07,
+      "source_file": "BR-106279-300_RevB.STEP",
+      "evidence": "Fresh parametric proxy versus recorded purchased-part envelope"
+    },
+    {
+      "id": "source_bbox:flange",
+      "passed": true,
+      "max_delta_mm": 2.0000000944264684e-07,
+      "source_file": "BR-101040_RevC.step",
+      "evidence": "Fresh parametric proxy versus recorded purchased-part envelope"
+    },
+    {
+      "id": "source_bbox:aft_cap",
+      "passed": true,
+      "max_delta_mm": 6.0,
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "evidence": "Fresh parametric proxy versus recorded purchased-part envelope"
+    },
+    {
+      "id": "source_bbox:dome",
+      "passed": true,
+      "max_delta_mm": 9.999993721976352e-08,
+      "source_file": "BR-107201-dome.STEP",
+      "evidence": "Fresh parametric proxy versus recorded purchased-part envelope"
+    },
+    {
+      "id": "source_bbox:dome_ring",
+      "passed": true,
+      "max_delta_mm": 2.0000003075892892e-07,
+      "source_file": "BR-107201-ring.STEP",
+      "evidence": "Fresh parametric proxy versus recorded purchased-part envelope"
+    },
+    {
+      "id": "source_bbox:camera",
+      "passed": true,
+      "max_delta_mm": 0.0,
+      "source_file": "LOW-LIGHT-HD-USB-CAMERA-R1.STEP",
+      "evidence": "Fresh parametric proxy versus recorded purchased-part envelope"
+    },
+    {
+      "id": "source_bbox:wetlink",
+      "passed": true,
+      "max_delta_mm": 2.0000000944264684e-07,
+      "source_file": "WLP-M10-7.5MM-PUBLIC.step",
+      "evidence": "Fresh parametric proxy versus recorded purchased-part envelope"
+    },
+    {
+      "id": "placed_source_bbox:V3_TUBE_AL6061_BR106279_300",
+      "passed": true,
+      "max_delta_mm": 0.0
+    },
+    {
+      "id": "placed_source_bbox:V3_FLANGE_AFT_SOURCE_ID_CONFLICT",
+      "passed": true,
+      "max_delta_mm": 0.0
+    },
+    {
+      "id": "placed_source_bbox:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT",
+      "passed": true,
+      "max_delta_mm": 0.0
+    },
+    {
+      "id": "placed_source_bbox:V3_AFT_CAP_5_M10_AL6061",
+      "passed": true,
+      "max_delta_mm": 0.0
+    },
+    {
+      "id": "placed_source_bbox:V3_DOME_POLYCARBONATE_BR107201",
+      "passed": true,
+      "max_delta_mm": 0.0
+    },
+    {
+      "id": "placed_source_bbox:V3_DOME_RETAINING_RING_ALUMINIUM",
+      "passed": true,
+      "max_delta_mm": 0.0
+    },
+    {
+      "id": "placed_source_bbox:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT",
+      "passed": true,
+      "max_delta_mm": 0.0
+    },
+    {
+      "id": "placed_source_bbox:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS",
+      "passed": true,
+      "max_delta_mm": 0.0
+    },
+    {
+      "id": "traced_surface_dimension:tube.od",
+      "passed": true,
+      "source_trace": "tube.od",
+      "target_mm": 112,
+      "minimum_surface_delta_mm": 0.0
+    },
+    {
+      "id": "traced_surface_dimension:tube.id",
+      "passed": true,
+      "source_trace": "tube.id",
+      "target_mm": 103,
+      "minimum_surface_delta_mm": 0.0
+    },
+    {
+      "id": "traced_surface_dimension:flange.od",
+      "passed": true,
+      "source_trace": "flange.od",
+      "target_mm": 114.3,
+      "minimum_surface_delta_mm": 0.0
+    },
+    {
+      "id": "traced_surface_dimension:flange.piston_diameter",
+      "passed": true,
+      "source_trace": "flange.piston_diameter",
+      "target_mm": 103.91,
+      "minimum_surface_delta_mm": 0.0
+    },
+    {
+      "id": "traced_surface_dimension:aft_cap.penetrator_hole_diameter",
+      "passed": true,
+      "source_trace": "aft_cap.penetrator_hole_diameter",
+      "target_mm": 10.2,
+      "minimum_surface_delta_mm": 0.0
+    },
+    {
+      "id": "traced_surface_dimension:dome.internal_radius",
+      "passed": true,
+      "actual_mm": 44.0
+    },
+    {
+      "id": "traced_surface_dimension:dome.wall",
+      "passed": true,
+      "actual_mm": 5.799999999999997,
+      "published_nominal_mm": 5.8,
+      "published_tolerance_mm": 0.1
+    },
+    {
+      "id": "traced_surface_dimension:camera_envelope",
+      "passed": true,
+      "actual_mm": [
+        32.0,
+        29.35,
+        32.0
+      ]
+    },
+    {
+      "id": "source_as1_outer_dimensions",
+      "passed": true
+    },
+    {
+      "id": "route_arc:tether",
+      "passed": true,
+      "actual_radii_mm": [
+        50.00000000000003
+      ],
+      "centerline_length_mm": 300.5398163397448,
+      "note": "Geometric bend only, not vendor cable acceptance"
+    },
+    {
+      "id": "route_arc:analog",
+      "passed": true,
+      "actual_radii_mm": [
+        50.0
+      ],
+      "centerline_length_mm": 488.53981633974485,
+      "note": "Geometric bend only, not vendor cable acceptance"
+    },
+    {
+      "id": "empty_reserve_clear:EMPTY_PREAMP_RESERVE_NONPOPULATED_DRY_PREAMP_ONLY",
+      "passed": true,
+      "intrusions": []
+    },
+    {
+      "id": "empty_reserve_clear:EMPTY_CAMERA_CABLE_SERVICE_ALLOCATION",
+      "passed": true,
+      "intrusions": []
+    },
+    {
+      "id": "316_aluminium_separation:V3_DIVER_PULL_PIN_1_ISOLATED_316",
+      "passed": true,
+      "minimum_gap_mm": 54.499999999999986,
+      "note": "Geometric noncontact only; corrosion and wet isolation untested"
+    },
+    {
+      "id": "316_aluminium_separation:V3_DIVER_PULL_PIN_2_ISOLATED_316",
+      "passed": true,
+      "minimum_gap_mm": 14.499999999999986,
+      "note": "Geometric noncontact only; corrosion and wet isolation untested"
+    },
+    {
+      "id": "internal_stack_budget",
+      "passed": true,
+      "contributions_mm": {
+        "camera_front_and_rear": 29.35,
+        "camera_mount": 17,
+        "service_route": 100,
+        "EMPTY_preamp_reserve": 40,
+        "two_flange_insertions": 38.2,
+        "clearance": 10
+      },
+      "required_mm": 234.55,
+      "selected_tube_length_mm": 300,
+      "margin_mm": 65.44999999999999,
+      "rejected_200mm_margin_mm": -34.55000000000001,
+      "note": "Axial allocation budget only; EMPTY reserve is not preamp hardware. Vendor 300 mm is shortest listed length that fits this budget."
+    },
+    {
+      "id": "step_roundtrip:V3_TUBE_AL6061_BR106279_300.step",
+      "passed": true,
+      "bbox_max_delta_mm": 3.552713678800501e-14,
+      "volume_delta_mm3": 4.6566128730773926e-09,
+      "volume_tolerance_mm3": 0.45014986157943865,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_FLANGE_AFT_SOURCE_ID_CONFLICT.step",
+      "passed": true,
+      "bbox_max_delta_mm": 1.7763568394002505e-15,
+      "volume_delta_mm3": 1.5861587598919868e-09,
+      "volume_tolerance_mm3": 0.07881444942936722,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 1.5279510989785194e-09,
+      "volume_tolerance_mm3": 0.07881444942936722,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_AFT_CAP_5_M10_AL6061.step",
+      "passed": true,
+      "bbox_max_delta_mm": 1.7763568394002505e-15,
+      "volume_delta_mm3": 2.9685907065868378e-09,
+      "volume_tolerance_mm3": 0.0818078109737518,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_DOME_POLYCARBONATE_BR107201.step",
+      "passed": true,
+      "bbox_max_delta_mm": 2.1316282072803006e-13,
+      "volume_delta_mm3": 3.096647560596466e-08,
+      "volume_tolerance_mm3": 0.09748339245414481,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_DOME_RETAINING_RING_ALUMINIUM.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 1.1568772606551647e-09,
+      "volume_tolerance_mm3": 0.017164738429045465,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT.step",
+      "passed": true,
+      "bbox_max_delta_mm": 3.552713678800501e-15,
+      "volume_delta_mm3": 7.275957614183426e-12,
+      "volume_tolerance_mm3": 0.003901858075758522,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 1.8280843505635858e-10,
+      "volume_tolerance_mm3": 0.0075175709161611395,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_CAMERA_TRAY_PEEK_ALLOCATION.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "volume_tolerance_mm3": 0.004079999999999999,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_CAMERA_STANDOFF_00_PEEK.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 4.575895218295045e-12,
+      "volume_tolerance_mm3": 0.001,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_CAMERA_STANDOFF_01_PEEK.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 4.575895218295045e-12,
+      "volume_tolerance_mm3": 0.001,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_CAMERA_STANDOFF_10_PEEK.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 4.575895218295045e-12,
+      "volume_tolerance_mm3": 0.001,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_CAMERA_STANDOFF_11_PEEK.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 4.575895218295045e-12,
+      "volume_tolerance_mm3": 0.001,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 1.8189894035458565e-12,
+      "volume_tolerance_mm3": 0.004523893421169301,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_AS1_NONMETAL_STANDOFF_BRACKET.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 2.2482709027826786e-09,
+      "volume_tolerance_mm3": 0.02530397045049796,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 1.6429112292826176e-08,
+      "volume_tolerance_mm3": 0.04000432070881789,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_DIVER_RELEASE_MOVING_JAW.step",
+      "passed": true,
+      "bbox_max_delta_mm": 1.5631940186722204e-13,
+      "volume_delta_mm3": 6.075424607843161e-09,
+      "volume_tolerance_mm3": 0.01584907993946813,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_PIN_1_PEEK_ISOLATION_SLEEVE.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 2.3646862246096134e-11,
+      "volume_tolerance_mm3": 0.0010945308805106833,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_DIVER_PULL_PIN_1_ISOLATED_316.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 4.468824954528827e-07,
+      "volume_tolerance_mm3": 0.0014066028450094772,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_PIN_2_PEEK_ISOLATION_SLEEVE.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 2.3646862246096134e-11,
+      "volume_tolerance_mm3": 0.0010945308805106833,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_DIVER_PULL_PIN_2_ISOLATED_316.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 4.428616193763446e-07,
+      "volume_tolerance_mm3": 0.0014066028450094778,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 1.3642420526593924e-12,
+      "volume_tolerance_mm3": 0.001,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT.step",
+      "passed": true,
+      "bbox_max_delta_mm": 1.0000000116860974e-07,
+      "volume_delta_mm3": 1.800799509510398e-10,
+      "volume_tolerance_mm3": 0.013633867926552981,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 5.515175871551037e-09,
+      "volume_tolerance_mm3": 0.04867620456640115,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT.step",
+      "passed": true,
+      "bbox_max_delta_mm": 1.0000000116860974e-07,
+      "volume_delta_mm3": 8.731149137020111e-11,
+      "volume_tolerance_mm3": 0.007769890058620181,
+      "imported_solids": 1,
+      "expected_solids": 1,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:INTRFACE_PASSIVE_V3.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 6.255810149013996e-06,
+      "volume_tolerance_mm3": 0.9823249235913839,
+      "imported_solids": 25,
+      "expected_solids": 25,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "step_roundtrip:EMPTY_RESERVES_NOT_HARDWARE.step",
+      "passed": true,
+      "bbox_max_delta_mm": 0.0,
+      "volume_delta_mm3": 0.0,
+      "volume_tolerance_mm3": 0.566,
+      "imported_solids": 3,
+      "expected_solids": 3,
+      "evidence": "Fresh STEP import, OCP BRepCheck_Analyzer, bbox, volume, count and mm units"
+    },
+    {
+      "id": "dxf:INTRFACE_PASSIVE_V3.dxf",
+      "passed": true,
+      "dimension_entities": 6,
+      "evidence": "Fresh ezdxf read with three dimensioned mm views"
+    },
+    {
+      "id": "dxf:V3_AFT_CAP_5_M10_AL6061.dxf",
+      "passed": true,
+      "dimension_entities": 6,
+      "evidence": "Fresh ezdxf read with three dimensioned mm views"
+    },
+    {
+      "id": "dxf:V3_CAMERA_TRAY_PEEK_ALLOCATION.dxf",
+      "passed": true,
+      "dimension_entities": 6,
+      "evidence": "Fresh ezdxf read with three dimensioned mm views"
+    },
+    {
+      "id": "dxf:V3_AS1_NONMETAL_STANDOFF_BRACKET.dxf",
+      "passed": true,
+      "dimension_entities": 6,
+      "evidence": "Fresh ezdxf read with three dimensioned mm views"
+    },
+    {
+      "id": "dxf:V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG.dxf",
+      "passed": true,
+      "dimension_entities": 6,
+      "evidence": "Fresh ezdxf read with three dimensioned mm views"
+    },
+    {
+      "id": "dxf:V3_DIVER_RELEASE_MOVING_JAW.dxf",
+      "passed": true,
+      "dimension_entities": 6,
+      "evidence": "Fresh ezdxf read with three dimensioned mm views"
+    },
+    {
+      "id": "dxf:V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT.dxf",
+      "passed": true,
+      "dimension_entities": 6,
+      "evidence": "Fresh ezdxf read with three dimensioned mm views"
+    },
+    {
+      "id": "glb_named_hierarchy",
+      "passed": true,
+      "nodes": 35,
+      "exporter": "cq.Assembly.save(GLTF)"
+    }
+  ],
+  "canonical_glb": "INTRFACE_PASSIVE_V3.glb",
+  "hierarchy": "hierarchy.json",
+  "printable_whitelist": [],
+  "open_gates": [
+    {
+      "id": "G01",
+      "title": "Exact vendor revisions, supplied parts and dimensional inspection",
+      "status": "not_performed",
+      "result": null
+    },
+    {
+      "id": "G02",
+      "title": "Pressure boundary seals, plugs, locking cords, PRV and closure screw design",
+      "status": "not_performed",
+      "result": null
+    },
+    {
+      "id": "G03",
+      "title": "Authorized leak, vacuum and 30 m pressure proof/cycling",
+      "status": "not_performed",
+      "result": null
+    },
+    {
+      "id": "G04",
+      "title": "90-day continuous immersion and thermal/pressure cycling",
+      "status": "not_performed",
+      "result": null
+    },
+    {
+      "id": "G05",
+      "title": "Aluminium/316 galvanic isolation, coating damage and crevice corrosion",
+      "status": "not_performed",
+      "result": null
+    },
+    {
+      "id": "G06",
+      "title": "PEEK mount water uptake, creep, fatigue and load capacity",
+      "status": "not_performed",
+      "result": null
+    },
+    {
+      "id": "G07",
+      "title": "Cable pull, bend, abrasion, strain relief and exact terminations",
+      "status": "not_performed",
+      "result": null
+    },
+    {
+      "id": "G08",
+      "title": "30 m analog and USB transport, power drop, noise and capture stability",
+      "status": "not_performed",
+      "result": null
+    },
+    {
+      "id": "G09",
+      "title": "Hydrophone calibrated receive chain and mount self-noise",
+      "status": "not_performed",
+      "result": null
+    },
+    {
+      "id": "G10",
+      "title": "Camera optical alignment, dome aberration and low-light performance",
+      "status": "not_performed",
+      "result": null
+    },
+    {
+      "id": "G11",
+      "title": "Local biofouling and cleaning/coating compatibility",
+      "status": "not_performed",
+      "result": null
+    },
+    {
+      "id": "G12",
+      "title": "Actual assembled mass, displacement, centre of gravity and buoyancy",
+      "status": "not_performed",
+      "result": null
+    },
+    {
+      "id": "G13",
+      "title": "Farm survey, storm/current load, diver release and lanyard retention",
+      "status": "not_performed",
+      "result": null
+    },
+    {
+      "id": "G14",
+      "title": "Dry service, retrieval, marking, permission and independent suitability review",
+      "status": "not_performed",
+      "result": null
+    }
+  ],
+  "boundary": "this is a non-adopted digital candidate with no pressure, corrosion or suitability evidence.",
+  "artifacts": [
+    {
+      "path": "INTRFACE_PASSIVE_V3.glb",
+      "sha256": "54e290ab26f3d27f62f54fae6715d11f2d0fc5157a368bc510bd1127a0408a9d",
+      "bytes": 566044
+    },
+    {
+      "path": "drawings/INTRFACE_PASSIVE_V3.dxf",
+      "sha256": "64ee4c05c9bbcf2c2602a747f58898841799b9b7cc75e9d6d4c19aaafb9dc6b8",
+      "bytes": 827341
+    },
+    {
+      "path": "drawings/V3_AFT_CAP_5_M10_AL6061.dxf",
+      "sha256": "3d57c1c5be51015b7d0bdd2bd7b4bb4e1f3f642e6211bdbc0fb5c07421ffc0dc",
+      "bytes": 87937
+    },
+    {
+      "path": "drawings/V3_AS1_NONMETAL_STANDOFF_BRACKET.dxf",
+      "sha256": "09e4cc9da13b6699d7678908a1174830fb2e6b70b8ff116504ea6e694760106f",
+      "bytes": 81013
+    },
+    {
+      "path": "drawings/V3_CAMERA_TRAY_PEEK_ALLOCATION.dxf",
+      "sha256": "f01048b19e3ba65f1dba020839caa68151a2961691b24d4bf3ded4c9b7f2754b",
+      "bytes": 34561
+    },
+    {
+      "path": "drawings/V3_DIVER_RELEASE_MOVING_JAW.dxf",
+      "sha256": "8447ee63f1ce86232616d68ae8e44404b7efaacab8d59e9d7c9ce14c4bfe1b4d",
+      "bytes": 47126
+    },
+    {
+      "path": "drawings/V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG.dxf",
+      "sha256": "d339e7db9248ab0b516a9f31099b073e686d3a6ccde4dadaa24d296b8fb2ef9b",
+      "bytes": 107827
+    },
+    {
+      "path": "drawings/V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT.dxf",
+      "sha256": "c90f051fba255e62da330acfcf467d8d498f06d3941f75c2e8da1a7f38d4d355",
+      "bytes": 101106
+    },
+    {
+      "path": "hierarchy.json",
+      "sha256": "49f1323948e765d193bfb8634a047cd55f90c2e0b1327d4def36962f4159ee07",
+      "bytes": 23069
+    },
+    {
+      "path": "keepouts/EMPTY_RESERVES_NOT_HARDWARE.step",
+      "sha256": "ff6037f14e43c561a0105a22bd1414a50d90ecad126e6caf10d0cb1881b1318a",
+      "bytes": 48706
+    },
+    {
+      "path": "mass-displacement.json",
+      "sha256": "266da745537ffe526cccc1b79c931f0a7780bd8747d0ae12d453ab5a9a3df214",
+      "bytes": 13796
+    },
+    {
+      "path": "step/INTRFACE_PASSIVE_V3.step",
+      "sha256": "e17adefc031bcf749b3fece42765ffaeb9b4f55423817bd969f4d7fe94ee299f",
+      "bytes": 995467
+    },
+    {
+      "path": "step/V3_AFT_CAP_5_M10_AL6061.step",
+      "sha256": "3e89e8573cfaf3d8c086fa2b6e446a024b0e7b37af19d538944e3739b003010b",
+      "bytes": 30335
+    },
+    {
+      "path": "step/V3_AS1_ANALOG_CABLE_DRY_HUB_ROUTE_CONCEPT.step",
+      "sha256": "df2453d760a40ccc9efcd752e34b9cb15dc4eb8be7d57be750601aa3d81b4e34",
+      "bytes": 12758
+    },
+    {
+      "path": "step/V3_AS1_NONMETAL_STANDOFF_BRACKET.step",
+      "sha256": "c260995f8a35626d9ed9c1ec047f39117d473259156eb27c92937259705099b0",
+      "bytes": 33400
+    },
+    {
+      "path": "step/V3_AS1_RECEIVE_ONLY_SOURCE_ENVELOPE.step",
+      "sha256": "432fde18d1e589a3414646c19c653e63aa2cfe7749b3b9a0fed2bd56edac332c",
+      "bytes": 7319
+    },
+    {
+      "path": "step/V3_CAMERA_BR_LOW_LIGHT_USB_VENDOR_INTERNALS.step",
+      "sha256": "8a33881f72bd8d769a0f808016694504af2c65bb73aff42eb139cc0770c462af",
+      "bytes": 50763
+    },
+    {
+      "path": "step/V3_CAMERA_STANDOFF_00_PEEK.step",
+      "sha256": "a7b723c6565af40478be1d787deeb552b81e9d92275c3bc71e05017b74eaa0ef",
+      "bytes": 10916
+    },
+    {
+      "path": "step/V3_CAMERA_STANDOFF_01_PEEK.step",
+      "sha256": "926702142c3151cbba435877a9a35cbf0d08253af81ed828c24fa89feb4d1c18",
+      "bytes": 10902
+    },
+    {
+      "path": "step/V3_CAMERA_STANDOFF_10_PEEK.step",
+      "sha256": "76d2b30ecd13c6c34de933e21c03e316533527ab8c664ac816617722ae986bed",
+      "bytes": 10902
+    },
+    {
+      "path": "step/V3_CAMERA_STANDOFF_11_PEEK.step",
+      "sha256": "5d05aee62fa14be720b2270e707ed3320a4658cef6f081e0f610983b53284939",
+      "bytes": 10888
+    },
+    {
+      "path": "step/V3_CAMERA_TRAY_PEEK_ALLOCATION.step",
+      "sha256": "c3c970ce6fe43e75ccd66d8a70fb001ea5865db5bc3fd9e620645f07b68a5bd2",
+      "bytes": 30645
+    },
+    {
+      "path": "step/V3_DIVER_PULL_PIN_1_ISOLATED_316.step",
+      "sha256": "f9fcb6ac65d4a84c360f53a25a246d8c18d5f15d7854efd920c8488dbb5c0863",
+      "bytes": 179857
+    },
+    {
+      "path": "step/V3_DIVER_PULL_PIN_2_ISOLATED_316.step",
+      "sha256": "ff3fcd794d94064b34bba8658360d910bea023b4aaa388be3a6fc29565285677",
+      "bytes": 179800
+    },
+    {
+      "path": "step/V3_DIVER_RELEASE_MOVING_JAW.step",
+      "sha256": "b680b144fd93c1b5a23bd6946ecb01f6557eafc3f8342cdf6cce405dfa6332a4",
+      "bytes": 35577
+    },
+    {
+      "path": "step/V3_DOME_POLYCARBONATE_BR107201.step",
+      "sha256": "92f459d4afd3c188ff0fb7f97cee23441be623d43c2929583b7a62e5e625b7c2",
+      "bytes": 14844
+    },
+    {
+      "path": "step/V3_DOME_RETAINING_RING_ALUMINIUM.step",
+      "sha256": "56aa7c0d1fa12bfbade715adff47283d591ff9ba8e508c836c889813b9da1cb8",
+      "bytes": 11487
+    },
+    {
+      "path": "step/V3_FATHOM_TETHER_SURFACE_ROUTE_CONCEPT.step",
+      "sha256": "ac1789e85fc51fd1cfc29690f487d534a4fe6450256ff0cf80fa008b17a1a968",
+      "bytes": 10786
+    },
+    {
+      "path": "step/V3_FLANGE_AFT_SOURCE_ID_CONFLICT.step",
+      "sha256": "7c859d13b3b82305265f3a62a9e56fa5b83f6cfccb311c8139f455da8279f00a",
+      "bytes": 15247
+    },
+    {
+      "path": "step/V3_FLANGE_FORWARD_SOURCE_ID_CONFLICT.step",
+      "sha256": "c5389be9b16d6be6e207ff702037a9b27d4c5d0b06fda496b6903f54758e3016",
+      "bytes": 14918
+    },
+    {
+      "path": "step/V3_LANYARD_ROUTE_CONCEPT_UNTERMINATED.step",
+      "sha256": "12926edcadcc63466adaa06f7488284de6ec292d6991133a43cd9bf60274c8be",
+      "bytes": 7296
+    },
+    {
+      "path": "step/V3_LONGLINE_FIXED_JAW_SADDLE_LANYARD_LUG.step",
+      "sha256": "9afd965a75c9c0f3fb2d0d823756499ac8edbeab42c785561c55e4c15fe02161",
+      "bytes": 99709
+    },
+    {
+      "path": "step/V3_PIN_1_PEEK_ISOLATION_SLEEVE.step",
+      "sha256": "7ddf21dbb47ce7f191518cad2a61844ec54639dca491943d16711f002ada4256",
+      "bytes": 10991
+    },
+    {
+      "path": "step/V3_PIN_2_PEEK_ISOLATION_SLEEVE.step",
+      "sha256": "b98bb1b9f4260a12a6eb158923226e098abba44335939d4a05ed450b0049518f",
+      "bytes": 10977
+    },
+    {
+      "path": "step/V3_TETHER_NONMETAL_STRAIN_RELIEF_CONCEPT.step",
+      "sha256": "7ec3079b6a0e4e236ee3c2b3f69587e6bbcf70de4a33272d7368eebed254338b",
+      "bytes": 138904
+    },
+    {
+      "path": "step/V3_TUBE_AL6061_BR106279_300.step",
+      "sha256": "e57167a13c2ad4fa040f0cdbbdc8b5dede233f36a11e38cba2d2268947900218",
+      "bytes": 19606
+    },
+    {
+      "path": "step/V3_WETLINK_M10_7P5_SOURCE_REVISION_CONFLICT.step",
+      "sha256": "fc05be4d9eeed04b995dbc1ba12d5825ad2d536a35d430b5b96955cfe662a3fb",
+      "bytes": 15580
+    }
+  ]
+}

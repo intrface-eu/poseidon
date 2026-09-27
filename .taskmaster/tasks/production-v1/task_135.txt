@@ -1,0 +1,30 @@
+{
+  "deliverablePaths": [
+    "Makefile",
+    "scripts/dev.py",
+    "tests/dev/",
+    "docs/development/monitor-runtime.md",
+    ".github/workflows/check.yml"
+  ],
+  "dependencies": [
+    132,
+    133,
+    134
+  ],
+  "description": "Provide repeatable local setup, supervised startup, and bounded end-to-end browser checks for the monitor application.",
+  "details": "Add locked local dependency setup, full local check/test/build targets, a standard-library development manager, runtime instructions, and browser QA against the real local API and UI. The manager must derive the repository root from its own file, bind services to loopback, reject occupied ports without killing their owners, supervise only launched process groups, use bounded readiness and shutdown, and never print the workspace token automatically. Browser scripts must close browsers in finally blocks and run under hard subprocess timeouts. This task is local development integration only and does not authorize field work, hardware, output, remote deployment, or production authentication.",
+  "id": 135,
+  "ownerRole": "developer-experience",
+  "phase": "P2-dev",
+  "priority": "high",
+  "researchPackages": [],
+  "status": "done",
+  "subtasks": [],
+  "testStrategy": "Run task-graph validation and generated-file check; make setup, check, test, and build-ui; then run bounded local browser QA for empty state, token failure/success, synthetic import completion, recording selection, waveform, review save/reload and stale conflict, genuine file upload, optional video/error state, API-offline recovery, and desktop/mobile layout. Confirm startup rejects an occupied loopback port and cleanup stops only owned processes.",
+  "title": "P2-dev Local Monitor Integration and Browser QA",
+  "verification": {
+    "date": "2026-09-07",
+    "evidencePath": "docs/validation/development-tranche-002.md",
+    "scope": "Local setup, supervised loopback integration, built-bundle verification, and bounded browser QA only. This verifies no remote deployment, field operation, hardware, output, permission, measurement, efficacy, production security, compliance, or production-readiness gate."
+  }
+}

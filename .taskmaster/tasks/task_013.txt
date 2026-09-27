@@ -1,0 +1,11 @@
+# Task ID: 13
+# Title: [aquilon] Implement LoRaWAN-to-MQTT Bridge Service
+# Status: pending
+# Dependencies: 2, 3, 12
+# Priority: high
+# Description: Create the `aquilon` service on the hub. It will subscribe to the LoRaWAN network server's MQTT stream, decode the CBOR payload from REEF nodes, and republish it as a structured JSON message on the main Poseidon MQTT bus.
+# Details:
+In `apps/aquilon/main.py`, connect to the ChirpStack MQTT broker. Subscribe to `application/+/device/+/event/up`. When a message arrives, extract the base64 `data` field and decode it. Use a Python CBOR library (e.g., `cbor2`) to decode the binary payload into a dictionary. Map the short keys (`t`, `lx`) to full names (`temp_c`, `lux`). Use the `proto-py` schemas to build a valid `SensorPayload` and publish it to the appropriate `poseidon/.../telemetry` topic.
+
+# Test Strategy:
+Run `aquilon` and have a REEF node sending data. Subscribe to `poseidon/#` on the main MQTT broker. Verify that for each LoRaWAN uplink, a corresponding JSON-formatted telemetry message appears on the correct topic. Check that the values are correctly decoded.

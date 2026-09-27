@@ -1,0 +1,41 @@
+{
+  "adopted": false,
+  "baseline_files_verified": 140,
+  "baseline_modified": false,
+  "configuration": "passive-v2",
+  "meaning": "Byte-preservation and analytical/source consistency only. Execute separate candidate CAD geometry and power checks; this command does not run those engines or approve hardware.",
+  "physical_tests_performed": 0,
+  "revision": "HW-CAND-2.0",
+  "status": "DIGITAL_CHECKS_ONLY_NO_ADOPTION",
+  "thermal_screen": "UNKNOWN_INSTALLED_CONTACT_HEAT_CAPTURE_SINK_AND_SHADE",
+  "thermal_sensitivity_cases": 26,
+  "wind_comparison": {
+    "candidate_panel_area_m2": 0.5678,
+    "candidate_panel_area_ratio": 2.0,
+    "equation": "F=0.5*rho*Cd*projected_area*v^2",
+    "frame_strength_qualified": false,
+    "hub_roof_plan_area_m2": 0.103125,
+    "note": "Same illustrative air density, normal drag coefficient and wind speeds as1.1, not site loads. Panel force doubles; roof is a separate component load, not added to another mounting without a load-path model. Frame drag, angle/shielding, gusts/waves, overturning and attachments remain unqualified.",
+    "rows": [
+      {
+        "assumed_normal_wind_m_s": 10.0,
+        "hub_roof_separate_force_n_using_same_assumed_coefficient": 7.5796874999999995,
+        "one_panel_reference_force_n": 20.86665,
+        "two_panel_candidate_force_n": 41.7333
+      },
+      {
+        "assumed_normal_wind_m_s": 20.0,
+        "hub_roof_separate_force_n_using_same_assumed_coefficient": 30.318749999999998,
+        "one_panel_reference_force_n": 83.4666,
+        "two_panel_candidate_force_n": 166.9332
+      },
+      {
+        "assumed_normal_wind_m_s": 25.0,
+        "hub_roof_separate_force_n_using_same_assumed_coefficient": 47.373046875,
+        "one_panel_reference_force_n": 130.4165625,
+        "two_panel_candidate_force_n": 260.833125
+      }
+    ],
+    "single_panel_area_m2": 0.2839
+  }
+}

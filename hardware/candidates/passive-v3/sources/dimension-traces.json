@@ -1,0 +1,3549 @@
+{
+  "schema": "intrface.passive-v3.dimension-traces.v1",
+  "dimensions": {
+    "tube.bbox_min_x": {
+      "value": -300.0000001,
+      "unit": "mm",
+      "source_file": "BR-106279-300_RevB.STEP",
+      "source_sha256": "1cbd12460d7761c7d72cf30848154743961c80239b166ed6cb120a3b277dd290",
+      "url": "https://cad.bluerobotics.com/WTE4_ALUMINUM_TUBES_BR-106279-XXX.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "tube-page.txt",
+          "sha256": "747814aad3d996bcb5c3acde10c6b218104c8497776074f8c769f55a7801dc47",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-locking-tube-r1-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "tube.bbox_min_y": {
+      "value": -56.00000010000006,
+      "unit": "mm",
+      "source_file": "BR-106279-300_RevB.STEP",
+      "source_sha256": "1cbd12460d7761c7d72cf30848154743961c80239b166ed6cb120a3b277dd290",
+      "url": "https://cad.bluerobotics.com/WTE4_ALUMINUM_TUBES_BR-106279-XXX.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "tube-page.txt",
+          "sha256": "747814aad3d996bcb5c3acde10c6b218104c8497776074f8c769f55a7801dc47",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-locking-tube-r1-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "tube.bbox_min_z": {
+      "value": -56.00000010000003,
+      "unit": "mm",
+      "source_file": "BR-106279-300_RevB.STEP",
+      "source_sha256": "1cbd12460d7761c7d72cf30848154743961c80239b166ed6cb120a3b277dd290",
+      "url": "https://cad.bluerobotics.com/WTE4_ALUMINUM_TUBES_BR-106279-XXX.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "tube-page.txt",
+          "sha256": "747814aad3d996bcb5c3acde10c6b218104c8497776074f8c769f55a7801dc47",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-locking-tube-r1-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "tube.bbox_max_x": {
+      "value": 1.0000000217316195e-07,
+      "unit": "mm",
+      "source_file": "BR-106279-300_RevB.STEP",
+      "source_sha256": "1cbd12460d7761c7d72cf30848154743961c80239b166ed6cb120a3b277dd290",
+      "url": "https://cad.bluerobotics.com/WTE4_ALUMINUM_TUBES_BR-106279-XXX.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "tube-page.txt",
+          "sha256": "747814aad3d996bcb5c3acde10c6b218104c8497776074f8c769f55a7801dc47",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-locking-tube-r1-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "tube.bbox_max_y": {
+      "value": 56.0000001,
+      "unit": "mm",
+      "source_file": "BR-106279-300_RevB.STEP",
+      "source_sha256": "1cbd12460d7761c7d72cf30848154743961c80239b166ed6cb120a3b277dd290",
+      "url": "https://cad.bluerobotics.com/WTE4_ALUMINUM_TUBES_BR-106279-XXX.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "tube-page.txt",
+          "sha256": "747814aad3d996bcb5c3acde10c6b218104c8497776074f8c769f55a7801dc47",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-locking-tube-r1-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "tube.bbox_max_z": {
+      "value": 56.00000010000003,
+      "unit": "mm",
+      "source_file": "BR-106279-300_RevB.STEP",
+      "source_sha256": "1cbd12460d7761c7d72cf30848154743961c80239b166ed6cb120a3b277dd290",
+      "url": "https://cad.bluerobotics.com/WTE4_ALUMINUM_TUBES_BR-106279-XXX.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "tube-page.txt",
+          "sha256": "747814aad3d996bcb5c3acde10c6b218104c8497776074f8c769f55a7801dc47",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-locking-tube-r1-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "tube.bbox_size_x": {
+      "value": 300.00000020000004,
+      "unit": "mm",
+      "source_file": "BR-106279-300_RevB.STEP",
+      "source_sha256": "1cbd12460d7761c7d72cf30848154743961c80239b166ed6cb120a3b277dd290",
+      "url": "https://cad.bluerobotics.com/WTE4_ALUMINUM_TUBES_BR-106279-XXX.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "tube-page.txt",
+          "sha256": "747814aad3d996bcb5c3acde10c6b218104c8497776074f8c769f55a7801dc47",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-locking-tube-r1-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "tube.bbox_size_y": {
+      "value": 112.00000020000006,
+      "unit": "mm",
+      "source_file": "BR-106279-300_RevB.STEP",
+      "source_sha256": "1cbd12460d7761c7d72cf30848154743961c80239b166ed6cb120a3b277dd290",
+      "url": "https://cad.bluerobotics.com/WTE4_ALUMINUM_TUBES_BR-106279-XXX.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "tube-page.txt",
+          "sha256": "747814aad3d996bcb5c3acde10c6b218104c8497776074f8c769f55a7801dc47",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-locking-tube-r1-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "tube.bbox_size_z": {
+      "value": 112.00000020000006,
+      "unit": "mm",
+      "source_file": "BR-106279-300_RevB.STEP",
+      "source_sha256": "1cbd12460d7761c7d72cf30848154743961c80239b166ed6cb120a3b277dd290",
+      "url": "https://cad.bluerobotics.com/WTE4_ALUMINUM_TUBES_BR-106279-XXX.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "tube-page.txt",
+          "sha256": "747814aad3d996bcb5c3acde10c6b218104c8497776074f8c769f55a7801dc47",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-locking-tube-r1-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "tube.volume": {
+      "value": 439924.6021648837,
+      "unit": "mm3",
+      "source_file": "BR-106279-300_RevB.STEP",
+      "source_sha256": "1cbd12460d7761c7d72cf30848154743961c80239b166ed6cb120a3b277dd290",
+      "url": "https://cad.bluerobotics.com/WTE4_ALUMINUM_TUBES_BR-106279-XXX.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BRep volume",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "tube-page.txt",
+          "sha256": "747814aad3d996bcb5c3acde10c6b218104c8497776074f8c769f55a7801dc47",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-locking-tube-r1-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "flange.bbox_min_x": {
+      "value": -57.15,
+      "unit": "mm",
+      "source_file": "BR-101040_RevC.step",
+      "source_sha256": "819126287e339b8e3f38a71da121a5e4440e7439debf7e78b1f08d9a34012b1c",
+      "url": "https://cad.bluerobotics.com/WTE4_FLANGE_RAILS_BR-100665.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "flange-page.txt",
+          "sha256": "86ce9db4f3c3348f55584ceefc826d4a4e6bc29ba07be5d1fa354d0de3bc12b0",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-flange-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "flange.bbox_min_y": {
+      "value": -57.15,
+      "unit": "mm",
+      "source_file": "BR-101040_RevC.step",
+      "source_sha256": "819126287e339b8e3f38a71da121a5e4440e7439debf7e78b1f08d9a34012b1c",
+      "url": "https://cad.bluerobotics.com/WTE4_FLANGE_RAILS_BR-100665.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "flange-page.txt",
+          "sha256": "86ce9db4f3c3348f55584ceefc826d4a4e6bc29ba07be5d1fa354d0de3bc12b0",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-flange-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "flange.bbox_min_z": {
+      "value": -1.0000000276124835e-07,
+      "unit": "mm",
+      "source_file": "BR-101040_RevC.step",
+      "source_sha256": "819126287e339b8e3f38a71da121a5e4440e7439debf7e78b1f08d9a34012b1c",
+      "url": "https://cad.bluerobotics.com/WTE4_FLANGE_RAILS_BR-100665.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "flange-page.txt",
+          "sha256": "86ce9db4f3c3348f55584ceefc826d4a4e6bc29ba07be5d1fa354d0de3bc12b0",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-flange-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "flange.bbox_max_x": {
+      "value": 57.15,
+      "unit": "mm",
+      "source_file": "BR-101040_RevC.step",
+      "source_sha256": "819126287e339b8e3f38a71da121a5e4440e7439debf7e78b1f08d9a34012b1c",
+      "url": "https://cad.bluerobotics.com/WTE4_FLANGE_RAILS_BR-100665.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "flange-page.txt",
+          "sha256": "86ce9db4f3c3348f55584ceefc826d4a4e6bc29ba07be5d1fa354d0de3bc12b0",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-flange-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "flange.bbox_max_y": {
+      "value": 57.1500001,
+      "unit": "mm",
+      "source_file": "BR-101040_RevC.step",
+      "source_sha256": "819126287e339b8e3f38a71da121a5e4440e7439debf7e78b1f08d9a34012b1c",
+      "url": "https://cad.bluerobotics.com/WTE4_FLANGE_RAILS_BR-100665.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "flange-page.txt",
+          "sha256": "86ce9db4f3c3348f55584ceefc826d4a4e6bc29ba07be5d1fa354d0de3bc12b0",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-flange-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "flange.bbox_max_z": {
+      "value": 27.00000010000001,
+      "unit": "mm",
+      "source_file": "BR-101040_RevC.step",
+      "source_sha256": "819126287e339b8e3f38a71da121a5e4440e7439debf7e78b1f08d9a34012b1c",
+      "url": "https://cad.bluerobotics.com/WTE4_FLANGE_RAILS_BR-100665.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "flange-page.txt",
+          "sha256": "86ce9db4f3c3348f55584ceefc826d4a4e6bc29ba07be5d1fa354d0de3bc12b0",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-flange-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "flange.bbox_size_x": {
+      "value": 114.3,
+      "unit": "mm",
+      "source_file": "BR-101040_RevC.step",
+      "source_sha256": "819126287e339b8e3f38a71da121a5e4440e7439debf7e78b1f08d9a34012b1c",
+      "url": "https://cad.bluerobotics.com/WTE4_FLANGE_RAILS_BR-100665.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "flange-page.txt",
+          "sha256": "86ce9db4f3c3348f55584ceefc826d4a4e6bc29ba07be5d1fa354d0de3bc12b0",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-flange-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "flange.bbox_size_y": {
+      "value": 114.3000001,
+      "unit": "mm",
+      "source_file": "BR-101040_RevC.step",
+      "source_sha256": "819126287e339b8e3f38a71da121a5e4440e7439debf7e78b1f08d9a34012b1c",
+      "url": "https://cad.bluerobotics.com/WTE4_FLANGE_RAILS_BR-100665.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "flange-page.txt",
+          "sha256": "86ce9db4f3c3348f55584ceefc826d4a4e6bc29ba07be5d1fa354d0de3bc12b0",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-flange-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "flange.bbox_size_z": {
+      "value": 27.00000020000001,
+      "unit": "mm",
+      "source_file": "BR-101040_RevC.step",
+      "source_sha256": "819126287e339b8e3f38a71da121a5e4440e7439debf7e78b1f08d9a34012b1c",
+      "url": "https://cad.bluerobotics.com/WTE4_FLANGE_RAILS_BR-100665.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "flange-page.txt",
+          "sha256": "86ce9db4f3c3348f55584ceefc826d4a4e6bc29ba07be5d1fa354d0de3bc12b0",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-flange-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "flange.volume": {
+      "value": 38702.61559600212,
+      "unit": "mm3",
+      "source_file": "BR-101040_RevC.step",
+      "source_sha256": "819126287e339b8e3f38a71da121a5e4440e7439debf7e78b1f08d9a34012b1c",
+      "url": "https://cad.bluerobotics.com/WTE4_FLANGE_RAILS_BR-100665.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BRep volume",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "flange-page.txt",
+          "sha256": "86ce9db4f3c3348f55584ceefc826d4a4e6bc29ba07be5d1fa354d0de3bc12b0",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-flange-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.bbox_min_x": {
+      "value": -60.15,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.bbox_min_y": {
+      "value": -57.14999999999999,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.bbox_min_z": {
+      "value": -4.000000000000001,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.bbox_max_x": {
+      "value": 60.15,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.bbox_max_y": {
+      "value": 57.14999999999999,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.bbox_max_z": {
+      "value": 6.000000000000001,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.bbox_size_x": {
+      "value": 120.3,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.bbox_size_y": {
+      "value": 114.29999999999998,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.bbox_size_z": {
+      "value": 10.000000000000002,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.volume": {
+      "value": 82682.68918135534,
+      "unit": "mm3",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BRep volume",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome.bbox_min_x": {
+      "value": -52.328082488222215,
+      "unit": "mm",
+      "source_file": "BR-107201-dome.STEP",
+      "source_sha256": "3e8ec80e536fadf2f7b3e4b7d4f280762233b20d8522cfd64415923aaf11d9a1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome.bbox_min_y": {
+      "value": -9.999999689137553e-08,
+      "unit": "mm",
+      "source_file": "BR-107201-dome.STEP",
+      "source_sha256": "3e8ec80e536fadf2f7b3e4b7d4f280762233b20d8522cfd64415923aaf11d9a1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome.bbox_min_z": {
+      "value": -52.32808248822222,
+      "unit": "mm",
+      "source_file": "BR-107201-dome.STEP",
+      "source_sha256": "3e8ec80e536fadf2f7b3e4b7d4f280762233b20d8522cfd64415923aaf11d9a1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome.bbox_max_x": {
+      "value": 52.328082488222215,
+      "unit": "mm",
+      "source_file": "BR-107201-dome.STEP",
+      "source_sha256": "3e8ec80e536fadf2f7b3e4b7d4f280762233b20d8522cfd64415923aaf11d9a1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome.bbox_max_y": {
+      "value": 51.80199999999999,
+      "unit": "mm",
+      "source_file": "BR-107201-dome.STEP",
+      "source_sha256": "3e8ec80e536fadf2f7b3e4b7d4f280762233b20d8522cfd64415923aaf11d9a1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome.bbox_max_z": {
+      "value": 52.32808248822222,
+      "unit": "mm",
+      "source_file": "BR-107201-dome.STEP",
+      "source_sha256": "3e8ec80e536fadf2f7b3e4b7d4f280762233b20d8522cfd64415923aaf11d9a1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome.bbox_size_x": {
+      "value": 104.65616497644443,
+      "unit": "mm",
+      "source_file": "BR-107201-dome.STEP",
+      "source_sha256": "3e8ec80e536fadf2f7b3e4b7d4f280762233b20d8522cfd64415923aaf11d9a1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome.bbox_size_y": {
+      "value": 51.80200009999999,
+      "unit": "mm",
+      "source_file": "BR-107201-dome.STEP",
+      "source_sha256": "3e8ec80e536fadf2f7b3e4b7d4f280762233b20d8522cfd64415923aaf11d9a1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome.bbox_size_z": {
+      "value": 104.65616497644444,
+      "unit": "mm",
+      "source_file": "BR-107201-dome.STEP",
+      "source_sha256": "3e8ec80e536fadf2f7b3e4b7d4f280762233b20d8522cfd64415923aaf11d9a1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome.volume": {
+      "value": 86525.01091114039,
+      "unit": "mm3",
+      "source_file": "BR-107201-dome.STEP",
+      "source_sha256": "3e8ec80e536fadf2f7b3e4b7d4f280762233b20d8522cfd64415923aaf11d9a1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BRep volume",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome_ring.bbox_min_x": {
+      "value": -57.150000100000014,
+      "unit": "mm",
+      "source_file": "BR-107201-ring.STEP",
+      "source_sha256": "23d4be29d2eb2b590d29ce2e9e31402f848714f44a7b39fdf687f18c8d2c98e1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome_ring.bbox_min_y": {
+      "value": -1.0000000178419182e-07,
+      "unit": "mm",
+      "source_file": "BR-107201-ring.STEP",
+      "source_sha256": "23d4be29d2eb2b590d29ce2e9e31402f848714f44a7b39fdf687f18c8d2c98e1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome_ring.bbox_min_z": {
+      "value": -57.1500001,
+      "unit": "mm",
+      "source_file": "BR-107201-ring.STEP",
+      "source_sha256": "23d4be29d2eb2b590d29ce2e9e31402f848714f44a7b39fdf687f18c8d2c98e1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome_ring.bbox_max_x": {
+      "value": 57.15000010000001,
+      "unit": "mm",
+      "source_file": "BR-107201-ring.STEP",
+      "source_sha256": "23d4be29d2eb2b590d29ce2e9e31402f848714f44a7b39fdf687f18c8d2c98e1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome_ring.bbox_max_y": {
+      "value": 10.350000099999999,
+      "unit": "mm",
+      "source_file": "BR-107201-ring.STEP",
+      "source_sha256": "23d4be29d2eb2b590d29ce2e9e31402f848714f44a7b39fdf687f18c8d2c98e1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome_ring.bbox_max_z": {
+      "value": 57.1500001,
+      "unit": "mm",
+      "source_file": "BR-107201-ring.STEP",
+      "source_sha256": "23d4be29d2eb2b590d29ce2e9e31402f848714f44a7b39fdf687f18c8d2c98e1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome_ring.bbox_size_x": {
+      "value": 114.30000020000003,
+      "unit": "mm",
+      "source_file": "BR-107201-ring.STEP",
+      "source_sha256": "23d4be29d2eb2b590d29ce2e9e31402f848714f44a7b39fdf687f18c8d2c98e1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome_ring.bbox_size_y": {
+      "value": 10.3500002,
+      "unit": "mm",
+      "source_file": "BR-107201-ring.STEP",
+      "source_sha256": "23d4be29d2eb2b590d29ce2e9e31402f848714f44a7b39fdf687f18c8d2c98e1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome_ring.bbox_size_z": {
+      "value": 114.3000002,
+      "unit": "mm",
+      "source_file": "BR-107201-ring.STEP",
+      "source_sha256": "23d4be29d2eb2b590d29ce2e9e31402f848714f44a7b39fdf687f18c8d2c98e1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "dome_ring.volume": {
+      "value": 21216.47164684554,
+      "unit": "mm3",
+      "source_file": "BR-107201-ring.STEP",
+      "source_sha256": "23d4be29d2eb2b590d29ce2e9e31402f848714f44a7b39fdf687f18c8d2c98e1",
+      "url": "https://cad.bluerobotics.com/WTE4_DOME_AND_RETAINING_RING_BR-107201.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BRep volume",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "camera.bbox_min_x": {
+      "value": 0.0,
+      "unit": "mm",
+      "source_file": "LOW-LIGHT-HD-USB-CAMERA-R1.STEP",
+      "source_sha256": "2dc1767d9b595dd73abe3947902cc5bf25fe88ab296293e65117810ef6033f31",
+      "url": "https://cad.bluerobotics.com/CAM-USB-WIDE-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "camera-page.txt",
+          "sha256": "f5adbdb932bb9d1c23fce1fbf72b96bcff90a09cf404017a4026e6ed4f4e6041",
+          "url": "https://bluerobotics.com/store/sensors-cameras/cameras/cam-usb-low-light-r1/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "camera-drawing.png",
+          "sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+          "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "camera.bbox_min_y": {
+      "value": -6.0,
+      "unit": "mm",
+      "source_file": "LOW-LIGHT-HD-USB-CAMERA-R1.STEP",
+      "source_sha256": "2dc1767d9b595dd73abe3947902cc5bf25fe88ab296293e65117810ef6033f31",
+      "url": "https://cad.bluerobotics.com/CAM-USB-WIDE-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "camera-page.txt",
+          "sha256": "f5adbdb932bb9d1c23fce1fbf72b96bcff90a09cf404017a4026e6ed4f4e6041",
+          "url": "https://bluerobotics.com/store/sensors-cameras/cameras/cam-usb-low-light-r1/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "camera-drawing.png",
+          "sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+          "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "camera.bbox_min_z": {
+      "value": -32.0,
+      "unit": "mm",
+      "source_file": "LOW-LIGHT-HD-USB-CAMERA-R1.STEP",
+      "source_sha256": "2dc1767d9b595dd73abe3947902cc5bf25fe88ab296293e65117810ef6033f31",
+      "url": "https://cad.bluerobotics.com/CAM-USB-WIDE-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "camera-page.txt",
+          "sha256": "f5adbdb932bb9d1c23fce1fbf72b96bcff90a09cf404017a4026e6ed4f4e6041",
+          "url": "https://bluerobotics.com/store/sensors-cameras/cameras/cam-usb-low-light-r1/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "camera-drawing.png",
+          "sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+          "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "camera.bbox_max_x": {
+      "value": 32.0,
+      "unit": "mm",
+      "source_file": "LOW-LIGHT-HD-USB-CAMERA-R1.STEP",
+      "source_sha256": "2dc1767d9b595dd73abe3947902cc5bf25fe88ab296293e65117810ef6033f31",
+      "url": "https://cad.bluerobotics.com/CAM-USB-WIDE-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "camera-page.txt",
+          "sha256": "f5adbdb932bb9d1c23fce1fbf72b96bcff90a09cf404017a4026e6ed4f4e6041",
+          "url": "https://bluerobotics.com/store/sensors-cameras/cameras/cam-usb-low-light-r1/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "camera-drawing.png",
+          "sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+          "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "camera.bbox_max_y": {
+      "value": 23.35,
+      "unit": "mm",
+      "source_file": "LOW-LIGHT-HD-USB-CAMERA-R1.STEP",
+      "source_sha256": "2dc1767d9b595dd73abe3947902cc5bf25fe88ab296293e65117810ef6033f31",
+      "url": "https://cad.bluerobotics.com/CAM-USB-WIDE-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "camera-page.txt",
+          "sha256": "f5adbdb932bb9d1c23fce1fbf72b96bcff90a09cf404017a4026e6ed4f4e6041",
+          "url": "https://bluerobotics.com/store/sensors-cameras/cameras/cam-usb-low-light-r1/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "camera-drawing.png",
+          "sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+          "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "camera.bbox_max_z": {
+      "value": 0.0,
+      "unit": "mm",
+      "source_file": "LOW-LIGHT-HD-USB-CAMERA-R1.STEP",
+      "source_sha256": "2dc1767d9b595dd73abe3947902cc5bf25fe88ab296293e65117810ef6033f31",
+      "url": "https://cad.bluerobotics.com/CAM-USB-WIDE-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "camera-page.txt",
+          "sha256": "f5adbdb932bb9d1c23fce1fbf72b96bcff90a09cf404017a4026e6ed4f4e6041",
+          "url": "https://bluerobotics.com/store/sensors-cameras/cameras/cam-usb-low-light-r1/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "camera-drawing.png",
+          "sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+          "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "camera.bbox_size_x": {
+      "value": 32.0,
+      "unit": "mm",
+      "source_file": "LOW-LIGHT-HD-USB-CAMERA-R1.STEP",
+      "source_sha256": "2dc1767d9b595dd73abe3947902cc5bf25fe88ab296293e65117810ef6033f31",
+      "url": "https://cad.bluerobotics.com/CAM-USB-WIDE-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "camera-page.txt",
+          "sha256": "f5adbdb932bb9d1c23fce1fbf72b96bcff90a09cf404017a4026e6ed4f4e6041",
+          "url": "https://bluerobotics.com/store/sensors-cameras/cameras/cam-usb-low-light-r1/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "camera-drawing.png",
+          "sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+          "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "camera.bbox_size_y": {
+      "value": 29.35,
+      "unit": "mm",
+      "source_file": "LOW-LIGHT-HD-USB-CAMERA-R1.STEP",
+      "source_sha256": "2dc1767d9b595dd73abe3947902cc5bf25fe88ab296293e65117810ef6033f31",
+      "url": "https://cad.bluerobotics.com/CAM-USB-WIDE-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "camera-page.txt",
+          "sha256": "f5adbdb932bb9d1c23fce1fbf72b96bcff90a09cf404017a4026e6ed4f4e6041",
+          "url": "https://bluerobotics.com/store/sensors-cameras/cameras/cam-usb-low-light-r1/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "camera-drawing.png",
+          "sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+          "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "camera.bbox_size_z": {
+      "value": 32.0,
+      "unit": "mm",
+      "source_file": "LOW-LIGHT-HD-USB-CAMERA-R1.STEP",
+      "source_sha256": "2dc1767d9b595dd73abe3947902cc5bf25fe88ab296293e65117810ef6033f31",
+      "url": "https://cad.bluerobotics.com/CAM-USB-WIDE-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "camera-page.txt",
+          "sha256": "f5adbdb932bb9d1c23fce1fbf72b96bcff90a09cf404017a4026e6ed4f4e6041",
+          "url": "https://bluerobotics.com/store/sensors-cameras/cameras/cam-usb-low-light-r1/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "camera-drawing.png",
+          "sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+          "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "camera.volume": {
+      "value": 6237.464320257146,
+      "unit": "mm3",
+      "source_file": "LOW-LIGHT-HD-USB-CAMERA-R1.STEP",
+      "source_sha256": "2dc1767d9b595dd73abe3947902cc5bf25fe88ab296293e65117810ef6033f31",
+      "url": "https://cad.bluerobotics.com/CAM-USB-WIDE-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BRep volume",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "camera-page.txt",
+          "sha256": "f5adbdb932bb9d1c23fce1fbf72b96bcff90a09cf404017a4026e6ed4f4e6041",
+          "url": "https://bluerobotics.com/store/sensors-cameras/cameras/cam-usb-low-light-r1/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "camera-drawing.png",
+          "sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+          "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "wetlink.bbox_min_x": {
+      "value": -8.000000100000008,
+      "unit": "mm",
+      "source_file": "WLP-M10-7.5MM-PUBLIC.step",
+      "source_sha256": "63599d4a64a1683b17248c73e8297399f4193bf52f5092e51c18b1cd7ee39253",
+      "url": "https://cad.bluerobotics.com/WLP-M10-7.5MM-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "wetlink-page.txt",
+          "sha256": "29deeaa945c398e65715852a798deb9fccd513b6b531602d53671a1b39b2c669",
+          "url": "https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wetlink-datasheet.pdf",
+          "sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "wetlink.bbox_min_y": {
+      "value": -1.0000000077325108e-07,
+      "unit": "mm",
+      "source_file": "WLP-M10-7.5MM-PUBLIC.step",
+      "source_sha256": "63599d4a64a1683b17248c73e8297399f4193bf52f5092e51c18b1cd7ee39253",
+      "url": "https://cad.bluerobotics.com/WLP-M10-7.5MM-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "wetlink-page.txt",
+          "sha256": "29deeaa945c398e65715852a798deb9fccd513b6b531602d53671a1b39b2c669",
+          "url": "https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wetlink-datasheet.pdf",
+          "sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "wetlink.bbox_min_z": {
+      "value": -8.000000100000003,
+      "unit": "mm",
+      "source_file": "WLP-M10-7.5MM-PUBLIC.step",
+      "source_sha256": "63599d4a64a1683b17248c73e8297399f4193bf52f5092e51c18b1cd7ee39253",
+      "url": "https://cad.bluerobotics.com/WLP-M10-7.5MM-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_min z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "wetlink-page.txt",
+          "sha256": "29deeaa945c398e65715852a798deb9fccd513b6b531602d53671a1b39b2c669",
+          "url": "https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wetlink-datasheet.pdf",
+          "sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "wetlink.bbox_max_x": {
+      "value": 8.000000100000003,
+      "unit": "mm",
+      "source_file": "WLP-M10-7.5MM-PUBLIC.step",
+      "source_sha256": "63599d4a64a1683b17248c73e8297399f4193bf52f5092e51c18b1cd7ee39253",
+      "url": "https://cad.bluerobotics.com/WLP-M10-7.5MM-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "wetlink-page.txt",
+          "sha256": "29deeaa945c398e65715852a798deb9fccd513b6b531602d53671a1b39b2c669",
+          "url": "https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wetlink-datasheet.pdf",
+          "sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "wetlink.bbox_max_y": {
+      "value": 45.000000099999994,
+      "unit": "mm",
+      "source_file": "WLP-M10-7.5MM-PUBLIC.step",
+      "source_sha256": "63599d4a64a1683b17248c73e8297399f4193bf52f5092e51c18b1cd7ee39253",
+      "url": "https://cad.bluerobotics.com/WLP-M10-7.5MM-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "wetlink-page.txt",
+          "sha256": "29deeaa945c398e65715852a798deb9fccd513b6b531602d53671a1b39b2c669",
+          "url": "https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wetlink-datasheet.pdf",
+          "sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "wetlink.bbox_max_z": {
+      "value": 8.000000100000005,
+      "unit": "mm",
+      "source_file": "WLP-M10-7.5MM-PUBLIC.step",
+      "source_sha256": "63599d4a64a1683b17248c73e8297399f4193bf52f5092e51c18b1cd7ee39253",
+      "url": "https://cad.bluerobotics.com/WLP-M10-7.5MM-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_max z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "wetlink-page.txt",
+          "sha256": "29deeaa945c398e65715852a798deb9fccd513b6b531602d53671a1b39b2c669",
+          "url": "https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wetlink-datasheet.pdf",
+          "sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "wetlink.bbox_size_x": {
+      "value": 16.00000020000001,
+      "unit": "mm",
+      "source_file": "WLP-M10-7.5MM-PUBLIC.step",
+      "source_sha256": "63599d4a64a1683b17248c73e8297399f4193bf52f5092e51c18b1cd7ee39253",
+      "url": "https://cad.bluerobotics.com/WLP-M10-7.5MM-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size x",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "wetlink-page.txt",
+          "sha256": "29deeaa945c398e65715852a798deb9fccd513b6b531602d53671a1b39b2c669",
+          "url": "https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wetlink-datasheet.pdf",
+          "sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "wetlink.bbox_size_y": {
+      "value": 45.000000199999995,
+      "unit": "mm",
+      "source_file": "WLP-M10-7.5MM-PUBLIC.step",
+      "source_sha256": "63599d4a64a1683b17248c73e8297399f4193bf52f5092e51c18b1cd7ee39253",
+      "url": "https://cad.bluerobotics.com/WLP-M10-7.5MM-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size y",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "wetlink-page.txt",
+          "sha256": "29deeaa945c398e65715852a798deb9fccd513b6b531602d53671a1b39b2c669",
+          "url": "https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wetlink-datasheet.pdf",
+          "sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "wetlink.bbox_size_z": {
+      "value": 16.00000020000001,
+      "unit": "mm",
+      "source_file": "WLP-M10-7.5MM-PUBLIC.step",
+      "source_sha256": "63599d4a64a1683b17248c73e8297399f4193bf52f5092e51c18b1cd7ee39253",
+      "url": "https://cad.bluerobotics.com/WLP-M10-7.5MM-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BoundingBox bbox_size z",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "wetlink-page.txt",
+          "sha256": "29deeaa945c398e65715852a798deb9fccd513b6b531602d53671a1b39b2c669",
+          "url": "https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wetlink-datasheet.pdf",
+          "sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "wetlink.volume": {
+      "value": 5693.727934718031,
+      "unit": "mm3",
+      "source_file": "WLP-M10-7.5MM-PUBLIC.step",
+      "source_sha256": "63599d4a64a1683b17248c73e8297399f4193bf52f5092e51c18b1cd7ee39253",
+      "url": "https://cad.bluerobotics.com/WLP-M10-7.5MM-R1.zip",
+      "retrieved": "2026-09-09",
+      "locator": "OCP BRep volume",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "wetlink-page.txt",
+          "sha256": "29deeaa945c398e65715852a798deb9fccd513b6b531602d53671a1b39b2c669",
+          "url": "https://bluerobotics.com/store/cables-connectors/penetrators/wlp-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wetlink-datasheet.pdf",
+          "sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "tube.length": {
+      "value": 300,
+      "unit": "mm",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p1 tube table BR-106279-300",
+      "kind": "published_vendor_dimension"
+    },
+    "tube.od": {
+      "value": 112,
+      "unit": "mm",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p1 column B; +/-0.3 mm",
+      "kind": "published_vendor_dimension"
+    },
+    "tube.id": {
+      "value": 103,
+      "unit": "mm",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p1 column A; +/-0.5 mm",
+      "kind": "published_vendor_dimension"
+    },
+    "tube.mass": {
+      "value": 1.066,
+      "unit": "kg",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p1 BR-106279-300 1066 g converted /1000",
+      "kind": "published_vendor_dimension"
+    },
+    "tube.depth": {
+      "value": 1000,
+      "unit": "m",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p1 per-part rating only",
+      "kind": "published_vendor_dimension"
+    },
+    "flange.od": {
+      "value": 114.3,
+      "unit": "mm",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p1 E",
+      "kind": "published_vendor_dimension"
+    },
+    "flange.piston_diameter": {
+      "value": 103.91,
+      "unit": "mm",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p1 F, +/-0.05 mm",
+      "kind": "published_vendor_dimension"
+    },
+    "flange.piston_length": {
+      "value": 19.1,
+      "unit": "mm",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p1 G",
+      "kind": "published_vendor_dimension"
+    },
+    "flange.length": {
+      "value": 27,
+      "unit": "mm",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p1 H",
+      "kind": "published_vendor_dimension"
+    },
+    "flange.mass": {
+      "value": 0.107,
+      "unit": "kg",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p1 107 g converted /1000",
+      "kind": "published_vendor_dimension"
+    },
+    "aft_cap.thickness": {
+      "value": 10,
+      "unit": "mm",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p2 L BR-102993-005",
+      "kind": "published_vendor_dimension"
+    },
+    "aft_cap.hole_circle": {
+      "value": 108,
+      "unit": "mm",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p2 K",
+      "kind": "published_vendor_dimension"
+    },
+    "aft_cap.mass": {
+      "value": 0.223,
+      "unit": "kg",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p2 BR-102993-005 223 g",
+      "kind": "published_vendor_dimension"
+    },
+    "dome.internal_radius": {
+      "value": 44,
+      "unit": "mm",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p2 M BR-107201",
+      "kind": "published_vendor_dimension"
+    },
+    "dome.wall": {
+      "value": 5.8,
+      "unit": "mm",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p2 N +/-0.1 mm; CAD gives 5.802 mm",
+      "kind": "published_vendor_dimension"
+    },
+    "dome_and_ring.mass": {
+      "value": 0.16,
+      "unit": "kg",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p2 BR-107201 160 g combined, do not double count",
+      "kind": "published_vendor_dimension"
+    },
+    "dome.depth": {
+      "value": 1000,
+      "unit": "m",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p2 BR-107201 per-part rating",
+      "kind": "published_vendor_dimension"
+    },
+    "camera.pcb_width": {
+      "value": 32,
+      "unit": "mm",
+      "source_file": "camera-drawing.png",
+      "source_sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+      "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+      "retrieved": "2026-09-09",
+      "locator": "dimensioned front view",
+      "kind": "published_vendor_dimension"
+    },
+    "camera.pcb_height": {
+      "value": 32,
+      "unit": "mm",
+      "source_file": "camera-drawing.png",
+      "source_sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+      "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+      "retrieved": "2026-09-09",
+      "locator": "dimensioned front view",
+      "kind": "published_vendor_dimension"
+    },
+    "camera.mount_pitch": {
+      "value": 28,
+      "unit": "mm",
+      "source_file": "camera-drawing.png",
+      "source_sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+      "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+      "retrieved": "2026-09-09",
+      "locator": "dimensioned front view",
+      "kind": "published_vendor_dimension"
+    },
+    "camera.mount_hole": {
+      "value": 2.44,
+      "unit": "mm",
+      "source_file": "camera-drawing.png",
+      "source_sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+      "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+      "retrieved": "2026-09-09",
+      "locator": "dimensioned front view",
+      "kind": "published_vendor_dimension"
+    },
+    "camera.pcb_thickness": {
+      "value": 1.6,
+      "unit": "mm",
+      "source_file": "camera-drawing.png",
+      "source_sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+      "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+      "retrieved": "2026-09-09",
+      "locator": "dimensioned side view",
+      "kind": "published_vendor_dimension"
+    },
+    "camera.front_depth": {
+      "value": 23.35,
+      "unit": "mm",
+      "source_file": "camera-drawing.png",
+      "source_sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+      "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+      "retrieved": "2026-09-09",
+      "locator": "dimensioned side view",
+      "kind": "published_vendor_dimension"
+    },
+    "camera.rear_depth": {
+      "value": 6,
+      "unit": "mm",
+      "source_file": "camera-drawing.png",
+      "source_sha256": "233516634599f3c3a11d24abb94875b125820f2727edc16a8d86ce74b456bead",
+      "url": "https://bluerobotics.com/wp-content/uploads/2018/10/LOW-LIGHT-HD-USB-CAMERA-R1-1024x458.png",
+      "retrieved": "2026-09-09",
+      "locator": "dimensioned side view",
+      "kind": "published_vendor_dimension"
+    },
+    "as1.diameter": {
+      "value": 12,
+      "unit": "mm",
+      "source_file": "as1.txt",
+      "source_sha256": "2607d297c72951810ef5fc12bacc968836edfa6dc253adb531bc5b84073a4e74",
+      "url": "https://www.nauta-rcs.it/EN/Hydrophones/Aquarian_Scientific/",
+      "retrieved": "2026-09-09",
+      "locator": "line 105; distributor statement, not manufacturer drawing",
+      "kind": "published_vendor_dimension"
+    },
+    "as1.length": {
+      "value": 40,
+      "unit": "mm",
+      "source_file": "as1.txt",
+      "source_sha256": "2607d297c72951810ef5fc12bacc968836edfa6dc253adb531bc5b84073a4e74",
+      "url": "https://www.nauta-rcs.it/EN/Hydrophones/Aquarian_Scientific/",
+      "retrieved": "2026-09-09",
+      "locator": "line 105",
+      "kind": "published_vendor_dimension"
+    },
+    "as1.mass": {
+      "value": 0.008,
+      "unit": "kg",
+      "source_file": "as1.txt",
+      "source_sha256": "2607d297c72951810ef5fc12bacc968836edfa6dc253adb531bc5b84073a4e74",
+      "url": "https://www.nauta-rcs.it/EN/Hydrophones/Aquarian_Scientific/",
+      "retrieved": "2026-09-09",
+      "locator": "line107 8 g without cable",
+      "kind": "published_vendor_dimension"
+    },
+    "as1.cable_diameter": {
+      "value": 4.5,
+      "unit": "mm",
+      "source_file": "as1.txt",
+      "source_sha256": "2607d297c72951810ef5fc12bacc968836edfa6dc253adb531bc5b84073a4e74",
+      "url": "https://www.nauta-rcs.it/EN/Hydrophones/Aquarian_Scientific/",
+      "retrieved": "2026-09-09",
+      "locator": "line111",
+      "kind": "published_vendor_dimension"
+    },
+    "as1.cable_mass_per_m": {
+      "value": 0.028,
+      "unit": "kg/m",
+      "source_file": "as1.txt",
+      "source_sha256": "2607d297c72951810ef5fc12bacc968836edfa6dc253adb531bc5b84073a4e74",
+      "url": "https://www.nauta-rcs.it/EN/Hydrophones/Aquarian_Scientific/",
+      "retrieved": "2026-09-09",
+      "locator": "line107 28 g/m",
+      "kind": "published_vendor_dimension"
+    },
+    "as1.standard_cable_length": {
+      "value": 9,
+      "unit": "m",
+      "source_file": "as1.txt",
+      "source_sha256": "2607d297c72951810ef5fc12bacc968836edfa6dc253adb531bc5b84073a4e74",
+      "url": "https://www.nauta-rcs.it/EN/Hydrophones/Aquarian_Scientific/",
+      "retrieved": "2026-09-09",
+      "locator": "line109; insufficient for 30 m depth",
+      "kind": "published_vendor_dimension"
+    },
+    "as1.depth": {
+      "value": 200,
+      "unit": "m",
+      "source_file": "as1.txt",
+      "source_sha256": "2607d297c72951810ef5fc12bacc968836edfa6dc253adb531bc5b84073a4e74",
+      "url": "https://www.nauta-rcs.it/EN/Hydrophones/Aquarian_Scientific/",
+      "retrieved": "2026-09-09",
+      "locator": "line95; vendor/distributor component rating only",
+      "kind": "published_vendor_dimension"
+    },
+    "wetlink.thread_diameter": {
+      "value": 10,
+      "unit": "mm",
+      "source_file": "wetlink-datasheet.pdf",
+      "source_sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p1 physical properties B M10 x1.5",
+      "kind": "published_vendor_dimension"
+    },
+    "wetlink.thread_pitch": {
+      "value": 1.5,
+      "unit": "mm",
+      "source_file": "wetlink-datasheet.pdf",
+      "source_sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p1 B",
+      "kind": "published_vendor_dimension"
+    },
+    "wetlink.current_overall_od": {
+      "value": 18,
+      "unit": "mm",
+      "source_file": "wetlink-datasheet.pdf",
+      "source_sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p1 E; public CAD is 16 x16 mm bbox, REVISION CONFLICT",
+      "kind": "published_vendor_dimension"
+    },
+    "wetlink.seal_nominal": {
+      "value": 7.5,
+      "unit": "mm",
+      "source_file": "wetlink-datasheet.pdf",
+      "source_sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p1 size index; HC Fathom specific tested-cable row BR-100875-175",
+      "kind": "published_vendor_dimension"
+    },
+    "tether.diameter": {
+      "value": 7.6,
+      "unit": "mm",
+      "source_file": "wetlink-datasheet.pdf",
+      "source_sha256": "8de44cfd45d60ff539e24b05a72f7190b73ef5d990bbe6f83b35c4c1a8f0f7c2",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WLP-DATASHEET-v1.5.1-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p1 tested cable BR-100987 Fathom ROV; BR-100875-175 HC",
+      "kind": "published_vendor_dimension"
+    },
+    "cobalt.thread_diameter": {
+      "value": 10,
+      "unit": "mm",
+      "source_file": "cobalt-datasheet.pdf",
+      "source_sha256": "ee54fa62c313f5e8149bd8ea0fa35980ff0693fefb6e8b849f56083f9626874f",
+      "url": "https://www.bluetrailengineering.com/_files/ugd/e4c7c5_be15154513ab488fb0f04c2260100f55.pdf?index=true",
+      "retrieved": "2026-09-09",
+      "locator": "p4 Dimensions M10 X1.5",
+      "kind": "published_vendor_dimension"
+    },
+    "cobalt.thread_pitch": {
+      "value": 1.5,
+      "unit": "mm",
+      "source_file": "cobalt-datasheet.pdf",
+      "source_sha256": "ee54fa62c313f5e8149bd8ea0fa35980ff0693fefb6e8b849f56083f9626874f",
+      "url": "https://www.bluetrailengineering.com/_files/ugd/e4c7c5_be15154513ab488fb0f04c2260100f55.pdf?index=true",
+      "retrieved": "2026-09-09",
+      "locator": "p4 Dimensions",
+      "kind": "published_vendor_dimension"
+    },
+    "cobalt.hex_af": {
+      "value": 16,
+      "unit": "mm",
+      "source_file": "cobalt-datasheet.pdf",
+      "source_sha256": "ee54fa62c313f5e8149bd8ea0fa35980ff0693fefb6e8b849f56083f9626874f",
+      "url": "https://www.bluetrailengineering.com/_files/ugd/e4c7c5_be15154513ab488fb0f04c2260100f55.pdf?index=true",
+      "retrieved": "2026-09-09",
+      "locator": "p4 Dimensions",
+      "kind": "published_vendor_dimension"
+    },
+    "cobalt.depth": {
+      "value": 600,
+      "unit": "m",
+      "source_file": "cobalt-datasheet.pdf",
+      "source_sha256": "ee54fa62c313f5e8149bd8ea0fa35980ff0693fefb6e8b849f56083f9626874f",
+      "url": "https://www.bluetrailengineering.com/_files/ugd/e4c7c5_be15154513ab488fb0f04c2260100f55.pdf?index=true",
+      "retrieved": "2026-09-09",
+      "locator": "p4 Environmental; not assembly rating",
+      "kind": "published_vendor_dimension"
+    },
+    "aft_cap.penetrator_hole_diameter": {
+      "value": 10.2,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "Cylindrical faces R5.1",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.penetrator_0_x": {
+      "value": -26.629582,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "R5.1 cylindrical axis location",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.penetrator_0_y": {
+      "value": -8.652476,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "R5.1 cylindrical axis location",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.penetrator_1_x": {
+      "value": -16.457987,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "R5.1 cylindrical axis location",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.penetrator_1_y": {
+      "value": 22.652476,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "R5.1 cylindrical axis location",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.penetrator_2_x": {
+      "value": 0.0,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "R5.1 cylindrical axis location",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.penetrator_2_y": {
+      "value": -28.0,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "R5.1 cylindrical axis location",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.penetrator_3_x": {
+      "value": 16.457987,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "R5.1 cylindrical axis location",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.penetrator_3_y": {
+      "value": 22.652476,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "R5.1 cylindrical axis location",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.penetrator_4_x": {
+      "value": 26.629582,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "R5.1 cylindrical axis location",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "aft_cap.penetrator_4_y": {
+      "value": -8.652476,
+      "unit": "mm",
+      "source_file": "WTE4-M-END-CAP-5XM10-R2.step",
+      "source_sha256": "fbb0fee8382218face09617fa49369c2c36b1c4951be6b4557b6493052d47823",
+      "url": "https://cad.bluerobotics.com/WTE4_END_CAP_5xM10_BR-102993-005.zip",
+      "retrieved": "2026-09-09",
+      "locator": "R5.1 cylindrical axis location",
+      "kind": "measured_vendor_cad_dimension",
+      "supporting_records": [
+        {
+          "file": "endcap-page.txt",
+          "sha256": "63d9f1ae6cf65929e05786bcc940509758f58fbc324d7545413194eed23b43fa",
+          "url": "https://bluerobotics.com/store/watertight-enclosures/locking-series/wte-end-cap-vp/",
+          "retrieved": "2026-09-09"
+        },
+        {
+          "file": "wte-datasheet.pdf",
+          "sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+          "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+          "retrieved": "2026-09-09"
+        }
+      ]
+    },
+    "design.tube_length_mm": {
+      "value": 300,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.tube_length_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.camera_board_from_front_mm": {
+      "value": 20,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.camera_board_from_front_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.camera_mount_depth_mm": {
+      "value": 17,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.camera_mount_depth_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.camera_tray_width_mm": {
+      "value": 44,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.camera_tray_width_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.camera_tray_thickness_mm": {
+      "value": 3,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.camera_tray_thickness_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.camera_tray_opening_mm": {
+      "value": 24,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.camera_tray_opening_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.camera_support_od_mm": {
+      "value": 5,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.camera_support_od_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.camera_support_hole_mm": {
+      "value": 2.44,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.camera_support_hole_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.service_route_axial_mm": {
+      "value": 100,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.service_route_axial_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.empty_preamp_reserve_size_mm.0": {
+      "value": 40,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.empty_preamp_reserve_size_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.empty_preamp_reserve_size_mm.1": {
+      "value": 40,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.empty_preamp_reserve_size_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.empty_preamp_reserve_size_mm.2": {
+      "value": 40,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.empty_preamp_reserve_size_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.empty_preamp_reserve_z_mm": {
+      "value": 180,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.empty_preamp_reserve_z_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.stack_clearance_mm": {
+      "value": 10,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.stack_clearance_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.mount_tube_radial_gap_mm": {
+      "value": 0.6,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.mount_tube_radial_gap_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.saddle_outer_radius_mm": {
+      "value": 62,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.saddle_outer_radius_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.saddle_width_mm": {
+      "value": 10,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.saddle_width_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.hydrophone_center_x_mm": {
+      "value": 95,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.hydrophone_center_x_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.hydrophone_front_from_tube_front_mm": {
+      "value": 20,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.hydrophone_front_from_tube_front_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.hydrophone_collar_from_rear_mm": {
+      "value": 10,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.hydrophone_collar_from_rear_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.hydrophone_collar_radial_gap_mm": {
+      "value": 0.5,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.hydrophone_collar_radial_gap_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.hydrophone_collar_outer_radius_mm": {
+      "value": 11,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.hydrophone_collar_outer_radius_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.hydrophone_arm_width_mm": {
+      "value": 12,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.hydrophone_arm_width_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.hydrophone_arm_overlap_mm": {
+      "value": 1,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.hydrophone_arm_overlap_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.clamp_center_mm.0": {
+      "value": -100,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.clamp_center_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.clamp_center_mm.1": {
+      "value": 0,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.clamp_center_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.clamp_center_mm.2": {
+      "value": 100,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.clamp_center_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.clamp_size_mm.0": {
+      "value": 50,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.clamp_size_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.clamp_size_mm.1": {
+      "value": 24,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.clamp_size_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.clamp_size_mm.2": {
+      "value": 40,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.clamp_size_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.clamp_split_gap_mm": {
+      "value": 1,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.clamp_split_gap_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.longline_hole_radius_mm": {
+      "value": 12.5,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.longline_hole_radius_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.clamp_bridge_size_mm.0": {
+      "value": 25,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.clamp_bridge_size_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.clamp_bridge_size_mm.1": {
+      "value": 18,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.clamp_bridge_size_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.clamp_bridge_size_mm.2": {
+      "value": 10,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.clamp_bridge_size_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.clamp_bridge_center_x_mm": {
+      "value": -68,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.clamp_bridge_center_x_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.pin_centers_x_mm.0": {
+      "value": -120,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.pin_centers_x_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.pin_centers_x_mm.1": {
+      "value": -80,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.pin_centers_x_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.pin_radius_mm": {
+      "value": 2.5,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.pin_radius_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.pin_sleeve_inner_radius_mm": {
+      "value": 2.7,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.pin_sleeve_inner_radius_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.pin_sleeve_outer_radius_mm": {
+      "value": 4,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.pin_sleeve_outer_radius_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.pin_length_mm": {
+      "value": 45,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.pin_length_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.pin_head_radius_mm": {
+      "value": 5,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.pin_head_radius_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.pin_head_height_mm": {
+      "value": 3,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.pin_head_height_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.pin_pull_ring_major_radius_mm": {
+      "value": 8,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.pin_pull_ring_major_radius_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.pin_pull_ring_minor_radius_mm": {
+      "value": 1.5,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.pin_pull_ring_minor_radius_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.lanyard_lug_center_mm.0": {
+      "value": -132,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.lanyard_lug_center_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.lanyard_lug_center_mm.1": {
+      "value": 0,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.lanyard_lug_center_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.lanyard_lug_center_mm.2": {
+      "value": 85,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.lanyard_lug_center_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.lanyard_lug_outer_radius_mm": {
+      "value": 9,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.lanyard_lug_outer_radius_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.lanyard_lug_inner_radius_mm": {
+      "value": 4,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.lanyard_lug_inner_radius_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.lanyard_lug_thickness_mm": {
+      "value": 6,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.lanyard_lug_thickness_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.lanyard_lug_bridge_size_mm.0": {
+      "value": 10,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.lanyard_lug_bridge_size_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.lanyard_lug_bridge_size_mm.1": {
+      "value": 12,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.lanyard_lug_bridge_size_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.lanyard_lug_bridge_size_mm.2": {
+      "value": 6,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.lanyard_lug_bridge_size_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.lanyard_lug_bridge_center_mm.0": {
+      "value": -123,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.lanyard_lug_bridge_center_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.lanyard_lug_bridge_center_mm.1": {
+      "value": 0,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.lanyard_lug_bridge_center_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.lanyard_lug_bridge_center_mm.2": {
+      "value": 88,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.lanyard_lug_bridge_center_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.lanyard_diameter_mm": {
+      "value": 3,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.lanyard_diameter_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.lanyard_length_mm": {
+      "value": 140,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.lanyard_length_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.lanyard_visual_gap_mm": {
+      "value": 1,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.lanyard_visual_gap_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.penetrator_origin_z_mm": {
+      "value": 5.2,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.penetrator_origin_z_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.penetrator_surface_gap_mm": {
+      "value": 0.3,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.penetrator_surface_gap_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.tether_route_start_z_mm": {
+      "value": -40.8,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.tether_route_start_z_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.tether_bend_radius_mm": {
+      "value": 50,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.tether_bend_radius_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.tether_surface_endpoint_y_mm": {
+      "value": 300,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.tether_surface_endpoint_y_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.analog_bend_start_z_mm": {
+      "value": 80,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.analog_bend_start_z_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.analog_bend_radius_mm": {
+      "value": 50,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.analog_bend_radius_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.analog_surface_endpoint_y_mm": {
+      "value": 300,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.analog_surface_endpoint_y_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_center_mm.0": {
+      "value": 0,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_center_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_center_mm.1": {
+      "value": 120,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_center_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_center_mm.2": {
+      "value": -90.8,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_center_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_size_mm.0": {
+      "value": 24,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_size_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_size_mm.1": {
+      "value": 30,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_size_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_size_mm.2": {
+      "value": 18,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_size_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_radial_gap_mm": {
+      "value": 0.4,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_radial_gap_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_support_size_mm.0": {
+      "value": 12,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_support_size_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_support_size_mm.1": {
+      "value": 60,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_support_size_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_support_size_mm.2": {
+      "value": 10,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_support_size_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_support_center_mm.0": {
+      "value": 0,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_support_center_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_support_center_mm.1": {
+      "value": 81,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_support_center_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_support_center_mm.2": {
+      "value": -101,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_support_center_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_riser_size_mm.0": {
+      "value": 12,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_riser_size_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_riser_size_mm.1": {
+      "value": 10,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_riser_size_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_riser_size_mm.2": {
+      "value": 116,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_riser_size_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_riser_center_mm.0": {
+      "value": 0,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_riser_center_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_riser_center_mm.1": {
+      "value": 56,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_riser_center_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_riser_center_mm.2": {
+      "value": -43,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_riser_center_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.strain_relief_saddle_z_mm": {
+      "value": 10,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.strain_relief_saddle_z_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.future_projector_envelope_size_mm.0": {
+      "value": 60,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.future_projector_envelope_size_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.future_projector_envelope_size_mm.1": {
+      "value": 60,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.future_projector_envelope_size_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.future_projector_envelope_size_mm.2": {
+      "value": 70,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.future_projector_envelope_size_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.future_projector_envelope_center_mm.0": {
+      "value": 0,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.future_projector_envelope_center_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.future_projector_envelope_center_mm.1": {
+      "value": -110,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.future_projector_envelope_center_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.future_projector_envelope_center_mm.2": {
+      "value": 170,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.future_projector_envelope_center_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.camera_service_envelope_size_mm.0": {
+      "value": 50,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.camera_service_envelope_size_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.camera_service_envelope_size_mm.1": {
+      "value": 50,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.camera_service_envelope_size_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.camera_service_envelope_size_mm.2": {
+      "value": 100,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.camera_service_envelope_size_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.camera_service_envelope_center_mm.0": {
+      "value": 0,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.camera_service_envelope_center_mm.0",
+      "kind": "local_design_allocation"
+    },
+    "design.camera_service_envelope_center_mm.1": {
+      "value": 0,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.camera_service_envelope_center_mm.1",
+      "kind": "local_design_allocation"
+    },
+    "design.camera_service_envelope_center_mm.2": {
+      "value": 100,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.camera_service_envelope_center_mm.2",
+      "kind": "local_design_allocation"
+    },
+    "design.dxf_curve_sample_spacing_mm": {
+      "value": 4,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.dxf_curve_sample_spacing_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.dxf_view_gap_mm": {
+      "value": 100,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.dxf_view_gap_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.dxf_dimension_offset_mm": {
+      "value": 25,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.dxf_dimension_offset_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.dxf_text_height_mm": {
+      "value": 3,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.dxf_text_height_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.geometry_linear_tolerance_mm": {
+      "value": 0.0001,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.geometry_linear_tolerance_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.interference_volume_tolerance_mm3": {
+      "value": 0.001,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.interference_volume_tolerance_mm3",
+      "kind": "local_design_allocation"
+    },
+    "design.step_relative_volume_tolerance": {
+      "value": 1e-06,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.step_relative_volume_tolerance",
+      "kind": "local_design_allocation"
+    },
+    "design.glb_linear_deflection_mm": {
+      "value": 0.3,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.glb_linear_deflection_mm",
+      "kind": "local_design_allocation"
+    },
+    "design.glb_angular_deflection_rad": {
+      "value": 0.35,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.glb_angular_deflection_rad",
+      "kind": "local_design_allocation"
+    },
+    "design.mass_density_kg_m3.aluminium_6061": {
+      "value": 2700,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.mass_density_kg_m3.aluminium_6061",
+      "kind": "local_design_allocation"
+    },
+    "design.mass_density_kg_m3.aluminium_7075": {
+      "value": 2810,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.mass_density_kg_m3.aluminium_7075",
+      "kind": "local_design_allocation"
+    },
+    "design.mass_density_kg_m3.stainless_316": {
+      "value": 8000,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.mass_density_kg_m3.stainless_316",
+      "kind": "local_design_allocation"
+    },
+    "design.mass_density_kg_m3.peek": {
+      "value": 1300,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.mass_density_kg_m3.peek",
+      "kind": "local_design_allocation"
+    },
+    "design.mass_density_kg_m3.polycarbonate": {
+      "value": 1200,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.mass_density_kg_m3.polycarbonate",
+      "kind": "local_design_allocation"
+    },
+    "design.mass_density_kg_m3.polyurethane": {
+      "value": 1200,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.mass_density_kg_m3.polyurethane",
+      "kind": "local_design_allocation"
+    },
+    "design.mass_density_kg_m3.lanyard_polyester": {
+      "value": 1380,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.mass_density_kg_m3.lanyard_polyester",
+      "kind": "local_design_allocation"
+    },
+    "design.mass_density_kg_m3.seawater": {
+      "value": 1025,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.mass_density_kg_m3.seawater",
+      "kind": "local_design_allocation"
+    },
+    "design.mass_density_kg_m3.fathom_bulk_effective": {
+      "value": 1025,
+      "unit": "as_key",
+      "source_file": "design-inputs.json",
+      "source_sha256": "26c1219652b888c5f0ad5df7a03c8197d7318071017ba8dc2260a019837ab601",
+      "url": "local://hardware/candidates/passive-v3/sources/design-inputs.json",
+      "retrieved": "2026-09-09",
+      "locator": "allocations.mass_density_kg_m3.fathom_bulk_effective",
+      "kind": "local_design_allocation"
+    },
+    "dome.wall_tolerance": {
+      "value": 0.1,
+      "unit": "mm",
+      "source_file": "wte-datasheet.pdf",
+      "source_sha256": "5a0fa16e1cafe514eb998360ad7f368c2cc0cade66217a7a4db0a83d12fb7d7a",
+      "url": "https://bluerobotics.com/wp-content/uploads/2026/05/WTE-DATASHEET-RevC.5-MAY2026.pdf",
+      "retrieved": "2026-09-09",
+      "locator": "p2 N BR-107201 wall thickness +/-0.10 mm, drawn table",
+      "kind": "published_vendor_dimension"
+    }
+  }
+}

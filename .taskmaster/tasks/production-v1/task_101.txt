@@ -1,0 +1,32 @@
+{
+  "deliverablePaths": [
+    "docs/requirements/production-requirements.md",
+    "docs/decisions/0001-passive-first-system-boundary.md",
+    "docs/production-roadmap.md"
+  ],
+  "dependencies": [],
+  "description": "Establish the evidence-bound baseline for the first passive monitoring product and separately gated active intervention path.",
+  "details": "Create the requirements, claims, assumptions, owners, evidence links, and measurement methods. Map preserved legacy master and crack-attack tasks to this delivery DAG without treating old claims as implementation evidence.",
+  "id": 101,
+  "ownerRole": "product-safety",
+  "phase": "P0",
+  "priority": "high",
+  "researchPackages": [
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7"
+  ],
+  "status": "done",
+  "subtasks": [],
+  "testStrategy": "Review the requirements-to-test matrix: every claimed function has an owner, evidence type, acceptance method, and unresolved assumption.",
+  "title": "P0 Audited Baseline Documentation",
+  "verification": {
+    "date": "2026-09-07",
+    "evidencePath": "docs/validation/development-tranche-001.md",
+    "scope": "Baseline documents only: requirements, passive-first boundary, and reviewed roadmap evidence."
+  }
+}

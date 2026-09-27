@@ -1,0 +1,55 @@
+{
+  "mode": "operate",
+  "seedKey": "326c98b2",
+  "assignedIndex": 4,
+  "groundedDirections": [
+    {
+      "rank": 1,
+      "name": "Acoustic strip-chart review",
+      "basis": "A lab signal-review station with a continuous trace, event gates, and measured annotations."
+    },
+    {
+      "rank": 2,
+      "name": "Hydrographic station ledger",
+      "basis": "A field-survey sheet organized by station identity, instrument context, time, and calibration notes."
+    },
+    {
+      "rank": 3,
+      "name": "Chain-of-custody evidence bench",
+      "basis": "An evidence register that keeps source hashes, provenance, attachments, and reviewer actions traceable."
+    },
+    {
+      "rank": 4,
+      "name": "Quality-control inspection traveler",
+      "basis": "A compact intake, process, inspect, and disposition workflow with visible revisions and exception states."
+    },
+    {
+      "rank": 5,
+      "name": "Media logging suite",
+      "basis": "A time-based logging workspace that pairs recorded media, offsets, markers, and operator notes."
+    },
+    {
+      "rank": 6,
+      "name": "Bridge watch log",
+      "basis": "A restrained watchkeeping record centered on chronology, state changes, and signed observations."
+    },
+    {
+      "rank": 7,
+      "name": "Incident reconstruction board",
+      "basis": "A synchronized timeline joining source evidence, candidate intervals, and review decisions."
+    }
+  ],
+  "chosenDirection": "Quality-control inspection traveler",
+  "challengerVerdict": {
+    "axes": ["audience identification", "product clarity"],
+    "result": "The assigned grounded direction wins both axes. Saturated lobe systems, alphabet weather, origami sequencing, and type-specimen grammar obscure familiar review controls. The phosphor terminal misidentifies a daylight desk-review scene and conflicts with the explicit visual constraints."
+  },
+  "contract": {
+    "thesis": "A revision-controlled inspection traveler for passive acoustic evidence; it refuses the category-default dashboard of oversized status cards.",
+    "ownWorld": "Daylight off-white and cool gray surfaces, graphite ink, one measured teal accent, thin solid rules, stamped state tags, dense tables, and a split inspector built from native controls.",
+    "story": "The operator unlocks a local workspace, imports evidence, watches processing reach a terminal state, selects a candidate, checks source context and waveform, then persists a human observation.",
+    "firstViewport": "A slim utility header sits above a three-part workbench: recording navigation at left, filter and event register in the center, and the active evidence inspection panel at right. The empty state keeps Load synthetic demo and Import WAV + manifest visible in the work area.",
+    "form": "Quality-control inspection traveler, fourth of seven grounded directions, seed 326c98b2.",
+    "finish": "unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md"
+  }
+}

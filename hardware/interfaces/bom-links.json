@@ -1,0 +1,43 @@
+{
+  "schema": "poseidon.hardware.bom-links.v1",
+  "configuration": "reference-v1",
+  "revision": "HW-REF-1.1",
+  "status": "REFERENCE_MAPPING_NOT_PROCUREMENT_RELEASE",
+  "electrical_bom": "hardware/bom/reference-v1.json",
+  "cad_manifest": "hardware/cad/generated/reference-v1/manifest.json",
+  "identifier_rule": "Final CAD manifest resolves purchased items directly to electrical BOM IDs. purchased_aliases below records earlier reference labels for traceability, not a second set of parts. The generated mechanical-bom.json owns custom/fastener/site entries.",
+  "quantity_rule": "Use each local assembly exactly once. TOP_PASSIVE/TOP_RESEARCH repeat placed component geometry and must not add another purchased quantity. Optional assemblies do not populate the default build. Enclosure shell/lid, PCB/component envelopes and split model representations share one parent item, not separate orders.",
+  "purchased_aliases": {
+    "CPU-01": ["HUB-CPU-001"],
+    "ENC-HUB-01": ["HUB-ENC-001"],
+    "PWR-HUB-01": ["HUB-DC5-001"],
+    "DAQ-01": ["HUB-DAQ-001"],
+    "STORAGE-01": ["HUB-STORE-001"],
+    "CAM-01": ["WET-CAM-001", "WET-PRESSURE-001"],
+    "HYD-01": ["WET-HYD-001"],
+    "HYD-ARRAY-01": ["ARRAY-DAQ-OPT-001"],
+    "WIPER-MOTOR-01": ["WIPER-DRIVE-OPT-001"],
+    "WIPER-PIVOT-01": ["WIPER-DRIVE-OPT-001"],
+    "WIPER-BLADE-01": ["WIPER-DRIVE-OPT-001"],
+    "ACT-PROJECTOR-01": ["PROJECTOR-XDCR-OPT-001"],
+    "SOLAR-01": ["REEF-PV-001"],
+    "BAT-01": ["REEF-BAT-001"],
+    "ENC-REEF-01": ["REEF-ENC-001"],
+    "MCU-01": ["REEF-CPU-001"],
+    "RADIO-01": ["REEF-RF-001"],
+    "CHARGER-01": ["REEF-MPPT-001"],
+    "ANT-REEF-01": ["REEF-ANT-001"],
+    "PROBE-01": ["REEF-PROBE-001"],
+    "H-02": ["WET-HARNESS-001"],
+    "H-05": ["REEF-PROBE-001", "FARM-HARNESS-001"]
+  },
+  "unresolved_reference_items": {
+    "FAST-HUB-M6-SPACER": "Candidate M6-clearance spacer geometry; exact standard, length/washer/joint, material, supplier and torque not released.",
+    "FAST-PI-M2P5-STANDOFF": "Candidate M2.5 Pi support; exact threaded standoff, screw/head, washer stack and torque not released.",
+    "ACT-ISOLATOR-01": "Generic elastomer annulus; exact material/durometer/preload, supplier and vibration/retention qualification open.",
+    "SITE-PIPE-01": "Illustrative 60 mm farm rail, not a purchased component or surveyed infrastructure."
+  },
+  "custom_part_rule": "CAD-* and PRINT-* BOM IDs resolve to their editable CAD construction, part features, material/finish assumptions and drawings in the manifest. Group equal BOM IDs by local assembly to obtain geometry counts. These are not vendor SKUs or released fabricated parts; missing joining, fastener, restraint or material specifications remain release holds.",
+  "fixture_quantity_rule": "Instrument reference envelopes inside calibration/pressure-positioning fixtures are reused test specimens, not additional instrument procurement. Fixture build quantities require test-plan approval.",
+  "unmodeled_electrical_items": "BMS, protections, USB-C source, complete wet penetrators, gateway and detailed harness components remain open in the electrical BOM. A valid CAD envelope does not imply these missing components fit or are selected."
+}

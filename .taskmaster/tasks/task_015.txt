@@ -1,0 +1,11 @@
+# Task ID: 15
+# Title: [nereid] Integrate EdgeTPU/TensorRT Inference Backend
+# Status: pending
+# Dependencies: 6
+# Priority: medium
+# Description: Upgrade NEREID to support accelerated object detection using Google Coral (EdgeTPU) or Jetson Nano (TensorRT), selectable via configuration.
+# Details:
+Abstract the detection logic. Create a base `Detector` class with a `detect` method. Implement subclasses: `CpuDetector` (existing logic), `EdgeTpuDetector` (using `pycoral` library), and `TensorRtDetector` (using `tensorrt` Python bindings). In `main.py`, read a config value (`vision.backend`) and instantiate the correct detector class. The Dockerfile will need to handle installing different dependencies based on the target architecture.
+
+# Test Strategy:
+On a Coral device, set `backend: edgetpu` and verify object detection works and is significantly faster than CPU. On a Jetson, set `backend: tensorrt` and verify the same. Measure the camera-to-audio latency (as per success metrics) for each backend and confirm it meets the target.

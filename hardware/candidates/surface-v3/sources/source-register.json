@@ -1,0 +1,75 @@
+{
+  "schema": "poseidon.surface-v3.sources.v1",
+  "new_downloads": 0,
+  "vendor_geometry": "Source-dimension envelope reconstruction, not downloaded vendor BRep; vendor internal detail unknown.",
+  "sources": [
+    {
+      "id": "v2-interface",
+      "path": "hardware/candidates/passive-v2/interface.json",
+      "sha256": "47417cece50fad016051e953fbabb29473bb55fbbad18f2d6d562d567528cd17",
+      "locator": "Existing v2 mechanical source record; purchased dimensions and custom allocations distinguished."
+    },
+    {
+      "id": "v2-parameters",
+      "path": "hardware/candidates/passive-v2/cad/parameters.json",
+      "sha256": "276c73f6d37ee7c6ed9226dc14d066288336fe9e5dd685d86e11f80d25a6d3f0",
+      "locator": "panel, hub, sink, shade and cable records; no power components imported."
+    },
+    {
+      "id": "v2-model",
+      "path": "hardware/candidates/passive-v2/cad/model.py",
+      "sha256": "d2bb3be4e08fb71a84cbd1b3e6bb540eced40aef0e74d5ffe35ba1afde49a1bf",
+      "locator": "build_reef panel mass feature; build_hub simplified source geometry and caveats."
+    },
+    {
+      "id": "v2-thermal-register",
+      "path": "hardware/candidates/passive-v2/sources/thermal-sources.json",
+      "sha256": "109fbbc500cad8a5b3391eca53ea1139174b82715d66134a559a81e546886cd9",
+      "locator": "Hammond page 1; Wakefield PDF page 21 / printed page 17; Henkel page 1."
+    },
+    {
+      "id": "panel-datasheet",
+      "path": "hardware/.vendor-cache/cad/Datasheet-BlueSolar-Monocrystalline-Panels-EN.pdf",
+      "sha256": "ad32cb7fe0ec45ceb325b3b61ba71e60b9d9a53c6a7808404a632cb0d727e191",
+      "locator": "Page 1 SPM040401200 row: 425 x 668 x 25 mm, net weight 3.1 kg.",
+      "url": "https://www.victronenergy.com/upload/documents/Datasheet-BlueSolar-Monocrystalline-Panels-EN.pdf",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "id": "hub-drawing",
+      "path": "hardware/.vendor-cache/passive-v2/Hammond-1550WJ.pdf",
+      "sha256": "c5a25909908b686e83fe3ade063e770f9c9f359dd3177e28054f50ed305ca969",
+      "locator": "Page 1 overall views and part table: 275 x 175 x 66.6 mm. Gasket/revision caveat retained.",
+      "url": "https://www.hammfg.com/files/parts/pdf/1550WJ.pdf",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "id": "sink-catalog",
+      "path": "hardware/.vendor-cache/passive-v2/Wakefield-Thermal-Extrusions-2025.pdf",
+      "sha256": "7baf0f6a605e88bd0a014414fea7d6776af4d20e62a0a6dafd33fa69c9913911",
+      "locator": "PDF page 21 / printed page 17: XX4559 10.78 x 3.77 in, base .620 in, candidate 3 in cut; fins not dimensioned.",
+      "url": "https://wakefieldthermal.com/content/catalogs/Thermal_Extrusions_WakefieldThermal-2025.pdf",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "id": "tim-datasheet",
+      "path": "hardware/.vendor-cache/passive-v2/Henkel-SIL-PAD-TSP-1600.pdf",
+      "sha256": "58f544583f86db7eb03736797e1d907a567717aecf095e8a0be5c29127dda9e3",
+      "locator": "Page 1 nominal .127 mm; no installed interface resistance adopted.",
+      "url": "https://datasheets.tdx.henkel.com/BERGQUIST-SIL-PAD-TSP-1600-en_GL.pdf",
+      "license_status": "supplier_redistribution_unverified"
+    },
+    {
+      "id": "research-site",
+      "path": "research/literature/R5R6-marine-mechanical-power-2026-09-09.md",
+      "sha256": "b69eb07a8108dc60be84e1e1c01663d8e8919e03bdb881ac8417e245d8458f47",
+      "locator": "Site parameters lines 45-64 and mooring options lines 266-295; no surveyed depth, storm loads or holding capacity."
+    },
+    {
+      "id": "research-register",
+      "path": "research/literature/R5R6-marine-mechanical-power-2026-09-09.sources.json",
+      "sha256": "8d8a8c90dd0c2132cb4cd86aac7665aab6623a56e16e60f04eefb8481b8c30d8",
+      "locator": "R5R6-S15, S16, S35, S36; local records only."
+    }
+  ]
+}

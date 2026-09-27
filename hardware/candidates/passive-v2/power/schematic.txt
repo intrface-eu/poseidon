@@ -1,0 +1,127 @@
+HW-CAND-2.0 / passive-v2
+NON_ADOPTED_NOT_BUILD_AUTHORIZED
+Editable COTS interconnect candidate, NOT a released wiring/build instruction.
+No custom PCB. All hardware is unpurchased/unqualified. No live operation authorized.
+Wave1 HW-REF-1.1 files and failed calculations remain unchanged.
+
+TWO PHYSICAL PANELS — CANDIDATE CAD/BOM ID REEF-PV-2S
+V2-PV-001 quantity2 = Victron SPM04040120040W each
+Each source envelope668X425Y25Zmm; centresY=-237.5,+237.5mm; gap50mm;
+combined panel footprint668x900mm, NOT the old single-panel frame.
+
+    panel A(-) -------------------------- PV isolation poles [UNKNOWN] -- MPPT PV-
+    panel A(+) -- sheltered221-412 splice -- panel B(-)
+    panel B(+) -------------------------- PV isolation/protection [UNKNOWN] -- MPPT PV+
+
+No factory MC4 leads assumed. Exact PV cable/gland/junction box/isolator unknown.
+Two-series cold Voc50.40025V before unknown tolerance. Do NOT route PV through
+35V BatteryProtect or unverified32VATO protection. No PV-to-frame/negative bond
+is inferred. Open-circuit checks do not validate loaded hot startup or fault clearing.
+
+REEF BATTERY / CHARGE / LOAD
+BAT512050610 Lithium Battery Smart12.8V50Ah, NOT NG-only BMS variant
+
+  BAT+ -- [main DC fuse + lockable service isolator UNKNOWN] -- 221-415 positive bus
+           |                                                   |
+           |                     +-- [charge branch fuse UNKNOWN] -- MPPT BAT+
+           |                     |
+           |                     +-- [electronics branch fuse/holder candidate,
+           |                     |      primary ratings UNKNOWN] -- BatteryProtect IN
+           |                     |
+           |                     +-- [BMS supply fuse UNKNOWN] -- smallBMS positive supply
+           |
+  BAT- ----+-- dedicated insulated negative distribution via221-415 splices
+               |-- MPPT BAT-
+               |-- smallBMS negative supply
+               |-- BatteryProtect GND via manufacturer-specified protection
+               |      (manual says300mA sufficient; exact fuse/holder UNKNOWN)
+               |-- retained2-pole DC service connector return
+
+Use the actual terminal markings and manufacturer installation diagrams.
+Do not invent physical terminal indices from mirrored CAD views. MPPT charging
+has its OWN fused BAT connection; it must not push charge backwards through
+BatteryProtect OUT. BatteryProtect current is IN-to-OUT ONLY.
+
+  BatteryProtect OUT -- retained keyed service connector positive --+-- Pololu D36V28F5 VIN
+                                                                  +-- Pololu D36V28F3 VIN
+  dedicated service return ---------------------------------------+-- both regulator GND
+
+Service connector candidate:1327FP red and1327G6FP black on BOTH halves,
+1331 contacts,110G21 two-pole BlockLok. P mates P, N mates N after explicit
+mating-face/cable-view polarity drawing review. Fingerproof cannot mate standard
+housings. Contact wire12AWG is only a scenario; crimp tool/ampacity/strain-relief
+and assembled envelope remain open. No55A@10AWG family rating transferred to it.
+It is above-water inside the enclosure, not a wet connector or approved isolator.
+
+D36V28F5 VOUT/GND -- ESP32-DevKitC-32E J2.19(5V) / J2.14(GND)
+D36V28F3 VOUT/GND -- RAK3272S J5.9(3V3) / J5.7(GND)
+ESP GPIO17 J3.11 TX -- RAK J4.8 UART2_RX
+ESP GPIO16 J3.12 RX -- RAK J4.7 UART2_TX
+
+Only ONE ESP power method: header5V OR header3V3 OR service USB.
+Disconnect service USB VBUS when header-powered. RAK supply is independent,
+not borrowed from unknown DevKit3V3 spare capacity. Never use RAK J4.9 across
+revisions: VerB=PA8,VerC=3V3. UART power-off backfeed protection still open.
+No direct12V/5V logic/raw battery divider/wet I2C into ESP GPIO.
+No output actuation GPIO. Do not attach VIN-pulled regulator EN directly to ESP.
+PG is open-drain status;90%/120% thresholds are not regulator protection limits.
+3.3V PG upper status threshold3.96V does not protect a RAK3.6V supply boundary.
+Numerical regulator OVP/current-limit/fault thresholds are UNKNOWN.
+
+SOURCE-SUPPORTED BMS CONTROL, ACTUAL CONFIGURATION/FAULT TESTS STILL OPEN
+  Battery matched M8 BTV cables -- smallBMS BMS400100000 matched battery inputs
+
+  smallBMS Load disconnect -- Smart BatteryProtect BPR065022000 remote H
+       Configure BatteryProtect ModeC; follow smallBMS remote diagram and remove
+       bypass jumper. Healthy output high at approximatelyVbat-0.1V; floating on
+       cell undervoltage or BMS off permits load disconnect. No independent H
+       pull-up may defeat this.1A source limit is NOT short-circuit protected.
+
+  smallBMS Charge disconnect -- ASS030550320 control lead -- MPPT VE.Direct RX
+       Configure75/10 RX port function for Remote on/off; not an assumed default.
+       Healthy output approximatelyVbat-0.6V; high enables; below1V or floating
+       disables via manufacturer cable. Must stop charge on cell high voltage
+       and low/high temperature.10mA output limit; no relay coil on this output.
+       Cable/input current UNKNOWN, included in additional-loss sensitivity.
+       VE.Direct occupied by control cable, unavailable for simultaneous telemetry.
+
+smallBMS remote on/off switch and main service isolation require exact part and
+fuse selection. Remote charge-off is NOT mechanical service isolation. Broken
+control wires/floating inputs must be tested; short-to-positive/semiconductor
+faults are not proven safe by a Boolean model. BatteryProtect automatically
+reconnects under its specified behavior; it is NOT a manual-rearm acoustic stop.
+
+HUB PI POWER — FIELD PATH NOT RESOLVED
+Industrial DC USB-C source family research ended with blocked primary pages;
+CC/source role, numerical OVP/OCP and11.2V operation UNKNOWN. No bare buck or
+PD sink trigger is substituted. No new source module is fabricated from guesses.
+
+Drybench alternative ONLY:
+  external mains -- official SC0444 / KSA-15E-051300HE -- captiveUSB-C -- Pi4
+ 5.1V nominal3A, official EU white15W PSU, outside HUB, no bench authorization.
+ This alternative does NOT power from the12V bus, does NOT qualify field supply,
+ and must never be paralleled with another Pi source. Internal CC/OVP thresholds
+ are not published in the retrieved brief. Parent's unchanged21.857142857W/35C
+ thermal comparison is not reduced because a bench adapter is drawn externally.
+
+PROTECTION AND GROUNDING GATES
+Main battery fault current and all released fuse/holder/isolator selections unknown.
+Littelfuse0287005 base fuse and01550320ZXU holder are concrete source leads only;
+ratings/dimensions/ordering suffix/curves blocked at primary source. No indexed
+5A/32V/1000A values are treated as verified. Eaton alternative timed out; bounded
+search stopped. Nominal current inequalities cannot approve DC breaking capacity.
+WAGO221-415/412 catalog450V32A ratings are not whole-installation/temperature/fault
+ratings. Protect/retain terminal levers inside the selected enclosure. Unused ports
+remain unwired. No copper gauge is approved without actual insulation, length,
+bundling, temperature, remote fault clearing and lug/crimp/torque data.
+Never use seawater/shield/frame as normal return. Grounding, lightning, corrosion,
+EMC and external interface isolation require site review. No general isolation
+claim follows from these COTS regulators or enclosure materials.
+
+ENERGY BOUNDARY AND DEFAULT OUTPUT
+Retain1PSH, baselineREEF27.5247475Wh/day and all existing losses. Add selected
+smallBMS/BatteryProtect/regulator nominal quiescent overlay; retain original0.1W
+BMS allowance rather than subtract it. Unknown cable/control/conduction/worst-case
+loss remains UNKNOWN with explicit sensitivity; no autonomy claim from42.12Wh alone.
+Amplifier, projector, wiper drive and all output harnesses remain PHYSICALLY ABSENT.
+All power, thermal, wet-acquisition and electrical qualification remains OPEN.

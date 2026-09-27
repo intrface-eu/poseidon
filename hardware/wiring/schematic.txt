@@ -1,0 +1,134 @@
+HW-REF-1.1 / reference-v1 / electrical-1 / 2026-09-08
+EDITABLE REFERENCE INTERCONNECT, NOT A RELEASED BUILD SCHEMATIC
+All protection/connector sizing and electrical qualification remain OPEN.
+Square-bracket OPEN items have no selected manufacturer assembly.
+No custom PCB is justified. Do not build a power path from this text alone.
+
+PASSIVE HUB (above water)
+
+ Protected nominal12V source [actual source/transients/fault current OPEN]
+   BUS+ -- [near-source fuse + service disconnect + reverse/UVLO/OVP OPEN]
+        -- [HUB branch fuse OPEN] -- SD-50A-5 pin1 INPUT+
+   RET  -------------------------- SD-50A-5 pin2 INPUT-
+   FRAME [bond topology OPEN] ----- SD-50A-5 pin3 FG
+
+ SD-50A-5 pin5 OUTPUT+ -- [5V OVP/current limiter + USB-C SOURCE OPEN]
+ SD-50A-5 pin4 OUTPUT- -- [source return and rated retained cable OPEN]
+                                          |
+                              Pi4 SC0194 USB-C input above water
+                              5.1V3A minimum reference requirement
+                                          |
+                              above-water USB DAQ/storage [parts OPEN]
+                              analog receive conditioner [OPEN]
+                                          |
+                   [rated wet cable/pressure feedthrough OPEN]
+                              analog hydrophone [OPEN]
+
+ USB-C requires an actual source-role assembly and valid CC current advertisement
+ in BOTH plug orientations. A PD sink trigger does not implement that source.
+ Do not solder a bare buck onto a USB-C plug/receptacle and infer3A support.
+ Full provisional1.2A aggregate USB peripheral allocation is included separately
+ from1.8A Pi-only peak allocation. Verify actual Pi USB limit and revision.
+ SD-50A-5 has50W/10A nominal ratings, not a Pi-compatible overload/OVP circuit.
+ Vendor OVP5.75..6.75V at10% load does not establish Pi protection.
+
+ EXCLUSIVE DRY BENCH ALTERNATIVE
+ Official Raspberry Pi15W USB-C PSU5.1V3A captive lead [EU SKU OPEN].
+ Disconnect the entire DC-converter source when using it. Never parallel supplies.
+ Mains stays outside this DC design/enclosure. No bench energization authorized.
+
+ WET CAMERA CANDIDATE
+ protected surface12V branch -- [F-CAM OPEN] -- dedicated wet power pair [OPEN]
+ camera Ethernet or isolated transport [OPEN] -- above-water HUB interface
+ Neither9..16V camera input nor25m cable is a vendor selection.
+ No underwater USB length or passive USB extension is assumed.
+
+ REEF (all electronics/radio above water)
+
+ Victron BAT51205061012.8V50Ah Smart
+   + -- [terminal fuse + service isolator OPEN]
+       -- [external BMS controlled LOAD disconnect OPEN] -- local protected bus
+   - -- [vendor-compatible BMS/shunt/return topology OPEN] -- local return
+   battery BTV cable -- [matched external BMS OPEN]
+
+ SPM04040120040W panel junction box [factory cable not assumed]
+   PV+/PV- -- [PV disconnect/protection/glands OPEN] -- SCC075010060R PV+/PV-
+ SCC075010060R BAT+/BAT- -- [BMS compatible CHARGE disable/disconnect OPEN]
+                          -- battery charge path
+
+ Battery integrated BTV is not the disconnect BMS. Must stop charge on low/high
+ cell temperature and cell overvoltage; stop load on undervoltage and faults.
+ Candidate battery permits charge only+5..+50C. MPPT settings alone are not BMS.
+ Do not invent the controller terminal order: read actual unit/manual markings.
+
+ local bus -- [COTS protected5V supply OPEN] -- ESP J2.19 5V / J2.14 GND
+           -- [independent3.3V radio supply OPEN] -- RAK J5.9 3V3 / J5.7 GND
+
+ ESP32-DevKitC-32E has ESP32-WROOM-32E, NOT WROVER.
+ Exactly one power method: header5V OR header3V3 OR service Micro-USB.
+ With header5V supply, disconnect service USB VBUS; do not backfeed via signals.
+ DevKit3V3 spare capacity is UNKNOWN; radio does not get assumed spare current.
+
+ local3.3V UART island, proposed short retained harness [power-off isolation OPEN]
+ ESP J3.11 GPIO17 TX ---------------- RAK J4.8 UART2_RX / PA3
+ ESP J3.12 GPIO16 RX ---------------- RAK J4.7 UART2_TX / PA2
+ ESP local GND --------------------- RAK J5.7 GND
+ RAK J5.9 =3V3 supply. J4.9 is NOT used: VerB=PA8, VerC=3V3.
+ Cross TX to RX. Connector cable-side views mirror PCB/mating-face drawings.
+
+ ESP J3.6 GPIO21 SDA -- [local3.3V conditioned/isolated sensor interface OPEN]
+ ESP J3.3 GPIO22 SCL -- [pullups and bus rise-time review OPEN]
+ No direct wet I2C/probe cable; no5V/12V logic; no raw battery divider on ESP.
+ No output actuation pins allocated. RF antenna stays above water.
+
+ OPTIONAL OUTPUT — OMITTED IN DEFAULT PHYSICAL POPULATION
+
+ No amplifier, no projector, no output power harness, no GPIO actuation route.
+ Leave optional connector absent or unwired/capped. Software-disabled is NOT
+ the default physical safety boundary.
+
+ Future concept only; all parts and safety review OPEN
+ separate BUS branch -- F-OUT -- lockable service isolator -- K1 NO -- K2 NO
+                                                                |
+                                                      amplifier power [ABSENT]
+                                                      projector [ABSENT]
+
+ K1/K2 are independent normally-open power disconnects controlled ONLY by an
+ independent selected safety controller, not Pi/ESP GPIO or a software latch.
+ Review interruption of BOTH conductors for a floating supply. No spare feed,
+ audio input, shield or USB connection may back-power the disconnected chain.
+ Passive HUB diagnostics have a separate fused path and can remain powered.
+
+ Concept control inputs to independent safety controller [NO terminal allocation]
+   physical key permission
+   NC physical stop channel A (open wire = stop)
+   NC physical stop channel B (open wire = stop)
+   independent hardware window-watchdog HEALTHY contact
+   K1/K2 monitored auxiliary feedback / external-device monitoring
+   LOCAL monitored normally-open manual REARM button
+
+ Rearm requires healthy channels/feedback/watchdog AND a released button followed
+ by a fresh local press. Holding a button through power return, stop release or
+ watchdog recovery must NOT rearm. Software/GPIO may veto; cannot close K1/K2
+ by itself. Static heartbeat is not healthy; internal MCU watchdog is not the
+ independent watchdog. Coil suppression must not defeat the measured stop bound.
+
+ Fails-off on control-power loss, either NC stop opening, watchdog loss, invalid
+ contact feedback or key removal. Contact weld/cross-fault coverage and the exact
+ controller, DC contacts, coil supply and safety level require specialist design.
+
+ Stored amplifier/filter/cable energy requires an independent discharge/dump
+ path and measured time-to-safe. Opening supply alone is NOT proof of immediate
+ acoustic silence. Default-low amplifier enable is supplementary, never the
+ sole inhibit. No acoustic frequency/level/TVR/impedance or safe dose selected.
+ No failed Lim pinger profile adopted. No electrical or acoustic test performed.
+
+ GROUNDING / WIRING RULES
+ Dedicated insulated DC returns; no frame/shield/seawater load return.
+ System frame/negative/shore-earth bonds are OPEN, not implicitly shorted.
+ Converter isolation rating is a component withstand test, not system isolation.
+ Track USB/Ethernet/RF/analog shields that cross isolation boundaries.
+ FG, exposed metal, lightning/surge and saltwater corrosion need site review.
+ Cable ratings, contact ratings, wire gauge, fuse curve/breaking capacity,
+ connector locking, crimp/torque and pull-test requirements remain unresolved.
+ Never substitute a passing ampacity inequality for fault clearing qualification.

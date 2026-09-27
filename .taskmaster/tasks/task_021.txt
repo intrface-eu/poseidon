@@ -1,0 +1,11 @@
+# Task ID: 21
+# Title: [aeolus-ui] Develop Interactive Dashboard with Map and Controls
+# Status: pending
+# Dependencies: 9, 20
+# Priority: medium
+# Description: Expand the Next.js dashboard to include a map view of sites (using Leaflet), device status cards, telemetry graphs, and UI controls for triggering audio programs or a kill-switch.
+# Details:
+Integrate `react-leaflet` to display devices on a map, fetching locations from the `/devices` API endpoint. Create a `DeviceCard` component that shows live status (from MQTT) and battery level graphs (querying a new API endpoint that reads from TimescaleDB). Add buttons that, when clicked, call API endpoints on `aeolus-api` which in turn publish the appropriate `.../cmd/...` MQTT messages.
+
+# Test Strategy:
+Launch the full cloud stack and a hub. Verify devices appear on the map. Check that telemetry graphs update. Click the 'Play Program' button for a site and verify the command is sent and the hub's speaker plays the audio. Test the remote kill-switch button.

@@ -1,0 +1,27 @@
+{
+  "deliverablePaths": [
+    "hardware/cad/",
+    "hardware/manufacturing/"
+  ],
+  "dependencies": [
+    109,
+    112,
+    113,
+    115,
+    117
+  ],
+  "description": "Produce editable mechanical CAD, drawings, assemblies, service interfaces, and fabrication package.",
+  "details": "Create native parametric assemblies, STEP, drawings, tolerances, materials/finishes, purchased-part references, mounting, buoyancy/CG, cable strain relief, seals, penetrators, retrieval, and service access. Printed parts are not pressure barriers without evidence.",
+  "id": 123,
+  "ownerRole": "mechanical",
+  "phase": "P6",
+  "priority": "high",
+  "researchPackages": [
+    "R4",
+    "R6"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Review recomputability, scale, tolerances, sealing, supplier geometry, service access, and physical fit against the selected envelope.",
+  "title": "P6 Editable CAD and Fabrication Package"
+}

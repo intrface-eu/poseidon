@@ -1,0 +1,11 @@
+# Task ID: 19
+# Title: [trident] Implement 4G Connectivity Watchdog and Failover
+# Status: pending
+# Dependencies: 17
+# Priority: high
+# Description: Add a robust connectivity manager to TRIDENT that monitors the 4G HAT connection using ModemManager, handles automatic reconnections, and can failover to Wi-Fi/Ethernet if available.
+# Details:
+Create a new asyncio task in TRIDENT. This task will periodically shell out to `mmcli -m any` to check the modem state. If the state is 'disconnected' or 'registered' but not 'connected', it should attempt to bring the connection up. It can also check network reachability by pinging a known host. If 4G fails and a Wi-Fi/Ethernet interface has a route, it should be used automatically. Log all connectivity state changes.
+
+# Test Strategy:
+Run the hub on a Pi with a 4G HAT. Disconnect the 4G antenna to simulate signal loss. Verify that the watchdog detects the disconnection and logs reconnection attempts. Reconnect the antenna and confirm it re-establishes a connection. Test failover by enabling Wi-Fi, then stopping the modem service; verify MQTT traffic continues over Wi-Fi.

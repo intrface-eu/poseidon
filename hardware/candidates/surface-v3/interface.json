@@ -1,0 +1,538 @@
+{
+  "schema": "poseidon.surface-v3.interface.v1",
+  "configuration": "surface-v3",
+  "revision": "HW-CAND-SURFACE-3.0",
+  "product": "Poseidon Trident",
+  "company": "Intrface",
+  "status": "NON_ADOPTED_NOT_BUILD_AUTHORIZED",
+  "adopted": false,
+  "build_authorized": false,
+  "procurement_authorized": false,
+  "active_emission_hardware_populated": false,
+  "physical_tests_performed": 0,
+  "units": {
+    "cad": "mm",
+    "glb": "m",
+    "mass": "kg"
+  },
+  "source_register_sha256": "b1e05abc7e6314089b85cba4deefd499e2085241c16f7270280a096d31eeccff",
+  "parameters": {
+    "panel_xyz_mm": {
+      "value": [
+        668,
+        425,
+        25
+      ],
+      "unit": "mm",
+      "kind": "source_record",
+      "basis": "Vendor envelope, length/width order in CAD.",
+      "source_id": "v2-interface",
+      "locator": "mechanical.reef.single_panel_xyz_mm"
+    },
+    "panel_mass_kg": {
+      "value": 3.1,
+      "unit": "kg",
+      "kind": "source_record",
+      "basis": "Vendor nominal mass per panel, not envelope density.",
+      "source_id": "v2-model",
+      "locator": "build_reef features.vendor_nominal_mass_kg; panel-datasheet page 1 SPM040401200"
+    },
+    "panel_gap_mm": {
+      "value": 50,
+      "unit": "mm",
+      "kind": "source_record",
+      "basis": "Inherited v2 design gap, not a vendor mounting requirement.",
+      "source_id": "v2-interface",
+      "locator": "mechanical.reef.gap_between_panels_mm"
+    },
+    "panel_tilt_deg": {
+      "value": 4,
+      "unit": "degree",
+      "kind": "design_assumption",
+      "basis": "Drainage study; allowed 3 to 5 degrees, no yield or load claim."
+    },
+    "tray_xy_mm": {
+      "value": [
+        720,
+        940
+      ],
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Shallow tray plan, 10 mm bearing overlap onto float collar on each side."
+    },
+    "tray_thickness_mm": {
+      "value": 4,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Custom aluminum plate; stiffness and joints unqualified."
+    },
+    "skirt_xy_mm": {
+      "value": [
+        700,
+        920
+      ],
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Open-bottom skirt outer plan equals float inner plan; no sealed buoyancy credit."
+    },
+    "skirt_wall_mm": {
+      "value": 2,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Custom sheet envelope; corner joining and ventilation review open."
+    },
+    "skirt_depth_mm": {
+      "value": 180,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Skirt below tray, not a housing rating."
+    },
+    "panel_low_clearance_mm": {
+      "value": 8,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Lowest panel underside above tray top, supported by wedges."
+    },
+    "wedge_length_mm": {
+      "value": 640,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Solid candidate wedge rails; mounting/clamp zone not vendor-approved."
+    },
+    "wedge_width_mm": {
+      "value": 22,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Candidate rail width, no fastener detail selected."
+    },
+    "wedge_edge_inset_mm": {
+      "value": 30,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Rail centre inset from panel side edges."
+    },
+    "hub_xyz_mm": {
+      "value": [
+        275,
+        175,
+        66.6
+      ],
+      "unit": "mm",
+      "kind": "source_record",
+      "basis": "Vendor L/W/H laid flat; v2 vertical orientation is not retained.",
+      "source_id": "v2-interface",
+      "locator": "mechanical.hub.vendor_lwh_mm"
+    },
+    "hub_center_xy_mm": {
+      "value": [
+        0,
+        -220
+      ],
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Hub offset keeps central socket, pole and cable stubs clear."
+    },
+    "shade_xy_mm": {
+      "value": [
+        375,
+        275
+      ],
+      "unit": "mm",
+      "kind": "source_record",
+      "basis": "Inherited v2 custom roof allocation, not a purchased roof.",
+      "source_id": "v2-interface",
+      "locator": "mechanical.shade.roof_xy_mm"
+    },
+    "shade_thickness_mm": {
+      "value": 1.5,
+      "unit": "mm",
+      "kind": "source_record",
+      "basis": "Inherited custom aluminum roof thickness.",
+      "source_id": "v2-interface",
+      "locator": "mechanical.shade.sheet_thickness_mm"
+    },
+    "shade_hub_gap_mm": {
+      "value": 75,
+      "unit": "mm",
+      "kind": "source_record",
+      "basis": "Inherited v2 shade gap; does not establish cooling or zero sunlight.",
+      "source_id": "v2-interface",
+      "locator": "mechanical.shade.vertical_gap_above_enclosure_mm"
+    },
+    "shade_to_tray_mm": {
+      "value": 8,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Roof top to tray underside; reopened thermal and service question."
+    },
+    "shade_support_x_mm": {
+      "value": 175,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Two roof hangers outside hub envelope."
+    },
+    "shade_support_xy_mm": {
+      "value": [
+        4,
+        10
+      ],
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Unqualified roof attachment tabs; no fasteners populated."
+    },
+    "sink_xyz_mm": {
+      "value": [
+        273.812,
+        95.758,
+        76.2
+      ],
+      "unit": "mm",
+      "kind": "source_record",
+      "basis": "Sourced overall occupancy only. Vertical extrusion allocation beside flat hub, not a designed thermal joint.",
+      "source_id": "v2-interface",
+      "locator": "mechanical.heat_sink.candidate_xyz_mm"
+    },
+    "sink_base_mm": {
+      "value": 15.748,
+      "unit": "mm",
+      "kind": "source_record",
+      "basis": "Sourced profile base thickness; not a complete sink solid.",
+      "source_id": "v2-interface",
+      "locator": "mechanical.heat_sink.profile_base_thickness_mm"
+    },
+    "sink_hub_gap_mm": {
+      "value": 0.127,
+      "unit": "mm",
+      "kind": "source_record",
+      "basis": "Inherited nominal TIM separation as space only; no thermal pad or contact assembly asserted.",
+      "source_id": "v2-interface",
+      "locator": "mechanical.thermal_interfaces.thickness_mm"
+    },
+    "sink_vent_height_mm": {
+      "value": 50,
+      "unit": "mm",
+      "kind": "source_record",
+      "basis": "Inherited minimum open-air allocation; skirt changes airflow.",
+      "source_id": "v2-interface",
+      "locator": "mechanical.shade.minimum_open_air_gap_mm"
+    },
+    "hub_carrier_width_mm": {
+      "value": 400,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Shelf and two hangers outside roof ends; joining/load release open."
+    },
+    "hub_carrier_thickness_mm": {
+      "value": 3,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Custom support shelf below hub."
+    },
+    "hub_hanger_xy_mm": {
+      "value": [
+        4,
+        20
+      ],
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Two vertical carrier hangers touch tray underside; no bolt/weld sizing."
+    },
+    "socket_od_mm": {
+      "value": 84,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Custom socket tube diameter."
+    },
+    "socket_id_mm": {
+      "value": 62,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "1 mm radial clearance around 60 mm pole; tolerances/isolation unqualified."
+    },
+    "socket_length_mm": {
+      "value": 120,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Socket lower end to tray underside."
+    },
+    "socket_flange_od_mm": {
+      "value": 140,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Custom flange touches tray underside; no bolt pattern invented."
+    },
+    "socket_flange_thickness_mm": {
+      "value": 6,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Custom flange thickness; structural question open."
+    },
+    "bolt_centres_below_tray_mm": {
+      "value": [
+        30,
+        85
+      ],
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Two transverse X-axis cross-bolt allocations, not sourced fasteners."
+    },
+    "bolt_hole_diameter_mm": {
+      "value": 11,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Holes through pole and socket with .5 mm radial allocation clearance."
+    },
+    "bolt_allocation_diameter_mm": {
+      "value": 10,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Nonphysical shank space; grade, threads, heads, washers and locking unselected."
+    },
+    "bolt_allocation_length_mm": {
+      "value": 104,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Nonphysical cross-bolt space, not a vendor length."
+    },
+    "pole_od_mm": {
+      "value": 60,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "User-requested pole interface; no selected vendor tube."
+    },
+    "pole_wall_mm": {
+      "value": 3,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Hollow flooded steel tube study, no tube buoyancy credit or strength claim."
+    },
+    "site_depth_mm": {
+      "value": 6400,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Copied illustrative site scene 6.4 m depth; R5R6 has no farm bathymetric survey. Not maximum inlet depth."
+    },
+    "freeboard_mm": {
+      "value": 500,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Tray underside and pole top above reference waterline. Pole length = depth + freeboard; zero embedment modeled."
+    },
+    "footing_xy_mm": {
+      "value": [
+        500,
+        500
+      ],
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Seabed footing plate outline, not an anchor/holding-capacity design."
+    },
+    "footing_thickness_mm": {
+      "value": 12,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Plate top at seabed datum, plate extends below it; no concrete or embedment asserted."
+    },
+    "float_outer_xy_mm": {
+      "value": [
+        1060,
+        1280
+      ],
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Rectangular closed-cell foam collar; inner opening from skirt plan."
+    },
+    "float_height_mm": {
+      "value": 300,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Foam collar height; no sealed skirt/hub displacement credit."
+    },
+    "cable_diameter_mm": {
+      "value": 8,
+      "unit": "mm",
+      "kind": "source_record",
+      "basis": "Inherited cable route allocation, not a selected cable diameter.",
+      "source_id": "v2-interface",
+      "locator": "mechanical.reef.cable_reference_diameter_mm"
+    },
+    "cable_bend_radius_mm": {
+      "value": 56,
+      "unit": "mm",
+      "kind": "source_record",
+      "basis": "Inherited routing radius assumption; stubs are not complete bent harnesses.",
+      "source_id": "v2-interface",
+      "locator": "mechanical.reef.cable_reference_centreline_bend_radius_mm"
+    },
+    "cable_x_mm": {
+      "value": 230,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Two vertical route stubs at panel centres, outside hub, shade and carrier hangers."
+    },
+    "cable_stub_z_mm": {
+      "value": [
+        -160,
+        20
+      ],
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Stub ends relative to tray underside. Gland/junction positions and real route unresolved."
+    },
+    "cable_hole_diameter_mm": {
+      "value": 10,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Tray pass-through clearance only; no gland or ingress claim."
+    },
+    "aluminum_density_kg_m3": {
+      "value": 2700,
+      "unit": "kg/m3",
+      "kind": "design_assumption",
+      "basis": "Assumed custom aluminum density; never applied to purchased panel or hub envelopes."
+    },
+    "steel_density_kg_m3": {
+      "value": 8000,
+      "unit": "kg/m3",
+      "kind": "design_assumption",
+      "basis": "Assumed pole/footing density; actual grade and corrosion isolation unselected."
+    },
+    "foam_density_kg_m3": {
+      "value": 60,
+      "unit": "kg/m3",
+      "kind": "design_assumption",
+      "basis": "Assumed dry closed-cell foam bulk density, no product/source or water-uptake evidence."
+    },
+    "seawater_density_kg_m3": {
+      "value": 1025,
+      "unit": "kg/m3",
+      "kind": "design_assumption",
+      "basis": "Assumed seawater density; not measured at site."
+    },
+    "hub_scenario_mass_kg": {
+      "value": 1.2,
+      "unit": "kg",
+      "kind": "design_assumption",
+      "basis": "Explicit illustrative hub dry mass, NOT vendor mass and NOT solid-envelope density. Actual unknown."
+    },
+    "sink_scenario_mass_kg": {
+      "value": 1.8,
+      "unit": "kg",
+      "kind": "design_assumption",
+      "basis": "Illustrative sink allowance independent of occupancy volume; actual unknown, no fin geometry inferred."
+    },
+    "unmodeled_payload_allowance_kg": {
+      "value": 3,
+      "unit": "kg",
+      "kind": "design_assumption",
+      "basis": "Illustrative mass contingency only; not a modeled battery, power integration or complete mass allowance."
+    },
+    "gravity_m_s2": {
+      "value": 9.80665,
+      "unit": "m/s2",
+      "kind": "design_assumption",
+      "basis": "Conventional gravity for conditional force arithmetic."
+    },
+    "brep_tolerance_mm": {
+      "value": 0.0001,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Digital comparison tolerance only, not a manufacturing tolerance."
+    },
+    "interference_tolerance_mm3": {
+      "value": 0.001,
+      "unit": "mm3",
+      "kind": "design_assumption",
+      "basis": "OCP common-volume numerical threshold, not allowable interference."
+    },
+    "glb_deflection_mm": {
+      "value": 0.3,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Display tessellation, source BRep remains authoritative."
+    },
+    "glb_angular_deflection_rad": {
+      "value": 0.35,
+      "unit": "radian",
+      "kind": "design_assumption",
+      "basis": "Display tessellation."
+    },
+    "dxf_curve_spacing_mm": {
+      "value": 4,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Sampled orthographic curves; exact geometry stays in STEP."
+    },
+    "dxf_view_gap_mm": {
+      "value": 100,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Drawing layout, not a part dimension."
+    },
+    "surface_height_limit_mm": {
+      "value": 300,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Digital shallow-layout screen for common surface only, excluding the mutually exclusive mounts; not a physical rating."
+    },
+    "dxf_text_height_mm": {
+      "value": 3,
+      "unit": "mm",
+      "kind": "design_assumption",
+      "basis": "Drawing annotation height, not a part dimension."
+    }
+  },
+  "variants": {
+    "pole": {
+      "common_surface": true,
+      "exclusive_with": "float",
+      "default": true,
+      "pole_length": "site_depth_mm + freeboard_mm",
+      "embedment_mm": null
+    },
+    "float": {
+      "common_surface": true,
+      "exclusive_with": "pole",
+      "default": false,
+      "waterline": "Conditional mass-scenario equilibrium, not measured draft",
+      "actual_complete_mass_kg": null,
+      "actual_buoyancy_sign": "UNKNOWN"
+    }
+  },
+  "website_contract": "poseidon.site.assets.v3",
+  "contract_groups": {
+    "surface": [
+      "tray",
+      "hub",
+      "panelA",
+      "panelB",
+      "mastSocket"
+    ],
+    "mountPole": [],
+    "mountFloat": []
+  },
+  "thermal": {
+    "v2_absorbed_sun_w": 48,
+    "v2_enclosed_heat_w": 21.9,
+    "reevaluated": false,
+    "installed_thermal_performance": null,
+    "note": "Heat-sink occupancy retains vertical extrusion allocation, but lies beside the flat hub. No designed contact path, fin detail or performance claim."
+  },
+  "power_parts_populated": [
+    "two panel envelopes only"
+  ],
+  "assembled_mass_kg": null,
+  "reuse_rights": "Vendor dimension provenance retained; no blanket licence or public redistribution authorization. No new downloads.",
+  "required_sentence": "this is a non-adopted digital candidate with no pressure, corrosion or suitability evidence.",
+  "open_gates": [
+    "G01 exact supplied panel/hub revisions, mounting zones, component inspection and unknown purchased masses",
+    "G02 battery, BMS, charger, protection, regulators, wiring, glands and full power integration omitted and unresolved",
+    "G03 reopened thermal analysis: v2 48 W absorbed-sun and 21.9 W enclosed-heat budgets not re-evaluated; flat hub thermal contact and ventilation unresolved",
+    "G04 pole bending, buckling, cross-bolts, flange joints, wind fatigue and corrosion isolation",
+    "G05 seabed survey, footing holding capacity, pole embedment/anchoring and recovery; zero embedment modeled",
+    "G06 wind, waves, storm current, mooring load and farm-line clearance require site/engineer review",
+    "G07 actual complete mass, CG, float water uptake, freeboard, stability, wave response and buoyancy unknown",
+    "G08 cable bend/pull, terminations, service access, splash ingress, corrosion and fouling",
+    "G09 farm/operator permissions, marking, loss prevention, retrieval and vendor-derived redistribution rights"
+  ]
+}

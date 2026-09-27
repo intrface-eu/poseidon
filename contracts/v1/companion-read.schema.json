@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://poseidon.invalid/contracts/v1/companion-read.schema.json",
+  "title": "Companion-aware recording read transport v1",
+  "description": "Transport only. Acquisition's pure legacy export reader validates binding and validation document meaning.",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "state", "recording_id"],
+      "properties": {
+        "schema_version": {"const": "poseidon.recording-acquisition-companion.v1"},
+        "state": {"const": "absent"},
+        "recording_id": {"$ref": "#/$defs/id"}
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "state", "recording_id", "platform_session_id", "capture_session_id", "source_id", "selected_index", "source_header_sha256", "source_final_sha256", "wav_sha256", "manifest_sha256", "imported_at", "actor_subject", "auth_mode", "job", "documents", "binding", "validation"],
+      "properties": {
+        "schema_version": {"const": "poseidon.recording-acquisition-companion.v1"},
+        "state": {"const": "retained"},
+        "recording_id": {"$ref": "#/$defs/id"},
+        "platform_session_id": {"$ref": "#/$defs/id"},
+        "capture_session_id": {"$ref": "#/$defs/id"},
+        "source_id": {"$ref": "#/$defs/id"},
+        "selected_index": {"type": "integer", "minimum": 0, "maximum": 4095},
+        "source_header_sha256": {"$ref": "#/$defs/sha256"},
+        "source_final_sha256": {"$ref": "#/$defs/sha256"},
+        "wav_sha256": {"$ref": "#/$defs/sha256"},
+        "manifest_sha256": {"$ref": "#/$defs/sha256"},
+        "imported_at": {"type": "string", "format": "date-time", "pattern": "Z$"},
+        "actor_subject": {"$ref": "#/$defs/id"},
+        "auth_mode": {"enum": ["local_development_key", "scoped_token"]},
+        "job": {
+          "type": "object", "additionalProperties": false, "required": ["id", "status"],
+          "properties": {"id": {"$ref": "#/$defs/id"}, "status": {"enum": ["queued", "running", "succeeded", "failed"]}}
+        },
+        "documents": {
+          "type": "array", "minItems": 5, "maxItems": 5, "items": false,
+          "prefixItems": [
+            {"allOf": [{"$ref": "#/$defs/document"}, {"properties": {"role": {"const": "binding"}, "bytes": {"maximum": 262144}}}]},
+            {"allOf": [{"$ref": "#/$defs/document"}, {"properties": {"role": {"const": "source_receipt"}, "bytes": {"maximum": 16384}}}]},
+            {"allOf": [{"$ref": "#/$defs/document"}, {"properties": {"role": {"const": "source_header"}, "bytes": {"maximum": 1048576}}}]},
+            {"allOf": [{"$ref": "#/$defs/document"}, {"properties": {"role": {"const": "source_final"}, "bytes": {"maximum": 2097152}}}]},
+            {"allOf": [{"$ref": "#/$defs/document"}, {"properties": {"role": {"const": "export_receipt"}, "bytes": {"maximum": 65536}}}]}
+          ]
+        },
+        "binding": {"type": "object", "description": "Parsed exact original binding bytes validated by Acquisition; not reconstructed by this transport."},
+        "validation": {"type": "object", "description": "Parsed exact immutable Acquisition reader projection bytes."}
+      }
+    }
+  ],
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$", "maxLength": 128},
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$", "maxLength": 64},
+    "document": {
+      "type": "object", "additionalProperties": false, "required": ["role", "name", "bytes", "sha256"],
+      "properties": {
+        "role": {"enum": ["binding", "source_receipt", "source_header", "source_final", "export_receipt"]},
+        "name": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$", "maxLength": 128},
+        "bytes": {"type": "integer", "minimum": 1, "maximum": 2097152},
+        "sha256": {"$ref": "#/$defs/sha256"}
+      }
+    }
+  }
+}

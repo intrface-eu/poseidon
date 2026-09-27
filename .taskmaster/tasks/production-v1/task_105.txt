@@ -1,0 +1,26 @@
+{
+  "blockedReason": "Blocked until the accountable budget owner approves the specific next tranche; no blanket approval authorizes future spend.",
+  "deliverablePaths": [
+    "ops/budget-gates/",
+    "hardware/bom/cost-model.csv"
+  ],
+  "dependencies": [
+    101
+  ],
+  "description": "Obtain a capped approval for each next spend decision rather than a blanket future budget.",
+  "details": "Maintain separate approval records for desk/access work, passive capture and calibration, controlled active research, engineering units, qualification, pilot manufacture, and lifetime support. Each record names scope, cap, assumptions, approver, expiry, and release condition.",
+  "gate": "stage-specific-spend",
+  "id": 105,
+  "ownerRole": "program-management",
+  "phase": "P1",
+  "priority": "high",
+  "researchPackages": [
+    "R5",
+    "R6",
+    "R7"
+  ],
+  "status": "pending",
+  "subtasks": [],
+  "testStrategy": "Verify the applicable signed approval exists before each procurement or contracted spend. A prior tranche approval cannot authorize a later tranche.",
+  "title": "P1 Stage-Specific Budget Approval Gate"
+}

@@ -1,0 +1,109 @@
+{
+  "profile": "poseidon.reef-cbor.v1",
+  "fport": 10,
+  "evidence": "Synthetic codec vectors, not field packets or calibration evidence",
+  "valid": [
+    {
+      "name": "synthetic-unsynchronized-raw",
+      "source_kind": "synthetic",
+      "hex": "8d010100183c00f6190e740000011904d200f6",
+      "fields": {
+        "version": 1,
+        "boot_id": "1",
+        "sequence": 0,
+        "uptime_s": 60,
+        "clock_quality": 0,
+        "observed_at_unix_s": null,
+        "battery_mv": 3700,
+        "solar_mv": 0,
+        "power_mode": 0,
+        "sensor_kind": 1,
+        "sensor_value": 1234,
+        "sensor_quality": 0,
+        "calibration_id": null
+      }
+    },
+    {
+      "name": "synthetic-calibrated-claim",
+      "source_kind": "synthetic",
+      "hex": "8d010208190e10021a6a9f500019100419145000011908660107",
+      "fields": {
+        "version": 1,
+        "boot_id": "2",
+        "sequence": 8,
+        "uptime_s": 3600,
+        "clock_quality": 2,
+        "observed_at_unix_s": 1788825600,
+        "battery_mv": 4100,
+        "solar_mv": 5200,
+        "power_mode": 0,
+        "sensor_kind": 1,
+        "sensor_value": 2150,
+        "sensor_quality": 1,
+        "calibration_id": 7
+      }
+    },
+    {
+      "name": "synthetic-uint64-boundary",
+      "source_kind": "synthetic",
+      "hex": "8d011bffffffffffffffff1affffffff1affffffff011affffffff19ffff19ffff02033a7fffffff0119ffff",
+      "fields": {
+        "version": 1,
+        "boot_id": "18446744073709551615",
+        "sequence": 4294967295,
+        "uptime_s": 4294967295,
+        "clock_quality": 1,
+        "observed_at_unix_s": 4294967295,
+        "battery_mv": 65535,
+        "solar_mv": 65535,
+        "power_mode": 2,
+        "sensor_kind": 3,
+        "sensor_value": -2147483648,
+        "sensor_quality": 1,
+        "calibration_id": 65535
+      }
+    },
+    {
+      "name": "synthetic-invalid-sensor",
+      "source_kind": "synthetic",
+      "hex": "8d0103000000f6f6f60202f602f6",
+      "fields": {
+        "version": 1,
+        "boot_id": "3",
+        "sequence": 0,
+        "uptime_s": 0,
+        "clock_quality": 0,
+        "observed_at_unix_s": null,
+        "battery_mv": null,
+        "solar_mv": null,
+        "power_mode": 2,
+        "sensor_kind": 2,
+        "sensor_value": null,
+        "sensor_quality": 2,
+        "calibration_id": null
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "trailing-byte",
+      "hex": "8d010100183c00f6190e740000011904d200f600"
+    },
+    {
+      "name": "nonminimal-version",
+      "hex": "8d18010100183c00f6190e740000011904d200f6"
+    },
+    {
+      "name": "truncated",
+      "hex": "8d010100183c00f6190e740000011904d200"
+    },
+    {
+      "name": "indefinite-array",
+      "hex": "9f010100183c00f6190e740000011904d200f6ff"
+    },
+    {
+      "name": "float",
+      "hex": "8dfb3ff00000000000000100183c00f6190e740000011904d200f6"
+    }
+  ]
+}
