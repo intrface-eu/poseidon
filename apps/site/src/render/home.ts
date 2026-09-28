@@ -123,6 +123,7 @@ function how(ctx: RenderContext): string {
     ${p(ctx, ['unit-parts'])}
     ${p(ctx, ['unit-surface'])}
     ${p(ctx, ['unit-head'])}
+    ${p(ctx, ['unit-first-rigs'])}
     ${p(ctx, ['unit-flow', 'unit-sensors'])}
     <p class="statement">${claim(ctx, 'unit-listens-only')}</p>
   </div>

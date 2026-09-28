@@ -42,6 +42,8 @@ A **surface unit** sits above the water on a pole or a float: a flat tray with t
 
 A **listening head** hangs below, beside the shellfish lines: a sealed aluminium tube, 112 mm across and 300 mm long, holding a hydrophone (an underwater microphone) and a small camera behind a clear dome.
 
+The drawings show this target unit. The first recordings use two simpler rigs built from pressure pipe and off-the-shelf parts.
+
 The head records sound and video. The computer flags sounds that stand out from the background, keeps a clip around each one, and sends a short summary to shore over the mobile network. A person then reviews the clip, watches the video and records what actually happened: feeding, something else, or unclear. Small solar sensor boards on the farm report water temperature and battery state over a low-power radio link.
 
 The unit only listens. It has no loudspeaker.
@@ -65,7 +67,7 @@ We have also done the desk research: underwater acoustics, marine hardware and E
 
 ## What comes next
 
-**Stage 1: first recordings and prototype build.** About 6 to 9 months. Agree access with Lim bay farms, obtain the permissions a listening unit needs in the reserve, build two units, and record the first season's feeding with video. Ends with an answer: can feeding be heard and told apart from boats, ropes and shrimp?
+**Stage 1: first field recordings.** About 6 to 9 months. Agree access with Lim bay farms, obtain the permissions a listening unit needs in the reserve, build two simple recording rigs from off-the-shelf parts and pressure-test them, and record the first season's feeding with video. Ends with an answer: can feeding be heard and told apart from boats, ropes and shrimp?
 
 **Stage 2: pilot season.** About 9 to 12 months. Five units on two or three farms, in Lim bay and elsewhere in Istria, through a full predation season, a detector tested against what the cameras saw, and physical tests of the hardware. Ends with a record of when and where seabream feed, and a decision on whether monitoring is a product farms want.
 
@@ -75,14 +77,14 @@ We have also done the desk research: underwater acoustics, marine hardware and E
 
 We are looking for:
 
-- **Farms** in Lim bay and across the Adriatic willing to host a unit and share their loss records.
+- **Farms** in Lim bay and across the Adriatic willing to host our recorders and share their loss records.
 - **A marine biology or fish-behaviour partner** to design the study and label what the fish do.
 - **An underwater acoustics lab** to advise on and calibrate the hydrophones.
 - **Engineers**, electronics and marine, for paid review and build work.
 - **A permitting advisor** who knows Croatian nature and maritime rules.
 - **A manufacturing partner** for small batches.
 - **Grant co-applicants** for fisheries-fund, Horizon Europe and Interreg calls.
-- **Investors and funders**: stage 1 is estimated at €49,000 to €83,000; stages 1 and 2 together at €149,000 to €238,000. The materials for the first field recordings, two simple recording rigs with spares and test gear, come to about €3,400; the rest of stage 1 is mostly people, boat days and permits.
+- **Investors and funders**: stage 1 is estimated at €46,000 to €77,280; stages 1 and 2 together at €152,645 to €242,046. The materials for the first field recordings, two simple recording rigs with spares and test gear, come to about €3,400; the rest of stage 1 is mostly people, boat days and permits.
 
 The full list, with what each partner gets and a costed budget, is on the [What we need](ask) page.
 

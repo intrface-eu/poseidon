@@ -8,9 +8,9 @@ Poseidon is an open-source listening unit for shellfish farms, built by INTRFACE
 
 ## Boilerplate, 150 words
 
-Poseidon is an open-source listening unit for shellfish farms, built by INTRFACE j.d.o.o., an engineering company in Vrsar, Istria. Wild gilthead seabream (orada) strip farmed mussels from their ropes; on Croatian farms, two-thirds of newly seeded ropes have been lost within a month. Nets foul and slow growth; fishing is banned in protected water such as Lim bay; underwater sound deterrents tried there worked for about two weeks.
+Poseidon is an open-source listening unit for shellfish farms, built by INTRFACE j.d.o.o. in Vrsar, Istria. Wild gilthead seabream (orada) strip farmed mussels from their ropes; on Croatian farms, two-thirds of newly seeded ropes were lost within a month. Nets foul and slow growth; fishing is banned in protected water such as Lim bay; underwater sound deterrents tried there worked for about two weeks.
 
-Poseidon starts by measuring the problem. In the design, a solar surface unit on a pole or float carries a sealed head with a hydrophone and a camera beside the shellfish lines. It records sound and video, flags events for a person to review, and makes no sound itself. The software stack runs end to end on test data; the hardware exists as 3D designs. The next step is the first field recordings with farms and marine scientists. Code, hardware designs and documentation are open source.
+Poseidon starts by measuring the problem. In the design, a solar surface unit on a pole or float carries a sealed head with a hydrophone and a camera beside the shellfish lines. It records sound and video, flags events for a person to review, and makes no sound itself. The software runs end to end on test data; the hardware exists as 3D designs. First field recordings with farms and marine scientists will use two simpler, off-the-shelf rigs. Code, hardware designs and documentation are open source.
 
 ## Fact sheet
 
@@ -26,7 +26,7 @@ Poseidon starts by measuring the problem. In the design, a solar surface unit on
 | Problem | Gilthead seabream (*Sparus aurata*, orada) feeding on farmed mussels and oysters |
 | What it is | A passive listening unit: solar surface unit on a pole or float, with a sealed underwater head holding a hydrophone and a camera |
 | Status | Software works end to end on computer-generated test recordings. Hardware designed in 3D, not built. No field recordings yet. No sound output. |
-| Next step | First field recordings on Lim bay farms, with a marine biology partner |
+| Next step | First field recordings on Lim bay farms, with a marine biology partner, using two simple recording rigs |
 | Licences | Code: AGPL-3.0-or-later. Hardware: CERN-OHL-S-2.0. Documentation: CC-BY-4.0 |
 | Repository | [github.com/intrface-eu/poseidon](https://github.com/intrface-eu/poseidon) |
 | Website | [poseidon.intrface.eu](https://poseidon.intrface.eu) |
@@ -44,7 +44,7 @@ Many farms already use nets and protective bags. They foul, slow the mussels' gr
 Not yet. Today the software flags loud events and a person reviews the video to say what happened. Telling seabream apart from boats, ropes and shrimp needs real recordings from the farms, which is the first job of the next stage.
 
 **Has it been tested in the sea?**
-No. The software has been tested on computer-generated recordings. The hardware exists as 3D designs and has not been built. The first units go in the water once farms and permits are in place.
+No. The software has been tested on computer-generated recordings. The hardware exists as 3D designs and has not been built. The first recording rigs go in the water once farms and permits are in place.
 
 **Is it safe for the reserve and for other animals?**
 The unit makes no sound. It sits in the water like any other piece of farm gear, and it will only go in with the permissions the reserve requires. Any future test of sound would need a separate permit, a specialist lab and control lines, and we will not do it otherwise.
@@ -53,10 +53,10 @@ The unit makes no sound. It sits in the water like any other piece of farm gear,
 Seabream predation is a shared problem across the Mediterranean, and the farms that suffer it are small. Open designs let any farm, lab or company build, check and improve the unit, and public money should produce public results.
 
 **What will a unit cost?**
-We estimate the parts for one full prototype, with solar power and mobile data, at about €3,000 to €4,200. The first field recordings need simpler rigs: about €3,400 in materials for two, with spares and test gear. A production price depends on volume and on what the pilot season shows, so we do not have one yet.
+We estimate the parts for one full unit, with solar power and mobile data, at about €3,000 to €4,200. The first field recordings use two simpler rigs instead: about €3,400 in materials for both, with spares, test gear and tools. A production price depends on volume and on what the pilot season shows, so we do not have one yet.
 
 **What do you need now?**
-Farms willing to host a unit, a marine biology partner, and funding for the first stage, which we estimate at €49,000 to €83,000. Most of that is people, boat days and permits; with the simpler rigs, the materials come to about €3,400.
+Farms willing to host our first recording rigs, a marine biology partner, and funding for the first stage, which we estimate at €46,000 to €77,280. Most of that is people, boat days and permits; the two rigs come to about €3,400 in materials.
 
 ## Images
 

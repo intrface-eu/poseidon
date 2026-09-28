@@ -151,6 +151,8 @@ export const en = {
       'The **surface unit** sits above the water on a pole or a float: a flat tray with two solar panels on top and a sealed box underneath holding the battery, a small computer, storage and a mobile-data radio. Nothing in it goes under water.',
     'unit-head':
       'The **listening head** hangs below, beside the shellfish lines: a sealed aluminium tube, 112 mm across and 300 mm long, holding a hydrophone (an underwater microphone) and a small camera behind a clear dome.',
+    'unit-first-rigs':
+      'The drawings show this target unit. The first recordings use two simpler rigs built from pressure pipe and off-the-shelf parts.',
     'unit-flow':
       'The computer flags sounds that stand out from the background, keeps a clip around each one and sends a short summary to shore over the mobile network. A person then reviews the clip, watches the video and records what happened: feeding, something else, or unclear.',
     'unit-sensors':
@@ -178,11 +180,11 @@ export const en = {
     'today-limits':
       'So far the software has run only on computer-generated recordings. The detector flags loudness; it cannot yet tell a seabream from a boat. No unit has been built or put in water, and every physical test, from leaks and pressure to power and heat, is still to do.',
     'next-access': 'Agree access with Lim bay farms and obtain the permissions a listening unit needs in the reserve.',
-    'next-build': 'Build two units and record the first season of feeding, with video.',
+    'next-build': 'Build two simple recording rigs and record the first season of feeding, with video.',
     'next-answer':
       'Answer the first question: can feeding be heard and told apart from boats, ropes and snapping shrimp?',
     'stage-1-body':
-      'Farm access and permissions, a recording plan agreed with a marine biologist, two units built and bench-tested, and the first recordings from Lim bay farms with video of what the fish do.',
+      'Farm access and permissions, a recording plan agreed with a marine biologist, two field rigs built from off-the-shelf parts and pressure-tested, then the first recordings from Lim bay farms with video of what the fish do.',
     'stage-1-end': 'Can feeding be heard and told apart from boats, ropes and shrimp?',
     'stage-2-body':
       'Five units on two or three farms, in Lim bay and elsewhere in Istria, through a full predation season, with a detector tested against what the cameras saw and physical tests of the hardware.',
@@ -194,10 +196,10 @@ export const en = {
     'stage-1-months': 'About 6 to 9 months',
     'stage-2-months': 'About 9 to 12 months',
     'stage-3-months': 'About 12 to 18 months',
-    'stage-1-cost': '€49,000 to €83,000',
-    'stage-2-cost': '€100,000 to €155,000',
+    'stage-1-cost': '€46,000 to €77,280',
+    'stage-2-cost': '€107,000 to €165,000',
     'stage-3-cost': '€85,000 to €164,000',
-    'budget-total': 'Stages 1 and 2 together, the monitoring work: €149,000 to €238,000.',
+    'budget-total': 'Stages 1 and 2 together, the monitoring work: €152,645 to €242,046.',
     'budget-rig':
       'First field recordings: about €3,400 in materials for two simple recording rigs, a camera, spares, batteries and test gear. The rest of stage 1 is mostly people, boat days, permits and contingency.',
     'budget-unit': 'A full autonomous unit, with solar power and mobile data: about €3,000 to €4,200 in parts.',
@@ -208,7 +210,7 @@ export const en = {
     'ask-lead':
       'Poseidon needs farms, scientists, engineers and money. Each line below says what you get and what we ask of you.',
     'ask-farms-get':
-      'The first units on your lines at no cost to you, and a season’s record of when and where seabream feed on your stock.',
+      'The first recorders on your lines at no cost to you, and a season’s record of when and where seabream feed on your stock.',
     'ask-farms-need':
       'Written access for listening only, one or two lines where a unit can hang, boat access on service days, and your own records of losses. Lim bay first; Mali Ston bay, the Novigrad sea and the Italian and Slovenian coasts one stage later.',
     'ask-biology-get':
@@ -239,7 +241,7 @@ export const en = {
     'ask-public-get':
       'Public money turned into open code, open hardware designs, open data where farms agree, and published results, negative ones included.',
     'ask-public-need':
-      'Funding for stage 1, estimated at €49,000 to €83,000, and for the pilot season after it. The materials for the first field recordings alone come to about €3,400.',
+      'Funding for stage 1, estimated at €46,000 to €77,280, and for the pilot season after it. The two recording rigs for stage 1 come to about €3,400 in materials.',
 
     /* Team, company, open source */
     'team-company':
@@ -260,9 +262,9 @@ export const en = {
     'press-50':
       'Poseidon is an open-source listening unit for shellfish farms, built by INTRFACE j.d.o.o. in Vrsar, Croatia. It is designed to record when wild gilthead seabream feed on farmed mussels and oysters, starting in Lim bay, Istria. The software works on test data; the hardware is designed but not yet built.',
     'press-150a':
-      'Poseidon is an open-source listening unit for shellfish farms, built by INTRFACE j.d.o.o., an engineering company in Vrsar, Istria. Wild gilthead seabream (orada) strip farmed mussels from their ropes; on Croatian farms, two-thirds of newly seeded ropes have been lost within a month. Nets foul and slow growth; fishing is banned in protected water such as Lim bay; underwater sound deterrents tried there worked for about two weeks.',
+      'Poseidon is an open-source listening unit for shellfish farms, built by INTRFACE j.d.o.o. in Vrsar, Istria. Wild gilthead seabream (orada) strip farmed mussels from their ropes; on Croatian farms, two-thirds of newly seeded ropes were lost within a month. Nets foul and slow growth; fishing is banned in protected water such as Lim bay; underwater sound deterrents tried there worked for about two weeks.',
     'press-150b':
-      'Poseidon starts by measuring the problem. In the design, a solar surface unit on a pole or float carries a sealed head with a hydrophone and a camera beside the shellfish lines. It records sound and video, flags events for a person to review, and makes no sound itself. The software stack runs end to end on test data; the hardware exists as 3D designs. The next step is the first field recordings with farms and marine scientists. Code, hardware designs and documentation are open source.',
+      'Poseidon starts by measuring the problem. In the design, a solar surface unit on a pole or float carries a sealed head with a hydrophone and a camera beside the shellfish lines. It records sound and video, flags events for a person to review, and makes no sound itself. The software runs end to end on test data; the hardware exists as 3D designs. First field recordings with farms and marine scientists will use two simpler, off-the-shelf rigs. Code, hardware designs and documentation are open source.',
     'qa-stop':
       'No, and it is not meant to yet. It listens and records. Earlier attempts to scare seabream off with sound, including a 2019 trial in Lim bay, worked for a couple of weeks and then failed. We want to understand the problem before offering a fix.',
     'qa-nets':
@@ -270,22 +272,22 @@ export const en = {
     'qa-recognise':
       'Not yet. Today the software flags loud events and a person reviews the video to say what happened. Telling seabream apart from boats, ropes and shrimp needs real recordings from the farms, which is the first job of the next stage.',
     'qa-tested':
-      'No. The software has been tested on computer-generated recordings. The hardware exists as 3D designs and has not been built. The first units go in the water once farms and permits are in place.',
+      'No. The software has been tested on computer-generated recordings. The hardware exists as 3D designs and has not been built. The first recording rigs go in the water once farms and permits are in place.',
     'qa-safe':
       'The unit makes no sound. It sits in the water like any other piece of farm gear, and it will only go in with the permissions the reserve requires. Any future test of sound would need a separate permit, a specialist lab and control lines, and we will not do it otherwise.',
     'qa-open':
       'Seabream predation is a shared problem across the Mediterranean, and the farms that suffer it are small. Open designs let any farm, lab or company build, check and improve the unit, and public money should produce public results.',
     'qa-cost':
-      'We estimate the parts for one full prototype, with solar power and mobile data, at about €3,000 to €4,200. The first field recordings need simpler rigs: about €3,400 in materials for two, with spares and test gear. A production price depends on volume and on what the pilot season shows, so we do not have one yet.',
+      'We estimate the parts for one full unit, with solar power and mobile data, at about €3,000 to €4,200. The first field recordings use two simpler rigs instead: about €3,400 in materials for both, with spares, test gear and tools. A production price depends on volume and on what the pilot season shows, so we do not have one yet.',
     'qa-need':
-      'Farms willing to host a unit, a marine biology partner, and funding for the first stage, which we estimate at €49,000 to €83,000. Most of that is people, boat days and permits; with the simpler rigs, the materials come to about €3,400.',
+      'Farms willing to host our first recording rigs, a marine biology partner, and funding for the first stage, which we estimate at €46,000 to €77,280. Most of that is people, boat days and permits; the two rigs come to about €3,400 in materials.',
     'fact-site': 'Lim bay (Limski kanal), Istria, Croatia: mussel and oyster farms in a special marine reserve.',
     'fact-problem': 'Gilthead seabream (*Sparus aurata*, orada) feeding on farmed mussels and oysters.',
     'fact-what':
       'A passive listening unit: a solar surface unit on a pole or float, with a sealed underwater head holding a hydrophone and a camera.',
     'fact-status':
       'Software works end to end on computer-generated test recordings. Hardware designed in 3D, not built. No field recordings yet. No sound output.',
-    'fact-next': 'First field recordings on Lim bay farms, with a marine biology partner.',
+    'fact-next': 'First field recordings on Lim bay farms, with a marine biology partner, using two simple recording rigs.',
   },
 
   /**
@@ -352,7 +354,7 @@ export const en = {
       stagesHeading: 'The plan, in three stages',
       stageLabel: 'Stage',
       stages: [
-        { title: 'First recordings and a prototype build', claimPrefix: 'stage-1' },
+        { title: 'First field recordings', claimPrefix: 'stage-1' },
         { title: 'One pilot season', claimPrefix: 'stage-2' },
         { title: 'Behaviour trials, only if justified', claimPrefix: 'stage-3' },
       ],

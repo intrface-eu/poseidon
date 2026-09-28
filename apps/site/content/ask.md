@@ -6,7 +6,7 @@ Poseidon needs farms, scientists, engineers and money. This page lists every par
 
 ### Pilot shellfish farms in Lim bay
 
-What you get: the first units on your lines at no cost to you; a record of when and where seabream feed on your stock, by night and day, across a season; the recordings and reports from your site; a say in what we build next; your farm named as a founding pilot site, if you want that.
+What you get: the first recorders on your lines at no cost to you; a record of when and where seabream feed on your stock, by night and day, across a season; the recordings and reports from your site; a say in what we build next; your farm named as a founding pilot site, if you want that.
 
 What we need from you: written access to your concession for listening only; one or two lines where a unit can hang for a season; a person we can call; boat access on install and service days; your own records of losses, seeding dates and harvests, so we can compare what the unit hears with what you see.
 
@@ -121,7 +121,7 @@ Planning rates used throughout:
 
 ### First field recordings, materials only
 
-Stage 1 can record with two simple rigs instead of two full units. Each rig pairs a hydrophone with a low-power recorder that runs on D cells and is opened by hand for a weekly card and battery swap. One rig also carries a camera. Two rigs, one camera, spares, six weeks of batteries, a pressure-test set, a sound calibrator and tools come to **€3,363**.
+Stage 1 records with two simple rigs instead of two full units. Each rig pairs a hydrophone with a low-power recorder that runs on D cells and is opened by hand for a weekly card and battery swap. One rig also carries a camera. Two rigs, one camera, spares, six weeks of batteries, a pressure-test set, a sound calibrator and tools come to **€3,363**.
 
 Unlike the rest of this page, these prices include 25% Croatian VAT, EU import duty and delivery to Vrsar. They come from published listings checked on 28 September 2026, not quotes.
 
@@ -137,7 +137,7 @@ Not in the total: a calibrated reference recorder, which we plan to borrow from 
 
 ### One full autonomous unit, materials
 
-The unit we designed for long runs without a visit, with a 90-day target: solar power, mobile data, and a sealed head with hydrophone and camera. This is not the stage 1 rig; stages 1 and 2 below are costed with it.
+The unit we designed for long runs without a visit, with a 90-day target: solar power, mobile data, and a sealed head with hydrophone and camera. This is not the stage 1 rig; stage 2 below is costed with it.
 
 | Item | Estimate | Basis |
 |---|---|---|
@@ -152,9 +152,9 @@ The unit we designed for long runs without a visit, with a 90-day target: solar 
 | Surface box, tray, wiring, connectors, pole or float, fixings | €600–900 | estimate |
 | **One unit** | **€3,047–4,155** | sum of the lines above |
 
-### Stage 1: first field recordings and prototype build
+### Stage 1: first field recordings
 
-About 6 to 9 months. Farm access and permissions, a written recording plan agreed with a marine biologist, two units built and bench-tested, a reference recorder alongside them, and the first recordings from Lim bay farms with video of what the fish do.
+About 6 to 9 months. Farm access and permissions, a written recording plan agreed with a marine biologist, two field rigs built from off-the-shelf parts and pressure-tested, a reference recorder alongside them, and the first recordings from Lim bay farms with video of what the fish do.
 
 | Line | Low | High | How it was built |
 |---|---|---|---|
@@ -162,18 +162,18 @@ About 6 to 9 months. Farm access and permissions, a written recording plan agree
 | Marine biologist | €4,000 | €6,000 | 10–15 days: study design, species confirmation, first video labels |
 | Underwater acoustics specialist | €2,000 | €4,000 | 5–10 days: hydrophone choice, placement, calibration plan |
 | Permitting advisor | €2,000 | €3,200 | 5–8 days: permission map and applications |
-| Two listening units | €6,100 | €8,300 | 2 × one-unit materials |
+| Two field rigs, spares, test gear and tools | €3,400 | €3,400 | the field-rig buying table; includes VAT |
 | Reference recorder | €4,100 | €4,800 | published prices $4,700–5,500 for a commercial long-term underwater sound recorder [P9]; renting or borrowing one would cut this line |
 | Hydrophone calibration | €1,500 | €3,000 | estimate; no lab publishes a fee |
 | Boat and diver days | €3,000 | €6,000 | 10–20 days at the planning rate |
 | Farm time and access | €2,000 | €4,000 | estimate, to agree with each farm |
 | Permit fees and insurance | €1,500 | €3,000 | estimate |
 | Data storage and sundries | €500 | €1,000 | estimate |
-| Subtotal | €42,700 | €72,100 | |
-| Contingency, 15% | €6,405 | €10,815 | |
-| **Stage 1 total** | **€49,105** | **€82,915** | |
+| Subtotal | €40,000 | €67,200 | |
+| Contingency, 15% | €6,000 | €10,080 | |
+| **Stage 1 total** | **€46,000** | **€77,280** | |
 
-With the field rig above, the stage 1 materials can come down to about €3,400. The rest of the stage 1 cost is mostly people, boat days, permits and contingency.
+The field-rig line is the materials table above, rounded; it is the only line on this page that includes VAT. The rest of the stage 1 cost is mostly people, boat days, permits and contingency.
 
 Decision at the end of stage 1: can feeding be heard and told apart from other noise at a useful range? If not, we change the sensor or its placement before building more.
 
@@ -183,7 +183,7 @@ About 9 to 12 months, covering one full predation season, which peaks in summer 
 
 | Line | Low | High | How it was built |
 |---|---|---|---|
-| Three more units | €9,100 | €12,500 | 3 × one-unit materials |
+| Five full units | €15,235 | €20,775 | 5 × one full unit's materials |
 | Founder and lead engineer | €32,000 | €48,000 | 20–30 weeks: live recording software, detector work, analysis, field service |
 | Contract engineers, electronics and marine | €16,000 | €24,000 | 8–12 weeks combined |
 | Marine biologist | €8,000 | €12,000 | 20–30 days: labelling feeding on video, sampling, analysis |
@@ -193,9 +193,9 @@ About 9 to 12 months, covering one full predation season, which peaks in summer 
 | Connectivity and data | €1,000 | €2,000 | mobile data, storage, one outdoor LoRaWAN gateway at a published $382 [P10] |
 | Pressure, leak and corrosion tests | €5,000 | €10,000 | estimate; no test facility publishes a fee |
 | Permits and insurance | €1,500 | €3,000 | estimate |
-| Subtotal | €86,600 | €135,000 | |
-| Contingency, 15% | €12,990 | €20,250 | |
-| **Stage 2 total** | **€99,590** | **€155,250** | |
+| Subtotal | €92,735 | €143,275 | |
+| Contingency, 15% | €13,910 | €21,491 | |
+| **Stage 2 total** | **€106,645** | **€164,766** | |
 
 Decision at the end of stage 2: does the monitoring data show a clear pattern of when and where seabream feed, and do farms find it useful on its own? This decides whether monitoring becomes a product and whether stage 3 is worth doing.
 
@@ -222,7 +222,7 @@ About 12 to 18 months, and only if stage 2 and a specialist review support it. A
 
 | Scope | Low | High |
 |---|---|---|
-| Stages 1 and 2: monitoring | €148,695 | €238,165 |
-| Stages 1 to 3 | €234,135 | €402,565 |
+| Stages 1 and 2: monitoring | €152,645 | €242,046 |
+| Stages 1 to 3 | €238,085 | €406,446 |
 
 Not included: production engineering, EU product conformity work, a manufacturing batch and after-sales support. Those come after stage 2 or 3, and we will cost them from quotes, not estimates.

@@ -149,6 +149,11 @@
       "apps/site/content/pitch.md",
       "hardware/candidates/passive-v3/interface.json"
     ],
+    "unit-first-rigs": [
+      "apps/site/content/pitch.md",
+      "hardware/candidates/field-rig-v1/research.md",
+      "hardware/candidates/field-rig-v1/README.md"
+    ],
     "unit-flow": [
       "apps/site/content/pitch.md",
       "apps/acoustic",
@@ -219,13 +224,15 @@
       "docs/research/site-permissions-evidence-register.md"
     ],
     "next-build": [
-      "apps/site/content/pitch.md"
+      "apps/site/content/pitch.md",
+      "hardware/candidates/field-rig-v1/research.md"
     ],
     "next-answer": [
       "apps/site/content/pitch.md"
     ],
     "stage-1-body": [
-      "apps/site/content/ask.md"
+      "apps/site/content/ask.md",
+      "hardware/candidates/field-rig-v1/research.md"
     ],
     "stage-1-end": [
       "apps/site/content/ask.md"
@@ -373,7 +380,8 @@
       "S1"
     ],
     "press-150b": [
-      "apps/site/content/press-kit.md"
+      "apps/site/content/press-kit.md",
+      "hardware/candidates/field-rig-v1/research.md"
     ],
     "qa-stop": [
       "apps/site/content/press-kit.md",
@@ -387,7 +395,8 @@
       "apps/site/content/press-kit.md"
     ],
     "qa-tested": [
-      "apps/site/content/press-kit.md"
+      "apps/site/content/press-kit.md",
+      "hardware/candidates/field-rig-v1/research.md"
     ],
     "qa-safe": [
       "apps/site/content/press-kit.md"
@@ -422,7 +431,8 @@
       "README.md"
     ],
     "fact-next": [
-      "apps/site/content/press-kit.md"
+      "apps/site/content/press-kit.md",
+      "hardware/candidates/field-rig-v1/research.md"
     ]
   }
 }
