@@ -82,7 +82,7 @@ We are looking for:
 - **A permitting advisor** who knows Croatian nature and maritime rules.
 - **A manufacturing partner** for small batches.
 - **Grant co-applicants** for fisheries-fund, Horizon Europe and Interreg calls.
-- **Investors and funders**: stage 1 is estimated at €49,000 to €83,000; stages 1 and 2 together at €149,000 to €238,000.
+- **Investors and funders**: stage 1 is estimated at €49,000 to €83,000; stages 1 and 2 together at €149,000 to €238,000. The materials for the first field recordings, two simple recording rigs with spares and test gear, come to about €3,400; the rest of stage 1 is mostly people, boat days and permits.
 
 The full list, with what each partner gets and a costed budget, is on the [What we need](ask) page.
 

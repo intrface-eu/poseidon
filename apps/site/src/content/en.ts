@@ -198,9 +198,11 @@ export const en = {
     'stage-2-cost': '€100,000 to €155,000',
     'stage-3-cost': '€85,000 to €164,000',
     'budget-total': 'Stages 1 and 2 together, the monitoring work: €149,000 to €238,000.',
-    'budget-unit': 'Parts for one prototype unit: about €3,000 to €4,200.',
+    'budget-rig':
+      'First field recordings: about €3,400 in materials for two simple recording rigs, a camera, spares, batteries and test gear. The rest of stage 1 is mostly people, boat days, permits and contingency.',
+    'budget-unit': 'A full autonomous unit, with solar power and mobile data: about €3,000 to €4,200 in parts.',
     'budget-basis':
-      'Every figure is our estimate, built from published supplier prices and planning rates we set ourselves. None is a quote, and all exclude VAT.',
+      'Every figure is our estimate, built from published supplier prices and planning rates we set ourselves. None is a quote. The field-rig figure includes VAT; all others exclude it.',
 
     /* The ask */
     'ask-lead':
@@ -236,7 +238,8 @@ export const en = {
       'Money for the months grants do not cover, introductions to farms, labs and buyers, and patience with a timeline set by fish seasons.',
     'ask-public-get':
       'Public money turned into open code, open hardware designs, open data where farms agree, and published results, negative ones included.',
-    'ask-public-need': 'Funding for stage 1, estimated at €49,000 to €83,000, and for the pilot season after it.',
+    'ask-public-need':
+      'Funding for stage 1, estimated at €49,000 to €83,000, and for the pilot season after it. The materials for the first field recordings alone come to about €3,400.',
 
     /* Team, company, open source */
     'team-company':
@@ -273,9 +276,9 @@ export const en = {
     'qa-open':
       'Seabream predation is a shared problem across the Mediterranean, and the farms that suffer it are small. Open designs let any farm, lab or company build, check and improve the unit, and public money should produce public results.',
     'qa-cost':
-      'We estimate the parts for one prototype at about €3,000 to €4,200. A production price depends on volume and on what the pilot season shows, so we do not have one yet.',
+      'We estimate the parts for one full prototype, with solar power and mobile data, at about €3,000 to €4,200. The first field recordings need simpler rigs: about €3,400 in materials for two, with spares and test gear. A production price depends on volume and on what the pilot season shows, so we do not have one yet.',
     'qa-need':
-      'Farms willing to host a unit, a marine biology partner, and funding for the first stage, which we estimate at €49,000 to €83,000.',
+      'Farms willing to host a unit, a marine biology partner, and funding for the first stage, which we estimate at €49,000 to €83,000. Most of that is people, boat days and permits; with the simpler rigs, the materials come to about €3,400.',
     'fact-site': 'Lim bay (Limski kanal), Istria, Croatia: mussel and oyster farms in a special marine reserve.',
     'fact-problem': 'Gilthead seabream (*Sparus aurata*, orada) feeding on farmed mussels and oysters.',
     'fact-what':

@@ -119,7 +119,25 @@ Planning rates used throughout:
 | Underwater acoustics specialist | €400 per day in stages 1–2, €500 per day in stage 3 | our planning rate, to replace with quotes |
 | Boat and diver day in Lim bay | €300 per day | our planning rate, to confirm with farms and local boat operators |
 
-### One listening unit, materials
+### First field recordings, materials only
+
+Stage 1 can record with two simple rigs instead of two full units. Each rig pairs a hydrophone with a low-power recorder that runs on D cells and is opened by hand for a weekly card and battery swap. One rig also carries a camera. Two rigs, one camera, spares, six weeks of batteries, a pressure-test set, a sound calibrator and tools come to **€3,363**.
+
+Unlike the rest of this page, these prices include 25% Croatian VAT, EU import duty and delivery to Vrsar. They come from published listings checked on 28 September 2026, not quotes.
+
+| Part | Delivered |
+|---|---|
+| Two rigs, camera, spares, batteries for 6 weeks, mounting | €2,676 |
+| Pressure test set and sound calibrator | €435 |
+| Tools | €233 |
+| Cable from float to camera housing (estimate) | €20 |
+| **Total** | **€3,363** |
+
+Not in the total: a calibrated reference recorder, which we plan to borrow from a lab partner. The parts list, prior builds, pressure limits and risks are in the [field rig research](https://github.com/intrface-eu/poseidon/tree/main/hardware/candidates/field-rig-v1).
+
+### One full autonomous unit, materials
+
+The unit we designed for long runs without a visit, with a 90-day target: solar power, mobile data, and a sealed head with hydrophone and camera. This is not the stage 1 rig; stages 1 and 2 below are costed with it.
 
 | Item | Estimate | Basis |
 |---|---|---|
@@ -154,6 +172,8 @@ About 6 to 9 months. Farm access and permissions, a written recording plan agree
 | Subtotal | €42,700 | €72,100 | |
 | Contingency, 15% | €6,405 | €10,815 | |
 | **Stage 1 total** | **€49,105** | **€82,915** | |
+
+With the field rig above, the stage 1 materials can come down to about €3,400. The rest of the stage 1 cost is mostly people, boat days, permits and contingency.
 
 Decision at the end of stage 1: can feeding be heard and told apart from other noise at a useful range? If not, we change the sensor or its placement before building more.
 

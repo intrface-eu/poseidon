@@ -183,7 +183,7 @@ function plan(ctx: RenderContext): string {
   <ol class="wide stages">${stages}</ol>
   <div class="column budget">
     <p class="budget__total">${claim(ctx, 'budget-total')}</p>
-    ${p(ctx, ['budget-unit', 'budget-basis'], 'budget__note')}
+    ${p(ctx, ['budget-rig', 'budget-unit', 'budget-basis'], 'budget__note')}
   </div>
 </section>`;
 }

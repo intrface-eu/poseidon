@@ -53,10 +53,10 @@ The unit makes no sound. It sits in the water like any other piece of farm gear,
 Seabream predation is a shared problem across the Mediterranean, and the farms that suffer it are small. Open designs let any farm, lab or company build, check and improve the unit, and public money should produce public results.
 
 **What will a unit cost?**
-We estimate the parts for one prototype at about €3,000 to €4,200. A production price depends on volume and on what the pilot season shows, so we do not have one yet.
+We estimate the parts for one full prototype, with solar power and mobile data, at about €3,000 to €4,200. The first field recordings need simpler rigs: about €3,400 in materials for two, with spares and test gear. A production price depends on volume and on what the pilot season shows, so we do not have one yet.
 
 **What do you need now?**
-Farms willing to host a unit, a marine biology partner, and funding for the first stage, which we estimate at €49,000 to €83,000.
+Farms willing to host a unit, a marine biology partner, and funding for the first stage, which we estimate at €49,000 to €83,000. Most of that is people, boat days and permits; with the simpler rigs, the materials come to about €3,400.
 
 ## Images
 

@@ -268,12 +268,17 @@
       "apps/site/content/ask.md",
       "apps/site/content/pitch.md"
     ],
+    "budget-rig": [
+      "apps/site/content/ask.md",
+      "hardware/candidates/field-rig-v1/research.md"
+    ],
     "budget-unit": [
       "apps/site/content/ask.md",
       "apps/site/content/press-kit.md"
     ],
     "budget-basis": [
-      "apps/site/content/ask.md"
+      "apps/site/content/ask.md",
+      "hardware/candidates/field-rig-v1/research.md"
     ],
     "ask-lead": [
       "apps/site/content/ask.md"
@@ -335,7 +340,8 @@
       "apps/site/content/ask.md"
     ],
     "ask-public-need": [
-      "apps/site/content/ask.md"
+      "apps/site/content/ask.md",
+      "hardware/candidates/field-rig-v1/research.md"
     ],
     "team-company": [
       "apps/site/content/pitch.md"
@@ -391,11 +397,13 @@
     ],
     "qa-cost": [
       "apps/site/content/press-kit.md",
-      "apps/site/content/ask.md"
+      "apps/site/content/ask.md",
+      "hardware/candidates/field-rig-v1/research.md"
     ],
     "qa-need": [
       "apps/site/content/press-kit.md",
-      "apps/site/content/ask.md"
+      "apps/site/content/ask.md",
+      "hardware/candidates/field-rig-v1/research.md"
     ],
     "fact-site": [
       "apps/site/content/press-kit.md",
